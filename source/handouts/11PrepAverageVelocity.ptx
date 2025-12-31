@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 1.1 - Average Velocity</title>
+
+<section>
+    <title>Overview</title>
+<p>
+    This section discusses the following concepts: Average velocity.
+    Slope of a secant line.
+    Instantaneous velocity.
+</p>
+</section>
+
+<section>
+    <title>Basic learning objectives</title>
+<p>
+    These are the tasks you should be able to perform with reasonable
+    fluency when you arrive at our next class meeting.
+    Important new vocabulary words are indicated <em>in italics</em>.
+</p>
+
+<ul>
+    <li>
+        <p>
+            Determine the position of an object at a specific time given a position function for the object.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Compute the average velocity of an object on a specific time interval.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            State the units of the average velocity of an object.
+        </p>
+    </li>
+</ul>
+</section>
+
+<section>
+    <title>To prepare for class</title>
+<p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+</p>
+
+<p>
+    A single .pdf should be uploaded to D2L Brightspace.
+    See the syllabus for grading rubric.
+    It is not necessary to re-state the questions.
+    Instead, simply enumerate your responses clearly.
+    Strive to use valid notation and correct mathematical language and syntax.
+    All answers should be briefly justified, whether justification is specifically requested or not.
+</p>
+</section>
+
+<ul>
+<li>
+    <p>
+        <alert>Read</alert> the motivating questions and introduction to <url href="https://activecalculus.org/single/sec-1-1-vel.html#Cph">Section 1.1</url> (up to Preview Activity 1.1.1).
+    </p>
+</li>
+
+<li>
+    <p>
+        [SUBMIT] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-1-vel.html#udo">Preview Activity 1.1.1</url>.
+    </p>
+
+    <p>
+        <ul>
+            <li>
+                <p>
+                    (Optional) <alert>Watch</alert> a <url href="https://www.youtube.com/watch?v=hWYcIde_b7o">video solution using Desmos to Preview Activity 1.1.1 (5:48)</url>.
+                </p>
+            </li>
+        </ul>
+    </p>
+</li>
+
+
+<li>
+    <p>
+        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-1-vel.html#iwq">Section 1.1.1</url>.
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?time_continue=3&#x26;v=6HPe7iwr88k&#x26;feature=emb_title">Using the Average Velocity Formula (7:38)</url>.
+    </p>
+</li>
+
+<li>
+    <p>
+        [SUBMIT] <alert>Watch</alert> video <url href="https://www.youtube.com/watch?time_continue=6&#x26;v=O_Z9osv6VGk&#x26;feature=emb_title">Alternative Average Velocity Formula (11:05)</url>.
+    </p>
+
+    <p>
+        <ol>
+            <li>
+                <p>
+                    What is the expression for <m>s(0.2+h)</m> calculated in the video? [Hint: It is written in blue ink at about the 9 minute mark.]
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    How does this expression compare to <m>s(0.2)+h</m>? Is it the same? If so, why? If not, why not?
+                </p>
+            </li>
+        </ol>
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Do</alert> the following exercises. [Note: Answers are provided below.]
+    </p>
+
+    <p>
+        <ol marker="1.">
+            <li>
+                <p>
+                    Katherine takes a trip from Saint Cloud to Minneapolis.
+                    Due to road construction, she drives the first 10 miles at a constant speed of 20 MPH.
+                    For the next 30 miles she maintains a constant speed of 60 MPH and then stops at McDonald’s for 10 minutes for a snack.
+                    She drives the next 45 miles at a constant speed of 45 MPH.
+                </p>
+
+                <p>
+                    <ol marker="a.">
+                        <li>
+                            <p>
+                                Draw and label a graph which shows her distance <m>d</m> along the road from her starting point as a function of time <m>t</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Draw and label a graph which shows her velocity <m>v</m> as a function of time <m>t</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                What is her average speed for the trip (including the stop at McDonald’s)?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Katherine takes another trip.
+                    She travels for 30 <em>miles</em> with an average velocity of 40 MPH, and then for 30 minutes at 60 MPH.
+                    What is her average velocity for the 60-mile trip?
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Dale travels for 30 <em>minutes</em> at 40 MPH and then for 30 minutes at 60 MPH.
+                    Find Dale’s average velocity in the one hour period.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    A car is to travel two miles.
+                    It goes the first mile at an average velocity of 30 MPH.
+                    The driver wishes to average 60 MPH for the entire two-mile trip.
+                    Is this possible? Explain.
+                </p>
+            </li>
+
+            <li>
+            <p>We look at the speed of a grapefruit that is thrown straight upward into the air at <m>t=0</m> seconds.</p>
+                     
+                     <figure xml:id="GrapefruitPic" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>Height of a grapefruit over time.</caption>
+      <image source="fig_02_01.jpg" width="50%">
+        <description>A curve showing the height of a grapefruit over time.  The curve increases, reaches a peak, and then decreases.</description>
+      </image>
+</figure>
+                <p>
+                    
+                    The grapefruit leaves the thrower’s hand at high speed, slows down until it reaches its maximum height, and then speeds up in the downward direction and finally, “Splat!”.
+                </p>
+
+     <table xml:id="GrapefruitTableData" >
+        <title>Height of the grapefruit above the ground.</title>
+     <tabular halign="center" bottom="minor" top="minor">
+      <row header="no" bottom="medium" top="medium">
+                        <cell> <m>t</m> (sec)</cell>
+                        <cell>0</cell>
+                        <cell>1</cell>
+                        <cell>2</cell>
+                        <cell>3</cell>
+                        <cell>4</cell>
+                        <cell>5</cell>
+                        <cell>6</cell>
+                    </row>
+
+                 
+
+                    <row>
+                        <cell> <m>y</m> (feet)</cell>
+                        <cell>6</cell>
+                        <cell>90</cell>
+                        <cell>142</cell>
+                        <cell>162</cell>
+                        <cell>150</cell>
+                        <cell>106</cell>
+                        <cell>30</cell>
+                    </row>
+
+                </tabular>
+            </table>
+
+                <p>
+                    <ol marker="a.">
+                        <li>
+                            <p>
+                                Did the grapefruit travel faster over the first  interval <m>0 \leq t \leq 1</m> or the second interval <m>1 \leq t \leq 2</m>?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Compute the average velocity of the grapefruit over the interval <m>4 \leq t \leq 5</m>.
+                                What is the significance of the sign of your answer?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The grapefruit traveled faster over the first interval <m>0 \leq t \leq 1</m> than the second interval <m>1 \leq t \leq 2</m>.
+                                If the data in the table can be modeled by <m>y=6+100t-16t^{2}</m>, fill in the table below to estimate the value of the instantaneous velocity at time <m>t=1</m> second.
+                                Then, give an expression for the average velocity <m>AV_{[a,a+h]}</m> of the grapefruit on the time interval <m>[a,a+h]</m>.
+                            </p>
+
+                        <table xml:id="GrapefruitTableData2" >
+                            <title>Average velocity of the grapefruit over various time intervals.</title>
+                            <tabular halign="center" bottom="minor" top="minor">
+                            <row header="yes" bottom="medium">
+                                    <cell><b>Time Interval</b></cell>
+                                    <cell><b>Average Velocity</b></cell>
+                                </row>
+
+
+                                <row>
+                                    <cell>[1,1.5]</cell>
+                                    <cell> </cell>
+                                </row>
+
+   
+
+                                <row>
+                                    <cell>[1,1.1]</cell>
+                                    <cell> </cell>
+                                </row>
+
+
+
+                                <row>
+                                    <cell>[1,1.01]</cell>
+                                    <cell> </cell>
+                                </row>
+
+
+
+                                <row>
+                                    <cell>[1,1.001]</cell>
+                                    <cell> </cell>
+                                </row>
+
+
+
+                                <row>
+                                    <cell>[1,1.0001]</cell>
+                                    <cell> </cell>
+                                </row>
+
+
+
+                                <row>
+                                    <cell>[0.999,1]</cell>
+                                    <cell> </cell>
+                                </row>
+
+
+
+                                <row>
+                                    <cell>[0.9999,1]</cell>
+                                    <cell> </cell>
+                                </row>
+
+                            </tabular>
+                        </table>
+
+                        </li>
+                    </ol>
+                </p>
+            </li>
+        </ol>
+    </p>
+</li>
+
+<li>
+    <p>
+        [SUBMIT] <alert>Explore</alert> the applet <url href="https://www.geogebra.org/m/PgzQcgRk">Average Velocity</url> which distinguishes velocity and speed. Answer all five questions posed to you.
+    </p>
+</li>
+</ul>
+
+
+<section>
+    <title>After class</title>
+
+<p>
+    Solidifying the concepts discussed in class through practice is necessary to build your skills.
+    Mathematics is not a spectator sport!
+</p>
+
+<ul>
+<li>
+    <p>
+        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-1-vel.html#ODz">Section 1.1.2</url>.
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=j8kJubOTkME&#x26;feature=emb_title">Finding Instantaneous Velocity (14:02)</url>.
+    </p>
+</li>
+
+<li>
+
+    <p>
+        Prompt <alert>Copilot</alert> “Use mathematical notation to give the precise relationship between instantaneous velocity and average velocity.”
+    </p>
+</li>
+
+<li>
+
+
+    <p>
+        Prompt <alert>Copilot</alert> “How is delta notation used in calculus?”
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Do</alert> the following exercise.
+    </p>
+
+
+</li>
+
+<li>
+    <p>
+        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-1-vel.html#Library__LoyolaChicago__Precalc__Chap1Sec2__Q10.pg">exercises 1-5 in section 1.1.4</url> of the text. These are interactive WebWork exercises intended to give you instantaneous feedback.
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Read</alert> summary in <url href="https://activecalculus.org/single/sec-1-1-vel.html#uKI">Section 1.1.3</url>.
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-1-vel.html#AvQf">written exercises 6-8 in section 1.1.4</url> of the text.
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+    </p>
+</li>
+</ul>
+</section>
+
+
+<section>
+    <title>Advanced learning objectives</title>
+
+<p>
+    In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+</p>
+
+<ul>
+    <li>
+        <p>
+            Interpret average velocity graphically.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Differentiate between instantaneous velocity and average velocity.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Determine the average velocity of an object on an interval starting at time <m>t=a</m> and ending at time <m>t=a+h</m>, where <m>a</m> is given but <m>h</m> is a variable.
+            Express the result in simplest form as a function of <m>h</m>.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Determine the instantaneous velocity at the single moment <m>t=a</m> given the average velocity of an object from time <m>t=a</m> to time <m>t=a+h</m>.
+        </p>
+    </li>
+</ul>
+</section>
+
+<section>
+    <title>Additional suggestions</title>
+<ul>
+    <li>
+        <p>
+            <alert>Do</alert> some experimentation with the following applet: <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_avg_ROC.html">Average and Instantaneous Rate of Change</url>. Attempt to answer all of the questions on the website.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <alert>Explore</alert> an <url href="https://www.geogebra.org/m/PUtKpmpx">Average Rate of Change of a Function Applet</url>.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=25900zwRK-0&#x26;feature=youtu.be">Average Velocity of Two Cars (5:04)</url>.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=QZejCQjzjU0&#x26;feature=youtu.be">Average Rates of Change (7:50)</url>.
+        </p>
+    </li>
+</ul>
+</section>
+
+<section xml:id="DP11Answers">
+    <title>Answers</title>
+
+<ol>
+    <li>
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        Don’t confuse Katherine’s distance with her velocity.
+                    </p>
+                    
+  <figure xml:id="figureKatherinesDistance">
+  <caption>Katherine's distance vs. time.</caption> 
+  <image xml:id="KatherinesDistancePic" width="50%">
+    <latex-image>
+  \begin{tikzpicture}[thick,scale=1] [domain=0:4]
+\draw[step=1cm,color=gray!50] (0,0) grid (4,4);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (4,0) node [above] at (4.5,0) {$t$ (minutes)};
+   %%\draw [black!80,line width=0.3pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$d$ (miles)};
+   %%\draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-4);
+   \draw [color=blue, line width=2pt] (0,0)--(1,0.5)--(2,2)--(2.33,2)--(4.33,4.25);
+%%\draw[color=blue, line width=1pt,domain=0:2]   plot (\x,{-0.2*(\x-2)^2+1});
+%%\draw[color=blue, line width=1pt,domain=2:2.75]   plot (\x,{-(\x-4)^2+5});
+%%\draw node[below] at (2,-0.5) {{\bf{Graph 1}}};
+\foreach \x/\xtext in { 1/30, 2/60, 3/90, 4/120}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/20,  2/40, 3/60, 4/80}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+</li>
+
+<li>
+<figure xml:id="figureKatherinesVelocity">
+  <caption>Katherine's velocity vs. time.</caption> 
+  <image xml:id="KatherinesVelocityPic" width="50%">
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1] [domain=0:4]
+\draw[step=1cm,color=gray!50] (0,0) grid (4,4);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (4,0) node [above] at (4.5,0) {$t$ (minutes)};
+   %%\draw [black!80,line width=0.3pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$v$ (mph)};
+   %%\draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-4);
+   \draw [color=blue, line width=2pt] (0,1)--(1,1);
+      \draw [color=blue, line width=2pt] (1,3)--(2,3);
+     \draw [color=blue, line width=2pt] (2,0)--(2.33,0);
+          \draw [color=blue, line width=2pt] (2.33,2)--(4.33,2);
+%%\draw[color=blue, line width=1pt,domain=0:2]   plot (\x,{-0.2*(\x-2)^2+1});
+%%\draw[color=blue, line width=1pt,domain=2:2.75]   plot (\x,{-(\x-4)^2+5});
+%%\draw node[below] at (2,-0.5) {{\bf{Graph 1}}};
+\foreach \x/\xtext in { 1/30, 2/60, 3/90, 4/120}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/20,  2/40, 3/60}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+  </latex-image>
+  </image>
+</figure>
+       
+                </li>
+
+                <li>
+                    <p>
+                        Katherine’s average speed is <m>\displaystyle v = \frac{85 \ {miles}}{130 \ {min}}\cdot \frac{60 \ {min}}{1 \ {hr}}\approx 39.23</m> mph.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Velocity is distance divided by time.
+            That is, <m>\displaystyle v = \frac{d}{t}</m>.
+        </p>
+
+        <p>
+            For the first leg of her trip, the time taken is <m>t_{1} = 0.75</m> hours.
+        </p>
+
+        <p>
+            For the second leg of her trip, the distance traveled is <m>d_{2} = 30</m> miles.
+        </p>
+
+        <p>
+            This information is useful in computing the total distance and the total time for the whole trip.
+            The total distance is 30 + 30 or 60 miles.
+            The total time taken is 0.75 + 0.5 = 1.25 hours.
+        </p>
+
+        <p>
+            So, her average velocity is <m>v = \frac{60 \ {miles}}{1.25 \ {hour}}= 48</m> mph.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            The first leg of Dale’s trip is 20 miles.
+            The second leg of Dale’s trip is 30 miles.
+        </p>
+
+        <p>
+            So, the average velocity on his trip is <m>v = \frac{50 \ {miles}}{1 \ {hour}}= 50</m> mph.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            In order to average 60 mph for the entire trip, the total time taken should be <m>\displaystyle t = \frac{2 \ {miles}}{60 \ {mph}}= \frac{1}{30}</m> or 2 minutes.
+        </p>
+
+        <p>
+            But, the first leg of the trip takes <m>\displaystyle t = \frac{1 \ {mile}}{30 \ {mph}}=</m> 2 minutes.
+            So it is impossible to average this velocity since it will take a positive amount of time to travel the second mile.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        The velocity on <m>0 \leq t \leq 1</m> is <m>\displaystyle \frac{\Delta y}{\Delta t}= \frac{90-6}{1-0}= 84</m> ft/sec.
+                    </p>
+
+                    <p>
+                        The velocity on <m>1 \leq t \leq 2</m> is <m>\displaystyle \frac{\Delta y}{\Delta t}= \frac{142-90}{2-1}= 52</m> ft/sec.
+                    </p>
+
+                    <p>
+                        The grapefruit traveled faster over the time interval <m>0 \leq t \leq 1</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        The average velocity on <m>[4,5]</m> is <m>\displaystyle \frac{\Delta y}{\Delta t}= \frac{106-150}{5-4}= -44</m> ft/sec.
+                        The negative sign tells us the grapefruit is travelling downward.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        The instantaneous velocity at time <m>t=1</m> is approximately 68 ft/sec.
+                    </p>
+
+<table xml:id="GrapefruitTableComputed" >
+        <title>Average velocities of the grapefruit on various intervals computed.</title> 
+     <tabular halign="center" bottom="minor" top="minor">
+      <row header="yes" bottom="medium">
+      <cell><b>Time Interval</b></cell>
+      <cell><b>Average Velocity</b></cell>
+    </row>
+    <row>
+      <cell>[1,1.5]</cell>
+      <cell>60 ft/sec</cell>
+    </row>
+    <row>
+      <cell>[1,1.1]</cell>
+      <cell>66.4 ft/sec</cell>
+    </row>
+    <row>
+      <cell>[1,1.01]</cell>
+      <cell>67.84 ft/sec</cell>
+    </row>
+    <row>
+      <cell>[1,1.001]</cell>
+      <cell>67.984 ft/sec</cell>
+    </row>
+    <row>
+      <cell>[1,1.0001]</cell>
+      <cell>67.9984 ft/sec</cell>
+    </row>
+    <row>
+      <cell>[0.999,1]</cell>
+      <cell>68.016 ft/sec</cell>
+    </row>
+    <row>
+      <cell>[0.9999,1]</cell>
+      <cell>68.0016 ft/sec</cell>
+    </row>
+  </tabular>
+</table>
+                </li>
+            </ol>
+        </p>
+    </li>
+</ol>
+</section>
+
+</handout>

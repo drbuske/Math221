@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 1.3 - The Derivative of a Function at a Point</title>
+
+<section xml:id="13Overview">
+    <title>Overview</title>
+
+<p>
+  Up next in our discussions is the definition of the foundational idea of nearly all first semester calculus: the <em>derivative</em> of a function at a point.
+  As you will see soon, the derivative relies upon the ideas of average rate of change and limits.
+  Indeed, the derivative is all about change that is happening instantaneously, and that instantaneous rate is the limit of corresponding average rates.
+  One especially important note at the outset: <em>the definition of the derivative is notationally complicated</em>.
+  As you read and study, pay close attention to the notation used in the definition of the derivative, and strive to not only know that notation by heart, but to make sense of it for yourself.
+</p>
+
+<p>
+  This section covers the following concepts: Average and instantaneous rate of change.  Definition of the derivative at a point.  Differentiability.  Units of the derivative.  Slope of the tangent line.
+</p>
+</section>
+
+<section xml:id="sec-13Basiclearningobjectives">
+  <title>Basic learning objectives</title>
+  
+<p>
+  These are the tasks you should be able to perform with reasonable
+  fluency when you arrive at our next class meeting.
+  Important new
+  vocabulary words are indicated <em>in italics</em>.
+</p>
+
+<ul>
+  <li>
+    <p>
+      State the definition of average rate of change and the definition of instantaneous rate of change of a function <m>f</m>.
+      Explain the difference between these two quantities.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      State the <em>definition of the derivative</em> of <m>f(x)</m> at a point <m>x=a</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Illustrate the average rate of change and the instantaneous rate of change on the graph of a function.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Describe the derivative in terms of the slope of a tangent line.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Give the units of the derivative of a function, given the units of the function and of the domain variable.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Explain the difference between the quantities <m>f(a)</m> and <m>f'(a)</m>.
+    </p>
+  </li>
+</ul>
+
+</section>
+
+<section xml:id="sec-13Toprepareforclass">
+  <title>To prepare for class</title>
+  
+
+<p>
+  Complete all actions listed below.
+  Respond to the questions highlighted with <em>Submit</em>.
+</p>
+
+<p>
+  A single .pdf should be uploaded to D2L Brightspace.
+  All answers should be briefly justified, whether justification is specifically requested or not.
+</p>
+<ul>
+<li>
+  <p>
+    <alert>Read</alert> the beginning of <url href="https://activecalculus.org/single/sec-1-3-derivative-pt.html">section 1.3</url> (up until the preview activity).
+  </p>
+</li>
+
+<li>
+
+  <p>
+    [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-3-derivative-pt.html#ltw">Preview Activity 1.3.1</url>.
+  </p>
+
+  <p>
+    <ul>
+      <li>
+        <p>
+          (Optional) <alert>Watch</alert> <url href="https://www.youtube.com/watch?v=2GUiQF9vkfs">video solution to Preview Activity 1.3.1</url>.
+        </p>
+      </li>
+    </ul>
+  </p>
+</li>
+
+<li>
+  <p>
+    <alert>Explore</alert> this applet: <url href="https://www.geogebra.org/m/hrydE2FP">Derivative at a Point</url>
+  </p>
+</li>
+
+<li>
+  
+
+  <p>
+    [Submit] <alert>Explore</alert> the applet: <url href="https://www.geogebra.org/m/tRHB4wNT">Investigating the Derivative of a Function at a Point</url>. Then, explain what the value of <m>m</m> in the applet represents. How can the applet be used to estimate the value of <m>f'(3)</m>? What is the approximate value of <m>f'(3)</m>?
+  </p>
+</li>
+
+<li>
+  <p>
+    <alert>Do</alert> these exercises using this applet: <url href="https://www.geogebra.org/m/YvaFWUzY">Secant and Tangent Lines</url>.
+  </p>
+
+  <p>
+    <ol>
+      <li>
+        <p>
+          Let <m>f(x) = 1/x</m>.
+        </p>
+<figure xml:id="figureGraphOf1OverX">
+  <caption>The graph of <m>f(x)=1/x</m> for <m>x &lt; 0</m>.</caption> 
+  <image xml:id="GraphOf1OverXPic" width="60%">
+    <latex-image>
+      \begin{tikzpicture}[thick,scale=1] [domain=-4:4]
+\draw[step=1cm,color=gray!50] (-4,-4) grid (4,4);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-4);
+\draw[color=linecolor, line width=2pt,domain=-3.75:-0.25]   plot (\x,1/\x);
+%%  node[above] at (2,1) {$f(3,y)$};
+\foreach \x/\xtext in {-4/-4, -3/-3, -2/-2,-1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-4/-4, -3/-3, -2/-2, -1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Sketch the rest of the graph of <m>f(x)</m>.
+              </p>
+              
+            </li>
+
+            <li>
+              <p>
+                Draw the <alert>secant line</alert> through <m>(2,f(2))</m>  and <m>(3,f(3))</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Determine the slope of the secant line  through <m>(2,f(2))</m> and <m>(2+h,f(2+h))</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Use the <url href="https://www.geogebra.org/m/YvaFWUzY">applet</url> to determine what  happens to these secant lines as <m>h \rightarrow 0</m>.
+                This unique line is called the  <alert>tangent line</alert>.
+                What is the apparent  slope of this tangent line?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Let <m>g(x) = 2^{x}</m>.
+          The graph of <m>g</m> is shown here.
+        </p>
+<figure xml:id="figureGraphOf2ToX">
+  <caption>The graph of <m>f(x)=2^x</m>.</caption> 
+  <image xml:id="GraphOf2ToXPic" width="60%">
+    <latex-image>
+  \begin{tikzpicture}[thick,scale=1] [domain=-4:4]
+\draw[step=1cm,color=gray!50] (-4,-1) grid (4,8);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,8) node [right] at (0,7.5) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-1);
+%%\draw[color=red, line width=2pt,domain=-3.75:3.75] (-4,-0.5) -- (-1,0.25) -- (0,0.5) -- (1,0.75) -- (2,1) -- (4,1.5);
+%%\fill [color=red] (-1,0.25) circle (3pt) node [above] at (-1,0.25) {$(-1,\frac{1}{2})$};
+%%\fill [color=red] (0,0.5) circle (3pt) node [above] at (0,0.5) {$(0,1)$};
+%%\draw[color=green, line width=2pt,domain=-3.75:3.75] plot (\x,0.5*\x+0.5);
+%%\fill [color=green] (1,1) circle (3pt) node [above] at (1,1) {$(1,2)$};
+\draw[color=linecolor, line width=2pt,domain=-3.75:3.75]   plot (\x,0.5*2^\x);
+\foreach \x/\xtext in {-4/-4, -3/-3, -2/-2,-1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-1/-2, 1/2, 3/6,  5/10, 7/14}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+        <p>
+          <ol>
+            <li>
+              <p>
+                Draw the <alert>secant line</alert> through  <m>(-1,g(-1))</m> and <m>(0,g(0))</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Determine an equation for the <alert>secant line</alert>  through <m>(0,g(0))</m> and <m>(1,g(1))</m>.
+                Illustrate on the same diagram.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Based on your results above, what can  you say about the slope of the  <em>tangent line</em> to <m>g(x)</m> at <m>x=0</m>?  It has a slope between...
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Use the <url href="https://www.geogebra.org/m/YvaFWUzY">applet</url> to determine what  happens to secant lines through <m>(0,g(0))</m>  and <m>(h,g(h))</m> as <m>h \rightarrow 0</m>.
+                Form a hypothesis about the slope of  the tangent line to <m>g(x)</m> at <m>x=0</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+
+      
+  
+        <li>
+          <p>
+            Re-read <url href="https://activecalculus.org/single/sec-1-3-derivative-pt.html#WaU">Example 1.3.8</url>.
+            Then, determine the equation  of the tangent line to <m>y=x^{3}</m> at <m>x=2</m>.
+            Sketch  this tangent line on the curve to verify its reasonableness.
+          </p>
+  <figure xml:id="figureGraphOfx3">
+  <caption>The graph of <m>y=x^3</m>.</caption> 
+  <image xml:id="GraphOfx3Pic" width="60%">
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.70] [domain=-3:3]
+\draw[step=1cm,color=gray!50] (-4,-4) grid (4,4);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-4);
+\draw[color=linecolor, line width=2pt,domain=-3.35:3.35]   plot (\x,0.1*\x*\x*\x);
+\foreach \x/\xtext in {-4/-4, -3/-3, -2/-2,-1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-4/-40,-2/-20, 2/20, 4/40}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+        </li>
+
+
+        <li>
+          <p>
+            For the function whose graph is given, arrange
+            the following numbers in increasing order.
+            Explain your reasoning.
+          </p>
+  <figure xml:id="figureOrderDerivatives">
+  <caption>The graph of <m>y=g(x)</m>.</caption> 
+  <image xml:id="OrderDerivativesPic" width="75%">
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.9] [domain=-3:3]
+\draw[step=1cm,color=gray!50] (-3,-2) grid (4,3);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5,0) node [below] at (4.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-3,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3) node [right] at (0,2.5) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-2);
+\draw[color=linecolor, line width=2pt,domain=-2.4:4.5,smooth]   plot (\x,{0.005*\x*(\x-2)*(\x+2)*(\x-7)*(\x-7)}) node [above] at (1.75,1) {$y=g(x)$};
+\foreach \x/\xtext in {  -2/-2,-1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+%%\foreach \y/\ytext in {-4/-4,-2/-20, 2/20, 4/40}
+    %%\draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+          <p>
+            <m>0 \ \ \ \ \ g'(-2) \ \ \ \ \ g'(0) \ \ \ \ \ g'(2) \ \ \ \ \ g'(4)</m>
+          </p>
+          
+
+        </li>
+
+        <li>
+          <p>
+            A car is traveling down a highway away from its starting location with distance function <m>\displaystyle d(t) = 8(t^{3} - 6t^{2} + 12t)</m> where <m>t</m> is in hours and <m>d</m> is in miles.
+          </p>
+
+<figure xml:id="figureDistanceHighway">
+  <caption>The graph of <m>d(t)=8(t^3-6t^2+12t)</m>.</caption> 
+  <image xml:id="DistanceHighway" width="35%">
+    <latex-image>
+       \begin{tikzpicture}[thick,scale=1.1] [domain=-3:3]
+\draw[step=1cm,color=gray!50] (0,0) grid (3,4);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (3,0) node [below] at (2.75,0) {$t$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,4) node [right] at (0,3.75) {$d$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+\draw[color=linecolor, line width=2pt,domain=0:3]   plot (\x,0.05*8*\x*\x*\x - 0.05*48*\x*\x + 0.05*96*\x);
+\foreach \x/\xtext in { 1/1, 2/2, 3/3}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/20, 2/40, 3/60}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+  </latex-image>
+  </image>
+</figure>
+
+          <p>
+            <ol>
+              <li>
+                <p>
+                  How far has the car traveled after 1, 2, and 3 hours?
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  What is the average velocity over the intervals <m>[0,1]</m>, <m>[1,2]</m>, and <m>[2,3]</m>?
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  The graph of <m>d(t)</m> on <m>[0,3]</m> is given.
+                </p>
+
+                <p>
+                  <ol>
+                    <li>
+                      <p>
+                        Does the car ever stop?
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        What is the average velocity over <m>[1,3]</m>? over <m>[1.5,2.5]</m>? over <m>[1.9,2.1]</m>?
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+                
+              </li>
+
+              <li>
+                <p>
+                  Estimate the instantaneous velocity at <m>t=2</m>.
+                  Give a physical interpretation of your answer.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find a function <m>f</m> and a number <m>a</m> such that
+          </p>
+
+          <p>
+            <ol>
+              <li>
+                <p>
+                  <m>\displaystyle \lim_{h \rightarrow 0}\frac{(2+h)^{5} - 32}{h}= f'(a)</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>\displaystyle \lim_{h \rightarrow 0}\frac{[(-1+h)^{3}-(-1+h)]-[(-1)^{3}-(-1)]}{h}= f'(a)</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  If <m>f</m> is an even function and <m>f'(4) = 5</m>, what is <m>f'(-4)</m>?
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  If <m>g</m> is an odd function and <m>g'(10) = 6</m>, what is <m>g'(-10)</m>?
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  If <m>f</m> is any even function, and <m>f'(0)</m> exists, what is <m>f'(0)</m>? Why?
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  If <m>f</m> is an odd function, what (if anything) can be said about <m>f'(0)</m>?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+
+
+    </ol>
+  </p>
+</li>
+
+<li>
+  <p>
+    <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-3-derivative-pt.html#dFt">section 1.3.1</url> up to Activity 1.3.2.
+  </p>
+</li>
+
+<li>
+  
+  <p>
+    [Submit] Ask <alert>Copilot</alert> “What is the definition of a derivative?” Does the limit definition it gives match that given in the textbook?
+  </p>
+</li>
+
+<li>
+
+  <p>
+    Ask <alert>Copilot</alert> “What is the secant line to a function <m>f(x)</m>?” Is the example given correct? Ask Copilot to draw the example it gives you.
+  </p>
+</li>
+
+<li>
+  <p>
+    <alert>Watch</alert> this video on calculating the derivative at a point: <url href="https://www.youtube.com/watch?v=fQ5yelPpFk0&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=9">Calculating the Derivative of a Function at a Point with Limits (9:11)</url>.
+  </p>
+</li>
+
+<li>
+  <p>
+    <alert>Watch</alert> the following video which gives an introduction to the concept of the derivative of a function at a point: <url href="https://www.youtube.com/watch?v=0zpQnwVaU28&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=9&#x26;t=0s">Quick Review: The Derivative of a Function at a Point (2:21)</url>.
+  </p>
+</li>
+</ul>
+
+</section>
+
+<section xml:id="sec-13Afterclass">
+  <title>After class</title>
+  
+
+<p>
+  Solidifying the concepts discussed in class through practice is necessary to build your skills.
+  Mathematics is not a spectator sport!
+</p>
+
+<ul>
+  <li>
+    <p>
+      <alert>Explore</alert> the derivative at a point by looking at another applet (or two): <url href="https://www.geogebra.org/m/GdHp3QzD">Derivative at a Point</url> or <url href="https://www.geogebra.org/m/ytfdrqbh">Derivative at a Point (2)</url>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> a video on finding the derivative at a point in a slightly more complicated context than the previous video: <url href="https://www.youtube.com/watch?v=OnqQGW7J89E&#x26;feature=youtu.be">Using the Limit Definition of a Derivative (7:03)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-3-derivative-pt.html#WsC">Exercises 1-5 in section 1.3</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> the following video, which explains how the derivative at a point can be obtained from a graph: <url href="https://www.youtube.com/watch?v=0DJPSYeLFpc&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=10">Derivative of a Function at a Point using Graphs (5:43)</url>.
+    </p>
+
+    <p>
+    </p>
+  </li>
+
+
+
+
+  <li>
+    <p>
+      <alert>Explore</alert> the following interactive applet by Marc Renault (make sure to follow the instructions listed under “Explore”): <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_at_a_point.html">Applet: The Derivative at a Point</url>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-3-derivative-pt.html#tnd">Exercises 6-9 in section 1.3</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+    </p>
+  </li>
+</ul>
+
+</section>
+
+<section xml:id="sec-13Advancedlearningobjectives">
+  <title>Advanced learning objectives</title>
+  
+
+
+<p>
+  In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+</p>
+
+<ul>
+  <li>
+    <p>
+      Use the definition of the derivative to find the instantaneous rate of change of a function at a particular point.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Compute the equation of the tangent line to a function’s graph at a specific point.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Interpret the meaning of the derivative obtained from a computation in a word problem in everyday terms, using correct units.
+    </p>
+  </li>
+</ul>
+
+</section>
+
+
+
+
+<section xml:id="secAnswers13">
+  <title>Answers</title>
+  
+
+
+<ol>
+  <li>
+    <p>
+      <ol>
+        <li>
+          <p>
+            The full graph of <m>f</m> is shown in <xref ref="figureGraphFull1OverX"/>.
+          </p>
+          <figure xml:id="figureGraphFull1OverX">
+  <caption>The graph of <m>f(x)=2^x</m> together with a secant line through <m>(2,f(2))</m> and <m>(3,f(3))</m>.</caption> 
+  <image xml:id="GraphFull1OverX" width="50%">
+    <latex-image>
+      \begin{tikzpicture}[thick,scale=1] [domain=-4:4]
+\draw[step=1cm,color=gray!50] (-4,-4) grid (4,4);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-4);
+\draw[color=linecolor, line width=2pt,domain=-3.75:-0.25]   plot (\x,1/\x);
+\draw[color=red, line width=1.5pt,domain=0.25:3.75] (0,0.85) -- (1,0.67) -- (2,0.5) -- (3,0.33) -- (4,0.16);
+\draw[color=linecolor, line width=2pt,domain=0.25:3.75]   plot (\x,1/\x);
+\fill [color=red] (2,0.5) circle (3pt) node [above] at (2,0.5) {$(2,\frac{1}{2})$};
+\fill [color=red] (3,0.33) circle (3pt) node [above] at (3,0.33) {$(3,\frac{1}{3})$};
+%%  node[above] at (2,1) {$f(3,y)$};
+\foreach \x/\xtext in {-4/-4, -3/-3, -2/-2,-1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-4/-4, -3/-3, -2/-2, -1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+  </latex-image>
+  </image>
+</figure>
+        </li>
+
+        <li>
+          <p>
+            The <alert>secant line</alert> through <m>(2,f(2))</m>  and <m>(3,f(3))</m> is shown in red in <xref ref="figureGraphFull1OverX"/>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\displaystyle \frac{-1}{2(2+h)}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The apparent slope is -1/4.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      The graph of <m>g(x) = 2^{x}</m> with secant and tangent lines appears in <xref ref="figureGraphOf2ToXAns"/>.
+    </p>
+
+    <figure xml:id="figureGraphOf2ToXAns">
+  <caption>The graph of <m>f(x)=2^x</m> with secant and tangent lines.</caption> 
+  <image xml:id="GraphOf2ToXAnsPic" width="60%">
+    <latex-image>
+  \begin{tikzpicture}[thick,scale=1] [domain=-4:4]
+\draw[step=1cm,color=gray!50] (-4,-1) grid (4,8);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,8) node [right] at (0,7.5) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-1);
+\draw[color=linecolor, line width=2pt,domain=-3.75:3.75]   plot (\x,0.5*2^\x);
+\draw[color=green, line width=2pt,domain=-3.75:3.75] plot (\x,0.5*\x+0.5);
+\fill [color=green] (1,1) circle (3pt) node [above] at (1,1) {$(1,2)$};\draw[color=red, line width=2pt,domain=-3.75:3.75] (-4,-0.5) -- (-1,0.25) -- (0,0.5) -- (1,0.75) -- (2,1) -- (4,1.5);
+\fill [color=red] (-1,0.25) circle (3pt) node [above] at (-1,0.25) {$(-1,\frac{1}{2})$};
+\fill [color=red] (0,0.5) circle (3pt) node [above] at (0,0.5) {$(0,1)$};
+\foreach \x/\xtext in {-4/-4, -3/-3, -2/-2,-1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-1/-2, 1/2, 3/6,  5/10, 7/14}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+    
+    <p>
+      <ol>
+        <li>
+          <p>
+            The secant line through <m>(-1,g(-1))</m>  and <m>(0,g(0))</m> is shown in red in <xref ref="figureGraphOf2ToXAns"/>..
+          </p>
+        </li>
+
+        <li>
+          <p>
+            An equation for the secant line is <m>y=x+1</m>.
+            It is shown as a green line in <xref ref="figureGraphOf2ToXAns"/>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Based on your results above, we can  say about the slope of the tangent  line to <m>g(x)</m> at <m>x=0</m> has a slope  between <m>\frac{1}{2}</m> and 1.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            As <m>h</m> approaches 0, we would guess that  the slope of the tangent line approaches  <m>\ln 2 \approx 0.69</m>.
+            [Later, we will see it is exactly  <m>\ln 2</m>.
+            For now, we estimate 0.7 or so.]
+          </p>
+        </li>
+      </ol>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      The equation of the tangent line to <m>y=x^{3}</m> at <m>x=2</m> is <m>y=12x-16</m>.
+      A sketch of this tangent line on the curve is shown in <xref ref="figureTangentX3Ans"/> in red.
+      To find this line, note that the slope of this line is <m>\displaystyle \lim_{h \rightarrow 0}\frac{(2+h)^{3}-2^{3}}{h}= 12</m>.
+      Then, recognize that <m>(2,8)</m> is a point on the line so that <m>y-8 = 12(x-2)</m> represents the line.
+    </p>
+    
+       <figure xml:id="figureTangentX3Ans">
+  <caption>The graph of the tangent line to <m>y=x^3</m> at <m>x=2</m> is <m>y=12x-16</m>.</caption> 
+  <image xml:id="TangentX3Pic" width="50%">
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.75] [domain=-3:3]
+\draw[step=1cm,color=gray!50] (-4,-4) grid (4,4);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-4);
+   \draw[color=red, line width=1.5pt,domain=-2.5:3.35]   plot (\x,0.1*12*\x - 1.6);
+\draw[color=linecolor, line width=2pt,domain=-3.35:3.35]   plot (\x,0.1*\x*\x*\x);
+   \fill [color=red] (2,0.8) circle (3pt) node [below] at (2.5,0.8) {$(2,8)$};
+%%  node[above] at (2,1) {$f(3,y)$};
+\foreach \x/\xtext in {-4/-4, -3/-3, -2/-2,-1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-4/-40,-2/-20, 2/20, 4/40}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+  </li>
+
+  <li>
+    <p>
+      <m>g'(0) &#x3C; 0 &#x3C; g'(4) &#x3C; g'(2) &#x3C; g'(-2)</m>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <ol>
+        <li>
+          <p>
+            <m>d(1)=56</m> miles, <m>d(2) = 64</m> miles, <m>d(3) = 72</m> miles
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\displaystyle AV_{[0,1]}= \frac{d(1)-d(0)}{1-0}= 56</m> mph, <m>\displaystyle AV_{[1,2]}= \frac{d(2)-d(1)}{2-1}= 8</m> mph, <m>\displaystyle AV_{[2,3]}= \frac{d(3)-d(2)}{3-2}= 8</m> mph
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Yes, it stops at time <m>t=2</m> (hours).
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>\displaystyle AV_{[1,3]}= \frac{d(3)-d(1)}{3-1}= 8</m> mph, <m>\displaystyle AV_{[1.5,2.5]}= \frac{d(2.5)-d(1.5)}{2.5-1.5}= 2</m> mph, <m>\displaystyle AV_{[1.9,2.1]}= \frac{d(2.1)-d(1.9)}{2.1-1.9}= 0.08</m> mph
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            We estimate the instantaneous velocity at <m>t=2</m> hours to be 0 mph (stopped).
+          </p>
+        </li>
+      </ol>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <ol>
+        <li>
+          <p>
+            <m>f(x) = x^{5}</m> where <m>a=5</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f(x) = x^{3}-x</m> where <m>a=-1</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <ol>
+        <li>
+          <p>
+            -5
+          </p>
+        </li>
+
+        <li>
+          <p>
+            6
+          </p>
+        </li>
+
+        <li>
+          <p>
+            0 (by symmetry)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Nothing
+          </p>
+        </li>
+      </ol>
+    </p>
+  </li>
+</ol>
+</section>
+
+</handout>

@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 1.2 - The Notion of a Limit</title>
+
+<section>
+    <title>Overview</title>
+<p>
+    We will now begin to investigate the idea of the <em>limit of a function</em> at a given input value.
+    Limits are important in calculus for many reasons, but perhaps most important for how they allow us to formally connect instantaneous velocity to average velocity.
+</p>
+
+<p>
+    This section covers the following concepts: Definition and notation of limits.
+    Graphical interpretation, table of values, algebraic computation.
+    Indeterminate form of type <m>0/0</m>.
+</p>
+</section>
+
+<section>
+    <title>Basic learning objectives</title>
+
+<p>
+    These are the tasks you should be able to perform with reasonable
+    fluency when you arrive at our next class meeting.
+    Important new
+    vocabulary words are indicated <em>in italics</em>.
+</p>
+
+<ul>
+    <li>
+        <p>
+            State the two related formulas for the average velocity of an object with position function <m>s</m> on an interval <m>[a,b]</m> and on the interval <m>[a,a+h]</m>.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Interpret the meaning of notation such as “<m>\displaystyle \lim_{x\rightarrow 2}f(x) =-3</m>.” Use limit notation.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Use computations of average velocity to determine instantaneous velocity.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Provide examples (both graphically and numerically) of functions that do not have a limit at a specific value.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Estimate/hypothesize the limit of a function at a point on a graph (or determine that it does not exist).
+        </p>
+    </li>
+</ul>
+</section>
+
+
+<section>
+    <title>To prepare for class</title>
+<p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+</p>
+
+<p>
+    A single .pdf should be uploaded to D2L Brightspace.
+    See the syllabus for grading rubric.
+    Strive to use valid notation and correct mathematical language and syntax.
+    All answers should be briefly justified, whether justification is specifically requested or not.
+</p>
+<ul>
+<li>
+    <p>
+        <alert>Read</alert> the beginning of <url href="https://activecalculus.org/single/sec-1-2-lim.html">section 1.2</url> (up until the preview activity).
+    </p>
+</li>
+
+<li>
+    <p>
+        [Submit] <alert>Do</alert> Preview Activity 1.2.1.
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-2-lim.html#BTI">section 1.2.1</url>: The Notion of Limit.
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Watch</alert> this video on evaluating limits from the graph of a function: <url href="https://www.youtube.com/watch?v=GZzJOAUOqLI&#x26;t=71s">Limits (6:01)</url>.
+    </p>
+</li>
+
+<li>
+    
+
+    <p>
+        [Submit] <alert>Do</alert> Example 1.2.4(a) in the textbook (without reading the solution), using the graph of the function: Use <url href="https://www.desmos.com/"> <em>Desmos</em> </url> to graph <m>f</m> (you define <m>f</m> by typing <m>f(x) = (4-x^{2})/(x+2)</m>, and you can click and drag points on the graph to see the precise coordinates). Finally, read the solution. Is the graph that <em>Desmos</em> produces accurate? Explain. Produce a screen capture of your work in doing Example 1.2.4(a) using <em>Desmos</em>.
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Watch</alert> this video on evaluating limits using graphing tools (<em>GeoGebra</em>): <url href="https://www.youtube.com/watch?v=5TFu_sh_orM">Limits of Functions Using Graphing Tools (6:26)</url>.
+    </p>
+</li>
+
+<li>
+    
+
+    <p>
+        [Submit] <alert>Redo</alert> Example 1.2.4(a) from the textbook using <url href="https://www.geogebra.org/classic?lang=en"> <em>GeoGebra</em> </url> rather than <em>Desmos</em>. Produce a screen capture of your work in doing Example 1.2.4(a) using <em>GeoGebra</em>.
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Do</alert> the following exercises.
+    </p>
+
+    <p>
+        <ol>
+            <li>
+                <p>
+                    Are the following statements about <m>f</m> true or false? Why?
+                </p>
+
+                <image width="50%" source="Math221Section22TransFigure1.jpg">
+                </image>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>x=a</m> is in the domain of <m>f</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\displaystyle \lim_{x \rightarrow a}f(x)</m> exists
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\displaystyle \lim_{x \rightarrow a^+}f(x)</m> is equal to <m>\displaystyle \lim_{x \rightarrow a^-}f(x)</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Sketch the graph of an example of a function <m>f</m> that satisfies all of the following: <m>\displaystyle \lim_{x \rightarrow 0}f(x) = 1</m>, <m>\displaystyle \lim_{x \rightarrow 3^-}f(x) = -2</m>, <m>\displaystyle \lim_{x \rightarrow 3^+}f(x) = 2</m>, <m>f(0) = -1</m>, and <m>f(3) = 1</m>.
+                </p>
+
+                <p>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    For the function <m>f</m> whose graph is given, state the value of each quantity, if it exists.
+                    If it does not exist, explain why.
+                </p>
+
+                <image width="90%" source="0202x06.jpg">
+                </image>
+
+                <ol>
+                    <li>
+                        <p>
+                            <m>\displaystyle \lim_{x \rightarrow -3^-}f(x)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\displaystyle \lim_{x \rightarrow -3^+}f(x)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\displaystyle \lim_{x \rightarrow -3}f(x)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>f(-3)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\displaystyle \lim_{x \rightarrow 0^-}f(x)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\displaystyle \lim_{x \rightarrow 0^+}f(x)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\displaystyle \lim_{x \rightarrow 0}f(x)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>f(0)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\displaystyle \lim_{x \rightarrow 2}f(x)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>f(2)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\displaystyle \lim_{x \rightarrow 5^+}f(x)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\displaystyle \lim_{x \rightarrow 5^-}f(x)</m>
+                        </p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </p>
+</li>
+</ul>
+</section>
+
+<section>
+    <title>After class</title>
+
+<p>
+    Solidifying the concepts discussed in class through practice is necessary to build your skills.
+    Mathematics is not a spectator sport!
+</p>
+<ul>
+<li>
+    <p>
+        <alert>Watch</alert> the following video, which shows how to estimate a limit from a table of function values: <url href="https://www.youtube.com/watch?v=GdBIiRzaTAQ&#x26;feature=emb_titlef">Limits of Functions Using Tables (5:57)</url>.
+    </p>
+</li>
+
+<li>
+
+    <p>
+        Prompt <alert>Copilot</alert> “I want to better understand limits in calculus.
+        Why can’t I just plug in values?”
+    </p>
+</li>
+
+<li>
+
+    <p>
+        Prompt <alert>Copilot</alert> “I’m in my first week of learning calculus.
+        What is this thing called an indeterminant form?”
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-2-lim.html#PxK">Exercises 1-4 in section 1.2.4 of the textbook</url>. These give you instantaneous feedback.
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Read</alert> the <url href="https://activecalculus.org/single/sec-1-2-lim.html#iaR">sections 1.2.2 and the summary in 1.2.3</url>.
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Watch</alert> the following video on using spreadsheets to investigate limits: <url href="https://www.youtube.com/watch?v=uAepmkpG34A">Limits of Functions Using Spreadsheets (5:37)</url>.
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Redo</alert> Example 1.2.4(a) in the textbook (without reading the solution), using a spreadsheet. Then, do Example 1.2.4(b) using a spreadsheet.
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-2-lim.html#oau">Exercises 5-8 in section 1.2.4</url>.
+    </p>
+</li>
+
+<li>
+    <p>
+        <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+    </p>
+</li>
+</ul>
+
+</section>
+
+<section>
+    <title>Advanced learning objectives</title>
+
+<p>
+    In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+</p>
+
+<ul>
+    <li>
+        <p>
+            Estimate the limit of a function at a point using the algebraic formula (or determine that it does not exist).
+            This includes indeterminate forms of type <m>0/0</m>.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Compute instantaneous velocities using both formulas.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Demonstrate instantaneous velocity graphically on a position graph.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Explain how instantaneous velocity is thought of as a <em>limit</em> of average velocities.
+        </p>
+    </li>
+</ul>
+
+</section>
+
+<section>
+    <title>Additional suggestions</title>
+<ul>
+    <li>
+        <p>
+            <alert>Watch</alert> the following video which gives an introduction to the concept of limits: <url href="https://www.youtube.com/watch?time_continue=507&#x26;v=L67TsATIJE0&#x26;feature=emb_title">Introduction to the Concept of Limits (9:29)</url>.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <alert>Watch</alert> the following video, which shows how to evaluate certain limits when the graph of the function is known: <url href="https://www.youtube.com/watch?v=3HMXcX-ZKnU&#x26;feature=emb_title">Evaluating Limits Using a Graph (9:51)</url>.
+        </p>
+    </li>
+
+</ul>
+
+</section>
+
+<section>
+    <title>Answers</title>
+<ol>
+    <li>
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        True; the function is defined (as per black dot)
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        True; the limits from the left and the right are the same
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        True; however, these limits do not equal <m>f(a)</m>
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Answer will vary.
+        </p>
+
+        <figure xml:id="figureDPAns122">
+  <caption>One possible graph.</caption> 
+  <image xml:id="DPAns122Pic" width="50%">
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=1] [domain=-4:4]
+\draw[step=1cm,color=gray!50] (-2,-3) grid (4,3);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-2,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3) node [right] at (0,2.5) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-3);
+\draw[color=linecolor, line width=2pt,domain=-2:0]   plot (\x,exp(-0.4*\x);
+\draw[color=linecolor, line width=2pt,domain=0:3]   plot (\x,1-\x);
+\draw[color=linecolor, line width=2pt,domain=3:4]   plot (\x,\x-1);
+\fill [color=linecolor] (0,-1) circle (3pt);
+\fill [color=linecolor] (3,1) circle (3pt);
+\draw [color=linecolor] (3,2) circle (3pt);
+\fill [color=white] (3,2) circle (2pt);
+\draw [color=linecolor] (3,-2) circle (3pt);
+\fill [color=white] (3,-2) circle (2pt);
+\draw [color=linecolor] (0,1) circle (3pt);
+\fill [color=white] (0,1) circle (2pt);
+%%  node[above] at (2,1) {$f(3,y)$};
+\foreach \x/\xtext in { -2/-2,-1/-1, 1/1, 2/2, 3/3}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-2/-2, -1/-1, 1/1, 2/2}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+        
+    </li>
+
+    <li>
+        <ol>
+            <li>
+                <p>
+                    <m>\displaystyle \lim_{x \rightarrow -3^-}f(x) = 4</m>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <m>\displaystyle \lim_{x \rightarrow -3^+}f(x) = 4</m>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <m>\displaystyle \lim_{x \rightarrow -3}f(x) = 4</m>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <m>f(-3)</m> does not exist
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <m>\displaystyle \lim_{x \rightarrow 0^-}f(x) = 1</m>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <m>\displaystyle \lim_{x \rightarrow 0^+}f(x) = -1</m>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <m>\displaystyle \lim_{x \rightarrow 0}f(x)</m> does not exist
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <m>f(0)= 1</m>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <m>\displaystyle \lim_{x \rightarrow 2}f(x) = 2</m>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <m>f(2)</m> does not exist
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <m>\displaystyle \lim_{x \rightarrow 5^+}f(x) = 3</m>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <m>\displaystyle \lim_{x \rightarrow 5^-}f(x)</m> does not exist
+                </p>
+            </li>
+        </ol>
+    </li>
+
+</ol>
+</section>
+
+</handout>
