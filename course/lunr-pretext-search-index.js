@@ -170,6 +170,69 @@ var ptx_lunr_docs = [
   "number": "15",
   "title": "",
   "body": " The graph of the tangent line to at is .     "
+},
+{
+  "id": "handouts-5",
+  "level": "1",
+  "url": "handouts-5.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Daily Prep 1.4 - The Derivative Function",
+  "body": " Daily Prep 1.4 - The Derivative Function   Overview  We have recently learned that we can describe the instantaneous rate of change of a function at a value by computing , provided this limit exists. When we can find , we understand that this value represents the instantaneous rate of change of the function with respect to the input variable, and also the slope of the tangent line to the curve at the point .  By viewing the constant as a variable in its own right, we will next begin thinking about how is itself a function, indeed a function that is related to - or derived from - the original function . One of the next big questions is: given a function , can we find a graph of or formula for or other information about this new function ?  The section covers the following topics: The derivative as a function. The relationship between the graph of and the graph of . Computing the derivative function of basic functions using the definition of the derivative.    Basic learning objectives  These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated in italics .    State the definition of the derivative function.    Illustrate on a graph how a function can fail to be differentiable at a point.      To prepare for class  Complete all actions listed below. Respond to the questions highlighted with Submit .     Read motivating questions and the paragraph following in section 1.4 (up until the preview activity).    [Submit] Do  Preview Activity 1.4.1 .     (Optional) Watch  video solution to Preview Activity 1.4.1 .        Read  section 1.4.1 up until Activity 1.4.2. Be sure to take note of the definition of the derivative as a function ( Definition 1.4.2 ).    [Submit] Explore the two applets mentioned in the text. The first applet, Graphing the derivative function is intended to experiment with moving the red point. For the second applet, The Derivative as a Function , answer the Explore questions found on the website. Submit a screen capture of the second applet, The Derivative as a Function as well as answers to the Explore questions found on the website.    Ask Copilot to create the graph of a simple function of your choosing and its derivative graph. Does the image produced make any sense?    Ask Copilot to produce an algorithm for you to calculate the derivative function for a function using the limit definition. Follow up by asking Copilot to illustrate how this algorithm works on . Finally, ask why the numerator was rationalized. Tell it that you feel like that is some sort of odd trick.    [Submit] Ask Copilot for alternate versions of the limit definition of the derivative of a function . Submit at least one alternate, but equivalent to that found in our textbook , version of the definition of that uses a limit.     Watch this video for an example of how to algebraically find the formula for the derivative function: Limit Definition of Derivative (5:36) .     Watch the following video which discusses the definition of the derivative as a function: Quick Review: The derivative function (2:38) .      Do these exercises.    Complete the table below with estimated values of the derivative of the function shown. Then, plot these ordered pairs from the table on the same set of axes. ‘Connect the dots’ to form a sketch of the graph of .    Plot the slopes of the graph of this function.       -2  -1  0  1  2  3  4  5                    Sketch the graph of from the graph of given.   The graph of is given. Sketch the graph of .         Does or have a larger domain?    Compare the values of   and .  What does this tell you?       Complete the following computation giving the derivative of the function . Then, graph and together.        Determine the values of , , , and if .    Sketch the graph of and .    Is differentiable at ? Is continuous at ?           After class  Solidifying the concepts discussed in class through practice is necessary to build your skills.     Watch the following video on trying to graph the derivative function: Try to Graph the Derivative Function (7:39) .     Watch another video on sketching a derivative graph: Sketching a Derivative Graph (6:13) .     Explore this applets that gives you practice identifying the graph of the derivative knowing the graph of a function: Identify the Derivative Function .     Do  Exercises 1-5 in section 1.4 .     Explore the following applet where you will try to graph the derivative function. Try to score above 80%! This is great practice for the exam.     Explore graph transformations with this applet: Derivatives and Graph Transformations . Make sure you write answers to the questions asked of you. This is a great applet and well worth your time exploring!     Explore the concept of antiderivative functions with this applet: Identify an Antiderivative Function .     Do  Exercises 6-9 in section 1.4 .     Start working on the MOMwork (MyOpenMath) assignment for this section.      Advanced learning objectives  In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:    Given a graph of a function , identify the graph of its derivative from a list, and describe aspects of the behavior of the graph of .    Sketch the graph of the derivative given the graph of .    Given an algebraic description of a function, derive a formula for the derivative function using the definition of the derivative.      Answers     The values in are estimates.   A table of the slopes of a given function.       -2  -1  0  1  2  3  4  5       6  2  -1  -2  -2  -1  1  4        The graph of is in red in .   The graph of given a graph of .         The domain of is larger than the domain of (note the holes).     while . This tells us that does not exist.       Be sure to master this type of computation!   The graph of in is in red.   The graph of given a graph of .            , , does not exist (the two one-sided limits are different), .    The graphs of and are shown in blue and red in respectively.   The graph of given a graph of .         is not differentiable at . is continuous at .         "
+},
+{
+  "id": "PlotTheSlopes",
+  "level": "2",
+  "url": "handouts-5.html#PlotTheSlopes",
+  "type": "Table",
+  "number": "16",
+  "title": "Plot the slopes of the graph of this function.",
+  "body": " Plot the slopes of the graph of this function.       -2  -1  0  1  2  3  4  5                 "
+},
+{
+  "id": "figureplotfprime4",
+  "level": "2",
+  "url": "handouts-5.html#figureplotfprime4",
+  "type": "Figure",
+  "number": "17",
+  "title": "",
+  "body": " The graph of is given. Sketch the graph of .     "
+},
+{
+  "id": "PlotTheSlopesAns",
+  "level": "2",
+  "url": "handouts-5.html#PlotTheSlopesAns",
+  "type": "Table",
+  "number": "18",
+  "title": "A table of the slopes of a given function.",
+  "body": " A table of the slopes of a given function.       -2  -1  0  1  2  3  4  5       6  2  -1  -2  -2  -1  1  4    "
+},
+{
+  "id": "figurepiecewisefprime",
+  "level": "2",
+  "url": "handouts-5.html#figurepiecewisefprime",
+  "type": "Figure",
+  "number": "19",
+  "title": "",
+  "body": " The graph of given a graph of .     "
+},
+{
+  "id": "figurepiecewisefprime2",
+  "level": "2",
+  "url": "handouts-5.html#figurepiecewisefprime2",
+  "type": "Figure",
+  "number": "20",
+  "title": "",
+  "body": " The graph of given a graph of .     "
+},
+{
+  "id": "figurepiecewisefprime3",
+  "level": "2",
+  "url": "handouts-5.html#figurepiecewisefprime3",
+  "type": "Figure",
+  "number": "21",
+  "title": "",
+  "body": " The graph of given a graph of .     "
 }
 ]
 
