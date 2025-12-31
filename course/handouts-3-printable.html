@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Daily Prep 1.2 - The Notion of a Limit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/print-worksheet.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus I">
+<meta property="book:author" content="Dale Buske">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.5';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.42217a82c75796c8.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.7e141ad8414abf4a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f4ab138da65f4203.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="http://drbuske.github.io/sacalc"><img src="external/SCSU_StC_Pri_DkBlkBG.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Calculus I</span> <span class="subtitle">MATH 221</span></a></h1>
+<p class="byline">Dale Buske</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="handouts-2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="handouts.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="handouts-4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth1 focused" data-preexpanded-levels="0" data-max-levels="1"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Daily Prep</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-2.html" class="internal"><span class="title">Daily Prep 1.1 - Average Velocity</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-6" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-7" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-8" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#DP11Answers" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout contains-active">
+<div class="toc-title-box"><a href="handouts-3.html" class="internal"><span class="title">Daily Prep 1.2 - The Notion of a Limit</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-5" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-6" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-8" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-4.html" class="internal"><span class="title">Daily Prep 1.3 - The Derivative of a Function at a Point</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#13Overview" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-13Basiclearningobjectives" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-13Toprepareforclass" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-13Afterclass" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-13Advancedlearningobjectives" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#secAnswers13" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="handout" id="handouts-3" data-margins="0.75in 0.75in 0.75in 0.75in"><h1 class="heading hide-type">
+<span class="type">Handout</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Daily Prep 1.2 - The Notion of a Limit</span><div class="print-links"><a href="handouts-3-printable.html" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h1>
+<section class="section" id="handouts-3-2"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Overview</span>
+</h2>
+<div class="para" id="handouts-3-2-2">We will now begin to investigate the idea of the <em class="emphasis">limit of a function</em> at a given input value. Limits are important in calculus for many reasons, but perhaps most important for how they allow us to formally connect instantaneous velocity to average velocity.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="handouts-3-2-3">This section covers the following concepts: Definition and notation of limits. Graphical interpretation, table of values, algebraic computation. Indeterminate form of type <span class="process-math">\(0/0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Overview"><a href="#handouts-3-2" title="Copy heading and permalink for Section: Overview" aria-label="Copy heading and permalink for Section: Overview">🔗</a></div></section><section class="section" id="handouts-3-3"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Basic learning objectives</span>
+</h2>
+<div class="para" id="handouts-3-3-2">These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated <em class="emphasis">in italics</em>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="handouts-3-3-3">
+<li id="handouts-3-3-3-1">
+<div class="para" id="handouts-3-3-3-1-1">State the two related formulas for the average velocity of an object with position function <span class="process-math">\(s\)</span> on an interval <span class="process-math">\([a,b]\)</span> and on the interval <span class="process-math">\([a,a+h]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-3-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-3-3-2">
+<div class="para" id="handouts-3-3-3-2-1">Interpret the meaning of notation such as “<span class="process-math">\(\displaystyle \lim_{x\rightarrow 2}f(x) =-3\text{.}\)</span>” Use limit notation.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-3-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-3-3-3">
+<div class="para" id="handouts-3-3-3-3-1">Use computations of average velocity to determine instantaneous velocity.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-3-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-3-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-3-3-4">
+<div class="para" id="handouts-3-3-3-4-1">Provide examples (both graphically and numerically) of functions that do not have a limit at a specific value.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-3-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-3-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-3-3-5">
+<div class="para" id="handouts-3-3-3-5-1">Estimate/hypothesize the limit of a function at a point on a graph (or determine that it does not exist).<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-3-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-3-3-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section: Basic learning objectives"><a href="#handouts-3-3" title="Copy heading and permalink for Section: Basic learning objectives" aria-label="Copy heading and permalink for Section: Basic learning objectives">🔗</a></div></section><section class="section" id="handouts-3-4"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">To prepare for class</span>
+</h2>
+<div class="para" id="handouts-3-4-2">Complete all actions listed below. Respond to the questions highlighted with <em class="emphasis">Submit</em>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="handouts-3-4-3">A single .pdf should be uploaded to D2L Brightspace. See the syllabus for grading rubric. Strive to use valid notation and correct mathematical language and syntax. All answers should be briefly justified, whether justification is specifically requested or not.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="handouts-3-4-4">
+<li id="handouts-3-4-4-1">
+<div class="para" id="handouts-3-4-4-1-1">
+<em class="alert">Read</em> the beginning of <a class="external" href="https://activecalculus.org/single/sec-1-2-lim.html" target="_blank">section 1.2</a> (up until the preview activity).<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-2">
+<div class="para" id="handouts-3-4-4-2-1">[Submit] <em class="alert">Do</em> Preview Activity 1.2.1.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-3">
+<div class="para" id="handouts-3-4-4-3-1">
+<em class="alert">Read</em> <a class="external" href="https://activecalculus.org/single/sec-1-2-lim.html#BTI" target="_blank">section 1.2.1</a>: The Notion of Limit.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-4">
+<div class="para" id="handouts-3-4-4-4-1">
+<em class="alert">Watch</em> this video on evaluating limits from the graph of a function: <a class="external" href="https://www.youtube.com/watch?v=GZzJOAUOqLI&amp;t=71s" target="_blank">Limits (6:01)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-5">
+<div class="para" id="handouts-3-4-4-5-1">[Submit] <em class="alert">Do</em> Example 1.2.4(a) in the textbook (without reading the solution), using the graph of the function: Use <a class="external" href="https://www.desmos.com/" target="_blank"><em class="emphasis">Desmos</em></a> to graph <span class="process-math">\(f\)</span> (you define <span class="process-math">\(f\)</span> by typing <span class="process-math">\(f(x) = (4-x^{2})/(x+2)\text{,}\)</span> and you can click and drag points on the graph to see the precise coordinates). Finally, read the solution. Is the graph that <em class="emphasis">Desmos</em> produces accurate? Explain. Produce a screen capture of your work in doing Example 1.2.4(a) using <em class="emphasis">Desmos</em>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-6">
+<div class="para" id="handouts-3-4-4-6-1">
+<em class="alert">Watch</em> this video on evaluating limits using graphing tools (<em class="emphasis">GeoGebra</em>): <a class="external" href="https://www.youtube.com/watch?v=5TFu_sh_orM" target="_blank">Limits of Functions Using Graphing Tools (6:26)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-7">
+<div class="para" id="handouts-3-4-4-7-1">[Submit] <em class="alert">Redo</em> Example 1.2.4(a) from the textbook using <a class="external" href="https://www.geogebra.org/classic?lang=en" target="_blank"><em class="emphasis">GeoGebra</em></a> rather than <em class="emphasis">Desmos</em>. Produce a screen capture of your work in doing Example 1.2.4(a) using <em class="emphasis">GeoGebra</em>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-8">
+<div class="para" id="handouts-3-4-4-8-1">
+<em class="alert">Do</em> the following exercises.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="handouts-3-4-4-8-2">
+<ol class="decimal" id="handouts-3-4-4-8-2-1">
+<li id="handouts-3-4-4-8-2-1-1">
+<div class="para" id="handouts-3-4-4-8-2-1-1-1">Are the following statements about <span class="process-math">\(f\)</span> true or false? Why?<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Math221Section22TransFigure1.jpg" class="contained"></div>
+<div class="para logical" id="handouts-3-4-4-8-2-1-1-3">
+<ol class="lower-alpha lower-alpha-level-1" id="handouts-3-4-4-8-2-1-1-3-1">
+<li id="handouts-3-4-4-8-2-1-1-3-1-1">
+<div class="para" id="handouts-3-4-4-8-2-1-1-3-1-1-1">
+<span class="process-math">\(x=a\)</span> is in the domain of <span class="process-math">\(f\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-1-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-1-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-8-2-1-1-3-1-2">
+<div class="para" id="handouts-3-4-4-8-2-1-1-3-1-2-1">
+<span class="process-math">\(\displaystyle \lim_{x \rightarrow a}f(x)\)</span> exists<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-1-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-1-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-8-2-1-1-3-1-3">
+<div class="para" id="handouts-3-4-4-8-2-1-1-3-1-3-1">
+<span class="process-math">\(\displaystyle \lim_{x \rightarrow a^+}f(x)\)</span> is equal to <span class="process-math">\(\displaystyle \lim_{x \rightarrow a^-}f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-1-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-1-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-8-2-1-2">
+<div class="para" id="handouts-3-4-4-8-2-1-2-1">Sketch the graph of an example of a function <span class="process-math">\(f\)</span> that satisfies all of the following: <span class="process-math">\(\displaystyle \lim_{x \rightarrow 0}f(x) = 1\text{,}\)</span> <span class="process-math">\(\displaystyle \lim_{x \rightarrow 3^-}f(x) = -2\text{,}\)</span> <span class="process-math">\(\displaystyle \lim_{x \rightarrow 3^+}f(x) = 2\text{,}\)</span> <span class="process-math">\(f(0) = -1\text{,}\)</span> and <span class="process-math">\(f(3) = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="handouts-3-4-4-8-2-1-2-2"><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-8-2-1-3">
+<div class="para" id="handouts-3-4-4-8-2-1-3-1">For the function <span class="process-math">\(f\)</span> whose graph is given, state the value of each quantity, if it exists. If it does not exist, explain why.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/0202x06.jpg" class="contained"></div>
+<ol class="lower-alpha lower-alpha-level-1" id="handouts-3-4-4-8-2-1-3-3">
+<li id="handouts-3-4-4-8-2-1-3-3-1">
+<div class="para" id="handouts-3-4-4-8-2-1-3-3-1-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \rightarrow -3^-}f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-3-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-8-2-1-3-3-2">
+<div class="para" id="handouts-3-4-4-8-2-1-3-3-2-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \rightarrow -3^+}f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-3-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-8-2-1-3-3-3">
+<div class="para" id="handouts-3-4-4-8-2-1-3-3-3-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \rightarrow -3}f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-3-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-3-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-8-2-1-3-3-4">
+<div class="para" id="handouts-3-4-4-8-2-1-3-3-4-1">
+<span class="process-math">\(\displaystyle f(-3)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-3-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-3-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-8-2-1-3-3-5">
+<div class="para" id="handouts-3-4-4-8-2-1-3-3-5-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \rightarrow 0^-}f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-3-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-3-3-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-8-2-1-3-3-6">
+<div class="para" id="handouts-3-4-4-8-2-1-3-3-6-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \rightarrow 0^+}f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-3-3-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-3-3-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-8-2-1-3-3-7">
+<div class="para" id="handouts-3-4-4-8-2-1-3-3-7-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \rightarrow 0}f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-3-3-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-3-3-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-8-2-1-3-3-8">
+<div class="para" id="handouts-3-4-4-8-2-1-3-3-8-1">
+<span class="process-math">\(\displaystyle f(0)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-3-3-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-3-3-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-8-2-1-3-3-9">
+<div class="para" id="handouts-3-4-4-8-2-1-3-3-9-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \rightarrow 2}f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-3-3-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-3-3-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-8-2-1-3-3-10">
+<div class="para" id="handouts-3-4-4-8-2-1-3-3-10-1">
+<span class="process-math">\(\displaystyle f(2)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-3-3-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-3-3-10" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-8-2-1-3-3-11">
+<div class="para" id="handouts-3-4-4-8-2-1-3-3-11-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \rightarrow 5^+}f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-3-3-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-3-3-11" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-4-4-8-2-1-3-3-12">
+<div class="para" id="handouts-3-4-4-8-2-1-3-3-12-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \rightarrow 5^-}f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2-1-3-3-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-3-3-12" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-4-4-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section: To prepare for class"><a href="#handouts-3-4" title="Copy heading and permalink for Section: To prepare for class" aria-label="Copy heading and permalink for Section: To prepare for class">🔗</a></div></section><section class="section" id="handouts-3-5"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">After class</span>
+</h2>
+<div class="para" id="handouts-3-5-2">Solidifying the concepts discussed in class through practice is necessary to build your skills. Mathematics is not a spectator sport!<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="handouts-3-5-3">
+<li id="handouts-3-5-3-1">
+<div class="para" id="handouts-3-5-3-1-1">
+<em class="alert">Watch</em> the following video, which shows how to estimate a limit from a table of function values: <a class="external" href="https://www.youtube.com/watch?v=GdBIiRzaTAQ&amp;feature=emb_titlef" target="_blank">Limits of Functions Using Tables (5:57)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-5-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-5-3-2">
+<div class="para" id="handouts-3-5-3-2-1">Prompt <em class="alert">Copilot</em> “I want to better understand limits in calculus. Why can’t I just plug in values?”<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-5-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-5-3-3">
+<div class="para" id="handouts-3-5-3-3-1">Prompt <em class="alert">Copilot</em> “I’m in my first week of learning calculus. What is this thing called an indeterminant form?”<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-5-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-5-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-5-3-4">
+<div class="para" id="handouts-3-5-3-4-1">
+<em class="alert">Do</em> <a class="external" href="https://activecalculus.org/single/sec-1-2-lim.html#PxK" target="_blank">Exercises 1-4 in section 1.2.4 of the textbook</a>. These give you instantaneous feedback.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-5-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-5-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-5-3-5">
+<div class="para" id="handouts-3-5-3-5-1">
+<em class="alert">Read</em> the <a class="external" href="https://activecalculus.org/single/sec-1-2-lim.html#iaR" target="_blank">sections 1.2.2 and the summary in 1.2.3</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-5-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-5-3-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-5-3-6">
+<div class="para" id="handouts-3-5-3-6-1">
+<em class="alert">Watch</em> the following video on using spreadsheets to investigate limits: <a class="external" href="https://www.youtube.com/watch?v=uAepmkpG34A" target="_blank">Limits of Functions Using Spreadsheets (5:37)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-5-3-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-5-3-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-5-3-7">
+<div class="para" id="handouts-3-5-3-7-1">
+<em class="alert">Redo</em> Example 1.2.4(a) in the textbook (without reading the solution), using a spreadsheet. Then, do Example 1.2.4(b) using a spreadsheet.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-5-3-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-5-3-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-5-3-8">
+<div class="para" id="handouts-3-5-3-8-1">
+<em class="alert">Do</em> <a class="external" href="https://activecalculus.org/single/sec-1-2-lim.html#oau" target="_blank">Exercises 5-8 in section 1.2.4</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-5-3-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-5-3-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-5-3-9">
+<div class="para" id="handouts-3-5-3-9-1">
+<em class="alert">Start working</em> on the <a class="external" href="https://www.myopenmath.com/index.php" target="_blank">MOMwork</a> (MyOpenMath) assignment for this section.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-5-3-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-5-3-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section: After class"><a href="#handouts-3-5" title="Copy heading and permalink for Section: After class" aria-label="Copy heading and permalink for Section: After class">🔗</a></div></section><section class="section" id="handouts-3-6"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Advanced learning objectives</span>
+</h2>
+<div class="para" id="handouts-3-6-2">In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="handouts-3-6-3">
+<li id="handouts-3-6-3-1">
+<div class="para" id="handouts-3-6-3-1-1">Estimate the limit of a function at a point using the algebraic formula (or determine that it does not exist). This includes indeterminate forms of type <span class="process-math">\(0/0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-6-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-6-3-2">
+<div class="para" id="handouts-3-6-3-2-1">Compute instantaneous velocities using both formulas.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-6-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-6-3-3">
+<div class="para" id="handouts-3-6-3-3-1">Demonstrate instantaneous velocity graphically on a position graph.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-6-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-6-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-6-3-4">
+<div class="para" id="handouts-3-6-3-4-1">Explain how instantaneous velocity is thought of as a <em class="emphasis">limit</em> of average velocities.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-6-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-6-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section: Advanced learning objectives"><a href="#handouts-3-6" title="Copy heading and permalink for Section: Advanced learning objectives" aria-label="Copy heading and permalink for Section: Advanced learning objectives">🔗</a></div></section><section class="section" id="handouts-3-7"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Additional suggestions</span>
+</h2>
+<ul class="disc" id="handouts-3-7-2">
+<li id="handouts-3-7-2-1">
+<div class="para" id="handouts-3-7-2-1-1">
+<em class="alert">Watch</em> the following video which gives an introduction to the concept of limits: <a class="external" href="https://www.youtube.com/watch?time_continue=507&amp;v=L67TsATIJE0&amp;feature=emb_title" target="_blank">Introduction to the Concept of Limits (9:29)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-7-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-3-7-2-2">
+<div class="para" id="handouts-3-7-2-2-1">
+<em class="alert">Watch</em> the following video, which shows how to evaluate certain limits when the graph of the function is known: <a class="external" href="https://www.youtube.com/watch?v=3HMXcX-ZKnU&amp;feature=emb_title" target="_blank">Evaluating Limits Using a Graph (9:51)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-7-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-3-7-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section: Additional suggestions"><a href="#handouts-3-7" title="Copy heading and permalink for Section: Additional suggestions" aria-label="Copy heading and permalink for Section: Additional suggestions">🔗</a></div></section><section class="section" id="handouts-3-8"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Answers</span>
+</h2>
+<ol class="decimal" id="handouts-3-8-2">
+<li id="handouts-3-8-2-1">
+<div class="para logical" id="handouts-3-8-2-1-1">
+<ol class="lower-alpha lower-alpha-level-1" id="handouts-3-8-2-1-1-1">
+<li id="handouts-3-8-2-1-1-1-1">
+<div class="para" id="handouts-3-8-2-1-1-1-1-1">True; the function is defined (as per black dot)<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#handouts-3-8-2-1-1-1-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="handouts-3-8-2-1-1-1-2">
+<div class="para" id="handouts-3-8-2-1-1-1-2-1">True; the limits from the left and the right are the same<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.b"><a href="#handouts-3-8-2-1-1-1-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+<li id="handouts-3-8-2-1-1-1-3">
+<div class="para" id="handouts-3-8-2-1-1-1-3-1">True; however, these limits do not equal <span class="process-math">\(f(a)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.c"><a href="#handouts-3-8-2-1-1-1-3" title="Copy heading and permalink for Item 1.c" aria-label="Copy heading and permalink for Item 1.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#handouts-3-8-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="handouts-3-8-2-2">
+<div class="para" id="handouts-3-8-2-2-1">Answer will vary.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="figureDPAns122"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/DPAns122Pic.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>One possible graph.<div class="autopermalink" data-description="Figure 7"><a href="#figureDPAns122" title="Copy heading and permalink for Figure 7" aria-label="Copy heading and permalink for Figure 7">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item 2"><a href="#handouts-3-8-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="handouts-3-8-2-3">
+<div class="para" id="p-derived-handouts-3-8-2-3"><ol class="lower-alpha lower-alpha-level-1" id="handouts-3-8-2-3-1">
+<li id="handouts-3-8-2-3-1-1">
+<div class="para" id="handouts-3-8-2-3-1-1-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \rightarrow -3^-}f(x) = 4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.a"><a href="#handouts-3-8-2-3-1-1" title="Copy heading and permalink for Item 3.a" aria-label="Copy heading and permalink for Item 3.a">🔗</a></div>
+</li>
+<li id="handouts-3-8-2-3-1-2">
+<div class="para" id="handouts-3-8-2-3-1-2-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \rightarrow -3^+}f(x) = 4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.b"><a href="#handouts-3-8-2-3-1-2" title="Copy heading and permalink for Item 3.b" aria-label="Copy heading and permalink for Item 3.b">🔗</a></div>
+</li>
+<li id="handouts-3-8-2-3-1-3">
+<div class="para" id="handouts-3-8-2-3-1-3-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \rightarrow -3}f(x) = 4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.c"><a href="#handouts-3-8-2-3-1-3" title="Copy heading and permalink for Item 3.c" aria-label="Copy heading and permalink for Item 3.c">🔗</a></div>
+</li>
+<li id="handouts-3-8-2-3-1-4">
+<div class="para" id="handouts-3-8-2-3-1-4-1">
+<span class="process-math">\(f(-3)\)</span> does not exist<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.d"><a href="#handouts-3-8-2-3-1-4" title="Copy heading and permalink for Item 3.d" aria-label="Copy heading and permalink for Item 3.d">🔗</a></div>
+</li>
+<li id="handouts-3-8-2-3-1-5">
+<div class="para" id="handouts-3-8-2-3-1-5-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \rightarrow 0^-}f(x) = 1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.e"><a href="#handouts-3-8-2-3-1-5" title="Copy heading and permalink for Item 3.e" aria-label="Copy heading and permalink for Item 3.e">🔗</a></div>
+</li>
+<li id="handouts-3-8-2-3-1-6">
+<div class="para" id="handouts-3-8-2-3-1-6-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \rightarrow 0^+}f(x) = -1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-3-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.f"><a href="#handouts-3-8-2-3-1-6" title="Copy heading and permalink for Item 3.f" aria-label="Copy heading and permalink for Item 3.f">🔗</a></div>
+</li>
+<li id="handouts-3-8-2-3-1-7">
+<div class="para" id="handouts-3-8-2-3-1-7-1">
+<span class="process-math">\(\displaystyle \lim_{x \rightarrow 0}f(x)\)</span> does not exist<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-3-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.g"><a href="#handouts-3-8-2-3-1-7" title="Copy heading and permalink for Item 3.g" aria-label="Copy heading and permalink for Item 3.g">🔗</a></div>
+</li>
+<li id="handouts-3-8-2-3-1-8">
+<div class="para" id="handouts-3-8-2-3-1-8-1">
+<span class="process-math">\(\displaystyle f(0)= 1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-3-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.h"><a href="#handouts-3-8-2-3-1-8" title="Copy heading and permalink for Item 3.h" aria-label="Copy heading and permalink for Item 3.h">🔗</a></div>
+</li>
+<li id="handouts-3-8-2-3-1-9">
+<div class="para" id="handouts-3-8-2-3-1-9-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \rightarrow 2}f(x) = 2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-3-1-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.i"><a href="#handouts-3-8-2-3-1-9" title="Copy heading and permalink for Item 3.i" aria-label="Copy heading and permalink for Item 3.i">🔗</a></div>
+</li>
+<li id="handouts-3-8-2-3-1-10">
+<div class="para" id="handouts-3-8-2-3-1-10-1">
+<span class="process-math">\(f(2)\)</span> does not exist<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-3-1-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.j"><a href="#handouts-3-8-2-3-1-10" title="Copy heading and permalink for Item 3.j" aria-label="Copy heading and permalink for Item 3.j">🔗</a></div>
+</li>
+<li id="handouts-3-8-2-3-1-11">
+<div class="para" id="handouts-3-8-2-3-1-11-1">
+<span class="process-math">\(\displaystyle \displaystyle \lim_{x \rightarrow 5^+}f(x) = 3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-3-1-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.k"><a href="#handouts-3-8-2-3-1-11" title="Copy heading and permalink for Item 3.k" aria-label="Copy heading and permalink for Item 3.k">🔗</a></div>
+</li>
+<li id="handouts-3-8-2-3-1-12">
+<div class="para" id="handouts-3-8-2-3-1-12-1">
+<span class="process-math">\(\displaystyle \lim_{x \rightarrow 5^-}f(x)\)</span> does not exist<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-8-2-3-1-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.l"><a href="#handouts-3-8-2-3-1-12" title="Copy heading and permalink for Item 3.l" aria-label="Copy heading and permalink for Item 3.l">🔗</a></div>
+</li>
+</ol></div>
+<div class="autopermalink" data-description="Item 3"><a href="#handouts-3-8-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Section: Answers"><a href="#handouts-3-8" title="Copy heading and permalink for Section: Answers" aria-label="Copy heading and permalink for Section: Answers">🔗</a></div></section><div class="autopermalink" data-description="Handout: Daily Prep 1.2 - The Notion of a Limit"><a href="#handouts-3" title="Copy heading and permalink for Handout: Daily Prep 1.2 - The Notion of a Limit" aria-label="Copy heading and permalink for Handout: Daily Prep 1.2 - The Notion of a Limit">🔗</a></div></section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="handouts-2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="handouts-4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

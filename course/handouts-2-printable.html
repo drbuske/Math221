@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Daily Prep 1.1 - Average Velocity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/print-worksheet.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus I">
+<meta property="book:author" content="Dale Buske">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.5';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.42217a82c75796c8.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.7e141ad8414abf4a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f4ab138da65f4203.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="http://drbuske.github.io/sacalc"><img src="external/SCSU_StC_Pri_DkBlkBG.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Calculus I</span> <span class="subtitle">MATH 221</span></a></h1>
+<p class="byline">Dale Buske</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="handouts.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="handouts.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="handouts-3.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth1 focused" data-preexpanded-levels="0" data-max-levels="1"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Daily Prep</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-handout contains-active">
+<div class="toc-title-box"><a href="handouts-2.html" class="internal"><span class="title">Daily Prep 1.1 - Average Velocity</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-6" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-7" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-8" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#DP11Answers" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-3.html" class="internal"><span class="title">Daily Prep 1.2 - The Notion of a Limit</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-5" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-6" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-8" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-4.html" class="internal"><span class="title">Daily Prep 1.3 - The Derivative of a Function at a Point</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#13Overview" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-13Basiclearningobjectives" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-13Toprepareforclass" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-13Afterclass" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-13Advancedlearningobjectives" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#secAnswers13" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="handout" id="handouts-2" data-margins="0.75in 0.75in 0.75in 0.75in"><h1 class="heading hide-type">
+<span class="type">Handout</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Daily Prep 1.1 - Average Velocity</span><div class="print-links"><a href="handouts-2-printable.html" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h1>
+<section class="section" id="handouts-2-2"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Overview</span>
+</h2>
+<div class="para" id="handouts-2-2-2">This section discusses the following concepts: Average velocity. Slope of a secant line. Instantaneous velocity.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Overview"><a href="#handouts-2-2" title="Copy heading and permalink for Section: Overview" aria-label="Copy heading and permalink for Section: Overview">🔗</a></div></section><section class="section" id="handouts-2-3"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Basic learning objectives</span>
+</h2>
+<div class="para" id="handouts-2-3-2">These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated <em class="emphasis">in italics</em>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="handouts-2-3-3">
+<li id="handouts-2-3-3-1">
+<div class="para" id="handouts-2-3-3-1-1">Determine the position of an object at a specific time given a position function for the object.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-3-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-3-3-2">
+<div class="para" id="handouts-2-3-3-2-1">Compute the average velocity of an object on a specific time interval.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-3-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-3-3-3">
+<div class="para" id="handouts-2-3-3-3-1">State the units of the average velocity of an object.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-3-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-3-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section: Basic learning objectives"><a href="#handouts-2-3" title="Copy heading and permalink for Section: Basic learning objectives" aria-label="Copy heading and permalink for Section: Basic learning objectives">🔗</a></div></section><section class="section" id="handouts-2-4"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">To prepare for class</span>
+</h2>
+<div class="para" id="handouts-2-4-2">Complete all actions listed below. Respond to the questions highlighted with <em class="emphasis">Submit</em>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="handouts-2-4-3">A single .pdf should be uploaded to D2L Brightspace. See the syllabus for grading rubric. It is not necessary to re-state the questions. Instead, simply enumerate your responses clearly. Strive to use valid notation and correct mathematical language and syntax. All answers should be briefly justified, whether justification is specifically requested or not.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: To prepare for class"><a href="#handouts-2-4" title="Copy heading and permalink for Section: To prepare for class" aria-label="Copy heading and permalink for Section: To prepare for class">🔗</a></div></section><ul class="disc" id="handouts-2-5">
+<li id="handouts-2-5-1">
+<div class="para" id="handouts-2-5-1-1">
+<em class="alert">Read</em> the motivating questions and introduction to <a class="external" href="https://activecalculus.org/single/sec-1-1-vel.html#Cph" target="_blank">Section 1.1</a> (up to Preview Activity 1.1.1).<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-5-2">
+<div class="para" id="handouts-2-5-2-1">[SUBMIT] <em class="alert">Do</em> <a class="external" href="https://activecalculus.org/single/sec-1-1-vel.html#udo" target="_blank">Preview Activity 1.1.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="handouts-2-5-2-2">
+<ul class="circle" id="handouts-2-5-2-2-1"><li id="handouts-2-5-2-2-1-1">
+<div class="para" id="handouts-2-5-2-2-1-1-1">(Optional) <em class="alert">Watch</em> a <a class="external" href="https://www.youtube.com/watch?v=hWYcIde_b7o" target="_blank">video solution using Desmos to Preview Activity 1.1.1 (5:48)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-5-3">
+<div class="para" id="handouts-2-5-3-1">
+<em class="alert">Read</em> <a class="external" href="https://activecalculus.org/single/sec-1-1-vel.html#iwq" target="_blank">Section 1.1.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-5-4">
+<div class="para" id="handouts-2-5-4-1">
+<em class="alert">Watch</em> video <a class="external" href="https://www.youtube.com/watch?time_continue=3&amp;v=6HPe7iwr88k&amp;feature=emb_title" target="_blank">Using the Average Velocity Formula (7:38)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-5-5">
+<div class="para" id="handouts-2-5-5-1">[SUBMIT] <em class="alert">Watch</em> video <a class="external" href="https://www.youtube.com/watch?time_continue=6&amp;v=O_Z9osv6VGk&amp;feature=emb_title" target="_blank">Alternative Average Velocity Formula (11:05)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="handouts-2-5-5-2">
+<ol class="lower-alpha lower-alpha-level-1" id="handouts-2-5-5-2-1">
+<li id="handouts-2-5-5-2-1-1">
+<div class="para" id="handouts-2-5-5-2-1-1-1">What is the expression for <span class="process-math">\(s(0.2+h)\)</span> calculated in the video? [Hint: It is written in blue ink at about the 9 minute mark.]<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-5-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-5-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-5-5-2-1-2">
+<div class="para" id="handouts-2-5-5-2-1-2-1">How does this expression compare to <span class="process-math">\(s(0.2)+h\text{?}\)</span> Is it the same? If so, why? If not, why not?<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-5-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-5-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-5-6">
+<div class="para" id="handouts-2-5-6-1">
+<em class="alert">Do</em> the following exercises. [Note: Answers are provided below.]<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="handouts-2-5-6-2">
+<ol class="decimal ol-marker-1" id="handouts-2-5-6-2-1">
+<li id="handouts-2-5-6-2-1-1">
+<div class="para" id="handouts-2-5-6-2-1-1-1">Katherine takes a trip from Saint Cloud to Minneapolis. Due to road construction, she drives the first 10 miles at a constant speed of 20 MPH. For the next 30 miles she maintains a constant speed of 60 MPH and then stops at McDonald’s for 10 minutes for a snack. She drives the next 45 miles at a constant speed of 45 MPH.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-6-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="handouts-2-5-6-2-1-1-2">
+<ol class="lower-alpha ol-marker-2" id="handouts-2-5-6-2-1-1-2-1">
+<li id="handouts-2-5-6-2-1-1-2-1-1">
+<div class="para" id="handouts-2-5-6-2-1-1-2-1-1-1">Draw and label a graph which shows her distance <span class="process-math">\(d\)</span> along the road from her starting point as a function of time <span class="process-math">\(t\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-6-2-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-6-2-1-1-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-5-6-2-1-1-2-1-2">
+<div class="para" id="handouts-2-5-6-2-1-1-2-1-2-1">Draw and label a graph which shows her velocity <span class="process-math">\(v\)</span> as a function of time <span class="process-math">\(t\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-6-2-1-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-6-2-1-1-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-5-6-2-1-1-2-1-3">
+<div class="para" id="handouts-2-5-6-2-1-1-2-1-3-1">What is her average speed for the trip (including the stop at McDonald’s)?<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-6-2-1-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-6-2-1-1-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-6-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-6-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-5-6-2-1-2">
+<div class="para" id="handouts-2-5-6-2-1-2-1">Katherine takes another trip. She travels for 30 <em class="emphasis">miles</em> with an average velocity of 40 MPH, and then for 30 minutes at 60 MPH. What is her average velocity for the 60-mile trip?<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-6-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-6-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-5-6-2-1-3">
+<div class="para" id="handouts-2-5-6-2-1-3-1">Dale travels for 30 <em class="emphasis">minutes</em> at 40 MPH and then for 30 minutes at 60 MPH. Find Dale’s average velocity in the one hour period.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-6-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-6-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-5-6-2-1-4">
+<div class="para" id="handouts-2-5-6-2-1-4-1">A car is to travel two miles. It goes the first mile at an average velocity of 30 MPH. The driver wishes to average 60 MPH for the entire two-mile trip. Is this possible? Explain.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-6-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-6-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-5-6-2-1-5">
+<div class="para" id="handouts-2-5-6-2-1-5-1">We look at the speed of a grapefruit that is thrown straight upward into the air at <span class="process-math">\(t=0\)</span> seconds.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-6-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="GrapefruitPic"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/fig_02_01.jpg" class="contained" alt="A curve showing the height of a grapefruit over time.  The curve increases, reaches a peak, and then decreases."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Height of a grapefruit over time.<div class="autopermalink" data-description="Figure 1"><a href="#GrapefruitPic" title="Copy heading and permalink for Figure 1" aria-label="Copy heading and permalink for Figure 1">🔗</a></div></figcaption></figure><div class="para" id="handouts-2-5-6-2-1-5-3">The grapefruit leaves the thrower’s hand at high speed, slows down until it reaches its maximum height, and then speeds up in the downward direction and finally, “Splat!”.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-6-2-1-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="GrapefruitTableData"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Height of the grapefruit above the ground.<div class="autopermalink" data-description="Table 2: Height of the grapefruit above the ground."><a href="#GrapefruitTableData" title="Copy heading and permalink for Table 2: Height of the grapefruit above the ground." aria-label="Copy heading and permalink for Table 2: Height of the grapefruit above the ground.">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r0 l0 t1 lines">
+<span class="process-math">\(t\)</span> (sec)</td>
+<td class="c m b2 r0 l0 t1 lines">0</td>
+<td class="c m b2 r0 l0 t1 lines">1</td>
+<td class="c m b2 r0 l0 t1 lines">2</td>
+<td class="c m b2 r0 l0 t1 lines">3</td>
+<td class="c m b2 r0 l0 t1 lines">4</td>
+<td class="c m b2 r0 l0 t1 lines">5</td>
+<td class="c m b2 r0 l0 t1 lines">6</td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">
+<span class="process-math">\(y\)</span> (feet)</td>
+<td class="c m b1 r0 l0 t0 lines">6</td>
+<td class="c m b1 r0 l0 t0 lines">90</td>
+<td class="c m b1 r0 l0 t0 lines">142</td>
+<td class="c m b1 r0 l0 t0 lines">162</td>
+<td class="c m b1 r0 l0 t0 lines">150</td>
+<td class="c m b1 r0 l0 t0 lines">106</td>
+<td class="c m b1 r0 l0 t0 lines">30</td>
+</tr>
+</table></div></figure><div class="para logical" id="handouts-2-5-6-2-1-5-5">
+<ol class="lower-alpha ol-marker-2" id="handouts-2-5-6-2-1-5-5-1">
+<li id="handouts-2-5-6-2-1-5-5-1-1">
+<div class="para" id="handouts-2-5-6-2-1-5-5-1-1-1">Did the grapefruit travel faster over the first  interval <span class="process-math">\(0 \leq t \leq 1\)</span> or the second interval <span class="process-math">\(1 \leq t \leq 2\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-6-2-1-5-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-6-2-1-5-5-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-5-6-2-1-5-5-1-2">
+<div class="para" id="handouts-2-5-6-2-1-5-5-1-2-1">Compute the average velocity of the grapefruit over the interval <span class="process-math">\(4 \leq t \leq 5\text{.}\)</span> What is the significance of the sign of your answer?<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-6-2-1-5-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-6-2-1-5-5-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-5-6-2-1-5-5-1-3">
+<div class="para" id="handouts-2-5-6-2-1-5-5-1-3-1">The grapefruit traveled faster over the first interval <span class="process-math">\(0 \leq t \leq 1\)</span> than the second interval <span class="process-math">\(1 \leq t \leq 2\text{.}\)</span> If the data in the table can be modeled by <span class="process-math">\(y=6+100t-16t^{2}\text{,}\)</span> fill in the table below to estimate the value of the instantaneous velocity at time <span class="process-math">\(t=1\)</span> second. Then, give an expression for the average velocity <span class="process-math">\(AV_{[a,a+h]}\)</span> of the grapefruit on the time interval <span class="process-math">\([a,a+h]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-6-2-1-5-5-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="GrapefruitTableData2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Average velocity of the grapefruit over various time intervals.<div class="autopermalink" data-description="Table 3: Average velocity of the grapefruit over various time intervals."><a href="#GrapefruitTableData2" title="Copy heading and permalink for Table 3: Average velocity of the grapefruit over various time intervals." aria-label="Copy heading and permalink for Table 3: Average velocity of the grapefruit over various time intervals.">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b2 r0 l0 t1 lines">Time Interval</th>
+<th scope="col" class="c m b2 r0 l0 t1 lines">Average Velocity</th>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">[1,1.5]</td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">[1,1.1]</td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">[1,1.01]</td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">[1,1.001]</td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">[1,1.0001]</td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">[0.999,1]</td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">[0.9999,1]</td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure><div class="autopermalink" data-description="Item"><a href="#handouts-2-5-6-2-1-5-5-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-6-2-1-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-6-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-5-7">
+<div class="para" id="handouts-2-5-7-1">[SUBMIT] <em class="alert">Explore</em> the applet <a class="external" href="https://www.geogebra.org/m/PgzQcgRk" target="_blank">Average Velocity</a> which distinguishes velocity and speed. Answer all five questions posed to you.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-5-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-5-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<section class="section" id="handouts-2-6"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">After class</span>
+</h2>
+<div class="para" id="handouts-2-6-2">Solidifying the concepts discussed in class through practice is necessary to build your skills. Mathematics is not a spectator sport!<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="handouts-2-6-3">
+<li id="handouts-2-6-3-1">
+<div class="para" id="handouts-2-6-3-1-1">
+<em class="alert">Read</em> <a class="external" href="https://activecalculus.org/single/sec-1-1-vel.html#ODz" target="_blank">Section 1.1.2</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-6-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-6-3-2">
+<div class="para" id="handouts-2-6-3-2-1">
+<em class="alert">Watch</em> video <a class="external" href="https://www.youtube.com/watch?v=j8kJubOTkME&amp;feature=emb_title" target="_blank">Finding Instantaneous Velocity (14:02)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-6-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-6-3-3">
+<div class="para" id="handouts-2-6-3-3-1">Prompt <em class="alert">Copilot</em> “Use mathematical notation to give the precise relationship between instantaneous velocity and average velocity.”<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-6-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-6-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-6-3-4">
+<div class="para" id="handouts-2-6-3-4-1">Prompt <em class="alert">Copilot</em> “How is delta notation used in calculus?”<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-6-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-6-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-6-3-5">
+<div class="para" id="handouts-2-6-3-5-1">
+<em class="alert">Do</em> the following exercise.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-6-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-6-3-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-6-3-6">
+<div class="para" id="handouts-2-6-3-6-1">
+<em class="alert">Do</em> <a class="external" href="https://activecalculus.org/single/sec-1-1-vel.html#Library__LoyolaChicago__Precalc__Chap1Sec2__Q10.pg" target="_blank">exercises 1-5 in section 1.1.4</a> of the text. These are interactive WebWork exercises intended to give you instantaneous feedback.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-6-3-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-6-3-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-6-3-7">
+<div class="para" id="handouts-2-6-3-7-1">
+<em class="alert">Read</em> summary in <a class="external" href="https://activecalculus.org/single/sec-1-1-vel.html#uKI" target="_blank">Section 1.1.3</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-6-3-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-6-3-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-6-3-8">
+<div class="para" id="handouts-2-6-3-8-1">
+<em class="alert">Do</em> <a class="external" href="https://activecalculus.org/single/sec-1-1-vel.html#AvQf" target="_blank">written exercises 6-8 in section 1.1.4</a> of the text.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-6-3-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-6-3-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-6-3-9">
+<div class="para" id="handouts-2-6-3-9-1">
+<em class="alert">Start working</em> on the <a class="external" href="https://www.myopenmath.com/index.php" target="_blank">MOMwork</a> (MyOpenMath) assignment for this section.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-6-3-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-6-3-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section: After class"><a href="#handouts-2-6" title="Copy heading and permalink for Section: After class" aria-label="Copy heading and permalink for Section: After class">🔗</a></div></section><section class="section" id="handouts-2-7"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Advanced learning objectives</span>
+</h2>
+<div class="para" id="handouts-2-7-2">In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="handouts-2-7-3">
+<li id="handouts-2-7-3-1">
+<div class="para" id="handouts-2-7-3-1-1">Interpret average velocity graphically.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-7-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-7-3-2">
+<div class="para" id="handouts-2-7-3-2-1">Differentiate between instantaneous velocity and average velocity.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-7-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-7-3-3">
+<div class="para" id="handouts-2-7-3-3-1">Determine the average velocity of an object on an interval starting at time <span class="process-math">\(t=a\)</span> and ending at time <span class="process-math">\(t=a+h\text{,}\)</span> where <span class="process-math">\(a\)</span> is given but <span class="process-math">\(h\)</span> is a variable. Express the result in simplest form as a function of <span class="process-math">\(h\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-7-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-7-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-7-3-4">
+<div class="para" id="handouts-2-7-3-4-1">Determine the instantaneous velocity at the single moment <span class="process-math">\(t=a\)</span> given the average velocity of an object from time <span class="process-math">\(t=a\)</span> to time <span class="process-math">\(t=a+h\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-7-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-7-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section: Advanced learning objectives"><a href="#handouts-2-7" title="Copy heading and permalink for Section: Advanced learning objectives" aria-label="Copy heading and permalink for Section: Advanced learning objectives">🔗</a></div></section><section class="section" id="handouts-2-8"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Additional suggestions</span>
+</h2>
+<ul class="disc" id="handouts-2-8-2">
+<li id="handouts-2-8-2-1">
+<div class="para" id="handouts-2-8-2-1-1">
+<em class="alert">Do</em> some experimentation with the following applet: <a class="external" href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_avg_ROC.html" target="_blank">Average and Instantaneous Rate of Change</a>. Attempt to answer all of the questions on the website.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-8-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-8-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-8-2-2">
+<div class="para" id="handouts-2-8-2-2-1">
+<em class="alert">Explore</em> an <a class="external" href="https://www.geogebra.org/m/PUtKpmpx" target="_blank">Average Rate of Change of a Function Applet</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-8-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-8-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-8-2-3">
+<div class="para" id="handouts-2-8-2-3-1">
+<em class="alert">Watch</em> video <a class="external" href="https://www.youtube.com/watch?v=25900zwRK-0&amp;feature=youtu.be" target="_blank">Average Velocity of Two Cars (5:04)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-8-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-8-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-2-8-2-4">
+<div class="para" id="handouts-2-8-2-4-1">
+<em class="alert">Watch</em> video <a class="external" href="https://www.youtube.com/watch?v=QZejCQjzjU0&amp;feature=youtu.be" target="_blank">Average Rates of Change (7:50)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-2-8-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-2-8-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section: Additional suggestions"><a href="#handouts-2-8" title="Copy heading and permalink for Section: Additional suggestions" aria-label="Copy heading and permalink for Section: Additional suggestions">🔗</a></div></section><section class="section" id="DP11Answers"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Answers</span>
+</h2>
+<ol class="decimal" id="DP11Answers-2">
+<li id="DP11Answers-2-1">
+<div class="para logical" id="DP11Answers-2-1-1">
+<ol class="lower-alpha lower-alpha-level-1" id="DP11Answers-2-1-1-1">
+<li id="DP11Answers-2-1-1-1-1">
+<div class="para" id="DP11Answers-2-1-1-1-1-1">Don’t confuse Katherine’s distance with her velocity.<div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="figureKatherinesDistance"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/KatherinesDistancePic.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Katherine’s distance vs. time.<div class="autopermalink" data-description="Figure 4"><a href="#figureKatherinesDistance" title="Copy heading and permalink for Figure 4" aria-label="Copy heading and permalink for Figure 4">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item 1.a"><a href="#DP11Answers-2-1-1-1-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="DP11Answers-2-1-1-1-2">
+<figure class="figure figure-like" id="figureKatherinesVelocity"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/KatherinesVelocityPic.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Katherine’s velocity vs. time.<div class="autopermalink" data-description="Figure 5"><a href="#figureKatherinesVelocity" title="Copy heading and permalink for Figure 5" aria-label="Copy heading and permalink for Figure 5">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item 1.b"><a href="#DP11Answers-2-1-1-1-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+<li id="DP11Answers-2-1-1-1-3">
+<div class="para" id="DP11Answers-2-1-1-1-3-1">Katherine’s average speed is <span class="process-math">\(\displaystyle v = \frac{85 \ {miles}}{130 \ {min}}\cdot \frac{60 \ {min}}{1 \ {hr}}\approx 39.23\)</span> mph.<div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.c"><a href="#DP11Answers-2-1-1-1-3" title="Copy heading and permalink for Item 1.c" aria-label="Copy heading and permalink for Item 1.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#DP11Answers-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="DP11Answers-2-2">
+<div class="para" id="DP11Answers-2-2-1">Velocity is distance divided by time. That is, <span class="process-math">\(\displaystyle v = \frac{d}{t}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="DP11Answers-2-2-2">For the first leg of her trip, the time taken is <span class="process-math">\(t_{1} = 0.75\)</span> hours.<div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="DP11Answers-2-2-3">For the second leg of her trip, the distance traveled is <span class="process-math">\(d_{2} = 30\)</span> miles.<div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="DP11Answers-2-2-4">This information is useful in computing the total distance and the total time for the whole trip. The total distance is 30 + 30 or 60 miles. The total time taken is 0.75 + 0.5 = 1.25 hours.<div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="DP11Answers-2-2-5">So, her average velocity is <span class="process-math">\(v = \frac{60 \ {miles}}{1.25 \ {hour}}= 48\)</span> mph.<div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#DP11Answers-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="DP11Answers-2-3">
+<div class="para" id="DP11Answers-2-3-1">The first leg of Dale’s trip is 20 miles. The second leg of Dale’s trip is 30 miles.<div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="DP11Answers-2-3-2">So, the average velocity on his trip is <span class="process-math">\(v = \frac{50 \ {miles}}{1 \ {hour}}= 50\)</span> mph.<div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#DP11Answers-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="DP11Answers-2-4">
+<div class="para" id="DP11Answers-2-4-1">In order to average 60 mph for the entire trip, the total time taken should be <span class="process-math">\(\displaystyle t = \frac{2 \ {miles}}{60 \ {mph}}= \frac{1}{30}\)</span> or 2 minutes.<div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="DP11Answers-2-4-2">But, the first leg of the trip takes <span class="process-math">\(\displaystyle t = \frac{1 \ {mile}}{30 \ {mph}}=\)</span> 2 minutes. So it is impossible to average this velocity since it will take a positive amount of time to travel the second mile.<div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#DP11Answers-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="DP11Answers-2-5">
+<div class="para logical" id="DP11Answers-2-5-1">
+<ol class="lower-alpha lower-alpha-level-1" id="DP11Answers-2-5-1-1">
+<li id="DP11Answers-2-5-1-1-1">
+<div class="para" id="DP11Answers-2-5-1-1-1-1">The velocity on <span class="process-math">\(0 \leq t \leq 1\)</span> is <span class="process-math">\(\displaystyle \frac{\Delta y}{\Delta t}= \frac{90-6}{1-0}= 84\)</span> ft/sec.<div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-5-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="DP11Answers-2-5-1-1-1-2">The velocity on <span class="process-math">\(1 \leq t \leq 2\)</span> is <span class="process-math">\(\displaystyle \frac{\Delta y}{\Delta t}= \frac{142-90}{2-1}= 52\)</span> ft/sec.<div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-5-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="DP11Answers-2-5-1-1-1-3">The grapefruit traveled faster over the time interval <span class="process-math">\(0 \leq t \leq 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-5-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5.a"><a href="#DP11Answers-2-5-1-1-1" title="Copy heading and permalink for Item 5.a" aria-label="Copy heading and permalink for Item 5.a">🔗</a></div>
+</li>
+<li id="DP11Answers-2-5-1-1-2">
+<div class="para" id="DP11Answers-2-5-1-1-2-1">The average velocity on <span class="process-math">\([4,5]\)</span> is <span class="process-math">\(\displaystyle \frac{\Delta y}{\Delta t}= \frac{106-150}{5-4}= -44\)</span> ft/sec. The negative sign tells us the grapefruit is travelling downward.<div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-5-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5.b"><a href="#DP11Answers-2-5-1-1-2" title="Copy heading and permalink for Item 5.b" aria-label="Copy heading and permalink for Item 5.b">🔗</a></div>
+</li>
+<li id="DP11Answers-2-5-1-1-3">
+<div class="para" id="DP11Answers-2-5-1-1-3-1">The instantaneous velocity at time <span class="process-math">\(t=1\)</span> is approximately 68 ft/sec.<div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-5-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="GrapefruitTableComputed"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Average velocities of the grapefruit on various intervals computed.<div class="autopermalink" data-description="Table 6: Average velocities of the grapefruit on various intervals computed."><a href="#GrapefruitTableComputed" title="Copy heading and permalink for Table 6: Average velocities of the grapefruit on various intervals computed." aria-label="Copy heading and permalink for Table 6: Average velocities of the grapefruit on various intervals computed.">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b2 r0 l0 t1 lines">Time Interval</th>
+<th scope="col" class="c m b2 r0 l0 t1 lines">Average Velocity</th>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">[1,1.5]</td>
+<td class="c m b1 r0 l0 t0 lines">60 ft/sec</td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">[1,1.1]</td>
+<td class="c m b1 r0 l0 t0 lines">66.4 ft/sec</td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">[1,1.01]</td>
+<td class="c m b1 r0 l0 t0 lines">67.84 ft/sec</td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">[1,1.001]</td>
+<td class="c m b1 r0 l0 t0 lines">67.984 ft/sec</td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">[1,1.0001]</td>
+<td class="c m b1 r0 l0 t0 lines">67.9984 ft/sec</td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">[0.999,1]</td>
+<td class="c m b1 r0 l0 t0 lines">68.016 ft/sec</td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">[0.9999,1]</td>
+<td class="c m b1 r0 l0 t0 lines">68.0016 ft/sec</td>
+</tr>
+</table></div></figure><div class="autopermalink" data-description="Item 5.c"><a href="#DP11Answers-2-5-1-1-3" title="Copy heading and permalink for Item 5.c" aria-label="Copy heading and permalink for Item 5.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#DP11Answers-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#DP11Answers-2-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Section: Answers"><a href="#DP11Answers" title="Copy heading and permalink for Section: Answers" aria-label="Copy heading and permalink for Section: Answers">🔗</a></div></section><div class="autopermalink" data-description="Handout: Daily Prep 1.1 - Average Velocity"><a href="#handouts-2" title="Copy heading and permalink for Handout: Daily Prep 1.1 - Average Velocity" aria-label="Copy heading and permalink for Handout: Daily Prep 1.1 - Average Velocity">🔗</a></div></section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="handouts.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="handouts-3.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
