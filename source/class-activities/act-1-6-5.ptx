@@ -1,0 +1,180 @@
+<worksheet label="ws-act-1-6-5">
+   <title>The Second Derivative - Activity 1.6.5</title>
+    <activity xml:id="act-1-6-5" workspace="3cm">
+
+      <task>
+        <statement>
+      <p>
+        If <m>f''</m> is positive on an interval, then <m>f'</m> is <m>\underline{\hspace{20mm}}</m> on that interval and <m>f</m> is <m>\underline{\hspace{20mm}}</m> on that interval.
+      </p>
+        </statement>
+        <answer>
+          <p>
+            increasing; concave up
+          </p>
+        </answer>
+      </task>
+
+<task>
+  <statement>
+      <p>
+        If <m>f''</m> is negative on an interval, then <m>f'</m> is <m>\underline{\hspace{20mm}}</m> on that interval and <m>f</m> is <m>\underline{\hspace{20mm}}</m> on that interval.
+      </p>
+  </statement>
+  <answer>
+    <p>
+      decreasing; concave down
+    </p>
+  </answer>
+</task>
+
+
+<task>
+  <statement>
+      <p>
+        At exactly two of the labeled points in <xref ref="w0072fig"/>, the derivative <m>f'</m> is 0; the second derivative <m>f''</m> is not zero at any of the labeled points.
+        Give the signs of <m>f</m>, <m>f'</m>, and <m>f''</m> at each marked point.
+      </p>
+<figure xml:id="w0072fig">
+                <image width="50%" source="images/w0072-y.jpg">
+                  <description>
+                  A plot of <m>f</m> with four points labeled.
+          </description></image>
+        </figure>
+
+              <table>
+                <title>Determine the signs of <m>f</m>, <m>f'</m>, and <m>f''</m> at various points.</title>
+     <tabular halign="center" bottom="minor" top="minor">
+      <row header="yes" bottom="medium" top="medium">
+            <cell>Point</cell>
+            <cell>   <m>f</m>    </cell>
+            <cell>   <m>f'</m>    </cell>
+            <cell>   <m>f''</m>    </cell>
+          </row>
+
+          <row>
+            <cell> <m>A</m> </cell>
+            <cell />
+            <cell />
+            <cell />
+          </row>
+
+          <row>
+            <cell> <m>B</m> </cell>
+            <cell />
+            <cell />
+            <cell />
+          </row>
+
+          <row>
+            <cell> <m>C</m> </cell>
+            <cell />
+            <cell />
+            <cell />
+          </row>
+
+          <row>
+            <cell> <m>D</m> </cell>
+            <cell />
+            <cell />
+            <cell />
+          </row>
+
+        </tabular>
+      </table>
+            
+  </statement>
+  <answer>
+    <p>
+      <table>
+                <title>Signs of <m>f</m>, <m>f'</m>, and <m>f''</m> at various points.</title>
+     <tabular halign="center" bottom="minor" top="minor">
+      <row header="yes" bottom="medium" top="medium">
+            <cell>Point</cell>
+            <cell>   <m>f</m>    </cell>
+            <cell>   <m>f'</m>    </cell>
+            <cell>   <m>f''</m>    </cell>
+          </row>
+
+          <row>
+            <cell> <m>A</m> </cell>
+            <cell> - </cell>
+            <cell> 0 </cell>
+            <cell> + </cell>
+          </row>
+
+          <row>
+            <cell> <m>B</m> </cell>
+            <cell> + </cell>
+            <cell> 0 </cell>
+            <cell> - </cell>
+          </row>
+
+          <row>
+            <cell> <m>C</m> </cell>
+            <cell> + </cell>
+            <cell> - </cell>
+            <cell> - </cell>
+          </row>
+
+          <row>
+            <cell> <m>D</m> </cell>
+            <cell> - </cell>
+            <cell> + </cell>
+            <cell> + </cell>
+          </row>
+
+        </tabular>
+      </table>
+    </p>
+  </answer>
+</task>
+  
+<task>
+  <statement>
+          <p>
+            Sketch graphs of functions satisfying each of the descriptions given below.
+          </p>
+
+         <p>
+            <ul>
+            <li>
+              <title>(I)</title>
+
+              <p>
+                The slope is positive and increasing at first, but then is positive and decreasing.
+              </p>
+            </li>
+
+            <li>
+              <title>(II)</title>
+
+              <p>
+                The first derivative of the function whose graph is above.
+              </p>
+            </li>
+
+            <li>
+              <title>(III)</title>
+
+              <p>
+                The second derivative of the first function sketched.
+              </p>
+            </li>
+            </ul>
+          </p>
+  </statement>
+<answer>
+  <p>
+    Answers vary but (I) should be increasing and concave up at first and then concave down.  (II) should be above the horizontal 
+    axis and increasing and then decreasing all while being concave down.  (III) should be decreasing and passing
+    through through the horizontal axis when the maximum is reached in (II). 
+  </p>
+</answer>
+</task>
+
+
+
+
+    </activity>
+  </worksheet>
