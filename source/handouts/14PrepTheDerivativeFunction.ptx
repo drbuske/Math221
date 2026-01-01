@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 1.4 - The Derivative Function</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    We have recently learned that we can describe the instantaneous rate of change of a function <m>f</m> at a value <m>a</m> by computing <m>\displaystyle f'(a)=\lim_{h\rightarrow 0}\frac{f(a+h)-f(a)}{h}</m>, provided this limit exists.
+    When we can find <m>f'(a)</m>, we understand that this value represents the instantaneous rate of change of the function with respect to the input variable, and also the slope of the tangent line to the curve <m>y=f(x)</m> at the point <m>(a,f(a))</m>.
+  </p>
+
+  <p>
+    By viewing the constant <m>a</m> as a variable in its own right, we will next begin thinking about how <m>y=f'(x)</m> is itself a function, indeed a function that is related to - or derived from - the original function <m>f</m>.
+    One of the next big questions is: given a function <m>y=f(x)</m>, can we find a graph of or formula for or other information about this new function <m>f'(x)</m>?
+  </p>
+
+  <p>
+    The section covers the following topics: The derivative as a function.
+    The relationship between the graph of <m>f</m> and the graph of <m>f'</m>.
+    Computing the derivative function of basic functions using the definition of the derivative.
+  </p>
+
+</section>
+
+<section xml:id="Basiclearningobjectives14">
+  <title>Basic learning objectives</title>
+  
+          <p>
+            These are the tasks you should be able to perform with reasonable
+            fluency when you arrive at our next class meeting.
+            Important new
+            vocabulary words are indicated <em>in italics</em>.
+          </p>
+
+          <ul>
+            <li>
+              <p>
+                State the definition of the derivative function.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Illustrate on a graph how a function can fail to be differentiable at a point.
+              </p>
+            </li>
+          </ul>
+ </section>
+
+<section xml:id="Toprepareforclass14">
+  <title>To prepare for class</title>
+  
+
+
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Read</alert> motivating questions and the paragraph following in <url href="https://activecalculus.org/single/sec-1-4-derivative-fxn.html">section 1.4</url> (up until the preview activity).
+    </p>
+  </li>
+
+  <li>
+    
+
+    <p>
+      [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-4-derivative-fxn.html#OFZ">Preview Activity 1.4.1</url>.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            (Optional) <alert>Watch</alert> <url href="https://www.youtube.com/watch?v=8AZUPemMmC8">video solution to Preview Activity 1.4.1</url>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-4-derivative-fxn.html#Lgq">section 1.4.1</url> up until Activity 1.4.2. Be sure to take note of the definition of the <em>derivative as a function</em> (<url href="https://activecalculus.org/single/sec-1-4-derivative-fxn.html#XuI">Definition 1.4.2</url>).
+    </p>
+  </li>
+
+  <li>
+    
+
+    <p>
+      [Submit] <alert>Explore</alert> the two applets mentioned in the text. The first applet, <url href="https://davidaustinm.github.io/calculus/fpgraph/index.html">Graphing the derivative function</url> is intended to experiment with moving the red point. For the second applet, <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_as_a_function.html">The Derivative as a Function</url>, answer the <em>Explore</em> questions found on the website. Submit a screen capture of the second applet, <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_as_a_function.html">The Derivative as a Function</url> as well as answers to the <em>Explore</em> questions found on the website.
+    </p>
+  </li>
+
+  <li>
+
+
+    <p>
+      Ask <alert>Copilot</alert> to create the graph of a simple function <m>f(x)</m> of your choosing and its derivative graph.
+      Does the image produced make any sense?
+    </p>
+  </li>
+
+  <li>
+
+
+    <p>
+      Ask <alert>Copilot</alert> to produce an algorithm for you to calculate the derivative function <m>f'(x)</m> for a function <m>f(x)</m> using the limit definition.
+      Follow up by asking <alert>Copilot</alert> to illustrate how this algorithm works on <m>f(x) = \sqrt{x}</m>.
+      Finally, ask why the numerator was rationalized.
+      Tell it that you feel like that is some sort of odd trick.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] Ask <alert>Copilot</alert> for alternate versions of the limit definition of the derivative of a function <m>f(x)</m>.
+      Submit at least one alternate, but equivalent <url href="https://activecalculus.org/single/sec-1-4-derivative-fxn.html#XuI">to that found in our textbook</url>, version of the definition of <m>f'(x)</m> that uses a limit.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> this video for an example of how to algebraically find the formula for the derivative function: <url href="https://www.youtube.com/watch?v=62mySLhhfaQ&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=12">Limit Definition of Derivative (5:36)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> the following video which discusses the definition of the derivative as a function: <url href="https://www.youtube.com/watch?v=Fzrkq1r-sAI&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=11">Quick Review: The derivative function (2:38)</url>.
+    </p>
+
+    <p />
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> these exercises.
+      </p>
+
+        <ol>
+          <li>
+            <p>
+              Complete the table below with estimated values of the derivative of the function <m>f(x)</m> shown.
+              Then, plot these ordered pairs <m>(x,f'(x))</m> from the table on the same set of axes.
+              ‘Connect the dots’ to form a sketch of the graph of <m>f'</m>.
+            </p>
+
+            <image source="fig_02_27.jpg" width="50%" />
+          
+     <table xml:id="PlotTheSlopes" >
+        <title>Plot the slopes of the graph of this function.</title>
+     <tabular halign="center" bottom="minor" top="minor">
+      <row header="no" bottom="medium" top="medium">
+                      <cell> <m>x</m> </cell>
+                      <cell>-2</cell>
+                      <cell>-1</cell>
+                      <cell>0</cell>
+                      <cell>1</cell>
+                      <cell>2</cell>
+                      <cell>3</cell>
+                      <cell>4</cell>
+                      <cell>5</cell>
+                    </row>
+
+                    <row>
+                      <cell> <m>f'(x)</m> </cell>
+                      <cell />
+                      <cell />
+                      <cell />
+                      <cell />
+                      <cell />
+                      <cell />
+                      <cell />
+                      <cell />
+                    </row>
+
+                  </tabular>
+              </table>
+              </li>
+
+              <li>
+                <p>
+                  Sketch the graph of <m>f'</m> from the graph of <m>f</m> given.
+                </p>
+
+ <figure xml:id="figureplotfprime4">
+  <caption>The graph of <m>f(x)</m> is given.  Sketch the graph of <m>f'(x)</m>.</caption> 
+  <image xml:id="piecewisefprime4Pic" width="70%">
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=0.7] [domain=-5:5]
+\draw[step=1cm,color=gray!50] (-5,-2) grid (5,5);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5,0) node [below] at (4.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,5) node [right] at (0,4.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-2);
+\draw[color=linecolor, line width=2pt,domain=-5:-1]   plot (\x,{-\x});
+\draw[color=linecolor, line width=2pt,domain=-1:1]   plot (\x,{2*\x+3});
+\draw[color=linecolor, line width=2pt,domain=1:5]   plot (\x,{-0.5*\x+5.5});
+%%  node[above] at (2,1) {$f(3,y)$};
+\foreach \x/\xtext in {-4/-4, -3/-3, -2/-2, -1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in { -1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+                <p>
+                  <ol>
+                    <li>
+                      <p>
+                        Does <m>f</m> or <m>f'</m> have a larger domain?
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        Compare the values of
+                      </p>
+
+                      <p>
+                        <m>\displaystyle \lim_{h \rightarrow 0^-}\frac{f(1+h)-f(1)}{h}</m> and  <m>\displaystyle \lim_{h \rightarrow 0^+}\frac{f(1+h)-f(1)}{h}</m>.
+                      </p>
+
+                      <p>
+                        What does this tell you?
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+                
+              </li>
+
+               <li>
+                    <p>Complete the following computation giving the derivative of the function <m>f(x) = x^{2} - 4</m>.
+                    Then, graph <m>f(x)</m> and <m>f'(x)</m> together.
+                    <md>
+                      <mrow> f'(x) = \mathstrut \amp \lim_{h \rightarrow 0} \frac{f(x+h)-f(x)}{h} </mrow>
+                      <mrow> = \mathstrut \amp \lim_{h \rightarrow 0} \frac{(x+h)^2-4-[x^2-4]}{h} </mrow>
+                      <mrow> = \mathstrut \amp \cdots </mrow>
+                    </md>
+                    
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <ol>
+                        <li>
+                          <p>
+                            Determine the values of <m>g'(0)</m>, <m>g'(1)</m>, <m>g'(2)</m>, and <m>g'(3)</m> if <m>g(x) = |x^{2} - 4|</m>.
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            Sketch the graph of <m>g(x)</m> and <m>g'(x)</m>.
+                          </p>
+                          
+                        </li>
+
+                        <li>
+                          <p>
+                            Is <m>g</m> differentiable at <m>x=-2</m>?
+                            Is <m>g</m> continuous at <m>x=-2</m>?
+                          </p>
+                        </li>
+                      </ol>
+                    </p>
+                  </li>
+
+            </ol>
+  
+        </li>
+      
+        </ul>
+
+</section>
+<section xml:id="Afterclass13">
+  <title>After class</title>
+
+        <p>
+          Solidifying the concepts discussed in class through practice is necessary to build your skills.
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              <alert>Watch</alert> the following video on trying to graph the derivative function: <url href="https://www.youtube.com/watch?time_continue=107&#x26;v=Dei5ethzKHU&#x26;feature=emb_title">Try to Graph the Derivative Function (7:39)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> another video on sketching a derivative graph: <url href="https://www.youtube.com/watch?v=TSgyDembmXg&#x26;feature=emb_title">Sketching a Derivative Graph (6:13)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Explore</alert> this applets that gives you practice identifying the graph of the derivative knowing the graph of a function: <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_matching.html">Identify the Derivative Function</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-4-derivative-fxn.html#rjI">Exercises 1-5 in section 1.4</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Explore</alert> the following <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_try_to_graph.html">applet</url> where you will try to graph the derivative function. Try to score above 80%! This is great practice for the exam.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Explore</alert> graph transformations with this applet: <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_graph_transformation.html">Derivatives and Graph Transformations</url>. Make sure you write answers to the questions asked of you. This is a great applet and well worth your time exploring!
+            </p>
+          </li>
+
+            <li>
+              <p>
+                <alert>Explore</alert> the concept of antiderivative functions with this applet: <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_matching_antiderivative.html">Identify an Antiderivative Function</url>.
+              </p>
+            </li>
+
+          <li>
+            <p>
+              <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-4-derivative-fxn.html#Vnj">Exercises 6-9 in section 1.4</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+            </p>
+          </li>
+
+      
+        </ul>
+
+</section>
+
+
+ <section xml:id="secAdvancedlearningobjectives14">
+  <title>Advanced learning objectives</title>
+  
+          <p>
+            In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+          </p>
+
+          <ul>
+            <li>
+              <p>
+                Given a graph of a function <m>f</m>, identify the graph of its derivative <m>f'</m> from a list, and describe aspects of the behavior of the graph of <m>f'</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Sketch the graph of the derivative <m>f'(x)</m> given the graph of <m>f(x)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Given an algebraic description of a function, derive a formula for the derivative function using the definition of the derivative.
+              </p>
+            </li>
+          </ul>
+
+</section>
+
+<section>
+<title>Answers</title>
+<p>
+          <ol>
+            <li>
+              <p>
+                The values in <xref ref="PlotTheSlopesAns"/> are estimates.
+              </p>
+
+     <table xml:id="PlotTheSlopesAns" >
+        <title>A table of the slopes of a given function.</title>
+     <tabular halign="center" bottom="minor" top="minor">
+      <row header="no" bottom="medium" top="medium">
+                    <cell> <m>x</m> </cell>
+                    <cell>-2</cell>
+                    <cell>-1</cell>
+                    <cell>0</cell>
+                    <cell>1</cell>
+                    <cell>2</cell>
+                    <cell>3</cell>
+                    <cell>4</cell>
+                    <cell>5</cell>
+                  </row>
+
+                  <row>
+                    <cell> <m>f'(x)</m> </cell>
+                    <cell>6</cell>
+                    <cell>2</cell>
+                    <cell>-1</cell>
+                    <cell>-2</cell>
+                    <cell>-2</cell>
+                    <cell>-1</cell>
+                    <cell>1</cell>
+                    <cell>4</cell>
+                  </row>
+
+                </tabular>
+              </table>
+
+                <image source="fig_02_28.jpg" width="50%"/>
+                </li>
+
+                <li>
+                  <p>
+                    The graph of <m>f'</m> is in red in <xref ref="figurepiecewisefprime"/>.
+                  </p>
+                  
+  <figure xml:id="figurepiecewisefprime">
+  <caption>The graph of <m>f'(x)</m> given a graph of <m>f(x)</m>.</caption> 
+  <image xml:id="piecewisefprimePic" width="70%">
+    <latex-image>
+  \begin{tikzpicture}[thick,scale=0.75] [domain=-5:5]
+\draw[step=1cm,color=gray!50] (-5,-2) grid (5,5);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5,0) node [below] at (4.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,5) node [right] at (0,4.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-2);
+\draw[color=linecolor, line width=2pt,domain=-5:-1]   plot (\x,{-\x});
+\draw[color=linecolor, line width=2pt,domain=-1:1]   plot (\x,{2*\x+3});
+\draw[color=linecolor, line width=2pt,domain=1:5]   plot (\x,{-0.5*\x+5.5});
+\draw[color=red, line width=1.5pt,domain=-5:-1]   plot (\x,{-1});
+\draw[color=red, line width=1.5pt,domain=-1:1]   plot (\x,{2});
+\draw[color=red, line width=1.5pt,domain=1:5]   plot (\x,{-0.5});
+\draw[color=red] (-1,-1) circle (3pt);
+\fill[color=white] (-1,-1) circle (2pt);
+\draw[color=red] (-1,2) circle (3pt);
+\fill[color=white] (-1,2) circle (2pt);
+\draw[color=red] (1,-0.5) circle (3pt);
+\fill[color=white] (1,-0.5) circle (2pt);
+\draw[color=red] (1,2) circle (3pt) node [below] at (3.5,-0.5) {$f'(x)$};
+\fill[color=white] (1,2) circle (2pt);
+%%  node[above] at (2,1) {$f(3,y)$};
+\foreach \x/\xtext in {-4/-4, -3/-3, -2/-2, -1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in { -1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+                  <p>
+                    <ol marker="a.">
+                      <li>
+                        <p>
+                          The domain of <m>f</m> is larger than the domain  of <m>f'</m> (note the holes).
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          <m>\displaystyle \lim_{h \rightarrow 0^-}\frac{f(1+h)-f(1)}{h}= 2</m> while  <m>\displaystyle \lim_{h \rightarrow 0^+}\frac{f(1+h)-f(1)}{h}= -\frac{1}{2}</m>.  This tells us that <m>f'(1)</m> does not exist.
+                        </p>
+                      </li>
+                    </ol>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Be sure to master this type of computation!
+                  </p>
+                  <md><mrow> f’(x) = \amp \lim_{h \rightarrow 0}\frac{f(x+h) - f(x)}{h} </mrow>
+                    <mrow> = \mathstrut \amp \lim_{h \rightarrow 0} \frac{ (x+h)^{2} - 4 - [x^{2} - 4]}{h} </mrow>
+                    <mrow> = \mathstrut \amp \lim_{h \rightarrow 0} \frac{x^{2} + 2xh+h^{2}-4 - x^{2} + 4}{h} </mrow>
+                    <mrow> = \mathstrut \amp \lim_{h \rightarrow 0} \frac{2xh+h^{2}}{h} </mrow>
+                    <mrow> = \mathstrut \amp \lim_{h \rightarrow 0} 2x + h </mrow>
+                    <mrow> = \mathstrut \amp 2x </mrow></md>
+                  <p>
+                    The graph of <m>f'(x)</m> in <xref ref="figurepiecewisefprime2"/> is in red.
+                  </p>
+                   <figure xml:id="figurepiecewisefprime2">
+  <caption>The graph of <m>f'(x)=2x</m> given a graph of <m>f(x)=x^2-4</m>.</caption> 
+  <image xml:id="piecewisefprime2Pic" width="50%">
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.7] [domain=-5:5]
+\draw[step=1cm,color=gray!50] (-5,-5) grid (5,5);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5,0) node [below] at (4.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,5) node [right] at (0,4.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-5);
+\draw[color=red, line width=1.5pt,domain=-4:4]   plot (\x,{\x}) node [below] at (-2.5,-3) {$f'(x)$};
+\draw[color=linecolor, line width=2pt,domain=-3.5:3.5]  plot (\x,{0.5*(\x*\x-4)});
+%%\draw[color=blue, line width=1pt,domain=1:5]   plot (\x,{-0.5*\x+5.5});
+%%  node[above] at (2,1) {$f(3,y)$};
+\foreach \x/\xtext in {-4/-8, -3/-6, -2/-4, -1/-2, 1/2, 2/4, 3/6, 4/8}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in { -4/-8, -3/-6, -2/-4, -1/-2, 1/2, 2/4, 3/6, 4/8}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+                </li>
+
+                <li>
+                  <p>
+                    <ol>
+                      <li>
+                        <p>
+                          <m>g'(0) = 0</m>, <m>g'(1) =-2</m>, <m>g'(2)</m> does not exist (the two one-sided limits are different), <m>g'(3)=6</m>.
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          The graphs of <m>g(x)</m> and <m>g'(x)</m> are shown in blue and red in <xref ref="figurepiecewisefprime3"/> respectively.
+                        </p>
+                         <figure xml:id="figurepiecewisefprime3">
+  <caption>The graph of <m>f'(x)=2x</m> given a graph of <m>f(x)=x^2-4</m>.</caption> 
+  <image xml:id="piecewisefprime3Pic" width="60%">
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=0.75] [domain=-5:5]
+\draw[step=1cm,color=gray!50] (-5,-3) grid (5,5);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5,0) node [below] at (4.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,5) node [right] at (0,4.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-3);
+\draw[color=red, line width=1.5pt,domain=-1.5:-1]   plot (\x,{2*\x});
+\draw[color=red, line width=1.5pt,domain=-1:1]   plot (\x,{-2*\x});
+\draw[color=red, line width=1.5pt,domain=1:2,-latex]   plot (\x,{2*\x}) node [above] at (1,3) {$f'(x)$};
+\draw[color=red] (-1,-2) circle (3pt);
+\fill[color=white] (-1,-2) circle (2pt);
+\draw[color=red] (-1,2) circle (3pt);
+\fill[color=white] (-1,2) circle (2pt);
+\draw[color=red] (1,-2) circle (3pt);
+\fill[color=white] (1,-2) circle (2pt);
+\draw[color=red] (1,2) circle (3pt);
+\fill[color=white] (1,2) circle (2pt);
+\draw[color=linecolor, line width=2pt,domain=-1:1]  plot (\x,{(-2*\x*\x+2)});
+\draw[color=linecolor, line width=2pt,domain=1:2.5, -latex]  plot (\x,{(\x*\x-1)});
+\draw[color=linecolor, line width=2pt,domain=-2.5:-1, latex-]  plot (\x,{(\x*\x-1)});
+\foreach \x/\xtext in {-4/-8, -3/-6, -2/-4, -1/-2, 1/2, 2/4, 3/6, 4/8}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in { -2/-4, -1/-2, 1/2, 2/4, 3/6, 4/8}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+                      </li>
+
+                      <li>
+                        <p>
+                          <m>g</m> is not differentiable at <m>x=-2</m>.
+                          <m>g</m> is continuous at <m>x=-2</m>.
+                        </p>
+                       
+                      </li>
+                    </ol>
+                  </p>
+                </li>
+        </ol>
+      </p>
+</section>
+
+</handout>

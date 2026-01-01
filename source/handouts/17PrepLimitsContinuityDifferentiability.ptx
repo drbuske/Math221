@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 1.7 - Limits, Continuity, and Differentiability</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    We are returning to study limits of general functions, and examine how we can evaluate them.
+    In particular, we will see that functions which are “nice” in a certain way (we will call such functions “continuous”) allow us to evaluate limits very easily.
+    Knowing which functions are continuous or where they fail to be continuous will then enable us to focus on the interesting parts of functions, where we actually need to consider a limit.
+  </p>
+
+  <p>
+    We are about to wrap up Chapter 1 of the text, titled <em>Understanding the Derivative</em>.
+    One key aspect of understanding the derivative is how a differentiable function is locally linear.
+    That is, how a differentiable function, up close, looks like a line.
+    This enables us to use linear functions – the simplest functions in all of mathematics – as an effective tool to estimate the values of a differentiable function for x-values near a certain point where we know key information.
+    Here, we are basically using some sophisticated ideas from calculus to do something natural: if we can see or identify a trend in how a function is changing at a given point, what might we predict for the future? Following a tangent line is a good approach to doing so.
+  </p>
+
+  <p>
+    This section covers the following concepts: Limit Laws and how to use them to evaluate limits algebraically, One-sided limits, Continuity, Direct Substitution Property, Evaluating (one-sided) limits algebraically, Differentiability, Relationship between Differentiability and Continuity, Linearization of a function.
+  </p>
+
+</section>
+
+<section>
+  <title>Basic learning objectives</title>
+
+      <p>
+        These are the tasks you should be able to perform with reasonable
+        fluency when you arrive at our next class meeting.
+        Important new
+        vocabulary words are indicated <em>in italics</em>.
+      </p>
+
+      <ul>
+        <li>
+          <p>
+            Describe left-handed and right-handed limits.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Describe the difference between a limit and a one-sided limit.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Estimate a limit from the left and from the right of a function at a point on a graph (or determine that it does not exist).
+          </p>
+        </li>
+
+        <li>
+          <p>
+            State the definition of a continuous function <m>f</m> at a point <m>x=a</m> and on an interval <m>[a,b]</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Determine whether a function is continuous at a point by examining the graph of that function.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            State informally what it means for a function to be differentiable at a point (use the expression locally linear).
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Determine whether a function is differentiable at a point by examining the graph of that function.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Provide examples of functions that are continuous and yet not differentiable at a specific point.
+          </p>
+        </li>
+      </ul>
+
+    </section>
+
+<section xml:id="sec-Toprepareforclass17">
+  <title>To prepare for class</title>
+
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html">section 1.7</url> (up until the preview activity).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html#AgV">Preview Activity 1.7.1</url>.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            (Optional) <alert>Watch</alert> <url href="https://www.youtube.com/watch?v=6TxDu7G7tGs">video solution to Preview Activity 1.7.1 (6:25)</url>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video: <url href="https://www.youtube.com/watch?v=7-S0qHpnddk">Quick Review: Limits, Continuity, and Differentiability (4:01)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html#AAh">section 1.7.1</url> (up until Activity 1.7.2).
+    </p>
+  </li>
+
+  <li>
+    
+
+    <p>
+      [Submit] <alert>Explore</alert> the graphical idea of a limit with this <url href="https://www.geogebra.org/m/Ktr9uqYu">applet</url>. Investigate the limit as <m>x</m> approach -4, as <m>x</m> approaches -1, and as <m>x</m> approaches 2.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> this video that speaks more precisely as to how a limit is truly defined: <url href="https://www.youtube.com/watch?v=_bQNS3pwDrs&#x26;feature=youtu.be">Limit at a Point (7:15)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> this video on one-sided limits: <url href="https://www.youtube.com/watch?v=JxwD57FYC3Q&#x26;feature=youtu.be">One-sided Limits (7:23)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html#gHq">section 1.7.2</url> (up until Activity 1.7.3).
+    </p>
+  </li>
+
+  <li>
+  
+    <p>
+      [Submit] <alert>Re-read</alert> <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html#Rys">Definition 1.7.6</url> in the text. Then, give an example of a function that
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            satisfies (a) but not (b).
+          </p>
+        </li>
+
+        <li>
+          <p>
+            satisfies (b) but not (a).
+          </p>
+        </li>
+
+        <li>
+          <p>
+            satisfies (a) and (b), but not (c).
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> this video on continuity at a point: <url href="https://www.youtube.com/watch?v=71PGm02zFjw&#x26;t=16s">Determining Continuity (7:21)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> three videos on the subject of continuity: <url href="https://courseware.cemc.uwaterloo.ca/11/assignments/61/0">Definition of Continuity (3:36)</url>, <url href="https://courseware.cemc.uwaterloo.ca/11/assignments/61/1">Removable Discontinuities (7:13)</url>, and <url href="https://courseware.cemc.uwaterloo.ca/11/assignments/61/2">Continuous Functions (2:38)</url>.
+    </p>
+
+    <p />
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> these exercises.
+      </p>
+
+        <ol>
+        <li>
+          <p>
+            <alert>Explore</alert> <url href="https://www.desmos.com/calculator/an30akp53z">this Desmos applet</url> answering the following questions.
+          </p>
+
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Without making any adjustments to the Desmos graph, determine the numerical value of the limit at <m>x=7</m>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Without making any adjustments to the Desmos graph, determine the value of the function at <m>x=7</m>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  By using the slider for <m>x_{0}</m> or dragging the red point currently located at <m>(5,2)</m>, explore the graph as <m>x</m> increases from 5 to 8.
+                  Is the function continuous at <m>x=7</m>?
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Now, drag the blue point currently located at <m>(7,3)</m> to <m>(7,1)</m>.
+                  You may also use the numerical slider for <m>b</m>.
+                </p>
+
+                <p>
+                  <ol>
+                    <li>
+                      <p>
+                        After making this adjustment to the Desmos graph, determine the numerical value of the limit at <m>x=7</m>.
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        After making this adjustment to the Desmos graph, determine the value of the function at <m>x=7</m>.
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        By using the slider for <m>x_{0}</m> or dragging the red point currently located at <m>(5,2)</m>, explore the graph as <m>x</m> increases from 5 to 8.
+                        Is the function continuous at <m>x=7</m>?
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Now, drag the blue point currently located at <m>(3,2)</m> to <m>(3,1)</m>.
+                  You may also use the numerical slider for <m>a</m>.
+                </p>
+
+                <p>
+                  <ol>
+                    <li>
+                      <p>
+                        After making this adjustment to the Desmos graph, determine the value of the limit at <m>x=3</m> from the left.
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        After making this adjustment to the Desmos graph, determine the value of the limit at <m>x=3</m> from the right.
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        After making this adjustment to the Desmos graph, determine the value of the function at <m>x=3</m>.
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        By using the slider for <m>x_{0}</m> or dragging the red point currently located at <m>(5,2)</m>, explore the graph as <m>x</m> decreases from 5 to 2.
+                        Which of the following is true about the function at <m>x=3</m>? [Continuous from the left OR Continuous from the right OR Continuous]
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Now, drag the blue point currently located at <m>(3,2)</m> to <m>(3,4)</m>.
+                  You may also use the numerical slider for <m>a</m>.
+                </p>
+
+                <p>
+                  <ol>
+                    <li>
+                      <p>
+                        After making this adjustment to the Desmos graph, determine the value of the limit at <m>x=3</m> from the left.
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        After making this adjustment to the Desmos graph, determine the value of the limit at <m>x=3</m> from the right.
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        After making this adjustment to the Desmos graph, determine the value of the function at <m>x=3</m>.
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        By using the slider for <m>x_{0}</m> or dragging the red point currently located at <m>(5,2)</m>, explore the graph as <m>x</m> decreases from 5 to 2.
+                        Which of the following is true about the function at <m>x=3</m>? [Continuous from the left OR Continuous from the right OR Continuous]
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  A discontinuity is <em>removable</em> if the function can be made continuous at the point by changing the function value.
+                </p>
+
+                <p>
+                  <ol>
+                    <li>
+                      <p>
+                        Is the discontinuity at <m>x=3</m> a removable discontinuity?
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        Is the discontinuity at <m>x=7</m> a removable discontinuity?
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+            </ol>
+          </p>
+        
+
+        
+          
+
+          <p>
+            [Submit] Now answer these questions.
+          </p>
+
+          <p>
+            <ul>
+              <li>
+                <p>
+                  Write what you believe is the purpose of this particular exercise.
+                  That is, what did you learn from doing this problem?
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  This entire section of the text might have been titled <em>Smoothness</em>.
+                  In a sentence or two, how does this word relate to the topics in this section?
+                </p>
+              </li>
+            </ul>
+          </p>
+
+          </li>
+
+          <li>
+            <p>
+              The graphs of functions <m>f</m> and <m>g</m> are given in <xref ref="TwoPiecewiseFunctions"/>.
+            </p>
+
+      <figure xml:id="TwoPiecewiseFunctions" >
+      <caption>A limit question involving two piecewise-defined functions.</caption>
+      <sidebyside widths="30% 30% 30%">
+      <image><latex-image>
+\begin{tikzpicture}[thick,scale=0.75] [domain=-4:4]
+\draw[step=1cm,color=gray!50] (-3,-2) grid (3,3);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (3,0) node [below] at (2.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-3,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3) node [right] at (0,2.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-2);
+   \fill [linecolor] (0,0) circle (4pt) node at (-2,1) {$g(x)$};
+\draw [linecolor, line width = 2pt] (-3,-2) -- (-0.1,0.9);
+\draw [linecolor] (0,1) circle (4pt);
+\fill [white] (0,1) circle (3pt);
+\draw [linecolor, line width = 2pt] (0,0) -- (2,-2);
+\foreach \x/\xtext in { -2/-2,-1/-1, 1/1, 2/2}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-1/-1, 1/1, 2/2}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+  <image>
+      <latex-image>
+\begin{tikzpicture}[thick,scale=0.75] [domain=-4:4]
+\draw[step=1cm,color=gray!50] (-3,-2) grid (3,3);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (3,0) node [below] at (2.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-3,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3) node [right] at (0,2.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-2);
+\fill [linecolor] (0,2) circle (4pt) node at (-2,1) {$f(x)$};
+\draw [linecolor, line width = 2pt] (-3,-1) -- (0,2);
+\draw [linecolor] (0,1) circle (4pt);
+\fill [white] (0,1) circle (3pt);
+\draw [linecolor, line width = 2pt] (0.1,0.9) -- (3,-2);
+\foreach \x/\xtext in { -2/-2,-1/-1, 1/1, 2/2}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-1/-1, 1/1, 2/2}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+      </latex-image>
+    </image>
+    <image>
+      <latex-image>
+\begin{tikzpicture}[thick,scale=0.75] [domain=-4:4]
+\draw[step=1cm,color=gray!50] (-3,-2) grid (3,3);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (3,0) node [below] at (2.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-3,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3) node [right] at (0,2.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-2);
+\foreach \x/\xtext in { -2/-2,-1/-1, 1/1, 2/2}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-1/-1, 1/1, 2/2}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+      </latex-image>
+    </image>
+      </sidebyside>
+    </figure>
+            
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    Plot <m>(f-g)(x) = f(x)-g(x)</m> using the empty grid.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Does <m>\displaystyle \lim_{x \rightarrow 0^-}f(x) - \lim_{x \rightarrow 0^-}g(x) = \lim_{x \rightarrow 0^-}[f(x)-g(x)]</m>?
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Does <m>\displaystyle \lim_{x \rightarrow 0^+}f(x) - \lim_{x \rightarrow 0^+}g(x) = \lim_{x \rightarrow 0^+}[f(x)-g(x)]</m>?
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Does <m>\displaystyle \lim_{x \rightarrow 0}f(x) - \lim_{x \rightarrow 0}g(x) = \lim_{x \rightarrow 0}[f(x)-g(x)]</m>?
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+
+          <li>
+                <p>
+                  The graph of the function <m>\displaystyle f(x) = 2+x^{2} \sin(1/x)</m> is  sandwiched between the graphs of <m>g(x) = 2-x^{2}</m> below  and <m>h(x) = 2+x^{2}</m> above.
+                  Compute the value of  <m>\displaystyle \lim_{x \rightarrow 0}\left( 2+x^{2} \sin(1/x) \right)</m>.
+                  Defend your answer.
+                </p>
+<figure xml:id="SqueezeThmPic" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>A function <m>f(x)=2+x^2\sin(1/x)</m> is sandwiched between <m>g(x)=2-x^2</m> and <m>h(x)=2+x^2</m>.</caption>
+      <image source="SqueezeThmExample2.jpg" width="50%">
+        <description>A function is sandwiched between two other graphs.</description>
+      </image>
+</figure>
+                
+              </li>
+
+              <li>
+                <p>
+                  Let
+                  <me>
+                    B(t) = \left\{ \begin{array}{cl}4-\frac{1}{2}t &#x26; {\textrm{if  }} t &#x3C; 2 \\ \sqrt{t+c} &#x26; {\textrm{if  }} t \geq 2\end{array} \right\}.
+                  </me>
+                </p>
+
+                <p>
+                  Find the value of <m>c</m> so that <m>\displaystyle \lim_{t \rightarrow 2}B(t)</m> exists.
+                </p>
+
+                <p>
+                  Then, for the value of <m>c</m> you found, carefully graph <m>B(t)</m>.
+                  Be sure to label your graph.
+                </p>
+
+                  <figure xml:id="figureBempty">
+  <caption>An empty grid.</caption> 
+  <image xml:id="BemptyPic" width="50%">
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.5] [domain=-4:4]
+\draw[step=1cm,color=gray!50] (-2,-1) grid (6,7);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (6,0) node [below] at (5.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-2,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,7) node [right] at (0,6.5) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-1);
+%%\draw[color=blue, line width=1.5pt,domain=-3.99:-3.05]   plot (\x,-4);
+ 
+%%  node[above] at (2,1) {$f(3,y)$};
+\foreach \x/\xtext in {-1/-1, 1/1, 2/2, 3/3, 4/4, 5/5}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/1, 2/2,  3/3, 4/4, 5/5, 6/6}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+      </li>
+      </ol>
+    </li>
+      </ul>
+
+</section>
+
+<section xml:id="sec-Afterclass17">
+  <title>After class</title>
+
+      <p>
+        Solidifying the concepts discussed in class through practice is necessary to build your skills.
+      </p>
+      <ul>
+      <li>
+        <p>
+          <alert>Watch</alert> this video which will reinforce the definition of continuity: <url href="https://www.youtube.com/watch?v=YhF01FGJRXU&#x26;feature=youtu.be">Continuity (7:41)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Explore</alert> the following <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/continuity_at_a_point.html">applet</url>. This will let you practice in deciding when a function is continuous (10 examples).
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Explore</alert> your understanding of continuity, removable discontinuities, and right- and left-sided limits through this <url href="https://www.geogebra.org/m/xGHCVBcU#material/QgFsHZJ9">applet</url>. Read how to operate this or just move the red dot on the graph and the blue dots on the right side to mimic taking a limit graphically.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html#MOz">section 1.7.3</url>.
+        </p>
+      </li>
+
+      <li>
+
+        <p>
+          Ask <alert>Copilot</alert> to “Produce a function <m>f(x)</m> that is continuous at <m>x=1</m> but not differentiable there and that has a limit at <m>x=2</m> but is not continuous there.” Is the function returned to your correct?
+        </p>
+      </li>
+
+      <li>
+
+        <p>
+          Ask <alert>Copilot</alert> “What is the difference between a removable discontinuity and a jump discontinuity? Are there other types of discontinuities?”
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> this video on determining differentiability graphically: <url href="https://www.youtube.com/watch?v=_vimObBaJxI">Determining Differentiability Graphically (4:40)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html#bFy">Exercises 1-4 in section 1.7.5</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html#sVI">the summary in section 1.7.4</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html#lgo">Exercises 5-8 in section 1.7.5</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Explore</alert> continuity and differentiability with this applet: <url href="https://www.geogebra.org/m/xGHCVBcU#material/mvBhymM8">Continuity and Differentiability with Parameters</url>. As always, read the paragraphs below the applet for context and understanding.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+        </p>
+      </li>
+
+      </ul> 
+
+</section>
+
+
+
+    <section xml:id="sec-Advancedlearningobjectives17">
+      <title>Advanced learning objectives</title>
+
+      <p>
+        In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+      </p>
+
+      <ul>
+        <li>
+          <p>
+            Provide examples (both graphically and numerically) of functions where both one-sided limits exist at a point, and yet the limit at that point fails to exist.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Determine, given an algebraic expression for a function <m>f</m>, where it is continuous.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Describe what makes a discontinuity removable - graphically and in your own words.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Explain the relationship between continuity and differentiability.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Compute the linear approximation of a function at a specific point.
+          </p>
+        </li>
+      </ul>
+
+    </section>
+
+    <section xml:id="sec-Additionalsuggestions17">
+      <title>Additional suggestions</title>
+      
+      <ul>
+        <li>
+          <p>
+            <alert>Watch</alert> video: <url href="https://www.youtube.com/watch?v=SGdzU1P5_TA&#x26;feature=emb_title">Limits of a piecewise function (6:38)</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Watch</alert> this video on determining when piecewise functions are continuous: <url href="https://www.youtube.com/watch?v=08IgjfMn2PA&#x26;feature=emb_title">Determining Continuity of a Piecewise Function (7:00)</url>.
+          </p>
+        </li>
+
+
+
+
+            
+              
+
+                
+
+
+
+      </ul>
+
+  </section>
+  <section xml:id="sec-Answers17">
+    <title>Answers</title>
+    
+      <ol>
+        <li>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  1
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  3
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  No
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <ol>
+                    <li>
+                      <p>
+                        1
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        1
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        Yes
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <ol>
+                    <li>
+                      <p>
+                        1
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        4
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        1
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        Continuous from the left.
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <ol>
+                    <li>
+                      <p>
+                        1
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        4
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        4
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        Continuous from the right
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <ol>
+                    <li>
+                      <p>
+                        No
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        Yes
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  The graph of <m>(f-g)(x)</m> is shown in <xref ref="figureGraphFminusG"/>.
+                </p>
+
+  <figure xml:id="figureGraphFminusG">
+  <caption>The graph of <m>(f-g)(x)</m>.</caption> 
+  <image xml:id="GraphFminusGPic" width="50%">
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.75] [domain=-4:4]
+\draw[step=1cm,color=gray!50] (-3,-2) grid (3,3);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (3,0) node [below] at (2.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-3,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3) node [right] at (0,2.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-2);
+\fill [linecolor] (0,2) circle (4pt) node at (-1.5,1.5) {$(f-g)(x)$};
+\draw [linecolor, line width = 2pt, -latex] (0,1) -- (-3,1);
+\draw [linecolor, line width = 2pt, -latex] (0,1) -- (3,1);
+\fill [linecolor] (0,2) circle (4pt);
+\draw [linecolor] (0,1) circle (4pt);
+\fill [white] (0,1) circle (3pt);
+\foreach \x/\xtext in { -2/-2,-1/-1, 1/1, 2/2}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-1/-1, 1/1, 2/2}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+                
+              </li>
+
+              <li>
+                <p>
+                  Yes (they are both 1).
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Yes (they are both 1).
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  No (the limits on the left do not exist).
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Notice that <m>2-x^{2} \leq f(x) \leq 2+x^{2}</m> for all <m>x</m> shown.
+            Since <m>-1 \leq \sin\left(\frac{1}{x}\right) \leq 1</m> for all <m>x</m>, we have
+            <me>
+              -x^{2} \leq x^{2}\sin\left( \frac{1}{x}\right) \leq x^{2}
+            </me>
+            so that
+            <me>
+              2-x^{2} \leq 2+x^{2}\sin\left( \frac{1}{x}\right) \leq 2+x^{2}
+            </me>
+            for all <m>x</m> as well.
+            Since <m>\lim_{x \rightarrow 0}2-x^{2} = \lim_{x \rightarrow 0}2+x^{2} = 2</m>, we also then have <m>\lim_{x \rightarrow 0}f(x) = 2</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Note that
+          </p>
+
+          <p>
+            <ul>
+              <li>
+                <p>
+                  <m>\displaystyle \lim_{t \rightarrow 2^-}B(t) = \lim_{t \rightarrow 2^-}4-\frac{1}{2}t = 3</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>\displaystyle \lim_{t \rightarrow 2^+}B(t) = \lim_{t \rightarrow 2^+}\sqrt{t+c}= \sqrt{2+c}</m>
+                </p>
+              </li>
+            </ul>
+          </p>
+
+          <p>
+            so that <m>\displaystyle \lim_{t \rightarrow 2}B(t)</m> exists if and only if <m>3 = \sqrt{2+c}</m>.
+            That is, exactly when <m>c=7</m>.
+          </p>
+
+           <figure xml:id="figureLimitsGiveC">
+  <caption>The graph of <m>B(t)</m>.</caption> 
+  <image xml:id="LimitsGiveCPic" width="50%">
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.75] [domain=-4:4]
+\draw[step=1cm,color=gray!50] (-2,-1) grid (6,7);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (6,0) node [below] at (5.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-2,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,7) node [right] at (0,6.5) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-1);
+\draw[color=linecolor, line width=1.5pt,domain=-2:2]   plot (\x,4-0.5*\x);
+\draw[color=linecolor, line width=1.5pt,domain=2:6,smooth]   plot (\x,{sqrt{(\x+7)}});
+\draw[color=linecolor, line width=1pt,dotted,domain=-2:2,smooth]   plot (\x,{sqrt{(\x+7)}});
+\fill [linecolor] (2,3) circle (4pt);
+\draw [linecolor] (2,3) circle (4pt);
+%%  node[above] at (2,1) {$f(3,y)$};
+\foreach \x/\xtext in {-1/-1, 1/1, 2/2, 3/3, 4/4, 5/5}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/1, 2/2,  3/3, 4/4, 5/5, 6/6}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+          
+        </li>
+      </ol>
+  </section>
+    </handout>

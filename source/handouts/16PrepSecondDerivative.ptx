@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 1.6 - The Second Derivative</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    We have spent a lot of time so far focusing on the derivative of a function, which we will in the future also call the “first derivative”: its definition, its meaning, and various interpretations in applied contexts.
+    <em>The first derivative, in essence, tells us whether a given function is increasing or decreasing at a certain point.</em> Next, we are interested in learning <alert>how</alert> a function is increasing or decreasing at a given point, and the key tool to doing so is the <em>second derivative of the function</em>: Here, we consider what happens when we consider the derivative of the derivative of a function.
+  </p>
+
+</section>
+
+<section>
+<title>Basic learning objectives</title>
+
+  <p>
+    These are the tasks you should be able to perform with reasonable
+    fluency when you arrive at our next class meeting.
+    Important new
+    vocabulary words are indicated <em>in italics</em>.
+  </p>
+
+  <ul>
+    <li>
+      <p>
+        Understand the formal definition of the terms <em>increasing</em> and <em>decreasing</em> and their connection to the first derivative of a function.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Determine whether a function is <em>increasing</em> or <em>decreasing</em> given information about the sign of <m>f'</m> (the first derivative).
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Identify what we can learn by taking the derivative <em>of the derivative</em> of a function.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Define what is meant by the second derivative of a function.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Define what it means for a function to be <em>concave up</em> or <em>concave down</em> on an interval, and graphically identify intervals on which a function is concave up or concave down, given a graph of the function.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Determine whether a function is concave up, concave down, or linear given information about the sign of <m>f''</m> (the second derivative).
+      </p>
+    </li>
+  </ul>
+</section>
+
+<section>
+<title>To prepare for class</title>
+
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-1-6-second-d.html">section 1.6</url> (up until the preview activity).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-6-second-d.html#KGa">Preview Activity 1.6.1</url>.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            (Optional) <alert>Watch</alert> <url href="https://www.youtube.com/watch?v=9WmLBx80SW4">video solution to Preview Activity 1.6.1(a) (3:16)</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            (Optional) <alert>Watch</alert> <url href="https://www.youtube.com/watch?v=nKeTXzTpWZ8">video solution to Preview Activity 1.6.1(b) (3:50)</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            (Optional) <alert>Watch</alert> <url href="https://www.youtube.com/watch?v=IjnzfhgvJxs">video solution to Preview Activity 1.6.1(c)-(e) (4:16)</url>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> the following video: <url href="https://www.youtube.com/watch?v=UtzyPEk2zxA&#x26;feature=emb_title">Quick Review: The Second Derivative (3:06)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-6-second-d.html#UOx">Definition 1.6.4</url>. Then, compare how the <em>GeoGebra</em> applet (<url href="https://www.geogebra.org/m/cf9hzft7">Increasing/Decreasing Function Visual</url>) attempts to illustrate this definition. <alert>Respond</alert> to these questions:
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            What do the colored arrows show?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            How is that related to the definition? Experiment with different functions as needed.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] <alert>Explore</alert> the relationship between <m>f'</m> and where a function is increasing and decreasing via this fun <em>GeoGebra</em> applet with a cute turtle: <url href="https://www.geogebra.org/m/mCTqH7u4">Increasing and Decreasing Functions</url>. <alert>Summarize</alert> the point of the applet by filling in the blanks in this sentence: A function <m>f</m> is increasing when <m>f'</m> is <em /> and is decreasing when <m>f'</m> is <em />.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] <alert>Explore</alert>, even more, the relationship between <m>f'</m> and where a function is increasing and decreasing via this (less fun) <em>GeoGebra</em> applet: <url href="https://www.geogebra.org/m/gpcn7ac3">Increasing/Decreasing Function</url>. Check that your responses to the blanks in the previous bullet are correct for this example.
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            Give four <m>x</m>-values for which the function is neither increasing nor decreasing?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What do you notice about the value of <m>f'</m> at these four <m>x</m> values?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-6-second-d.html#wlN">sections 1.6.1 and 1.6.2</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> this (rather boring, but useful) video on algebraically computing a second derivative using a limit: <url href="https://www.youtube.com/watch?v=SIp6g-u-rkc&#x26;t=125s">Limit Definition of the Second Derivative (9:48)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-6-second-d.html#IAf">section 1.6.3</url> on concavity.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> this video on determining concavity from a graph: <url href="https://www.youtube.com/watch?v=o1_o4E-LGsA">Determining Concavity from a Graph (7:42)</url>.
+    </p>
+  </li>
+
+  </ul> 
+
+</section>
+
+<section>
+<title>After class</title>
+
+  <p>
+    Solidifying the concepts discussed in class through practice is necessary to build your skills.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Explore</alert> concavity with this applet: <url href="https://www.geogebra.org/m/jWF9c96r">Concavity</url>. Be sure to answer the questions posed to you.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Ask <alert>Copilot</alert> “What is concavity, in a nutshell?”
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Ask <alert>Copilot</alert> “Which graph is <m>f</m>, which is <m>f'</m>, and which is <m>f''</m> for the uploaded graph.” Be sure to also upload the graph of something such as that found <url href="https://files.transtutors.com/book/qimg/4f77bfd1-a97a-4a13-9507-b1d0e1b3144d.png">here</url>.
+      Does <alert>Copilot</alert> produce a correct response?
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-6-second-d.html#DjS">Exercises 1-5 in section 1.6.5</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> a computation in which you find <m>f''(x)</m> for <m>f(x) = 5x^{2}</m> two ways. First, you already watched a video on algebraically computing a second derivative using a limit: <url href="https://www.youtube.com/watch?v=SIp6g-u-rkc&#x26;t=125s">Limit Definition of the Second Derivative (9:48)</url>. Similar to this video, compute <m>f''(x)</m>. There is, however, a single limit that can be computed to determine <m>f''</m>. For any point <m>a</m>, it turns out that
+      <me>
+        f''(a) = \lim_{h \rightarrow 0}\frac{f(a+2h)-2f(a+h)+f(a)}{h^{2}}.
+      </me>
+      Use this formula to compute <m>f''(x)</m> when <m>f(x) = 5x^{2}</m> and compare to the answer you found using the method from the video.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Practice</alert> Identifying the graph of <m>f</m>, <m>f'</m> and <m>f''</m> for various examples using this applet: <url href="https://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_first_second.html">Identify the Function, First, and Second Derivatives</url>. You <em>will</em> be asked a question like this on at least one future exam.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-6-second-d.html#Awq">Exercises 6-9 in section 1.6.5</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+    </p>
+  </li>
+
+  </ul> 
+
+ </section>
+
+
+
+<section>
+<title>Advanced learning objectives</title>
+
+  <p>
+    In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+  </p>
+
+  <ul>
+    <li>
+      <p>
+        Compute the second derivative of a function, using the limit definition.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Sketch the graph of the second derivative <m>f''</m>, given the graph of <m>f</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Given a function <m>y=f(x)</m> and the units of measure of both <m>x</m> and <m>y</m>, determine the units of <m>f''(x)</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Explain what the <em>six different combinations of increasing/decreasing and concave up/concave down/linear</em> mean in real-life terms (such as “increasing at a decreasing rate”).
+      </p>
+    </li>
+  </ul>
+
+</section>
+<section>
+<title>Additional suggestions</title>
+
+    <ul>
+      <li>
+        <p>
+          <alert>Do</alert> these exercises.
+        </p>
+
+        <p>
+          <ol>
+            <li>
+              <p>
+                <xref ref="figureWhichIsWhich"/> shows the graphs of <m>g(x)</m>, <m>g'(x)</m>, and <m>g''(x)</m>.
+              </p>
+
+  <figure xml:id="figureWhichIsWhich">
+  <caption>Identify which graph is <m>f(x)</m>, which graph is <m>f'(x)</m>, and which graph is <m>f''(x)</m>.</caption> 
+  <image xml:id="WhichIsWhichPic" width="60%">
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=0.7] [domain=-3:3]
+\draw[step=1cm,color=gray!50] (-6,-6) grid (6,6);
+   \draw [black!80,line width=0.3pt,-latex] (-6,0) -- (6.5,0) node [below] at (6.25,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-6.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,6.5) node [right] at (0,6.25) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-6.5);
+\draw[color=linecolor, line width=1pt,domain=-6:6,smooth]   plot (\x,{\x*cos(180/3.1416*\x)-\x});
+\draw[color=black, dashed, line width=1pt,domain=-6:6,smooth]   plot (\x,{cos(180/3.1416*\x)-\x*sin(180/3.1416*\x)-1});
+\draw[color=red, dotted, line width=1pt,domain=-6:6,smooth]   plot (\x,{-2*sin(180/3.1416*\x)-\x*cos(180/3.1416*\x)});
+\foreach \x/\xtext in {-5/-5, -3/-3, -1/-1, 1/1, 3/3, 5/5}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-5/-5, -3/-3, -1/-1, 1/1, 3/3, 5/5}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Identify each curve.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Determine the intervals
+                      (approximately) over  which <m>g(x)</m> is increasing.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Determine the intervals  (approximately) over  which <m>g(x)</m> is concave up.
+                    </p>
+                  </li>
+                </ol>
+              </p>
+              
+            </li>
+
+            <li>
+              <p>
+                Sketch the graph of a function <m>f(x)</m> that satisfies all of the following conditions:
+              </p>
+
+              <p>
+                <ul>
+                  <li>
+                    <p>
+                      <m>f'(0)=f'(2)=f'(4)=0</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>f'(x)>0</m> if <m>x &#x3C; 0</m> or <m>2 &#x3C; x &#x3C; 4</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>f'(x) &#x3C; 0</m> if <m>0 &#x3C; x &#x3C; 2</m> or <m>x > 4</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>f''(x) > 0</m> if <m>1 &#x3C; x &#x3C; 3</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>f''(x) &#x3C; 0</m> if <m>x &#x3C; 1</m> or <m>x > 3</m>
+                    </p>
+                  </li>
+                </ul>
+              </p>
+
+              <figure xml:id="figureEmptyGrid16">
+  <caption>An empty grid.</caption> 
+  <image xml:id="EmptyGrid16Pic" width="50%">
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.65] 
+\draw[step=1cm,color=gray!50] (-6,-6) grid (6,6);
+   \draw [black!80,line width=0.3pt,-latex] (-6,0) -- (6.5,0) node [below] at (6.25,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-6.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,6.5) node [right] at (0,6.25) {$y$};
+      \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-6.5);
+   \end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+              
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ul>
+
+</section>
+
+<section>
+<title>Answers</title>
+
+    <ol>
+      <li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>g</m> is shown in <em>blue</em> (solid), <m>g'</m> is shown in black (dashed), and <m>g''</m> is shown in <em>red</em> (dotted).
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>g</m> is increasing (roughly) on <m>(-6,-3.7)</m> and <m>(3.7,6)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>g</m> is concave up (roughly) on <m>(-6,-5)</m>, <m>(-2.3,0)</m>, and <m>(2.3,5)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Answers vary.  One possible graph is shown in <xref ref="figureMeetConditions"/>. 
+        </p>
+
+         <figure xml:id="figureMeetConditions">
+  <caption>This graph of <m>f(x)</m> meets several conditions defined by the derivative of <m>f(x)</m>.</caption> 
+  <image xml:id="MeetConditionsPic" width="50%">
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.7] [domain=-3:3]
+\draw[step=1cm,color=gray!50] (-6,-6) grid (6,6);
+   \draw [black!80,line width=0.3pt,-latex] (-6,0) -- (6.5,0) node [below] at (6.25,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-6.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,6.5) node [right] at (0,6.25) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-6.5);
+\draw[color=linecolor, line width=1.5pt,domain=-6:0,smooth]   plot (\x,{2-0.1*\x*\x});
+\draw[color=linecolor, line width=1.5pt,domain=0:4,smooth]   plot (\x,{0.75*cos(180/3.1416*\x*(2*3.1416)/4)+1.25});
+\draw[color=linecolor, line width=1.5pt,domain=4:6,smooth]   plot (\x,{2-(\x-4)*(\x-4)});
+\foreach \x/\xtext in {-5/-5, -3/-3, -1/-1, 1/1, 3/3, 5/5}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-5/-5, -3/-3, -1/-1, 1/1, 3/3, 5/5}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+        
+      </li>
+    </ol>
+
+    </section>
+
+</handout>

@@ -65,6 +65,10 @@
       <xi:include href="./handouts/11PrepAverageVelocity.ptx"/>
       <xi:include href="./handouts/12PrepNotionOfLimit.ptx"/> 
       <xi:include href="./handouts/13PrepDerivativeAtAPoint.ptx"/> 
+      <xi:include href="./handouts/14PrepTheDerivativeFunction.ptx"/>
+      <xi:include href="./handouts/15PrepInterpretEstimateDerivative.ptx"/>
+      <xi:include href="./handouts/16PrepSecondDerivative.ptx"/>
+      <xi:include href="./handouts/17PrepLimitsContinuityDifferentiability.ptx"/>
     </chapter>
 
     <!-- <chapter xml:id="homework">
