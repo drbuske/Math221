@@ -1,13 +1,238 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "activities",
+  "id": "ws-act-1-1-1",
   "level": "1",
-  "url": "activities.html",
-  "type": "Chapter",
+  "url": "ws-act-1-1-1.html",
+  "type": "Worksheet",
   "number": "",
-  "title": "In-Class Activities",
-  "body": " In-Class Activities   These are copies of the in-class activities distributed during the semester.       "
+  "title": "Average Velocity - Activity 1.1.2",
+  "body": " Average Velocity - Activity 1.1.2    The following questions concern the position function given by , considered in the Preview Activity, and plotted in the given figure.   A plot of on the interval is shown. On the horizontal axis, there are tick marks every units at , , and . On the vertical axis, the values from are omitted to focus on the most important behavior of the graph. The vertical axis has tickmarks every units from the point at the origin up to .  The parabolic curve has -intercept and then rises to its vertex at . The points and are shown on the plot.      Compute the average velocity of the ball on each of the following time intervals: , , , , , , , . Include units for each value.    On , the average velocity is ft\/sec.    ft\/sec; ft\/sec; the other average velocities are, respectively, 6.56, 6.416, 0, 4.8, 6.24, 6.384, all in ft\/sec.    On , the average velocity is ft\/sec. On , the average velocity is 8 ft\/sec. The other average velocities are, respectively (in the order of the intervals listed in the activity), 6.56, 6.416, 0, 4.8, 6.24, 6.384, all measured in feet per second.      On the graph provided in (a), sketch the line that passes through the points and . What is the meaning of the slope of this line? In light of this meaning, what is a geometric way to interpret each of the values computed in the preceding question?    Remember that the slope of a line can be found by taking rise over run. In this context, the slope is found by computing change in over change in .    is the average velocity of the ball between and .    The slope of the line between and is . This is precisely the average velocity of the ball between and , and indeed each of the average velocities computed in (a) can be viewed as the slope of the line joining the points and .      Use a graphing utility to plot the graph of on an interval containing the value . Then, zoom in repeatedly on the point . What do you observe about how the graph appears as you view it more and more closely?    While the curve is a parabola, how does it look up close on a very small interval?    Like a straight line with slope about 6.4.    As we zoom in on the curve at the point , the graph begins to look like a straight line. Indeed, it appears to look like a straight line with slope about 6.4.      What do you conjecture is the velocity of the ball at the instant ? Why?    Instantaneous velocity can be approximated by average velocity on a very small interval.    About 6.4 feet per second.    Observe that the average velocity of the ball on the intervals and is 6.416 and 6.384 feet\/sec respectively. Hence it appears that the ball's velocity at the instant should be about 6.4 feet per second.     "
+},
+{
+  "id": "act-1-1-1",
+  "level": "2",
+  "url": "ws-act-1-1-1.html#act-1-1-1",
+  "type": "Activity",
+  "number": "2",
+  "title": "",
+  "body": "  The following questions concern the position function given by , considered in the Preview Activity, and plotted in the given figure.   A plot of on the interval is shown. On the horizontal axis, there are tick marks every units at , , and . On the vertical axis, the values from are omitted to focus on the most important behavior of the graph. The vertical axis has tickmarks every units from the point at the origin up to .  The parabolic curve has -intercept and then rises to its vertex at . The points and are shown on the plot.      Compute the average velocity of the ball on each of the following time intervals: , , , , , , , . Include units for each value.    On , the average velocity is ft\/sec.    ft\/sec; ft\/sec; the other average velocities are, respectively, 6.56, 6.416, 0, 4.8, 6.24, 6.384, all in ft\/sec.    On , the average velocity is ft\/sec. On , the average velocity is 8 ft\/sec. The other average velocities are, respectively (in the order of the intervals listed in the activity), 6.56, 6.416, 0, 4.8, 6.24, 6.384, all measured in feet per second.      On the graph provided in (a), sketch the line that passes through the points and . What is the meaning of the slope of this line? In light of this meaning, what is a geometric way to interpret each of the values computed in the preceding question?    Remember that the slope of a line can be found by taking rise over run. In this context, the slope is found by computing change in over change in .    is the average velocity of the ball between and .    The slope of the line between and is . This is precisely the average velocity of the ball between and , and indeed each of the average velocities computed in (a) can be viewed as the slope of the line joining the points and .      Use a graphing utility to plot the graph of on an interval containing the value . Then, zoom in repeatedly on the point . What do you observe about how the graph appears as you view it more and more closely?    While the curve is a parabola, how does it look up close on a very small interval?    Like a straight line with slope about 6.4.    As we zoom in on the curve at the point , the graph begins to look like a straight line. Indeed, it appears to look like a straight line with slope about 6.4.      What do you conjecture is the velocity of the ball at the instant ? Why?    Instantaneous velocity can be approximated by average velocity on a very small interval.    About 6.4 feet per second.    Observe that the average velocity of the ball on the intervals and is 6.416 and 6.384 feet\/sec respectively. Hence it appears that the ball's velocity at the instant should be about 6.4 feet per second.    "
+},
+{
+  "id": "ws-act-1-1-2",
+  "level": "1",
+  "url": "ws-act-1-1-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Average Velocity - Activity 1.1.3",
+  "body": " Average Velocity - Activity 1.1.3    Each of the following questions concern , the position function from the Preview Activity.      Compute the average velocity of the ball on the time interval . What is different between this value and the average velocity on the interval ?    Remember to use the formula for average velocity from above: . Think carefully about whether certain quantities are positive or negative.    ft\/sec, which is negative.    ft\/sec. We note that this average velocity is negative, and in fact is the opposite of the average velocity of 24 ft\/sec on the interval .      Use appropriate computing technology to estimate the instantaneous velocity of the ball at . Likewise, estimate the instantaneous velocity of the ball at . Which value is greater?    To estimate the instantaneous velocity at , consider average velocities on the intervals and .    The instantaneous velocity at is approximately ft\/sec; at , the instantaneous velocity is about ft\/sec, and .    Since and , it appears that the instantaneous velocity of the ball at is approximately ft\/sec. Similar computations show that at , it appears the instantaneous velocity is about ft\/sec. Note that , so the instantaneous velocity at is greater because it is less negative. Asking which number is greater is different from asking which number is more negative.      How is the sign of the instantaneous velocity of the ball related to its behavior at a given point in time? That is, what does positive instantaneous velocity tell you the ball is doing? Negative instantaneous velocity?    Think about whether the ball is rising or falling.    When the ball is rising, its instantaneous velocity is positive, while when the ball is falling, its instantaneous velocity is negative.    When the ball is rising, its instantaneous velocity is positive, while when the ball is falling, its instantaneous velocity is negative.      Without doing any computations, what do you expect to be the instantaneous velocity of the ball at ? Why?    What is the average velocity of the ball on small intervals that contain ?    Zero.    Note that is the vertex of the parabola given by . At this point, the ball is neither rising nor falling. On intervals of the form , where , the average velocity of the ball is positive; on intervals of form , where , the average velocity is positive. Hence we expect the instantaneous velocity of the ball at the moment to be zero.     "
+},
+{
+  "id": "act-1-1-2",
+  "level": "2",
+  "url": "ws-act-1-1-2.html#act-1-1-2",
+  "type": "Activity",
+  "number": "3",
+  "title": "",
+  "body": "  Each of the following questions concern , the position function from the Preview Activity.      Compute the average velocity of the ball on the time interval . What is different between this value and the average velocity on the interval ?    Remember to use the formula for average velocity from above: . Think carefully about whether certain quantities are positive or negative.    ft\/sec, which is negative.    ft\/sec. We note that this average velocity is negative, and in fact is the opposite of the average velocity of 24 ft\/sec on the interval .      Use appropriate computing technology to estimate the instantaneous velocity of the ball at . Likewise, estimate the instantaneous velocity of the ball at . Which value is greater?    To estimate the instantaneous velocity at , consider average velocities on the intervals and .    The instantaneous velocity at is approximately ft\/sec; at , the instantaneous velocity is about ft\/sec, and .    Since and , it appears that the instantaneous velocity of the ball at is approximately ft\/sec. Similar computations show that at , it appears the instantaneous velocity is about ft\/sec. Note that , so the instantaneous velocity at is greater because it is less negative. Asking which number is greater is different from asking which number is more negative.      How is the sign of the instantaneous velocity of the ball related to its behavior at a given point in time? That is, what does positive instantaneous velocity tell you the ball is doing? Negative instantaneous velocity?    Think about whether the ball is rising or falling.    When the ball is rising, its instantaneous velocity is positive, while when the ball is falling, its instantaneous velocity is negative.    When the ball is rising, its instantaneous velocity is positive, while when the ball is falling, its instantaneous velocity is negative.      Without doing any computations, what do you expect to be the instantaneous velocity of the ball at ? Why?    What is the average velocity of the ball on small intervals that contain ?    Zero.    Note that is the vertex of the parabola given by . At this point, the ball is neither rising nor falling. On intervals of the form , where , the average velocity of the ball is positive; on intervals of form , where , the average velocity is positive. Hence we expect the instantaneous velocity of the ball at the moment to be zero.    "
+},
+{
+  "id": "ws-act-1-1-3",
+  "level": "1",
+  "url": "ws-act-1-1-3.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Average Velocity - Activity 1.1.4",
+  "body": " Average Velocity - Activity 1.1.4    For the function given by , find the most simplified expression you can for the average velocity of the ball on the interval . Use your result to compute the average velocity on and to estimate the instantaneous velocity at . Finally, compare your earlier work in Activity .    Note that .         Observe first that . Next, recall that , so .  Now, since we assume , we can simplify further to find that . Setting , it follows ft\/sec, and letting approach zero, we see that will approach , so the instantaneous velocity at appears to be feet\/sec. Both results match our earlier work in Activity .    "
+},
+{
+  "id": "act-1-1-3",
+  "level": "2",
+  "url": "ws-act-1-1-3.html#act-1-1-3",
+  "type": "Activity",
+  "number": "4",
+  "title": "",
+  "body": "  For the function given by , find the most simplified expression you can for the average velocity of the ball on the interval . Use your result to compute the average velocity on and to estimate the instantaneous velocity at . Finally, compare your earlier work in Activity .    Note that .         Observe first that . Next, recall that , so .  Now, since we assume , we can simplify further to find that . Setting , it follows ft\/sec, and letting approach zero, we see that will approach , so the instantaneous velocity at appears to be feet\/sec. Both results match our earlier work in Activity .   "
+},
+{
+  "id": "ws-act-1-2-1",
+  "level": "1",
+  "url": "ws-act-1-2-1.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Notion of a Limit - Activity 1.2.2",
+  "body": " The Notion of a Limit - Activity 1.2.2    Estimate the value of each of the following limits by constructing appropriate tables of values. Then determine the exact value of the limit by using algebra to simplify the function. Finally, plot each function on an appropriate interval to check your result visually.           can be factored.     .     .           Expand the expression , and then combine like terms in the numerator.     .     .           Try multiplying the given function by this fancy form of 1: .     .     .     "
+},
+{
+  "id": "act-1-2-1",
+  "level": "2",
+  "url": "ws-act-1-2-1.html#act-1-2-1",
+  "type": "Activity",
+  "number": "5",
+  "title": "",
+  "body": "  Estimate the value of each of the following limits by constructing appropriate tables of values. Then determine the exact value of the limit by using algebra to simplify the function. Finally, plot each function on an appropriate interval to check your result visually.           can be factored.     .     .           Expand the expression , and then combine like terms in the numerator.     .     .           Try multiplying the given function by this fancy form of 1: .     .     .    "
+},
+{
+  "id": "ws-act-1-2-2",
+  "level": "1",
+  "url": "ws-act-1-2-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Notion of a Limit - Activity 1.2.3",
+  "body": " The Notion of a Limit - Activity 1.2.3    Consider a moving object whose position function is given by , where is measured in meters and is measured in minutes.      Determine the most simplified expression for the average velocity of the object on the interval , where .     .         Observe that .      Determine the average velocity of the object on the interval . Include units on your answer.    Recall that .     meters\/min.    Using the expression just found in (a) with , meters\/min.      Determine the instantaneous velocity of the object when . Include units on your answer.    Consider and use your work in (a).     meters per minute.    Taking the limit of average velocity and using our work from (a), we find that , so the instantaneous velocity of the object when is 6 meters per minute.     "
+},
+{
+  "id": "act-1-2-2",
+  "level": "2",
+  "url": "ws-act-1-2-2.html#act-1-2-2",
+  "type": "Activity",
+  "number": "6",
+  "title": "",
+  "body": "  Consider a moving object whose position function is given by , where is measured in meters and is measured in minutes.      Determine the most simplified expression for the average velocity of the object on the interval , where .     .         Observe that .      Determine the average velocity of the object on the interval . Include units on your answer.    Recall that .     meters\/min.    Using the expression just found in (a) with , meters\/min.      Determine the instantaneous velocity of the object when . Include units on your answer.    Consider and use your work in (a).     meters per minute.    Taking the limit of average velocity and using our work from (a), we find that , so the instantaneous velocity of the object when is 6 meters per minute.    "
+},
+{
+  "id": "ws-act-1-2-3",
+  "level": "1",
+  "url": "ws-act-1-2-3.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Notion of a Limit - Activity 1.2.4",
+  "body": " The Notion of a Limit - Activity 1.2.4    For the moving object whose position at time is given by the graph provided, answer each of the following questions. Assume that is measured in feet and is measured in seconds.    The function is graphed on the interval . The vertical scale is the same as the horizontal scale. The graph rises and falls periodically, doing so above and below the line .        Use the graph to estimate the average velocity of the object on each of the following intervals: , , . Draw each line whose slope represents the average velocity you seek.    Remember that average velocity on an interval computes the quotient of change in over change in . This is the slope of the line between the corresponding two points on the graph of .     , , and .    The average velocity on is the slope of the line joining the points and , which is . On , we similarly find , and on , we have .      How could you use average velocities or slopes of lines to estimate the instantaneous velocity of the object at a fixed time?    Think about shorter and shorter time intervals and drawing the lines whose slopes represent average velocity.    Take shorter and shorter time intervals and draw the lines whose slopes represent average velocity. If those lines' slopes are approaching a single number, that number represents the instantaneous velocity.    Take shorter and shorter time intervals and draw the lines whose slopes represent average velocity. If those lines' slopes are approaching a single number, that number represents the instantaneous velocity. For example, to estimate the instantaneous velocity at , we might consider average velocities on , , and .      Use the graph to estimate the instantaneous velocity of the object when . Should this instantaneous velocity at be greater or less than the average velocity on that you computed in (a)? Why?    Think about zooming in on the graph at and drawing a line that, up close, looks just like the curve . What is the approximate slope of that line?    The instantaneous velocity at is greater than the average velocity on .    If we draw the line through and , it looks like the line's slope is approximately 2.5: if we go over one grid-width, we appear to go up about 2.5. The slope of this line is clearly greater than the slope of the line through and , which is 2. Hence the instantaneous velocity at is greater than the average velocity on .     "
+},
+{
+  "id": "act-1-2-3",
+  "level": "2",
+  "url": "ws-act-1-2-3.html#act-1-2-3",
+  "type": "Activity",
+  "number": "7",
+  "title": "",
+  "body": "  For the moving object whose position at time is given by the graph provided, answer each of the following questions. Assume that is measured in feet and is measured in seconds.    The function is graphed on the interval . The vertical scale is the same as the horizontal scale. The graph rises and falls periodically, doing so above and below the line .        Use the graph to estimate the average velocity of the object on each of the following intervals: , , . Draw each line whose slope represents the average velocity you seek.    Remember that average velocity on an interval computes the quotient of change in over change in . This is the slope of the line between the corresponding two points on the graph of .     , , and .    The average velocity on is the slope of the line joining the points and , which is . On , we similarly find , and on , we have .      How could you use average velocities or slopes of lines to estimate the instantaneous velocity of the object at a fixed time?    Think about shorter and shorter time intervals and drawing the lines whose slopes represent average velocity.    Take shorter and shorter time intervals and draw the lines whose slopes represent average velocity. If those lines' slopes are approaching a single number, that number represents the instantaneous velocity.    Take shorter and shorter time intervals and draw the lines whose slopes represent average velocity. If those lines' slopes are approaching a single number, that number represents the instantaneous velocity. For example, to estimate the instantaneous velocity at , we might consider average velocities on , , and .      Use the graph to estimate the instantaneous velocity of the object when . Should this instantaneous velocity at be greater or less than the average velocity on that you computed in (a)? Why?    Think about zooming in on the graph at and drawing a line that, up close, looks just like the curve . What is the approximate slope of that line?    The instantaneous velocity at is greater than the average velocity on .    If we draw the line through and , it looks like the line's slope is approximately 2.5: if we go over one grid-width, we appear to go up about 2.5. The slope of this line is clearly greater than the slope of the line through and , which is 2. Hence the instantaneous velocity at is greater than the average velocity on .    "
+},
+{
+  "id": "ws-act-1-3-1",
+  "level": "1",
+  "url": "ws-act-1-3-1.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Derivative of a Function at a Point - Activity 1.3.2",
+  "body": " The Derivative of a Function at a Point - Activity 1.3.2    Consider the function whose formula is .      What familiar type of function is ? What can you say about the slope of at every value of ?    If , we say is quadratic. If , we say is exponential. What do we say about ?     is linear.    Because is of the form , we call a linear function.      Compute the average rate of change of on the intervals , , and ; simplify each result as much as possible. What do you notice about these quantities?    Remember that to compute the average rate of change of on , we calculate .    The average rate of change on , , and is .    The average rate of change on is . Similar calculations show the average rate of change on is also . On , observe that .      Use the limit definition of the derivative to compute the exact instantaneous rate of change of with respect to at the value . That is, compute using the limit definition. Show your work. Is your result surprising?    Observe that .     .    Using the limit definition of the derivative, we find that .      Without doing any additional computations, what are the values of , , and ? Why?    Think about the how the graph of appears. What is the same at every point?     , , and , since the slope of a linear function is the same at every point.     , , and , since the slope of a linear function is the same at every point.     "
+},
+{
+  "id": "act-1-3-1",
+  "level": "2",
+  "url": "ws-act-1-3-1.html#act-1-3-1",
+  "type": "Activity",
+  "number": "8",
+  "title": "",
+  "body": "  Consider the function whose formula is .      What familiar type of function is ? What can you say about the slope of at every value of ?    If , we say is quadratic. If , we say is exponential. What do we say about ?     is linear.    Because is of the form , we call a linear function.      Compute the average rate of change of on the intervals , , and ; simplify each result as much as possible. What do you notice about these quantities?    Remember that to compute the average rate of change of on , we calculate .    The average rate of change on , , and is .    The average rate of change on is . Similar calculations show the average rate of change on is also . On , observe that .      Use the limit definition of the derivative to compute the exact instantaneous rate of change of with respect to at the value . That is, compute using the limit definition. Show your work. Is your result surprising?    Observe that .     .    Using the limit definition of the derivative, we find that .      Without doing any additional computations, what are the values of , , and ? Why?    Think about the how the graph of appears. What is the same at every point?     , , and , since the slope of a linear function is the same at every point.     , , and , since the slope of a linear function is the same at every point.    "
+},
+{
+  "id": "ws-act-1-3-5",
+  "level": "1",
+  "url": "ws-act-1-3-5.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Derivative of a Function at a Point - Activity 1.3.5",
+  "body": " The Derivative of a Function at a Point - Activity 1.3.5    On a grid in , sketch the graph of over . On another grid in , sketch the graph of over .   Empty grids for plotting graphs of and .              Use the definition of the derivative at a point to calculate the value of , if it exists. Does your answer make sense? Plot the point on the graph of above.    Use the definition with .          This follows since for near 0. So .      Calculate, if it exists, the value of . Plot the point on the graph of .    Use the definition with .          This follows since for near 0. So .      Calculate, if it exists, the value of . Again, illustrate your answer on the graph of .  Note: is a two-sided limit. We investigate the value from each side.          The absolute value function behaves differently for positive and negative.     does not exist     since for . But then we also have the following: since if . So does not exist since the two one-sided limits differ.      Using symmetry, make a conjecture about the values of and and plot the corresponding ordered pairs on the graph of .     and will not exist.      Using the applet found at https:\/\/www.geogebra.org\/m\/qwdxbtGF to check your answers to the above calculations. Be sure to also determine if your results make sense graphically.     "
+},
+{
+  "id": "act-1-3-5",
+  "level": "2",
+  "url": "ws-act-1-3-5.html#act-1-3-5",
+  "type": "Activity",
+  "number": "9",
+  "title": "",
+  "body": "  On a grid in , sketch the graph of over . On another grid in , sketch the graph of over .   Empty grids for plotting graphs of and .              Use the definition of the derivative at a point to calculate the value of , if it exists. Does your answer make sense? Plot the point on the graph of above.    Use the definition with .          This follows since for near 0. So .      Calculate, if it exists, the value of . Plot the point on the graph of .    Use the definition with .          This follows since for near 0. So .      Calculate, if it exists, the value of . Again, illustrate your answer on the graph of .  Note: is a two-sided limit. We investigate the value from each side.          The absolute value function behaves differently for positive and negative.     does not exist     since for . But then we also have the following: since if . So does not exist since the two one-sided limits differ.      Using symmetry, make a conjecture about the values of and and plot the corresponding ordered pairs on the graph of .     and will not exist.      Using the applet found at https:\/\/www.geogebra.org\/m\/qwdxbtGF to check your answers to the above calculations. Be sure to also determine if your results make sense graphically.    "
+},
+{
+  "id": "ws-act-1-4-1",
+  "level": "1",
+  "url": "ws-act-1-4-1.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Derivative Function - Activity 1.4.2",
+  "body": " The Derivative Function - Activity 1.4.2    For each given graph of , sketch an approximate graph of its derivative function, , on the axes immediately below. The scale of the grid for the graph of is ; assume the horizontal scale of the grid for the graph of is identical to that for . If necessary, adjust and label the vertical scale on the axes for .  When you are finished with all 8 graphs, write several sentences that describe your overall process for sketching the graph of the derivative function, given the graph the original function. What are the values of the derivative function that you tend to identify first? What do you do thereafter? How do key traits of the graph of the derivative function exemplify properties of the graph of the original function?   ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE     Points where the slope of the tangent line is equal to zero are particularly important. Try finding these points first in your effort to plot and plotting those zero values on the axes where you'll graph .     ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE      ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE     "
+},
+{
+  "id": "act-1-4-1",
+  "level": "2",
+  "url": "ws-act-1-4-1.html#act-1-4-1",
+  "type": "Activity",
+  "number": "10",
+  "title": "",
+  "body": "  For each given graph of , sketch an approximate graph of its derivative function, , on the axes immediately below. The scale of the grid for the graph of is ; assume the horizontal scale of the grid for the graph of is identical to that for . If necessary, adjust and label the vertical scale on the axes for .  When you are finished with all 8 graphs, write several sentences that describe your overall process for sketching the graph of the derivative function, given the graph the original function. What are the values of the derivative function that you tend to identify first? What do you do thereafter? How do key traits of the graph of the derivative function exemplify properties of the graph of the original function?   ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE     Points where the slope of the tangent line is equal to zero are particularly important. Try finding these points first in your effort to plot and plotting those zero values on the axes where you'll graph .     ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE      ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    "
+},
+{
+  "id": "ws-act-1-4-2",
+  "level": "1",
+  "url": "ws-act-1-4-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Derivative Function - Activity 1.4.3",
+  "body": " The Derivative Function - Activity 1.4.3    For each of the listed functions, determine a formula for the derivative function. For the first two, determine the formula for the derivative by thinking about the nature of the given function and its slope at various points; do not use the limit definition. For the latter four, use the limit definition. Pay careful attention to the function names and independent variables. It is important to be comfortable with using letters other than and . For example, given a function , we call its derivative .          What is the slope of the function at every point?    .    because the slope of the tangent line to the horizontal line given by is zero at every value of .           What is the slope of the function at every point?    .    because the slope of the tangent line to the line given by is 1 at every value of .                .    By the limit definition,                 .    By the limit definition,                 .    By the limit definition,                 .    By the limit definition,      "
+},
+{
+  "id": "act-1-4-2",
+  "level": "2",
+  "url": "ws-act-1-4-2.html#act-1-4-2",
+  "type": "Activity",
+  "number": "11",
+  "title": "",
+  "body": "  For each of the listed functions, determine a formula for the derivative function. For the first two, determine the formula for the derivative by thinking about the nature of the given function and its slope at various points; do not use the limit definition. For the latter four, use the limit definition. Pay careful attention to the function names and independent variables. It is important to be comfortable with using letters other than and . For example, given a function , we call its derivative .          What is the slope of the function at every point?    .    because the slope of the tangent line to the horizontal line given by is zero at every value of .           What is the slope of the function at every point?    .    because the slope of the tangent line to the line given by is 1 at every value of .                .    By the limit definition,                 .    By the limit definition,                 .    By the limit definition,                 .    By the limit definition,     "
+},
+{
+  "id": "ws-act-1-5-1",
+  "level": "1",
+  "url": "ws-act-1-5-1.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Interpreting, Estimating, and Using the Derivative - Activity 1.5.2",
+  "body": " Interpreting, Estimating, and Using the Derivative - Activity 1.5.2    In each of the following contexts, explain the meaning of the given derivative values in two ways that are similar to the sentence structures and discussions of units in the two examples preceding this activity in the text.  First, write a sentence that explicitly describes what we know about the instantaneous rate of change of the given function at a particular instant, with units. Then, write a second sentence that explains the amount of change we expect in the function value if the input variable changes by one unit at the known instant.  Remember not to try to simplify the units on the derivative value, but rather keep the units in the form units of output per unit of input .      Suppose that measures the value of a car (in dollars) after the car has been driven miles. Explain the meaning of the statement by writing two sentences that address the instantaneous rate of change and the predicted change in the function, respectively.  Explicitly, your first sentence might have structure like   means that the instantaneous rate of change of when the car has been driven miles is ,   where the final blank should be completed using the units on the derivative. Your second sentence might have form   When the car has been driven miles, if the car is driven one more mile, we expect that the value of the car will by about .         means that the instantaneous rate of change of the car's value when the car has been driven miles is dollars per mile. In addition, when the car has been driven miles, if the car is driven one more mile, we expect that the value of the car will decrease by about dollars.     means that the instantaneous rate of change of the car's value when the car has been driven miles is dollars per mile. This tells us that when the car has been driven miles, if the car is driven one more mile, we expect that the value of the car will decrease by about dollars.      Suppose that measures the amount of water (in liters) in a tank that is filled with water that is meters deep. Explain the meaning of the statement by writing two sentences in the structure described above.        means that the instantaneous rate of change of volume of water in the tank when the water is meters deep is liters per meter. This tells us that when the water is meters deep, if the water rises one more meter, we expect that the volume of water in the tank will increase by about liters.     means that the instantaneous rate of change of volume of water in the tank when the water is meters deep is liters per meter. This tells us that when the water is meters deep, if the water rises one more meter, we expect that the volume of water in the tank will increase by about liters.      Suppose that measures the temperature of a can of soda (in degrees Celsius) in a refrigerator at time in minutes. Explain the meaning of the statement by writing two sentences in the structure described above.        means that the instantaneous rate of change of the soda's temperature at the instant minutes is degrees Celsius per minute. This tells us that after minutes have elapsed, if one more minute passes, we expect that the soda's temperature will drop by about degrees Celsius.     means that the instantaneous rate of change of the soda's temperature at the instant minutes is degrees Celsius per minute. This tells us that after minutes have elapsed, if one more minute passes, we expect that the soda's temperature will drop by about degrees Celsius.      Suppose that measures the rate at which a person burns calories (in calories per hour) when riding a bike at a speed of kilometers per hour. Explain the meaning of the statement by writing two sentences in the structure described above.        means that the instantaneous rate of change of the rate at which the biker is burning calories when traveling at a speed of kilometers per hour is calories per hour per kilometer per hour. This tells us that when the person is riding at kilometers per hour, if they increase their speed by kilometer per hour, we expect that they will burn about additional calories over the next hour.     means that the instantaneous rate of change of the rate at which the biker is burning calories when traveling at a speed of kilometers per hour is calories per hour per kilometer per hour. This tells us that when the person is riding at kilometers per hour, if they increase their speed by kilometer per hour, we expect that they will burn about additional calories over the next hour.     "
+},
+{
+  "id": "act-1-5-1",
+  "level": "2",
+  "url": "ws-act-1-5-1.html#act-1-5-1",
+  "type": "Activity",
+  "number": "12",
+  "title": "",
+  "body": "  In each of the following contexts, explain the meaning of the given derivative values in two ways that are similar to the sentence structures and discussions of units in the two examples preceding this activity in the text.  First, write a sentence that explicitly describes what we know about the instantaneous rate of change of the given function at a particular instant, with units. Then, write a second sentence that explains the amount of change we expect in the function value if the input variable changes by one unit at the known instant.  Remember not to try to simplify the units on the derivative value, but rather keep the units in the form units of output per unit of input .      Suppose that measures the value of a car (in dollars) after the car has been driven miles. Explain the meaning of the statement by writing two sentences that address the instantaneous rate of change and the predicted change in the function, respectively.  Explicitly, your first sentence might have structure like   means that the instantaneous rate of change of when the car has been driven miles is ,   where the final blank should be completed using the units on the derivative. Your second sentence might have form   When the car has been driven miles, if the car is driven one more mile, we expect that the value of the car will by about .         means that the instantaneous rate of change of the car's value when the car has been driven miles is dollars per mile. In addition, when the car has been driven miles, if the car is driven one more mile, we expect that the value of the car will decrease by about dollars.     means that the instantaneous rate of change of the car's value when the car has been driven miles is dollars per mile. This tells us that when the car has been driven miles, if the car is driven one more mile, we expect that the value of the car will decrease by about dollars.      Suppose that measures the amount of water (in liters) in a tank that is filled with water that is meters deep. Explain the meaning of the statement by writing two sentences in the structure described above.        means that the instantaneous rate of change of volume of water in the tank when the water is meters deep is liters per meter. This tells us that when the water is meters deep, if the water rises one more meter, we expect that the volume of water in the tank will increase by about liters.     means that the instantaneous rate of change of volume of water in the tank when the water is meters deep is liters per meter. This tells us that when the water is meters deep, if the water rises one more meter, we expect that the volume of water in the tank will increase by about liters.      Suppose that measures the temperature of a can of soda (in degrees Celsius) in a refrigerator at time in minutes. Explain the meaning of the statement by writing two sentences in the structure described above.        means that the instantaneous rate of change of the soda's temperature at the instant minutes is degrees Celsius per minute. This tells us that after minutes have elapsed, if one more minute passes, we expect that the soda's temperature will drop by about degrees Celsius.     means that the instantaneous rate of change of the soda's temperature at the instant minutes is degrees Celsius per minute. This tells us that after minutes have elapsed, if one more minute passes, we expect that the soda's temperature will drop by about degrees Celsius.      Suppose that measures the rate at which a person burns calories (in calories per hour) when riding a bike at a speed of kilometers per hour. Explain the meaning of the statement by writing two sentences in the structure described above.        means that the instantaneous rate of change of the rate at which the biker is burning calories when traveling at a speed of kilometers per hour is calories per hour per kilometer per hour. This tells us that when the person is riding at kilometers per hour, if they increase their speed by kilometer per hour, we expect that they will burn about additional calories over the next hour.     means that the instantaneous rate of change of the rate at which the biker is burning calories when traveling at a speed of kilometers per hour is calories per hour per kilometer per hour. This tells us that when the person is riding at kilometers per hour, if they increase their speed by kilometer per hour, we expect that they will burn about additional calories over the next hour.    "
+},
+{
+  "id": "ws-act-1-5-2",
+  "level": "1",
+  "url": "ws-act-1-5-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Interpreting, Estimating, and Using the Derivative - Activity 1.5.3",
+  "body": " Interpreting, Estimating, and Using the Derivative - Activity 1.5.3    A potato is placed in an oven whose temperature is 350 degrees Fahrenheit, and the potato's temperature (in degrees Fahrenheit) is recorded in the following table. Time is measured in minutes. Thanks to Nick Owad of Hood College for conducting experiments with actual potatoes in his oven in order to generate the data for this activity.   Potato temperature data in degrees Fahrenheit.                                                            Use a central difference to estimate the instantaneous rate of change of the potato's temperature at . Include units on your answer.    Think about quantities such as .    degrees per minute.    Using the central difference, we find that degrees per minute.      Use a central difference to estimate the instantaneous rate of change of the potato's temperature at . Include units on your answer.    See the note in (a).    degrees per minute.    Using the central difference, we find that degrees per minute.      Without doing any calculation, which do you expect to be greater: or ? Why?    Is changing faster at or at ?    We expect .    As time goes on, we see that it's usually the case that the amount of increase in the potato's temperature gets less and less, thus we expect the value of to get smaller and smaller as time goes on. We therefore expect .      Suppose we know that and . What are the respective units on these two quantities? What do you expect the temperature of the potato to be when ? when ? Why?    Remember that the units on will be degrees Fahrenheit per minute.    Because at time the potato's temperature is increasing at 1.3941 degrees per minute, we expect that at , the temperature will be about 1.3941 degrees greater than at .    The value is the temperature of the potato in degrees Fahrenheit at time 46, while measures the instantaneous rate of change of the potato's temperature with respect to time at the instant , and its units are degrees per minute. Because at time the potato's temperature is increasing at 1.3941 degrees per minute, we expect that at , the temperature will be about 1.3941 degrees greater than at , or in other words . Similarly, at , two minutes have elapsed from , so we expect an increase of degrees: .      Write a couple of careful sentences that describe the behavior of the temperature of the potato on the time interval , as well as the behavior of the instantaneous rate of change of the potato's temperature on the same time interval.    Be careful to distinguish between the temperature, , and the rate of change of temperature, , in your commentary.    We might say that on the interval the temperature of the potato is increasing, but at a decreasing rate.    Throughout the time interval , the temperature of the potato is increasing. But as time goes on, the rate at which the temperature is rising appears to be decreasing. That is, while the values of continue to get larger as time progresses, the values of seem to be getting smaller (while still remaining positive). We thus might say that on the interval the temperature of the potato is increasing, but at a decreasing rate.     "
+},
+{
+  "id": "act-1-5-2",
+  "level": "2",
+  "url": "ws-act-1-5-2.html#act-1-5-2",
+  "type": "Activity",
+  "number": "13",
+  "title": "",
+  "body": "  A potato is placed in an oven whose temperature is 350 degrees Fahrenheit, and the potato's temperature (in degrees Fahrenheit) is recorded in the following table. Time is measured in minutes. Thanks to Nick Owad of Hood College for conducting experiments with actual potatoes in his oven in order to generate the data for this activity.   Potato temperature data in degrees Fahrenheit.                                                            Use a central difference to estimate the instantaneous rate of change of the potato's temperature at . Include units on your answer.    Think about quantities such as .    degrees per minute.    Using the central difference, we find that degrees per minute.      Use a central difference to estimate the instantaneous rate of change of the potato's temperature at . Include units on your answer.    See the note in (a).    degrees per minute.    Using the central difference, we find that degrees per minute.      Without doing any calculation, which do you expect to be greater: or ? Why?    Is changing faster at or at ?    We expect .    As time goes on, we see that it's usually the case that the amount of increase in the potato's temperature gets less and less, thus we expect the value of to get smaller and smaller as time goes on. We therefore expect .      Suppose we know that and . What are the respective units on these two quantities? What do you expect the temperature of the potato to be when ? when ? Why?    Remember that the units on will be degrees Fahrenheit per minute.    Because at time the potato's temperature is increasing at 1.3941 degrees per minute, we expect that at , the temperature will be about 1.3941 degrees greater than at .    The value is the temperature of the potato in degrees Fahrenheit at time 46, while measures the instantaneous rate of change of the potato's temperature with respect to time at the instant , and its units are degrees per minute. Because at time the potato's temperature is increasing at 1.3941 degrees per minute, we expect that at , the temperature will be about 1.3941 degrees greater than at , or in other words . Similarly, at , two minutes have elapsed from , so we expect an increase of degrees: .      Write a couple of careful sentences that describe the behavior of the temperature of the potato on the time interval , as well as the behavior of the instantaneous rate of change of the potato's temperature on the same time interval.    Be careful to distinguish between the temperature, , and the rate of change of temperature, , in your commentary.    We might say that on the interval the temperature of the potato is increasing, but at a decreasing rate.    Throughout the time interval , the temperature of the potato is increasing. But as time goes on, the rate at which the temperature is rising appears to be decreasing. That is, while the values of continue to get larger as time progresses, the values of seem to be getting smaller (while still remaining positive). We thus might say that on the interval the temperature of the potato is increasing, but at a decreasing rate.    "
+},
+{
+  "id": "ws-act-1-5-5",
+  "level": "1",
+  "url": "ws-act-1-5-5.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Interpreting, Estimating, and Using the Derivative - Activity 1.5.5",
+  "body": " Interpreting, Estimating, and Using the Derivative - Activity 1.5.5    A company manufactures rope, and the total cost of producing feet of rope is dollars.     What does it mean to say that ?    It costs 800 dollars to produce 2000 feet of rope.      What are the units of ?    dollars per foot      Suppose that and . Estimate , and justify your estimate by writing at least one sentence that explains your thinking.     dollars. The cost of producing 2100 feet of rope is approximately the cost of producing 2000 feet. We add the marginal cost of producing rope above 2000 feet.      Do you think is less than, equal to, or greater than ? Why?    greater than; the cost to produce the 2001st foot of rope is likely more than the cost to produce the 3001st foot of rope due to economies of scale      Suppose someone claims that . What would the practical meaning of this derivative value tell you about the approximate cost of the next foot of rope? Is this possible? Why or why not?    If the approximate cost of producing the 5001st foot of rope is roughly dollars (i.e. one gets paid 10 cents to produce this foot), then perhaps an external (government?) subsidy is in play?     "
+},
+{
+  "id": "act-1-5-5",
+  "level": "2",
+  "url": "ws-act-1-5-5.html#act-1-5-5",
+  "type": "Activity",
+  "number": "14",
+  "title": "",
+  "body": "  A company manufactures rope, and the total cost of producing feet of rope is dollars.     What does it mean to say that ?    It costs 800 dollars to produce 2000 feet of rope.      What are the units of ?    dollars per foot      Suppose that and . Estimate , and justify your estimate by writing at least one sentence that explains your thinking.     dollars. The cost of producing 2100 feet of rope is approximately the cost of producing 2000 feet. We add the marginal cost of producing rope above 2000 feet.      Do you think is less than, equal to, or greater than ? Why?    greater than; the cost to produce the 2001st foot of rope is likely more than the cost to produce the 3001st foot of rope due to economies of scale      Suppose someone claims that . What would the practical meaning of this derivative value tell you about the approximate cost of the next foot of rope? Is this possible? Why or why not?    If the approximate cost of producing the 5001st foot of rope is roughly dollars (i.e. one gets paid 10 cents to produce this foot), then perhaps an external (government?) subsidy is in play?    "
 },
 {
   "id": "handouts-2",
@@ -23,7 +248,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#GrapefruitPic",
   "type": "Figure",
-  "number": "1",
+  "number": "3",
   "title": "",
   "body": " Height of a grapefruit over time.   A curve showing the height of a grapefruit over time. The curve increases, reaches a peak, and then decreases.   "
 },
@@ -32,7 +257,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#GrapefruitTableData",
   "type": "Table",
-  "number": "2",
+  "number": "4",
   "title": "Height of the grapefruit above the ground.",
   "body": " Height of the grapefruit above the ground.     (sec)  0  1  2  3  4  5  6     (feet)  6  90  142  162  150  106  30    "
 },
@@ -41,7 +266,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#GrapefruitTableData2",
   "type": "Table",
-  "number": "3",
+  "number": "5",
   "title": "Average velocity of the grapefruit over various time intervals.",
   "body": " Average velocity of the grapefruit over various time intervals.    Time Interval  Average Velocity    [1,1.5]      [1,1.1]      [1,1.01]      [1,1.001]      [1,1.0001]      [0.999,1]      [0.9999,1]      "
 },
@@ -50,7 +275,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#figureKatherinesDistance",
   "type": "Figure",
-  "number": "4",
+  "number": "6",
   "title": "",
   "body": " Katherine's distance vs. time.     "
 },
@@ -59,7 +284,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#figureKatherinesVelocity",
   "type": "Figure",
-  "number": "5",
+  "number": "7",
   "title": "",
   "body": " Katherine's velocity vs. time.     "
 },
@@ -68,7 +293,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#GrapefruitTableComputed",
   "type": "Table",
-  "number": "6",
+  "number": "8",
   "title": "Average velocities of the grapefruit on various intervals computed.",
   "body": " Average velocities of the grapefruit on various intervals computed.    Time Interval  Average Velocity    [1,1.5]  60 ft\/sec    [1,1.1]  66.4 ft\/sec    [1,1.01]  67.84 ft\/sec    [1,1.001]  67.984 ft\/sec    [1,1.0001]  67.9984 ft\/sec    [0.999,1]  68.016 ft\/sec    [0.9999,1]  68.0016 ft\/sec    "
 },
@@ -86,7 +311,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#figureDPAns122",
   "type": "Figure",
-  "number": "7",
+  "number": "9",
   "title": "",
   "body": " One possible graph.     "
 },
@@ -104,7 +329,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphOf1OverX",
   "type": "Figure",
-  "number": "8",
+  "number": "10",
   "title": "",
   "body": " The graph of for .     "
 },
@@ -113,7 +338,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphOf2ToX",
   "type": "Figure",
-  "number": "9",
+  "number": "11",
   "title": "",
   "body": " The graph of .     "
 },
@@ -122,7 +347,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphOfx3",
   "type": "Figure",
-  "number": "10",
+  "number": "12",
   "title": "",
   "body": " The graph of .     "
 },
@@ -131,7 +356,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureOrderDerivatives",
   "type": "Figure",
-  "number": "11",
+  "number": "13",
   "title": "",
   "body": " The graph of .     "
 },
@@ -140,7 +365,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureDistanceHighway",
   "type": "Figure",
-  "number": "12",
+  "number": "14",
   "title": "",
   "body": " The graph of .     "
 },
@@ -149,7 +374,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphFull1OverX",
   "type": "Figure",
-  "number": "13",
+  "number": "15",
   "title": "",
   "body": " The graph of together with a secant line through and .     "
 },
@@ -158,7 +383,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphOf2ToXAns",
   "type": "Figure",
-  "number": "14",
+  "number": "16",
   "title": "",
   "body": " The graph of with secant and tangent lines.     "
 },
@@ -167,7 +392,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureTangentX3Ans",
   "type": "Figure",
-  "number": "15",
+  "number": "17",
   "title": "",
   "body": " The graph of the tangent line to at is .     "
 },
@@ -185,7 +410,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#PlotTheSlopes",
   "type": "Table",
-  "number": "16",
+  "number": "18",
   "title": "Plot the slopes of the graph of this function.",
   "body": " Plot the slopes of the graph of this function.       -2  -1  0  1  2  3  4  5                 "
 },
@@ -194,7 +419,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#figureplotfprime4",
   "type": "Figure",
-  "number": "17",
+  "number": "19",
   "title": "",
   "body": " The graph of is given. Sketch the graph of .     "
 },
@@ -203,7 +428,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#PlotTheSlopesAns",
   "type": "Table",
-  "number": "18",
+  "number": "20",
   "title": "A table of the slopes of a given function.",
   "body": " A table of the slopes of a given function.       -2  -1  0  1  2  3  4  5       6  2  -1  -2  -2  -1  1  4    "
 },
@@ -212,7 +437,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#figurepiecewisefprime",
   "type": "Figure",
-  "number": "19",
+  "number": "21",
   "title": "",
   "body": " The graph of given a graph of .     "
 },
@@ -221,7 +446,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#figurepiecewisefprime2",
   "type": "Figure",
-  "number": "20",
+  "number": "22",
   "title": "",
   "body": " The graph of given a graph of .     "
 },
@@ -230,7 +455,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#figurepiecewisefprime3",
   "type": "Figure",
-  "number": "21",
+  "number": "23",
   "title": "",
   "body": " The graph of given a graph of .     "
 },
@@ -257,7 +482,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#figureWhichIsWhich",
   "type": "Figure",
-  "number": "22",
+  "number": "24",
   "title": "",
   "body": " Identify which graph is , which graph is , and which graph is .     "
 },
@@ -266,7 +491,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#figureEmptyGrid16",
   "type": "Figure",
-  "number": "23",
+  "number": "25",
   "title": "",
   "body": " An empty grid.     "
 },
@@ -275,7 +500,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#figureMeetConditions",
   "type": "Figure",
-  "number": "24",
+  "number": "26",
   "title": "",
   "body": " This graph of meets several conditions defined by the derivative of .     "
 },
@@ -293,7 +518,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#TwoPiecewiseFunctions",
   "type": "Figure",
-  "number": "25",
+  "number": "27",
   "title": "",
   "body": " A limit question involving two piecewise-defined functions.            "
 },
@@ -302,7 +527,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#SqueezeThmPic",
   "type": "Figure",
-  "number": "26",
+  "number": "28",
   "title": "",
   "body": " A function is sandwiched between and .   A function is sandwiched between two other graphs.   "
 },
@@ -311,7 +536,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#figureBempty",
   "type": "Figure",
-  "number": "27",
+  "number": "29",
   "title": "",
   "body": " An empty grid.     "
 },
@@ -320,7 +545,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#figureGraphFminusG",
   "type": "Figure",
-  "number": "28",
+  "number": "30",
   "title": "",
   "body": " The graph of .     "
 },
@@ -329,7 +554,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#figureLimitsGiveC",
   "type": "Figure",
-  "number": "29",
+  "number": "31",
   "title": "",
   "body": " The graph of .     "
 }
