@@ -6,12 +6,12 @@
   <xi:include href="./docinfo.ptx" />
   <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
   <book>
-    <title>Calculus I</title>
+    <title>MATH 221</title>
 
-    <subtitle>MATH 221</subtitle>
+    <subtitle>Calculus I</subtitle>
 
     <!-- Optional: include frontmatter with author info and date -->
-    <xi:include href="./frontmatter.ptx" />
+       <xi:include href="./frontmatter.ptx" />
 
    <!-- <chapter xml:id="course-documents">
       <title>Course Documents</title>
@@ -46,15 +46,19 @@
 
       <!-- Remove the example and replace with your own activities -->
       <!-- <xi:include href="./activities/01-intro-activity.ptx"/> -->
-      <!-- <xi:include href="./activities/act-1-1-2.xml"/>
-      <xi:include href="./activities/act-1-1-3.xml"/>
-      <xi:include href="./activities/act-1-2-1.xml"/>
-      <xi:include href="./activities/act-1-2-2.xml"/>
-      <xi:include href="./activities/act-1-2-3.xml"/>
-      <xi:include href="./activities/act-1-3-1.xml"/>
-      <xi:include href="./activities/act-1-4-2.xml"/>
-      <xi:include href="./activities/act-1-5-2.xml"/>
-      <xi:include href="./activities/act-1-5b-1.xml"/> -->
+      <xi:include href="./class-activities/act-1-1-1.xml"/>
+      <xi:include href="./class-activities/act-1-1-2.xml"/>
+      <xi:include href="./class-activities/act-1-1-3.xml"/>
+      <xi:include href="./class-activities/act-1-2-1.xml"/>
+      <xi:include href="./class-activities/act-1-2-2.xml"/>
+      <xi:include href="./class-activities/act-1-2-3.xml"/>
+      <xi:include href="./class-activities/act-1-3-1.xml"/>
+      <xi:include href="./class-activities/act-1-3-5.ptx"/>  
+      <xi:include href="./class-activities/act-1-4-1.xml"/>
+      <xi:include href="./class-activities/act-1-4-2.xml"/>
+      <xi:include href="./class-activities/act-1-5-1.xml"/>
+      <xi:include href="./class-activities/act-1-5-2.xml"/>
+      <xi:include href="./class-activities/act-1-5-5.ptx"/>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
 
@@ -70,6 +74,8 @@
       <xi:include href="./handouts/16PrepSecondDerivative.ptx"/>
       <xi:include href="./handouts/17PrepLimitsContinuityDifferentiability.ptx"/>
     </chapter>
+
+ 
 
     <!-- <chapter xml:id="homework">
       <title>Homework</title>

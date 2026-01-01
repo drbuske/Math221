@@ -1,0 +1,190 @@
+<worksheet label="ws-act-1-3-5">
+   <title>The Derivative of a Function at a Point - Activity 1.3.5</title>
+    <activity xml:id="act-1-3-5" workspace="3cm">
+ <introduction>
+   <p>
+    On a grid in <xref ref="emptygridact135"/>, sketch the graph of <m>f(x)=x^{2}-4</m> over <m>[-3,3]</m>.
+    On another grid in <xref ref="emptygridact135"/>, sketch the graph of <m>g(x) = |x^{2}-4|</m> over <m>[-3,3]</m>.
+  </p>
+  
+  <figure xml:id="emptygridact135" >
+      <caption>Empty grids for plotting graphs of <m>f(x)=x^{2}-4</m> and <m>g(x) = |x^{2}-4|</m>.</caption>
+      <sidebyside widths="40% 40%">
+      <image>
+        <latex-image>
+\begin{tikzpicture}[thick,scale=1] 
+\draw[step=1cm,color=gray!50] (-3,-4) grid (3,4);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (3,0) node [below] at (2.75,0) {$x$};
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (-3,0);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,4) node [right] at (0,3.75) {$y$};
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,-4);
+\foreach \x/\xtext in { -2/-2, -1/-1, 1/1, 2/2}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt); 
+\foreach \y/\ytext in {-3/-3, -2/-2, -1/-1, 1/1, 2/2, 3/3}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt); 
+\end{tikzpicture}
+    </latex-image>
+  </image>
+  <image>
+      <latex-image>
+\begin{tikzpicture}[thick,scale=1] 
+\draw[step=1cm,color=gray!50] (-3,-4) grid (3,4);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (3,0) node [below] at (2.75,0) {$x$};
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (-3,0);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,4) node [right] at (0,3.75) {$y$};
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,-4);
+\foreach \x/\xtext in { -2/-2, -1/-1, 1/1, 2/2}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt); 
+\foreach \y/\ytext in {-3/-3, -2/-2, -1/-1, 1/1, 2/2, 3/3}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt);
+\end{tikzpicture}
+      </latex-image>
+    </image>
+      </sidebyside>
+    </figure>
+            
+  </introduction>  
+
+<task workspace="3cm" xml:id="act-1-3-5-task-1">
+        <statement>
+      <p>
+        Use the definition of the derivative at a point to calculate the value of <m>g'(0)</m>, if it exists.
+        Does your answer make sense? Plot the point <m>(0,g'(0))</m> on the graph of <m>g(x)</m> above.
+      </p>
+    </statement>
+
+  <hint>
+    <p>
+      Use the definition with <m>a=0</m>.
+    </p>
+  </hint>
+  <answer>
+    <p>
+      <m>g'(0)=0</m>
+    </p>
+  </answer>
+  <solution>
+    <p>
+      <md><mrow>g'(0) = \mathstrut \amp \lim_{h \rightarrow 0}\frac{g(0+h)-g(0)}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0} \frac{g(h)-g(0)}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0} \frac{|h^2-4|-|0^2-4|}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0} \frac{-(h^2-4)-4}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0} \frac{-h^2}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0} -h </mrow>
+        <mrow> = \mathstrut \amp 0</mrow>
+      </md>
+      This follows since <m>h^2-4 &lt; 0</m> for <m>h</m> near 0.  So <m>(0,g'(0))=(0,0)</m>.  
+    </p>
+  </solution>
+    </task>
+
+<task workspace="3cm" xml:id="act-1-3-5-task-2">
+  <statement>
+      <p>
+        Calculate, if it exists, the value of <m>g'(1)</m>.
+        Plot the point <m>(1,g'(1))</m> on the graph of <m>g(x)</m>.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        Use the definition with <m>a=1</m>.
+      </p>
+    </hint>
+    <answer>
+      <p>
+        <m>g'(1)=-2</m>
+      </p>
+    </answer>
+    <solution>
+      <p>
+             <md><mrow>g'(1) = \mathstrut \amp \lim_{h \rightarrow 0}\frac{g(1+h)-g(1)}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0} \frac{|(1+h)^2-4|-|1^2-4|}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0} \frac{-((1+h)^2-4)-3}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0} \frac{-2h-h^2}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0} -2-h </mrow>
+        <mrow> = \mathstrut \amp -2</mrow>
+      </md>
+      This follows since <m>(1+h)^2-4 &lt; 0</m> for <m>h</m> near 0.  So <m>(1,g'(1))=(1,-2)</m>.
+      </p>
+    </solution>
+  </task>
+
+<task workspace="3cm" xml:id="act-1-3-5-task-3">
+  <statement>
+    <p>
+      Calculate, if it exists, the value of <m>g'(2)</m>.
+        Again, illustrate your answer on the graph of <m>g(x)</m>.
+    </p>
+
+    <p>
+        Note: <m>\displaystyle \lim_{h \rightarrow 0}\frac{g(2+h)-g(2)}{h}</m> is a two-sided limit.
+        We investigate the value from each side.
+      </p>
+
+            <p>
+        <m>\displaystyle \lim_{h \rightarrow 0^-}\frac{g(2+h)-g(2)}{h}=</m>
+      </p>
+
+      <p>
+        <m>\displaystyle \lim_{h \rightarrow 0^+}\frac{g(2+h)-g(2)}{h}=</m>
+      </p>
+  </statement>
+  <hint>
+    <p>
+      The absolute value function behaves differently for <m>h</m> positive and <m>h</m> negative.
+    </p>
+  </hint>
+  <answer>
+    <p>
+      <m>g'(2)</m> does not exist
+    </p>
+  </answer>
+  <solution>
+    <p>
+        <md><mrow>g'(2) = \mathstrut \amp \lim_{h \rightarrow 0^-}\frac{g(2+h)-g(2)}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0^-} \frac{|(2+h)^2-4|-|2^2-4|}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0^-} \frac{-(4+4h+h^2-4)}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0^-} \frac{-4h-h^2}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0^-} -4-h </mrow>
+        <mrow> = \mathstrut \amp -4</mrow>
+      </md>
+      since <m>(2+h)^2 &lt; 4</m> for <m>h &lt; 0</m>.  But then we also have the following:
+        <md><mrow>g'(2) = \mathstrut \amp \lim_{h \rightarrow 0^+}\frac{g(2+h)-g(2)}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0^+} \frac{|(2+h)^2-4|-|2^2-4|}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0^+} \frac{4+4h+h^2-4}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0^+} \frac{4h+h^2}{h} </mrow>
+        <mrow> = \mathstrut \amp \lim_{h \rightarrow 0^+} 4+h </mrow>
+        <mrow> = \mathstrut \amp 4</mrow>
+      </md>
+      since <m>(2+h)^2 &gt; 4</m> if <m>h &gt; 0</m>.  So <m>g'(2)</m> does not exist since the two one-sided limits differ.  
+    </p>
+  </solution>
+</task>
+
+<task workspace="3cm" xml:id="act-1-3-5-task-4">
+  <statement>
+      <p>
+        Using symmetry, make a conjecture about the values of <m>g'(-1)</m> and <m>g'(-2)</m> and plot the corresponding ordered pairs on the graph of <m>g(x)</m>.
+      </p>
+  </statement>
+  <answer>
+    <p>
+      <m>g'(-1)=2</m> and <m>g'(-2)</m> will not exist.
+    </p>
+  </answer>
+</task>
+      
+
+
+
+<task workspace="3cm" xml:id="act-1-3-5-task-5">
+  <statement>
+      <p>
+        Using the applet found at <url href="https://www.geogebra.org/m/qwdxbtGF">https://www.geogebra.org/m/qwdxbtGF</url> to check your answers to the above calculations.
+        Be sure to also determine if your results make sense graphically.
+      </p>
+    </statement>
+  </task>
+
+</activity>
+</worksheet>
