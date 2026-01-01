@@ -278,6 +278,60 @@ var ptx_lunr_docs = [
   "number": "24",
   "title": "",
   "body": " This graph of meets several conditions defined by the derivative of .     "
+},
+{
+  "id": "handouts-8",
+  "level": "1",
+  "url": "handouts-8.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Daily Prep 1.7 - Limits, Continuity, and Differentiability",
+  "body": " Daily Prep 1.7 - Limits, Continuity, and Differentiability   Overview  We are returning to study limits of general functions, and examine how we can evaluate them. In particular, we will see that functions which are “nice” in a certain way (we will call such functions “continuous”) allow us to evaluate limits very easily. Knowing which functions are continuous or where they fail to be continuous will then enable us to focus on the interesting parts of functions, where we actually need to consider a limit.  We are about to wrap up Chapter 1 of the text, titled Understanding the Derivative . One key aspect of understanding the derivative is how a differentiable function is locally linear. That is, how a differentiable function, up close, looks like a line. This enables us to use linear functions – the simplest functions in all of mathematics – as an effective tool to estimate the values of a differentiable function for x-values near a certain point where we know key information. Here, we are basically using some sophisticated ideas from calculus to do something natural: if we can see or identify a trend in how a function is changing at a given point, what might we predict for the future? Following a tangent line is a good approach to doing so.  This section covers the following concepts: Limit Laws and how to use them to evaluate limits algebraically, One-sided limits, Continuity, Direct Substitution Property, Evaluating (one-sided) limits algebraically, Differentiability, Relationship between Differentiability and Continuity, Linearization of a function.    Basic learning objectives  These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated in italics .    Describe left-handed and right-handed limits.    Describe the difference between a limit and a one-sided limit.    Estimate a limit from the left and from the right of a function at a point on a graph (or determine that it does not exist).    State the definition of a continuous function at a point and on an interval .    Determine whether a function is continuous at a point by examining the graph of that function.    State informally what it means for a function to be differentiable at a point (use the expression locally linear).    Determine whether a function is differentiable at a point by examining the graph of that function.    Provide examples of functions that are continuous and yet not differentiable at a specific point.      To prepare for class  Complete all actions listed below. Respond to the questions highlighted with Submit .     Read motivating questions and the introduction to section 1.7 (up until the preview activity).     Do  Preview Activity 1.7.1 .     (Optional) Watch  video solution to Preview Activity 1.7.1 (6:25) .        Watch video: Quick Review: Limits, Continuity, and Differentiability (4:01) .     Read  section 1.7.1 (up until Activity 1.7.2).    [Submit] Explore the graphical idea of a limit with this applet . Investigate the limit as approach -4, as approaches -1, and as approaches 2.     Watch this video that speaks more precisely as to how a limit is truly defined: Limit at a Point (7:15) .     Watch this video on one-sided limits: One-sided Limits (7:23) .     Read  section 1.7.2 (up until Activity 1.7.3).    [Submit] Re-read  Definition 1.7.6 in the text. Then, give an example of a function that     satisfies (a) but not (b).    satisfies (b) but not (a).    satisfies (a) and (b), but not (c).        Watch this video on continuity at a point: Determining Continuity (7:21) .     Watch three videos on the subject of continuity: Definition of Continuity (3:36) , Removable Discontinuities (7:13) , and Continuous Functions (2:38) .      Do these exercises.     Explore  this Desmos applet answering the following questions.     Without making any adjustments to the Desmos graph, determine the numerical value of the limit at .    Without making any adjustments to the Desmos graph, determine the value of the function at .    By using the slider for or dragging the red point currently located at , explore the graph as increases from 5 to 8. Is the function continuous at ?    Now, drag the blue point currently located at to . You may also use the numerical slider for .     After making this adjustment to the Desmos graph, determine the numerical value of the limit at .    After making this adjustment to the Desmos graph, determine the value of the function at .    By using the slider for or dragging the red point currently located at , explore the graph as increases from 5 to 8. Is the function continuous at ?       Now, drag the blue point currently located at to . You may also use the numerical slider for .     After making this adjustment to the Desmos graph, determine the value of the limit at from the left.    After making this adjustment to the Desmos graph, determine the value of the limit at from the right.    After making this adjustment to the Desmos graph, determine the value of the function at .    By using the slider for or dragging the red point currently located at , explore the graph as decreases from 5 to 2. Which of the following is true about the function at ? [Continuous from the left OR Continuous from the right OR Continuous]       Now, drag the blue point currently located at to . You may also use the numerical slider for .     After making this adjustment to the Desmos graph, determine the value of the limit at from the left.    After making this adjustment to the Desmos graph, determine the value of the limit at from the right.    After making this adjustment to the Desmos graph, determine the value of the function at .    By using the slider for or dragging the red point currently located at , explore the graph as decreases from 5 to 2. Which of the following is true about the function at ? [Continuous from the left OR Continuous from the right OR Continuous]       A discontinuity is removable if the function can be made continuous at the point by changing the function value.     Is the discontinuity at a removable discontinuity?    Is the discontinuity at a removable discontinuity?        [Submit] Now answer these questions.     Write what you believe is the purpose of this particular exercise. That is, what did you learn from doing this problem?    This entire section of the text might have been titled Smoothness . In a sentence or two, how does this word relate to the topics in this section?       The graphs of functions and are given in .   A limit question involving two piecewise-defined functions.                Plot using the empty grid.    Does ?    Does ?    Does ?       The graph of the function is sandwiched between the graphs of below and above. Compute the value of . Defend your answer.   A function is sandwiched between and .   A function is sandwiched between two other graphs.      Let   Find the value of so that exists.  Then, for the value of you found, carefully graph . Be sure to label your graph.   An empty grid.            After class  Solidifying the concepts discussed in class through practice is necessary to build your skills.     Watch this video which will reinforce the definition of continuity: Continuity (7:41) .     Explore the following applet . This will let you practice in deciding when a function is continuous (10 examples).     Explore your understanding of continuity, removable discontinuities, and right- and left-sided limits through this applet . Read how to operate this or just move the red dot on the graph and the blue dots on the right side to mimic taking a limit graphically.     Read  section 1.7.3 .    Ask Copilot to “Produce a function that is continuous at but not differentiable there and that has a limit at but is not continuous there.” Is the function returned to your correct?    Ask Copilot “What is the difference between a removable discontinuity and a jump discontinuity? Are there other types of discontinuities?”     Watch this video on determining differentiability graphically: Determining Differentiability Graphically (4:40) .     Do  Exercises 1-4 in section 1.7.5 .     Read  the summary in section 1.7.4 .     Do  Exercises 5-8 in section 1.7.5 .     Explore continuity and differentiability with this applet: Continuity and Differentiability with Parameters . As always, read the paragraphs below the applet for context and understanding.     Start working on the MOMwork (MyOpenMath) assignment for this section.      Advanced learning objectives  In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:    Provide examples (both graphically and numerically) of functions where both one-sided limits exist at a point, and yet the limit at that point fails to exist.    Determine, given an algebraic expression for a function , where it is continuous.    Describe what makes a discontinuity removable - graphically and in your own words.    Explain the relationship between continuity and differentiability.    Compute the linear approximation of a function at a specific point.      Additional suggestions     Watch video: Limits of a piecewise function (6:38) .     Watch this video on determining when piecewise functions are continuous: Determining Continuity of a Piecewise Function (7:00) .      Answers       1    3    No       1    1    Yes          1    4    1    Continuous from the left.          1    4    4    Continuous from the right          No    Yes             The graph of is shown in .   The graph of .        Yes (they are both 1).    Yes (they are both 1).    No (the limits on the left do not exist).       Notice that for all shown. Since for all , we have so that for all as well. Since , we also then have .    Note that                so that exists if and only if . That is, exactly when .   The graph of .         "
+},
+{
+  "id": "TwoPiecewiseFunctions",
+  "level": "2",
+  "url": "handouts-8.html#TwoPiecewiseFunctions",
+  "type": "Figure",
+  "number": "25",
+  "title": "",
+  "body": " A limit question involving two piecewise-defined functions.            "
+},
+{
+  "id": "SqueezeThmPic",
+  "level": "2",
+  "url": "handouts-8.html#SqueezeThmPic",
+  "type": "Figure",
+  "number": "26",
+  "title": "",
+  "body": " A function is sandwiched between and .   A function is sandwiched between two other graphs.   "
+},
+{
+  "id": "figureBempty",
+  "level": "2",
+  "url": "handouts-8.html#figureBempty",
+  "type": "Figure",
+  "number": "27",
+  "title": "",
+  "body": " An empty grid.     "
+},
+{
+  "id": "figureGraphFminusG",
+  "level": "2",
+  "url": "handouts-8.html#figureGraphFminusG",
+  "type": "Figure",
+  "number": "28",
+  "title": "",
+  "body": " The graph of .     "
+},
+{
+  "id": "figureLimitsGiveC",
+  "level": "2",
+  "url": "handouts-8.html#figureLimitsGiveC",
+  "type": "Figure",
+  "number": "29",
+  "title": "",
+  "body": " The graph of .     "
 }
 ]
 
