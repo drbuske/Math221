@@ -85,6 +85,8 @@
       <xi:include href="./handouts/22PrepSineAndCosine.ptx"/>
       <xi:include href="./handouts/23PrepProductAndQuotientRules.ptx"/>
       <xi:include href="./handouts/24PrepDerivativesOfOtherTrigFunctions.ptx"/>
+      <xi:include href="./handouts/25PrepChainRule.ptx"/>
+      <xi:include href="./handouts/26PrepInverseFunctions.ptx"/>
     </chapter>
 
  

@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 2.6 - Derivatives of Inverse Functions</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    Functions are a powerful tool in mathematics: each describes a rule or process that takes any valid input to one and only one output.
+    One of the natural questions that arises regarding any function is “can the rule be undone (or reversed)?” Indeed, this is connected to the concept of a function’s inverse.
+    While not every function has an inverse, for those that do, knowing the inverse can be valuable in a wide range of settings.
+  </p>
+
+    <p>
+      Among the most important inverse functions in mathematics are the natural logarithm function, <m>\ln(x)</m> (which is the inverse of the exponential function, <m>e^{x}</m>) and the inverse trigonometric functions, such as <m>\arcsin(x)</m> and <m>\arctan(x)</m>.
+    </p>
+
+
+      <p>
+        In this section of the text, we explore how we can use the relationship between a function and its inverse to determine the derivative formula for the inverse function and, along the way, learn a key geometric connection between a function’s derivative and the derivative of its inverse.
+      </p>
+
+    </section>
+
+     <section xml:id="sec-Basiclearningobjectives26">
+          <title>Basic learning objectives</title>
+
+          <p>
+            These are the tasks you should be able to perform with reasonable
+            fluency when you arrive at our next class meeting.
+            Important new
+            vocabulary words are indicated <em>in italics</em>.
+          </p>
+
+          <ul>
+            <li>
+              <p>
+                State the definition of an inverse function.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Recognize that writing <m>y=f(x)</m> and <m>x=f^{-1}(y)</m> say the exact same thing.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Illustrate the geometric relationship between <m>y=e^{x}</m> and <m>y=\ln(x)</m> and between <m>y=f(x)</m> and <m>y=f^{-1}(x)</m> in general.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Calculate basic values of the natural logarithm, arcsine, and arctangent functions without a calculator (e.g.
+                <m>\ln(e^{5})</m> and <m>\arcsin(1/2)</m>).
+              </p>
+            </li>
+          </ul>
+
+        </section>
+
+    <section xml:id="sec-Toprepareforclass26">
+      <title>To prepare for class</title>
+
+      <p>
+        Complete all actions listed below.
+        Respond to the questions highlighted with <em>Submit</em>.
+      </p>
+      <ul>
+      <li>
+        <p>
+          <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-2-6-inverse.html">section 2.6</url> (up until Preview Activity 2.6.1).
+        </p>
+      </li>
+
+      <li>
+        <p>
+          [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#xAK">Preview Activity 2.6.1</url>.
+        </p>
+
+        <p>
+          <ul>
+            <li>
+              <p>
+                (Optional) <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=pmtCt2gmmws">solution to Preview Activity 2.6.1 (3:45)</url>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#OSu">section 2.6.1</url>.
+        </p>
+      </li>
+
+      <li>
+        
+
+        <p>
+          [Submit] <alert>Do</alert> the following to construct the function <m>\log_{2}(x)</m> (the inverse of the exponential function <m>2^{x}</m>) in <url href="https://www.geogebra.org/classic?lang=en">GeoGebra</url>. Submit screenshots as needed.
+        </p>
+
+        <p>
+          <ul>
+            <li>
+              <p>
+                Type <em>2<m>\wedge</m>x</em> in the first input box.
+                <em>GeoGebra</em> will label this as the function <m>f(x)</m> and will sketch its plot.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We now sketch a diagonal line about which we will reflect.
+                The third box on the menu offers the option <em>Lines</em>.
+                Choose it and then point to the origin <m>(0,0)</m> and click to place point <m>A</m> and then point to <m>(1,1)</m> and click to place point <m>B</m>.
+                A line will be constructed through these two points.
+                Remember that two points determine a line.
+                [Yes, this is the line <m>y=x</m>.]
+              </p>
+
+              <image width="75%" source="LinesGeoGebra.jpg" />
+              </li>
+
+              <li>
+                <p>
+                  We are now ready to reflect the graph of <m>f(x)</m> about this line.
+                  <em>GeoGebra</em> has a built-in tool to do this.
+                  Select the ninth box on the menu and the option <em>Reflect about line</em>.
+                  Choose it.
+                  Then, click on the graph of <m>2^{x}</m> to select it.
+                  Second, click on the line <m>y=x</m> to select it.
+                  The reflection of the graph of <m>y=2^{x}</m> should appear.
+                </p>
+
+                <image width="75%" source="ReflectGeoGebra.jpg" />
+                </li>
+
+                <li>
+                  <p>
+                    To complete our replication of <url href="https://activecalculus.org/single2e/sec-2-6-inverse.html#F-2-6-Inverse-Plot">Figure 2.6.2 in the text</url>, let’s plot the point <m>\displaystyle (-1,\frac{1}{2})</m>.
+                    In the next input box, type <em>C = (-1,f(-1))</em>.
+                    The point <m>\displaystyle (-1,\frac{1}{2})</m> will be plotted on your graph of <m>f(x)</m>.
+                    Repeat the process used to reflect the graph about the line <m>y=x</m> to reflect the <em>point</em> <m>C</m> about this same line: From the menu, select <em>Reflect about line</em>, then select point <em>C</em> on the graph and finally select the line <m>y=x</m>.
+                    A new point on the graph of the inverse of <m>2^{x}</m> should appear at <m>\displaystyle (\frac{1}{2}, -1)</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    To verify that you have indeed found the graph of <m>\log_{2}(x)</m>, type <em>log2(x)</em> in the next input box.
+                    <em>GeoGebra</em> will plot this function right on top of your reflection if you have followed this procedure correctly.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Let’s try this for a second function.
+                    Delete the graph of <m>\log_{2}(x)</m>.
+                    Then, go to the first input box and change <em>2<m>\wedge</m>x</em> to <em>sqrt(x)</em>.
+                    Your output should be automatically updated.
+                    Does it look correct? How do you know?
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Do</alert> the following problem. Use the graph of <m>2^{x}</m> and the graph of <m>\log_{2}(x)</m> found during your <em>GeoGebra</em> construction if you wish. [Note: The co-domain is defined in the reading.]
+            </p>
+
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    <ol>
+                      <li>
+                        <p>
+                          <m>2^{\log_2(x)}= \underline{\hspace{20mm}}</m>
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          <m>\log_{2}(2^{x}) = \underline{\hspace{20mm}}</m>
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          The domain of <m>f(x) = 2^{x}</m> is <m>\underline{\hspace{20mm}}</m>.
+                        </p>
+
+                        <p>
+                          The co-domain is <m>\underline{\hspace{20mm}}</m>.
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          The domain of <m>f^{-1}(x) = \log_{2}(x)</m> is <m>\underline{\hspace{20mm}}</m>.
+                        </p>
+
+                        <p>
+                          The co-domain is <m>\underline{\hspace{20mm}}</m>.
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          <m>y= \log_{2}(x)</m> can be rewritten as <m>x = \underline{\hspace{30mm}}</m>.
+                        </p>
+                      </li>
+                    </ol>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#uZD">section 2.6.2</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=chdkxtt8XQo&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=46">Quick Review - Derivatives of Inverse Functions (3:24)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              [Submit] <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=jhBhSerqbyU&#x26;feature=emb_title">Examples of Derivatives with the Natural Log (6:29)</url>. In this video, the chain rule is used to take a derivative of a composite function of the form <m>f(g(x))</m>. Identify <m>g(x)</m>, <m>f(x)</m>, <m>g'(x)</m> and <m>f'(x)</m> for that example.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Prompt <alert>Copilot</alert> “How can one compute the derivative of <m>\ln(x)</m> using the fact that the derivative of exp(x) is exp(x)?”
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#YSJ">Exercises 1-2 in section 2.6.6</url>.
+            </p>
+          </li>
+          </ul>
+
+        </section>
+
+        <section xml:id="sec-Afterclass26">
+          <title>After class</title>
+
+          <p>
+            Solidifying the concepts discussed in class through practice is necessary to build your skills.
+          </p>
+          <ul>
+          <li>
+            <p>
+              <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#bgM">section 2.6.3</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=pEEQNdttZsw&#x26;feature=emb_title">Derivatives Involving <m>\arcsin(x)</m> (5:26)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Prompt <alert>Copilot</alert> “How is the formula for the derivative of <m>\arctan(x)</m> derived?”
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#HnV">section 2.6.4</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Explore</alert> an applet <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_inverse_functions.html">Derivatives of Inverse Functions</url> to better understand the steps involved in the process of finding the derivative of an inverse function. Be sure to read the <em>Explore</em> questions for each step on the slider.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#OAI">Exercises 3-4 in section 2.6</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#nve">section 2.6.5 (summary)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#aPa">Exercises 5-8 in section 2.6.6</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#zrK">Exercises 9-12 from section 2.6.6</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+            </p>
+          </li>
+
+          </ul>
+        </section>
+
+       
+
+        <section xml:id="sec-Advancedlearningobjectives26">
+          <title>Advanced learning objectives</title>
+
+          <p>
+            In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+          </p>
+
+          <ul>
+            <li>
+              <p>
+                Explain how the derivative of an inverse function is related to the derivative of the original function.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Use derivative rules for <m>\ln(x)</m>, <m>\arcsin(x)</m>, and <m>\arctan(x)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Use the relationship between a function and its inverse to develop the inverse function’s derivative rule (in particular: be able to do this “from scratch” for <m>\ln(x)</m>, <m>\arcsin(x)</m>, and <m>\arctan(x)</m>).
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Differentiate a function involving logarithmic functions, arcsine and arctangent functions, and for which the derivative involves a combination of chain, product and quotient rules.
+              </p>
+            </li>
+          </ul>
+
+        </section>
+
+        <section xml:id="sec-Additionalsuggestions26">
+          <title>Additional suggestions</title>
+
+          <ul>
+            <li>
+              <p>
+                <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=8NveONuzUDY&#x26;feature=emb_title">Inverse Functions (12:29)</url>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=yftDphiQVHg&#x26;feature=emb_title">The Derivative of Inverse Functions (14:55)</url>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=l_be36R3mKg&#x26;feature=emb_title">The Derivative of the Natural Logarithm (9:39)</url>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <alert>Do</alert> these problems.
+              </p>
+
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <ol>
+                        <li>
+                          <p>
+                            For <m>x > 0</m>, find and simplify the derivative of <m>\displaystyle f(x) = \tan^{-1}x + \tan^{-1}(1/x)</m>.
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            What does your result tell you about <m>f</m>?
+                          </p>
+                        </li>
+                      </ol>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Use the graphs given in <xref ref="figureffprime26"/> to estimate the given
+                      derivatives.
+                    </p>
+
+                    <p>
+                      <ol>
+                        <li>
+                          <p>
+                            <m>(f^{-1})'(5)</m>
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            <m>(f^{-1})'(15)</m>
+                          </p>
+                        </li>
+                      </ol>
+                    </p>
+
+                    <figure xml:id="figureffprime26">
+                      <caption>Graphs of <m>f(x)</m> and <m>f'(x)</m>.</caption>
+                    <image width="75%" source="fig_03_31.jpg"><description>The graph of <m>f(x)</m> increases from about 2 to about 20.  The graph of <m>f'(x)</m> increases from about 0.2 to about 0.7 at <m>x=30</m> and then decreases to 0 at <m>x=40</m>.</description>
+                    </image>
+                    </figure>
+                    </li>
+
+                    <li>
+                      <p>
+                        <xref ref="figureffprimeTWO26"/> shows <m>f(x)</m> and <m>f^{-1}(x)</m>.
+                        Additional information is found in the <xref ref="FunctionAndInverseData"/>.
+                      </p>
+
+                       <table xml:id="FunctionAndInverseData" >
+        <title>Values of <m>f(x)</m> and <m>f'(x)</m>.</title>
+     <tabular halign="center" top="medium">
+      <row header="yes" bottom="medium" top="medium">
+                            <cell> <m>x</m> </cell>
+                            <cell> <m>f(x)</m> </cell>
+                            <cell> <m>f'(x)</m> </cell>
+                          </row>
+
+                          <row>
+                            <cell>0</cell>
+                            <cell>1</cell>
+                            <cell>0.7</cell>
+                          </row>
+
+                          <row>
+                            <cell>1</cell>
+                            <cell>2</cell>
+                            <cell>1.4</cell>
+                          </row>
+
+                          <row>
+                            <cell>2</cell>
+                            <cell>4</cell>
+                            <cell>2.8</cell>
+                          </row>
+
+                          <row bottom="minor">
+                            <cell>3</cell>
+                            <cell>8</cell>
+                            <cell>5.5</cell>
+                          </row>
+                        </tabular>
+                      </table>
+
+                        <figure xml:id="figureffprimeTWO26">
+                      <caption>Graphs of <m>f(x)</m> and <m>f^{-1}(x)</m>.</caption>
+                    <image width="50%" source="fig_03_29.jpg"><description>The graph of <m>f(x)</m> is the reflection of the graph of <m>f^{-1}(x)</m> about the line <m>y=x</m>.</description>
+                    </image>
+                    </figure>
+                      
+                          <p>
+                            <ol>
+                              <li>
+                                <p>
+                                  Find the values of <m>f(2)</m>, <m>f^{-1}(2)</m>, <m>f'(2)</m>, <m>(f^{-1})'(2)</m>.
+                                </p>
+                              </li>
+
+                              <li>
+                                <p>
+                                  Find the equation of the tangent lines at the points <m>P</m>  and <m>Q</m>.
+                                </p>
+                              </li>
+
+                              <li>
+                                <p>
+                                  What is the relationship between the two tangent lines?
+                                </p>
+                              </li>
+                            </ol>
+                          </p>
+                        </li>
+                      </ol>
+                    </p>
+                  </li>
+                </ul>
+
+        </section>
+
+        <section xml:id="sec-Answers26">
+          <title>Answers</title>
+          
+<subsection xml:id="subsec-Toprepareforclass26">
+  <title>To prepare for class</title>
+
+                <ol>
+                  <li>
+                    <p>
+                      <ol>
+                        <li>
+                          <p>
+                            <m>x</m>
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            <m>x</m>
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            <m>(-\infty,\infty)</m>; <m>(0,\infty)</m>
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            <m>(0,\infty)</m>; <m>(-\infty,\infty)</m>
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            <m>2^{y}</m>
+                          </p>
+                        </li>
+                      </ol>
+                    </p>
+                  </li>
+
+                </ol>
+              </subsection>
+
+              <subsection xml:id="subsec-Additionalsuggestions26">
+                <title>Additional suggestions</title>
+
+                <ol>
+                  <li>
+                    <p>
+                      <ol>
+                        <li>
+                          <p>
+                            <m>f'(x) = 0</m>
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            <m>f(x)</m> is constant
+                          </p>
+                        </li>
+                      </ol>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <ol>
+                        <li>
+                          <p>
+                            <m>\displaystyle \frac{1}{f'(f^{-1}(5))}\approx \frac{1}{f'(15)}= \frac{1}{0.4}= 2.5</m>
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            <m>\displaystyle \frac{1}{f'(f^{-1}(15))}\approx \frac{1}{f'(30)}\approx \frac{1}{0.72}</m>
+                          </p>
+                        </li>
+                      </ol>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <ol>
+                        <li>
+                          <p>
+                            <m>f(2) = 4</m>, <m>'(2) = 2.8</m>, <m>f^{-1}(2) = 1</m>, <m>(f^{-1})'(2) = \frac{5}{7}</m>
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            At <m>P = (3,8)</m>, the tangent line is <m>y=5.5(x-3)+8</m>.
+                            At <m>Q=(8,3)</m>, the tangent line is <m>y=\frac{1}{5.5}(x-8)+3</m>.
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            The tangent lines are inverses of each other (the graphs are reflections about the line <m>y=x</m>).
+                          </p>
+                        </li>
+                      </ol>
+                    </p>
+                  </li>
+                </ol>
+              </subsection>
+
+                        </section>
+
+              </handout>

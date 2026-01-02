@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 2.5 - The Chain Rule</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    We have come a long way in just over a week’s time: from the initial basic rules for power and exponential functions, to the structure rules given by the sum and constant multiple rules, then the basic rules for the sine and cosine functions, followed by the more complicated structure rules given by the product and quotient rules.
+    With those rules in hand, we have found derivatives for the remaining trigonometric functions, and we are now ready to deal with one more way that functions can be combined: composite functions, also known as chains of functions.
+    The derivative rule which helps us deal with these is called the <em>Chain Rule</em>.
+  </p>
+
+</section>
+
+<section>
+<title>Basic learning objectives</title>
+
+    <p>
+      These are the tasks you should be able to perform with reasonable
+      fluency when you arrive at our next class meeting.
+      Important new
+      vocabulary words are indicated <em>in italics</em>.
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          State, from memory, all of the basic function and structure rules noted in the <em>Overview</em> above.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Identify the “inner” and ‘outer” function in a composite function of the form <m>C(x) = f(g(x))</m>, such as in <m>C(x) = e^{x^2+1}</m> or <m>C(x) = \sqrt{\cos x + 4}</m>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          State the Chain Rule:<m>\displaystyle \frac{d}{dx}f(g(x)) = \ldots</m>
+        </p>
+      </li>
+    </ul>
+
+  </section>
+
+<section xml:id="sec-Toprepareforclass25">
+  <title>To prepare for class</title>
+
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-2-5-chain.html">section 2.5</url> (up until Preview Activity 2.5.1).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-5-chain.html#vLx">Preview Activity 2.5.1</url>.
+    </p>
+  </li>
+
+  <li>
+
+
+    
+    <p>
+      [Submit] Ask <alert>Copilot</alert> “Explain, in the simplest of terms, why the chain rule formula in calculus is the way it is.
+      Be sure that I see the chain of variables that is involved.
+      Maybe focus on a food chain for me.” Submit two sentences summarizing the idea returned by the AI.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> these problems.
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            Imagine we are moving straight upward in a hot air balloon.
+            Let <m>y</m> be our distance from the ground.
+            The temperature, <m>H</m>, is changing as a function of altitude, so <m>H = f(y)</m>.
+            In fact, it decreases at a rate of <m>16^{\circ}F</m> per mile.
+            Meanwhile, our balloon is climbing at a rate of 2 miles per hour (mph).
+            How much does our temperature change during our first 15 minutes?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            In the previous problem, temperature is a function of height, <m>H = f(y)</m>, and height is a function of time, <m>y=g(t)</m>.
+            So, we can think of temperature as a composite function of time, <m>H=f(g(t))</m> ,with <m>f</m> as the outside function and <m>g</m> as the inside function.
+            For the functions below, identify a composite function <m>C(t)</m> by describing an outside function <m>f</m> and an inside function <m>g</m>.
+          </p>
+
+          <p>
+            <ol>
+              <li>
+                <p>
+                  <m>C(t) = (t^{2}+1)^{100}</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>C(t) = \sqrt{3t^{2} + 5t+2}</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  The length <m>C</m> (in micrometers) of steel depends on the air temperature (in <m>^{\circ}C</m>), and the temperature depends on time, <m>t</m>, measured in hours.
+                  The length of a steel bridge increases by 0.2 micrometers for every degree increase in temperature (and is 1 micrometer at temperature of <m>0^{\circ}C</m>).
+                  The temperature is increasing at <m>3^{\circ}C</m> per hour and is <m>4^{\circ}C</m> at time <m>t=0</m> hours.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-5-chain.html#Utl">section 2.5.1</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=HxVn6kRD5NM&#x26;feature=emb_title">Quick Review - The Chain Rule (2:20)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] <alert>Do</alert> the following construction in <url href="https://www.geogebra.org/classic"> <em>GeoGebra</em> </url> that may help convince you of the accuracy of the chain rule. Submit screenshots and answers to the questions posed as needed.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            In <url href="https://www.geogebra.org/classic"> <em>GeoGebra</em> </url>, type <em>sqrt(x)</em> in the input box.
+            The function <m>f(x) = \sqrt{x}</m> will be defined and graphed.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            In the next input box, type <em>2*x+3</em>.
+            The function <m>g(x) = 2x+3</m> will be defined and graphed.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            In the third input box, we define the composite function <m>h(x)=f(g(x))</m>.
+            To do so, simply type <em>f(g(x))</em>.
+            <em>GeoGebra</em> should output <m>\sqrt{2x+3}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            We will now pick a point on the graph of <m>h</m> to measure the slope (i.e.
+            the derivative of <m>h</m>).
+            In the next input box, type <em>A = (3, h(3))</em>.
+            <em>GeoGebra</em> will plot the point <m>A</m> at <m>(3,3)</m>.
+            On the fourth button (see below), choose the <em>Tangents</em> option.
+            Then, click on point <em>A</em> on your graph followed by clicking on the graph (of <m>h</m>) itself.
+            This will produce a tangent line to your function <m>h</m> at <m>(3,3)</m>.
+            It will name this tangent line and an expression for it will appear in the next input box.
+            From this tangent line equation, the value of <m>h'(3)</m> should be obvious.
+            What is it?
+          </p>
+
+          <image source="TangentsGeoGebra.jpg" width="50%" />
+          </li>
+
+          <li>
+            <p>
+              Now we verify that <m>h'(3) = f'(g(3))\cdot g'(3)</m>.
+              To that end, in the next input box type <em>g’(3)</em>.
+              <em>GeoGebra</em> should compute this value and name it <m>a</m>.
+              Does the value returned make sense?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Repeat this process to compute <m>f'(g(3))</m> by typing <em>f’(g(3))</em> in the next input box.
+              <em>GeoGebra</em> will compute this value and name it <m>b</m>.
+              In the final input box, type <em>a * b</em>.
+              This should be the same as <m>h'(3)</m> (found earlier).
+              Is it?
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=QDc1UmLWhug&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=41">Examples of the Chain Rule - Polynomials (4:32)</url>.
+      </p>
+    </li>
+    </ul>
+
+</section>
+<section xml:id="sec-Afterclass25">
+  <title>After class</title>
+
+    <p>
+      Solidifying the concepts discussed in class through practice is necessary to build your skills.
+    </p>
+    <ul>
+    <li>
+      <p>
+        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-5-chain.html#AAu">section 2.5.2</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=ysp96e3Z-nw&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=41">Examples of the Chain Rule - Radicals (7:19)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=4y39u0DmrPY&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=42">Examples of the Chain Rule - Trigonometric Functions (5:14)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=zexX6t_zbCg&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=43">Examples of the Chain Rule - Exponential Functions (6:00)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-5-chain.html#dJG">Exercises 1-3 in section 2.5</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=pwm50foAx6A&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=45">Chain Rule Examples - Graphs Only (5:37)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> this problem.
+      </p>
+
+      <p>
+        <ol>
+          <li>
+            <p>
+              The graph of <m>f(x)</m> is given in <xref ref="figurechain"/>
+              It is known that <m>f'(0)=-1</m>, <m>f'(1) = \frac{3}{4}</m>, <m>f'(2)=1</m>, and <m>f'(4) = -3</m>.
+              Define <m>h(x) = f(x^{2})</m>.
+            </p>
+
+            <figure xml:id="figurechain">
+  <caption>The graph of <m>f(x)</m> and <m>h(x)</m>.</caption> 
+  <sidebyside widths="50% 40%">
+    <image xml:id="chainPic1" width="50%">
+    <description>The graph of <m>f(x)</m>.</description>
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=1]
+\draw[step=1cm,color=gray!50] (-1,-2) grid (5,2);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5,0) node [below] at (4.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-1,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,2) node [right] at (0,1.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-2);
+\draw[color=linecolor, line width=1.5pt,domain=-0.85:4.5]   plot[smooth] (\x,{-0.25*\x*\x*\x+1.25*\x*\x-\x}) node [right] at (3.5, 1.2) {$f(x)$};
+\foreach \x/\xtext in {1/1, 2/2, 3/3,4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-1/-1, 1/1}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+  <image xml:id="chainPic2" width="50%">
+    <description>The graph of <m>h(x)</m>.</description>
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=0.85]
+\draw[step=1cm,color=gray!50] (-3,-2.5) grid (3,2);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (3,0) node [below] at (2.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-3,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,2) node [right] at (0,1.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-2.5);
+\draw[color=linecolor, line width=1.5pt,domain=-2.15:2.15]   plot[smooth] (\x,{-0.25*\x*\x*(\x*\x-1)*(\x*\x-4)}) node [right] at (2,1.2) {$h(x)$};
+\foreach \x/\xtext in {-2/-2, -1/-1, 1/1, 2/2}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-2/-2, -1/-1, 1/1}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</sidebyside>
+</figure>
+            
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    Compute <m>h(-1)</m>, <m>h(0)</m>, <m>h(1)</m>, <m>h(\sqrt{2})</m>, and <m>h(2)</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Compute <m>h'(0)</m>, <m>h'(-2)</m>, and <m>h'(2)</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    The graph of <m>h(x)</m> is shown in <xref ref="figurechain"/>.
+                    Do the above values make sense?
+                  </p>
+                  
+                </li>
+              </ol>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=1B06Pk3W6Pc&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=44">Chain Rule Examples - Mixing Rules (10:29)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Prompt <alert>Copilot</alert> “Generate an example of a problem using a table where I would be asked to calculate the derivative of a composition of two functions using the chain rule.
+        Be sure to also generate a solution for me.” Does the AI return a correct solution?
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-5-chain.html#gHD">section 2.5.3</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-5-chain.html#xJB">Exercises 4-11 in section 2.5</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+      </p>
+    </li>
+    </ul>
+
+</section>
+
+
+
+  <section xml:id="sec-Advancedlearningobjectives25">
+    <title>Advanced learning objectives</title>
+
+    <p>
+      In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          Apply the Chain Rule to basic examples.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Differentiate functions that require the application of multiple rules.
+          For instance, compute the derivative of <m>\displaystyle g(x) = \frac{\sin^{2}(x) \cdot e^{x-5}}{\sqrt{x^{2}+1}}</m>.
+        </p>
+      </li>
+    </ul>
+
+      </section>
+
+<section>
+  <title>Additional suggestions</title>
+
+    <ul>
+      <li>
+        <p>
+          <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=Xt5a59Sc7Aw&#x26;feature=youtu.be">Chain Rule - Student Problem Solving (5:53)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=g8mWdHea0ao&#x26;feature=youtu.be">Average Rates of Change of Composite Functions (5:04)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=VdsJVaTI7HY&#x26;feature=youtu.be">How to use the Chain Rule (5:27)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=iezUUzupaSk&#x26;feature=youtu.be">Why Chain Rule Works (5:14)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Explore</alert> the following applet (especially if you are mechanical engineering major(?): <url href="https://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_intuitive_chain_rule.html">The intuitive notion of the chain rule</url>. At first glance, the moving belts will make the chain rule jump out at you!
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=6oMt3f2q4Ik&#x26;feature=emb_title">Chain rule <m>u</m>-notation (9:27)</url>. [If you would like more examples with the chain rule...one really can’t get enough - the chain rule is a crucial topic to your success.]
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=f56aAclfVEA&#x26;feature=emb_title">Combining the Chain Rule with the Product or Quotient Rule (4:13)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> video <url href="https://www.youtube.com/watch?time_continue=23&#x26;v=l0b-bhpBy44&#x26;feature=emb_title">Applied Example (tides) involving the differentiation of a trigonometric function (10:35)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Do</alert> these problems.
+        </p>
+
+        <p>
+          <ol>
+            <li>
+              <p>
+                Consider the functions <m>f</m> and <m>g</m> given by the graph in <xref ref="figureChainGraphfg"/>.
+                Define <m>h(x) = f(g(x))</m>.
+              </p>
+               <figure xml:id="figureChainGraphfg">
+  <caption>The graph of <m>f(x)</m> and <m>g(x)</m>.</caption> 
+  <image xml:id="ChainGraphfgPic" width="60%"><description>The graphs of <m>f</m> and <m>g</m> are shown together.</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.75]
+\draw[step=1cm,color=gray!50] (-2,-2) grid (10,6);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (10.5,0) node [above] at (10.25,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-2,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,6.5) node [right] at (0,6.25) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-2);
+\draw[color=linecolor, line width=1pt,domain=-0.66:2]   plot[smooth] (\x,{3*\x});
+\draw[color=linecolor, line width=1pt,domain=2:10]   plot[smooth] (\x,{-0.75*\x+7.5}) node [right] at (9,1) {$g$};
+\draw[color=red, dashed, line width=1.5pt,domain=-2:4.01]   plot[smooth] (\x,{0.333*\x*\x - 0.667*\x + 1.333});
+\draw[color=red, dashed, line width=1.5pt,domain=4:10]   plot[smooth] (\x,{0.33*\x+2.667}) node [right] at (7,4.5) {$f$};
+\foreach \x/\xtext in {-1/-1, 1/1, 2/2, 3/3, 4/4, 5/5, 6/6, 7/7, 8/8, 9/9}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in { -1/-1, 1/1, 2/2, 3/3, 4/4, 5/5}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Compute <m>h'(1)</m>.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Compute <m>h'(0)</m>.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Does <m>h'(2)</m> exist?  If so, compute its value.
+                      If not, why not?
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Use information from the graphs of <m>f(x)</m> and <m>g(x)</m> and the tangent lines shown in <xref ref="figurechain2"/> to calculate <m>m'(2)</m> if <m>m(x) = g(f(x))</m>.
+              </p>
+
+               <figure xml:id="figurechain2">
+  <caption>The graphs of <m>f(x)</m> and <m>g(x)</m> and some tangent lines.</caption> 
+  <sidebyside widths="40% 40%">
+    <image xml:id="chain2Pic1" width="50%">
+    <description>The graphs of <m>f(x)</m> together with a tangent line at <m>(2,3)</m> that also passes through <m>(4,4.8)</m>.</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.75]
+\draw[color=linecolor, line width=1.5pt,domain=1:7]   plot (\x,{0.1*(\x-2)*(\x-5)*(\x-5)+3}) node [above] at (5,3) {$f(x)$};
+\draw[color=black, line width=1.5pt,domain=1.25:4.2]   plot (\x,{0.9*\x+1.2});
+\fill [black] (2,3) circle (4pt) node [left] at (2,3) {$(2,3)$};
+\fill [black] (4,4.8) circle (4pt) node [left] at (4,4.8) {$(4,4.8)$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+  <image xml:id="chain2Pic2" width="50%">
+    <description>The graph of <m>g(x)</m> together with a tangent line at <m>(2,5)</m> that also goes through <m>(0,5)</m>.  Also shown is a tangent line at <m>(3,4)</m> that passes through <m>(3.5.3)</m>.</description>
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=0.75] 
+\draw[color=linecolor, line width=1.5pt,domain=-1:2]   plot (\x,{5-\x*\x}) node [above] at (-1.5,4) {$g(x)$};
+\draw[color=black, line width=1.5pt,domain=0.7:2.1]   plot (\x,{-2*\x+6});
+\draw[color=black, line width=1.5pt,domain=-2.25:1]   plot (\x,{5});
+\fill [black] (1,4) circle (4pt) node [right] at (1,4) {$(3,4)$};
+\fill [black] (1.5,3) circle (4pt) node [right] at (1.5,3) {$(3.5,3)$};
+\fill [black] (0,5) circle (4pt) node [above] at (0,5) {$(2,5)$};
+\fill [black] (-2,5) circle (4pt) node [above] at (-2,5) {$(0,5)$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</sidebyside>
+</figure>
+              
+            </li>
+
+            <li>
+              <p>
+                If <m>g(x) = \sqrt{f(x)}</m>, where the graph of <m>f</m>
+                and a tangent line is shown in <xref ref="figureChainsqrt"/>, evaluate <m>g'(3)</m>.
+              </p>
+
+              <figure xml:id="figureChainsqrt">
+  <caption>The graph of <m>f(x)</m> and a tangent line at <m>x=3</m>.</caption> 
+  <image xml:id="ChainsqrtPic" width="60%"><description>The graph of a function <m>f</m> and its tangent line at <m>x=3</m>.</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.9] [domain=-1:7]
+\draw[step=1cm,color=gray!50] (-1,-1) grid (7,6);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (7.5,0) node [above] at (7.25,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-1,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,6.5) node [right] at (0,6.25) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-1);
+\draw[color=linecolor, line width=1.5pt,domain=-1:7]   plot[smooth] (\x,{-0.6667*\x+4});
+\draw[color=red, dashed, line width=1.5pt,domain=-1:7]   plot[smooth] (\x,{-sin(\x*45-180)+1.25}) node [right] at (6.5,0.75) {$f$};
+\fill [black] (3,2) circle (3pt); %%node [right] at (1,4) {$(3,2$};
+\foreach \x/\xtext in { 1/1, 2/2, 3/3, 4/4, 5/5, 6/6}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in { 1/1, 2/2, 3/3, 4/4, 5/5}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+              
+            </li>
+
+            <li>
+              <p>
+                For each of the following functions of <m>x</m>, write the equation for the derivative function.
+                Please do us both a favor and don’t simplify the answers.
+              </p>
+
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>y = \sin 3x</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>w = (\sin 3x)^{3}</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>u = (\sin 3x)^{3} + 5x</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>v = \left[ (\sin 3x)^{3} + 5x \right]^{2}</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>\displaystyle k(x) = x + \frac{1}{x}</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>\displaystyle l(x) = \sqrt{x + \frac{1}{x}}</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>\displaystyle m(x) = \left[ (\sin 3x)^{3} + 5x \right]^{2} \cdot \sqrt{x + \frac{1}{x}}</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Differentiate <m>\displaystyle y = \sqrt{1+e^{\sqrt{3+x^2}}}</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ul>
+
+  </section>
+
+  <section xml:id="sec-Answers25">
+    <title>Answers</title>
+    
+<subsection xml:id="subsec-Toprepareforclass25">
+  <title>To prepare for class</title>
+  
+
+
+    <ol>
+      <li>
+        <p>
+          <m>\frac{dH}{dy}= -16\frac{^{\circ}F}{mi}</m> and <m>\frac{dy}{dt}= 2 \frac{mi}{hr}</m> means that <m>\frac{dH}{dt}= \frac{dH}{dy}\cdot \frac{dy}{dt}= (-16)(2) = -32 \frac{^{\circ}F}{hr}</m>. In 15 minutes, <m>H</m> changes <m>1/4</m> of this or <m>-8^{\circ}F</m> (a decrease of 8 degrees Fahrenheit).
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>g(t) = t^{2}+1</m> and <m>f(t) = t^{1}00</m>, though answers may vary.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>g(t) =3t^{2} + 5t + 2</m> and <m>f(t) = \sqrt{t}</m>, though answers may vary.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>g(t) =3t+4</m> and <m>f(t) = 0.2t+1</m>, though answers may vary.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+
+    </ol>
+
+      </subsection>
+
+      <subsection xml:id="subsec-FromAfterclass25">
+        <title>After class</title>
+        
+      <ol>
+      <li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>h(-1)=f(1)=0</m>, <m>h(0)=f(0)=0</m>, <m>h(1)=f(1)=0</m>, <m>h(\sqrt{2})=f(2)=1</m>, <m>h(2)=f(4)=0</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>h'(x)=f'(x^{2})\cdot 2x</m> so that <m>h'(0)=f'(0)\cdot (2)(0)=0</m>, <m>h'(-2) = f'(4)\cdot (2)(-2) = 12</m>, and <m>h'(2)=f'(4)\cdot (2)(2) = -12</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Yes
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+
+     </subsection>
+     <subsection xml:id="subsec-Additionalsuggestions25">
+      <title>Additional suggestions</title>
+      
+<ol>
+
+      <li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>h'(x) = f'(g(x))g'(x)</m> so that <m>h'(1) = f'(g(1))g'(1) = f'(3)g'(1) = f'(3)\cdot 3 = \frac{2}{3}(2)(3) = 4</m>; Note that on <m>(-2,4)</m>, the function <m>f(x)</m> can be found to be <m>f(x) = \frac{1}{3}(x-1)^{2} + 1</m> by noting it has vertex at <m>(1,1)</m> and the point <m>(4,4)</m> determines <m>c</m> in <m>f(x) = c(x-1)^{2} + 1</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>h'(0)=f'(g(0))g'(0)=f'(0)\cdot 3 = \frac{2}{3}\cdot 3 = 2</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>h'(2)</m> does not exist since <m>g'(2)</m> does not exist. <m>h</m> is not ‘smooth‘ at <m>x=2</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <m>m'(x) = g'(f(x))f'(x)</m> so that <m>m'(2) = g'(f(2)) \cdot f'(2) = g'(3) \cdot \left( \frac{4.8-3}{4-2}\right) = \left( \frac{4-3}{3-3.5}\right) (0.9) = -2(0.9) = -1.8</m>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <m>\displaystyle g'(x) = \frac{1}{2}f(x)^{-1/2}\cdot f'(x) = \frac{1}{2\sqrt{f(x)}}\cdot f'(x)</m>. Thus, <m>\displaystyle g'(3) = \frac{1}{2\sqrt{f(3)}}\cdot f'(3) = \frac{1}{2\sqrt{2}}\cdot \left( \frac{2-4}{3-0}\right) = -\frac{1}{3\sqrt{2}}</m>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                If <m>z=3x</m>, then <m>\displaystyle \frac{dy}{dx}= \frac{dy}{dz}\cdot \frac{dz}{dx}= \cos z \cdot 3 = 3 \cos(3x)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Here, <m>w= y^{3}</m> so that <m>\displaystyle \frac{dw}{dx}= \frac{dw}{dy}\frac{dy}{dz}\frac{dz}{dx}= 3y^{2} \cdot \cos z \cdot 3 = 9 \sin^{2} (3x) \cos (3x)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Here <m>u = w^{3} + 5x</m> so that <m>\displaystyle \frac{du}{dx}= \frac{du}{dw}\frac{dw}{dx}+ 5 = 3w^{2} \cdot 9 \sin^{2} (3x) \cos (3x) + 5 = 27 \sin^{6} (3x) \cdot \sin^{2} (3x) \cos (3x) + 5 = 27 \sin^{8} (3x) \cos (3x) + 5</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Here <m>v = u^{2}</m> so that <m>\displaystyle \frac{dv}{dx}= \frac{dv}{du}\frac{du}{dx}= 2u \frac{du}{dx}= 2 \left( \sin^{3} (3x) + 5x \right) \left( 27 \sin^{8} (3x) \cos (3x) + 5 \right)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\displaystyle \frac{dk}{dx}= 1 -\frac{1}{x^{2}}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Here, <m>l = \sqrt{k}</m> so that <m>\displaystyle \frac{dl}{dx}= \frac{dl}{dk}\frac{dk}{dx}= \frac{1}{2}k^{-1/2}\left( 1-\frac{1}{x^{2}}\right) = \frac{1}{2\sqrt{x+\frac{1}{x}}}\left(1 - \frac{1}{x^{2}}\right)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Here <m>m(x) = v(x) \cdot l(x)</m> so that by the product rule <m>\displaystyle \frac{dm}{dx}= \frac{dv}{dx}l(x) + v(x) \frac{dl}{dx}</m> =
+                <me>
+                  2 \left( \sin^{3} (3x) + 5x \right)(27 \sin^{8} (3x) \cos (3x) + 5 ) \sqrt{x + \frac{1}{x}}+ \left( \sin^{3} (3x) + 5x \right)^{2} \cdot \frac{1}{2\sqrt{x+\frac{1}{x}}}\left(1 - \frac{1}{x^{2}}\right).
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <m>\displaystyle \frac{dy}{dx}= \frac{1}{2}\left( 1+e^{\sqrt{3+x^{2}}}\right)^{-1/2}\cdot e^{\sqrt{3+x^{2}}}\cdot \frac{1}{2}(3+x^{2})^{-1/2}\cdot 2x</m>.
+        </p>
+      </li>
+    </ol>
+
+  </subsection>
+      </section>
+    </handout>
