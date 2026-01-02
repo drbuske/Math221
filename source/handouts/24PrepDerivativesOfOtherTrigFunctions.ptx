@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 2.4 - Derivatives of the Other Trig Functions</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    This section covers the following concepts: Derivatives of <m>\tan(x), \cot(x), \sec(x)</m>, and <m>\csc(x)</m>.
+  </p>
+</section>
+
+<section xml:id="sec-Basiclearningobjectives24">
+  <title>Basic learning objectives</title>
+
+  <p>
+    These are the tasks you should be able to perform with reasonable
+    fluency when you arrive at our next class meeting.
+    Important new
+    vocabulary words are indicated <em>in italics</em>.
+  </p>
+
+  <ul>
+
+    <li>
+      <p>
+        State the basic properties of all six main trigonometric functions: definition, domain, graph, values of the function at the main angles (<m>0,\pi/6,\pi/4,\pi/3,\pi/2</m> and all geometrically related angles), related trigonometric identities.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        State the derivatives of <m>\tan(x), \cot(x), \sec(x)</m>, and <m>\csc(x)</m>.
+      </p>
+    </li>
+  </ul>
+
+</section>
+
+<section>
+  <title>To prepare for class</title>
+
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <ul>
+  <li>
+    
+
+    <p>
+      [Submit] <alert>Explore</alert> the applet <url href="https://www.geogebra.org/m/cNEtsbvC">Sine, Cosine, and Tangent animated from the unit circle</url>. Before starting this section, it is important to remember how the tangent function is related to the sine and cosine functions. Use this applet to answer the following questions. Submit screen captures and answers to the questions posed as needed.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            Check the <m>\sin \theta</m> box.
+            As you move the slider for the angle <m>\theta</m>, the point <m>P</m> on the unit circle moves and the graph of <m>\sin \theta</m> is plotted.
+            How is the height of the blue point on the graph above <m>\theta</m> related to point <m>P</m>? Hint: Look at the <em>blue</em> dashed line in the unit circle.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Now check the <m>\cos \theta</m> box.
+            As you move the slider for the angle <m>\theta</m>, the point <m>P</m> on the unit circle moves and the graph of <m>\cos \theta</m> is plotted.
+            How is the height of the red point on the graph above <m>\theta</m> related to point <m>P</m>? Hint: Look at the <em>red</em> dashed line in the unit circle.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Now check the <m>\tan \theta</m> box.
+            As you move the slider for the angle <m>\theta</m>, the point <m>P</m> on the unit circle moves and the graph of <m>\tan \theta</m> is plotted.
+            How is the height of the purple point on the graph above <m>\theta</m> related to point <m>P</m>? Hint: Look at the <em>red</em> and <em>blue</em> dashed lines in the unit circle.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What fundamental trigonometric identity involving <m>\sin \theta, \cos \theta</m>, and <m>\tan \theta</m> does this exercise reinforce?
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Explore</alert> the applet located at <url href="https://www.geogebra.org/m/hFReSaqJ">https://www.geogebra.org/m/hFReSaqJ</url>. This applet gives you a geometric way to think about the value of <m>\tan \beta</m> when <m>0^{\circ}\leq \beta \leq 90^{\circ}</m>. As you change the angle (via the slider), it strongly suggests that the length of <m>\overline{TB}</m> is <m>\tan \beta</m>. Knowing that <m>\tan \beta</m> is the ratio of lengths of <m>\overline{DP}</m> to <m>\overline{OD}</m> where <m>O</m> is the origin, how could we prove that indeed the length of <m>\overline{TB}</m> is equal to <m>\tan \beta</m>?
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-2-4-other-trig.html">section 2.4</url> (up until Preview Activity 2.4.1).
+    </p>
+  </li>
+
+  <li>
+    
+
+    <p>
+      [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-4-other-trig.html#hHS">Preview Activity 2.4.1</url>.
+    </p>
+  </li>
+
+  <li>
+    
+
+    <p>
+      [Submit] <alert>Do</alert> the following extension of <url href="https://activecalculus.org/single/sec-2-4-other-trig.html#hHS">Preview Activity 2.4.1</url>. Submit a screen capture from <em>GeoGebra</em> and answer questions posed.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            In <url href="https://www.geogebra.org/classic"> <em>GeoGebra</em> </url>, type <em>tan(x)</em> in the input box.
+            A graph will appear.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Based on the graph, <m>f(x)=\tan (x)</m> is periodic.
+            What is the period? Do you expect the derivative <m>f'(x)</m> to have the same period? Why or why not?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Is the slope of the graph of <m>f(x)=\tan (x)</m> always positive? always negative? What does this suggest about the graph of the derivative?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Based on the graph of <m>f(x) = \tan (x)</m>, on a single period <m>(-\pi,\pi)</m>, what can you say about concavity? What does this suggest about the graph of <m>f'(x)</m> on <m>(-\pi,\pi)</m>?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            In <url href="https://www.geogebra.org/classic"> <em>GeoGebra</em> </url>, type <em>Derivative(f(x))</em> in the next input box.
+            The graph of <m>f'(x)</m> will then appear.
+            Do the properties you expected above all appear?
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-4-other-trig.html#eiw">section 2.4.1</url> which discusses the derivative of <m>\cot x</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=wARt0oF46wg&#x26;feature=emb_title">Quick Review - Derivatives of Other Trig Functions (1:55)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=43UXLvQgmwY&#x26;feature=emb_title">Examples of Other Trig Derivatives (9:46)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-4-other-trig.html#ZgR">Exercises 1-5 in section 2.4</url>.
+    </p>
+  </li>
+  </ul>
+
+</section>
+
+<section xml:id="sec-Afterclass24">
+  <title>After class</title>
+
+  <p>
+    Solidifying the concepts discussed in class through practice is necessary to build your skills.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-4-other-trig.html#Pwg">Activity 2.4.2</url> and <url href="https://activecalculus.org/single/sec-2-4-other-trig.html#lOe">Activity 2.4.3</url>.
+    </p>
+  </li>
+
+  <li>
+
+    <p>
+      Prompt <alert>Copilot</alert> “I want a pneumonic device to remember the derivatives of the 6 basic trigonometric functions.” Is the device it returns useful to you? Or more confusing?
+    </p>
+  </li>
+
+  <li>
+
+    <p>
+      Prompt <alert>Copilot</alert> “How does the quotient rule in calculus give the derivative of <m>\cot(x)</m>?” Is the response a correct one?
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-4-other-trig.html#KpF">section 2.4.2 (Summary)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-4-other-trig.html#lgO">Exercises 6-8 in section 2.4</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+    </p>
+  </li>
+  </ul>
+
+</section>
+
+<section xml:id="sec-Advancedlearningobjectives24">
+  <title>Advanced learning objectives</title>
+
+  <p>
+    In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+  </p>
+
+  <ul>
+    <li>
+      <p>
+        Derive the derivatives of <m>y=\tan x, y=\sec x, y=\cot x, and y=\csc x</m> “from scratch” using only basic derivative rules and trigonometric identities.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Differentiate a function for which the derivative involves a combination of these trigonometric functions, and other rules we’ve learned.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Use all rules learned so far in the context of a real-world problem to find the slope of a tangent line, the instantaneous rate of change in a function, or the instantaneous velocity of an object.
+      </p>
+    </li>
+  </ul>
+
+ </section>
+
+ <section xml:id="sec-Additionalsuggestions24">
+  <title>Additional suggestions</title>
+
+  <ul>
+    <li>
+      <p>
+        <alert>Watch</alert> video: <url href="https://www.youtube.com/watch?v=tyjM1j59fiw">Remembering Trig Derivatives (3:21)</url>. This is intended to help you easily remember these six basic rules.
+      </p>
+    </li>
+  </ul>
+
+ </section>
+</handout>
