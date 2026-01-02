@@ -12,14 +12,14 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <worksheet label="ws-act-1-8-2">
-   
+   <title>The Tangent Line Approximation - Activity 1.8.3</title>
     <activity xml:id="act-1-8-2" workspace="3cm">
       <introduction>
         <p>
       This activity concerns a function <m>f(x)</m> about which the following information is known:
 
       <ul><li><p><m>f</m> is a differentiable function defined at every real number <m>x</m></p></li><li><p><m>f(2) = -1</m></p></li><li><p><m>y = f'(x)</m> has its graph given in the following figure.</p></li></ul></p>
-          <image width="100%" source="images/1_8_Act2"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="100%" source="images/1_8_Act2"><description><p>The graph of <m>f'(x)</m> is given.  It is a parabola opening downward having a vertex at <m>(2,2)</m> and <m>x</m>-intercepts at <m>(0,0)</m> and <m>(4,0)</m>.</p></description></image>
 
         <p>
       Your overall task is to determine as much information as possible about <m>f</m>
@@ -88,12 +88,12 @@
         </hint>
         <answer>
           <p>
-            See the image in <xref ref="act-1-8-2-task-4">part</xref>.
+            See <xref ref="AnsAct183"/>.
           </p>
         </answer>
         <solution>
           <p>
-            See the image in <xref ref="act-1-8-2-task-4">part</xref>.
+            See <xref ref="AnsAct183"/>.
           </p>
         </solution>
       </task>
@@ -147,16 +147,20 @@
         </hint>
         <answer>
           <p>
-            See the image below, which shows, at left,
+            See <xref ref="AnsAct183"/>, which shows, at left,
             a possible graph of <m>y = f(x)</m> near <m>x = 2</m>,
             along with the tangent line
             <m>y = L(x)</m> through <m>(2, f(2))</m>.
           </p>
-          <image width="100%" source="images/1_8_Act2Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <figure xml:id="AnsAct183">
+            <image width="100%" source="images/1_8_Act2Soln"><description><p>The graph on the left shows what appears to be a cubic with a tangent line at <m>(2,-1)</m>.  The 
+          graph at the right is that of a downward-sloping line passing through <m>(0,2)</m> and <m>(2,0)</m>.</p></description>
+            </image>
+          </figure>
         </answer>
         <solution>
           <p>
-            See the plot in the image below, which shows, at left,
+            See the plot in <xref ref="AnsAct183repeat"/>, which shows, at left,
             a possible graph of <m>y = f(x)</m> near <m>x = 2</m>,
             along with the tangent line
             <m>y = L(x)</m> through <m>(2, f(2))</m>.
@@ -166,7 +170,10 @@
             Hence <m>y = f(x)</m> changes from concave up to concave down right at <m>x = 2</m>,
             which is also the point near 2 where the graph of <m>y = f(x)</m> is steepest.
           </p>
-          <image width="100%" source="images/1_8_Act2Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <figure xml:id="AnsAct183repeat">
+          <image width="100%" source="images/1_8_Act2Soln"><description><p>The graph on the left shows what appears to be a cubic with a tangent line at <m>(2,-1)</m>.  The 
+          graph at the right is that of a downward-sloping line passing through <m>(0,2)</m> and <m>(2,0)</m>.</p></description></image>
+          </figure>
         </solution>
       </task>
       <task workspace="3cm" xml:id="act-1-8-2-task-5">
