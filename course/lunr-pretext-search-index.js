@@ -235,6 +235,132 @@ var ptx_lunr_docs = [
   "body": "  A company manufactures rope, and the total cost of producing feet of rope is dollars.     What does it mean to say that ?    It costs 800 dollars to produce 2000 feet of rope.      What are the units of ?    dollars per foot      Suppose that and . Estimate , and justify your estimate by writing at least one sentence that explains your thinking.     dollars. The cost of producing 2100 feet of rope is approximately the cost of producing 2000 feet. We add the marginal cost of producing rope above 2000 feet.      Do you think is less than, equal to, or greater than ? Why?    greater than; the cost to produce the 2001st foot of rope is likely more than the cost to produce the 3001st foot of rope due to economies of scale      Suppose someone claims that . What would the practical meaning of this derivative value tell you about the approximate cost of the next foot of rope? Is this possible? Why or why not?    If the approximate cost of producing the 5001st foot of rope is roughly dollars (i.e. one gets paid 10 cents to produce this foot), then perhaps an external (government?) subsidy is in play?    "
 },
 {
+  "id": "ws-act-1-6-2",
+  "level": "1",
+  "url": "ws-act-1-6-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Second Derivative - Activity 1.6.3",
+  "body": " The Second Derivative - Activity 1.6.3    A potato is placed in an oven whose temperature is 350 degrees Fahrenheit, and the potato's temperature (in degrees Fahrenheit) is recorded in Table . Time is measured in minutes. Thanks to Nick Owad of Hood College for conducting experiments with actual potatoes in his oven in order to generate the data for this activity.    Select values of .                                                          Select approximate values of .                                 NA                 NA      In Activity , we used this data to compute approximations to and using central differences. Those values are provided in Table , along with several others computed in the same way.     What are the units on ? What is the precise meaning of the value ?    Remember that the derivative's units are units of output per unit of input.    Degrees Fahrenheit per minute.    has units measured in degrees Fahrenheit per minute.      Use a central difference to estimate the value of .    To estimate , we can use for an appropriate choice of .    .    Using a central difference, .      What is the meaning of the value of that you have computed in (b) in terms of the potato's temperature? Write several careful sentences that describe the overall behavior of the potato's temperature at this point in time. In particular, you should cite the values of , , and , each with appropriate units. Be sure to explicitly discuss what you expect to happen in the minute that transpires from to .    For each of the values and , think about what they tell you about expected upcoming behavior in and , respectively.    At the moment , the temperature of the potato is degrees; its temperature is rising at an instaneous rate of degrees Fahrenheit per minute; and the rate at which the temperature is rising is falling at a rate of degrees Fahrenheit per minute per minute. Over the minute from to , we expect the temperature of the potato to rise about degrees Fahrenheit and for the rate at which its temperature is increasing to drop by about degrees Fahrenheit per minute. We expect that degrees Fahrenheit, and degrees Fahrenheit per minute.    The value , which is measured in degrees Fahrenheit per minute per minute. Along with the other data, this tells us that at the moment , the temperature of the potato is degrees, that its temperature is rising at a rate of degrees Fahrenheit per minute, and that the rate at which the temperature is rising is falling at a rate of degrees Fahrenheit per minute per minute. That is, while the temperature is rising, it is rising at a slower and slower rate. At , we expect that degrees Fahrenheit, and degrees Fahrenheit per minute.      On the interval from to , is the potato's temperature increasing at an increasing rate, increasing at a constant rate, or increasing at a decreasing rate? Why?    Think concavity.    Increasing at a decreasing rate.    On the interval , the potato's temperature increasing at a decreasing rate because the values of the first derivative of are falling. Equivalently, this is because the value of is negative throughout the given time interval.     "
+},
+{
+  "id": "act-1-6-2",
+  "level": "2",
+  "url": "ws-act-1-6-2.html#act-1-6-2",
+  "type": "Activity",
+  "number": "15",
+  "title": "",
+  "body": "  A potato is placed in an oven whose temperature is 350 degrees Fahrenheit, and the potato's temperature (in degrees Fahrenheit) is recorded in Table . Time is measured in minutes. Thanks to Nick Owad of Hood College for conducting experiments with actual potatoes in his oven in order to generate the data for this activity.    Select values of .                                                          Select approximate values of .                                 NA                 NA      In Activity , we used this data to compute approximations to and using central differences. Those values are provided in Table , along with several others computed in the same way.     What are the units on ? What is the precise meaning of the value ?    Remember that the derivative's units are units of output per unit of input.    Degrees Fahrenheit per minute.    has units measured in degrees Fahrenheit per minute.      Use a central difference to estimate the value of .    To estimate , we can use for an appropriate choice of .    .    Using a central difference, .      What is the meaning of the value of that you have computed in (b) in terms of the potato's temperature? Write several careful sentences that describe the overall behavior of the potato's temperature at this point in time. In particular, you should cite the values of , , and , each with appropriate units. Be sure to explicitly discuss what you expect to happen in the minute that transpires from to .    For each of the values and , think about what they tell you about expected upcoming behavior in and , respectively.    At the moment , the temperature of the potato is degrees; its temperature is rising at an instaneous rate of degrees Fahrenheit per minute; and the rate at which the temperature is rising is falling at a rate of degrees Fahrenheit per minute per minute. Over the minute from to , we expect the temperature of the potato to rise about degrees Fahrenheit and for the rate at which its temperature is increasing to drop by about degrees Fahrenheit per minute. We expect that degrees Fahrenheit, and degrees Fahrenheit per minute.    The value , which is measured in degrees Fahrenheit per minute per minute. Along with the other data, this tells us that at the moment , the temperature of the potato is degrees, that its temperature is rising at a rate of degrees Fahrenheit per minute, and that the rate at which the temperature is rising is falling at a rate of degrees Fahrenheit per minute per minute. That is, while the temperature is rising, it is rising at a slower and slower rate. At , we expect that degrees Fahrenheit, and degrees Fahrenheit per minute.      On the interval from to , is the potato's temperature increasing at an increasing rate, increasing at a constant rate, or increasing at a decreasing rate? Why?    Think concavity.    Increasing at a decreasing rate.    On the interval , the potato's temperature increasing at a decreasing rate because the values of the first derivative of are falling. Equivalently, this is because the value of is negative throughout the given time interval.    "
+},
+{
+  "id": "ws-act-1-6-5",
+  "level": "1",
+  "url": "ws-act-1-6-5.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Second Derivative - Activity 1.6.5",
+  "body": " The Second Derivative - Activity 1.6.5     If is positive on an interval, then is on that interval and is on that interval.    increasing; concave up      If is negative on an interval, then is on that interval and is on that interval.    decreasing; concave down      At exactly two of the labeled points in , the derivative is 0; the second derivative is not zero at any of the labeled points. Give the signs of , , and at each marked point.    A plot of with four points labeled.    Determine the signs of , , and at various points.    Point                                                  Signs of , , and at various points.    Point                -  0  +       +  0  -       +  -  -       -  +  +          Sketch graphs of functions satisfying each of the descriptions given below.     (I)  The slope is positive and increasing at first, but then is positive and decreasing.    (II)  The first derivative of the function whose graph is above.    (III)  The second derivative of the first function sketched.       Answers vary but (I) should be increasing and concave up at first and then concave down. (II) should be above the horizontal axis and increasing and then decreasing all while being concave down. (III) should be decreasing and passing through through the horizontal axis when the maximum is reached in (II).     "
+},
+{
+  "id": "act-1-6-5",
+  "level": "2",
+  "url": "ws-act-1-6-5.html#act-1-6-5",
+  "type": "Activity",
+  "number": "16",
+  "title": "",
+  "body": "   If is positive on an interval, then is on that interval and is on that interval.    increasing; concave up      If is negative on an interval, then is on that interval and is on that interval.    decreasing; concave down      At exactly two of the labeled points in , the derivative is 0; the second derivative is not zero at any of the labeled points. Give the signs of , , and at each marked point.    A plot of with four points labeled.    Determine the signs of , , and at various points.    Point                                                  Signs of , , and at various points.    Point                -  0  +       +  0  -       +  -  -       -  +  +          Sketch graphs of functions satisfying each of the descriptions given below.     (I)  The slope is positive and increasing at first, but then is positive and decreasing.    (II)  The first derivative of the function whose graph is above.    (III)  The second derivative of the first function sketched.       Answers vary but (I) should be increasing and concave up at first and then concave down. (II) should be above the horizontal axis and increasing and then decreasing all while being concave down. (III) should be decreasing and passing through through the horizontal axis when the maximum is reached in (II).    "
+},
+{
+  "id": "ws-act-1-7-1",
+  "level": "1",
+  "url": "ws-act-1-7-1.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Limits, Continuity, and Differentiability - Activity 1.7.2",
+  "body": " Limits, Continuity, and Differentiability - Activity 1.7.2    Consider a function that is piecewise-defined according to the formula  Use the given formula to answer the following questions.     For each of the values , compute .    Find the interval in which lies and evaluate the function there.    ; ; ; ; is undefined.    ; ; ; ; is undefined.      For each of the values , determine .    Remember that for , we only consider values of such that . Find the right formula to use in the piecewise definition for to fit the values you are considering.                        For each of the values , determine . If the limit fails to exist, explain why by discussing the left- and right-hand limits at the relevant -value.    Use your work in (b) and compare left- and right-hand limits.    does not exist. The values of the limits as for are .    does not exists because the left-hand limit is while the right-hand limit is . All of the other requested limits exist, as left- and right-hand limits exist and are equal in each case. The respective values of the limits as for are .      For which values of is the following statement true?    Use your work in (a) and (c).    , , and .    For , , and , . At , the limit fails to exist, but . At , the limit is , but . At , the limit is 2, but is undefined.      On the axes provided, sketch an accurate, labeled graph of . Be sure to carefully use open circles (○) and filled circles (●) to represent key points on the graph, as dictated by the piecewise formula.    Graph the piecewise-defined function described here.     Note that is piecewise linear.      The graph of the piecewise-defined function described in this activity.      "
+},
+{
+  "id": "act-1-7-1",
+  "level": "2",
+  "url": "ws-act-1-7-1.html#act-1-7-1",
+  "type": "Activity",
+  "number": "17",
+  "title": "",
+  "body": "  Consider a function that is piecewise-defined according to the formula  Use the given formula to answer the following questions.     For each of the values , compute .    Find the interval in which lies and evaluate the function there.    ; ; ; ; is undefined.    ; ; ; ; is undefined.      For each of the values , determine .    Remember that for , we only consider values of such that . Find the right formula to use in the piecewise definition for to fit the values you are considering.                        For each of the values , determine . If the limit fails to exist, explain why by discussing the left- and right-hand limits at the relevant -value.    Use your work in (b) and compare left- and right-hand limits.    does not exist. The values of the limits as for are .    does not exists because the left-hand limit is while the right-hand limit is . All of the other requested limits exist, as left- and right-hand limits exist and are equal in each case. The respective values of the limits as for are .      For which values of is the following statement true?    Use your work in (a) and (c).    , , and .    For , , and , . At , the limit fails to exist, but . At , the limit is , but . At , the limit is 2, but is undefined.      On the axes provided, sketch an accurate, labeled graph of . Be sure to carefully use open circles (○) and filled circles (●) to represent key points on the graph, as dictated by the piecewise formula.    Graph the piecewise-defined function described here.     Note that is piecewise linear.      The graph of the piecewise-defined function described in this activity.     "
+},
+{
+  "id": "ws-act-1-7-2",
+  "level": "1",
+  "url": "ws-act-1-7-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Limits, Continuity, and Differentiability - Activity 1.7.3",
+  "body": " Limits, Continuity, and Differentiability - Activity 1.7.3    This activity builds on your work in Preview Activity 1.7.1, using the same function as given by the graph that is repeated in the following figure. Assume that .  ADD ALT TEXT TO THIS IMAGE     At which values of does not exist?    Consider the left- and right-hand limits at each value.    ; .    does not exist at since and does not exist at since does not exist due to the infinitely oscillatory behavior of .      At which values of is not defined?    Carefully examine places on the graph where there's an open circle.    .    The only point at which is not defined is at .      At which values of does have a limit, but ?    Are there locations on the graph where the function has a limit but there's a hole in the graph?    ; .    At , note that exists (and appears to have value approximately ), but , and thus . At , , but is not defined, so the limit exists but does not equal the function value.      State all values of for which is not continuous at .    Remember that at least one of three conditions must fail: if the function lacks a limit, if the function is undefined, or if the limit exists but does not equal the function value, then is not continuous at the point.    ; ; ; .    Based on our work in (a), (b), and (c), is not continuous at and because does not have a limit at those points; is not continuous at since is not defined there; and is not continuous at because at that point its limit does not equal its function value.      Which condition is stronger, and hence implies the other: has a limit at or is continuous at ? Explain, and hence complete the following sentence: If at , then at , where you complete the blanks with has a limit and is continuous , using each phrase once.    Note that the definition of being continuous requires the limit to exist.     If is continuous at , then has a limit at .     If is continuous at , then has a limit at , since one of the defining properties of being continuous at is that the function has a limit at that input value. This shows that being continuous is a stronger condition than having a limit.     "
+},
+{
+  "id": "act-1-7-2",
+  "level": "2",
+  "url": "ws-act-1-7-2.html#act-1-7-2",
+  "type": "Activity",
+  "number": "18",
+  "title": "",
+  "body": "  This activity builds on your work in Preview Activity 1.7.1, using the same function as given by the graph that is repeated in the following figure. Assume that .  ADD ALT TEXT TO THIS IMAGE     At which values of does not exist?    Consider the left- and right-hand limits at each value.    ; .    does not exist at since and does not exist at since does not exist due to the infinitely oscillatory behavior of .      At which values of is not defined?    Carefully examine places on the graph where there's an open circle.    .    The only point at which is not defined is at .      At which values of does have a limit, but ?    Are there locations on the graph where the function has a limit but there's a hole in the graph?    ; .    At , note that exists (and appears to have value approximately ), but , and thus . At , , but is not defined, so the limit exists but does not equal the function value.      State all values of for which is not continuous at .    Remember that at least one of three conditions must fail: if the function lacks a limit, if the function is undefined, or if the limit exists but does not equal the function value, then is not continuous at the point.    ; ; ; .    Based on our work in (a), (b), and (c), is not continuous at and because does not have a limit at those points; is not continuous at since is not defined there; and is not continuous at because at that point its limit does not equal its function value.      Which condition is stronger, and hence implies the other: has a limit at or is continuous at ? Explain, and hence complete the following sentence: If at , then at , where you complete the blanks with has a limit and is continuous , using each phrase once.    Note that the definition of being continuous requires the limit to exist.     If is continuous at , then has a limit at .     If is continuous at , then has a limit at , since one of the defining properties of being continuous at is that the function has a limit at that input value. This shows that being continuous is a stronger condition than having a limit.    "
+},
+{
+  "id": "ws-act-1-7-3",
+  "level": "1",
+  "url": "ws-act-1-7-3.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Limits, Continuity, and Differentiability - Activity 1.7.4",
+  "body": " Limits, Continuity, and Differentiability - Activity 1.7.4    In this activity, we explore two different functions and classify the points at which each is not differentiable.  For (a)-(c), let be the function given by the rule . Note that for part (d) we use the function given by the graph in (d).     Reasoning graphically (that is, by discussing the graph of ), explain why is differentiable at every point such that .    What type of function is for all ? For all ?    is piecewise linear.    We know that is given by the formula when and by when . Each of these pieces of is a straight line, so at every point other than the point where they meet, the function has a well-defined slope, and thus is differentiable.      Use the limit definition of the derivative to show that .    Recall that .         Observe that      Explain why fails to exist by using small positive and negative values of .    What is the value of when ?    , but .    Following up on our work in (b), note that whenever , , and thus , while whenever , , and thus Since the right- and left-hand limits are not equal, it follows that does not exist.      Let be the function that we have previously explored in Preview Activity 1.7.1, whose graph is given again in the following figure.  The graph from Preview Activity 1.7.1.  State all values of for which is not differentiable at . For each, provide a reason for your conclusion.    You might start by identifying points where is not continuous.    .    is not differentiable at because at each of these points is not continuous. In addition, is not differentiable at and because the graph of has a corner point (or cusp) at each of these values.      True or false: if a function is differentiable at , then must exist. Why?    What does being differentiable at a point tell you about continuity there?    True.    True: if a function is differentiable at , then must exist. This is true because we know that if is differentiable at a point, then is continuous there, and anytime a function is continuous at a point, it must have a limit there.     "
+},
+{
+  "id": "act-1-7-3",
+  "level": "2",
+  "url": "ws-act-1-7-3.html#act-1-7-3",
+  "type": "Activity",
+  "number": "19",
+  "title": "",
+  "body": "  In this activity, we explore two different functions and classify the points at which each is not differentiable.  For (a)-(c), let be the function given by the rule . Note that for part (d) we use the function given by the graph in (d).     Reasoning graphically (that is, by discussing the graph of ), explain why is differentiable at every point such that .    What type of function is for all ? For all ?    is piecewise linear.    We know that is given by the formula when and by when . Each of these pieces of is a straight line, so at every point other than the point where they meet, the function has a well-defined slope, and thus is differentiable.      Use the limit definition of the derivative to show that .    Recall that .         Observe that      Explain why fails to exist by using small positive and negative values of .    What is the value of when ?    , but .    Following up on our work in (b), note that whenever , , and thus , while whenever , , and thus Since the right- and left-hand limits are not equal, it follows that does not exist.      Let be the function that we have previously explored in Preview Activity 1.7.1, whose graph is given again in the following figure.  The graph from Preview Activity 1.7.1.  State all values of for which is not differentiable at . For each, provide a reason for your conclusion.    You might start by identifying points where is not continuous.    .    is not differentiable at because at each of these points is not continuous. In addition, is not differentiable at and because the graph of has a corner point (or cusp) at each of these values.      True or false: if a function is differentiable at , then must exist. Why?    What does being differentiable at a point tell you about continuity there?    True.    True: if a function is differentiable at , then must exist. This is true because we know that if is differentiable at a point, then is continuous there, and anytime a function is continuous at a point, it must have a limit there.    "
+},
+{
+  "id": "ws-act-1-8-1",
+  "level": "1",
+  "url": "ws-act-1-8-1.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Tangent Line Approximation - Activity 1.8.2",
+  "body": " The Tangent Line Approximation - Activity 1.8.2    Suppose it is known that for a given differentiable function , its local linearization at the point where is given by .     Compute the values of and .    Follow the rule for .    ; .    Using the formula for , ; Since , we see .      What must be the values of and ? Why?    Recall that the form of the local linearization is .    ; .    Since , we see and . Alternatively, we could observe that the value and slope of must match the value and slope of at the point of tangency.      Do you expect the value of to be greater than or less than the value of ? Why?    Is the function increasing or decreasing at ?    Less.    Because , we see that is increasing near , and therefore is expected to be less than .      Use the local linearization to estimate the value of .    Remember that .    .    Observe that .      Suppose that you also know that . What does this tell you about the graph of at ?    What does the second derivative tell you about the shape of a curve?    Concave up.    Since , we know is concave up at .      For near , sketch the graph of the local linearization as well as a possible graph of on the axes provided.  ADD ALT TEXT TO THIS IMAGE    Use your work above.    The illustration below shows a possible graph of near , along with the tangent line through .  ADD ALT TEXT TO THIS IMAGE    In the figure below, we use the results of our previous work to generate the plot shown, which is a possible graph of near , along with the tangent line through .  ADD ALT TEXT TO THIS IMAGE     "
+},
+{
+  "id": "act-1-8-1",
+  "level": "2",
+  "url": "ws-act-1-8-1.html#act-1-8-1",
+  "type": "Activity",
+  "number": "20",
+  "title": "",
+  "body": "  Suppose it is known that for a given differentiable function , its local linearization at the point where is given by .     Compute the values of and .    Follow the rule for .    ; .    Using the formula for , ; Since , we see .      What must be the values of and ? Why?    Recall that the form of the local linearization is .    ; .    Since , we see and . Alternatively, we could observe that the value and slope of must match the value and slope of at the point of tangency.      Do you expect the value of to be greater than or less than the value of ? Why?    Is the function increasing or decreasing at ?    Less.    Because , we see that is increasing near , and therefore is expected to be less than .      Use the local linearization to estimate the value of .    Remember that .    .    Observe that .      Suppose that you also know that . What does this tell you about the graph of at ?    What does the second derivative tell you about the shape of a curve?    Concave up.    Since , we know is concave up at .      For near , sketch the graph of the local linearization as well as a possible graph of on the axes provided.  ADD ALT TEXT TO THIS IMAGE    Use your work above.    The illustration below shows a possible graph of near , along with the tangent line through .  ADD ALT TEXT TO THIS IMAGE    In the figure below, we use the results of our previous work to generate the plot shown, which is a possible graph of near , along with the tangent line through .  ADD ALT TEXT TO THIS IMAGE    "
+},
+{
+  "id": "ws-act-1-8-2",
+  "level": "1",
+  "url": "ws-act-1-8-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Tangent Line Approximation - Activity 1.8.3",
+  "body": " The Tangent Line Approximation - Activity 1.8.3    This activity concerns a function about which the following information is known: is a differentiable function defined at every real number has its graph given in the following figure.  The graph of is given. It is a parabola opening downward having a vertex at and -intercepts at and .  Your overall task is to determine as much information as possible about (especially near the value ) by responding to the questions below.     Find a formula for the tangent line approximation, , to at the point .    Find the value of from the given graph of .    .    Since and , we have .      Use the tangent line approximation to estimate the value of . Show your work carefully and clearly.    Remember that .    .    Using our work in (a), .      Sketch a graph of on the righthand grid in the provided figure; label it appropriately. Write a sentence to explain why your graph looks the way it does.    The graph of is the derivative of the graph of .    See .    See .      Is the slope of the tangent line to increasing, decreasing, or neither when ? Explain.    Is increasing, decreasing, or neither when ?    Neither.    The slope of the tangent line to is increasing for because is an increasing function on this interval. Similarly, for , the slope of the tangent line to is decreasing. Right at , the slope of the tangent line to is neither increasing nor decreasing.      Sketch a possible graph of near on the lefthand grid in the provided figure. Include a sketch of (found in part (a)). Explain how you know the graph of looks like you have drawn it.    Draw first. Then think about options for relative to the graph of .    See , which shows, at left, a possible graph of near , along with the tangent line through .   The graph on the left shows what appears to be a cubic with a tangent line at . The graph at the right is that of a downward-sloping line passing through and .      See the plot in , which shows, at left, a possible graph of near , along with the tangent line through . Note that is concave up for since is increasing on that interval, and is concave down for since is decreasing there. Hence changes from concave up to concave down right at , which is also the point near 2 where the graph of is steepest.   The graph on the left shows what appears to be a cubic with a tangent line at . The graph at the right is that of a downward-sloping line passing through and .       Does your estimate in (b) over- or under-estimate the true value of ? Why?    Does the tangent line lie above or below the graph of at ?    Too large.    Because the tangent line to lies above the graph of to the right of , our estimate of is too large the local linearization overshoots the true value of at this point.     "
+},
+{
+  "id": "act-1-8-2",
+  "level": "2",
+  "url": "ws-act-1-8-2.html#act-1-8-2",
+  "type": "Activity",
+  "number": "21",
+  "title": "",
+  "body": "  This activity concerns a function about which the following information is known: is a differentiable function defined at every real number has its graph given in the following figure.  The graph of is given. It is a parabola opening downward having a vertex at and -intercepts at and .  Your overall task is to determine as much information as possible about (especially near the value ) by responding to the questions below.     Find a formula for the tangent line approximation, , to at the point .    Find the value of from the given graph of .    .    Since and , we have .      Use the tangent line approximation to estimate the value of . Show your work carefully and clearly.    Remember that .    .    Using our work in (a), .      Sketch a graph of on the righthand grid in the provided figure; label it appropriately. Write a sentence to explain why your graph looks the way it does.    The graph of is the derivative of the graph of .    See .    See .      Is the slope of the tangent line to increasing, decreasing, or neither when ? Explain.    Is increasing, decreasing, or neither when ?    Neither.    The slope of the tangent line to is increasing for because is an increasing function on this interval. Similarly, for , the slope of the tangent line to is decreasing. Right at , the slope of the tangent line to is neither increasing nor decreasing.      Sketch a possible graph of near on the lefthand grid in the provided figure. Include a sketch of (found in part (a)). Explain how you know the graph of looks like you have drawn it.    Draw first. Then think about options for relative to the graph of .    See , which shows, at left, a possible graph of near , along with the tangent line through .   The graph on the left shows what appears to be a cubic with a tangent line at . The graph at the right is that of a downward-sloping line passing through and .      See the plot in , which shows, at left, a possible graph of near , along with the tangent line through . Note that is concave up for since is increasing on that interval, and is concave down for since is decreasing there. Hence changes from concave up to concave down right at , which is also the point near 2 where the graph of is steepest.   The graph on the left shows what appears to be a cubic with a tangent line at . The graph at the right is that of a downward-sloping line passing through and .       Does your estimate in (b) over- or under-estimate the true value of ? Why?    Does the tangent line lie above or below the graph of at ?    Too large.    Because the tangent line to lies above the graph of to the right of , our estimate of is too large the local linearization overshoots the true value of at this point.    "
+},
+{
   "id": "handouts-2",
   "level": "1",
   "url": "handouts-2.html",
@@ -248,7 +374,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#GrapefruitPic",
   "type": "Figure",
-  "number": "3",
+  "number": "10",
   "title": "",
   "body": " Height of a grapefruit over time.   A curve showing the height of a grapefruit over time. The curve increases, reaches a peak, and then decreases.   "
 },
@@ -257,7 +383,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#GrapefruitTableData",
   "type": "Table",
-  "number": "4",
+  "number": "11",
   "title": "Height of the grapefruit above the ground.",
   "body": " Height of the grapefruit above the ground.     (sec)  0  1  2  3  4  5  6     (feet)  6  90  142  162  150  106  30    "
 },
@@ -266,7 +392,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#GrapefruitTableData2",
   "type": "Table",
-  "number": "5",
+  "number": "12",
   "title": "Average velocity of the grapefruit over various time intervals.",
   "body": " Average velocity of the grapefruit over various time intervals.    Time Interval  Average Velocity    [1,1.5]      [1,1.1]      [1,1.01]      [1,1.001]      [1,1.0001]      [0.999,1]      [0.9999,1]      "
 },
@@ -275,7 +401,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#figureKatherinesDistance",
   "type": "Figure",
-  "number": "6",
+  "number": "13",
   "title": "",
   "body": " Katherine's distance vs. time.     "
 },
@@ -284,7 +410,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#figureKatherinesVelocity",
   "type": "Figure",
-  "number": "7",
+  "number": "14",
   "title": "",
   "body": " Katherine's velocity vs. time.     "
 },
@@ -293,7 +419,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#GrapefruitTableComputed",
   "type": "Table",
-  "number": "8",
+  "number": "15",
   "title": "Average velocities of the grapefruit on various intervals computed.",
   "body": " Average velocities of the grapefruit on various intervals computed.    Time Interval  Average Velocity    [1,1.5]  60 ft\/sec    [1,1.1]  66.4 ft\/sec    [1,1.01]  67.84 ft\/sec    [1,1.001]  67.984 ft\/sec    [1,1.0001]  67.9984 ft\/sec    [0.999,1]  68.016 ft\/sec    [0.9999,1]  68.0016 ft\/sec    "
 },
@@ -311,7 +437,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#figureDPAns122",
   "type": "Figure",
-  "number": "9",
+  "number": "16",
   "title": "",
   "body": " One possible graph.     "
 },
@@ -329,7 +455,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphOf1OverX",
   "type": "Figure",
-  "number": "10",
+  "number": "17",
   "title": "",
   "body": " The graph of for .     "
 },
@@ -338,7 +464,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphOf2ToX",
   "type": "Figure",
-  "number": "11",
+  "number": "18",
   "title": "",
   "body": " The graph of .     "
 },
@@ -347,7 +473,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphOfx3",
   "type": "Figure",
-  "number": "12",
+  "number": "19",
   "title": "",
   "body": " The graph of .     "
 },
@@ -356,7 +482,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureOrderDerivatives",
   "type": "Figure",
-  "number": "13",
+  "number": "20",
   "title": "",
   "body": " The graph of .     "
 },
@@ -365,7 +491,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureDistanceHighway",
   "type": "Figure",
-  "number": "14",
+  "number": "21",
   "title": "",
   "body": " The graph of .     "
 },
@@ -374,7 +500,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphFull1OverX",
   "type": "Figure",
-  "number": "15",
+  "number": "22",
   "title": "",
   "body": " The graph of together with a secant line through and .     "
 },
@@ -383,7 +509,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphOf2ToXAns",
   "type": "Figure",
-  "number": "16",
+  "number": "23",
   "title": "",
   "body": " The graph of with secant and tangent lines.     "
 },
@@ -392,7 +518,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureTangentX3Ans",
   "type": "Figure",
-  "number": "17",
+  "number": "24",
   "title": "",
   "body": " The graph of the tangent line to at is .     "
 },
@@ -410,7 +536,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#PlotTheSlopes",
   "type": "Table",
-  "number": "18",
+  "number": "25",
   "title": "Plot the slopes of the graph of this function.",
   "body": " Plot the slopes of the graph of this function.       -2  -1  0  1  2  3  4  5                 "
 },
@@ -419,7 +545,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#figureplotfprime4",
   "type": "Figure",
-  "number": "19",
+  "number": "26",
   "title": "",
   "body": " The graph of is given. Sketch the graph of .     "
 },
@@ -428,7 +554,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#PlotTheSlopesAns",
   "type": "Table",
-  "number": "20",
+  "number": "27",
   "title": "A table of the slopes of a given function.",
   "body": " A table of the slopes of a given function.       -2  -1  0  1  2  3  4  5       6  2  -1  -2  -2  -1  1  4    "
 },
@@ -437,7 +563,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#figurepiecewisefprime",
   "type": "Figure",
-  "number": "21",
+  "number": "28",
   "title": "",
   "body": " The graph of given a graph of .     "
 },
@@ -446,7 +572,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#figurepiecewisefprime2",
   "type": "Figure",
-  "number": "22",
+  "number": "29",
   "title": "",
   "body": " The graph of given a graph of .     "
 },
@@ -455,7 +581,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#figurepiecewisefprime3",
   "type": "Figure",
-  "number": "23",
+  "number": "30",
   "title": "",
   "body": " The graph of given a graph of .     "
 },
@@ -482,7 +608,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#figureWhichIsWhich",
   "type": "Figure",
-  "number": "24",
+  "number": "31",
   "title": "",
   "body": " Identify which graph is , which graph is , and which graph is .     "
 },
@@ -491,7 +617,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#figureEmptyGrid16",
   "type": "Figure",
-  "number": "25",
+  "number": "32",
   "title": "",
   "body": " An empty grid.     "
 },
@@ -500,7 +626,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#figureMeetConditions",
   "type": "Figure",
-  "number": "26",
+  "number": "33",
   "title": "",
   "body": " This graph of meets several conditions defined by the derivative of .     "
 },
@@ -518,7 +644,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#TwoPiecewiseFunctions",
   "type": "Figure",
-  "number": "27",
+  "number": "34",
   "title": "",
   "body": " A limit question involving two piecewise-defined functions.            "
 },
@@ -527,7 +653,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#SqueezeThmPic",
   "type": "Figure",
-  "number": "28",
+  "number": "35",
   "title": "",
   "body": " A function is sandwiched between and .   A function is sandwiched between two other graphs.   "
 },
@@ -536,7 +662,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#figureBempty",
   "type": "Figure",
-  "number": "29",
+  "number": "36",
   "title": "",
   "body": " An empty grid.     "
 },
@@ -545,7 +671,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#figureGraphFminusG",
   "type": "Figure",
-  "number": "30",
+  "number": "37",
   "title": "",
   "body": " The graph of .     "
 },
@@ -554,7 +680,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#figureLimitsGiveC",
   "type": "Figure",
-  "number": "31",
+  "number": "38",
   "title": "",
   "body": " The graph of .     "
 }
