@@ -59,6 +59,12 @@
       <xi:include href="./class-activities/act-1-5-1.xml"/>
       <xi:include href="./class-activities/act-1-5-2.xml"/>
       <xi:include href="./class-activities/act-1-5-5.ptx"/>
+      <xi:include href="./class-activities/act-1-6-2.xml"/>
+      <xi:include href="./class-activities/act-1-6-5.ptx"/>
+      <xi:include href="./class-activities/act-1-7-1.xml"/>
+      <xi:include href="./class-activities/act-1-7-2.xml"/>
+      <xi:include href="./class-activities/act-1-7-3.xml"/>
+      <xi:include href="./class-activities/act-1-8-1.xml"/>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
 
