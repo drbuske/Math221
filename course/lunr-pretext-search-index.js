@@ -827,6 +827,42 @@ var ptx_lunr_docs = [
   "number": "48",
   "title": "",
   "body": " The graph of and a tangent line at .  The graph of a function and its tangent line at .    "
+},
+{
+  "id": "handouts-15",
+  "level": "1",
+  "url": "handouts-15.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Daily Prep 2.6 - Derivatives of Inverse Functions",
+  "body": " Daily Prep 2.6 - Derivatives of Inverse Functions   Overview  Functions are a powerful tool in mathematics: each describes a rule or process that takes any valid input to one and only one output. One of the natural questions that arises regarding any function is “can the rule be undone (or reversed)?” Indeed, this is connected to the concept of a function’s inverse. While not every function has an inverse, for those that do, knowing the inverse can be valuable in a wide range of settings.  Among the most important inverse functions in mathematics are the natural logarithm function, (which is the inverse of the exponential function, ) and the inverse trigonometric functions, such as and .  In this section of the text, we explore how we can use the relationship between a function and its inverse to determine the derivative formula for the inverse function and, along the way, learn a key geometric connection between a function’s derivative and the derivative of its inverse.    Basic learning objectives  These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated in italics .    State the definition of an inverse function.    Recognize that writing and say the exact same thing.    Illustrate the geometric relationship between and and between and in general.    Calculate basic values of the natural logarithm, arcsine, and arctangent functions without a calculator (e.g. and ).      To prepare for class  Complete all actions listed below. Respond to the questions highlighted with Submit .     Read motivating questions and the introduction to section 2.6 (up until Preview Activity 2.6.1).    [Submit] Do  Preview Activity 2.6.1 .     (Optional) Watch video solution to Preview Activity 2.6.1 (3:45)         Read  section 2.6.1 .    [Submit] Do the following to construct the function (the inverse of the exponential function ) in GeoGebra . Submit screenshots as needed.     Type 2 x in the first input box. GeoGebra will label this as the function and will sketch its plot.    We now sketch a diagonal line about which we will reflect. The third box on the menu offers the option Lines . Choose it and then point to the origin and click to place point and then point to and click to place point . A line will be constructed through these two points. Remember that two points determine a line. [Yes, this is the line .]     We are now ready to reflect the graph of about this line. GeoGebra has a built-in tool to do this. Select the ninth box on the menu and the option Reflect about line . Choose it. Then, click on the graph of to select it. Second, click on the line to select it. The reflection of the graph of should appear.     To complete our replication of Figure 2.6.2 in the text , let’s plot the point . In the next input box, type C = (-1,f(-1)) . The point will be plotted on your graph of . Repeat the process used to reflect the graph about the line to reflect the point  about this same line: From the menu, select Reflect about line , then select point C on the graph and finally select the line . A new point on the graph of the inverse of should appear at .    To verify that you have indeed found the graph of , type log2(x) in the next input box. GeoGebra will plot this function right on top of your reflection if you have followed this procedure correctly.    Let’s try this for a second function. Delete the graph of . Then, go to the first input box and change 2 x to sqrt(x) . Your output should be automatically updated. Does it look correct? How do you know?        Do the following problem. Use the graph of and the graph of found during your GeoGebra construction if you wish. [Note: The co-domain is defined in the reading.]                  The domain of is .  The co-domain is .    The domain of is .  The co-domain is .     can be rewritten as .           Read  section 2.6.2 .     Watch video Quick Review - Derivatives of Inverse Functions (3:24) .    [Submit] Watch video Examples of Derivatives with the Natural Log (6:29) . In this video, the chain rule is used to take a derivative of a composite function of the form . Identify , , and for that example.    Prompt Copilot “How can one compute the derivative of using the fact that the derivative of exp(x) is exp(x)?”     Do  Exercises 1-2 in section 2.6.6 .      After class  Solidifying the concepts discussed in class through practice is necessary to build your skills.     Read  section 2.6.3 .     Watch video Derivatives Involving (5:26) .    Prompt Copilot “How is the formula for the derivative of derived?”     Read  section 2.6.4 .     Explore an applet Derivatives of Inverse Functions to better understand the steps involved in the process of finding the derivative of an inverse function. Be sure to read the Explore questions for each step on the slider.     Do  Exercises 3-4 in section 2.6 .     Read  section 2.6.5 (summary) .     Do  Exercises 5-8 in section 2.6.6 .     Do  Exercises 9-12 from section 2.6.6 .     Start working on the MOMwork (MyOpenMath) assignment for this section.      Advanced learning objectives  In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:    Explain how the derivative of an inverse function is related to the derivative of the original function.    Use derivative rules for , , and .    Use the relationship between a function and its inverse to develop the inverse function’s derivative rule (in particular: be able to do this “from scratch” for , , and ).    Differentiate a function involving logarithmic functions, arcsine and arctangent functions, and for which the derivative involves a combination of chain, product and quotient rules.      Additional suggestions     Watch video Inverse Functions (12:29) .     Watch video The Derivative of Inverse Functions (14:55) .     Watch video The Derivative of the Natural Logarithm (9:39) .     Do these problems.        For , find and simplify the derivative of .    What does your result tell you about ?       Use the graphs given in to estimate the given derivatives.                 Graphs of and .  The graph of increases from about 2 to about 20. The graph of increases from about 0.2 to about 0.7 at and then decreases to 0 at .       shows and . Additional information is found in the .   Values of and .               0  1  0.7    1  2  1.4    2  4  2.8    3  8  5.5      Graphs of and .  The graph of is the reflection of the graph of about the line .       Find the values of , , , .    Find the equation of the tangent lines at the points and .    What is the relationship between the two tangent lines?            Answers   To prepare for class                  ;      ;               Additional suggestions             is constant                           , , ,     At , the tangent line is . At , the tangent line is .    The tangent lines are inverses of each other (the graphs are reflections about the line ).         "
+},
+{
+  "id": "figureffprime26",
+  "level": "2",
+  "url": "handouts-15.html#figureffprime26",
+  "type": "Figure",
+  "number": "49",
+  "title": "",
+  "body": " Graphs of and .  The graph of increases from about 2 to about 20. The graph of increases from about 0.2 to about 0.7 at and then decreases to 0 at .   "
+},
+{
+  "id": "FunctionAndInverseData",
+  "level": "2",
+  "url": "handouts-15.html#FunctionAndInverseData",
+  "type": "Table",
+  "number": "50",
+  "title": "Values of <span class=\"process-math\">\\(f(x)\\)<\/span> and <span class=\"process-math\">\\(f'(x)\\text{.}\\)<\/span>",
+  "body": " Values of and .               0  1  0.7    1  2  1.4    2  4  2.8    3  8  5.5    "
+},
+{
+  "id": "figureffprimeTWO26",
+  "level": "2",
+  "url": "handouts-15.html#figureffprimeTWO26",
+  "type": "Figure",
+  "number": "51",
+  "title": "",
+  "body": " Graphs of and .  The graph of is the reflection of the graph of about the line .   "
 }
 ]
 
