@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 2.1 - Elementary Differentiation Rules</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    Having now completed Chapter 1 on the definition and meaning of the derivative, we turn to Chapter 2 where our principal focus will be on <em>computing</em> derivatives.
+    By this we mean that we want to further understand the limit definition of the derivative and patterns that can be found in certain classes of functions, patterns that will enable us to <em>simply look at the formula for a function and then be able to write down a formula for the derivative</em>.
+    As we progress through Chapter 2, you’ll see that we will build from the simplest functions to much more complicated ones.
+  </p>
+
+  <p>
+    This section covers the following concepts: Notations for derivatives.
+    The Power Rule.
+    Differentiation of exponential functions.
+    The derivative of constant multiples, sums, and differences of functions.
+  </p>
+
+</section>
+
+<section>
+  <title>Basic learning objectives</title>
+
+    <p>
+      These are the tasks you should be able to perform with reasonable
+      fluency when you arrive at our next class meeting.
+      Important new
+      vocabulary words are indicated <em>in italics</em>.
+      Check each box when you feel confident you have a firm grasp on that objective.
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          Use Leibniz notation for derivatives: <m>\displaystyle \frac{dy}{dx}</m> as well as <m>\displaystyle \frac{d}{dx}</m>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Use elementary differentiation rules to differentiate polynomials, power functions, and exponential functions.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Use the constant rule and the sum and difference rule to differentiate combinations of the above functions.
+        </p>
+      </li>
+    </ul>
+
+  </section>
+
+<section xml:id="sec-Toprepareforclass21">
+  <title>To prepare for class</title>
+
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-2-1-elem-rules.html">section 2.1</url> (up until Preview Activity 2.1.1).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] <alert>Do</alert> the following the activity that is <em>similar</em> to <url href="https://activecalculus.org/single/sec-2-1-elem-rules.html#PZN">Preview Activity 2.1.1</url>.
+    </p>
+
+    <p>
+      <alert>New Activity 2.1.1</alert> Start by loading the applet <url href="https://www.geogebra.org/m/qwdxbtGF">https://www.geogebra.org/m/qwdxbtGF</url>. Functions of the form <m>f(x) = x^{n}</m>, where <m>n = 1, 2, 3, \ldots</m> are called <em>power functions</em>. The first two questions below revisit work we did earlier in Chapter 1, and the following questions extend those ideas to higher powers of <m>x</m>.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            Use the applet to determine the derivative, both the graph and a formula, of <m>f(x) = x^{2}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Repeat part (a) for <m>f(x) = x^{3}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Repeat part (a) for <m>f(x) = x^{4}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Based on your work in (a), (b), and (c), what do you conjecture is the derivative of <m>f(x) = x^{5}</m>? Of <m>f(x)= x^{13}</m>?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Make a conjecture regarding a formula for the derivative of <m>f(x)=x^{n}</m> that holds for every positive integer <m>n</m>.
+            That is, given <m>f(x) = x^{n}</m> where <m>n</m> is a positive integer, what do you think is a formula for <m>f'(x)</m>?
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] <alert>Extend your conjecture</alert> in part (d) of New Activity 2.1.1 to negative powers <m>n</m>. That is, using <m>n = -1, -2, -3, \ldots</m>, do you spot a pattern for a formula representing <m>f'(x)</m> if <m>f(x) = x^{n}</m>?
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> the video: <url href="https://www.youtube.com/watch?v=wFOgWzI0SuQ&#x26;feature=emb_title">Quick Review: Elementary Derivative Rules (3:32)</url>.
+    </p>
+  </li>
+
+  <li>
+
+    <p>
+      Prompt <alert>Copilot</alert> “What is the Binomial Theorem and how can it be used to prove the power rule in calculus for positive integers <m>n</m>?”
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> the following construction in <url href="https://www.geogebra.org/classic?lang=en"> <em>GeoGebra</em> </url> (Google search “GeoGebra Classic” to use this tool if the link fails.). Submit screenshots and responses to the questions posed.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            Create a variable <m>a</m> by typing the letter <m>a</m> in the input box on the left.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            A slider should be created underneath.
+            You will want to change the minimum and maximum values to 1.1 and 5.0 by clicking on these values at the left and right of the slider.
+            Set your step size to 0.01.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            In the next input box, type <m>a^{x}</m>.
+            You will need to use the   key above the 6.
+            The function <m>f(x)=a^{x}</m> will automatically be defined, graphed, and labeled for you.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            In the next input box, type <em>A = (0,1)</em>.
+            This wil plot and label the point <m>(0,1)</m> on your graph.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Next, you will want to use the menu.
+            On the fourth button (see below), choose the <em>Tangents</em> option.
+            Then, click on point <em>A</em> on your graph followed by clicking on the graph itself.
+            This will produce a tangent line to your function <m>f(x) = a^{x}</m> at <m>(0,1)</m>.
+            It will name this tangent line <m>g</m> and an expression for it will appear in the next input box.
+          </p>
+
+          <image width="50%" source="TangentsGeoGebra.jpg" />
+          </li>
+
+          <li>
+            <p>
+              Move the slider for <m>a</m> as you wish by moving the big black point back and forth.
+              Note how your function and your tangent line change automatically!
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Type <em>ln(a)</em> in the next open input box.
+              Move the slider and compare the slope of <m>g</m> to this value.
+              What do you notice? Does this surprise you or not? Explain.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+
+      <p>
+        Prompt <alert>Copilot</alert> “Can you explain why the derivative of an exponential function is a multiple of an exponential function?”
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-1-elem-rules.html#yDQ">sections 2.1.1 and 2.1.2</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> the video <url href="https://www.youtube.com/watch?v=ciBNzth33Fw&#x26;feature=emb_title">Derivatives of Power and Constant Functions (5:18)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> the video <url href="https://www.youtube.com/watch?v=kcQieXhoAqs&#x26;feature=emb_title">Derivatives of Exponential Functions (2:53)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        [Submit] <alert>Complete</alert> <url href="https://activecalculus.org/single/sec-2-1-elem-rules.html#QSl">Exercises 1-4 in section 2.1</url>. Submit four screen captures to demonstrate your completion of these four exercises.
+      </p>
+    </li>
+    </ul>
+
+</section>
+<section xml:id="sec-Afterclass21">
+  <title>After class</title>
+
+    <p>
+      Solidifying the concepts discussed in class through practice is necessary to build your skills.
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          <alert>Watch</alert> the video <url href="https://www.youtube.com/watch?v=gya8IngB1BI&#x26;feature=emb_title">Derivatives of Constant Multiples (4:05)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Explore</alert> the concept of derivative of polynomial functions. This <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_power_rule.html">applet on polynomials and derivatives</url>, has a slider that will show the <m>d</m>th derivative of a 6th degree polynomial.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Do</alert> these problems.
+        </p>
+
+        <p>
+          <ol>
+            <li>
+              <p>
+                The graph of <m>y = x^{3}-9x^{2}-16x+1</m> has a slope of 5 at two points.
+                Find the coordinates of the points.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Find the equation of the tangent line to <m>f(x) = x^{3}</m> at the point where <m>x=2</m>.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Graph the tangent line and the function on the same axes.
+                      If the tangent line is used to estimate values of the function, will the estimates be overestimates or underestimates?
+                    </p>
+
+                              <figure xml:id="figureGraphycubed2">
+  <caption>The graph of <m>y=x^3</m>.</caption> 
+  <image xml:id="ycubed2Pic" width="50%">
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.75]
+\draw[step=1cm,color=gray!30] (-4,-4) grid (4,4);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-4);
+\draw[color=linecolor, line width=1.5pt,domain=-3.35:3.35]   plot (\x,0.1*\x*\x*\x);
+\foreach \x/\xtext in {-4/-4, -3/-3, -2/-2,-1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-4/-40,-2/-20, 2/20, 4/40}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+          
+
+                  </li>
+                </ol>
+              </p>
+              
+            </li>
+          </ol>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-1-elem-rules.html#eta">Exercises 5-9, 11 in section 2.1</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-1-elem-rules.html#jcT">written exercises 10, 12 in section 2.1</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+        </p>
+      </li>
+    </ul>
+
+</section>
+
+
+
+  <section xml:id="sec-Advancedlearningobjectives21">
+    <title>Advanced learning objectives</title>
+    
+    <p>
+      In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          Use combinations of the rules introduced in this section to differentiate functions that are not given as a formula.
+        </p>
+      </li>
+    </ul>
+
+  </section>
+  <section xml:id="sec-Additionalsuggestions21">
+    <title>Additional suggestions</title>
+
+    <ul>
+      <li>
+        <p>
+          <alert>Watch</alert> the video: <url href="https://www.youtube.com/watch?time_continue=232&#x26;v=S1fDdfX14fI&#x26;feature=emb_title">Simplifying Before Differentiating (5:00)</url>.
+        </p>
+      </li>
+    </ul>
+
+  </section>
+
+<section xml:id="sec-Answers21">
+  <title>Answers</title>
+
+    <ol>
+      <li>
+        <p>
+          <m>\displaystyle \frac{dy}{dx}= 3x^{2} - 18x -16</m>. So, the slope is 5 when <m>3x^{2} - 18x -16=5</m> or <m>3x^{2} - 18x - 21=0</m> . Solving <m>x^{2} - 6x-7=0</m> or <m>(x-7)(x+1)=0</m> gives <m>x=7</m> or <m>x=-1</m>. The coordinates of these two points are thus <m>(-1,7)</m> and <m>(7,-209)</m>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>f'(x)=3x^{2}</m>. So, <m>f'(2)=12</m>. The equation of the tangent line is <m>y=12x-16</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The estimates will be underestimates (since the tangent line lies below <m>f(x)</m>).
+              </p>
+
+               <figure xml:id="figureGraphycubedans2">
+  <caption>The graph of <m>y=x^3</m> and its tangent line at <m>x=2</m>.</caption> 
+  <image xml:id="ycubedans2Pic" width="50%"><description>The graph of <m>y=x^3</m>, a cubic, is shown together with 
+    a tangent line just touching the graph of <m>x=2</m>.</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.75] 
+\draw[step=1cm,color=gray!30] (-4,-4) grid (4,4);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-4);
+\draw[color=linecolor, line width=1.5pt,domain=-3.35:3.35]   plot (\x,0.1*\x*\x*\x);
+\draw[color=red, line width=1.5pt,domain=-2:3.35]   plot (\x,{0.1*(12*\x-16)});
+\foreach \x/\xtext in {-4/-4, -3/-3, -2/-2,-1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-4/-40,-2/-20, 2/20, 4/40}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+              
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+
+  </section>
+</handout>

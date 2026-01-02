@@ -81,6 +81,7 @@
       <xi:include href="./handouts/16PrepSecondDerivative.ptx"/>
       <xi:include href="./handouts/17PrepLimitsContinuityDifferentiability.ptx"/>
       <xi:include href="./handouts/18PrepTangentLine.ptx"/>
+      <xi:include href="./handouts/21PrepElementaryDerivativeRules.ptx"/>
     </chapter>
 
  
