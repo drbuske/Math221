@@ -80,6 +80,7 @@
       <xi:include href="./handouts/15PrepInterpretEstimateDerivative.ptx"/>
       <xi:include href="./handouts/16PrepSecondDerivative.ptx"/>
       <xi:include href="./handouts/17PrepLimitsContinuityDifferentiability.ptx"/>
+      <xi:include href="./handouts/18PrepTangentLine.ptx"/>
     </chapter>
 
  

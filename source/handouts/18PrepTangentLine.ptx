@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 1.8 - The Tangent Line Approximation</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    We are about to wrap up Chapter 1 of the text, titled “Understanding the Derivative.” One key aspect of understanding the derivative is how a differentiable function is locally linear.
+    That is, how a differentiable function, up close, looks like a line.
+    This enables us to use linear functions – the simplest functions in all of mathematics – as an effective tool to estimate the values of a differentiable function for <m>x</m>-values near a certain point where we know key information.
+    Here, we are basically using some sophisticated ideas from calculus to do something natural: if we can see or identify a trend in how a function is changing at a given point, what might we predict for the future? Following a tangent line is a good approach to doing so.
+  </p>
+
+ </section>
+
+ <section>
+<title>Basic learning objectives</title>
+
+    <p>
+      These are the tasks you should be able to perform with reasonable
+      fluency when you arrive at our next class meeting.
+      Important new
+      vocabulary words are indicated <em>in italics</em>.
+      Check each box when you feel confident you have a firm grasp on that objective.
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          Given the value of the derivative of <m>f</m> at a point <m>x=a</m> (that is, given <m>f'(a)</m>), write the equation of the tangent line to the graph of <m>f</m> at <m>x=a</m>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Explain what is meant by the <em>local linearization</em> of a function <m>f</m> at the point <m>x=a</m>.
+        </p>
+      </li>
+    </ul>
+
+</section>
+
+ <section>
+ <title>To prepare for class</title>
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-1-8-tan-line-approx.html">section 1.8</url> (up until the preview activity).
+    </p>
+  </li>
+
+  <li>
+    
+
+    <p>
+      [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-8-tan-line-approx.html#OkA">Preview Activity 1.8.1</url>.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            (Optional) <alert>Watch</alert> <url href="https://www.youtube.com/watch?v=LDebv-mMpNo">video solution to Preview Activity 1.8.1 (3:11)</url>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> the following video: <url href="https://www.youtube.com/watch?v=COzBFFGoyTo&#x26;feature=emb_title">Quick Review: The Tangent Line Approximation (2:16)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Explore</alert> the concept of local linearity through zooming! <url href="https://davidaustinm.github.io/calculus/zoom/index.html">This applet</url>, acting like a magnifying glass, illustrates this concept well. <url href="https://www.geogebra.org/m/r4A2xSSp/autocheck#material/zEgPsdsS">This second applet</url> does it even better. Check both out.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-8-tan-line-approx.html#LnH">section 1.8.1</url>.
+    </p>
+  </li>
+
+  <li>
+    
+
+    <p>
+      [Submit] <alert>Watch</alert> this <url href="https://www.youtube.com/watch?v=BgPRV9Hxk1k&#x26;feature=emb_title">video on Calculating a Tangent Line</url>. Then, use the local linearization to estimate the value of <m>f(-2.1)</m> for the example presented.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-8-tan-line-approx.html#ruQ">section 1.8.2</url>.
+    </p>
+  </li>
+
+  <li>
+    
+
+    <p>
+      [Submit] <alert>Re-read</alert> <url href="https://activecalculus.org/single/sec-1-8-tan-line-approx.html#DJi">Example 1.8.3</url>. Then, write two sentences about the use of the word <em>near</em> in this context. How near is near? How might <em>near</em> depend on the function?
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> this video on estimating functional values: <url href="https://www.youtube.com/watch?v=E6P67pjf8Jc&#x26;feature=emb_title">Using a Tangent Line (3:26)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> this video on using the local linearization: <url href="https://www.youtube.com/watch?v=2KpwQewcKbQ">Using the Local Linearization (7:06)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> these problems.
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            Determine the equation of the tangent line to <m>y=x^{3}</m>  at <m>x=2</m>.
+            Sketch this tangent line on the curve to  verify its reasonableness.
+          </p>
+
+           <figure xml:id="figureGraphycubed">
+  <caption>The graph of <m>y=x^3</m>.</caption> 
+  <image xml:id="ycubedPic" width="50%">
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.75]
+\draw[step=1cm,color=gray!30] (-4,-4) grid (4,4);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-4);
+\draw[color=linecolor, line width=1.5pt,domain=-3.35:3.35]   plot (\x,0.1*\x*\x*\x);
+\foreach \x/\xtext in {-4/-4, -3/-3, -2/-2,-1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-4/-40,-2/-20, 2/20, 4/40}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+          
+        </li>
+
+        <li>
+          <p>
+            The graph of the function shown in <xref ref="fig_02_22_sec18"/> has <m>f(4)=220</m> and <m>f'(4) = 15</m>.
+          </p>
+
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Estimate the value of <m>f(3.9)</m>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Find the coordinates of the points <m>A</m>, <m>B</m>, and <m>C</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+<figure xml:id="fig_02_22_sec18">
+          <image width="50%" source="fig_02_22.jpg"><description>The graph of a function that is concave down.  It is marked
+            with points A, B, and C and a tangent line is drawn at B.
+          </description></image>
+        </figure>
+          </li>
+        </ol>
+      </p>
+    </li>
+
+    <li>
+
+      <p>
+        Ask <alert>Copilot</alert> “Are all functions <m>f(x)</m> locally linear? If not, give me an example.”
+      </p>
+    </li>
+
+    <li>
+
+      <p>
+        Ask <alert>Copilot</alert> “What is the relationship between local linearity and tangent lines for functions of a single variable?”
+      </p>
+    </li>
+    </ul>
+</section>
+
+<section>
+<title>After class</title>
+
+    <p>
+      Solidifying the concepts discussed in class through practice is necessary to build your skills.
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-8-tan-line-approx.html#ZJh">Exercises 1-4 in section 1.8.4</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-8-tan-line-approx.html#sDJ">written exercises 5-8 in section 1.8.5</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Explore</alert> <url href="https://webspace.ship.edu/msrenault/GeoGebraCalculus/limit_trig_sin.html">applet demonstrating <m>\displaystyle \lim_{\theta \rightarrow 0}\frac{\sin \theta}{\theta}</m> </url>. Though this is not critical knowledge, and is a bit complicated, this proves a very important limit: <m>\displaystyle \lim_{\theta \rightarrow 0}\frac{\sin \theta}{\theta}= 1</m>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+        </p>
+      </li>
+    </ul>
+
+</section>
+
+
+<section>
+<title>Advanced learning objectives</title>
+
+    <p>
+      In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          Compute the linear approximation of a function at a specific point.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Use the linear approximation/local linearization of a function at <m>x=a</m> to approximate values of <m>f</m> near <m>x=a</m>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Use the second-order derivative to determine whether an approximation is an overestimate or an underestimate.
+          (If <m>L(x)</m> is the local linearization of a function <m>f(x)</m> at <m>x=a</m>, and if <m>b</m> is some point near <m>a</m>, determine whether <m>L(b)</m> is greater than, less than, or equal to <m>f(b)</m> and explain.)
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Describe how the concept of local linearity gives <m>\displaystyle \lim_{\theta \rightarrow 0}\frac{\sin \theta}{\theta}=1</m>.
+        </p>
+      </li>
+    </ul>
+
+</section>
+<section>
+<title>Additional suggestions</title>
+
+    <ul>
+      <li>
+        <p>
+          <alert>Watch</alert> the following video comparing secant to tangent lines: <url href="https://www.youtube.com/watch?v=qWnvhjVZsXc&#x26;feature=youtu.be">Slopes of Secant and Tangent Lines - Part I (6:26)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> this video which will reinforce idea of using a tangent line: <url href="https://www.youtube.com/watch?v=EB-21bla9D0&#x26;feature=youtu.be">Slopes of Secant and Tangent Lines - Part 2 (6:52)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> this <url href="https://www.youtube.com/watch?v=l8PFsYI3bzw">video (4:11)</url> if you just want to see another (basic) example of finding the local linearization of a function at a point.
+        </p>
+      </li>
+    </ul>
+
+</section>
+<section>
+<title>Answers</title>
+
+    <ol>
+      <li>
+        <p>
+          The slope of the tangent line at <m>x=2</m> is 12.
+          The equation of the tangent line is <m>y=12x-16</m>.
+        </p>
+
+         <figure xml:id="figureGraphycubedans">
+  <caption>The graph of <m>y=x^3</m> and its tangent line at <m>x=2</m>.</caption> 
+  <image xml:id="ycubedansPic" width="50%"><description>The graph of <m>y=x^3</m>, a cubic, is shown together with 
+    a tangent line just touching the graph of <m>x=2</m>.</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.75] 
+\draw[step=1cm,color=gray!30] (-4,-4) grid (4,4);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-4);
+\draw[color=linecolor, line width=1.5pt,domain=-3.35:3.35]   plot (\x,0.1*\x*\x*\x);
+\draw[color=red, line width=1.5pt,domain=-2:3.35]   plot (\x,{0.1*(12*\x-16)});
+\foreach \x/\xtext in {-4/-4, -3/-3, -2/-2,-1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-4/-40,-2/-20, 2/20, 4/40}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+      </li>
+
+      <li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>f(3.9) \approx 218.5</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>A</m> has coordinates <m>(4,220)</m>; <m>B</m> has coordinates <m>(4.2,223)</m>; <m>C</m> has coordinates <m>(3.9,218.5)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+</section>
+</handout>
