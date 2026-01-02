@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 2.2 - The Sine and Cosine Functions</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    This section covers the following concepts: <em>Gain an understanding of derivatives of the sine and cosine functions and their derivation.</em>
+  </p>
+
+</section>
+
+<section>
+  <title>Basic learning objectives</title>
+
+  <p>
+    These are the tasks you should be able to perform with reasonable
+    fluency when you arrive at our next class meeting.
+    Important new
+    vocabulary words are indicated <em>in italics</em>.
+    Check each box when you feel confident you have a firm grasp on that objective.
+  </p>
+
+  <ul>
+    <li>
+      <p>
+        Identify the graph of a general exponential function <m>f(x)=a^{x}</m> and state its most important features (e.g.
+        <m>y</m>-intercept, behavior for large positive or negative <m>x</m>-values).
+        (See <url href="http://mathquest.carroll.edu/CarrollActiveCalculus/S_0_2_Exponentials.html">this website</url> if review is needed.)
+      </p>
+    </li>
+
+    <li>
+      <p>
+        State the general rule for <m>\displaystyle \frac{d}{dx}a^{x}</m> (where <m>a>0</m> is real).
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Identify what makes the function <m>e^{x}</m> special in terms of its relationship to its own derivative.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        State the values of <m>\sin x</m> and <m>\cos x</m> at the angle values <m>0</m>, <m>\pi/6</m>, <m>\pi/4</m>, <m>\pi/3</m>, <m>\pi/2</m> and other related points on the unit circle without a calculator.
+        (See <url href="http://mathquest.carroll.edu/CarrollActiveCalculus/S_0_5_TrigFunctions.html">this website</url> for review if needed.)
+      </p>
+    </li>
+
+    <li>
+      <p>
+        State the derivatives of the functions <m>y=\sin x</m> and <m>y= \cos x</m>.
+      </p>
+    </li>
+  </ul>
+
+</section>
+
+<section xml:id="sec-Toprepareforclass22">
+  <title>To prepare for class</title>
+  
+
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Read</alert> the motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-2-2-sin-cos.html">section 2.2</url> (up until Preview Activity 2.2.1).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] <alert>Do</alert> the following construction in <url href="https://www.geogebra.org/classic?lang=en"> <em>GeoGebra</em> </url>. Submit screenshots and responses to the questions posed.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            In the first input box, type <em>sin(x)</em>.
+            This will define and graph <m>f(x)=\sin(x)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            To get a visual <em>estimate</em> of the derivative, we will use the definition of derivative which tells us that
+            <me>
+              f'(x) = \lim_{h \rightarrow 0}\frac{f(x+h)-f(x)}{h}.
+            </me>
+          </p>
+
+          <p>
+            Rather than take a limit, we will use a reasonably small value of <m>h</m>, say <m>h = 0.01</m>.
+            Then,
+            <me>
+              f'(x) \approx \frac{f(x+0.01)-f(x)}{0.01}.
+            </me>
+          </p>
+
+          <p>
+            In the next input box, type <em>(f(x+0.01)-f(x))/0.01</em>.
+            This will define and graph
+            <me>
+              \displaystyle g(x) =\frac{f(x+0.01)-f(x)}{0.01}\approx f'(x) = \frac{d}{dx}\sin x.
+            </me>
+            Have you seen the graph of <m>g(x)</m> before? Identify it and fill the following blank in accordingly:
+          </p>
+
+          <p>
+            <me>
+              \frac{d}{dx}\sin x = \underline{\hspace{30mm}}
+            </me>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <em>Repeat</em> this whole process to visualize the derivative (at least an estimate of it) of <m>f(x) = \cos x</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-2-sin-cos.html#QVP">section 2.2.1</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] <alert>Do</alert> some exploration with <em>GeoGebra</em> to conjecture the value of the following limits:
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            <m>\displaystyle \lim_{h \rightarrow 0}\frac{\cos h - 1}{h}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\displaystyle \lim_{h \rightarrow 0}\frac{\sin h}{h}</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      One suggestion is to plot each of these expressions of <m>h</m> (namely <m>\frac{\cos h - 1}{h}</m> and <m>\frac{\sin h}{h}</m> - the behavior of each graph near <m>h=0</m> should indicate the value of each limit.
+      [Important note: <em>GeoGebra</em> will not treat <m>h</m> as a variable.
+      So, use <m>x</m> rather than <m>h</m> in order to explore each limit.
+      That is, investigate <m>\displaystyle \lim_{x \rightarrow 0}\frac{\cos x - 1}{x}</m> rather than <m>\displaystyle \lim_{h \rightarrow 0}\frac{\cos h - 1}{h}</m>.] Submission of screenshots would be ideal.
+    </p>
+  </li>
+
+  <li>
+
+    <p>
+      Prompt <alert>Copilot</alert> “Why is the derivative of <m>\sin(x)</m> only <m>\cos(x)</m> when <m>x</m> is measured in radians and not degrees?”
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] First, try to answer this question before prompting the AI.
+      Then, prompt <alert>Copilot</alert> “Can you give me an example of a function whose derivative is periodic but it itself is not periodic?” Is the response reasonable?
+    </p>
+  </li>
+  </ul>
+
+</section>
+
+<section xml:id="sec-Afterclass22">
+  <title>After class</title>
+  
+
+  <p>
+    Solidifying the concepts discussed in class through practice is necessary to build your skills.
+  </p>
+
+  <ul>
+    <li>
+      <p>
+        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-2-sin-cos.html#xcY">section 2.2.2 (the summary)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-2-sin-cos.html#gZy">Exercises 1-3 in section 2.2</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+      </p>
+    </li>
+  </ul>
+
+</section>
+
+
+<section xml:id="sec-Advancedlearningobjectives22">
+  <title>Advanced learning objectives</title>
+
+  <p>
+    In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+  </p>
+
+  <ul>
+    <li>
+      <p>
+        Use the derivatives of <m>y=\sin(x)</m> and <m>y=\cos(x)</m> in the context of a real-world problem to find the slope of a tangent line, the instantaneous rate of change in a function, or the instantaneous velocity of an object.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Prove that <m>\displaystyle \frac{d}{dx}\sin x=\cos x</m>.
+      </p>
+    </li>
+  </ul>
+
+</section>
+
+<section xml:id="sec-Additionalsuggestions22">
+  <title>Additional suggestions</title>
+
+
+  <ul>
+    <li>
+      <p>
+        If you are not yet convinced, <alert>explore</alert> the applet <url href="https://www.geogebra.org/m/qwdxbtGF">https://www.geogebra.org/m/qwdxbtGF</url> can be used to help you believe the formula found in the above activity.
+        Just start with the function <m>\sin x</m> or <m>\cos x</m> accordingly.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> the video: <url href="https://www.youtube.com/watch?v=CJuLeDHSBEU&#x26;feature=emb_title">On computing exact trigonometric values at key angles (3:56)</url>. This could be especially helpful as a refresher on remembering basic facts an easier way.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> the video: <url href="https://www.youtube.com/watch?v=CJuLeDHSBEU&#x26;feature=emb_title">How to remember trig values on the unit circle (12:02)</url>.
+      </p>
+    </li>
+  </ul>
+
+    
+</section>
+
+</handout>
+
+
+
+
+
+
+
+
+
+
+
+

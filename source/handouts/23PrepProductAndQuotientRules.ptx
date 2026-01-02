@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 2.3 - The Product and Quotient Rules</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    This section covers the following concepts: The <em>product and quotient rules</em> for differentiation.
+  </p>
+</section>
+
+<section xml:id="sec-Basiclearningobjectives23">
+  <title>Basic learning objectives</title>
+
+  <p>
+    These are the tasks you should be able to perform with reasonable
+    fluency when you arrive at our next class meeting.
+    Important new
+    vocabulary words are indicated <em>in italics</em>.
+  </p>
+
+  <ul>
+    <li>
+      <p>
+        Apply all the derivative rules from sections 2.1 and 2.2 with fluency.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Give a specific example to show that the derivative of a product of two functions, <m>f(x)\cdot g(x)</m>, is <em>not</em> the product of the derivatives, <m>f'(x)\cdot g'(x)</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        State and apply the product rule.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        State and the quotient rule.
+      </p>
+    </li>
+  </ul>
+
+</section>
+
+<section xml:id="sec-Toprepareforclass23">
+  <title>To prepare for class</title>
+
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html">section 2.3</url> (up until Preview Activity 2.3.1).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#zLw">Preview Activity 2.3.1</url> (via hand calculations).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] <alert>Check</alert> your answers to <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#zLw">Preview Activity 2.3.1</url> using <url href="https://www.geogebra.org/classic?lang=en">GeoGebra</url>. Submit a screen capture of your work along with responses to the questions posed.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            Enter the function <m>f(t) = 2t^{2}</m> by typing <em>2*t 2</em> into the first input box.
+            <em>GeoGebra</em> will define and label this function as <m>f(t)</m> for you.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Enter the function <m>g(t) = t^{3}+4t</m> by typing <em>t 3 + 4*t</em> into the second input box.
+            <em>GeoGebra</em> will define and label this function as <m>g(t)</m> for you.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            In the third input box, type <em>f(t)*g(t)</em>.
+            Then, relabel <em>h</em> as <em>p</em> (if you wish...just like in the activity).
+            [To relabel, just use backspace.]
+          </p>
+        </li>
+
+        <li>
+          <p>
+            (Optional) If you like, you can simplify <m>p(t)</m>.
+            In this next input box, just type <em>Simplify(p(t))</em>.
+            Nice, yes?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <em>GeoGebra</em> has the ability to return derivatives of functions. In the next input box, type <em>Derivative(p(t))</em>. <em>GeoGebra</em> will automatically label the result as <m>p'(t)</m>. Does this match your hand-calculated result?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            In the next input box, we calculate <m>f'(t)\cdot g'(t)</m> by typing <em>Derivative(f(t))*Derivative(g(t))</em>.
+            Is the result the same as <m>p'(t)</m>? [If needed, the <em>Simplify</em> function (as described above) can be used.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Do parts (d) and (e) of <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#zLw">Preview Activity 2.3.1</url> using <em>GeoGebra</em> to do the calculations.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#MVQ">section 2.3.1</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=mkrnp3ew0WA&#x26;t=317s">Product Rule Examples (6:47)</url>.
+    </p>
+  </li>
+
+  <li>
+
+    <p>
+      Prompt <alert>Copilot</alert> “I don’t want a proof, but please explain in simple terms how the product rule in calculus comes about.”
+    </p>
+  </li>
+
+  <li>
+
+    <p>
+      Prompt <alert>Copilot</alert> “Create an example of a typical product rule question in a college-level calculus class using a numerical table.
+      Be sure to provide me the solution too.” Is the solution provided correct?
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#tcZ">section 2.3.2</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=bAGEnF0uFog">Quick Review: The Product and Quotient Rules (1:59)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=HxFjkYjabwQ&#x26;feature=emb_title">Quotient Rule Examples (10:37)</url>.
+    </p>
+  </li>
+
+  <li>
+    
+
+    <p>
+      [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#tnQ">Exercise 1 in section 2.3</url>. Submit a screenshot to demonstrate completion.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#ApM">Exercises 2-9 in section 2.3</url>.
+    </p>
+  </li>
+  </ul>
+
+</section>
+
+<section xml:id="sec-Afterclass23">
+  <title>After class</title>
+
+  <p>
+    Solidifying the concepts discussed in class through practice is necessary to build your skills.
+  </p>
+
+  <ul>
+    <li>
+      <p>
+        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#Zki">section 2.3.3</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=9lZNcY3VbdE&#x26;feature=emb_title">Combining the Product and Quotient rules (9:00)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> these problems.
+      </p>
+
+      <p>
+        <ol>
+          <li>
+            <p>
+              Suppose the <m>f</m> and <m>h</m> are functions and that <m>f(3)=2</m>, <m>f'(3) = -2</m>, <m>h(3) = 1</m>, and <m>h'(3) = 4</m>.
+            </p>
+
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    Calculate <m>m'(3)</m>, where <m>m(x) = f(x) \cdot h(x)</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Calculate <m>p'(3)</m>, where <m>\displaystyle p(x) = \frac{f(x)}{x^{2}h(x)}</m>.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+
+                      <li>
+              <p>
+                Use information from the graphs of <m>f(x)</m> and <m>g(x)</m> and the tangent lines shown in <xref ref="figureproductquotient1"/> to calculate each derivative.
+              </p>
+
+<figure xml:id="figureproductquotient1">
+  <caption>The graph of <m>f(x)</m> and <m>g(x)</m> and two particular tangent lines.</caption> 
+  <sidebyside widths="45% 45%">
+    <image xml:id="productquotientPic1" width="50%">
+    <description>The graph of <m>f(x)</m> and a particular tangent line with various points marked.</description>
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=0.75]
+\draw[color=blue, line width=1pt,domain=1:7]   plot (\x,{0.1*(\x-2)*(\x-5)*(\x-5)+3}) node [above] at (5,3) {$f(x)$};
+\draw[color=black, line width=1pt,domain=1.25:4.2]   plot (\x,{0.9*\x+1.2});
+\fill [black] (2,3) circle (4pt) node [left] at (2,3) {$(2,3)$};
+\fill [black] (4,4.8) circle (4pt) node [left] at (4,4.8) {$(4,4.8)$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+  <image xml:id="productquotientPic2" width="50%">
+    <description>The graph of <m>g(x)</m> and a particular tangent line with various points marked.</description>
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=0.75] 
+\draw[color=blue, line width=1pt,domain=-1:2]   plot (\x,{5-\x*\x}) node [above] at (-1.5,4) {$g(x)$};
+\draw[color=black, line width=1pt,domain=0.7:2.1]   plot (\x,{-2*\x+6});
+\draw[color=black, line width=1pt,domain=-2.25:1]   plot (\x,{5});
+\fill [black] (1.5,3) circle (4pt) node [right] at (1.5,3) {$(3.5,3)$};
+\fill [black] (0,5) circle (4pt) node [above] at (0,5) {$(2,5)$};
+\fill [black] (-2,5) circle (4pt) node [above] at (-2,5) {$(0,5)$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</sidebyside>
+</figure>
+
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>h'(2)</m> if <m>h(x) = x^{2} f(x)</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>k'(2)</m> if <m>\displaystyle k(x) = \frac{f(x)}{g(x)}</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>m'(2)</m> if <m>\displaystyle m(x) = \frac{x g(x)}{f(x)}</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
+
+            </li>
+
+        </ol>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#WAt">Exercises 10-11 in section 2.3</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#Frr">section 2.3.4 (the summary)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#iOL">Exercises 12-14 in section 2.3</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+      </p>
+    </li>
+  </ul>
+
+</section>
+
+
+
+<section xml:id="sec-Advancedlearningobjectives23">
+  <title>Advanced learning objectives</title>
+
+  <p>
+    In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+  </p>
+
+  <ul>
+    <li>
+      <p>
+        Prove the quotient rule using the product rule.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Differentiate a function for which the derivative involves a combination of the product rule, quotient rule, and other differentiation rules.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Use the product and quotient rules in the context of a real-world problem to find the slope of a tangent line, the instantaneous rate of change in a function, or the instantaneous velocity of an object.
+      </p>
+    </li>
+  </ul>
+
+</section>
+
+<section>
+  <title>Additional suggestions</title>
+
+    <ul>
+      <li>
+        <p>
+          <alert>Watch</alert> <url href="https://www.youtube.com/watch?time_continue=17&#x26;v=Jw3cZdDaKzo&#x26;feature=emb_title">this introductory video</url> to help in your reading of section 2.3.1.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=5L2qpUMh5c8&#x26;feature=emb_title">computing derivatives using graphical information (6:49)</url>.
+        </p>
+      </li>
+
+
+
+    </ul>
+
+  </section>
+
+  <section xml:id="sec-Answers23">
+    <title>Answers</title>
+
+    <ol>
+      <li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>m'(x)=f'(x) \cdot h(x) + f(x) \cdot h'(x)</m>. So, <m>m'(3) = f'(3) \cdot h(3) + f(3) \cdot h'(3) = (-2)(1) + (2)(4) = 6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\displaystyle p'(3)=-\frac{82}{27}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>h'(2)=15.6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>k'(2)=0.18</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\displaystyle m'(2)=\frac{2}{3}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+  </section>
+    </handout>
