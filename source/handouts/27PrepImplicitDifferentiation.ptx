@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 2.7 - Implicit Differentiation</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    In several different contexts, we will see that it is useful to consider a function that is described implicitly, rather than explicitly.
+    A prominent simple example is that of a circle: while no single function of the form <m>y=f(x)</m> can represent every point on the circle, there is nonetheless a key relationship between the <m>x</m> and <m>y</m> coordinates of points on the curve.
+    In more complicated settings, we’ll see that while there is a relationship between <m>x</m> and <m>y</m>, there is no way to explicitly solve for <m>y</m> in terms of <m>x</m>.
+    In this setting and others similar to it, we want to be able to still compute <m>\displaystyle \frac{dy}{dx}</m>.
+    The process of implicit differentiation enables us to do so.
+  </p>
+
+</section>
+
+<section>
+  <title>Basic learning objectives</title>
+
+        <p>
+          These are the tasks you should be able to perform with reasonable
+          fluency when you arrive at our next class meeting.
+          Important new
+          vocabulary words are indicated <em>in italics</em>.
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              (Review) Given a basic differentiation rule, gives its chain rule version.
+              For example, the chain rule version of <m>\frac{d}{dx}[x^{n}] = nx^{n-1}</m> is:
+            </p>
+
+            <p>
+              <me>
+                \frac{d}{dx}[y^{n}] \cdot \frac{dy}{dx}\ \ \ {\textrm{or}}\ \ \ \frac{d}{dx}[y^{n}] = ny^{n-1}\cdot y'
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              State an example of a function that is defined explicitly by a relation between <m>x</m> and <m>y</m>, and give an example where the relation is implicit.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Determine if a given point lies on the graph of the equation in <m>x</m> and <m>y</m>, where <m>y</m> is an implicit function of <m>x</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Implicitly differentiate basic expressions such as <m>\frac{d}{dx}[x^{2}f(x)]</m>, where <m>f</m> does not have a known formula.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Recognize the difference between the notations “<m>\frac{d}{dx}[ \ \ ]</m>” and “<m>\frac{dy}{dx}</m>.”
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Use the different notations <m>\frac{dy}{dx}</m> and <m>\frac{dy}{dx}\big|_{(a,b)}</m> appropriately, given a certain context.
+            </p>
+          </li>
+        </ul>
+
+      </section>
+
+<section xml:id="sec-Toprepareforclass27">
+  <title>To prepare for class</title>
+
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-2-7-implicit.html">section 2.7</url> (up until Preview Activity 2.7.1).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Prompt <alert>Copilot</alert> “What does it mean to say that a curve is an implicit function of <m>x</m>, rather than an explicit function of <m>x</m>?”
+    </p>
+  </li>
+
+  <li>
+    
+
+    <p>
+      [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-7-implicit.html#zpX">Preview Activity 2.7.1</url>.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            (Optional) <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=DSP3rbdX2F8">solution to Preview Activity 2.7.1 (4:17)</url>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    
+
+    <p>
+      [Submit] <alert>Do</alert> the following computation in <url href="https://www.geogebra.org/classic">GeoGebra</url>. Submit screenshots as needed.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            Enter <em>sin(x)</em> in the first input box.
+            <url href="https://www.geogebra.org/classic">GeoGebra</url> will assign this as the function <m>f(x)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Enter <em>Derivative(<m>x^{2}\cdot f(x)</m>)</em> in the next input box.
+            Does the result match what you expected based on your answer to (b) in <url href="https://activecalculus.org/single/sec-2-7-implicit.html#zpX">Preview Activity 2.7.1</url>?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Change the function defined in the first input box from <em>sin(x)</em> to <em> <m>2^{x}</m> </em>.
+            Again, does the result match what you expected based on your answer to (b) in <url href="https://activecalculus.org/single/sec-2-7-implicit.html#zpX">Preview Activity 2.7.1</url>?
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-7-implicit.html#QWc">section 2.7.1</url>. This is a bit longer than most sections you have read to this point.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=YI7uxdvcq4E&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=49">Quick Review - Derivatives of Functions Given Implicitly (2:22)</url>.
+    </p>
+  </li>
+
+  <li>
+
+    <p>
+      Prompt <alert>Copilot</alert> “Walk me through an example of computing <m>dy/dx</m> for an equation in which <m>y</m> is defined by <m>x</m> implicitly.
+      The graph of the equation should have 2 or more slopes at the <m>x</m>-value chosen to compute <m>dy/dx</m> at.”
+    </p>
+  </li>
+
+  <li>
+    
+
+    <p>
+      [Submit] <alert>Do</alert> write a short explanation of the difference between writing <m>\frac{d}{dx}[x^{2} + y^{2}]</m> and <m>\frac{dy}{dx}[x^{2} + y^{2}]</m>. That is, explain the big difference between the meanings of the symbols <m>\frac{d}{dx}</m> and <m>\frac{dy}{dx}</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=MEaZ44dkiuE&#x26;feature=youtu.be">Implicit Differentiation - Part 1 - The Circle (4:18)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=FeQlUqXqa6Y&#x26;feature=youtu.be">Implicit Differentiation - Part 2 - The Cardioid (3:48)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=wEiiLU2jFng&#x26;feature=emb_title">Derivatives of Implicit Functions (5:05)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video: <url href="https://www.youtube.com/watch?v=_2aCDXYMz1U&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=51">Finding Slope with Implicit Differentiation (8:20)</url>.
+    </p>
+  </li>
+  </ul>
+
+</section>
+
+<section xml:id="sec-Afterclass27">
+  <title>After class</title>
+
+  <p>
+    Solidifying the concepts discussed in class through practice is necessary to build your skills.
+  </p>
+
+  <ul>
+    <li>
+      <p>
+        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-7-implicit.html#xdl">section 2.7.2 (summary)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-7-implicit.html#amx">Exercises 1-3 in section 2.7.3</url>.
+      </p>
+
+      <p />
+      </li>
+
+      <li>
+        <p>
+          <alert>Do</alert> the following problem.
+        </p>
+
+        <p>
+          <ol>
+            <li>
+              <p>
+                Find the equation of the tangent line to the curve <m>x^{3}+x^{2}y+2y^{2}=2</m> at the point <m>(1,0.5)</m>.
+                Your tangent line should match that shown on the diagram in <xref ref="figureImplicitGraph1"/>.
+              </p>
+
+                     <figure xml:id="figureImplicitGraph1">
+                      <caption>Graph of the curve <m>x^3 + x^2y+2y^2=2</m> with a tangent line at <m>(1,0.5)</m>.</caption>
+                    <image width="50%" source="ImplicitGraph1.jpg"><description>Graph of the curve <m>x^3 + x^2y+2y^2=2</m> with a tangent line at <m>(1,0.5)</m>.</description>
+                    </image>
+                    </figure>
+              </li>
+            </ol>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Explore</alert> an applet <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_implicit.html">Implicit Differentiation</url> that will make you the world champion of understanding how to use implicit differentiation on circles, ellipses, and hyperbolae. As always, do the three ‘explore’ questions to fully benefit from the activity. If you can survive the challenge, you probably no longer need to study this topic!
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-7-implicit.html#VYd">Exercises 4-5 in section 2.7.3</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-7-implicit.html#imv">Exercises 6-8 in section 2.7.3</url>. Use <url href="https://www.geogebra.org/classic">GeoGebra</url> to check the reasonableness of your solutions to exercises 6 and 7.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+          </p>
+        </li>
+      </ul>
+
+</section>
+
+
+
+      <section xml:id="sec-Advancedlearningobjectives27">
+        <title>Advanced learning objectives</title>
+
+        <p>
+          In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              Determine <m>\frac{dy}{dx}</m> via implicit differentiation for complicated curves such as <m>x^{3}+6xy+y^{3}=1</m> and <m>\sin(y)+y=x^{3}+x</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find the slope and equation of a tangent line to a curve specified by an equation that is not the graph of a function.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Given an implicitly defined curve and a point on the curve, find the local linearization at this point to approximate the coordinates of nearby points.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Understand how to use <m>\frac{dy}{dx}</m> (which may depend on both <m>x</m> and <m>y</m>) to determine all points where the tangent line to a given implicit curve is horizontal or vertical.
+            </p>
+          </li>
+        </ul>
+
+      </section>
+
+      <section xml:id="sec-Additionalsuggestions27">
+        <title>Additional suggestions</title>
+
+        <ul>
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=n-Kl3atgYbk&#x26;feature=youtu.be">Implicit Differentiation: Student Problem Solving (4:05)</url>. It shows how impossible it can be to solve an equation explicitly!
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> this video which includes detailed explanation of <url href="https://activecalculus.org/single/sec-2-7-implicit.html#dku">Example 2.7.3 in the text</url>: <url href="https://www.youtube.com/watch?v=9YZFD8lou_0&#x26;feature=emb_title">Implicit Differentiation (12:37)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> this video <url href="https://www.youtube.com/watch?v=w13MzXWVVUw&#x26;list=PLJtEcQL1-E8V9Fs1E1-KY9nyL9y2JHh8-&#x26;index=42">Implicit and Explicit Functions (9:04)</url> for even more examples of this process.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> this video <url href="https://www.youtube.com/watch?v=lVEbRfkgmU0&#x26;list=PLJtEcQL1-E8V9Fs1E1-KY9nyL9y2JHh8-&#x26;index=41">Using Implicit Differentiation (11:08)</url> to continue seeing examples.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> video: <url href="https://www.youtube.com/watch?v=B_mZpC6dFdA&#x26;feature=emb_title">Implicit Differentiation (5:42)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=fIy5Wav4rok&#x26;feature=emb_title">How to Do Implicit Differentiation (14:16)</url>.
+            </p>
+          </li>
+        </ul>
+
+     </section>
+
+     <section xml:id="sec-Answers27">
+      <title>Answers</title>
+
+        <ol>
+          <li>
+            <p>
+              <m>\displaystyle y=-\frac{4}{3}x + \frac{11}{6}</m>
+            </p>
+          </li>
+        </ol>
+
+             </section>
+
+		</handout>

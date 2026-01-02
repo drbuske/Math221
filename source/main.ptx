@@ -87,6 +87,7 @@
       <xi:include href="./handouts/24PrepDerivativesOfOtherTrigFunctions.ptx"/>
       <xi:include href="./handouts/25PrepChainRule.ptx"/>
       <xi:include href="./handouts/26PrepInverseFunctions.ptx"/>
+      <xi:include href="./handouts/27PrepImplicitDifferentiation.ptx"/>
     </chapter>
 
  
