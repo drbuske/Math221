@@ -683,6 +683,42 @@ var ptx_lunr_docs = [
   "number": "38",
   "title": "",
   "body": " The graph of .     "
+},
+{
+  "id": "handouts-9",
+  "level": "1",
+  "url": "handouts-9.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Daily Prep 1.8 - The Tangent Line Approximation",
+  "body": " Daily Prep 1.8 - The Tangent Line Approximation   Overview  We are about to wrap up Chapter 1 of the text, titled “Understanding the Derivative.” One key aspect of understanding the derivative is how a differentiable function is locally linear. That is, how a differentiable function, up close, looks like a line. This enables us to use linear functions – the simplest functions in all of mathematics – as an effective tool to estimate the values of a differentiable function for -values near a certain point where we know key information. Here, we are basically using some sophisticated ideas from calculus to do something natural: if we can see or identify a trend in how a function is changing at a given point, what might we predict for the future? Following a tangent line is a good approach to doing so.    Basic learning objectives  These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated in italics . Check each box when you feel confident you have a firm grasp on that objective.    Given the value of the derivative of at a point (that is, given ), write the equation of the tangent line to the graph of at .    Explain what is meant by the local linearization of a function at the point .      To prepare for class  Complete all actions listed below. Respond to the questions highlighted with Submit .     Read motivating questions and the introduction to section 1.8 (up until the preview activity).    [Submit] Do  Preview Activity 1.8.1 .     (Optional) Watch  video solution to Preview Activity 1.8.1 (3:11) .        Watch the following video: Quick Review: The Tangent Line Approximation (2:16) .     Explore the concept of local linearity through zooming! This applet , acting like a magnifying glass, illustrates this concept well. This second applet does it even better. Check both out.     Read  section 1.8.1 .    [Submit] Watch this video on Calculating a Tangent Line . Then, use the local linearization to estimate the value of for the example presented.     Read  section 1.8.2 .    [Submit] Re-read  Example 1.8.3 . Then, write two sentences about the use of the word near in this context. How near is near? How might near depend on the function?     Watch this video on estimating functional values: Using a Tangent Line (3:26) .     Watch this video on using the local linearization: Using the Local Linearization (7:06) .     Do these problems.     Determine the equation of the tangent line to at . Sketch this tangent line on the curve to verify its reasonableness.   The graph of .        The graph of the function shown in has and .     Estimate the value of .    Find the coordinates of the points , , and .      The graph of a function that is concave down. It is marked with points A, B, and C and a tangent line is drawn at B.        Ask Copilot “Are all functions locally linear? If not, give me an example.”    Ask Copilot “What is the relationship between local linearity and tangent lines for functions of a single variable?”      After class  Solidifying the concepts discussed in class through practice is necessary to build your skills.     Do  Exercises 1-4 in section 1.8.4 .     Do  written exercises 5-8 in section 1.8.5 .     Explore  applet demonstrating  . Though this is not critical knowledge, and is a bit complicated, this proves a very important limit: .     Start working on the MOMwork (MyOpenMath) assignment for this section.      Advanced learning objectives  In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:    Compute the linear approximation of a function at a specific point.    Use the linear approximation\/local linearization of a function at to approximate values of near .    Use the second-order derivative to determine whether an approximation is an overestimate or an underestimate. (If is the local linearization of a function at , and if is some point near , determine whether is greater than, less than, or equal to and explain.)    Describe how the concept of local linearity gives .      Additional suggestions     Watch the following video comparing secant to tangent lines: Slopes of Secant and Tangent Lines - Part I (6:26) .     Watch this video which will reinforce idea of using a tangent line: Slopes of Secant and Tangent Lines - Part 2 (6:52) .     Watch this video (4:11) if you just want to see another (basic) example of finding the local linearization of a function at a point.      Answers    The slope of the tangent line at is 12. The equation of the tangent line is .   The graph of and its tangent line at .  The graph of , a cubic, is shown together with a tangent line just touching the graph of .                has coordinates ; has coordinates ; has coordinates         "
+},
+{
+  "id": "figureGraphycubed",
+  "level": "2",
+  "url": "handouts-9.html#figureGraphycubed",
+  "type": "Figure",
+  "number": "39",
+  "title": "",
+  "body": " The graph of .     "
+},
+{
+  "id": "fig_02_22_sec18",
+  "level": "2",
+  "url": "handouts-9.html#fig_02_22_sec18",
+  "type": "Figure",
+  "number": "40",
+  "title": "",
+  "body": " The graph of a function that is concave down. It is marked with points A, B, and C and a tangent line is drawn at B.  "
+},
+{
+  "id": "figureGraphycubedans",
+  "level": "2",
+  "url": "handouts-9.html#figureGraphycubedans",
+  "type": "Figure",
+  "number": "41",
+  "title": "",
+  "body": " The graph of and its tangent line at .  The graph of , a cubic, is shown together with a tangent line just touching the graph of .    "
 }
 ]
 
