@@ -86,14 +86,16 @@
 <ul>
 <li>
   <p>
-    <alert>Read</alert> the beginning of <url href="https://activecalculus.org/single/sec-1-3-derivative-pt.html">section 1.3</url> (up until the preview activity).
+    <alert>Read</alert> the beginning of <url href="
+https://activecalculus.org/single2e/sec-1-3-derivative-pt.html#sec-1-3-derivative-pt">section 1.3</url> (up until the preview activity).
   </p>
 </li>
 
 <li>
 
   <p>
-    [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-3-derivative-pt.html#ltw">Preview Activity 1.3.1</url>.
+    [Submit] <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-3-derivative-pt.html#PA-1-3">Preview Activity 1.3.1</url>.
   </p>
 
   <p>
@@ -134,7 +136,7 @@
         </p>
 <figure xml:id="figureGraphOf1OverX">
   <caption>The graph of <m>f(x)=1/x</m> for <m>x &lt; 0</m>.</caption> 
-  <image xml:id="GraphOf1OverXPic" width="60%">
+  <image xml:id="GraphOf1OverXPic" width="60%" alt="Graph of a function on a coordinate grid with the x-axis horizontal and the y-axis vertical, both labeled and marked with integer tick marks from −4 to 4. The graph shows a single smooth curve entirely in the left half-plane. The curve begins near the point (−4, 0) and decreases as x increases. It passes near (−2, −1) and becomes steeper as it approaches the y-axis. As x approaches 0 from the left, the function decreases rapidly and approaches y = −4, appearing to have a vertical tangent or vertical asymptote at x = 0. No points of the graph are shown for x greater than or equal to 0.">
     <latex-image>
       \begin{tikzpicture}[thick,scale=1] [domain=-4:4]
 \draw[step=1cm,color=gray!50] (-4,-4) grid (4,4);
@@ -191,7 +193,7 @@
         </p>
 <figure xml:id="figureGraphOf2ToX">
   <caption>The graph of <m>f(x)=2^x</m>.</caption> 
-  <image xml:id="GraphOf2ToXPic" width="60%">
+  <image xml:id="GraphOf2ToXPic" width="60%" alt="Graph of a function on a coordinate grid with the x-axis horizontal and the y-axis vertical, both labeled. The x-axis shows values from −4 to 4, and the y-axis shows values from approximately −2 to 14. The graph is a single smooth curve that increases for all shown x-values. On the left, near x = −4, the curve lies just above the x-axis and increases slowly. As x increases, the curve rises gradually at first, passing near y = 2 when x is about 1. For x greater than about 1, the curve increases more rapidly, becoming steeper as x approaches 4, where the y-value is near 14. The graph shows no breaks, open circles, or endpoints, indicating a continuous function over the displayed interval.">
     <latex-image>
   \begin{tikzpicture}[thick,scale=1] [domain=-4:4]
 \draw[step=1cm,color=gray!50] (-4,-1) grid (4,8);
@@ -245,7 +247,93 @@
         </p>
       </li>
 
-      
+    </ol>
+
+
+
+
+  </p>
+</li>
+
+<li>
+  <p>
+    <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-1-3-derivative-pt.html#sec-1-3-derivative-pt-4">section 1.3.2</url> up to Activity 1.3.2.
+  </p>
+</li>
+
+<li>
+  
+  <p>
+    [Submit] Ask <alert>Copilot</alert> “What is the definition of a derivative?” Does the limit definition it gives match that given in the textbook?
+  </p>
+</li>
+
+<li>
+
+  <p>
+    Ask <alert>Copilot</alert> “What is the secant line to a function <m>f(x)</m>?” Is the example given correct? Ask Copilot to draw the example it gives you.
+  </p>
+</li>
+
+<li>
+  <p>
+    <alert>Watch</alert> this video on calculating the derivative at a point: <url href="https://www.youtube.com/watch?v=fQ5yelPpFk0&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=9">Calculating the Derivative of a Function at a Point with Limits (9:11)</url>.
+  </p>
+</li>
+
+<li>
+  <p>
+    <alert>Watch</alert> the following video which gives an introduction to the concept of the derivative of a function at a point: <url href="https://www.youtube.com/watch?v=0zpQnwVaU28&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=9&#x26;t=0s">Quick Review: The Derivative of a Function at a Point (2:21)</url>.
+  </p>
+</li>
+</ul>
+
+</section>
+
+<section xml:id="sec-13Afterclass">
+  <title>After class</title>
+  
+
+<p>
+  Solidifying the concepts discussed in class through practice is necessary to build your skills.
+  Mathematics is not a spectator sport!
+</p>
+
+<ul>
+  <li>
+    <p>
+      <alert>Explore</alert> the derivative at a point by looking at another applet (or two): <url href="https://www.geogebra.org/m/GdHp3QzD">Derivative at a Point</url> or <url href="https://www.geogebra.org/m/ytfdrqbh">Derivative at a Point (2)</url>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> a video on finding the derivative at a point in a slightly more complicated context than the previous video: <url href="https://www.youtube.com/watch?v=OnqQGW7J89E&#x26;feature=youtu.be">Using the Limit Definition of a Derivative (7:03)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-3-derivative-pt.html#Library__Michigan__Chap2Sec2__Q15.pg">Exercises 1-9 in section 1.3.4</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> the following video, which explains how the derivative at a point can be obtained from a graph: <url href="https://www.youtube.com/watch?v=0DJPSYeLFpc&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=10">Derivative of a Function at a Point using Graphs (5:43)</url>.
+    </p>
+
+    <p>
+    </p>
+  </li>
+
+<li>
+  <p>
+    Do the following exercise.
+  </p>
+      <ol>
   
         <li>
           <p>
@@ -255,7 +343,13 @@
           </p>
   <figure xml:id="figureGraphOfx3">
   <caption>The graph of <m>y=x^3</m>.</caption> 
-  <image xml:id="GraphOfx3Pic" width="60%">
+  <image xml:id="GraphOfx3Pic" width="60%" 
+alt="Graph of a function on a coordinate grid with the x-axis horizontal and the y-axis vertical, both labeled and marked with integers. The x-axis ranges from approximately −4 to 4, and the y-axis ranges from approximately −40 to 40. The graph is a single smooth curve that increases for all shown x-values and has an S-shaped appearance.
+
+On the left, for x near −4, the curve is well below the x-axis with y-values near −35 and is increasing. As x increases toward −2, the graph rises steeply, then begins to level off near the x-axis around x = −1. Between x = −1 and x = 1, the curve is relatively flat and crosses the y-axis slightly above y = 0.
+
+For x greater than 1, the curve increases more rapidly, becoming steeper as x approaches 4, where the y-value is near 35. The graph shows no open circles, endpoints, or breaks, indicating the function is continuous over the displayed interval."
+>
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.70] [domain=-3:3]
 \draw[step=1cm,color=gray!50] (-4,-4) grid (4,4);
@@ -274,6 +368,73 @@
 </figure>
         </li>
 
+      </ol>
+</li>
+
+
+  <li>
+    <p>
+      <alert>Explore</alert> the following interactive applet by Marc Renault (make sure to follow the instructions listed under “Explore”): <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_at_a_point.html">Applet: The Derivative at a Point</url>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-3-derivative-pt.html#ez-1-3-10">Exercises 10-13 in section 1.3.4</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+    </p>
+  </li>
+</ul>
+
+</section>
+
+<section xml:id="sec-13Advancedlearningobjectives">
+  <title>Advanced learning objectives</title>
+  
+
+
+<p>
+  In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+</p>
+
+<ul>
+  <li>
+    <p>
+      Use the definition of the derivative to find the instantaneous rate of change of a function at a particular point.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Compute the equation of the tangent line to a function’s graph at a specific point.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Interpret the meaning of the derivative obtained from a computation in a word problem in everyday terms, using correct units.
+    </p>
+  </li>
+</ul>
+
+</section>
+
+<section xml:id="sec-Additionalsuggestions13">
+  <title>Additional suggestions</title>
+  
+<ul>
+  <li>
+    <p>
+      Do these exercises.
+    </p>
+          <ol>
+
 
         <li>
           <p>
@@ -283,7 +444,13 @@
           </p>
   <figure xml:id="figureOrderDerivatives">
   <caption>The graph of <m>y=g(x)</m>.</caption> 
-  <image xml:id="OrderDerivativesPic" width="75%">
+  <image xml:id="OrderDerivativesPic" width="75%" 
+alt="Graph of a function labeled y = g(x) on a coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. The graph is a single smooth curve.
+
+On the far left, for x less than about −2, the graph is below the x-axis and increasing steeply. The curve rises and reaches a local maximum slightly above the x-axis near x = −1. It then decreases, crossing near the x-axis close to x = 0, and continues downward to a local minimum below the x-axis near x = 1.
+
+After this minimum, the graph increases again, crossing the x-axis near x = 2. For x greater than 2, the curve continues to rise, becoming steeper and reaching positive y-values near the right end of the graph. The curve shows no breaks, open circles, or endpoints, indicating that g is continuous over the displayed interval."
+>
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.9] [domain=-3:3]
 \draw[step=1cm,color=gray!50] (-3,-2) grid (4,3);
@@ -314,7 +481,7 @@
 
 <figure xml:id="figureDistanceHighway">
   <caption>The graph of <m>d(t)=8(t^3-6t^2+12t)</m>.</caption> 
-  <image xml:id="DistanceHighway" width="35%">
+  <image xml:id="DistanceHighway" width="35%" alt="Graph of a function with the horizontal axis labeled t and the vertical axis labeled d, both with tick marks. The t-axis runs from 0 to about 3, and the d-axis runs from 0 to about 70. The graph is a single smooth increasing curve. Starting at t = 0, the graph begins near d = 0 and rises steeply for small values of t. As t increases toward 1, the curve continues to increase but with a decreasing slope. Between t = 1 and t = 2, the graph is nearly horizontal near d = 60, indicating very slow increase. After t = 2, the graph rises again and ends near d = 70 at t = 3. The curve has no breaks, endpoints, or open circles, indicating a continuous function over the displayed interval.">
     <latex-image>
        \begin{tikzpicture}[thick,scale=1.1] [domain=-3:3]
 \draw[step=1cm,color=gray!50] (0,0) grid (3,4);
@@ -433,143 +600,17 @@
 
 
     </ol>
-  </p>
-</li>
-
-<li>
-  <p>
-    <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-3-derivative-pt.html#dFt">section 1.3.1</url> up to Activity 1.3.2.
-  </p>
-</li>
-
-<li>
-  
-  <p>
-    [Submit] Ask <alert>Copilot</alert> “What is the definition of a derivative?” Does the limit definition it gives match that given in the textbook?
-  </p>
-</li>
-
-<li>
-
-  <p>
-    Ask <alert>Copilot</alert> “What is the secant line to a function <m>f(x)</m>?” Is the example given correct? Ask Copilot to draw the example it gives you.
-  </p>
-</li>
-
-<li>
-  <p>
-    <alert>Watch</alert> this video on calculating the derivative at a point: <url href="https://www.youtube.com/watch?v=fQ5yelPpFk0&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=9">Calculating the Derivative of a Function at a Point with Limits (9:11)</url>.
-  </p>
-</li>
-
-<li>
-  <p>
-    <alert>Watch</alert> the following video which gives an introduction to the concept of the derivative of a function at a point: <url href="https://www.youtube.com/watch?v=0zpQnwVaU28&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=9&#x26;t=0s">Quick Review: The Derivative of a Function at a Point (2:21)</url>.
-  </p>
-</li>
-</ul>
-
-</section>
-
-<section xml:id="sec-13Afterclass">
-  <title>After class</title>
-  
-
-<p>
-  Solidifying the concepts discussed in class through practice is necessary to build your skills.
-  Mathematics is not a spectator sport!
-</p>
-
-<ul>
-  <li>
-    <p>
-      <alert>Explore</alert> the derivative at a point by looking at another applet (or two): <url href="https://www.geogebra.org/m/GdHp3QzD">Derivative at a Point</url> or <url href="https://www.geogebra.org/m/ytfdrqbh">Derivative at a Point (2)</url>
-    </p>
-  </li>
-
-  <li>
-    <p>
-      <alert>Watch</alert> a video on finding the derivative at a point in a slightly more complicated context than the previous video: <url href="https://www.youtube.com/watch?v=OnqQGW7J89E&#x26;feature=youtu.be">Using the Limit Definition of a Derivative (7:03)</url>.
-    </p>
-  </li>
-
-  <li>
-    <p>
-      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-3-derivative-pt.html#WsC">Exercises 1-5 in section 1.3</url>.
-    </p>
-  </li>
-
-  <li>
-    <p>
-      <alert>Watch</alert> the following video, which explains how the derivative at a point can be obtained from a graph: <url href="https://www.youtube.com/watch?v=0DJPSYeLFpc&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=10">Derivative of a Function at a Point using Graphs (5:43)</url>.
-    </p>
-
-    <p>
-    </p>
-  </li>
-
-
-
-
-  <li>
-    <p>
-      <alert>Explore</alert> the following interactive applet by Marc Renault (make sure to follow the instructions listed under “Explore”): <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_at_a_point.html">Applet: The Derivative at a Point</url>
-    </p>
-  </li>
-
-  <li>
-    <p>
-      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-3-derivative-pt.html#tnd">Exercises 6-9 in section 1.3</url>.
-    </p>
-  </li>
-
-  <li>
-    <p>
-      <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
-    </p>
   </li>
 </ul>
 
 </section>
-
-<section xml:id="sec-13Advancedlearningobjectives">
-  <title>Advanced learning objectives</title>
-  
-
-
-<p>
-  In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
-</p>
-
-<ul>
-  <li>
-    <p>
-      Use the definition of the derivative to find the instantaneous rate of change of a function at a particular point.
-    </p>
-  </li>
-
-  <li>
-    <p>
-      Compute the equation of the tangent line to a function’s graph at a specific point.
-    </p>
-  </li>
-
-  <li>
-    <p>
-      Interpret the meaning of the derivative obtained from a computation in a word problem in everyday terms, using correct units.
-    </p>
-  </li>
-</ul>
-
-</section>
-
-
 
 
 <section xml:id="secAnswers13">
   <title>Answers</title>
   
-
+<subsection xml:id="subsec-Toprepareforclass13">
+  <title>To prepare for class</title>
 
 <ol>
   <li>
@@ -581,7 +622,17 @@
           </p>
           <figure xml:id="figureGraphFull1OverX">
   <caption>The graph of <m>f(x)=2^x</m> together with a secant line through <m>(2,f(2))</m> and <m>(3,f(3))</m>.</caption> 
-  <image xml:id="GraphFull1OverX" width="50%">
+  <image xml:id="GraphFull1OverX" width="50%" 
+alt="Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks. The graph consists of two separate smooth curves and a secant line.
+
+One curve appears in the lower-left portion of the graph, for x less than about −1. This curve decreases as x increases, crossing near y = 0 around x = −3 and then falling rapidly, becoming very steep as it approaches x = 0 from the left.
+
+A second curve appears in the upper right portion of the graph, for x greater than about 1. This curve begins at high positive y-values just to the right of x = 1 and decreases as x increases. It passes near the points (2, 1) and (3, 0.5), which are shown as filled points and labeled accordingly.
+
+A red line segment is drawn connecting the points (2, 1) and (3, 0.5). This secant line slopes downward from left to right and intersects the graph only at these two labeled points.
+
+There is a gap between the two curves near x = 0, indicating the function is not defined or not shown there. The figure emphasizes the use of two points on the graph to form a secant line."
+>
     <latex-image>
       \begin{tikzpicture}[thick,scale=1] [domain=-4:4]
 \draw[step=1cm,color=gray!50] (-4,-4) grid (4,4);
@@ -633,7 +684,15 @@
 
     <figure xml:id="figureGraphOf2ToXAns">
   <caption>The graph of <m>f(x)=2^x</m> with secant and tangent lines.</caption> 
-  <image xml:id="GraphOf2ToXAnsPic" width="60%">
+  <image xml:id="GraphOf2ToXAnsPic" width="60%" 
+alt="Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks. The graph shows a smooth increasing curve that passes near the x-axis on the left and rises steeply for x greater than about 1, reaching large y-values by x = 4.
+
+Two points on the curve are highlighted and labeled. One point is labeled (−1, one-half), and another is labeled (1, 2). A straight line is drawn through each of these points, representing tangent or linear approximation lines.
+
+The line through the point (−1, one-half) has a shallow positive slope and extends across the graph. The line through the point (1, 2) has a steeper positive slope and intersects the curve near that point.
+
+At the point (0, 1), the curve passes through the y-axis and is shown to lie between the two straight lines. The figure illustrates how the slopes of the tangent lines differ at different points on the curve and how the function’s rate of change increases as x increases."
+>
     <latex-image>
   \begin{tikzpicture}[thick,scale=1] [domain=-4:4]
 \draw[step=1cm,color=gray!50] (-4,-1) grid (4,8);
@@ -687,6 +746,14 @@
     </p>
   </li>
 
+</ol>
+</subsection>
+
+<subsection xml:id="subsec-Afterclass13">
+  <title>After class</title>
+  
+<ol>
+
   <li>
     <p>
       The equation of the tangent line to <m>y=x^{3}</m> at <m>x=2</m> is <m>y=12x-16</m>.
@@ -697,7 +764,15 @@
     
        <figure xml:id="figureTangentX3Ans">
   <caption>The graph of the tangent line to <m>y=x^3</m> at <m>x=2</m> is <m>y=12x-16</m>.</caption> 
-  <image xml:id="TangentX3Pic" width="50%">
+  <image xml:id="TangentX3Pic" width="50%" 
+alt="Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks from approximately −4 to 4 on the x-axis and −40 to 40 on the y-axis. The graph shows a single smooth increasing curve with an S-shaped appearance.
+
+On the left, for x near −4, the curve is well below the x-axis and increasing. As x increases toward −1, the graph flattens slightly near the x-axis, then continues upward. For x greater than about 1, the curve increases rapidly, becoming steep near the right edge of the graph.
+
+A straight line is drawn that intersects the curve at a marked point labeled (2, 8). This line has positive slope and passes through the point (2, 8), extending downward to the left and upward to the right. The line is steeper than the curve for x less than 2 and less steep than the curve for x greater than 2.
+
+The figure illustrates a tangent or linear approximation to the curve at the point (2, 8), highlighting the local behavior of the function near that point."
+>
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.75] [domain=-3:3]
 \draw[step=1cm,color=gray!50] (-4,-4) grid (4,4);
@@ -718,6 +793,13 @@
   </image>
 </figure>
   </li>
+</ol>
+</subsection>
+
+<subsection xml:id="subsec-Additionalsuggestions13">
+  <title>Additional suggestions</title>
+  
+<ol>
 
   <li>
     <p>
@@ -815,6 +897,7 @@
     </p>
   </li>
 </ol>
+</subsection>
 </section>
 
 </handout>
