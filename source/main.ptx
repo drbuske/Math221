@@ -88,6 +88,8 @@
       <xi:include href="./handouts/25PrepChainRule.ptx"/>
       <xi:include href="./handouts/26PrepInverseFunctions.ptx"/>
       <xi:include href="./handouts/27PrepImplicitDifferentiation.ptx"/>
+      <xi:include href="./handouts/31PrepRelatedRates.ptx"/>
+      <xi:include href="./handouts/32PrepUsingDerivativesEvaluateLimits.ptx"/>
     </chapter>
 
  

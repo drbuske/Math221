@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 3.1 - Related Rates</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    We begin our work in Chapter 3 (Using the Derivative) by seeing how the derivative may be employed to relate the rates of two different quantities that are related and each changing as time varies.
+    The main idea here is: if two quantities are related to one another, and each is changing as time changes, then the rates at which each quantity is changing must be related.
+    Hence, we consider a class of problems known as related rates problems.
+  </p>
+
+  </section>
+
+  <section>
+  <title>Basic learning objectives</title>
+
+  <p>
+    These are the tasks you should be able to perform with reasonable
+    fluency when you arrive at our next class meeting.
+    Important new
+    vocabulary words are indicated <em>in italics</em>.
+  </p>
+
+  <ul>
+    <li>
+      <p>
+        Determine how respective rates of change must be related if the values of two (or more) changing quantities are related.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Use basic geometry results such as the Pythagorean Theorem, formulas for the area of familiar figures, and trigonometry to establish relationships among quantities of interest.
+      </p>
+    </li>
+  </ul>
+
+</section>
+
+  <section xml:id="sec-Toprepareforclass31">
+    <title>To prepare for class</title>
+
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Read</alert> motivating questions and the introduction to <url href="
+https://activecalculus.org/single2e/sec-3-1-rel-rates.html#sec-3-1-rel-rates">section 3.1</url> (up until Preview Activity 3.5.1).
+    </p>
+  </li>
+
+  <li>
+    
+
+    <p>
+      [Submit] <alert>Explore</alert> the applet <url href="https://www.geogebra.org/m/TF6TSj5F">modeling two balloons being blown up</url>. Then, answer these questions:
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            The blue balloon and the red balloon clearly blow up at different rates.
+            Suppose time <m>t</m> is given in seconds.
+            In one balloon, the radius is given by the equation <m>r_{1}(t)=\frac{1}{5}t</m> cm.
+            In the other, the radius is given by the equation <m>r_{2}(t) = \frac{4}{3}\sqrt[3]{t}</m> cm.
+            Which is which?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The volumes of each balloon are changing at different rates.
+            In one case, <m>V_{1}(t) = 10t \ cm^{3}</m>.
+            In the other, the volume is given by <m>V_{2}(t) = \frac{4}{375}\pi t^{3} \ cm^{3}</m>.
+            Which is which?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>dV/dt</m> is constant when filling the balloon (imagine a machine pumping it up at a uniform rate), which of the two balloons (red or blue) is the most reasonable model?
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> this video that describes how one balloon in the previous applet is growing over time: <url href="https://www.youtube.com/watch?v=zLigIvVIQ0o">Inflating Spherical Balloon (2:31)</url>.
+    </p>
+  </li>
+
+  <li>
+    
+
+    <p>
+      [Submit] <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-1-rel-rates.html#PA-3-1">Preview Activity 3.1.1</url>.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            (Optional) <alert>Watch</alert> <url href="https://www.youtube.com/watch?v=0hAUGAPHJ4g">video solution to Preview Activity 3.1.1 (4:58)</url>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=2nnfWMI-wKM&#x26;feature=emb_title">Basic Related Rates Example (6:37)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=Wh6UF4e55tg&#x26;feature=emb_title">Quick Review - Related Rates (2:14)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-3-1-rel-rates.html#sec-3-1-rel-rates-4">section 3.1.2</url> up to Activity 3.1.2.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> these problems.
+    </p>
+
+    <p>
+      <ol>
+      <li>
+        
+
+        <p>
+         [Submit]
+          The radius of a circular oil slick expands at a rate of 2 m/min.
+          <alert>Explore</alert> this applet to help you understand <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_app_rr_oil_slick.html">how the slick expands in time</url>.
+        </p>
+
+        <p>
+          <ol>
+            <li>
+              <p>
+                How fast is the area of the oil slick increasing when the radius is 25 m? Note that the dotted lines in <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_app_rr_oil_slick.html">the applet</url> illustrate the size of the oil slick at the moment you are computing how fast the area of this slick is increasing.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If the radius is 0 at time <m>t = 0</m>, how fast is the area increasing after 3 min?
+              </p>
+            </li>
+          </ol>
+        </p>
+
+        <p>
+          <alert>Watch</alert> <url href="https://youtu.be/kQF9pOqmS0U">this video (7:42)</url> to see a very similar problem being solved.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          A 16-ft ladder leans against a wall.
+          Suppose that the bottom of the ladder moves (slides) away from the wall at a constant rate.
+          <alert>Explore</alert> <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_app_rr_falling_ladder.html">this applet</url> to simulate this situation.
+        </p>
+
+
+          <ol>
+            <li>
+              <p>
+                If the bottom of the ladder moves away from the wall at a <em>constant rate</em>, how would you describe the movement of the top of the ladder?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Suppose <m>h(t)</m> represents the height, in feet, at which the ladder touches the wall at time <m>t</m> seconds.
+                If <m>x(t)</m>, the distance in feet between the wall and the base of the ladder at time <m>t</m>, is increasing, is <m>dh/dt</m> positive or negative?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Suppose the bottom of the ladder is 5 ft from the wall at time <m>t = 0</m> seconds and it slides away from the wall at a constant rate of <m>3 \ ft/s</m>.
+                Find the velocity of the top of the ladder at time <m>t = 1</m> second.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Suppose the top of the ladder slides down at a constant rate of 4 <m>ft/s</m>.
+                Calculate <m>dx/dt</m> when <m>h = 12</m> feet.
+              </p>
+            </li>
+          </ol>
+
+
+        <p>
+          <alert>Watch</alert> <url href="https://youtu.be/kBVDSu7v8os">this video (5:48)</url> to see a very similar problem being solved.
+        </p>
+      </li>
+      </ol>
+    </p>
+  </li>
+
+  <li>
+
+    <p>
+      Prompt <alert>Copilot</alert> “Make up a typical related rates problem from calculus that involves a ladder sliding down a wall.
+      Solve it by showing me step-by-step the process.” Draw and label diagrams that help you understand the solution that the AI produces.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Prompt <alert>Copilot</alert> “Make up an atypical, unique related rates problem that might be asked in a college-level calculus class.
+      Then, solve it showing me step-by-step the process.”
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-1-rel-rates.html#csafranski__3.5HW_prob1.pg">exercises 1-2 in section 3.1</url>.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            <alert>Watch</alert> this video: <url href="https://www.youtube.com/watch?v=mWBLM8QX-Lg">Conical Pile of Gravel (5:10)</url> to see a similar example to #1 solved.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Explore</alert> this applet <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_app_rr_streetlamp.html">illustrating how the shadow of a skateboarder changes over time</url>. This is the same concept as in #2. <alert>Watch</alert> this video: <url href="https://www.youtube.com/watch?v=g3TX71xdZME">How fast does the shadow move? (5:11)</url> which has a humorous ending, but explains how to do a problem similar to #2 fairly well.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+  </ul>
+
+  </section>
+
+  <section xml:id="sec-Afterclass31">
+    <title>After class</title>
+  
+
+  <p>
+    Solidifying the concepts discussed in class through practice is necessary to build your skills.
+  </p>
+
+  <ul>
+    <li>
+      <p>
+        <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-3-1-rel-rates.html#sec-3-1-rel-rates-5">section 3.1.3 - summary</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=44yHoaBCQ4Q&#x26;feature=emb_title">Related Rates Example with Trigonometry (8:10)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-1-rel-rates.html#act-3-1-2">Activity 3.1.3</url>. <alert>Explore</alert> <url href="https://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_app_rr_rocket.html">this applet of a Rocket Launch</url> to help answer the questions. <alert>Watch</alert> this video on <url href="https://youtu.be/_kbd6troMgA">watching a balloon rise (8:16)</url> for a somewhat similar example on how to solve this type of problem.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> this problem.
+      </p>
+
+      <p>
+        <ol>
+          <li>
+            <p>
+              Water pours into a conical tank at a constant rate of <m>10 \ ft^{3}</m> per minute.
+              The tank is ten feet tall and, at its widest, has a radius of 4 feet.
+              How fast is the water level rising when it is 5 feet high? <alert>Explore</alert> how <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_app_rr_conical_tank.html">water fills a conical tank</url> with this applet.
+              <alert>Watch</alert> this video on <url href="https://www.youtube.com/watch?v=TKoBaOfFlck">filling up a tank (5:47)</url> for the solution to a similar problem.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-1-rel-rates.html#csafranski__3.5HW_prob4.pg">exercises 4-5 in section 3.1</url>.
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              <alert>Watch</alert> this video on <url href="https://www.youtube.com/watch?v=V9WPmYUPZPk">Water Filling a Trapezoidal Prism (12:47)</url> for an example somewhat similar to #4.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> this video on <url href="https://www.youtube.com/watch?v=zytwFSyH0_0">The Baseball Diamond Problem (6:50)</url> for an example similar to #5.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-1-rel-rates.html#act-3-1-4">Activity 3.1.5</url>.
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              (Optional) <alert>Watch</alert> <url href="https://www.youtube.com/watch?v=iJLrMVENqxo">video solution to Activity 3.1.5 (9:10)</url>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> this <url href="https://www.youtube.com/watch?v=j6I3EXiKB2A">simple video (8:52)</url> summarizing the process being used on related rates problems.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-1-rel-rates.html#csafranski__3.5HW_prob6.pg">exercises 6-7 in section 3.1</url>.
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              <alert>Watch</alert> this video on <url href="https://www.youtube.com/watch?v=A-uVUQteTrQ&#x26;feature=youtu.be">Solving a Related Rates Problem related to Baseball (4:08)</url>. It may help on #6.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+      </p>
+    </li>
+  </ul>
+
+  </section>
+
+
+
+<section xml:id="sec-Advancedlearningobjectives31">
+  <title>Advanced learning objectives</title>
+
+  <p>
+    In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+  </p>
+
+  <ul>
+    <li>
+      <p>
+        Use Implicit Differentiation/the Chain Rule to take the derivative (usually with respect to time) of an equation relating variables to each other.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Set up and solve a wide range of related rates problems.
+      </p>
+    </li>
+  </ul>
+
+</section>
+
+ <section>
+  <title>Answers</title>
+
+  <subsection>
+    <title>To prepare for class</title>
+
+    <ol>
+      <li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>dA/dt = 100\pi \ m^{2}/min</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Using <m>r=6 \ m</m> at time <m>t=3 \ min</m>, we find <m>dA/dt = 24\pi \ m^{2}/min</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Since <m>x(t)^{2} + h(t)^{2} = 16^{2}</m>, it follows that <m>2x(t)\frac{dx}{dt}+ 2h(t)\frac{dh}{dt}= 0</m>.
+                If <m>\frac{dx}{dt}</m> is constant, then <m>\frac{dh}{dt}= -\frac{x(t)}{h(t)}\frac{dx}{dt}</m>.
+                The ladder falls and as <m>dx/dt</m> increases, <m>dh/dt</m> decreases.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                As shown in (a), <m>dh/dt</m> is negative.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>dh/dt = -40/\sqrt{192}\approx -2.89</m> ft/sec
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>dx/dt = -2(12)(-4)/2\sqrt{112}\approx 4.54</m> ft/sec
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+
+    </subsection>
+
+    <subsection xml:id="subsec-Afterclass31">
+      <title>After class</title>
+<ol>
+      <li>
+        <p>
+          We know that <m>dV/dt = 10</m> where <m>V</m> represents the volume of water in the tank at time <m>t</m>.
+          Since <m>V = \frac{1}{3}\pi r(t)^{2} h(t)</m> where <m>\frac{r(t)}{h(t)}= \frac{4}{10}</m> we have that
+          <me>
+            V(t) = \frac{1}{3}\pi \left( \frac{2}{5}h(t) \right)^{2} h(t) = \frac{4}{75}\pi h(t)^{3}.
+          </me>
+          So, <m>\displaystyle \frac{dV}{dt}= \frac{4}{75}\pi \cdot 3 h(t)^{2} \frac{dh}{dt}</m>.
+          We solve for <m>\frac{dh}{dt}</m> and evaluate for <m>h=5</m> feet.
+          But
+          <me>
+            \frac{dh}{dt}|_{h=5}= \frac{\frac{dV}{dt}}{\frac{12}{75}\pi (5^{2})}= \frac{10}{4\pi}= \frac{5}{2\pi}\ {\textrm{ft/min}}.
+          </me>
+        </p>
+      </li>
+    </ol>
+
+        </subsection>
+      </section>
+
+	</handout>
