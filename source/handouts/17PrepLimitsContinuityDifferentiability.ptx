@@ -98,13 +98,15 @@
   <ul>
   <li>
     <p>
-      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html">section 1.7</url> (up until the preview activity).
+      <alert>Read</alert> motivating questions and the introduction to <url href=" 
+https://activecalculus.org/single2e/sec-1-7-lim-cont-diff.html#sec-1-7-lim-cont-diff">section 1.7</url> (up until the preview activity).
     </p>
   </li>
 
   <li>
     <p>
-      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html#AgV">Preview Activity 1.7.1</url>.
+      <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-7-lim-cont-diff.html#PA-1-7">Preview Activity 1.7.1</url>.
     </p>
 
     <p>
@@ -126,7 +128,8 @@
 
   <li>
     <p>
-      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html#AAh">section 1.7.1</url> (up until Activity 1.7.2).
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-1-7-lim-cont-diff.html#sec-1-7-lim-cont-diff-4">section 1.7.2</url> (up until Activity 1.7.2).
     </p>
   </li>
 
@@ -152,14 +155,16 @@
 
   <li>
     <p>
-      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html#gHq">section 1.7.2</url> (up until Activity 1.7.3).
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-1-7-lim-cont-diff.html#sec-1-7-lim-cont-diff-5">section 1.7.3</url> (up until Activity 1.7.3).
     </p>
   </li>
 
   <li>
   
     <p>
-      [Submit] <alert>Re-read</alert> <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html#Rys">Definition 1.7.6</url> in the text. Then, give an example of a function that
+      [Submit] <alert>Re-read</alert> <url href="
+https://activecalculus.org/single2e/sec-1-7-lim-cont-diff.html#sec-1-7-lim-cont-diff-5-7">Definition 1.7.4</url> in the text. Then, give an example of a function that
     </p>
 
     <p>
@@ -393,7 +398,12 @@
       <figure xml:id="TwoPiecewiseFunctions" >
       <caption>A limit question involving two piecewise-defined functions.</caption>
       <sidebyside widths="30% 30% 30%">
-      <image><latex-image>
+      <image><description>
+Three side-by-side coordinate graphs. 
+Left: a piecewise linear graph labeled g(x). For x less than zero, a rising line approaches an open circle at (0, 1). For x greater than or equal to zero, a descending line begins at a filled point at (0, 0). 
+Middle: a piecewise linear graph labeled f(x). For x less than or equal to zero, a rising line ends at a filled point at (0, 2). For x greater than zero, a descending line begins at an open circle at (0, 1). 
+Right: a blank coordinate grid with labeled x- and y-axes.
+ </description><latex-image>
 \begin{tikzpicture}[thick,scale=0.75] [domain=-4:4]
 \draw[step=1cm,color=gray!50] (-3,-2) grid (3,3);
    \draw [black!80,line width=0.3pt,-latex] (0,0) -- (3,0) node [below] at (2.75,0) {$x$};
@@ -488,7 +498,13 @@
 <figure xml:id="SqueezeThmPic" xmlns:xi="http://www.w3.org/2001/XInclude">
       <caption>A function <m>f(x)=2+x^2\sin(1/x)</m> is sandwiched between <m>g(x)=2-x^2</m> and <m>h(x)=2+x^2</m>.</caption>
       <image source="SqueezeThmExample2.jpg" width="50%">
-        <description>A function is sandwiched between two other graphs.</description>
+        <description>
+ coordinate graph showing three smooth curves intersecting near the y-axis. 
+A red curve opens upward and passes through the point (0, 2), decreasing slightly to the right before rising steeply. 
+A blue curve increases from left to right, crossing y = 2 near x = 0 and continuing upward with moderate slope. 
+A green curve opens downward, reaches a maximum at the point (0, 2), and decreases on both sides. 
+The curves intersect and bound a small shaded region just to the left of x = 0. The x- and y-axes are shown, with the y-axis labeled and tick marks up to y = 3.
+</description>
       </image>
 </figure>
                 
@@ -513,7 +529,7 @@
 
                   <figure xml:id="figureBempty">
   <caption>An empty grid.</caption> 
-  <image xml:id="BemptyPic" width="50%">
+  <image xml:id="BemptyPic" width="50%"><description>An empty Cartesian grid.</description>
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.5] [domain=-4:4]
 \draw[step=1cm,color=gray!50] (-2,-1) grid (6,7);
@@ -567,7 +583,8 @@
 
       <li>
         <p>
-          <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html#MOz">section 1.7.3</url>.
+          <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-1-7-lim-cont-diff.html#sec-1-7-lim-cont-diff-6">section 1.7.4</url>.
         </p>
       </li>
 
@@ -593,19 +610,22 @@
 
       <li>
         <p>
-          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html#bFy">Exercises 1-4 in section 1.7.5</url>.
+          <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-7-lim-cont-diff.html#Library__ASU-topics__setLimitConcepts__3-2-36.pg">Exercises 1-6 in section 1.7.6</url>.
         </p>
       </li>
 
       <li>
         <p>
-          <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html#sVI">the summary in section 1.7.4</url>.
+          <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-1-7-lim-cont-diff.html#sec-1-7-lim-cont-diff-7">the summary in section 1.7.5</url>.
         </p>
       </li>
 
       <li>
         <p>
-          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html#lgo">Exercises 5-8 in section 1.7.5</url>.
+          <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-7-lim-cont-diff.html#ez-1-7-7">Exercises 7-10 in section 1.7.6</url>.
         </p>
       </li>
 
@@ -838,6 +858,13 @@
   <figure xml:id="figureGraphFminusG">
   <caption>The graph of <m>(f-g)(x)</m>.</caption> 
   <image xml:id="GraphFminusGPic" width="50%">
+<description>
+A coordinate graph showing the function labeled (f minus g)(x). 
+The graph is a horizontal line at y equals 1 extending left and right with arrowheads. 
+There is an open circle at the point (0, 1). 
+Above it, a filled point is shown at (0, 2). 
+The x- and y-axes are labeled, and the grid includes tick marks at integer values.
+</description>
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.75] [domain=-4:4]
 \draw[step=1cm,color=gray!50] (-3,-2) grid (3,3);
@@ -928,6 +955,14 @@
            <figure xml:id="figureLimitsGiveC">
   <caption>The graph of <m>B(t)</m>.</caption> 
   <image xml:id="LimitsGiveCPic" width="50%">
+<description>
+A coordinate graph showing a piecewise linear function. 
+For x less than 2, a solid line with negative slope decreases toward the point (2, 3). 
+At x equals 2, there is a filled point at (2, 3). 
+For x greater than 2, a solid line with positive slope increases to the right from that point. 
+A dotted line with smaller positive slope approaches the point (2, 3) from the left. 
+The x- and y-axes are labeled, with a grid and integer tick marks.
+</description>
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.75] [domain=-4:4]
 \draw[step=1cm,color=gray!50] (-2,-1) grid (6,7);

@@ -313,8 +313,8 @@ https://activecalculus.org/single2e/sec-1-6-second-d.html#ez-1-6-10">Exercises 1
 
   <figure xml:id="figureWhichIsWhich">
   <caption>Identify which graph is <m>f(x)</m>, which graph is <m>f'(x)</m>, and which graph is <m>f''(x)</m>.</caption> 
-  <image xml:id="WhichIsWhichPic" width="60%" 
-alt="Graph showing three functions plotted on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown.
+  <image xml:id="WhichIsWhichPic" width="60%">
+<description>Graph showing three functions plotted on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown.
 
 One graph is a solid blue curve. It oscillates smoothly across the interval, reaching a high point above y = 6 near x = −4, then decreasing to cross the x-axis near x = −1. The curve continues downward to a deep minimum below y = −5 near x = 4, before increasing again toward the right.
 
@@ -323,7 +323,7 @@ A second graph is a black dashed curve. It oscillates with smaller amplitude tha
 A third graph is a red dotted curve. This curve also oscillates and appears phase-shifted relative to the black dashed curve. It has a local minimum near x = −4, a local maximum near x = −2, another minimum near x = 1, and a local maximum near x = 3.
 
 All three functions are continuous over the displayed interval and intersect or approach one another at several x-values. The figure emphasizes comparison of amplitude, phase shift, and oscillatory behavior among the three functions."
->
+</description>
     <latex-image>
  \begin{tikzpicture}[thick,scale=0.7] [domain=-3:3]
 \draw[step=1cm,color=gray!50] (-6,-6) grid (6,6);
@@ -409,7 +409,7 @@ All three functions are continuous over the displayed interval and intersect or 
 
               <figure xml:id="figureEmptyGrid16">
   <caption>An empty grid.</caption> 
-  <image xml:id="EmptyGrid16Pic" width="50%" alt="An empty Cartesian grid.">
+  <image xml:id="EmptyGrid16Pic" width="50%"><description>An empty Cartesian grid.</description>
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.65] 
 \draw[step=1cm,color=gray!50] (-6,-6) grid (6,6);
@@ -465,15 +465,15 @@ All three functions are continuous over the displayed interval and intersect or 
 
          <figure xml:id="figureMeetConditions">
   <caption>This graph of <m>f(x)</m> meets several conditions defined by the derivative of <m>f(x)</m>.</caption> 
-  <image xml:id="MeetConditionsPic" width="60%" 
-alt="Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks.
+  <image xml:id="MeetConditionsPic" width="60%"> 
+<description>Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks.
 
 The graph is a single smooth curve. On the left, near x = −5, the curve is below the x-axis and increasing. As x increases, the graph continues upward and reaches a local maximum slightly above y = 2 near x = 0. The curve then decreases to a local minimum just below the x-axis near x = 2.
 
 After this minimum, the curve increases again to a second local maximum near x = 4 at a y-value around 2, then decreases sharply toward the right edge of the graph, falling below the x-axis near x = 5.
 
 The graph has no open circles, corners, or breaks, indicating the function is continuous and smooth over the displayed interval."
->
+</description>
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.7] [domain=-3:3]
 \draw[step=1cm,color=gray!50] (-6,-6) grid (6,6);

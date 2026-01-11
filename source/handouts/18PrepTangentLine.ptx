@@ -23,7 +23,6 @@
       fluency when you arrive at our next class meeting.
       Important new
       vocabulary words are indicated <em>in italics</em>.
-      Check each box when you feel confident you have a firm grasp on that objective.
     </p>
 
     <ul>
@@ -51,7 +50,8 @@
   <ul>
   <li>
     <p>
-      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-1-8-tan-line-approx.html">section 1.8</url> (up until the preview activity).
+      <alert>Read</alert> motivating questions and the introduction to <url href="
+https://activecalculus.org/single2e/sec-1-8-tan-line-approx.html#sec-1-8-tan-line-approx">section 1.8</url> (up until the preview activity).
     </p>
   </li>
 
@@ -59,7 +59,8 @@
     
 
     <p>
-      [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-8-tan-line-approx.html#OkA">Preview Activity 1.8.1</url>.
+      [Submit] <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-8-tan-line-approx.html#PA-1-8">Preview Activity 1.8.1</url>.
     </p>
 
     <p>
@@ -87,7 +88,8 @@
 
   <li>
     <p>
-      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-8-tan-line-approx.html#LnH">section 1.8.1</url>.
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-1-8-tan-line-approx.html#sec-1-8-tan-line-approx-4">section 1.8.2</url>.
     </p>
   </li>
 
@@ -101,7 +103,8 @@
 
   <li>
     <p>
-      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-8-tan-line-approx.html#ruQ">section 1.8.2</url>.
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-1-8-tan-line-approx.html#sec-1-8-tan-line-approx-5">section 1.8.3</url>.
     </p>
   </li>
 
@@ -109,7 +112,8 @@
     
 
     <p>
-      [Submit] <alert>Re-read</alert> <url href="https://activecalculus.org/single/sec-1-8-tan-line-approx.html#DJi">Example 1.8.3</url>. Then, write two sentences about the use of the word <em>near</em> in this context. How near is near? How might <em>near</em> depend on the function?
+      [Submit] <alert>Re-read</alert> <url href="
+https://activecalculus.org/single2e/sec-1-8-tan-line-approx.html#sec-1-8-tan-line-approx-5-4">Example 1.8.2</url>. Then, write two sentences about the use of the word <em>near</em> in this context. How near is near? How might <em>near</em> depend on the function?
     </p>
   </li>
 
@@ -141,6 +145,12 @@
            <figure xml:id="figureGraphycubed">
   <caption>The graph of <m>y=x^3</m>.</caption> 
   <image xml:id="ycubedPic" width="50%">
+<description>
+A coordinate graph showing a single smooth curve. 
+The curve increases from left to right, starting in the lower left and ending in the upper right. 
+It passes near the origin and flattens slightly around x equals 0 before increasing more steeply for positive x. 
+The x- and y-axes are labeled, with tick marks extending from approximately minus 40 to 40 on the y-axis and minus 4 to 4 on the x-axis.
+</description>
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.75]
 \draw[step=1cm,color=gray!30] (-4,-4) grid (4,4);
@@ -181,9 +191,16 @@
             </ol>
           </p>
 <figure xml:id="fig_02_22_sec18">
-          <image width="50%" source="fig_02_22.jpg"><description>The graph of a function that is concave down.  It is marked
-            with points A, B, and C and a tangent line is drawn at B.
-          </description></image>
+          <image width="50%" source="fig_02_22.jpg">
+<description>
+A coordinate graph showing a curve labeled f(x) and a tangent line. 
+The curve increases and is concave upward. 
+Three points on or near the curve are marked: point A at approximately x equals 4 on the curve, point C slightly to the left near x equals 3.9, and point B above the curve on the tangent line. 
+A straight line labeled “Tangent line” touches the curve at point A and extends upward through point B. 
+Vertical dashed lines drop from points A and B to the x-axis, marking x equals 4 and x equals 4.2.
+The x-axis is labeled with tick marks at 3.9, 4, and 4.2.
+</description>
+</image>
         </figure>
           </li>
         </ol>
@@ -216,13 +233,15 @@
     <ul>
       <li>
         <p>
-          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-8-tan-line-approx.html#ZJh">Exercises 1-4 in section 1.8.4</url>.
+          <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-8-tan-line-approx.html#Library__Michigan__Chap2Sec2__Q11.pg">Exercises 1-6 in section 1.8.5</url>.
         </p>
       </li>
 
       <li>
         <p>
-          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-8-tan-line-approx.html#sDJ">written exercises 5-8 in section 1.8.5</url>.
+          <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-8-tan-line-approx.html#ez-1-8-7">written exercises 7-10 in section 1.8.5</url>.
         </p>
       </li>
 
@@ -313,8 +332,13 @@
 
          <figure xml:id="figureGraphycubedans">
   <caption>The graph of <m>y=x^3</m> and its tangent line at <m>x=2</m>.</caption> 
-  <image xml:id="ycubedansPic" width="50%"><description>The graph of <m>y=x^3</m>, a cubic, is shown together with 
-    a tangent line just touching the graph of <m>x=2</m>.</description>
+  <image xml:id="ycubedansPic" width="50%">
+<description>
+A coordinate graph showing a smooth blue curve and a straight red line. 
+The blue curve increases from left to right, passing near the origin, flattening slightly around x equals 0, and then rising more steeply for positive x. 
+The red line has constant positive slope, intersects the y-axis below zero, and crosses the blue curve near x equals 2. 
+The x- and y-axes are labeled, with tick marks extending from approximately minus 4 to 4 on the x-axis and minus 40 to 40 on the y-axis.
+</description>
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.75] 
 \draw[step=1cm,color=gray!30] (-4,-4) grid (4,4);

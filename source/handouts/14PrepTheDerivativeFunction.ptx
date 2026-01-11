@@ -156,13 +156,13 @@ https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#D-derivative-def
 
             <figure xml:id="plotwithtangents">
               <caption>A plot of the graph of a function with slopes at several locations illustrated.</caption>
-            <image source="fig_02_27.jpg" width="50%" 
-alt="Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks. The graph is a single smooth curve.
+            <image source="fig_02_27.jpg" width="50%" >
+<description>Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks. The graph is a single smooth curve.
 
 On the left, near x = −2, the curve is above the x-axis and increasing. It reaches a local maximum near x = −1 at a y-value slightly above 4. The curve then decreases, crossing the x-axis near x = 2, and continues downward to a local minimum near x = 4 with a y-value near −3.
 
 After this minimum, the curve increases again as x approaches 5. The graph has no open circles, endpoints, or breaks, indicating the function is continuous over the displayed interval."
-/></figure>
+</description></image></figure>
           
      <table xml:id="PlotTheSlopes" >
         <title>Plot the slopes of the graph of this function.</title>
@@ -202,7 +202,8 @@ After this minimum, the curve increases again as x approaches 5. The graph has n
 
  <figure xml:id="figureplotfprime4">
   <caption>The graph of <m>f(x)</m> is given.  Sketch the graph of <m>f'(x)</m>.</caption> 
-  <image xml:id="piecewisefprime4Pic" width="70%" alt="Graph of a piecewise linear function on a coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. The graph consists of three straight line segments that meet at sharp corners.
+  <image xml:id="piecewisefprime4Pic" width="70%" >
+<description>Graph of a piecewise linear function on a coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. The graph consists of three straight line segments that meet at sharp corners.
 
 On the left, the graph begins near x = −5 at a y-value around 5 and decreases linearly to the point (−1, 1), forming a downward-sloping segment.
 
@@ -211,7 +212,7 @@ From the point (−1, 1), the graph increases linearly to a peak at the point (1
 From this peak, the graph decreases linearly again to the right, ending near the point (5, 3).
 
 All endpoints appear solid, and there are no breaks or open circles, indicating the function is defined and continuous over the displayed interval."
->
+</description>
     <latex-image>
  \begin{tikzpicture}[thick,scale=0.7] [domain=-5:5]
 \draw[step=1cm,color=gray!50] (-5,-2) grid (5,5);
@@ -459,15 +460,16 @@ https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#ez-1-4-10">Exerc
               </table>
 
               <figure><title>A function with its derivative.</title>
-                <image source="fig_02_28.jpg" width="60%" 
-alt="Graph showing two functions on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. One curve is labeled f(x) and the other is labeled f′(x).
+                <image source="fig_02_28.jpg" width="60%" >
+<description>Graph showing two functions on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. One curve is labeled f(x) and the other is labeled f′(x).
 
 The curve labeled f(x) is a smooth blue curve. It increases from the left, reaching a local maximum near x = −1 at a y-value slightly above 4. It then decreases, crossing the x-axis near x = 2, and continues downward to a local minimum near x = 4 with a y-value below −2. After this minimum, the curve increases again toward the right end of the graph.
 
 The curve labeled f′(x) is a smooth black curve with a U-shaped appearance. It crosses the x-axis near x = −1 and x = 4 and has a local minimum below the x-axis near x = 2.
 
 The graph illustrates the relationship between f and its derivative: where f(x) has a local maximum or minimum, the derivative f′(x) is zero, and where f(x) is increasing or decreasing, f′(x) is positive or negative, respectively. There are no breaks or open circles shown on either curve, indicating both functions are continuous over the displayed interval."
-/>
+</description>
+</image>
               </figure>
                 </li>
 
@@ -478,8 +480,8 @@ The graph illustrates the relationship between f and its derivative: where f(x) 
                   
   <figure xml:id="figurepiecewisefprime">
   <caption>The graph of <m>f'(x)</m> given a graph of <m>f(x)</m>.</caption> 
-  <image xml:id="piecewisefprimePic" width="70%" 
-alt="Graph showing a piecewise-defined function f and its derivative f′ on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown.
+  <image xml:id="piecewisefprimePic" width="70%" >
+<description>Graph showing a piecewise-defined function f and its derivative f′ on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown.
 
 The graph of f(x) is drawn with solid line segments. On the left, f decreases linearly from the upper left and reaches a sharp corner at the point (−1, 1). From (−1, 1), the graph increases linearly to a peak near (1, 5). From that peak, f decreases linearly again to the right, ending near the point (5, 3). The corners at x = −1 and x = 1 indicate points where the slope changes abruptly.
 
@@ -488,7 +490,7 @@ Several red open circles appear on the graph of f(x). One open circle is shown a
 Below the x-axis, the graph of f′(x) is shown using horizontal red line segments. For x less than −1, f′(x) is a constant negative value, shown by a horizontal segment ending with an open circle at x = −1. For x between 1 and 5, f′(x) is a constant positive value, shown by a horizontal segment starting with an open circle at x = 1. There is no value of f′ shown at the corner points x = −1 and x = 1, indicating the derivative does not exist at those points.
 
 The figure illustrates the relationship between a piecewise linear function and its derivative, emphasizing constant slopes on intervals and non-differentiability at corners."
->
+</description>
     <latex-image>
   \begin{tikzpicture}[thick,scale=0.75] [domain=-5:5]
 \draw[step=1cm,color=gray!50] (-5,-2) grid (5,5);
@@ -560,15 +562,15 @@ The figure illustrates the relationship between a piecewise linear function and 
                   </p>
                    <figure xml:id="figurepiecewisefprime2">
   <caption>The graph of <m>f'(x)=2x</m> given a graph of <m>f(x)=x^2-4</m>.</caption> 
-  <image xml:id="piecewisefprime2Pic" width="50%" 
-alt="Graph showing two functions on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown.
+  <image xml:id="piecewisefprime2Pic" width="50%" >
+<description>Graph showing two functions on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown.
 
 One graph is a smooth blue curve shaped like an upward-opening parabola. It has a minimum near the point (0, −4) and is symmetric about the y-axis. The parabola crosses the x-axis near x = −4 and x = 4 and increases on both sides of its minimum.
 
 The second graph is a straight line labeled f′(x). This line has positive slope and passes through the origin. It crosses the x-axis at x = 0 and increases steadily from left to right.
 
 The figure illustrates the relationship between a function and its derivative. Where the parabola is decreasing to the left of x = 0, the derivative is negative, and where the parabola is increasing to the right of x = 0, the derivative is positive. The minimum of the parabola occurs where f′(x) equals zero."
->
+</description>
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.7] [domain=-5:5]
 \draw[step=1cm,color=gray!50] (-5,-5) grid (5,5);
@@ -606,15 +608,15 @@ The figure illustrates the relationship between a function and its derivative. W
                         </p>
                          <figure xml:id="figurepiecewisefprime3">
   <caption>The graph of <m>f'(x)=2x</m> given a graph of <m>f(x)=|x^2-4|</m>.</caption> 
-  <image xml:id="piecewisefprime3Pic" width="60%" 
-alt="Graph showing a function f and its derivative f′ on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown.
+  <image xml:id="piecewisefprime3Pic" width="60%" >
+<description>Graph showing a function f and its derivative f′ on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown.
 
 The graph of f(x) is drawn with a thick blue curve. On the left and right, the graph rises steeply upward, with arrows indicating that the function continues to increase beyond the edges of the graph. Between x = −2 and x = 2, the graph forms a smooth, curved arch that reaches a local maximum near the point (0, 4). At x = −2 and x = 2, the graph has sharp corners at the points (−2, 1) and (2, 1), indicating that f is not differentiable at those x-values.
 
 The graph of f′(x) is shown in red. It consists of several line segments and rays with open circles indicating points where the derivative is not defined. One red segment with negative slope appears between x = −2 and x = 2, crossing the y-axis near y = −1 and ending with open circles near x = −2 and x = 2. Additional red rays appear to the left of x = −2 and to the right of x = 2 with positive slope, each starting at an open circle.
 
 The figure emphasizes the relationship between a function and its derivative, showing that f′(x) is undefined at the corner points of f and changes sign according to whether f is increasing or decreasing."
->
+</description>
     <latex-image>
  \begin{tikzpicture}[thick,scale=0.75] [domain=-5:5]
 \draw[step=1cm,color=gray!50] (-5,-3) grid (5,5);

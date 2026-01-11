@@ -479,7 +479,21 @@ https://activecalculus.org/single2e/sec-1-1-vel.html#ez-1-1-Bungee">written exer
                     
   <figure xml:id="figureKatherinesDistance">
   <caption>Katherine's distance vs. time.</caption> 
-  <image xml:id="KatherinesDistancePic" width="50%">
+  <image xml:id="KatherinesDistancePic" width="50%"><description>
+Graph of distance d, measured in miles, as a function of time t, measured
+    in minutes. The horizontal axis is labeled t in minutes and runs from 0 to
+    120. The vertical axis is labeled d in miles and shows values from 0 to
+    about 80.
+    The graph is piecewise linear. From t equals 0 to t equals 30, the distance
+    increases slowly from 0 to about 10 miles. From t equals 30 to t equals 60,
+    the distance increases more rapidly, reaching 40 miles at t equals 60.
+    From t equals 60 to t equals 75, the graph is horizontal at d equals 40,
+    indicating that the distance does not change during this time interval.
+    From t equals 75 to t equals 120, the distance increases again at a steady
+    rate, ending near 80 miles at t equals 120. Changes in slope indicate
+    changes in speed, and the horizontal segment indicates a period of no
+    motion.
+ </description>
     <latex-image>
   \begin{tikzpicture}[thick,scale=1] [domain=0:4]
 \draw[step=1cm,color=gray!50] (0,0) grid (4,4);
@@ -505,7 +519,20 @@ https://activecalculus.org/single2e/sec-1-1-vel.html#ez-1-1-Bungee">written exer
 <li>
 <figure xml:id="figureKatherinesVelocity">
   <caption>Katherine's velocity vs. time.</caption> 
-  <image xml:id="KatherinesVelocityPic" width="50%">
+  <image xml:id="KatherinesVelocityPic" width="50%"><description> 
+Graph of velocity v, measured in miles per hour, as a function of time t,
+    measured in minutes. The horizontal axis is labeled t in minutes and runs
+    from 0 to 120. The vertical axis is labeled v in miles per hour and shows
+    values from 0 to about 70.
+    The graph is piecewise constant and consists of horizontal line segments.
+    From t equals 0 to t equals 30, the velocity is constant at 20 miles per
+    hour. From t equals 30 to t equals 60, the velocity jumps to 60 miles per
+    hour and remains constant. At t equals 60, the velocity drops abruptly to
+    zero for a short interval.
+    From about t equals 70 to t equals 120, the velocity is constant again at
+    40 miles per hour. The vertical jumps between segments indicate instantaneous
+    changes in velocity, and there are no sloped segments shown.
+</description>
     <latex-image>
 \begin{tikzpicture}[thick,scale=1] [domain=0:4]
 \draw[step=1cm,color=gray!50] (0,0) grid (4,4);

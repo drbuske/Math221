@@ -134,11 +134,13 @@ https://activecalculus.org/single2e/sec-1-2-lim.html#Ex-1-2-Limits">Example 1.2.
         <ol>
             <li>
                 <p>
-                    Are the following statements about <m>f</m> true or false? Why?
+                    Are the following statements about <m>f</m> shown in <xref ref="figureTrans"/> true or false? Why?
                 </p>
-
-                <image width="50%" source="Math221Section22TransFigure1.jpg" alt="Graph of a function on a coordinate grid. The x-axis is horizontal and the y-axis is vertical. On the left, a smooth curve increases to an open circle near x = −4, then decreases to a filled point at x = 0. From x = 0 to about x = 2, the graph rises from an open circle, then transitions into a rapidly oscillating curve between x ≈ 3 and x ≈ 5. To the right of this, the graph becomes smooth again, rising to a peak near x = 7 and then decreasing.">
+<figure xml:id="figureTrans">
+                <image width="50%" source="Math221Section22TransFigure1.jpg"> 
+                    <description>Graph of a function on a coordinate grid. The x-axis is horizontal and the y-axis is vertical. On the left, a smooth curve increases to an open circle near x = −4, then decreases to a filled point at x = 0. From x = 0 to about x = 2, the graph rises from an open circle, then transitions into a rapidly oscillating curve between x ≈ 3 and x ≈ 5. To the right of this, the graph becomes smooth again, rising to a peak near x = 7 and then decreasing.</description>
                 </image>
+            </figure>
 
                 <p>
                     <ol>
@@ -174,12 +176,37 @@ https://activecalculus.org/single2e/sec-1-2-lim.html#Ex-1-2-Limits">Example 1.2.
 
             <li>
                 <p>
-                    For the function <m>f</m> whose graph is given, state the value of each quantity, if it exists.
+                    For the function <m>f</m> whose graph is given in <xref ref="my0202"/>, state the value of each quantity, if it exists.
                     If it does not exist, explain why.
                 </p>
+<figure xml:id="my0202">
+                <image width="90%" source="0202x06.jpg"><description>
+Graph of a function on a coordinate grid with the horizontal axis labeled x
+    and the vertical axis labeled y, both marked with integer tick marks.
 
-                <image width="90%" source="0202x06.jpg">
+    On the far left, the graph begins below the x-axis and increases to an open
+    circle near x equals minus four at a y-value slightly above two. From that
+    open circle, the graph curves downward to a filled point at x equals zero
+    with y equal to zero.
+
+    Near x equals zero, a second branch begins at an open circle below the
+    x-axis. From this point, the graph increases smoothly, passing through an
+    open circle near x equals two at a y-value slightly above one.
+
+    Just to the right of x equals two, the graph enters a region of rapid
+    oscillation, with the y-values fluctuating repeatedly between positive and
+    negative values over a short interval.
+
+    For x greater than about four, the oscillations stop and the graph becomes
+    smooth again, rising to a local maximum near x equals six and then
+    decreasing slightly toward the right edge of the graph.
+
+    The figure shows open circles indicating points where the function is not
+    defined and illustrates smooth behavior, discontinuities, and oscillatory
+    behavior on different intervals.
+ </description>
                 </image>
+            </figure>
 
                 <ol>
                     <li>
@@ -422,19 +449,13 @@ https://activecalculus.org/single2e/sec-1-2-lim.html#ez-1-2-Rational">Exercises 
 
         <figure xml:id="figureDPAns122">
   <caption>One possible graph.</caption> 
-  <image xml:id="DPAns122Pic" width="50%" 
-alt="Detailed graph of a piecewise-defined function on a square coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. 
-
+ <image xml:id="DPAns122" width="50%"><description>Detailed graph of a piecewise-defined function on a square coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. 
 On the left side of the graph, for x less than 0, a smooth decreasing curve approaches the point (0, 1), ending at an open circle at (0, 1). At x = 0, the function instead has a filled point at (0, −1).
-
 From x = 0 to x = 3, the graph is a straight line with negative slope, starting at the open circle at (0, 1) and descending to an open circle at (3, −2).
-
 At x = 3, there is a filled point at (3, 1), distinct from the open points on the other pieces.
-
 For x greater than 3, the graph is a straight line with positive slope, beginning at an open circle at (3, 2) and increasing to the right.
-
-The graph emphasizes discontinuities at x = 0 and x = 3, shown by open circles and filled points at the same x-values but different y-values."
->
+The graph emphasizes discontinuities at x = 0 and x = 3, shown by open circles and filled points at the same x-values but different y-values.
+ </description>
     <latex-image>
  \begin{tikzpicture}[thick,scale=1] [domain=-4:4]
 \draw[step=1cm,color=gray!50] (-2,-3) grid (4,3);
