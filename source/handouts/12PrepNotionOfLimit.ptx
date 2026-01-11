@@ -70,26 +70,28 @@
 
 <p>
     A single .pdf should be uploaded to D2L Brightspace.
-    See the syllabus for grading rubric.
     Strive to use valid notation and correct mathematical language and syntax.
     All answers should be briefly justified, whether justification is specifically requested or not.
 </p>
 <ul>
 <li>
     <p>
-        <alert>Read</alert> the beginning of <url href="https://activecalculus.org/single/sec-1-2-lim.html">section 1.2</url> (up until the preview activity).
+        <alert>Read</alert> the beginning of <url href="
+https://activecalculus.org/single2e/sec-1-2-lim.html#sec-1-2-lim">section 1.2</url> (up until the preview activity).
     </p>
 </li>
 
 <li>
     <p>
-        [Submit] <alert>Do</alert> Preview Activity 1.2.1.
+        [Submit] <alert>Do</alert> <url href="Preview Activity 1.2.1 
+https://activecalculus.org/single2e/sec-1-2-lim.html#PA-1-2">Preview Activity 1.2.1</url>.
     </p>
 </li>
 
 <li>
     <p>
-        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-2-lim.html#BTI">section 1.2.1</url>: The Notion of Limit.
+        <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-1-2-lim.html#sec-1-2-lim-4">section 1.2.2</url>: The Notion of Limit.
     </p>
 </li>
 
@@ -103,7 +105,8 @@
     
 
     <p>
-        [Submit] <alert>Do</alert> Example 1.2.4(a) in the textbook (without reading the solution), using the graph of the function: Use <url href="https://www.desmos.com/"> <em>Desmos</em> </url> to graph <m>f</m> (you define <m>f</m> by typing <m>f(x) = (4-x^{2})/(x+2)</m>, and you can click and drag points on the graph to see the precise coordinates). Finally, read the solution. Is the graph that <em>Desmos</em> produces accurate? Explain. Produce a screen capture of your work in doing Example 1.2.4(a) using <em>Desmos</em>.
+        [Submit] <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-2-lim.html#Ex-1-2-Limits">Example 1.2.4(a)</url> in the textbook (without reading the solution), using the graph of the function: Use <url href="https://www.desmos.com/"> <em>Desmos</em> </url> to graph <m>f</m> (you define <m>f</m> by typing <m>f(x) = (4-x^{2})/(x+2)</m>, and you can click and drag points on the graph to see the precise coordinates). Finally, read the solution. Is the graph that <em>Desmos</em> produces accurate? Explain. Produce a screen capture of your work in doing Example 1.2.4(a) using <em>Desmos</em>.
     </p>
 </li>
 
@@ -117,7 +120,8 @@
     
 
     <p>
-        [Submit] <alert>Redo</alert> Example 1.2.4(a) from the textbook using <url href="https://www.geogebra.org/classic?lang=en"> <em>GeoGebra</em> </url> rather than <em>Desmos</em>. Produce a screen capture of your work in doing Example 1.2.4(a) using <em>GeoGebra</em>.
+        [Submit] <alert>Redo</alert> <url href="
+https://activecalculus.org/single2e/sec-1-2-lim.html#Ex-1-2-Limits">Example 1.2.4(a)</url> from the textbook using <url href="https://www.geogebra.org/classic?lang=en"> <em>GeoGebra</em> </url> rather than <em>Desmos</em>. Produce a screen capture of your work in doing Example 1.2.4(a) using <em>GeoGebra</em>.
     </p>
 </li>
 
@@ -133,7 +137,7 @@
                     Are the following statements about <m>f</m> true or false? Why?
                 </p>
 
-                <image width="50%" source="Math221Section22TransFigure1.jpg">
+                <image width="50%" source="Math221Section22TransFigure1.jpg" alt="Graph of a function on a coordinate grid. The x-axis is horizontal and the y-axis is vertical. On the left, a smooth curve increases to an open circle near x = −4, then decreases to a filled point at x = 0. From x = 0 to about x = 2, the graph rises from an open circle, then transitions into a rapidly oscillating curve between x ≈ 3 and x ≈ 5. To the right of this, the graph becomes smooth again, rising to a peak near x = 7 and then decreasing.">
                 </image>
 
                 <p>
@@ -289,13 +293,15 @@
 
 <li>
     <p>
-        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-2-lim.html#PxK">Exercises 1-4 in section 1.2.4 of the textbook</url>. These give you instantaneous feedback.
+        <alert>Do</alert> <url href=" 
+https://activecalculus.org/single2e/sec-1-2-lim.html#Library__Michigan__Chap1Sec8__Q01.pg">Exercises 1-7 in section 1.2.5 of the textbook</url>. These give you instantaneous feedback.
     </p>
 </li>
 
 <li>
     <p>
-        <alert>Read</alert> the <url href="https://activecalculus.org/single/sec-1-2-lim.html#iaR">sections 1.2.2 and the summary in 1.2.3</url>.
+        <alert>Read</alert> the <url href="
+https://activecalculus.org/single2e/sec-1-2-lim.html#sec-1-2-lim-5">sections 1.2.3 and the summary in 1.2.4</url>.
     </p>
 </li>
 
@@ -313,7 +319,8 @@
 
 <li>
     <p>
-        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-2-lim.html#oau">Exercises 5-8 in section 1.2.4</url>.
+        <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-2-lim.html#ez-1-2-Rational">Exercises 8-11 in section 1.2.5</url>.
     </p>
 </li>
 
@@ -415,7 +422,19 @@
 
         <figure xml:id="figureDPAns122">
   <caption>One possible graph.</caption> 
-  <image xml:id="DPAns122Pic" width="50%">
+  <image xml:id="DPAns122Pic" width="50%" 
+alt="Detailed graph of a piecewise-defined function on a square coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. 
+
+On the left side of the graph, for x less than 0, a smooth decreasing curve approaches the point (0, 1), ending at an open circle at (0, 1). At x = 0, the function instead has a filled point at (0, −1).
+
+From x = 0 to x = 3, the graph is a straight line with negative slope, starting at the open circle at (0, 1) and descending to an open circle at (3, −2).
+
+At x = 3, there is a filled point at (3, 1), distinct from the open points on the other pieces.
+
+For x greater than 3, the graph is a straight line with positive slope, beginning at an open circle at (3, 2) and increasing to the right.
+
+The graph emphasizes discontinuities at x = 0 and x = 3, shown by open circles and filled points at the same x-values but different y-values."
+>
     <latex-image>
  \begin{tikzpicture}[thick,scale=1] [domain=-4:4]
 \draw[step=1cm,color=gray!50] (-2,-3) grid (4,3);
