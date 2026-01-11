@@ -72,13 +72,15 @@
   <ul>
   <li>
     <p>
-      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-1-6-second-d.html">section 1.6</url> (up until the preview activity).
+      <alert>Read</alert> motivating questions and the introduction to <url href="
+https://activecalculus.org/single2e/sec-1-6-second-d.html#sec-1-6-second-d">section 1.6</url> (up until the preview activity).
     </p>
   </li>
 
   <li>
     <p>
-      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-6-second-d.html#KGa">Preview Activity 1.6.1</url>.
+      <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-6-second-d.html#PA-1-6">Preview Activity 1.6.1</url>.
     </p>
 
     <p>
@@ -112,7 +114,8 @@
 
   <li>
     <p>
-      [Submit] <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-6-second-d.html#UOx">Definition 1.6.4</url>. Then, compare how the <em>GeoGebra</em> applet (<url href="https://www.geogebra.org/m/cf9hzft7">Increasing/Decreasing Function Visual</url>) attempts to illustrate this definition. <alert>Respond</alert> to these questions:
+      [Submit] <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-1-6-second-d.html#D-1-6-incr-decr">Definition 1.6.2</url>. Then, compare how the <em>GeoGebra</em> applet (<url href="https://www.geogebra.org/m/cf9hzft7">Increasing/Decreasing Function Visual</url>) attempts to illustrate this definition. <alert>Respond</alert> to these questions:
     </p>
 
     <p>
@@ -134,7 +137,7 @@
 
   <li>
     <p>
-      [Submit] <alert>Explore</alert> the relationship between <m>f'</m> and where a function is increasing and decreasing via this fun <em>GeoGebra</em> applet with a cute turtle: <url href="https://www.geogebra.org/m/mCTqH7u4">Increasing and Decreasing Functions</url>. <alert>Summarize</alert> the point of the applet by filling in the blanks in this sentence: A function <m>f</m> is increasing when <m>f'</m> is <em /> and is decreasing when <m>f'</m> is <em />.
+      [Submit] <alert>Explore</alert> the relationship between <m>f'</m> and where a function is increasing and decreasing via this fun <em>GeoGebra</em> applet with a cute turtle: <url href="https://www.geogebra.org/m/mCTqH7u4">Increasing and Decreasing Functions</url>. <alert>Summarize</alert> the point of the applet by filling in the blanks in this sentence: A function <m>f</m> is increasing when <m>f'</m> is <m>\underline{\hspace{20mm}}</m> and is decreasing when <m>f'</m> is <m>\underline{\hspace{20mm}}</m>.
     </p>
   </li>
 
@@ -162,7 +165,8 @@
 
   <li>
     <p>
-      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-6-second-d.html#wlN">sections 1.6.1 and 1.6.2</url>.
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-1-6-second-d.html#sec-1-6-second-d-4">sections 1.6.2 and 1.6.3</url>.
     </p>
   </li>
 
@@ -174,7 +178,8 @@
 
   <li>
     <p>
-      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-1-6-second-d.html#IAf">section 1.6.3</url> on concavity.
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-1-6-second-d.html#sec-1-6-second-d-6">section 1.6.4</url> on concavity.
     </p>
   </li>
 
@@ -216,7 +221,8 @@
 
   <li>
     <p>
-      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-6-second-d.html#DjS">Exercises 1-5 in section 1.6.5</url>.
+      <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-6-second-d.html#Library__Michigan__Chap2Sec5__Q01.pg">Exercises 1-9 in section 1.6.6</url>.
     </p>
   </li>
 
@@ -238,7 +244,8 @@
 
   <li>
     <p>
-      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-6-second-d.html#Awq">Exercises 6-9 in section 1.6.5</url>.
+      <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-6-second-d.html#ez-1-6-10">Exercises 10-13 in section 1.6.6</url>.
     </p>
   </li>
 
@@ -306,7 +313,17 @@
 
   <figure xml:id="figureWhichIsWhich">
   <caption>Identify which graph is <m>f(x)</m>, which graph is <m>f'(x)</m>, and which graph is <m>f''(x)</m>.</caption> 
-  <image xml:id="WhichIsWhichPic" width="60%">
+  <image xml:id="WhichIsWhichPic" width="60%" 
+alt="Graph showing three functions plotted on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown.
+
+One graph is a solid blue curve. It oscillates smoothly across the interval, reaching a high point above y = 6 near x = −4, then decreasing to cross the x-axis near x = −1. The curve continues downward to a deep minimum below y = −5 near x = 4, before increasing again toward the right.
+
+A second graph is a black dashed curve. It oscillates with smaller amplitude than the blue curve, crossing the x-axis several times. It has local maxima near x = −4 and x = 4 and a local minimum near x = 1.
+
+A third graph is a red dotted curve. This curve also oscillates and appears phase-shifted relative to the black dashed curve. It has a local minimum near x = −4, a local maximum near x = −2, another minimum near x = 1, and a local maximum near x = 3.
+
+All three functions are continuous over the displayed interval and intersect or approach one another at several x-values. The figure emphasizes comparison of amplitude, phase shift, and oscillatory behavior among the three functions."
+>
     <latex-image>
  \begin{tikzpicture}[thick,scale=0.7] [domain=-3:3]
 \draw[step=1cm,color=gray!50] (-6,-6) grid (6,6);
@@ -392,7 +409,7 @@
 
               <figure xml:id="figureEmptyGrid16">
   <caption>An empty grid.</caption> 
-  <image xml:id="EmptyGrid16Pic" width="50%">
+  <image xml:id="EmptyGrid16Pic" width="50%" alt="An empty Cartesian grid.">
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.65] 
 \draw[step=1cm,color=gray!50] (-6,-6) grid (6,6);
@@ -448,7 +465,15 @@
 
          <figure xml:id="figureMeetConditions">
   <caption>This graph of <m>f(x)</m> meets several conditions defined by the derivative of <m>f(x)</m>.</caption> 
-  <image xml:id="MeetConditionsPic" width="50%">
+  <image xml:id="MeetConditionsPic" width="60%" 
+alt="Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks.
+
+The graph is a single smooth curve. On the left, near x = −5, the curve is below the x-axis and increasing. As x increases, the graph continues upward and reaches a local maximum slightly above y = 2 near x = 0. The curve then decreases to a local minimum just below the x-axis near x = 2.
+
+After this minimum, the curve increases again to a second local maximum near x = 4 at a y-value around 2, then decreases sharply toward the right edge of the graph, falling below the x-axis near x = 5.
+
+The graph has no open circles, corners, or breaks, indicating the function is continuous and smooth over the displayed interval."
+>
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.7] [domain=-3:3]
 \draw[step=1cm,color=gray!50] (-6,-6) grid (6,6);
