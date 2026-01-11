@@ -763,25 +763,34 @@ var ptx_lunr_docs = [
   "type": "Handout",
   "number": "",
   "title": "Daily Prep 2.1 - Elementary Differentiation Rules",
-  "body": " Daily Prep 2.1 - Elementary Differentiation Rules   Overview  Having now completed Chapter 1 on the definition and meaning of the derivative, we turn to Chapter 2 where our principal focus will be on computing derivatives. By this we mean that we want to further understand the limit definition of the derivative and patterns that can be found in certain classes of functions, patterns that will enable us to simply look at the formula for a function and then be able to write down a formula for the derivative . As we progress through Chapter 2, you’ll see that we will build from the simplest functions to much more complicated ones.  This section covers the following concepts: Notations for derivatives. The Power Rule. Differentiation of exponential functions. The derivative of constant multiples, sums, and differences of functions.    Basic learning objectives  These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated in italics . Check each box when you feel confident you have a firm grasp on that objective.    Use Leibniz notation for derivatives: as well as .    Use elementary differentiation rules to differentiate polynomials, power functions, and exponential functions.    Use the constant rule and the sum and difference rule to differentiate combinations of the above functions.      To prepare for class  Complete all actions listed below. Respond to the questions highlighted with Submit .     Read motivating questions and the introduction to section 2.1 (up until Preview Activity 2.1.1).    [Submit] Do the following the activity that is similar to Preview Activity 2.1.1 .   New Activity 2.1.1 Start by loading the applet https:\/\/www.geogebra.org\/m\/qwdxbtGF . Functions of the form , where are called power functions . The first two questions below revisit work we did earlier in Chapter 1, and the following questions extend those ideas to higher powers of .     Use the applet to determine the derivative, both the graph and a formula, of .    Repeat part (a) for .    Repeat part (a) for .    Based on your work in (a), (b), and (c), what do you conjecture is the derivative of ? Of ?    Make a conjecture regarding a formula for the derivative of that holds for every positive integer . That is, given where is a positive integer, what do you think is a formula for ?       [Submit] Extend your conjecture in part (d) of New Activity 2.1.1 to negative powers . That is, using , do you spot a pattern for a formula representing if ?     Watch the video: Quick Review: Elementary Derivative Rules (3:32) .    Prompt Copilot “What is the Binomial Theorem and how can it be used to prove the power rule in calculus for positive integers ?”     Do the following construction in  GeoGebra  (Google search “GeoGebra Classic” to use this tool if the link fails.). Submit screenshots and responses to the questions posed.     Create a variable by typing the letter in the input box on the left.    A slider should be created underneath. You will want to change the minimum and maximum values to 1.1 and 5.0 by clicking on these values at the left and right of the slider. Set your step size to 0.01.    In the next input box, type . You will need to use the key above the 6. The function will automatically be defined, graphed, and labeled for you.    In the next input box, type A = (0,1) . This wil plot and label the point on your graph.    Next, you will want to use the menu. On the fourth button (see below), choose the Tangents option. Then, click on point A on your graph followed by clicking on the graph itself. This will produce a tangent line to your function at . It will name this tangent line and an expression for it will appear in the next input box.     Move the slider for as you wish by moving the big black point back and forth. Note how your function and your tangent line change automatically!    Type ln(a) in the next open input box. Move the slider and compare the slope of to this value. What do you notice? Does this surprise you or not? Explain.       Prompt Copilot “Can you explain why the derivative of an exponential function is a multiple of an exponential function?”     Read  sections 2.1.1 and 2.1.2 .     Watch the video Derivatives of Power and Constant Functions (5:18) .     Watch the video Derivatives of Exponential Functions (2:53) .    [Submit] Complete  Exercises 1-4 in section 2.1 . Submit four screen captures to demonstrate your completion of these four exercises.      After class  Solidifying the concepts discussed in class through practice is necessary to build your skills.     Watch the video Derivatives of Constant Multiples (4:05) .     Explore the concept of derivative of polynomial functions. This applet on polynomials and derivatives , has a slider that will show the th derivative of a 6th degree polynomial.     Do these problems.     The graph of has a slope of 5 at two points. Find the coordinates of the points.       Find the equation of the tangent line to at the point where .    Graph the tangent line and the function on the same axes. If the tangent line is used to estimate values of the function, will the estimates be overestimates or underestimates?   The graph of .               Do  Exercises 5-9, 11 in section 2.1 .     Do  written exercises 10, 12 in section 2.1 .     Start working on the MOMwork (MyOpenMath) assignment for this section.      Advanced learning objectives  In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:    Use combinations of the rules introduced in this section to differentiate functions that are not given as a formula.      Additional suggestions     Watch the video: Simplifying Before Differentiating (5:00) .      Answers     . So, the slope is 5 when or . Solving or gives or . The coordinates of these two points are thus and .        . So, . The equation of the tangent line is .    The estimates will be underestimates (since the tangent line lies below ).   The graph of and its tangent line at .  The graph of , a cubic, is shown together with a tangent line just touching the graph of .           "
+  "body": " Daily Prep 2.1 - Elementary Differentiation Rules   Overview  Having now completed Chapter 1 on the definition and meaning of the derivative, we turn to Chapter 2 where our principal focus will be on computing derivatives. By this we mean that we want to further understand the limit definition of the derivative and patterns that can be found in certain classes of functions, patterns that will enable us to simply look at the formula for a function and then be able to write down a formula for the derivative . As we progress through Chapter 2, you’ll see that we will build from the simplest functions to much more complicated ones.  This section covers the following concepts: Notations for derivatives. The Power Rule. Differentiation of exponential functions. The derivative of constant multiples, sums, and differences of functions.    Basic learning objectives  These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated in italics .    Use Leibniz notation for derivatives: as well as .    Use elementary differentiation rules to differentiate polynomials, power functions, and exponential functions.    Use the constant rule and the sum and difference rule to differentiate combinations of the above functions.      To prepare for class  Complete all actions listed below. Respond to the questions highlighted with Submit .     Read motivating questions and the introduction to section 2.1 (up until Preview Activity 2.1.1).    [Submit] Do the following the activity that is similar to Preview Activity 2.1.1 .   New Activity 2.1.1 Start by loading the applet https:\/\/www.geogebra.org\/m\/qwdxbtGF . Functions of the form , where are called power functions . The first two questions below revisit work we did earlier in Chapter 1, and the following questions extend those ideas to higher powers of .     Use the applet to determine the derivative, both the graph and a formula, of .    Repeat part (a) for .    Repeat part (a) for .    Based on your work in (a), (b), and (c), what do you conjecture is the derivative of ? Of ?    Make a conjecture regarding a formula for the derivative of that holds for every positive integer . That is, given where is a positive integer, what do you think is a formula for ?       [Submit] Extend your conjecture in part (d) of New Activity 2.1.1 to negative powers . That is, using , do you spot a pattern for a formula representing if ?     Watch the video: Quick Review: Elementary Derivative Rules (3:32) .    Prompt Copilot “What is the Binomial Theorem and how can it be used to prove the power rule in calculus for positive integers ?”     Do the following construction in  GeoGebra  (Google search “GeoGebra Classic” to use this tool if the link fails.). Submit screenshots and responses to the questions posed.     Create a variable by typing the letter in the input box on the left.    A slider should be created underneath. You will want to change the minimum and maximum values to 1.1 and 5.0 by clicking on these values at the left and right of the slider. Set your step size to 0.01.    In the next input box, type . You will need to use the key above the 6. The function will automatically be defined, graphed, and labeled for you.    In the next input box, type A = (0,1) . This wil plot and label the point on your graph.    Next, you will want to use the menu. On the fourth button (see ), choose the Tangents option. Then, click on point A on your graph followed by clicking on the graph itself. This will produce a tangent line to your function at . It will name this tangent line and an expression for it will appear in the next input box.    A horizontal toolbar showing several drawing and annotation icons. From left to right: a mouse pointer icon, a filled blue dot, a capital letter A, a line segment with two endpoints, a curved line drawn inside a rectangular selection, a triangle formed by three connected points, and a circle icon. Each icon is displayed inside a square button.      Move the slider for as you wish by moving the big black point back and forth. Note how your function and your tangent line change automatically!    Type ln(a) in the next open input box. Move the slider and compare the slope of to this value. What do you notice? Does this surprise you or not? Explain.       Prompt Copilot “Can you explain why the derivative of an exponential function is a multiple of an exponential function?”     Read  sections 2.1.2 and 2.1.3 .     Watch the video Derivatives of Power and Constant Functions (5:18) .     Watch the video Derivatives of Exponential Functions (2:53) .    [Submit] Complete  Exercises 1-4 in section 2.1.6 . Submit four screen captures to demonstrate your completion of these four exercises.      After class  Solidifying the concepts discussed in class through practice is necessary to build your skills.     Watch the video Derivatives of Constant Multiples (4:05) .     Read  section 2.1.4 .     Read  section 2.1.5 - summary .     Explore the concept of derivative of polynomial functions. This applet on polynomials and derivatives , has a slider that will show the th derivative of a 6th degree polynomial.     Do these problems.     The graph of has a slope of 5 at two points. Find the coordinates of the points.       Find the equation of the tangent line to at the point where .    Graph the tangent line and the function on the same axes. If the tangent line is used to estimate values of the function, will the estimates be overestimates or underestimates?   The graph of .   A coordinate graph showing a single smooth increasing curve. The curve starts in the lower left and rises to the upper right, flattening slightly near x equals 0 before increasing more steeply for positive x. It passes close to the origin. The x- and y-axes are labeled, with tick marks extending from approximately minus 4 to 4 on the x-axis and minus 40 to 40 on the y-axis.              Do  Exercises 5-7, 11 in section 2.1.6 .     Do  written exercises 8, 9 in section 2.1.6 .     Start working on the MOMwork (MyOpenMath) assignment for this section.      Advanced learning objectives  In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:    Use combinations of the rules introduced in this section to differentiate functions that are not given as a formula.      Additional suggestions     Watch the video: Simplifying Before Differentiating (5:00) .      Answers     . So, the slope is 5 when or . Solving or gives or . The coordinates of these two points are thus and .        . So, . The equation of the tangent line is .    The estimates will be underestimates (since the tangent line lies below ).   The graph of and its tangent line at .   A coordinate graph showing a smooth blue curve and a straight red line. The blue curve increases from left to right, passing near the origin, flattening slightly around x equals 0, and then rising more steeply for positive x. The red line has constant positive slope, intersects the y-axis below zero, and crosses the blue curve at a point between x equals 1 and x equals 2. The x- and y-axes are labeled, with tick marks extending from approximately minus 4 to 4 on the x-axis and minus 40 to 40 on the y-axis.           "
+},
+{
+  "id": "TangentsGeoGebra",
+  "level": "2",
+  "url": "handouts-10.html#TangentsGeoGebra",
+  "type": "Figure",
+  "number": "46",
+  "title": "",
+  "body": "  A horizontal toolbar showing several drawing and annotation icons. From left to right: a mouse pointer icon, a filled blue dot, a capital letter A, a line segment with two endpoints, a curved line drawn inside a rectangular selection, a triangle formed by three connected points, and a circle icon. Each icon is displayed inside a square button.   "
 },
 {
   "id": "figureGraphycubed2",
   "level": "2",
   "url": "handouts-10.html#figureGraphycubed2",
   "type": "Figure",
-  "number": "46",
+  "number": "47",
   "title": "",
-  "body": " The graph of .     "
+  "body": " The graph of .   A coordinate graph showing a single smooth increasing curve. The curve starts in the lower left and rises to the upper right, flattening slightly near x equals 0 before increasing more steeply for positive x. It passes close to the origin. The x- and y-axes are labeled, with tick marks extending from approximately minus 4 to 4 on the x-axis and minus 40 to 40 on the y-axis.    "
 },
 {
   "id": "figureGraphycubedans2",
   "level": "2",
   "url": "handouts-10.html#figureGraphycubedans2",
   "type": "Figure",
-  "number": "47",
+  "number": "48",
   "title": "",
-  "body": " The graph of and its tangent line at .  The graph of , a cubic, is shown together with a tangent line just touching the graph of .    "
+  "body": " The graph of and its tangent line at .   A coordinate graph showing a smooth blue curve and a straight red line. The blue curve increases from left to right, passing near the origin, flattening slightly around x equals 0, and then rising more steeply for positive x. The red line has constant positive slope, intersects the y-axis below zero, and crosses the blue curve at a point between x equals 1 and x equals 2. The x- and y-axes are labeled, with tick marks extending from approximately minus 4 to 4 on the x-axis and minus 40 to 40 on the y-axis.    "
 },
 {
   "id": "handouts-11",
@@ -790,7 +799,7 @@ var ptx_lunr_docs = [
   "type": "Handout",
   "number": "",
   "title": "Daily Prep 2.2 - The Sine and Cosine Functions",
-  "body": " Daily Prep 2.2 - The Sine and Cosine Functions   Overview  This section covers the following concepts: Gain an understanding of derivatives of the sine and cosine functions and their derivation.     Basic learning objectives  These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated in italics . Check each box when you feel confident you have a firm grasp on that objective.    Identify the graph of a general exponential function and state its most important features (e.g. -intercept, behavior for large positive or negative -values). (See this website if review is needed.)    State the general rule for (where is real).    Identify what makes the function special in terms of its relationship to its own derivative.    State the values of and at the angle values , , , , and other related points on the unit circle without a calculator. (See this website for review if needed.)    State the derivatives of the functions and .      To prepare for class  Complete all actions listed below. Respond to the questions highlighted with Submit .     Read the motivating questions and the introduction to section 2.2 (up until Preview Activity 2.2.1).    [Submit] Do the following construction in  GeoGebra  . Submit screenshots and responses to the questions posed.     In the first input box, type sin(x) . This will define and graph .    To get a visual estimate of the derivative, we will use the definition of derivative which tells us that   Rather than take a limit, we will use a reasonably small value of , say . Then,   In the next input box, type (f(x+0.01)-f(x))\/0.01 . This will define and graph Have you seen the graph of before? Identify it and fill the following blank in accordingly:        Repeat this whole process to visualize the derivative (at least an estimate of it) of .        Read  section 2.2.1 .    [Submit] Do some exploration with GeoGebra to conjecture the value of the following limits:                One suggestion is to plot each of these expressions of (namely and - the behavior of each graph near should indicate the value of each limit. [Important note: GeoGebra will not treat as a variable. So, use rather than in order to explore each limit. That is, investigate rather than .] Submission of screenshots would be ideal.    Prompt Copilot “Why is the derivative of only when is measured in radians and not degrees?”    [Submit] First, try to answer this question before prompting the AI. Then, prompt Copilot “Can you give me an example of a function whose derivative is periodic but it itself is not periodic?” Is the response reasonable?      After class  Solidifying the concepts discussed in class through practice is necessary to build your skills.     Read  section 2.2.2 (the summary) .     Do  Exercises 1-3 in section 2.2 .     Start working on the MOMwork (MyOpenMath) assignment for this section.      Advanced learning objectives  In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:    Use the derivatives of and in the context of a real-world problem to find the slope of a tangent line, the instantaneous rate of change in a function, or the instantaneous velocity of an object.    Prove that .      Additional suggestions    If you are not yet convinced, explore the applet https:\/\/www.geogebra.org\/m\/qwdxbtGF can be used to help you believe the formula found in the above activity. Just start with the function or accordingly.     Watch the video: On computing exact trigonometric values at key angles (3:56) . This could be especially helpful as a refresher on remembering basic facts an easier way.     Watch the video: How to remember trig values on the unit circle (12:02) .     "
+  "body": " Daily Prep 2.2 - The Sine and Cosine Functions   Overview  This section covers the following concepts: Gain an understanding of derivatives of the sine and cosine functions and their derivation.     Basic learning objectives  These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated in italics .    Identify the graph of a general exponential function and state its most important features (e.g. -intercept, behavior for large positive or negative -values). (See this website if review is needed.)    State the general rule for (where is real).    Identify what makes the function special in terms of its relationship to its own derivative.    State the values of and at the angle values , , , , and other related points on the unit circle without a calculator. (See this website for review if needed.)    State the derivatives of the functions and .      To prepare for class  Complete all actions listed below. Respond to the questions highlighted with Submit .     Read the motivating questions and the introduction to section 2.2 (up until Preview Activity 2.2.1).    [Submit] Do the following construction in  GeoGebra  . Submit screenshots and responses to the questions posed.     In the first input box, type sin(x) . This will define and graph .    To get a visual estimate of the derivative, we will use the definition of derivative which tells us that   Rather than take a limit, we will use a reasonably small value of , say . Then,   In the next input box, type (f(x+0.01)-f(x))\/0.01 . This will define and graph Have you seen the graph of before? Identify it and fill the following blank in accordingly:        Repeat this whole process to visualize the derivative (at least an estimate of it) of .        Read  section 2.2.2 .    [Submit] Do some exploration with GeoGebra to conjecture the value of the following limits:                One suggestion is to plot each of these expressions of (namely and - the behavior of each graph near should indicate the value of each limit. [Important note: GeoGebra will not treat as a variable. So, use rather than in order to explore each limit. That is, investigate rather than .] Submission of screenshots would be ideal.    Prompt Copilot “Why is the derivative of only when is measured in radians and not degrees?”    [Submit] First, try to answer this question before prompting the AI. Then, prompt Copilot “Can you give me an example of a function whose derivative is periodic but it itself is not periodic?” Is the response reasonable?      After class  Solidifying the concepts discussed in class through practice is necessary to build your skills.     Read  section 2.2.3 (the summary) .     Do  Exercises 1-3 in section 2.2.4 .     Start working on the MOMwork (MyOpenMath) assignment for this section.      Advanced learning objectives  In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:    Use the derivatives of and in the context of a real-world problem to find the slope of a tangent line, the instantaneous rate of change in a function, or the instantaneous velocity of an object.    Prove that .      Additional suggestions    If you are not yet convinced, explore the applet https:\/\/www.geogebra.org\/m\/qwdxbtGF can be used to help you believe the formula found in the above activity. Just start with the function or accordingly.     Watch the video: On computing exact trigonometric values at key angles (3:56) . This could be especially helpful as a refresher on remembering basic facts an easier way.     Watch the video: How to remember trig values on the unit circle (12:02) .     "
 },
 {
   "id": "handouts-12",
@@ -806,7 +815,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-12.html#figureproductquotient1",
   "type": "Figure",
-  "number": "48",
+  "number": "49",
   "title": "",
   "body": " The graph of and and two particular tangent lines.    The graph of and a particular tangent line with various points marked.     The graph of and a particular tangent line with various points marked.     "
 },
@@ -833,7 +842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#figurechain",
   "type": "Figure",
-  "number": "49",
+  "number": "50",
   "title": "",
   "body": " The graph of and .    The graph of .     The graph of .     "
 },
@@ -842,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#figureChainGraphfg",
   "type": "Figure",
-  "number": "50",
+  "number": "51",
   "title": "",
   "body": " The graph of and .  The graphs of and are shown together.    "
 },
@@ -851,7 +860,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#figurechain2",
   "type": "Figure",
-  "number": "51",
+  "number": "52",
   "title": "",
   "body": " The graphs of and and some tangent lines.    The graphs of together with a tangent line at that also passes through .     The graph of together with a tangent line at that also goes through . Also shown is a tangent line at that passes through .     "
 },
@@ -860,7 +869,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#figureChainsqrt",
   "type": "Figure",
-  "number": "52",
+  "number": "53",
   "title": "",
   "body": " The graph of and a tangent line at .  The graph of a function and its tangent line at .    "
 },
@@ -878,7 +887,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-15.html#figureffprime26",
   "type": "Figure",
-  "number": "53",
+  "number": "54",
   "title": "",
   "body": " Graphs of and .  The graph of increases from about 2 to about 20. The graph of increases from about 0.2 to about 0.7 at and then decreases to 0 at .   "
 },
@@ -887,7 +896,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-15.html#FunctionAndInverseData",
   "type": "Table",
-  "number": "54",
+  "number": "55",
   "title": "Values of <span class=\"process-math\">\\(f(x)\\)<\/span> and <span class=\"process-math\">\\(f'(x)\\text{.}\\)<\/span>",
   "body": " Values of and .               0  1  0.7    1  2  1.4    2  4  2.8    3  8  5.5    "
 },
@@ -896,7 +905,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-15.html#figureffprimeTWO26",
   "type": "Figure",
-  "number": "55",
+  "number": "56",
   "title": "",
   "body": " Graphs of and .  The graph of is the reflection of the graph of about the line .   "
 },
@@ -914,7 +923,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-16.html#figureImplicitGraph1",
   "type": "Figure",
-  "number": "56",
+  "number": "57",
   "title": "",
   "body": " Graph of the curve with a tangent line at .  Graph of the curve with a tangent line at .   "
 },
@@ -941,7 +950,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-18.html#GeoGebraConstructLhopital",
   "type": "Figure",
-  "number": "57",
+  "number": "58",
   "title": "",
   "body": " A GeoGebra construction used to investigate a limit that is indeterminant.   This is an image describing a GeoGebra construction.   "
 },
@@ -950,7 +959,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-18.html#LHopitalExcel1Pic",
   "type": "Figure",
-  "number": "58",
+  "number": "59",
   "title": "",
   "body": " A spreadsheet can be used to form a hypothesis about the value of a limit.   Values in a spreadsheet used to help investigate the value of the limit of .   "
 },
@@ -959,7 +968,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-18.html#figureSignLhopital",
   "type": "Figure",
-  "number": "59",
+  "number": "60",
   "title": "",
   "body": " The graph of and .  The graphs of and are shown together.    "
 },
@@ -968,7 +977,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-18.html#figureGraphicLhopital",
   "type": "Figure",
-  "number": "60",
+  "number": "61",
   "title": "",
   "body": " The graphs of and and their tangent lines at .  The graphs of and are shown together. These graphs share the common point . Tangent lines to each of these functions at that point are given. The tangent line to at is given by . The tangent line to at is given by .    "
 }
