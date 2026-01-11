@@ -61,7 +61,8 @@
   <ul>
   <li>
     <p>
-      <alert>Read</alert> motivating questions and the paragraph following in <url href="https://activecalculus.org/single/sec-1-4-derivative-fxn.html">section 1.4</url> (up until the preview activity).
+      <alert>Read</alert> motivating questions and the paragraph following in <url href="
+https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#sec-1-4-derivative-fxn">section 1.4</url> (up until the preview activity).
     </p>
   </li>
 
@@ -69,7 +70,8 @@
     
 
     <p>
-      [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-4-derivative-fxn.html#OFZ">Preview Activity 1.4.1</url>.
+      [Submit] <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#PA-1-4">Preview Activity 1.4.1</url>.
     </p>
 
     <p>
@@ -120,7 +122,8 @@
   <li>
     <p>
       [Submit] Ask <alert>Copilot</alert> for alternate versions of the limit definition of the derivative of a function <m>f(x)</m>.
-      Submit at least one alternate, but equivalent <url href="https://activecalculus.org/single/sec-1-4-derivative-fxn.html#XuI">to that found in our textbook</url>, version of the definition of <m>f'(x)</m> that uses a limit.
+      Submit at least one alternate, but equivalent to <url href="
+https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#D-derivative-defn-x"> found in our textbook</url>, version of the definition of <m>f'(x)</m> that uses a limit.
     </p>
   </li>
 
@@ -151,7 +154,15 @@
               ‘Connect the dots’ to form a sketch of the graph of <m>f'</m>.
             </p>
 
-            <image source="fig_02_27.jpg" width="50%" />
+            <figure xml:id="plotwithtangents">
+              <caption>A plot of the graph of a function with slopes at several locations illustrated.</caption>
+            <image source="fig_02_27.jpg" width="50%" 
+alt="Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks. The graph is a single smooth curve.
+
+On the left, near x = −2, the curve is above the x-axis and increasing. It reaches a local maximum near x = −1 at a y-value slightly above 4. The curve then decreases, crossing the x-axis near x = 2, and continues downward to a local minimum near x = 4 with a y-value near −3.
+
+After this minimum, the curve increases again as x approaches 5. The graph has no open circles, endpoints, or breaks, indicating the function is continuous over the displayed interval."
+/></figure>
           
      <table xml:id="PlotTheSlopes" >
         <title>Plot the slopes of the graph of this function.</title>
@@ -191,7 +202,16 @@
 
  <figure xml:id="figureplotfprime4">
   <caption>The graph of <m>f(x)</m> is given.  Sketch the graph of <m>f'(x)</m>.</caption> 
-  <image xml:id="piecewisefprime4Pic" width="70%">
+  <image xml:id="piecewisefprime4Pic" width="70%" alt="Graph of a piecewise linear function on a coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. The graph consists of three straight line segments that meet at sharp corners.
+
+On the left, the graph begins near x = −5 at a y-value around 5 and decreases linearly to the point (−1, 1), forming a downward-sloping segment.
+
+From the point (−1, 1), the graph increases linearly to a peak at the point (1, 5).
+
+From this peak, the graph decreases linearly again to the right, ending near the point (5, 3).
+
+All endpoints appear solid, and there are no breaks or open circles, indicating the function is defined and continuous over the displayed interval."
+>
     <latex-image>
  \begin{tikzpicture}[thick,scale=0.7] [domain=-5:5]
 \draw[step=1cm,color=gray!50] (-5,-2) grid (5,5);
@@ -238,44 +258,7 @@
                 
               </li>
 
-               <li>
-                    <p>Complete the following computation giving the derivative of the function <m>f(x) = x^{2} - 4</m>.
-                    Then, graph <m>f(x)</m> and <m>f'(x)</m> together.
-                    <md>
-                      <mrow> f'(x) = \mathstrut \amp \lim_{h \rightarrow 0} \frac{f(x+h)-f(x)}{h} </mrow>
-                      <mrow> = \mathstrut \amp \lim_{h \rightarrow 0} \frac{(x+h)^2-4-[x^2-4]}{h} </mrow>
-                      <mrow> = \mathstrut \amp \cdots </mrow>
-                    </md>
-                    
-                    </p>
-                  </li>
-
-                  <li>
-                    <p>
-                      <ol>
-                        <li>
-                          <p>
-                            Determine the values of <m>g'(0)</m>, <m>g'(1)</m>, <m>g'(2)</m>, and <m>g'(3)</m> if <m>g(x) = |x^{2} - 4|</m>.
-                          </p>
-                        </li>
-
-                        <li>
-                          <p>
-                            Sketch the graph of <m>g(x)</m> and <m>g'(x)</m>.
-                          </p>
-                          
-                        </li>
-
-                        <li>
-                          <p>
-                            Is <m>g</m> differentiable at <m>x=-2</m>?
-                            Is <m>g</m> continuous at <m>x=-2</m>?
-                          </p>
-                        </li>
-                      </ol>
-                    </p>
-                  </li>
-
+             
             </ol>
   
         </li>
@@ -311,7 +294,8 @@
 
           <li>
             <p>
-              <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-4-derivative-fxn.html#rjI">Exercises 1-5 in section 1.4</url>.
+              <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#Library__Michigan__Chap2Sec3__Q09.pg">Exercises 1-9 in section 1.4.4</url>.
             </p>
           </li>
 
@@ -335,7 +319,8 @@
 
           <li>
             <p>
-              <alert>Do</alert> <url href="https://activecalculus.org/single/sec-1-4-derivative-fxn.html#Vnj">Exercises 6-9 in section 1.4</url>.
+              <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#ez-1-4-10">Exercises 10-13 in section 1.4.4</url>.
             </p>
           </li>
 
@@ -380,9 +365,63 @@
 
 </section>
 
+<section xml:id="sec-Additionalsuggestions14">
+  <title>Additional suggestions</title>
+  
+<ul>
+  <li>
+    <p>
+      Do these exercises.
+    </p>
+<ol>
+      <li>
+                    <p>Complete the following computation giving the derivative of the function <m>f(x) = x^{2} - 4</m>.
+                    Then, graph <m>f(x)</m> and <m>f'(x)</m> together.
+                    <md>
+                      <mrow> f'(x) = \mathstrut \amp \lim_{h \rightarrow 0} \frac{f(x+h)-f(x)}{h} </mrow>
+                      <mrow> = \mathstrut \amp \lim_{h \rightarrow 0} \frac{(x+h)^2-4-[x^2-4]}{h} </mrow>
+                      <mrow> = \mathstrut \amp \cdots </mrow>
+                    </md>
+                    
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <ol>
+                        <li>
+                          <p>
+                            Determine the values of <m>g'(0)</m>, <m>g'(1)</m>, <m>g'(2)</m>, and <m>g'(3)</m> if <m>g(x) = |x^{2} - 4|</m>.
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            Sketch the graph of <m>g(x)</m> and <m>g'(x)</m>.
+                          </p>
+                          
+                        </li>
+
+                        <li>
+                          <p>
+                            Is <m>g</m> differentiable at <m>x=-2</m>?
+                            Is <m>g</m> continuous at <m>x=-2</m>?
+                          </p>
+                        </li>
+                      </ol>
+                    </p>
+                  </li>
+                </ol>
+  </li>
+</ul>
+</section>
+
 <section>
 <title>Answers</title>
-<p>
+
+<subsection xml:id="subsec-Toprepareforclass14">
+  <title>To prepare for class</title>
+  
           <ol>
             <li>
               <p>
@@ -419,7 +458,17 @@
                 </tabular>
               </table>
 
-                <image source="fig_02_28.jpg" width="50%"/>
+              <figure><title>A function with its derivative.</title>
+                <image source="fig_02_28.jpg" width="60%" 
+alt="Graph showing two functions on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. One curve is labeled f(x) and the other is labeled f′(x).
+
+The curve labeled f(x) is a smooth blue curve. It increases from the left, reaching a local maximum near x = −1 at a y-value slightly above 4. It then decreases, crossing the x-axis near x = 2, and continues downward to a local minimum near x = 4 with a y-value below −2. After this minimum, the curve increases again toward the right end of the graph.
+
+The curve labeled f′(x) is a smooth black curve with a U-shaped appearance. It crosses the x-axis near x = −1 and x = 4 and has a local minimum below the x-axis near x = 2.
+
+The graph illustrates the relationship between f and its derivative: where f(x) has a local maximum or minimum, the derivative f′(x) is zero, and where f(x) is increasing or decreasing, f′(x) is positive or negative, respectively. There are no breaks or open circles shown on either curve, indicating both functions are continuous over the displayed interval."
+/>
+              </figure>
                 </li>
 
                 <li>
@@ -429,7 +478,17 @@
                   
   <figure xml:id="figurepiecewisefprime">
   <caption>The graph of <m>f'(x)</m> given a graph of <m>f(x)</m>.</caption> 
-  <image xml:id="piecewisefprimePic" width="70%">
+  <image xml:id="piecewisefprimePic" width="70%" 
+alt="Graph showing a piecewise-defined function f and its derivative f′ on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown.
+
+The graph of f(x) is drawn with solid line segments. On the left, f decreases linearly from the upper left and reaches a sharp corner at the point (−1, 1). From (−1, 1), the graph increases linearly to a peak near (1, 5). From that peak, f decreases linearly again to the right, ending near the point (5, 3). The corners at x = −1 and x = 1 indicate points where the slope changes abruptly.
+
+Several red open circles appear on the graph of f(x). One open circle is shown at the point (−1, 2), and another at (1, 2), indicating values that are not attained by the function at those x-values.
+
+Below the x-axis, the graph of f′(x) is shown using horizontal red line segments. For x less than −1, f′(x) is a constant negative value, shown by a horizontal segment ending with an open circle at x = −1. For x between 1 and 5, f′(x) is a constant positive value, shown by a horizontal segment starting with an open circle at x = 1. There is no value of f′ shown at the corner points x = −1 and x = 1, indicating the derivative does not exist at those points.
+
+The figure illustrates the relationship between a piecewise linear function and its derivative, emphasizing constant slopes on intervals and non-differentiability at corners."
+>
     <latex-image>
   \begin{tikzpicture}[thick,scale=0.75] [domain=-5:5]
 \draw[step=1cm,color=gray!50] (-5,-2) grid (5,5);
@@ -478,6 +537,14 @@
                   </p>
                 </li>
 
+              </ol>
+              </subsection>
+
+              <subsubsection xml:id="subsubsec-Additionalsuggestions14">
+                <title>Additional suggestions</title>
+                
+<ol>
+
                 <li>
                   <p>
                     Be sure to master this type of computation!
@@ -493,7 +560,15 @@
                   </p>
                    <figure xml:id="figurepiecewisefprime2">
   <caption>The graph of <m>f'(x)=2x</m> given a graph of <m>f(x)=x^2-4</m>.</caption> 
-  <image xml:id="piecewisefprime2Pic" width="50%">
+  <image xml:id="piecewisefprime2Pic" width="50%" 
+alt="Graph showing two functions on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown.
+
+One graph is a smooth blue curve shaped like an upward-opening parabola. It has a minimum near the point (0, −4) and is symmetric about the y-axis. The parabola crosses the x-axis near x = −4 and x = 4 and increases on both sides of its minimum.
+
+The second graph is a straight line labeled f′(x). This line has positive slope and passes through the origin. It crosses the x-axis at x = 0 and increases steadily from left to right.
+
+The figure illustrates the relationship between a function and its derivative. Where the parabola is decreasing to the left of x = 0, the derivative is negative, and where the parabola is increasing to the right of x = 0, the derivative is positive. The minimum of the parabola occurs where f′(x) equals zero."
+>
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.7] [domain=-5:5]
 \draw[step=1cm,color=gray!50] (-5,-5) grid (5,5);
@@ -530,8 +605,16 @@
                           The graphs of <m>g(x)</m> and <m>g'(x)</m> are shown in blue and red in <xref ref="figurepiecewisefprime3"/> respectively.
                         </p>
                          <figure xml:id="figurepiecewisefprime3">
-  <caption>The graph of <m>f'(x)=2x</m> given a graph of <m>f(x)=x^2-4</m>.</caption> 
-  <image xml:id="piecewisefprime3Pic" width="60%">
+  <caption>The graph of <m>f'(x)=2x</m> given a graph of <m>f(x)=|x^2-4|</m>.</caption> 
+  <image xml:id="piecewisefprime3Pic" width="60%" 
+alt="Graph showing a function f and its derivative f′ on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown.
+
+The graph of f(x) is drawn with a thick blue curve. On the left and right, the graph rises steeply upward, with arrows indicating that the function continues to increase beyond the edges of the graph. Between x = −2 and x = 2, the graph forms a smooth, curved arch that reaches a local maximum near the point (0, 4). At x = −2 and x = 2, the graph has sharp corners at the points (−2, 1) and (2, 1), indicating that f is not differentiable at those x-values.
+
+The graph of f′(x) is shown in red. It consists of several line segments and rays with open circles indicating points where the derivative is not defined. One red segment with negative slope appears between x = −2 and x = 2, crossing the y-axis near y = −1 and ending with open circles near x = −2 and x = 2. Additional red rays appear to the left of x = −2 and to the right of x = 2 with positive slope, each starting at an open circle.
+
+The figure emphasizes the relationship between a function and its derivative, showing that f′(x) is undefined at the corner points of f and changes sign according to whether f is increasing or decreasing."
+>
     <latex-image>
  \begin{tikzpicture}[thick,scale=0.75] [domain=-5:5]
 \draw[step=1cm,color=gray!50] (-5,-3) grid (5,5);
@@ -575,7 +658,8 @@
                   </p>
                 </li>
         </ol>
-      </p>
+
+                    </subsubsection>
 </section>
 
 </handout>
