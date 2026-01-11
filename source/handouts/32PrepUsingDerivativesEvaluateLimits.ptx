@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 3.2 - Using Derivatives to Evaluate Limits</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    As we move on to Chapter 3, the theme of our work will focus on how we can apply the meaning of the derivative to solve important problems.
+    Interestingly, although we use limits to define the derivative itself, it turns out that the derivative can be a useful tool in evaluating challenging limits of a certain type.
+  </p>
+
+    <p>
+      The topics discussed in this section are: Indeterminate forms of type “0/0”.
+      Local linearization and L’Hôpital’s Rule.
+      Infinite limits and limits at infinity.
+      Asymptotes.
+      Indeterminate forms of type “<m>\infty/\infty</m>”.
+      Indeterminate products of the form “<m>0 \cdot \infty</m>”.
+      Indeterminate powers of the form “<m>\infty^{0}</m>”, “<m>1^{\infty}</m>”, “<m>0^{0}</m>”.
+    </p>
+
+  </section>
+
+  <section>
+  <title>Basic learning objectives</title>
+
+        <p>
+          These are the tasks you should be able to perform with reasonable
+          fluency when you arrive at our next class meeting.
+          Important new
+          vocabulary words are indicated <em>in italics</em>.
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              State what it means to say that a limit has an indeterminate form and how such forms arise in the limit definition of the derivative.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              State L’Hôpital’s Rule.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Explain how L’Hôpital’s Rule is used to calculate limits having an indeterminate form.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Explain what the expression <m>\displaystyle \lim_{x \rightarrow \infty}f(x) = L</m> means in plain English.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              State the “<m>\infty</m>” version of L’Hôpital’s Rule.
+            </p>
+          </li>
+        </ul>
+
+      </section>
+
+  <section xml:id="sec-Toprepareforclass32">
+    <title>To prepare for class</title>
+    
+    <p>
+      Complete all actions listed below.
+      Respond to the questions highlighted with <em>Submit</em>.
+    </p>
+    <ul>
+    <li>
+      <p>
+        <alert>Read</alert> motivating questions and the introduction to <url href=" 
+https://activecalculus.org/single2e/sec-3-2-LHR.html#sec-3-2-LHR-2">section 3.2</url> (up until Preview Activity 3.2.1).
+      </p>
+    </li>
+
+    <li>
+
+      <p>
+        Ask <alert>Copilot</alert> “What is meant by an indeterminant form of a limit?”
+      </p>
+    </li>
+
+    <li>
+      <p>
+        [Submit] <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-2-LHR.html#PA-3-2">Preview Activity 3.2.1</url>.
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              (Optional) <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=-FA6V_tmPuA">solution to Preview Activity 3.2.1</url>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-3-2-LHR.html#sec-3-2-LHR-4">section 3.2.2</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        [Submit] <alert>Do</alert> the following construction (see <xref ref="GeoGebraConstructLhopital"/>) in <url href="https://www.geogebra.org/classic">GeoGebra</url>. Note how the red graph of the quotient <m>h(x)</m> suggests that <m>\displaystyle \lim_{x\rightarrow 1}\frac{x^{5}+x-2}{x^{2}-1}= 3</m>. The value of <m>b</m> is what is computed via L’Hôpital’s rule.
+      </p>
+
+      <figure xml:id="GeoGebraConstructLhopital">
+        <caption>A GeoGebra construction used to investigate a limit that is indeterminant.</caption>
+      <image source="LHopitalGeoGebra1.jpg" width="90%">
+        <description>This is an image describing a GeoGebra construction.</description>
+      </image>
+      </figure>
+        <p>
+          Repeat this construction to analyze the limit found in <url href="
+https://activecalculus.org/single2e/sec-3-2-LHR.html#act-3-2-1">Activity 3.2.2(a)</url>.
+          That is, use <m>f(x) = \ln(1+x)</m>, <m>g(x) = x</m>, and investigate the limit of <m>f(x)/g(x)</m> as <m>x \rightarrow 0</m>.
+          Submit screenshots as needed.
+        </p>
+      </li>
+
+      <li>
+        
+
+        <p>
+          [Submit] <alert>Do</alert> form a table of values using a spreadsheet (<em>Excel</em> or <em>Google Sheets</em>) to form a hypothesis regarding the value of <m>\displaystyle \lim_{x \rightarrow 0}\frac{e^{2x}-1}{x}</m>. Values of <m>x</m> that are both negative and positive near zero should be used. Then, repeat the <em>GeoGebra</em> exploration above to see if the same value for the limit emerges. [Yes, you should get 2.] Sample output is shown in <xref ref="LHopitalExcel1Pic"/>. Submit screenshots as needed.
+        </p>
+
+        <figure xml:id="LHopitalExcel1Pic">
+          <caption>A spreadsheet can be used to form a hypothesis about the value of a limit.</caption>
+        <image source="LHopitalExcel1.jpg" width="75%">
+          <description>Values in a spreadsheet used to help investigate the value of the limit of <m>f(x)/g(x)</m>.</description>
+        </image>
+      </figure>
+        </li>
+
+        <li>
+          <p>
+            <alert>Do</alert> the following problem.
+          </p>
+
+          <p>
+            <ol>
+              <li>
+                <p>
+                  We attempt to evaluate the value of <m>\displaystyle \lim_{x \rightarrow 0}\frac{e^{2x}-1}{x}</m>.
+                  Define <m>f(x) = e^{2x}-1</m> (the numerator) and define <m>g(x) = x</m> (the denominator).
+                  Then <m>\displaystyle \lim_{x \rightarrow 0}\frac{e^{2x}-1}{x}= \lim_{x \rightarrow 0}\frac{f(x)}{g(x)}.</m>
+                </p>
+
+                <p>
+                  <ol>
+                    <li>
+                      <p>
+                        Does <m>\displaystyle \lim_{x \rightarrow 0}\frac{f(x)}{g(x)}= \frac{f(0)}{g(0)}</m>? Why or why not?
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        Find the linear approximation <m>L(x)</m> to <m>f(x)</m> at <m>a=0</m>.
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        Find the linear approximation <m>M(x)</m> to <m>g(x)</m> at <m>a=0</m>.
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        Compute <m>\displaystyle \lim_{x \rightarrow 0}\frac{L(x)}{M(x)}</m>.
+                        How is this related to <m>\displaystyle \frac{f'(0)}{g'(0)}</m>?
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        For <m>x</m> near 0,
+                        <me>
+                          \frac{f(x)}{g(x)}= \frac{e^{2x}-1}{x}\approx \frac{2x}{x}= \frac{L(x)}{M(x)}= \frac{f'(0)}{g'(0)}.
+                        </me>
+                        As <m>x \rightarrow 0</m>, the approximation becomes better.
+                        This tells us <m>\displaystyle \lim_{x \rightarrow 0}\frac{e^{2x}-1}{x}={\underline{\hspace{30mm}}}</m>.
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=KXGhzie3b8s&#x26;feature=emb_title">Quick Review - L’Hopital’s Rule (3:27)</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=flM7qVLdezY&#x26;feature=emb_title">Using L’Hopital’s Rule with Zero (7:26)</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-2-LHR.html#Library__Michigan__Chap4Sec7__Q07.pg">Exercises 1-2 in section 3.2.4</url>.
+          </p>
+        </li>
+        </ul>
+
+      </section>
+
+      <section xml:id="sec-afterclass32">
+        <title>After class</title>
+        
+        <p>
+          Solidifying the concepts discussed in class through practice is necessary to build your skills.
+        </p>
+        <ul>
+        <li>
+          <p>
+            <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-3-2-LHR.html#sec-3-2-LHR-5">section 3.2.3</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=wXXej6AmEKQ&#x26;feature=emb_title">Using L’Hopital’s Rule with Infinity (8:45)</url>.
+          </p>
+        </li>
+
+        <li>
+
+          <p>
+            Ask <alert>Copilot</alert> “How can I use L’Hopital’s rule to compute the value of a limit that is in the form 0<m>\wedge</m>0?”
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-3-2-LHR.html#sec-3-2-LHR-6">section 3.2.4 (summary)</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-2-LHR.html#Library__UMN__calculusStewartCCC__s_4_5_28.pg">Exercises 3-4 in section 3.2.5</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Do</alert> these problems.
+          </p>
+
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Compute each of the following limits exactly.
+                </p>
+
+                <p>
+                  <ol>
+                    <li>
+                      <p>
+                        <m>\displaystyle \lim_{x \rightarrow 0}\frac{\sin x}{x}</m>
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        <m>\displaystyle \lim_{x \rightarrow 0}\frac{x}{e^{x}}</m>
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        <m>\displaystyle \lim_{t \rightarrow 0}\frac{e^{t} - 1 - t}{t^{2}}</m>
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Find the sign of <m>\displaystyle \lim_{x \rightarrow a}\frac{f(x)}{g(x)}</m> from <xref ref="figureSignLhopital"/>.
+                  Assume <m>f''(a) \neq 0</m> and <m>g''(a) \neq 0</m>.
+                </p>
+                
+<figure xml:id="figureSignLhopital">
+  <caption>The graph of <m>f(x)</m> and <m>g(x)</m>.</caption> 
+  <image xml:id="SignLhopitalPic" width="50%"><description>The graphs of <m>f</m> and <m>g</m> are shown together.</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1.1]
+%%\draw[step=1cm,color=gray!50,dotted] (0,-3) grid (5,3);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (3,0) node [below] at (2.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3) node [right] at (0,2.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-1);
+\draw[color=blue, line width=1pt,domain=0:1]   plot (\x,{(\x-1)^2}) node [right] at (0.25,1) {$f(x)$};
+\draw[color=blue, line width=1pt,domain=1:2]   plot (\x,{(\x-1)^3});
+\draw[color=blue, line width=1pt,domain=2:2.5]   plot (\x,{-(\x-2)^3+1});
+\draw[color=red, line width=1pt,domain=1:2]   plot (\x,{-(\x-1)^2}) node [right] at (0.25,-1) {$g(x)$};
+\draw[color=red, line width=1pt,domain=0:1]   plot (\x,{0.5*(\x-1)^3});
+\foreach \x/\xtext in { 1/a}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+              </li>
+            </ol>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-2-LHR.html#Library__Michigan__Chap4Sec7__Q01.pg">Exercises 5-14 from section 3.2.5</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+          </p>
+        </li>
+        </ul>
+
+ </section>
+
+
+
+      <section xml:id="sec-Advancedlearningobjectives32">
+        <title>Advanced learning objectives</title>
+
+        <p>
+          In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              Understand the development of L’Hôpital’s Rule and how it relies upon the tangent line approximation of two functions.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Use L’Hôpital’s Rule to calculate limits that have an indeterminate form “0/0”.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Use L’Hôpital’s Rule to calculate limits that have an indeterminate form “<m>\infty/\infty</m>”.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Use limits to identify locate horizontal and vertical asymptotes.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find limits involving indeterminate products (“<m>0\cdot \infty</m>”): rewrite the limit in such a way that L’Hôpital’s Rule can be used.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find limits involving indeterminate powers (“<m>\infty^{0}</m>”, ”<m>1^{\infty}</m>”, ”<m>0^{0}</m>”): use the identity <m>u=e^{\ln u}</m> to rewrite the expression and find the limit of the exponent (you may get an indeterminate power and L’Hôpital’s Rule might be required at this point).
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Realize which forms of limits are not indeterminate, i.e.
+              which always result in a clear answer (e.g.
+              “<m>0^{\infty}</m>”=0, “<m>*/\infty</m>”=0, “<m>*/0^{+}</m>”=<m>\infty</m>)
+            </p>
+          </li>
+        </ul>
+
+      </section>
+
+      <section xml:id="sec-Additionalsuggestions32">
+        <title>Additional suggestions</title>
+
+        <ul>
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=IZNU_ZQuPQM&#x26;feature=emb_title">L’Hopital’s Rule - A Graphical Approach (10:52)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=OygUfugpQ48&#x26;feature=youtu.be">Student Problem Solving - L’Hopital’s Rule (3:20)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=SkWMqPeSC7I&#x26;feature=youtu.be">Limit of Quotients (6:56)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=fZXVSwYtctU&#x26;feature=emb_title">Indeterminant Products (9:07)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=tbgH97QAntw&#x26;feature=emb_title">Horizontal Asymptotes and Limits at Infinity (6:16)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=zONlxdjhrUs&#x26;feature=emb_title">L’Hopital’s Rule and Limits of the Form 0 x Infinity (9:09)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Do</alert> these problems.
+            </p>
+
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    Evaluate <m>\displaystyle \lim_{x \rightarrow 1}\left( \frac{x}{x-1}- \frac{1}{\ln x}\right)</m>.
+                  </p>
+
+                  <p />
+                  </li>
+
+                  <li>
+                    <p>
+                      Use the graphs of <m>f</m> and <m>g</m> and their tangent
+                      lines at <m>(2,0)</m> shown in <xref ref="figureGraphicLhopital"/> to find <m>\displaystyle \lim_{x \rightarrow 2}\frac{f(x)}{g(x)}</m>.
+                    </p>
+                    
+<figure xml:id="figureGraphicLhopital">
+  <caption>The graphs of <m>f(x)</m> and <m>g(x)</m> and their tangent lines at <m>(2,0)</m>.</caption> 
+  <image xml:id="GraphicLhopitalPic" width="50%"><description>The graphs of <m>f</m> and <m>g</m> are shown together.  These graphs share the common point <m>(2,0)</m>.  Tangent lines to each of these functions at that point are given.  
+  The tangent line to <m>f</m> at <m>(2,0)</m> is given by <m>y=\frac{4}{5}(x-2)</m>.  The tangent line to <m>g</m> at
+<m>(2,0)</m> is given by <m>y=1.8(x-2)</m>.</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1] 
+\draw[step=1cm,color=gray!50] (-1,-2) grid (5,5);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5.25,0)
+   node [below] at (4.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-1.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,5.25)
+   node [left] at (0,4.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-2.5);
+      \draw [black] node [below] at (2.5,0) {$(2,0)$};
+\draw[color=red, line width=1.5pt,dotted,domain=-0.5:4.5]   plot (\x,{0.8*(\x-2)}) node [right] at (4.5,1.75) {$y=\frac{4}{5}(x-2)$};
+\draw[color=red, line width=1.5pt,domain=1.05:4.75]   plot (\x,{0.8*ln(\x-1)}) node [right] at (4.5,0.5) {$f$};
+\fill [black] (2,0) circle (3pt);
+\draw[color=linecolor, line width=1.5pt,dotted,domain=1:4.5]   plot (\x,{1.8*(\x-2)}) node [right] at (4.5,4) {$y=1.8(x-2)$};
+\draw[color=linecolor, line width=1.5pt,domain=1.2:4.75]   plot (\x,{1.8*ln(\x-1)}) node [right] at (4.75,2.5) {$g$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+                  </li>
+
+                  <li>
+                    <p>
+                      Calculate <m>\displaystyle \lim_{x \rightarrow \infty}\left( 1 + \frac{1}{x}\right)^{x}</m>.
+                      <em>Hint:</em> Note that this limit has the form <m>1^{\infty}</m>.
+                      So write
+                      <me>
+                        y=\left( 1 + \frac{1}{x}\right)^{x}
+                      </me>
+                      and find the limit of <m>\ln y</m>.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Put the following limits in a form that can be evaluated using L’Hôpital’s rule.
+                    </p>
+
+                    <p>
+                      <ol>
+                        <li>
+                          <p>
+                            <m>\displaystyle \lim_{x \rightarrow \infty}x^{1/x}</m>   <em>Hint:</em> Use a logarithm.
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            <m>\displaystyle \lim_{x \rightarrow 0^+}x^{x}</m>   <em>Hint:</em> Use a logarithm.
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            <m>\displaystyle \lim_{x \rightarrow 0}\frac{1}{x}- \frac{1}{\sin x}</m>
+                          </p>
+                        </li>
+                      </ol>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Compute each of the following limits exactly.
+                    </p>
+
+                    <p>
+                      <ol>
+                        <li>
+                          <p>
+                            <m>\displaystyle \lim_{x \rightarrow \infty}\frac{\ln x}{x}</m>
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            <m>\displaystyle \lim_{x \rightarrow \infty}\frac{\ln (\ln x)}{\sqrt{x}}</m>
+                          </p>
+                        </li>
+                      </ol>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Calculate <m>\displaystyle \lim_{x \rightarrow \infty}xe^{-x}</m>.
+                      <em>Hint:</em> Note that this limit has the form <m>\infty \cdot 0</m>.
+                      Rewrite <m>\displaystyle xe^{-x}= \frac{x}{e^{x}}</m> so that the limit takes the form <m>\displaystyle \frac{\infty}{\infty}</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=SjCDSQJln3g&#x26;list=PLJtEcQL1-E8V9Fs1E1-KY9nyL9y2JHh8-&#x26;index=21">Indeterminant Forms (6:47)</url>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=LqdKmnh3h-k&#x26;list=PLJtEcQL1-E8V9Fs1E1-KY9nyL9y2JHh8-&#x26;index=20">More Indeterminant Forms (6:01)</url>.
+              </p>
+            </li>
+          </ul>
+
+        </section>
+
+        <section>
+          <title>Answers</title>
+
+          <subsection xml:id="subsec-Toprepareforclass32">
+            <title>To prepare for class</title>
+            
+          <ol>
+            <li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>f(0)=0</m> and <m>g(0)=0</m> so clearly not.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>f'(0)=2</m> means that <m>L(x) = 2x</m>.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>M(x) = x</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      2; it is the same.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      2
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+
+          </ol>
+        </subsection>
+
+        <subsection xml:id="subsec-Afterclass32">
+          <title>After class</title>
+          
+<ol>
+
+            <li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      1
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      1
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>\displaystyle \frac{1}{2}</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Negative.
+              </p>
+            </li>
+
+          </ol>
+        </subsection>
+
+        <subsection xml:id="subsec-Additionalsuggestions32">
+          <title>Additional suggestions</title>
+          
+<ol>
+
+            <li>
+              <p>
+                <m>\displaystyle \frac{1}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\displaystyle \frac{4}{9}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>e</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      1
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      1
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      0
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      0
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      0
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                0
+              </p>
+            </li>
+          </ol>
+
+        </subsection>
+      </section>
+
+        </handout>
