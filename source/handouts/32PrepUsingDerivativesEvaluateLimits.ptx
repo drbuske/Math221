@@ -120,8 +120,16 @@ https://activecalculus.org/single2e/sec-3-2-LHR.html#sec-3-2-LHR-4">section 3.2.
 
       <figure xml:id="GeoGebraConstructLhopital">
         <caption>A GeoGebra construction used to investigate a limit that is indeterminant.</caption>
-      <image source="LHopitalGeoGebra1.jpg" width="90%">
-        <description>This is an image describing a GeoGebra construction.</description>
+      <image source="LHopitalGeoGebra1.jpg" width="90%"> 
+<description>
+A Geogebra display showing three functions and an expressions panel. 
+In the expressions list on the left, f(x) equals x to the fifth plus x minus 2, g(x) equals x squared minus 1, and h(x) equals f(x) divided by g(x). 
+On the right, three curves are plotted on the same coordinate grid. 
+A black upward‑opening parabola represents g(x). 
+A blue curve with steep growth near x equals 1 represents f(x). 
+A red curve labeled h is drawn above the others and has a minimum near x equals 0. 
+The x- and y-axes are shown with grid lines and tick marks.
+</description>
       </image>
       </figure>
         <p>
@@ -142,7 +150,13 @@ https://activecalculus.org/single2e/sec-3-2-LHR.html#act-3-2-1">Activity 3.2.2(a
         <figure xml:id="LHopitalExcel1Pic">
           <caption>A spreadsheet can be used to form a hypothesis about the value of a limit.</caption>
         <image source="LHopitalExcel1.jpg" width="75%">
-          <description>Values in a spreadsheet used to help investigate the value of the limit of <m>f(x)/g(x)</m>.</description>
+<description>
+A spreadsheet-style table showing numerical values for the expression (exp(2x) minus 1) divided by x. 
+The table is split into two sections. 
+On the left, x takes negative values from minus 0.1 to minus 0.00001, with corresponding values approaching 2 from below. 
+On the right, x takes positive values from 0.01 to 0.00001, with corresponding values approaching 2 from above. 
+The values are arranged to show the behavior of the expression as x approaches zero.
+</description>
         </image>
       </figure>
         </li>
@@ -311,7 +325,14 @@ https://activecalculus.org/single2e/sec-3-2-LHR.html#Library__UMN__calculusStewa
                 
 <figure xml:id="figureSignLhopital">
   <caption>The graph of <m>f(x)</m> and <m>g(x)</m>.</caption> 
-  <image xml:id="SignLhopitalPic" width="50%"><description>The graphs of <m>f</m> and <m>g</m> are shown together.</description>
+  <image xml:id="SignLhopitalPic" width="50%">
+<description>
+A coordinate graph showing two curves labeled f(x) and g(x). 
+The blue curve f(x) lies above the x-axis near the middle and has a shallow minimum at a point above x equals a, then rises to the left and right. 
+The red curve g(x) lies below the x-axis and has a maximum at the point directly below x equals a. 
+Both curves touch the x-axis at the same point labeled a. 
+The x- and y-axes are shown with arrows.
+</description>
     <latex-image>
 \begin{tikzpicture}[thick,scale=1.1]
 %%\draw[step=1cm,color=gray!50,dotted] (0,-3) grid (5,3);
@@ -472,9 +493,15 @@ https://activecalculus.org/single2e/sec-3-2-LHR.html#Library__Michigan__Chap4Sec
                     
 <figure xml:id="figureGraphicLhopital">
   <caption>The graphs of <m>f(x)</m> and <m>g(x)</m> and their tangent lines at <m>(2,0)</m>.</caption> 
-  <image xml:id="GraphicLhopitalPic" width="50%"><description>The graphs of <m>f</m> and <m>g</m> are shown together.  These graphs share the common point <m>(2,0)</m>.  Tangent lines to each of these functions at that point are given.  
-  The tangent line to <m>f</m> at <m>(2,0)</m> is given by <m>y=\frac{4}{5}(x-2)</m>.  The tangent line to <m>g</m> at
-<m>(2,0)</m> is given by <m>y=1.8(x-2)</m>.</description>
+  <image xml:id="GraphicLhopitalPic" width="50%">
+<description>
+A coordinate graph showing a curve labeled f and a second curve labeled g, both passing through the point (2, 0). 
+At that point, two dotted straight lines are shown. 
+A blue dotted line labeled y equals 1.8 times (x minus 2) has a steeper positive slope. 
+A red dotted line labeled y equals four‑fifths times (x minus 2) has a gentler positive slope. 
+The curve g lies above the curve f to the right of x equals 2 and below it to the left. 
+The x‑ and y‑axes are labeled, with a grid and the point (2, 0) marked.
+</description>
     <latex-image>
 \begin{tikzpicture}[thick,scale=1] 
 \draw[step=1cm,color=gray!50] (-1,-2) grid (5,5);
