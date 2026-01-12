@@ -90,6 +90,7 @@
       <xi:include href="./handouts/27PrepImplicitDifferentiation.ptx"/>
       <xi:include href="./handouts/31PrepRelatedRates.ptx"/>
       <xi:include href="./handouts/32PrepUsingDerivativesEvaluateLimits.ptx"/>
+      <xi:include href="./handouts/33PrepExtremeValues.ptx"/>
     </chapter>
 
  
