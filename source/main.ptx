@@ -92,6 +92,7 @@
       <xi:include href="./handouts/32PrepUsingDerivativesEvaluateLimits.ptx"/>
       <xi:include href="./handouts/33PrepExtremeValues.ptx"/>
       <xi:include href="./handouts/35PrepGlobalOptimization.ptx"/>
+      <xi:include href="./handouts/36PrepAppliedOptimization.ptx"/>
     </chapter>
 
  

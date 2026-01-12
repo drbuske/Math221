@@ -133,7 +133,7 @@ https://activecalculus.org/single2e/sec-3-5-optimization.html#act-3-5-1">Activit
           Explain how your answer is consistent with the Extreme Value Theorem.
         </p>
 
-        <figure xml:id="">
+        <figure xml:id="EVTExample1">
           <caption>The graph of <m>g(x)</m>.</caption>
         <image source="EVTExample1.jpg" width="40%">      
 <description>

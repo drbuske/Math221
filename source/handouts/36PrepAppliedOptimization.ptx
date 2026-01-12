@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 3.6 - Applied Optimization</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    The derivative of a function tells us key information.
+    We now investigate the concept of optimization.
+    That is, we are interested in determining where the value of a function is greatest or least, and the input value(s) at which such extremes occur.
+    As we move from Section 3.5 into Section 3.6, we start to emphasize problems that occur in a more applied setting, ones that are based in some sort of physical reality.
+    Here, you will be challenged to read carefully and interpret different possible scenarios, identify variables and determine functions, and to use calculus to justify the reasoning behind your ultimate answers.
+  </p>
+</section>
+
+<section>
+<title>Basic learning objectives</title>
+
+      <p>
+        These are the tasks you should be able to perform with reasonable
+        fluency when you arrive at our next class meeting.
+        Important new
+        vocabulary words are indicated <em>in italics</em>.
+      </p>
+
+      <ul>
+        <li>
+          <p>
+            (Review) Determine where to look for extreme values of a function on a closed interval, and what we need to do when the interval is open.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Identify and classify all critical values of a function (within any given domain of interest).
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Recognize how we often need to introduce a function in order to optimize some quantity of interest:
+          </p>
+
+          <p>
+            <ul>
+              <li>
+                <p>
+                  Identify the variables in the problem as well as the constraints on the variables.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Identify the “target quantity”, i.e.
+                  the quantity to be optimized.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Set up an equation to relate the target quantity to the other variables.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Use a constraint in the problem to reduce the number of other variables in the equation to one, and solve for the target quantity to obtain a function of one variable.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+      </ul>
+
+    </section>
+
+<section>
+<title>To prepare for class</title>
+
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Read</alert> motivating questions and the introduction to <url href="
+https://activecalculus.org/single2e/sec-3-6-applied-opt.html#sec-3-6-applied-opt">section 3.6</url> (up until Preview Activity 3.6.1).
+    </p>
+  </li>
+
+  <li>
+    
+
+    <p>
+      [Submit] <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-6-applied-opt.html#PA-3-6">Preview Activity 3.6.1</url>.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            After completion, look back by using <url href="https://www.geogebra.org/classic?lang=en">GeoGebra</url> to graph the function <m>f(x) = x^{2}(108-4x)</m> on <m>[0,27]</m>.
+            How does this graph relate to your solution to the problem?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            (Optional) <alert>Watch</alert> <url href="https://www.youtube.com/watch?v=vFjZWP1Jotc">video solution to Preview Activity 3.6.1</url>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-3-6-applied-opt.html#sec-3-6-applied-opt-4">section 3.6.2</url> on steps used to solve an applied optimization problem.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=Ilu2SZa3SYA&#x26;feature=emb_title">Quick Review - Applied Optimization (2:14)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=jH6J-n6zt4c&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=70">Fencing Optimization (7:08)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> these problems.
+    </p>
+
+    <p>
+      <ol>
+      <li>
+
+        <p>
+          [Submit] If you have 100 feet of fencing and want to enclose a rectangular area up against a long, straight wall, what is the largest area you can enclose?
+        </p>
+
+        <p>
+          Prompt <alert>Copilot</alert> “If you have 100 feet of fencing and want to enclose a rectangular area up against a long, straight wall, what is the largest area you can enclose? Explain.” Does the AI get this question correct? Does it even use calculus to ‘solve’ the problem?
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Find a positive number such that the sum of the number and twice its reciprocal is as small as possible.
+        </p>
+
+        <p>
+          Prompt <alert>Copilot</alert> “Find a positive number such that the sum of the number and twice its reciprocal is as small as possible.
+          Explain.” Follow up the response by prompting “But just because the derivative is 0 does not make this value a minimum.
+          So why do you claim it is?” Does the AI give useful and correct feedback?
+        </p>
+      </li>
+
+      <li>
+        <p>
+          A vertical line divides a triangle into two pieces.
+        </p>
+
+        <p>
+          Find the value of the coordinate <m>x</m> that maximizes the product of the two areas.
+        </p>
+
+        <figure xml:id="figuretrianglecut36">
+  <image xml:id="trianglecut36Pic" width="25%">
+<description>
+A coordinate diagram showing a triangular region in the x–y plane. The region has vertices at (0, 0), (1, 0), and (1, 2), with solid line segments connecting these points. The horizontal axis is marked at x = 0 and x = 1, and the vertical axis is marked at y = 2. A dotted vertical line is drawn at an x-value between 0 and 1, intersecting the triangle and labeled x.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=2.5] [domain=-1:2]
+   \draw [black, dotted, line width=1pt] (0.7,0) -- (0.7, 1.4) node [below] at (0.7,-0.1) {$x$};
+   \draw [black] node [below] at (1,-0.1) {$1$};
+      \draw [black] node [below] at (0,-0.1) {$0$};
+      \draw [black] node [right] at (1,1) {$2$};
+\draw [linecolor, line width = 1.5pt] (0,0) -- (1,0) -- (1, 2) -- (0,0);
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+        <p>
+          <em>Hint: The function <m>A(x)</m> you seek to maximize on domain <m>[0,1]</m>  is the product of the area of the “smaller” triangle and what remains.  The area of what remains is simply the area of the large triangle  minus the area of the small triangle.</em>
+        </p>
+        
+      </li>
+      </ol>
+    </p>
+  </li>
+
+  <li>
+    <p>
+       [Submit] <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-6-applied-opt.html#csafranski__3.4HW_prob1.pg">exercise 1 in section 3.6.4</url>. Submit a screen capture of a “check of the answers” to your work. Also, answer these two questions:
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            What is maximum volume?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What is the minimum volume?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What does <em>GeoGebra</em> produce when you graph <m>V(x)</m> on this domain?
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      If you would like to visualize a similar problem, <url href="https://www.geogebra.org/m/jqbgveyd">this applet</url> may help.
+    </p>
+
+    <p>
+      If you would like a hint, Khan Academy as a video you can watch that explains how to do a similar problem (though without <em>GeoGebra</em> and with different dimensions given.
+      See <url href="https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-11/v/optimizing-box-volume-graphically">Optimization: Box Volume (Part I)</url> and <url href="https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-11/v/optimizing-box-volume-analytically">Optimization: Box Volume (Part II)</url>.
+      He makes mistakes (such as not using an approximation symbol when he should), but the solution process is reasonable.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-6-applied-opt.html#csafranski__3.4HW_prob2.pg">exercises 2-8 in section 3.6.4</url>.
+    </p>
+  </li>
+  </ul>
+
+</section>
+
+<section>
+<title>After class</title>
+
+  <p>
+    Solidifying the concepts discussed in class through practice is necessary to build your skills.
+  </p>
+
+  <ul>
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=uJFxdxSBjok&#x26;feature=emb_title">Optimization with Trigonometry (13:24)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-3-6-applied-opt.html#sec-3-6-applied-opt-5">section 3.6.3 - summary</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-6-applied-opt.html#ez-3-4-9">exercises 9-10 in section 3.6.4</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-6-applied-opt.html#ez-3-4-11">exercises 11-12 in section 3.6.4</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=_Y7XJEdEkAE">Minimum-time hiking route, part 1 (8:35)</url>. Then, <alert>watch</alert> video <url href="https://www.youtube.com/watch?v=2Fuf1epEjhk">Minimum-time hiking route, part 2 (8:40)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> this problem.
+      </p>
+
+      <p>
+        <ol>
+          <li>
+            <p>
+              Alaina wants to get to the bus stop as quickly as possible.
+              The bus stop is across a grassy park, 2000 feet west and 600 feet north of her current position.
+              Alaina can walk west along the edge of the park on the sidewalk at a speed of 6 ft/sec.
+              She can also travel through the grass in the park, but only at a rate of 4 ft/sec.
+            </p>
+<figure xml:id="AlainaBusStop">
+            <image source="fig_04_31.jpg" width="90%">     
+<description>
+Three diagrams labeled (a), (b), and (c) show different walking routes in a park to reach a bus stop. In each diagram, the park is rectangular, with a vertical side labeled 600 feet and the distance to the bus stop along the top labeled 2000 feet. In (a) and (c), a diagonal path crosses the park from a corner toward the bus stop, while in (b) the path follows the edges of the park only. In (c), the bottom edge is marked as two segments of 1000 feet each. The diagrams compare possible paths and distances to the bus stop.
+</description>
+            </image>
+            </figure>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Of the paths shown in the diagram above, the one in (a) is the shortest in length and the one in (b) is the longest in length.
+                      Which one of these three is the <em>shortest in time</em>?
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      If Alaina walks <m>x</m> feet west along the sidewalk before heading diagonally across the park to the bus stop, the total time it takes her will be <m>T = T_{sidewalk}+ T_{park}</m>.
+                      Write <m>T</m> as a function of <m>x</m>.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      What is the domain of the function <m>T</m> found in part (b)? For what value of <m>x</m> on this domain is this function minimized? What is the minimum value? <em>GeoGebra may be used to help estimate this value.</em>
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+        </p>
+      </li>
+    </ul>
+
+</section>
+
+
+
+<section>
+<title>Advanced learning objectives</title>
+
+      <p>
+        In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+      </p>
+
+      <ul>
+        <li>
+          <p>
+            In a wide range of contexts, identify and formulate a function of interest and then use calculus to accurately justify where the function is optimized on an appropriate domain.
+          </p>
+        </li>
+      </ul>
+
+</section>
+
+<section>
+<title>Additional suggestions</title>
+
+      <ul>
+        <li>
+          <p>
+            <alert>Watch</alert> another video on another version of the very famous “Farmer and the Fence” problem: <url href="https://www.youtube.com/watch?v=QCFObvt7YOg&#x26;feature=youtu.be">How to Maximize the Area of a Rectangular Pen (5:56)</url>.
+          </p>
+        </li>
+      </ul>
+
+</section>
+
+<section>
+<title>Answers</title>
+
+<subsection xml:id="subsec-Toprepareforclass36">
+  <title>To prepare for class</title>
+
+      <ol>
+        <li>
+          <p>
+            1250 square feet
+          </p>
+
+          <p>
+            Our goal is to maximize <m>A(x,y) = xy</m> where <m>x</m> represents the length of two sides of fence and <m>y</m> is the length of the other (the length parallel to the wall being used).
+            We maximize <m>A(x,y)</m> subject to the condition that <m>2x+y=100</m>.
+            By solving for <m>y</m>, we aim to maximize
+            <me>
+              A(x)=x(100-2x) = 100x-2x^{2}
+            </me>
+            on the domain <m>0 \leq x \leq 50</m> (because <m>0 \leq y=100-2x \leq 100</m>).
+            Since <m>A'(x) = 100-4x</m> we find a critical value at <m>x=25</m> that leads to a global maximum of <m>A</m> on its domain.
+            <m>A(25) = 1250</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The positive number is <m>\sqrt{2}</m>.
+            The function <m>Q(x)</m> being minimized is <m>Q(x) = x + \frac{2}{x}</m>.
+            It is being minimized on the domain <m>(0,\infty)</m>.
+            Since <m>Q'(x) = 1-2x^{-2}= 1-\frac{2}{x^{2}}= 0</m> exactly when <m>x=\pm \sqrt{2}</m>, we see that <m>\sqrt{2}</m> is the only critical point in the domain.
+            A first derivative sign chart shows us that this is a local minimum.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            We maximize
+            <me>
+              A(x) = \frac{1}{2}x(2x) \cdot \left[ \frac{1}{2}(1)(2) - \frac{1}{2}x(2x)\right] = x^{2} [1-x^{2}]
+            </me>
+            on the interval <m>0 \leq x \leq 1</m>.
+            Note that
+         <md><mrow> A'(x) = \mathstrut \amp 2x(1-x^2) + x^2(-2x)</mrow>
+          <mrow>  = \mathstrut \amp x[ 2(1-x^2) + x(-2x)]</mrow>
+          <mrow>  = \mathstrut \amp x [2-4x^2].</mrow></md>
+            It follows that <m>A'(x)=0</m> exactly when <m>x=0</m> or <m>\displaystyle x=\pm \frac{\sqrt{2}}{2}</m>.
+            A first derivative sign chart appears in <xref ref="figurefirstderivativesignchart36"/>.
+          </p>
+          
+<figure xml:id="figurefirstderivativesignchart36">
+  <image xml:id="firstderivativesignchart36Pic" width="75%">
+<description>
+A number line labeled A′(x). Three marked x-values appear: 0, the square root of 2 divided by 2, and 1. A plus sign above the left interval indicates A′(x) is positive there, a minus sign above the middle interval indicates A′(x) is negative, and a plus sign above the right interval indicates A′(x) is positive again.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1.5] [domain=-4:4] 
+\draw[color=black, line width=1.5pt,-latex] (-2,0) -- (2,0) node [below] at (2,-0.25) {$A'(x)$};
+\draw[color=black, line width=1.5pt,latex-] (-2,0) -- (2,0); 
+\fill [color=red] (0,0) circle (2pt) node [below] at (0,-0.25) {$0$};
+\fill [color=red] (0.7,0) circle (2pt) node [below] at (0.7,-0.25) {$ \frac{\sqrt{2}}{2}$};
+\fill [color=red] (1,0) circle (2pt) node [below] at (1,-0.25) {$1$};
+\draw [color=red] node [above] at (0.33,0.25) {$+$};
+\draw [color=red] node [above] at (0.85,0.25) {$-$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+          <p>
+            The area is maximized when <m>\displaystyle x=\frac{\sqrt{2}}{2}</m>.
+          </p>
+        </li>
+
+      </ol>
+
+        </subsection>
+        <subsubsection xml:id="subsubsec-Afterclass36">
+          <title>After class</title>
+<ol>
+        <li>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  In (a), the distance is <m>\sqrt{2000^{2}+600^{2}}\approx 2088</m> feet.
+                  At 4 feet per second, this takes 2088/4 = 522 seconds.
+                </p>
+
+                <p>
+                  In (b), the distance is <m>2000+600=2600</m> feet.
+                  It takes <m>2000/6 + 600/4 \approx 483</m> seconds.
+                </p>
+
+                <p>
+                  In (c), the distance is <m>1000 + \sqrt{1000^{2} + 600^{2}}\approx 2166</m> feet.
+                  It takes <m>1000/6 + 1166/4 \approx 458</m> seconds.
+                  This is the shortest time.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Using the fact that time is distance divided by rate, we have
+                  <me>
+                    T(x) = \frac{x \ {\textrm{ft}}}{6 \ {\textrm{ft/sec}}}+ \frac{ \sqrt{(2000-x)^{2} + 600^{2}} \ {\textrm{ft}} }{4 \ {\textrm{ft/sec}}}= \frac{1}{6}x + \frac{1}{4}\sqrt{4,360,000-4000x+x^{2}}\ {\textrm{seconds}}
+                  </me>
+                  for <m>0 \leq x \leq 2000</m>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  The domain of <m>T</m> is <m>[0,2000]</m>.
+                  <me>
+                    \displaystyle T'(x) = \frac{1}{6}+ \frac{1}{4}\cdot \frac{1}{2}(4,360,000-4000x+x^{2})^{-1/2}(-4000+2x) = 0
+                  </me>
+                  exactly when <m>x=2000-240\sqrt{5}\approx 1463.34</m> feet.
+                  <m>T(1463.34) \approx 445</m> seconds.
+                  This is a minimum as shown in <xref ref="AlainaExampleAns"/>.
+                </p>
+<figure xml:id="AlainaExampleAns">
+                <image source="AlainaExamplePic.jpg" width="75%">         
+<description>
+A graph of a smooth function over x-values from 0 to about 2000. The curve decreases gradually from left to right, then reaches a minimum near the labeled point (1463.34, 445.14). After this point, the graph turns upward slightly, indicating a minimum at that location.
+</description>
+                </image>
+                </figure>
+                </li>
+              </ol>
+            </p>
+          </li>
+        </ol>
+
+                </subsubsection>
+
+        </section>
+        </handout>
