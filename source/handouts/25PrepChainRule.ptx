@@ -56,13 +56,15 @@
   <ul>
   <li>
     <p>
-      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-2-5-chain.html">section 2.5</url> (up until Preview Activity 2.5.1).
+      <alert>Read</alert> motivating questions and the introduction to <url href="
+https://activecalculus.org/single2e/sec-2-5-chain.html#sec-2-5-chain">section 2.5</url> (up until Preview Activity 2.5.1).
     </p>
   </li>
 
   <li>
     <p>
-      [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-5-chain.html#vLx">Preview Activity 2.5.1</url>.
+      [Submit] <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-5-chain.html#PA-2-5">Preview Activity 2.5.1</url>.
     </p>
   </li>
 
@@ -132,7 +134,8 @@
 
   <li>
     <p>
-      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-5-chain.html#Utl">section 2.5.1</url>.
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-2-5-chain.html#sec-2-5-chain-4">section 2.5.2</url>.
     </p>
   </li>
 
@@ -177,7 +180,7 @@
             the derivative of <m>h</m>).
             In the next input box, type <em>A = (3, h(3))</em>.
             <em>GeoGebra</em> will plot the point <m>A</m> at <m>(3,3)</m>.
-            On the fourth button (see below), choose the <em>Tangents</em> option.
+            On the fourth button (see <xref ref="TangentsGeo2"/>), choose the <em>Tangents</em> option.
             Then, click on point <em>A</em> on your graph followed by clicking on the graph (of <m>h</m>) itself.
             This will produce a tangent line to your function <m>h</m> at <m>(3,3)</m>.
             It will name this tangent line and an expression for it will appear in the next input box.
@@ -185,7 +188,15 @@
             What is it?
           </p>
 
-          <image source="TangentsGeoGebra.jpg" width="50%" />
+          <figure xml:id="TangentsGeo2">
+            <image source="TangentsGeoGebra.jpg" width="50%" >   
+<description>
+A horizontal toolbar containing drawing and annotation icons. 
+From left to right: a mouse pointer icon, a filled blue point, a capital letter A, a line segment with two endpoints, a curved line drawn inside a rectangular selection outline, a triangle formed by three connected points, and a circle with a central point. 
+Each icon appears inside a square button.
+</description>
+            </image>
+          </figure>
           </li>
 
           <li>
@@ -227,7 +238,8 @@
     <ul>
     <li>
       <p>
-        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-5-chain.html#AAu">section 2.5.2</url>.
+        <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-2-5-chain.html#sec-2-5-chain-5">section 2.5.3</url>.
       </p>
     </li>
 
@@ -251,7 +263,8 @@
 
     <li>
       <p>
-        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-5-chain.html#dJG">Exercises 1-3 in section 2.5</url>.
+        <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-5-chain.html#Library__Michigan__Chap3Sec5__Q45.pg">Exercises 1-3 in section 2.5.6</url>.
       </p>
     </li>
 
@@ -279,7 +292,12 @@
   <caption>The graph of <m>f(x)</m> and <m>h(x)</m>.</caption> 
   <sidebyside widths="50% 40%">
     <image xml:id="chainPic1" width="50%">
-    <description>The graph of <m>f(x)</m>.</description>
+<description>
+A coordinate graph showing a smooth curve labeled f(x). 
+The curve decreases from the upper left, reaches a local minimum just right of x equals 0, then increases to a local maximum near x equals 3, and finally decreases again toward the lower right. 
+The graph crosses the x-axis near x equals 1 and again near x equals 4. 
+The x- and y-axes are labeled, with a grid and integer tick marks.
+</description>
     <latex-image>
  \begin{tikzpicture}[thick,scale=1]
 \draw[step=1cm,color=gray!50] (-1,-2) grid (5,2);
@@ -296,7 +314,13 @@
     </latex-image>
   </image>
   <image xml:id="chainPic2" width="50%">
-    <description>The graph of <m>h(x)</m>.</description>
+<description>
+A coordinate graph showing a smooth curve labeled h(x). 
+The curve rises from the lower left to a local maximum left of x equals minus 2, then decreases to a local minimum near x equals minus 1. 
+It rises slightly near x equals 0, dips again near x equals 1, and then rises to a higher local maximum near x equals 2. 
+After that, the curve decreases steeply toward the lower right. 
+The x- and y-axes are labeled, with a grid and integer tick marks.
+</description>
     <latex-image>
  \begin{tikzpicture}[thick,scale=0.85]
 \draw[step=1cm,color=gray!50] (-3,-2.5) grid (3,2);
@@ -358,13 +382,15 @@
 
     <li>
       <p>
-        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-5-chain.html#gHD">section 2.5.3</url>.
+        <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-2-5-chain.html#sec-2-5-chain-6">section 2.5.4</url>.
       </p>
     </li>
 
     <li>
       <p>
-        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-5-chain.html#xJB">Exercises 4-11 in section 2.5</url>.
+        <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-5-chain.html#Library__Michigan__Chap3Sec4__Q47.pg">Exercises 4-10 in section 2.5.6</url>.
       </p>
     </li>
 
@@ -469,7 +495,14 @@
               </p>
                <figure xml:id="figureChainGraphfg">
   <caption>The graph of <m>f(x)</m> and <m>g(x)</m>.</caption> 
-  <image xml:id="ChainGraphfgPic" width="60%"><description>The graphs of <m>f</m> and <m>g</m> are shown together.</description>
+  <image xml:id="ChainGraphfgPic" width="60%">
+<description>
+A coordinate graph showing two functions, f and g. 
+Function g is drawn as a solid blue piecewise linear graph: it rises steeply from the lower left to a peak near x equals 2, then decreases steadily to the right. 
+Function f is drawn as a red dashed curve: it decreases to a minimum near x equals 1, then increases and continues upward to the right. 
+The two graphs intersect at a point near x equals 4. 
+The x- and y-axes are labeled, with a grid and integer tick marks.
+</description>
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.75]
 \draw[step=1cm,color=gray!50] (-2,-2) grid (10,6);
@@ -522,7 +555,13 @@
   <caption>The graphs of <m>f(x)</m> and <m>g(x)</m> and some tangent lines.</caption> 
   <sidebyside widths="40% 40%">
     <image xml:id="chain2Pic1" width="50%">
-    <description>The graphs of <m>f(x)</m> together with a tangent line at <m>(2,3)</m> that also passes through <m>(4,4.8)</m>.</description>
+<description>
+A coordinate graph showing a smooth blue curve labeled f(x). 
+A filled point on the curve is labeled with coordinates (2, 3). 
+From that point, a straight black line extends upward to the right to a filled point labeled (4, 4.8). 
+The straight segment lies above the curve between the two points. 
+No axes or grid are shown.
+</description>
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.75]
 \draw[color=linecolor, line width=1.5pt,domain=1:7]   plot (\x,{0.1*(\x-2)*(\x-5)*(\x-5)+3}) node [above] at (5,3) {$f(x)$};
@@ -533,7 +572,13 @@
     </latex-image>
   </image>
   <image xml:id="chain2Pic2" width="50%">
-    <description>The graph of <m>g(x)</m> together with a tangent line at <m>(2,5)</m> that also goes through <m>(0,5)</m>.  Also shown is a tangent line at <m>(3,4)</m> that passes through <m>(3.5.3)</m>.</description>
+<description>
+A coordinate graph showing a smooth blue curve labeled g(x). 
+A horizontal segment at y equals 5 has filled endpoints labeled (0, 5) and (2, 5). 
+At x equals 2, the curve reaches a local maximum at the filled point (2, 5) and then decreases to the right. 
+Two filled points on the decreasing part of the curve are labeled (3, 4) and (3.5, 3). 
+A straight black line segment is tangent to the curve near the point (3.5, 3).
+</description>
     <latex-image>
  \begin{tikzpicture}[thick,scale=0.75] 
 \draw[color=linecolor, line width=1.5pt,domain=-1:2]   plot (\x,{5-\x*\x}) node [above] at (-1.5,4) {$g(x)$};
@@ -559,7 +604,15 @@
 
               <figure xml:id="figureChainsqrt">
   <caption>The graph of <m>f(x)</m> and a tangent line at <m>x=3</m>.</caption> 
-  <image xml:id="ChainsqrtPic" width="60%"><description>The graph of a function <m>f</m> and its tangent line at <m>x=3</m>.</description>
+  <image xml:id="ChainsqrtPic" width="60%">
+<description>
+A coordinate graph showing two functions. 
+A solid blue straight line decreases from left to right, starting above y equals 4 on the left and ending below y equals 1 near x equals 6. 
+A red dashed curve increases from the left to a peak near x equals 2, then decreases and approaches the blue line. 
+The two graphs meet at a filled point near x equals 3. 
+Past x equals 6, the red dashed curve turns upward slightly while the blue line continues downward. 
+The x- and y-axes are labeled, with a grid and integer tick marks.
+</description>
     <latex-image>
 \begin{tikzpicture}[thick,scale=0.9] [domain=-1:7]
 \draw[step=1cm,color=gray!50] (-1,-1) grid (7,6);

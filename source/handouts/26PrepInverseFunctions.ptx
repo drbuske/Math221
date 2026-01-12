@@ -72,13 +72,15 @@
       <ul>
       <li>
         <p>
-          <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-2-6-inverse.html">section 2.6</url> (up until Preview Activity 2.6.1).
+          <alert>Read</alert> motivating questions and the introduction to <url href="
+https://activecalculus.org/single2e/sec-2-6-inverse.html#sec-2-6-inverse">section 2.6</url> (up until Preview Activity 2.6.1).
         </p>
       </li>
 
       <li>
         <p>
-          [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#xAK">Preview Activity 2.6.1</url>.
+          [Submit] <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-6-inverse.html#PA-2-6">Preview Activity 2.6.1</url>.
         </p>
 
         <p>
@@ -94,7 +96,8 @@
 
       <li>
         <p>
-          <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#OSu">section 2.6.1</url>.
+          <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-2-6-inverse.html#sec-2-6-inverse-4">section 2.6.2</url>.
         </p>
       </li>
 
@@ -124,7 +127,14 @@
                 [Yes, this is the line <m>y=x</m>.]
               </p>
 
-              <image width="75%" source="LinesGeoGebra.jpg" />
+              <figure>
+              <image width="75%" source="LinesGeoGebra.jpg" > 
+<description>
+A horizontal toolbar showing construction and annotation tools. 
+From left to right: a mouse pointer icon, a filled point, a capital letter A, a line segment connecting two points, perpendicular axes with a point, a triangle formed by three connected points, a circle with a central point, a circle with two marked points, three connected points forming a polygonal shape, a slanted line with a point, a slider labeled a equals 2, and a four‑arrow move icon.
+</description>
+              </image>
+              </figure>
               </li>
 
               <li>
@@ -138,7 +148,15 @@
                   The reflection of the graph of <m>y=2^{x}</m> should appear.
                 </p>
 
-                <image width="75%" source="ReflectGeoGebra.jpg" />
+                <figure>
+                <image width="75%" source="ReflectGeoGebra.jpg" >        
+<description>
+A horizontal toolbar showing geometry and graphing tool icons. 
+From left to right: a mouse pointer icon; a filled blue point; a capital letter A; a line segment connecting two points; perpendicular coordinate axes with a point; a triangle formed by three connected points; a circle with a central point; a circle with two marked points; three points connected by short line segments; a line with a marked point; a slider labeled a equals 2; and a four‑arrow move icon. 
+Each icon appears inside a square button, with one of the point‑connection tools highlighted.
+</description>
+                </image>
+                </figure>
                 </li>
 
                 <li>
@@ -227,7 +245,8 @@
 
           <li>
             <p>
-              <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#uZD">section 2.6.2</url>.
+              <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-2-6-inverse.html#sec-2-6-inverse-5">section 2.6.3</url>.
             </p>
           </li>
 
@@ -251,7 +270,8 @@
 
           <li>
             <p>
-              <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#YSJ">Exercises 1-2 in section 2.6.6</url>.
+              <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-6-inverse.html#Library__Michigan__Chap3Sec6__Q51.pg">Exercises 1-2 in section 2.6.7</url>.
             </p>
           </li>
           </ul>
@@ -267,7 +287,8 @@
           <ul>
           <li>
             <p>
-              <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#bgM">section 2.6.3</url>.
+              <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-2-6-inverse.html#sec-2-6-inverse-6">section 2.6.4</url>.
             </p>
           </li>
 
@@ -285,7 +306,8 @@
 
           <li>
             <p>
-              <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#HnV">section 2.6.4</url>.
+              <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-2-6-inverse.html#sec-2-6-inverse-7">section 2.6.5</url>.
             </p>
           </li>
 
@@ -297,25 +319,29 @@
 
           <li>
             <p>
-              <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#OAI">Exercises 3-4 in section 2.6</url>.
+              <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-6-inverse.html#csafranski__2.6HW_prob3.pg">Exercises 3-4 in section 2.6.7</url>.
             </p>
           </li>
 
           <li>
             <p>
-              <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#nve">section 2.6.5 (summary)</url>.
+              <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-2-6-inverse.html#sec-2-6-inverse-8">section 2.6.6 (summary)</url>.
             </p>
           </li>
 
           <li>
             <p>
-              <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#aPa">Exercises 5-8 in section 2.6.6</url>.
+              <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-6-inverse.html#Library__Rochester__setDerivatives1__osu_dr_1_11.pg">Exercises 5-8 in section 2.6.7</url>.
             </p>
           </li>
 
           <li>
             <p>
-              <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-6-inverse.html#zrK">Exercises 9-12 from section 2.6.6</url>.
+              <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-6-inverse.html#ez-2-6-9">Exercises 9-10 from section 2.6.7</url>.
             </p>
           </li>
 
@@ -436,8 +462,14 @@
 
                     <figure xml:id="figureffprime26">
                       <caption>Graphs of <m>f(x)</m> and <m>f'(x)</m>.</caption>
-                    <image width="75%" source="fig_03_31.jpg"><description>The graph of <m>f(x)</m> increases from about 2 to about 20.  The graph of <m>f'(x)</m> increases from about 0.2 to about 0.7 at <m>x=30</m> and then decreases to 0 at <m>x=40</m>.</description>
-                    </image>
+                    <image width="75%" source="fig_03_31.jpg">          
+<description>
+Two coordinate graphs are shown side by side. 
+On the left, a graph labeled f(x) shows a smooth increasing curve. The curve rises steadily from low values near x equals 0 to near y equals 20 at x equals 40, with the slope increasing as x increases. 
+On the right, a graph labeled f prime of x shows a smooth curve that increases from near y equals 0.1 at x equals 0 to a maximum around x equals 30, then decreases sharply toward y equals 0 near x equals 40. 
+Both graphs have labeled x-axes, grids, and tick marks, with the left graph ranging up to y equals 20 and the right up to y equals 0.8.
+</description>
+</image>
                     </figure>
                     </li>
 
@@ -484,7 +516,14 @@
 
                         <figure xml:id="figureffprimeTWO26">
                       <caption>Graphs of <m>f(x)</m> and <m>f^{-1}(x)</m>.</caption>
-                    <image width="50%" source="fig_03_29.jpg"><description>The graph of <m>f(x)</m> is the reflection of the graph of <m>f^{-1}(x)</m> about the line <m>y=x</m>.</description>
+                    <image width="50%" source="fig_03_29.jpg">        
+<description>
+A coordinate graph showing two curves labeled f(x) and f inverse of x. 
+The curve f(x) increases steeply from left to right and has a filled point labeled P near y equals 8. 
+The curve f inverse of x increases more gradually to the right and has a filled point labeled Q near x equals 7 and y equals 3. 
+Both curves lie in the first quadrant. 
+The x- and y-axes are labeled, with tick marks shown.
+</description>
                     </image>
                     </figure>
                       
