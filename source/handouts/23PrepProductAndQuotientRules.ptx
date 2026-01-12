@@ -59,19 +59,22 @@
   <ul>
   <li>
     <p>
-      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html">section 2.3</url> (up until Preview Activity 2.3.1).
+      <alert>Read</alert> motivating questions and the introduction to <url href="
+https://activecalculus.org/single2e/sec-2-3-prod-quot.html#sec-2-3-prod-quot">section 2.3</url> (up until Preview Activity 2.3.1).
     </p>
   </li>
 
   <li>
     <p>
-      [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#zLw">Preview Activity 2.3.1</url> (via hand calculations).
+      [Submit] <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-3-prod-quot.html#PA-2-3">Preview Activity 2.3.1</url> (via hand calculations).
     </p>
   </li>
 
   <li>
     <p>
-      [Submit] <alert>Check</alert> your answers to <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#zLw">Preview Activity 2.3.1</url> using <url href="https://www.geogebra.org/classic?lang=en">GeoGebra</url>. Submit a screen capture of your work along with responses to the questions posed.
+      [Submit] <alert>Check</alert> your answers to <url href="
+https://activecalculus.org/single2e/sec-2-3-prod-quot.html#PA-2-3">Preview Activity 2.3.1</url> using <url href="https://www.geogebra.org/classic?lang=en">GeoGebra</url>. Submit a screen capture of your work along with responses to the questions posed.
     </p>
 
     <p>
@@ -121,7 +124,8 @@
 
         <li>
           <p>
-            Do parts (d) and (e) of <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#zLw">Preview Activity 2.3.1</url> using <em>GeoGebra</em> to do the calculations.
+            Do parts (d) and (e) of <url href="
+https://activecalculus.org/single2e/sec-2-3-prod-quot.html#PA-2-3">Preview Activity 2.3.1</url> using <em>GeoGebra</em> to do the calculations.
           </p>
         </li>
       </ul>
@@ -130,7 +134,8 @@
 
   <li>
     <p>
-      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#MVQ">section 2.3.1</url>.
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-2-3-prod-quot.html#sec-2-3-prod-quot-4">section 2.3.2</url>.
     </p>
   </li>
 
@@ -157,7 +162,8 @@
 
   <li>
     <p>
-      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#tcZ">section 2.3.2</url>.
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-2-3-prod-quot.html#sec-2-3-prod-quot-5">section 2.3.3</url>.
     </p>
   </li>
 
@@ -177,13 +183,15 @@
     
 
     <p>
-      [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#tnQ">Exercise 1 in section 2.3</url>. Submit a screenshot to demonstrate completion.
+      [Submit] <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-3-prod-quot.html#csafranski__2.3HW_prob1.pg">Exercise 1 in section 2.3.6</url>. Submit a screenshot to demonstrate completion.
     </p>
   </li>
 
   <li>
     <p>
-      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#ApM">Exercises 2-9 in section 2.3</url>.
+      <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-3-prod-quot.html#csafranski__2.3HW_prob2.pg">Exercises 2-10 in section 2.3.6</url>.
     </p>
   </li>
   </ul>
@@ -200,7 +208,8 @@
   <ul>
     <li>
       <p>
-        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#Zki">section 2.3.3</url>.
+        <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-2-3-prod-quot.html#sec-2-3-prod-quot-6">section 2.3.4</url>.
       </p>
     </li>
 
@@ -248,7 +257,11 @@
   <caption>The graph of <m>f(x)</m> and <m>g(x)</m> and two particular tangent lines.</caption> 
   <sidebyside widths="45% 45%">
     <image xml:id="productquotientPic1" width="50%">
-    <description>The graph of <m>f(x)</m> and a particular tangent line with various points marked.</description>
+<description>
+Two separate coordinate graphs are shown. 
+On the left, a smooth blue curve labeled f(x) increases from left to right. 
+Two filled points on the curve are labeled with coordinates (2, 3) and (4, 4.8). 
+</description>
     <latex-image>
  \begin{tikzpicture}[thick,scale=0.75]
 \draw[color=blue, line width=1pt,domain=1:7]   plot (\x,{0.1*(\x-2)*(\x-5)*(\x-5)+3}) node [above] at (5,3) {$f(x)$};
@@ -259,7 +272,9 @@
     </latex-image>
   </image>
   <image xml:id="productquotientPic2" width="50%">
-    <description>The graph of <m>g(x)</m> and a particular tangent line with various points marked.</description>
+    <description>On the right, a smooth blue curve labeled g(x) decreases from left to right. 
+A horizontal segment at y equals 5 includes two filled endpoints labeled (0, 5) and (2, 5). 
+Farther to the right, a filled point on the curve is labeled (3.5, 3), with a straight black line tangent to the curve at that point.</description>
     <latex-image>
  \begin{tikzpicture}[thick,scale=0.75] 
 \draw[color=blue, line width=1pt,domain=-1:2]   plot (\x,{5-\x*\x}) node [above] at (-1.5,4) {$g(x)$};
@@ -304,19 +319,22 @@
 
     <li>
       <p>
-        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#WAt">Exercises 10-11 in section 2.3</url>.
+        <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-3-prod-quot.html#ez-2-3-11">Exercises 11-12, 14 in section 2.3.6</url>.
       </p>
     </li>
 
     <li>
       <p>
-        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#Frr">section 2.3.4 (the summary)</url>.
+        <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-2-3-prod-quot.html#sec-2-3-prod-quot-7">section 2.3.5 (the summary)</url>.
       </p>
     </li>
 
     <li>
       <p>
-        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-3-prod-quot.html#iOL">Exercises 12-14 in section 2.3</url>.
+        <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-3-prod-quot.html#ez-2-3-13">Exercises 13,15 in section 2.3.6</url>.
       </p>
     </li>
 
