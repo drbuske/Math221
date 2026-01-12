@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 3.5 - Global Optimization</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    Our main focus in this section will be on understanding how calculus ideas can be used to answer the question of “where is a given function greatest or least?” We will begin with a more theoretical discussion of optimization, learning about the Extreme Value Theorem, and from there we’ll proceed to more applied settings where we see how calculus provides rigorous answers to interesting questions.
+  </p>
+
+</section>
+
+<section>
+  <title>Basic learning objectives</title>
+
+    <p>
+      These are the tasks you should be able to perform with reasonable
+      fluency when you arrive at our next class meeting.
+      Important new
+      vocabulary words are indicated <em>in italics</em>.
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          Compare and contrast the definition of global maximum/minimum and relative maximum/minimum.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          State the Extreme Value Theorem and enumerate the multi-stage process used for finding the global/absolute extreme values of a function on a closed, bounded interval.
+        </p>
+      </li>
+    </ul>
+
+  </section>
+
+<section xml:id="sec-Toprepareforclass35">
+  <title>To prepare for class</title>
+  
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Read</alert> motivating questions and the introduction to <url href="
+https://activecalculus.org/single2e/sec-3-5-optimization.html#sec-3-5-optimization">section 3.5</url> (up until Preview Activity 3.5.1).
+    </p>
+  </li>
+
+  <li>
+    
+
+    <p>
+       <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-5-optimization.html#PA-3-5">Preview Activity 3.5.1</url>.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            After completion, look back by using <url href="https://www.geogebra.org/classic?lang=en">GeoGebra</url> to graph the function in question.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            (Optional) <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=8WPHs8tsWJc">solution to Preview Activity 3.5.1 (a)-(c) (3:23)</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            (Optional) <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=iyk_zilc_eM">solution to Preview Activity 3.5.1 (d)-(f) (3:23)</url>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    
+    <p>
+      [Submit] <alert>Explore</alert> applet <url href="https://www.geogebra.org/m/DKyrmJUC">Absolute Max and Min</url>. Then, submit three screen captures - (1) showing the function on some closed interval <m>[a,b]</m> for which the absolute maximum and absolute minimum are located in the open interval <m>(a,b)</m>, (2) showing the function on some closed interval <m>[a,b]</m> for which the absolute maximum is located at an endpoint and the absolute minimum is located in the open interval <m>(a,b)</m>, and (3) showing the function on some closed interval <m>[a,b]</m> for which the absolute maximum and absolute minimum are both located at endpoints.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=ldJfxeGHv3Y&#x26;feature=emb_title">Quick Review - Global Optimization (2:30)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=YE57SJzL8r8&#x26;feature=emb_title">Finding Absolute Extreme Values (8:07)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-5-optimization.html#act-3-5-1">Activity 3.5.2</url>.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            (Optional) <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=O4b_6f0TVjQf">solution to Activity 3.5.2 (8:36)</url>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> these problems.
+    </p>
+
+    <p>
+      <ol>
+      <li>
+        <p>
+          Identify each <m>x</m>-value at which any absolute extreme value  of <m>g</m> occurs.
+          Explain how your answer is consistent with the Extreme Value Theorem.
+        </p>
+
+        <figure xml:id="">
+          <caption>The graph of <m>g(x)</m>.</caption>
+        <image source="EVTExample1.jpg" width="40%">      
+<description>
+A graph of y equals g of x on the x–y plane, with x-values labeled 0, a, c, and b. An open circle appears at x = a on a downward-curving arc. The curve dips to a minimum near x = c and then rises to a filled point at x = b. A separate filled point is shown above the curve between 0 and a, indicating a function value not on the main curve.
+</description>
+        </image>
+      </figure>
+        
+        </li>
+
+        <li>
+          
+
+          <p>
+            [Submit]
+            Find the absolute maximum and absolute minimum of <m>\displaystyle f(x) = x^{2} - 3x^{\frac{2}{3}}</m> over interval <m>[0,2]</m> and state where those values occur.
+          </p>
+        </li>
+        </ol>
+      </p>
+    </li>
+
+    <li>
+
+      <p>
+        Prompt <alert>Copilot</alert> “Find the absolute maximum and absolute minimum of f(x) = x<m>\wedge</m>2 - 3x<m>\wedge</m>(2/3) over interval [0,2] and state where those values occur.” Follow up with “Explain why you came to the conclusion you did.” Does the AI get this correct?
+      </p>
+    </li>
+
+    </ul> 
+
+</section>
+
+<section xml:id="sec-Afterclass35">
+  <title>After class</title>
+
+    <p>
+      Solidifying the concepts discussed in class through practice is necessary to build your skills.
+    </p>
+    <ul>
+    <li>
+      <p>
+        <alert>Explore</alert> the applet <url href="https://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_app_opt_wire.html">Optimization - Bending a Wire</url> which gives you a sense of the types of applied problems to be solved in this and the next section.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Explore</alert> yet another applet <url href="https://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_app_opt_pens.html">Optimization - Three Pens</url> that again gives you a sense of the goal of this and the next section.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-3-5-optimization.html#sec-3-5-optimization-5">section 3.5.3</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=kz9JFNlQVVI&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=68">Optimizing Population (7:08)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Explore</alert> this applet <url href="https://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_app_opt_geom1.html">Optimization - Function and Rectangle 1</url> and determine an answer to the question posed by using calculus. The following may help guide you.
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              What is the function <m>A(x)</m> you are attempting to maximize?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              On what interval are you restricting values of <m>x</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What is <m>A'(x)</m>? Does <m>A(x)</m> have any critical points? If so, what are they?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              List the critical points of <m>A(x)</m> and endpoints of the interval on which you are seeking to maximize <m>A(x)</m>.
+              Which of these values will produce the largest output? How do you know?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Look back at your solution by plotting <m>A(x)</m> using <url href="https://www.geogebra.org/classic?lang=en">GeoGebra</url>.
+              Does your answer seem reasonable?
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Explore</alert> this second (related) applet <url href="https://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_app_opt_geom2.html">Optimization - Function and Rectangle 2</url> and determine an answer to the question posed by using calculus. The following may help guide you.
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              What is the function <m>A(x)</m> you are attempting to maximize?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              On what interval are you restricting values of <m>x</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What is <m>A'(x)</m>? Does <m>A(x)</m> have any critical points? If so, what are they?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              List the critical points of <m>A(x)</m> and endpoints of the interval on which you are seeking to maximize <m>A(x)</m>.
+              Which of these values will produce the largest output? How do you know?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Look back at your solution by plotting <m>A(x)</m> using <url href="https://www.geogebra.org/classic?lang=en">GeoGebra</url>.
+              Does your answer seem reasonable?
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-3-5-optimization.html#Library__Michigan__Chap4Sec3__Q07.pg">exercises 1-6 in section 3.5.5</url>.
+      </p>
+    </li>
+
+    <li>
+
+      <p>
+        Prompt <alert>Copilot</alert> “Find the absolute maximum and absolute minimum of p(x) = x<m>\wedge</m>3 - a<m>\wedge</m>2*x on the interval [0,a] for a>0.” Compare the answer you receive with that of Exercise 8a in section 3.5.5 in the text.
+        Is the AI correct?
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-3-5-optimization.html#sec-3-5-optimization-6">section 3.5.4 - summary</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+      </p>
+    </li>
+    </ul>
+</section>
+
+
+
+  <section xml:id="sec-Advancedlearningobjectives35">
+    <title>Advanced learning objectives</title>
+
+    <p>
+      In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          Apply the Extreme Value Theorem.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Given a continuous function on a closed interval, find the global/absolute extreme values of the function.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Apply the process of global optimization to an applied setting.
+        </p>
+      </li>
+    </ul>
+
+  </section>
+
+  <section xml:id="sec-Additionalsuggestions35">
+    <title>Additional suggestions</title>
+
+    <ul>
+      <li>
+        <p>
+          <alert>Explore</alert> this version of a figure giving <url href="https://www.geogebra.org/m/sxcq3bzx">The Extreme Value Theorem Visualization</url>. Nothing to move here - just a picture and a statement you want to internalize.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Explore</alert> applet <url href="https://www.geogebra.org/m/K7LQvR3i">Extrema on a Closed Interval</url>. This is very much like a previous applet, but perhaps easier to use.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> this video <url href="https://www.youtube.com/watch?v=2o_bnwq1mfw&#x26;list=PLJtEcQL1-E8V9Fs1E1-KY9nyL9y2JHh8-&#x26;index=20">Extrema on a Closed Interval (7:48)</url> if you are interested in seeing another example of the maximization process on a closed, bounded interval.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> this somewhat more theoretical video <url href="https://www.youtube.com/watch?v=bimGk_OdfPg&#x26;feature=emb_title">Global Optimization on a Closed Interval (4:27)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> this more theoretical example video <url href="https://www.youtube.com/watch?v=CXJzW66CuGk&#x26;feature=emb_title">Global Optimization Example - Maximizing Area (4:27)</url>.
+        </p>
+      </li>
+    </ul>
+
+    
+  </section>
+
+  <section xml:id="sec-Answers35">
+    <title>Answers</title>
+
+    <ol>
+      <li>
+        <p>
+          The absolute minimum occurs at <m>x=c</m>.
+          The absolute maximum occurs at <m>x=a</m>.
+          The Extreme Value Theorem does not apply to this case since the function is not continuous on the interval <m>[a,b]</m>.
+          So the existence (or not) of absolute extrema is not guaranteed.
+          However, that doesn’t mean, of course, that it cannot happen.
+          In this case, it does.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          First, we evaluate <m>f</m> at the endpoints <m>x=0</m> and <m>x=2</m>.
+          Note that <m>f(0)=0</m> and <m>f(2) = 4-3(2)^{2/3}\approx -0.762</m>.
+          Then, we compute <m>f'(x)</m>.
+          <me>
+            f'(x) = 2x-\frac{2}{x^{1/3}}= \frac{2x^{4/3}-2}{x^{1/3}}
+          </me>
+          for <m>x \neq 0</m>.
+          We see that <m>f'(x)=0</m> when <m>2x^{4/3}-2=0</m> which implies that <m>x=\pm 1</m>.
+          The derivative does not exist when <m>x=0</m>.
+          So the critical points of <m>f</m> are at <m>x=-1,0,1</m>.
+          Since <m>x=0</m> is an endpoint of the interval <m>[0,2]</m>, we have already evaluated it.
+          Since <m>x=-1</m> is not in the interval of interest, we need only evaluate <m>f(1)</m>.
+          We find <m>f(1)=-2</m> .
+          We then compare the values found: <m>f(0)=0, f(1) = -2</m>, and <m>f(2)\approx -0.762</m>.
+          By the Extreme Value Theorem, we know the global minimum is -2 and occurs at <m>x=1</m>.
+          We also know the absolute maximum is 0 and occurs at <m>x=0</m>.
+          A sketch of the graph on <m>[0,2]</m> appears below.
+        </p>
+        <figure xml:id="figureGraph35">
+  <image xml:id="Graph35Pic" width="50%">
+<description>
+A graph of a function y versus x showing a smooth curve. The graph starts at a filled point at the origin (0, 0), decreases to a minimum at the labeled point (1, −2), and then increases to a filled point at (2, 4 minus 3 times the square root of 2). The curve is U-shaped and lies below the x-axis between x = 0 and x = 2.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1] [domain=-4:4]
+\draw[step=1cm,color=gray!50] (-1,-3) grid (3,2);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (3,0) node [below] at (2.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-1,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,2) node [right] at (0,1.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-3);
+
+\draw[color=linecolor, line width=1.5pt,domain=0:2]   plot (\x,{\x*\x-3*(\x)^(2/3)});
+%%\foreach \z/\ztext in {  -2/-2, -1/-1, 0/0, 1/1, 2/2}
+\fill[linecolor] (0,0) circle (3pt) node [above] at (0,0) {$(0,0)$}; 
+\fill[linecolor] (1,-2) circle (3pt) node [below] at (1,-2) {$(1,-2)$}; 
+\fill[linecolor] (2,-0.762) circle (3pt) node [right] at (2,-0.75) {$(2,4-3\sqrt[3]{2})$}; 
+\foreach \x/\xtext in {-1/-1, 1/1, 2/2, 3/3}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-2/-2, -1/-1, 1/1, 2/2}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+      </li>
+    </ol>
+
+      </section>
+
+    </handout>
