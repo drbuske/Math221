@@ -83,7 +83,8 @@
   <ul>
   <li>
     <p>
-      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-2-7-implicit.html">section 2.7</url> (up until Preview Activity 2.7.1).
+      <alert>Read</alert> motivating questions and the introduction to <url href="
+https://activecalculus.org/single2e/sec-2-7-implicit.html#sec-2-7-implicit">section 2.7</url> (up until Preview Activity 2.7.1).
     </p>
   </li>
 
@@ -97,7 +98,8 @@
     
 
     <p>
-      [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-7-implicit.html#zpX">Preview Activity 2.7.1</url>.
+      [Submit] <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-7-implicit.html#PA-2-7">Preview Activity 2.7.1</url>.
     </p>
 
     <p>
@@ -146,7 +148,8 @@
 
   <li>
     <p>
-      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-7-implicit.html#QWc">section 2.7.1</url>. This is a bit longer than most sections you have read to this point.
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-2-7-implicit.html#sec-2-7-implicit-4">section 2.7.2</url>. This is a bit longer than most sections you have read to this point.
     </p>
   </li>
 
@@ -209,13 +212,15 @@
   <ul>
     <li>
       <p>
-        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-2-7-implicit.html#xdl">section 2.7.2 (summary)</url>.
+        <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-2-7-implicit.html#sec-2-7-implicit-5">section 2.7.3 (summary)</url>.
       </p>
     </li>
 
     <li>
       <p>
-        <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-7-implicit.html#amx">Exercises 1-3 in section 2.7.3</url>.
+        <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-7-implicit.html#Library__Michigan__Chap3Sec7__Q07.pg">Exercises 1-3 in section 2.7.4</url>.
       </p>
 
       <p />
@@ -236,7 +241,13 @@
 
                      <figure xml:id="figureImplicitGraph1">
                       <caption>Graph of the curve <m>x^3 + x^2y+2y^2=2</m> with a tangent line at <m>(1,0.5)</m>.</caption>
-                    <image width="50%" source="ImplicitGraph1.jpg"><description>Graph of the curve <m>x^3 + x^2y+2y^2=2</m> with a tangent line at <m>(1,0.5)</m>.</description>
+                    <image width="50%" source="ImplicitGraph1.jpg">         
+<description>
+A coordinate graph showing two curves. 
+One curve is drawn in black and forms a closed, rounded shape extending approximately from y equals minus 1 to y equals 1, with its rightmost point near x equals 1.2. 
+A straight blue line slopes downward from left to right, starting near y equals 1.5 at x equals 0 and crossing the black curve near x equals 1 and y equals 0.5. 
+The x- and y-axes are shown with dotted grid lines and tick marks at regular intervals.
+</description>
                     </image>
                     </figure>
               </li>
@@ -252,13 +263,15 @@
 
         <li>
           <p>
-            <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-7-implicit.html#VYd">Exercises 4-5 in section 2.7.3</url>.
+            <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-7-implicit.html#Library__UCSB__Stewart5_3_6__Stewart5_3_6_15.pg">Exercises 4-5 in section 2.7.4</url>.
           </p>
         </li>
 
         <li>
           <p>
-            <alert>Do</alert> <url href="https://activecalculus.org/single/sec-2-7-implicit.html#imv">Exercises 6-8 in section 2.7.3</url>. Use <url href="https://www.geogebra.org/classic">GeoGebra</url> to check the reasonableness of your solutions to exercises 6 and 7.
+            <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-2-7-implicit.html#Library__Michigan__Chap3Sec7__Q15.pg">Exercises 6-14 in section 2.7.4</url>. Use <url href="https://www.geogebra.org/classic">GeoGebra</url> to check the reasonableness of your solutions to exercises 6 and 7.
           </p>
         </li>
 
