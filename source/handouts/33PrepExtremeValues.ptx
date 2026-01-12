@@ -7,9 +7,8 @@
     <title>Overview</title>
 
   <p>
-    In our next meeting, we start Chapter 3: Using Derivatives.
     The theme of this chapter centers on what we can learn from key information regarding the derivative of a function.
-    In the first section, Section 3.1, we focus on how the derivative detects extreme values of functions.
+    In Section 3.3, we focus on how the derivative detects extreme values of functions.
     That is, we investigate how information from the derivative function can tell us whether the original function has a relative maximum or relative minimum at a given point.
     While many of the ideas in this section will be natural and intuitive (and ones we’ve discussed briefly to some extent earlier in the course), there is considerable new language and reasoning to learn and understand.
   </p>
