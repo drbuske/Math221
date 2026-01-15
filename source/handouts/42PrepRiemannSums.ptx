@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 4.2 - Riemann Sums</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    We have begun to see several reasons why we are interested in the area that lies between a given curve <m>y=f(x)</m> and the <m>x</m>-axis.
+    The notion of a Riemann sum provides a formal symbolic way to consider approximations to this area.
+    The notation that corresponds with Riemann sums is complicated: indeed, we will often consider expressions such as <m>\displaystyle L_{n}=\sum_{i=0}^{n-1}f(x_{i})\cdot \Delta x</m>, and it is essential that you work to make sense of this notation and what it represents.
+    As we progress from estimating certain areas to finding those areas exactly, we will soon start to use limits along with Riemann sums.
+    There, too, it is essential that you recognize what a Riemann sum represents.
+    At the core of all of this, don’t miss the fundamentally simple idea at the foundation: <m>f(x_{i})\cdot \Delta x</m> represents the area of a certain rectangle.
+  </p>
+
+</section>
+
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <dl>
+  <li>
+    <p>
+      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-4-2-Riemann.html">section 4.2</url> (up until Preview Activity 4.2.1).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#lfo">Preview Activity 4.2.1</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=oUZdflwDse0&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=79">Quick Review - Riemann Sums (3:28)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#jCJ">section 4.2.1</url> up to Activity 4.2.2.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=Eq-DCz52Ozs&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=80">Sigma Notation (7:14)</url>.
+    </p>
+  </li>
+
+  <li>
+    <title> <image source="CopilotLogo.jpg" />
+
+    </title>
+
+    <p>
+      Prompt <alert>Copilot</alert> “How is sigma notation related to for loops that are written in computer code?” Follow up the response with prompting “Is there a more appropriate analogy for sigma notation than for loops that I mentioned above?”
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> these problems.
+    </p>
+
+    <p>
+      <dl>
+      <li>
+        <title> <em>Submit</em> 1.</title>
+
+        <p>
+          <ol>
+            <li>
+              <p>
+                Express <m>\displaystyle 3(4)^{2} + 3(5)^{2} + 3(6)^{2} + 3(7)^{2}</m> using sigma notation.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If <m>f(x) = -\sqrt{x}</m>, and <m>\Delta x=0.1</m>, compute the value of <m>\displaystyle \sum_{j=3}^{5} f(j^{2}) \cdot \Delta x</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\displaystyle p(x) = \sum_{k=1}^{4} (k^{2}x^{k})</m> is a polynomial. How is <m>p(x)</m> more commonly written? What is the degree of <m>p</m>?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+
+      <li>
+        <title> <em>Submit</em> 2.</title>
+
+        <p>
+          In this problem, we seek to estimate the area under the curve <m>y=1-x^{2}</m>, above the <m>x</m>-axis, and between <m>x=0</m> and <m>x=1</m>.
+        </p>
+
+        <p>
+          <ol>
+            <li>
+              <p>
+                Determine an upper estimate for the area using  these four rectangles (a left sum <m>L_{4}</m>).
+              </p>
+
+              [linecolor!20] (0,0) – (0,4) – (1,4) – (1,0) – (0,0)[black] (0,0) – (0,4) – (1,4) – (1,0) – (0,0) [linecolor!20] (1,0) – (1,3.75) – (2,3.75) – (2,0) – (1,0)[black] (1,0) – (1,3.75) – (2,3.75) – (2,0) – (1,0) [linecolor!20] (2,0) – (2,3) – (3,3) – (3,0) – (2,0)[black] (2,0) – (2,3) – (3,3) – (3,0) – (2,0) [linecolor!20] (3,0) – (3,1.75) – (4,1.75) – (4,0) – (3,0)[black] (3,0) – (3,1.75) – (4,1.75) – (4,0) – (3,0) [black!80,line width=0.3pt,-latex] (0,0) – (5,0) node [below] at (4.75,0) {$x$} [black!80,line width=0.3pt,-latex] (0,0) – (-0.5,0) [black!80,line width=0.3pt,-latex] (0,0) – (0,5) node [right] at (0,4.75) {$y$} [black!80,line width=0.3pt,-latex] (0,0) – (0,-0.5)[color=linecolor, line width=1pt,domain=0:4] plot (\x,{4*(1-1/16*\x*\x)}) node [right] at (3,3) {$y=1-x^{2}$} / in  4/1[shift={(\x,0)}] (0pt,3pt) – (0pt,-3pt) node[below] {$\xtext$} / in 4/1[shift={(0,\y)}] (-2pt,0pt) – (2pt,0pt) node[left] {$\ytext$}<p />
+            </li>
+
+            <li>
+              <p>
+                Determine a lower estimate for the area using these  four rectangles.
+                Notice the last rectangle has zero height!
+              </p>
+
+              <p>
+                This is a right sum, <m>R_{4}</m>.
+              </p>
+              [linecolor!20] (0,0) – (0,3.75) – (1,3.75) – (1,0) – (0,0)[black] (0,0) – (0,3.75) – (1,3.75) – (1,0) – (0,0) [linecolor!20] (1,0) – (1,3) – (2,3) – (2,0) – (1,0)[black] (1,0) – (1,3) – (2,3) – (2,0) – (1,0) [linecolor!20] (2,0) – (2,1.75) – (3,1.75) – (3,0) – (2,0)[black] (2,0) – (2,1.75) – (3,1.75) – (3,0) – (2,0) [linecolor!20] (3,0) – (3,0) – (4,0) – (4,0) – (3,0)[black] (3,0) – (3,0) – (4,0) – (4,0) – (3,0) [black!80,line width=0.3pt,-latex] (0,0) – (5,0) node [below] at (4.75,0) {$x$} [black!80,line width=0.3pt,-latex] (0,0) – (-0.5,0) [black!80,line width=0.3pt,-latex] (0,0) – (0,5) node [right] at (0,4.75) {$y$} [black!80,line width=0.3pt,-latex] (0,0) – (0,-0.5)[color=linecolor, line width=1pt,domain=0:4] plot (\x,{4*(1-1/16*\x*\x)}) node [right] at (3,3) {$y=1-x^{2}$} / in  4/1[shift={(\x,0)}] (0pt,3pt) – (0pt,-3pt) node[below] {$\xtext$} / in 4/1[shift={(0,\y)}] (-2pt,0pt) – (2pt,0pt) node[left] {$\ytext$}
+            </li>
+
+            <li>
+              <p>
+                If <m>f(x) = 1-x^{2}</m>, which of these gives an upper estimate for the area under the curve <m>y=f(x)</m>, above the <m>x</m>-axis, between <m>x=0</m> and <m>x=1</m>? which gives a lower estimate? what does the third quantity represent? Sketch it on the graph provided.
+              </p>
+
+              <p>
+                <dl>
+                <li>
+                  <title> <m>\circ</m> </title>
+
+                  <p>
+                    <m>\displaystyle \frac{1}{4}f(0) + \frac{1}{4}f\left(\frac{1}{4}\right) + \frac{1}{4}f\left(\frac{2}{4}\right) + \frac{1}{4}f\left(\frac{3}{4}\right) = \sum_{k=1}^{4}f\left(\frac{k-1}{4}\right) \cdot \frac{1}{4}</m>
+                  </p>
+                </li>
+
+                <li>
+                  <title> <m>\circ</m> </title>
+
+                  <p>
+                    <m>\displaystyle \frac{1}{4}f\left(\frac{1}{8}\right) + \frac{1}{4}f\left(\frac{3}{8}\right) + \frac{1}{4}f\left(\frac{5}{8}\right) + \frac{1}{4}f\left(\frac{7}{8}\right) = \sum_{k=1}^{4}f\left(\frac{(k-1)+k}{8}\right) \cdot \frac{1}{4}</m>
+                  </p>
+                </li>
+
+                <li>
+                  <title> <m>\circ</m> </title>
+
+                  <p>
+                    <m>\displaystyle \frac{1}{4}f\left(\frac{1}{4}\right) + \frac{1}{4}f\left(\frac{2}{4}\right) + \frac{1}{4}f\left(\frac{3}{4}\right) + \frac{1}{4}f\left(\frac{4}{4}\right) = \sum_{k=1}^{4}f\left(\frac{k}{4}\right) \cdot \frac{1}{4}</m>
+                  </p>
+                </li>
+                </dl>
+              </p>
+              [domain=-3:3] [black!80,line width=0.3pt,-latex] (0,0) – (5,0) node [below] at (4.75,0) {$x$} [black!80,line width=0.3pt,-latex] (0,0) – (-0.5,0) [black!80,line width=0.3pt,-latex] (0,0) – (0,5) node [right] at (0,4.75) {$y$} [black!80,line width=0.3pt,-latex] (0,0) – (0,-0.5)[color=linecolor, line width=1pt,domain=0:4] plot (\x,{4*(1-1/16*\x*\x)}) node [right] at (3,3) {$y=1-x^{2}$} / in  4/1[shift={(\x,0)}] (0pt,3pt) – (0pt,-3pt) node[below] {$\xtext$} / in 4/1[shift={(0,\y)}] (-2pt,0pt) – (2pt,0pt) node[left] {$\ytext$}
+            </li>
+
+            <li>
+              <p>
+                Many applets and packaged software can compute areas of these approximating rectangles quickly.
+                Use the applet <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/integration_riemann_sum.html">The Riemann Sum</url> to compute the value of a left, right, and middle sum using <m>n=4</m> rectangles.
+                [The middle sum is shown below.]
+              </p>
+
+              <image source="RiemannSumAppletOutput1.jpg" />
+              </li>
+
+              <li>
+                <p>
+                  Compute each of these sums using <m>n=50</m> rectangles.
+                  Form a conjecture about the exact area based on this output.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        </dl>
+      </p>
+    </li>
+
+    <li>
+      <title> <image source="CopilotLogo.jpg" />
+
+      </title>
+
+      <p>
+        Prompt <alert>Copilot</alert> “Please produce and execute Python code that illustrates a Riemann sum of the function f(x)=x<m>\wedge</m>2+1 from x=1 to x=3 using n=5 rectangles.” Does the AI produce a left or a right Riemann sum? Does the AI give you a correct value for the sum being illustrated?
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#PJS">section 4.2.2</url> on Riemann Sums.
+      </p>
+    </li>
+
+    <li>
+      <title> <em>Submit</em> </title>
+
+      <p>
+        <alert>Read</alert> section 4.2.2 again. In <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#sec-4-2-Riemann-5-15">this paragraph regarding midpoint Riemann sums</url>, the authors define
+        <me>
+          \overline{x}_{i+1}= \frac{x_{i} + x_{i+1}}{2}.
+        </me>
+        A diagram illustrating the resulting Riemann sum is shown <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#sec-4-2-Riemann-5-11">on the right in this figure</url>.
+        Draw a similar diagram for the Riemann sum resulting from
+        <me>
+          \widehat{x}_{i+1}= \frac{x_{i}}{3}+ \frac{2x_{i+1}}{3}.
+        </me>
+        <em>Hint: You may wish to try a simple example in which <m>x_{0}=0, x_{1}=3, x_{2}=6, x_{3}=9</m>, and <m>x_{4}=12</m>.</em>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=yVZX0YRRTvA&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=81">Computing a Left-Hand Riemann Sum (8:54)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Explore</alert> the applet <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/integration_riemann_sum.html">The Riemann Sum</url> by replicating the value of <m>L_{3}</m> found in the previous video (18.8787).
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=FvhD3BblfvI&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=82">Another Riemann Sum Example (10:33)</url>.
+      </p>
+    </li>
+    </dl>
+
+    <p>
+    </p>
+
+    <p>
+      Solidifying the concepts discussed in class through practice is necessary to build your skills.
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#KNA">Activity 4.2.3</url>. Then, <alert>watch</alert> a <url href="https://www.youtube.com/watch?v=jJ7r2FtLaJo">video solution to Activity 4.2.3 (7:40)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Read</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#vRb">section 4.2.3</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=zl02nRV4Ui4&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=83">Calculating Right and Midpoint Riemann Sums (9:32)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#ZAZ">Activity 4.2.4</url>. Then, <alert>watch</alert> a <url href="https://www.youtube.com/watch?v=iIjiyvV0Ma4">video solution to Activity 4.2.4 (6:27)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#aBs">exercise 1 in section 4.2</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#SWT">exercises 4-5 in section 4.2</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Read</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#bYk">section 4.2.4 - summary</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#GIB">exercises 2-3 in section 4.2</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#fll">exercises 6-7 in section 4.2</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+        </p>
+      </li>
+    </ul>
+
+    <p>
+    </p>
+
+    <p>
+    </p>
+
+    <p>
+      These are the tasks you should be able to perform with reasonable
+    </p>
+
+    <p>
+      fluency when you arrive at our next class meeting.
+      Important new
+    </p>
+
+    <p>
+      vocabulary words are indicated <em>in italics</em>.
+      Check each box when you feel confident you have a firm grasp on that objective.
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          Use basic notation for a <em>Riemann sum</em>.
+          That is, when we write <m>\sum_{i=1}^{n}f(x_{i}) \Delta x</m>, to know what this represents geometrically and what this quantity aspires to measure.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Compare and contrast <em>left, right, and middle Riemann sums</em> (<m>L_{n}, R_{n}, M_{n}</m>).
+        </p>
+      </li>
+    </ul>
+
+    <p>
+    </p>
+
+    <p>
+      In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          Compute by hand, for small values of <m>n</m>, <m>L_{n}, R_{n}</m>, or <m>M_{n}</m>, and draw an accurate corresponding picture.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Explain how Riemann sums detect net-signed area between a given function and the <m>x</m>-axis on an interval of choice.
+        </p>
+      </li>
+    </ul>
+
+    <p>
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          <alert>Watch</alert> video <url href="https://youtu.be/5jwXThH6fg4">Summation Notation (4:26)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> <url href="https://www.youtube.com/watch?v=6GUO0LcX75Q">video solution to Activity 4.2.2 (6:00)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Do</alert> these problems.
+        </p>
+
+        <p>
+          <ol>
+            <li>
+              <p>
+                Consider <m>f(x) = \ln 4x</m> on <m>[1,3]</m>.
+                We calculate left and right Riemann sums for <m>n=5</m>.
+              </p>
+
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Calculate <m>\Delta x</m>, the width of each subinterval.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Does the diagram illustrate a left or a right Riemann  sum?
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Calculate the value of the left and right Riemann  sum with a calculator.
+                      Verify your result using both this  <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/integration_riemann_sum.html">Riemann Sum applet</url> and a spreadsheet such as <em>Excel</em>.
+                    </p>
+                    [linecolor!10] (1,0) – (1,1.723) – (1.4,1.723) – (1.4,0) – (1,0)[black] (1,0) – (1,1.723) – (1.4,1.723) – (1.4,0) – (1,0) [linecolor!10] (1.4,0) – (1.4,1.974) – (1.8,1.974) – (1.8,0) – (1.4,0)[black] (1.4,0) – (1.4,1.974) – (1.8,1.974) – (1.8,0) – (1.4,0) [linecolor!10] (1.8,0) – (1.8,2.175) – (2.2,2.175) – (2.2,0) – (1.8,0)[black] (1.8,0) – (1.8,2.175) – (2.2,2.175) – (2.2,0) – (1.8,0) [linecolor!10] (2.2,0) – (2.2,2.342) – (2.6,2.324) – (2.6,0) – (2.2,0)[black] (2.2,0) – (2.2,2.342) – (2.6,2.324) – (2.6,0) – (2.2,0) [linecolor!10] (2.6,0) – (2.6,2.485) – (3,2.485) – (3,0) – (2.6,0)[black] (2.6,0) – (2.6,2.485) – (3,2.485) – (3,0) – (2.6,0) [black!80,line width=0.3pt,-latex] (0,0) – (4,0) node [below] at (3.75,0) {$x$} [black!80,line width=0.3pt,-latex] (0,0) – (-0.5,0) [black!80,line width=0.3pt,-latex] (0,0) – (0,4) node [right] at (0,3.75) {$y$} [black!80,line width=0.3pt,-latex] (0,0) – (0,-0.5)[color=linecolor, line width=1pt,domain=0.5:3.5] plot (\x,{ln (4*\x)}) node [right] at (3,3) {$y=\ln 4x$} / in  1/1, 2/2, 3/3[shift={(\x,0)}] (0pt,3pt) – (0pt,-3pt) node[below] {$\xtext$} / in 1/1, 2/2, 3/3[shift={(0,\y)}] (-2pt,0pt) – (2pt,0pt) node[left] {$\ytext$}
+                  </li>
+
+                  <li>
+                    <p>
+                      Based on your answer above, give approximate lower and upper bounds on the area under <m>y=\ln 4x</m>, above the <m>x</m>-axis, and between <m>x=1</m> and <m>x=3</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The following figure represents a Riemann sum for <m>f</m> on <m>[1,7]</m>.
+              </p>
+              [linecolor!10] (1,0) – (1,1.581) – (3,1.581) – (3,0) – (1,0)[black] (1,0) – (1,1.581) – (3,1.581) – (3,0) – (1,0) [linecolor!10] (3,0) – (3,2.739) – (5,2.739) – (5,0) – (3,0)[black] (3,0) – (3,2.739) – (5,2.739) – (5,0) – (3,0) [linecolor!10] (5,0) – (5,3.536) – (7,3.536) – (7,0) – (5,0)[black] (5,0) – (5,3.536) – (7,3.536) – (7,0) – (5,0) [black!80,line width=0.3pt,-latex] (0,0) – (8,0) node [below] at (7.75,0) {$x$} [black!80,line width=0.3pt,-latex] (0,0) – (-0.5,0) [black!80,line width=0.3pt,-latex] (0,0) – (0,5) node [right] at (0,4.75) {$y$} [black!80,line width=0.3pt,-latex] (0,0) – (0,-0.5)[color=linecolor, line width=1pt,domain=1:7] plot (\x,{0.5*3.168*sqrt(\x)}) node [right] at (3,3.5) {$f$} / in  1/1, 2/2, 3/3, 4/4, 5/5, 6/6, 7/7[shift={(\x,0)}] (0pt,3pt) – (0pt,-3pt) node[below] {$\xtext$} / in 1/2, 2/4, 3/6, 4/8[shift={(0,\y)}] (-2pt,0pt) – (2pt,0pt) node[left] {$\ytext$}
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Identify the number of subintervals <m>n</m>.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      What is the length <m>\Delta x</m> of each subinterval?
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Does the figure represent a left, right, or midpoint Riemann sum?
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Using sigma notation, <m>\displaystyle \sum</m>, write an algebraic representation of this Riemann sum.
+                      That is, fill in the following boxes with specific values (either constants or expressions involving <m>k</m>):
+                      <me>
+                        \sum_{\fbox{$k=$\hspace{3mm}}}^{\fbox{\hspace{3mm}}}f\left({\fbox{\hspace{5mm}}}\right){\fbox{\hspace{5mm}}}
+                      </me>
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ul>
+
+    <p />
+      <p>
+      </p>
+
+      <ol>
+        <li>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  <m>\displaystyle 3(4)^{2} + 3(5)^{2} + 3(6)^{2} + 3(7)^{2} = \sum_{i=4}^{7} 3i^{2}</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>\displaystyle \sum_{j=3}^{5} f(j^{2}) \cdot \Delta x = f(3)\cdot 0.1 + f(4) \cdot 0.1 + f(5) \cdot 0.1 = (-3-4-5)\cdot 0.1 = -1.2</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>p(x) = 1x + 4x^{2} + 9x^{3} + 16x^{4}</m> is a more common description. This is a polynomial of degree 4.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  <m>\displaystyle \frac{1}{4}\left( 1+\frac{15}{16}+\frac{3}{4}+\frac{7}{16}\right) = 0.78125</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>\displaystyle \frac{1}{4}\left(\frac{15}{16}+\frac{3}{4}+\frac{7}{16}+0\right) = 0.53125</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  The first sum represents a left sum (an overestimate).
+                </p>
+
+                <p>
+                  The second sum represents a right sum (an underestimate).
+                </p>
+
+                <p>
+                  The last sum represents a middle sum.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  The middle sum is illustrated below.
+                  Note that to move the endpoints, just drag the blue dots to 0 and 1 accordingly.
+                  Also, to stretch the axes, the SHIFT key can be held as you drag either the <m>x</m>- or <m>y</m>-axis.
+                </p>
+
+                <image source="RiemannSumAppletOutput2.jpg" />
+                </li>
+
+                <li>
+                  <p>
+                    A reasonable conjecture would be that the exact area is 2/3.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    <m>\displaystyle \Delta x = \frac{3-1}{5}= 0.4</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    This is a right Riemann sum.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>L_{5} \approx 3.84</m> and <m>R_{5} \approx 4.28</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    <m>n=3</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\Delta x = 2</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    This is a left Riemann sum.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\displaystyle \sum_{k=0}^{2} f(1+2k) \cdot 2</m>. Alternatively, <m>\displaystyle \sum_{k=1}^{3} f(-1+2k) \cdot 2</m>.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+        </ol>
+
+        </handout>

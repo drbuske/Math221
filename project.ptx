@@ -27,6 +27,13 @@
           output-dir="slides" publication="publication-slides-annotated.ptx"/>
   <target name="scorm" standalone="yes" format="html" compression="scorm"
           output-dir="scorms" publication="publication_standalone.ptx"/>
+
+          
+<!-- Embossable pages (multi-line pages for paper embossers) -->
+<target name="braille" format="braille" />
+
+
+
   </targets>
 </project>
 

@@ -46,7 +46,7 @@
 
       <!-- Remove the example and replace with your own activities -->
       <!-- <xi:include href="./activities/01-intro-activity.ptx"/> -->
-      <xi:include href="./class-activities/act-1-1-1.xml"/>
+      <!-- <xi:include href="./class-activities/act-1-1-1.xml"/>
       <xi:include href="./class-activities/act-1-1-2.xml"/>
       <xi:include href="./class-activities/act-1-1-3.xml"/>
       <xi:include href="./class-activities/act-1-2-1.xml"/>
@@ -65,7 +65,7 @@
       <xi:include href="./class-activities/act-1-7-2.xml"/>
       <xi:include href="./class-activities/act-1-7-3.xml"/>
       <xi:include href="./class-activities/act-1-8-1.xml"/>
-      <xi:include href="./class-activities/act-1-8-2.xml"/>
+      <xi:include href="./class-activities/act-1-8-2.xml"/> -->
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
 
@@ -93,6 +93,8 @@
       <xi:include href="./handouts/33PrepExtremeValues.ptx"/>
       <xi:include href="./handouts/35PrepGlobalOptimization.ptx"/>
       <xi:include href="./handouts/36PrepAppliedOptimization.ptx"/>
+      <xi:include href="./handouts/41PrepDeterminingDistanceFromVelocity.ptx"/> 
+      <xi:include href="./handouts/42PrepRiemannSums.ptx"/> 
     </chapter>
 
  

@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 4.1 - Determining Distance from Velocity</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    In Differential Calculus, we have regularly asked the question “What does the derivative of a given function tell us about the function itself?” Indeed, in many different settings, we have been given information about a function’s instantaneous rate of change, and used that information to determine characteristics of the function itself.
+    In Chapter 4, we provide the most accurate and sophisticated answers to this big question.
+    In particular, we will introduce the notion of the definite integral, which is an important counterpart to the derivative.
+  </p>
+
+    <p>
+      In Section 4.1, we start with a familiar question, but in reverse: where previously we were interested in an object whose position we know and sought to find its velocity, now we start with velocity, and see if we can find changes in position and/or distance traveled.
+    </p>
+  </section>
+
+  <section>
+  <title>Basic learning objectives</title>
+
+    <p>
+      These are the tasks you should be able to perform with reasonable
+      fluency when you arrive at our next class meeting.
+      Important new
+      vocabulary words are indicated <em>in italics</em>.
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          Compute the distance of an object moving at a constant rate over a given time period.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Interpret the physical meaning of area under a curve that represents the velocity of a moving object.
+        </p>
+      </li>
+    </ul>
+
+  </section>
+
+  <section>
+    <title>To prepare for class</title>
+    <p>
+      Complete all actions listed below.
+      Respond to the questions highlighted with <em>Submit</em>.
+    </p>
+    <ul>
+    <li>
+      <p>
+        <alert>Read</alert> motivating questions and the introduction to <url href="
+https://activecalculus.org/single2e/sec-4-1-velocity-distance.html#sec-4-1-velocity-distance-3">section 4.1</url> (up until Preview Activity 4.1.1).
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=bTJuR2f-FSs&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=75">Quick Review - Determining Distance Travelled From Velocity (3:36)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        [Submit] <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-4-1-velocity-distance.html#PA-4-1">Preview Activity 4.1.1</url>.
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              (Optional) <alert>Watch</alert> <url href="https://www.youtube.com/watch?v=Liybsc5MyGk">video solution to Preview Activity 4.1.1 (4:00)</url>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Explore</alert> the applet <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/integration_intro_bicycle1.html">The Exercise Bicycle Problem, Part I</url>. Be sure to answer the questions posed on the website.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Explore</alert> the applet <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/integration_intro_bicycle2.html">The Exercise Bicycle Problem, Part II</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-4-1-velocity-distance.html#sec-4-1-velocity-distance-4">section 4.2.1</url> up to Activity 4.1.2.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=xwS-v8MLli4&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=76">Estimating Distance Traveled Using a Velocity Graph (5:53)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        [Submit] <alert>Explore</alert> the applet <url href="https://www.geogebra.org/m/bgZzXvau">Displacement vs. Distance on a Velocity-Time Graph</url>. If <m>s(t)</m> represents the displacement of an object at time <m>t</m>, and <m>|s(t)|</m> represents the distance traveled at at time <m>t</m>, answer the following:
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              Geometrically, how is the value of <m>s(t)</m> related to the graph? <em>Answer: It is the signed area under the given curve and above the <m>t</m>-axis.
+              </em>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Geometrically, how is the value of <m>|s(t)|</m> related to the graph?
+            </p>
+
+            <p>
+              <em>Answer: It is the unsigned area under the given curve and above the <m>t</m>-axis. That is, it is simply the area sandwiched between the curve and the <m>t</m>-axis. </em>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Give an expression (involving <m>s</m>) for the green, piecewise linear function that appears.
+              <em>Answer: <m>s'(t)</m>.</em>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+
+      <p>
+        Prompt <alert>Copilot</alert> “What is the difference in interpretation or meaning between the area between two times <m>t=a</m> and <m>t=b</m> and between a velocity graph and the <m>t</m>-axis and the signed area between the same two times between a velocity graph and the <m>t</m>-axis?”
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=TNhHUm2oPi0&#x26;feature=emb_title">Estimating Distance Traveled with Data (7:49)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+         <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=wDnRmp-QQaM&#x26;feature=youtu.be">Finding Total (Dust) Accumulation (6:49)</url>. Then, calculate (and submit) an approximation for the total dust accumulation if you use the lower rate on each subinterval. That is, use the rate at the end of the segment rather than the rate at the beginning of the interval of motion.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-4-1-velocity-distance.html#sec-4-1-velocity-distance-5">section 4.1.3</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=mAul5vTAJSA&#x26;feature=emb_title">Finding Distance Traveled with Antiderivatives (8:21)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-4-1-velocity-distance.html#Library__Michigan__Chap5Sec1__Q01.pg">exercises 1-3 in section 4.1.6</url>.
+      </p>
+    </li>
+    </ul>
+
+  </section>
+
+  <section>
+    <title>After class</title>
+
+    <p>
+      Solidifying the concepts discussed in class through practice is necessary to build your skills.
+    </p>
+    <ul>
+    <li>
+      <p>
+        <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-4-1-velocity-distance.html#sec-4-1-velocity-distance-6">section 4.1.4</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> this video to better understand direction of motion from the velocity graph: <url href="https://youtu.be/lsufpQEVHZ8">Interpreting direction of motion from velocity-time graph (1:45)</url>. Remember, we are talking about one-dimensional motion in single variable calculus.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=_SA5hfhM48U">Left and Right Sums (9:11)</url>.
+      </p>
+    </li>
+
+    <li>
+
+      <p>
+        Prompt <alert>Copilot</alert> “What is meant by a left sum when it comes to calculus? Can you demonstrate this using an example from a table of data?”
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-4-1-velocity-distance.html#sec-4-1-velocity-distance-7">section 4.1.5 - summary</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> (interactive) <url href="
+https://activecalculus.org/single2e/sec-4-1-velocity-distance.html#Library__Rochester__setIntegrals3Definite__osu_in_3_1a_mo.pg">exercises 4-6 in section 4.1.6</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-4-1-velocity-distance.html#ez-4-1-7">exercises 7-10 in section 4.1.6</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+      </p>
+    </li>
+    </ul>
+
+  </section>
+
+
+
+  <section>
+    <title>Advanced learning objectives</title>
+
+    <p>
+      In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          Compute the distance traveled by a moving object given the velocity of that object.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Differentiate between distance traveled and change in position (displacement).
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Recognize the role antiderivatives play in the context of the velocity-distance problem.
+        </p>
+      </li>
+    </ul>
+
+  </section>
+  <section>
+    <title>Additional suggestions</title>
+
+    <ul>
+      <li>
+        <p>
+          <alert>Explore</alert> these four applets if you struggle in visualizing position and velocity (and acceleration) graphs and how they are related:
+        </p>
+
+        <p>
+          <ul>
+            <li>
+              <p>
+                <url href="https://www.geogebra.org/m/NMVYWr78">Displacement, Velocity, and Acceleration</url>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <url href="https://www.geogebra.org/m/kJ2CR3tB">Displacement and Velocity Graphs</url>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <url href="https://www.geogebra.org/m/qpxcs6vb">Acceleration, Velocity, and Displacement Graphs</url>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <url href="https://www.geogebra.org/m/pdNj3DgD">Position, Velocity, and Acceleration vs. Time Graphs</url>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-4-1-velocity-distance.html#act-4-1-3">Activity 4.1.4</url>.  Note: This may be done in class.  
+        </p>
+
+        <p>
+          <ul>
+            <li>
+              <p>
+                <alert>Watch</alert> this video - it will <em>really</em> help you in doing this activity: <url href="https://www.youtube.com/watch?v=fRjTubYQa_M">Activity 4.1.4 video</url>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> this video if you are still having a hard time with the relationship between velocity and position graphs: <url href="https://www.youtube.com/watch?v=0AIuOQevPxI&#x26;feature=emb_title">Position vs Time and Velocity vs Time Graphs (13:12)</url>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Do</alert> these problems.
+        </p>
+
+        <p>
+          <ol>
+            <li>
+              <p>
+                The following data is gathered as a small plane travels down the runway toward takeoff.
+                How far did the plane travel in the 10 second period? (Give both a lower and an upper estimate.) <em>Hint:</em> Distance = Rate <m>\times</m> Time
+              </p>
+
+               <table xml:id="PlaneData1" >
+        <title>A plane travels down a runway.</title>
+     <tabular halign="center" bottom="minor" top="minor">
+      <row header="no" bottom="medium" top="medium">
+                    <cell>time (sec)</cell>
+                    <cell>0</cell>
+                    <cell>2</cell>
+                    <cell>4</cell>
+                    <cell>6</cell>
+                    <cell>8</cell>
+                    <cell>10</cell>
+                  </row>
+
+                  <row>
+                    <cell>velocity (ft/sec)</cell>
+                    <cell>0</cell>
+                    <cell>99</cell>
+                    <cell>140</cell>
+                    <cell>171.5</cell>
+                    <cell>198</cell>
+                    <cell>221.4</cell>
+                  </row>
+
+                </tabular>
+            </table>
+
+                <p>
+                  Low Estimate:
+                </p>
+
+                <figure xml:id="figurePlane1LowEstimate">
+  <caption>A lower estimate for the distance a plane travels.</caption> 
+  <image xml:id="Plane1LowEstimatePic" width="75%">
+<description>
+Scatter plot showing velocity versus time. The horizontal axis is labeled t (sec) and ranges from 0 to 10 seconds. The vertical axis is labeled v (ft/sec) and ranges from 0 to 225 feet per second. There are seven plotted points: (0, 0), (2, 100), (4, 140), (6, 170), (8, 200), and (10, 225). The points show an increasing trend, indicating velocity rises as time increases.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.8] 
+\draw[step=1cm,color=gray!50] (0,0) grid (10,9);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (11,0);
+   \draw node [below] at (11.25,0) {$t$ (sec)};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,10);
+   \draw node [right] at (0,9.5) {$v$ (ft/sec)};
+\fill [black] (0,0) circle (3pt);
+\fill [black] (2,3.96) circle (3pt);
+\fill [black] (4,5.6) circle (3pt);
+\fill [black] (6,6.86) circle (3pt);
+\fill [black] (8,7.92) circle (3pt);
+\fill [black] (10,8.856) circle (3pt);
+\foreach \x/\xtext in { 1/1, 2/2, 3/3, 4/4, 5/5, 6/6, 7/7,8/8, 9/9, 10/10}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/25, 2/50, 3/75, 4/100, 5/125, 6/150, 7/175, 8/200, 9/225}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+                
+                <p>
+                  High Estimate:
+                </p>
+
+<figure xml:id="figurePlane1HighEstimate">
+  <caption>An upper estimate for the distance a plane travels.</caption> 
+  <image xml:id="Plane1HighEstimatePic" width="75%">
+<description>
+Scatter plot showing velocity versus time. The horizontal axis is labeled t and ranges from 0 to 10 seconds. The vertical axis is labeled v and ranges from 0 to 225. There are seven plotted points: (0, 0), (2, 100), (4, 140), (6, 170), (8, 190), and (10, 225). The points show an increasing trend, indicating velocity rises as time increases.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.8] 
+\draw[step=1cm,color=gray!50] (0,0) grid (10,9);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (11,0);
+   \draw node [below] at (10.5,0) {$t$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,10);
+   \draw node [right] at (0,9.5) {$v$};
+\fill [black] (0,0) circle (3pt);
+\fill [black] (2,3.96) circle (3pt);
+\fill [black] (4,5.6) circle (3pt);
+\fill [black] (6,6.86) circle (3pt);
+\fill [black] (8,7.92) circle (3pt);
+\fill [black] (10,8.856) circle (3pt);
+\foreach \x/\xtext in { 1/1, 2/2, 3/3, 4/4, 5/5, 6/6, 7/7,8/8, 9/9, 10/10}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/25, 2/50, 3/75, 4/100, 5/125, 6/150, 7/175, 8/200, 9/225}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+                
+              </li>
+
+              <li>
+                <p>
+                  Suppose that the same small plane as in the previous problem is traveling toward takeoff, but that now we are given the velocity of the plane every second (as in the given table).
+                  Give a new range of values representing the distance that the plane could have traveled, and illustrate your estimates with a new rectangles diagram.
+                </p>
+
+               <table xml:id="PlaneData2" >
+        <title>Additional detail regarding the plane traveling down a runway.</title>
+     <tabular halign="center" bottom="minor" top="minor">
+      <row header="no" bottom="medium" top="medium">
+                      <cell>time (sec)</cell>
+                      <cell>0</cell>
+                      <cell>1</cell>
+                      <cell>2</cell>
+                      <cell>3</cell>
+                      <cell>4</cell>
+                      <cell>5</cell>
+                      <cell>6</cell>
+                      <cell>7</cell>
+                      <cell>8</cell>
+                      <cell>9</cell>
+                      <cell>10</cell>
+                    </row>
+
+                    <row>
+                      <cell>velocity (ft/sec)</cell>
+                      <cell>0</cell>
+                      <cell>75</cell>
+                      <cell>99</cell>
+                      <cell>125</cell>
+                      <cell>140</cell>
+                      <cell>162</cell>
+                      <cell>171.5</cell>
+                      <cell>182</cell>
+                      <cell>198</cell>
+                      <cell>215</cell>
+                      <cell>221.4</cell>
+                    </row>
+
+                  </tabular>
+                </table>
+                    <p>
+                      Low Estimate:
+                    </p>
+
+  <figure xml:id="figurePlane2LowEstimate">
+  <caption>A better lower estimate for the distance a plane travels.</caption> 
+  <image xml:id="Plane2LowEstimatePic" width="75%">
+<description>
+Scatter plot showing velocity versus time. The horizontal axis is labeled t and ranges from 0 to 10. The vertical axis is labeled v and ranges from 0 to 225. There are eleven plotted points: (0, 0), (1, 75), (2, 100), (3, 125), (4, 140), (5, 160), (6, 170), (7, 190), (8, 200), (9, 215), and (10, 225). The points form an upward trend, indicating velocity increases steadily as time increases.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.8] 
+\draw[step=1cm,color=gray!50] (0,0) grid (10,9);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (11,0);
+   \draw node [below] at (10.5,0) {$t$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,10);
+   \draw node [right] at (0,9.5) {$v$};
+\fill [black] (0,0) circle (3pt);
+\fill [black] (1,3) circle (3pt);
+\fill [black] (2,3.96) circle (3pt);
+\fill [black] (3,5) circle (3pt);
+\fill [black] (4,5.6) circle (3pt);
+\fill [black] (5,6.48) circle (3pt);
+\fill [black] (6,6.86) circle (3pt);
+\fill [black] (7,7.28) circle (3pt);
+\fill [black] (8,7.92) circle (3pt);
+\fill [black] (9,8.6) circle (3pt);
+\fill [black] (10,8.856) circle (3pt);
+\foreach \x/\xtext in { 1/1, 2/2, 3/3, 4/4, 5/5, 6/6, 7/7,8/8, 9/9, 10/10}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/25, 2/50, 3/75, 4/100, 5/125, 6/150, 7/175, 8/200, 9/225}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+                    
+                    <p>
+                      High Estimate:
+                    </p>
+
+                    <figure xml:id="figurePlane2HighEstimate">
+  <caption>A better upper estimate for the distance a plane travels.</caption> 
+  <image xml:id="Plane2HighEstimatePic" width="75%">
+<description>
+Scatter plot showing velocity versus time. The horizontal axis is labeled t and ranges from 0 to 10. The vertical axis is labeled v and ranges from 0 to 225. There are eleven plotted points: (0, 0), (1, 75), (2, 100), (3, 125), (4, 140), (5, 160), (6, 170), (7, 190), (8, 200), (9, 215), and (10, 225). The points form an upward trend, indicating velocity increases steadily as time increases.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.8] 
+\draw[step=1cm,color=gray!50] (0,0) grid (10,9);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (11,0);
+   \draw node [below] at (10.5,0) {$t$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,10);
+   \draw node [right] at (0,9.5) {$v$};
+\fill [black] (0,0) circle (3pt);
+\fill [black] (1,3) circle (3pt);
+\fill [black] (2,3.96) circle (3pt);
+\fill [black] (3,5) circle (3pt);
+\fill [black] (4,5.6) circle (3pt);
+\fill [black] (5,6.48) circle (3pt);
+\fill [black] (6,6.86) circle (3pt);
+\fill [black] (7,7.28) circle (3pt);
+\fill [black] (8,7.92) circle (3pt);
+\fill [black] (9,8.6) circle (3pt);
+\fill [black] (10,8.856) circle (3pt);
+\foreach \x/\xtext in { 1/1, 2/2, 3/3, 4/4, 5/5, 6/6, 7/7,8/8, 9/9, 10/10}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/25, 2/50, 3/75, 4/100, 5/125, 6/150, 7/175, 8/200, 9/225}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+                    
+                  </li>
+                </ol>
+              </p>
+            </li>
+          </ul>
+
+        </section>
+
+        <section>
+          <title>Answers</title>
+          <ol>
+            <li>
+              <p>
+                Low Estimate: (0 ft/sec)(2 sec) + (99 ft/sec)(2 sec) + (140 ft/sec)(2 sec) + (171.5 ft/sec)(2 sec) + (198 ft/sec)(2 sec) = 1217 feet
+              </p>
+
+               <figure xml:id="figurePlane1LowEstimateAns">
+  <caption>Computing a lower estimate for the distance a plane travels.</caption> 
+  <image xml:id="Plane1LowEstimateAnsPic" width="75%">
+<description>
+Step graph showing velocity versus time with shaded rectangles under the steps. The horizontal axis is labeled t (sec) and ranges from 0 to 10 seconds. The vertical axis is labeled v (ft/sec) and ranges from 0 to 225 feet per second. Seven black points mark data values: (0, 0), (2, 100), (4, 140), (6, 170), (8, 200), and (10, 225). Light blue shaded rectangles represent intervals between these points, forming a step-like approximation of the increasing velocity trend.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.7] 
+  \fill [linecolor!10] (2,0) -- (2,3.96) -- (4,3.96) -- (4,0) -- (2,0);
+\fill [linecolor!10] (4,0) -- (4,5.6) -- (6,5.6) -- (6,0) -- (4,0);
+\fill [linecolor!10] (6,0) -- (6,6.86) -- (8,6.86) -- (8,0) -- (6,0);
+\fill [linecolor!10] (8,0) -- (8,7.92) -- (10,7.92) -- (10,0) -- (8,0);
+\draw[step=1cm,color=gray!50] (0,0) grid (10,9);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (11,0);
+   \draw node [below] at (11.25,0) {$t$ (sec)};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,10);
+   \draw node [right] at (0,9.5) {$v$ (ft/sec)};
+\fill [black] (0,0) circle (3pt);
+\fill [black] (2,3.96) circle (3pt);
+\fill [black] (4,5.6) circle (3pt);
+\fill [black] (6,6.86) circle (3pt);
+\fill [black] (8,7.92) circle (3pt);
+\fill [black] (10,8.856) circle (3pt);
+\foreach \x/\xtext in { 1/1, 2/2, 3/3, 4/4, 5/5, 6/6, 7/7,8/8, 9/9, 10/10}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/25, 2/50, 3/75, 4/100, 5/125, 6/150, 7/175, 8/200, 9/225}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+              <p>
+                High Estimate: (99 ft/sec)(2 sec) + (140 ft/sec)(2 sec) + (171.5 ft/sec)(2 sec) + (198 ft/sec)(2 sec) + (221.4 ft/sec)(2 sec) = 1659.8 feet
+              </p>
+
+              <figure xml:id="figurePlane1HighEstimateAns">
+  <caption>Computing an upper estimate for the distance a plane travels.</caption> 
+  <image xml:id="Plane1HighEstimateAnsPic" width="75%">
+<description>
+Step graph showing velocity versus time with shaded rectangles under the steps. The horizontal axis is labeled t and ranges from 0 to 10. The vertical axis is labeled v and ranges from 0 to 225. Seven black points mark data values: (0, 0), (2, 100), (4, 140), (6, 170), (8, 200), and (10, 225). Light blue shaded rectangles represent intervals between these points, forming a step-like approximation of the increasing velocity trend.
+</description>
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=0.7] 
+     \fill [linecolor!10] (0,0) -- (0,3.96) -- (2,3.96) -- (2,0) -- (0,0);
+\fill [linecolor!10] (2,0) -- (2,5.6) -- (4,5.6) -- (4,0) -- (2,0);
+\fill [linecolor!10] (4,0) -- (4,6.86) -- (6,6.86) -- (6,0) -- (4,0);
+\fill [linecolor!10] (6,0) -- (6,7.92) -- (8,7.92) -- (8,0) -- (6,0);
+\fill [linecolor!10] (8,0) -- (8,8.856) -- (10,8.856) -- (10,0) -- (8,0);
+\draw[step=1cm,color=gray!50] (0,0) grid (10,9);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (11,0);
+   \draw node [below] at (10.5,0) {$t$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,10);
+   \draw node [right] at (0,9.5) {$v$};
+\fill [black] (0,0) circle (3pt);
+\fill [black] (2,3.96) circle (3pt);
+\fill [black] (4,5.6) circle (3pt);
+\fill [black] (6,6.86) circle (3pt);
+\fill [black] (8,7.92) circle (3pt);
+\fill [black] (10,8.856) circle (3pt);
+\foreach \x/\xtext in { 1/1, 2/2, 3/3, 4/4, 5/5, 6/6, 7/7,8/8, 9/9, 10/10}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/25, 2/50, 3/75, 4/100, 5/125, 6/150, 7/175, 8/200, 9/225}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+              <p>
+                Notice that each of these is simply the sum of areas of five rectangles.
+              </p>
+              
+            </li>
+
+            <li>
+              <p>
+                Low Estimate: <m>75 + 99 + 125 + \ldots + 215 = 1367.5</m> feet
+              </p>
+
+              <figure xml:id="figurePlane2LowEstimateAns">
+  <caption>Computing a better lower estimate for the distance a plane travels.</caption> 
+  <image xml:id="Plane2LowEstimateAnsPic" width="75%">
+<description>
+Step graph showing velocity versus time with shaded rectangles under the steps. The horizontal axis is labeled t and ranges from 0 to 10. The vertical axis is labeled v and ranges from 0 to 225. Eleven black points mark data values: (0, 0), (1, 75), (2, 100), (3, 125), (4, 140), (5, 160), (6, 170), (7, 190), (8, 200), (9, 215), and (10, 225). Light blue shaded rectangles represent intervals between these points, forming a step-like approximation of the increasing velocity trend.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.7] 
+      \fill [linecolor!10] (1,0) -- (1,3) -- (2,3) -- (2,0) -- (1,0);
+    \fill [linecolor!10] (2,0) -- (2,3.96) -- (3,3.96) -- (3,0) -- (2,0);
+    \fill [linecolor!10] (3,0) -- (3,5) -- (4,5) -- (4,0) -- (3,0);
+\fill [linecolor!10] (4,0) -- (4,5.6) -- (5,5.6) -- (5,0) -- (4,0);
+\fill [linecolor!10] (5,0) -- (5,6.48) -- (6,6.48) -- (6,0) -- (5,0);
+\fill [linecolor!10] (6,0) -- (6,6.86) -- (7,6.86) -- (7,0) -- (6,0);
+\fill [linecolor!10] (7,0) -- (7,7.28) -- (8,7.28) -- (8,0) -- (7,0);
+\fill [linecolor!10] (8,0) -- (8,7.92) -- (9,7.92) -- (9,0) -- (8,0);
+\fill [linecolor!10] (9,0) -- (9,8.6) -- (10,8.6) -- (10,0) -- (9,0);
+\draw[step=1cm,color=gray!50] (0,0) grid (10,9);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (11,0);
+   \draw node [below] at (10.5,0) {$t$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,10);
+   \draw node [right] at (0,9.5) {$v$};
+\fill [black] (0,0) circle (3pt);
+\fill [black] (1,3) circle (3pt);
+\fill [black] (2,3.96) circle (3pt);
+\fill [black] (3,5) circle (3pt);
+\fill [black] (4,5.6) circle (3pt);
+\fill [black] (5,6.48) circle (3pt);
+\fill [black] (6,6.86) circle (3pt);
+\fill [black] (7,7.28) circle (3pt);
+\fill [black] (8,7.92) circle (3pt);
+\fill [black] (9,8.6) circle (3pt);
+\fill [black] (10,8.856) circle (3pt);
+\foreach \x/\xtext in { 1/1, 2/2, 3/3, 4/4, 5/5, 6/6, 7/7,8/8, 9/9, 10/10}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/25, 2/50, 3/75, 4/100, 5/125, 6/150, 7/175, 8/200, 9/225}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+              <p>
+                High Estimate: <m>99+125+140+\ldots+221.4 = 1573.9</m> feet
+              </p>
+
+              <figure xml:id="figurePlane2HighEstimateAns">
+  <caption>Computing a better upper estimate for the distance a plane travels.</caption> 
+  <image xml:id="Plane2HighEstimateAnsPic" width="75%">
+<description>
+Step graph showing velocity versus time with shaded rectangles under the steps. The horizontal axis is labeled t and ranges from 0 to 10. The vertical axis is labeled v and ranges from 0 to 225. Eleven black points mark data values: (0, 0), (1, 75), (2, 100), (3, 125), (4, 140), (5, 160), (6, 170), (7, 190), (8, 200), (9, 215), and (10, 225). Light blue shaded rectangles represent intervals between these points, forming a step-like approximation of the increasing velocity trend.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.7] 
+        \fill [linecolor!10] (0,0) -- (0,3) -- (1,3) -- (1,0) -- (0,0);
+    \fill [linecolor!10] (1,0) -- (1,3.96) -- (2,3.96) -- (2,0) -- (1,0);
+    \fill [linecolor!10] (2,0) -- (2,5) -- (3,5) -- (3,0) -- (2,0);
+\fill [linecolor!10] (3,0) -- (3,5.6) -- (4,5.6) -- (4,0) -- (3,0);
+\fill [linecolor!10] (4,0) -- (4,6.48) -- (5,6.48) -- (5,0) -- (4,0);
+\fill [linecolor!10] (5,0) -- (5,6.86) -- (6,6.86) -- (6,0) -- (5,0);
+\fill [linecolor!10] (6,0) -- (6,7.28) -- (7,7.28) -- (7,0) -- (6,0);
+\fill [linecolor!10] (7,0) -- (7,7.92) -- (8,7.92) -- (8,0) -- (7,0);
+\fill [linecolor!10] (8,0) -- (8,8.6) -- (9,8.6) -- (9,0) -- (8,0);
+\fill [linecolor!10] (9,0) -- (9,8.856) -- (10,8.856) -- (10,0) -- (9,0);
+\draw[step=1cm,color=gray!50] (0,0) grid (10,9);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (11,0);
+   \draw node [below] at (10.5,0) {$t$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,10);
+   \draw node [right] at (0,9.5) {$v$};
+\fill [black] (0,0) circle (3pt);
+\fill [black] (1,3) circle (3pt);
+\fill [black] (2,3.96) circle (3pt);
+\fill [black] (3,5) circle (3pt);
+\fill [black] (4,5.6) circle (3pt);
+\fill [black] (5,6.48) circle (3pt);
+\fill [black] (6,6.86) circle (3pt);
+\fill [black] (7,7.28) circle (3pt);
+\fill [black] (8,7.92) circle (3pt);
+\fill [black] (9,8.6) circle (3pt);
+\fill [black] (10,8.856) circle (3pt);
+\foreach \x/\xtext in { 1/1, 2/2, 3/3, 4/4, 5/5, 6/6, 7/7,8/8, 9/9, 10/10}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/25, 2/50, 3/75, 4/100, 5/125, 6/150, 7/175, 8/200, 9/225}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+              <p>
+                Notice that each of these is simply the sum of areas of ten rectangles.
+              </p>
+            </li>
+          </ol>
+        </section>
+      </handout>
