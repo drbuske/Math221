@@ -1,0 +1,43 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={340pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\usepackage{amsmath,amssymb}
+\usepackage{tikz, pgfplots,xcolor}
+\usetikzlibrary{positioning,matrix,arrows,shadings}
+\usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
+\usetikzlibrary{calc}
+\definecolor{linecolor}{HTML}{0074C8}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture}[thick,scale=1] [domain=0:4]
+\draw[step=1cm,color=gray!50] (0,0) grid (4,4);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (4,0) node [above] at (4.5,0) {$t$ (minutes)};
+   %%\draw [black!80,line width=0.3pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$v$ (mph)};
+   %%\draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-4);
+   \draw [color=blue, line width=2pt] (0,1)--(1,1);
+      \draw [color=blue, line width=2pt] (1,3)--(2,3);
+     \draw [color=blue, line width=2pt] (2,0)--(2.33,0);
+          \draw [color=blue, line width=2pt] (2.33,2)--(4.33,2);
+%%\draw[color=blue, line width=1pt,domain=0:2]   plot (\x,{-0.2*(\x-2)^2+1});
+%%\draw[color=blue, line width=1pt,domain=2:2.75]   plot (\x,{-(\x-4)^2+5});
+%%\draw node[below] at (2,-0.5) {{\bf{Graph 1}}};
+\foreach \x/\xtext in { 1/30, 2/60, 3/90, 4/120}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/20,  2/40, 3/60}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}%
+}
+\end{document}
