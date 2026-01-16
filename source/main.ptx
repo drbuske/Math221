@@ -33,42 +33,7 @@
       <xi:include href="./notes/week02.ptx"/>
 
     </chapter> -->
-
-
-    <chapter xml:id="activities">
-      <title>In-Class Activities</title>
-
-      <introduction>
-        <p>
-          These are copies of the in-class activities distributed during the semester.
-        </p>
-      </introduction>
-
-      <!-- Remove the example and replace with your own activities -->
-      <!-- <xi:include href="./activities/01-intro-activity.ptx"/> -->
-      <!-- <xi:include href="./class-activities/act-1-1-1.xml"/>
-      <xi:include href="./class-activities/act-1-1-2.xml"/>
-      <xi:include href="./class-activities/act-1-1-3.xml"/>
-      <xi:include href="./class-activities/act-1-2-1.xml"/>
-      <xi:include href="./class-activities/act-1-2-2.xml"/>
-      <xi:include href="./class-activities/act-1-2-3.xml"/>
-      <xi:include href="./class-activities/act-1-3-1.xml"/>
-      <xi:include href="./class-activities/act-1-3-5.ptx"/>  
-      <xi:include href="./class-activities/act-1-4-1.xml"/>
-      <xi:include href="./class-activities/act-1-4-2.xml"/>
-      <xi:include href="./class-activities/act-1-5-1.xml"/>
-      <xi:include href="./class-activities/act-1-5-2.xml"/>
-      <xi:include href="./class-activities/act-1-5-5.ptx"/>
-      <xi:include href="./class-activities/act-1-6-2.xml"/>
-      <xi:include href="./class-activities/act-1-6-5.ptx"/>
-      <xi:include href="./class-activities/act-1-7-1.xml"/>
-      <xi:include href="./class-activities/act-1-7-2.xml"/>
-      <xi:include href="./class-activities/act-1-7-3.xml"/>
-      <xi:include href="./class-activities/act-1-8-1.xml"/>
-      <xi:include href="./class-activities/act-1-8-2.xml"/> -->
-      <!-- Add more xi:include files here to include them in the main course -->
-    </chapter>
-
+    
     <chapter xml:id="handouts">
       <title>Daily Prep</title>
       <!-- Include handouts -->
@@ -95,6 +60,41 @@
       <xi:include href="./handouts/36PrepAppliedOptimization.ptx"/>
       <xi:include href="./handouts/41PrepDeterminingDistanceFromVelocity.ptx"/> 
       <xi:include href="./handouts/42PrepRiemannSums.ptx"/> 
+      <xi:include href="./handouts/43PrepTheDefiniteIntegral.ptx"/>
+    </chapter>
+
+    <chapter xml:id="activities">
+      <title>In-Class Activities</title>
+
+      <introduction>
+        <p>
+          These are copies of the in-class activities distributed during the semester.
+        </p>
+      </introduction>
+
+      <!-- Remove the example and replace with your own activities -->
+      <!-- <xi:include href="./activities/01-intro-activity.ptx"/> -->
+      <xi:include href="./class-activities/act-1-1-1.xml"/>
+      <xi:include href="./class-activities/act-1-1-2.xml"/>
+      <xi:include href="./class-activities/act-1-1-3.xml"/>
+      <xi:include href="./class-activities/act-1-2-1.xml"/>
+      <xi:include href="./class-activities/act-1-2-2.xml"/>
+      <xi:include href="./class-activities/act-1-2-3.xml"/>
+      <xi:include href="./class-activities/act-1-3-1.xml"/>
+      <xi:include href="./class-activities/act-1-3-5.ptx"/>  
+      <xi:include href="./class-activities/act-1-4-1.xml"/>
+      <xi:include href="./class-activities/act-1-4-2.xml"/>
+      <xi:include href="./class-activities/act-1-5-1.xml"/>
+      <xi:include href="./class-activities/act-1-5-2.xml"/>
+      <xi:include href="./class-activities/act-1-5-5.ptx"/>
+      <xi:include href="./class-activities/act-1-6-2.xml"/>
+      <xi:include href="./class-activities/act-1-6-5.ptx"/>
+      <xi:include href="./class-activities/act-1-7-1.xml"/>
+      <xi:include href="./class-activities/act-1-7-2.xml"/>
+      <xi:include href="./class-activities/act-1-7-3.xml"/>
+      <xi:include href="./class-activities/act-1-8-1.xml"/>
+      <xi:include href="./class-activities/act-1-8-2.xml"/> 
+      <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
 
  

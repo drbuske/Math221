@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 4.3 - The Definite Integral</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    In this section we introduce a notation used for expressing the limit of a Riemann sum.
+    We thus define what a definite integral is.
+    We will be discussing the definition, meaning, and use of the definite integral for the remainder of the course.
+    Surprisingly, it has a very strong and natural connection to the derivative – a connection we will discuss and explore in Section 4.4.
+    However, in this section, we deduce the properties that this new mathematical object, the definite integral, has based on its definition and its geometrical interpretation.
+  </p>
+
+</section>
+
+<section>
+  <title>Basic learning objectives</title>
+
+        <p>
+          These are the tasks you should be able to perform with reasonable
+          fluency when you arrive at our next class meeting.
+          Important new
+          vocabulary words are indicated <em>in italics</em>.
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              Recognize the parts of the limit definition of the definite integral, especially how the definite integral results from taking a limit of Riemann sums.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Identify an <em>integral sign</em>, <em>integrand</em>, and <em>limits of integration</em>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Explain what it means to evaluate a <em>definite integral</em>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Interpret, geometrically, the quantity denoted by <m>\displaystyle \int_{a}^{b} f(x) \ dx</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Recognize and apply properties that the definite integral possesses.
+              Use these properties to evaluate definite integrals in special circumstances.
+            </p>
+          </li>
+        </ul>
+
+      </section>
+
+<section xml:id="sec-Toprepareforclass43">
+  <title>To prepare for class</title>
+
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-4-3-definite-integral.html">section 4.3</url> (up until Preview Activity 4.3.1).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-3-definite-integral.html#XLD">Preview Activity 4.3.1</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=Lp5KsXN4UOQ&#x26;feature=emb_title">Quick Review - The Definite Integral (3:00)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-4-3-definite-integral.html#uqj">section 4.3.1</url> up to Activity 4.3.2.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] <alert>Explore</alert> the applet <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/integration_intro_geometric.html">Gaining Geometric Intuition</url>. Submit answers to questions #3-6 at the bottom of the webpage.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Prompt <alert>Copilot</alert> “Please produce and execute Python code that illustrates an upper Riemann sum of the function <m>f(x)=\cos(x)+1</m> from <m>x=0</m> to <m>x=3\pi</m> using n=10 rectangles.”
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> these problems.
+    </p>
+
+    <p>
+      <ol>
+      <li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Use geometry to evaluate <m>\displaystyle \int_{-1}^{4} 1-\frac{1}{2}x \ dx</m>.
+              </p>
+
+              <figure xml:id="figureIntegralGeometryLine">
+  <caption>The graph of <m>y=1-\frac{1}{2}x</m> can be used to evaluate <m>\displaystyle \int_{-1}^4 1-\frac{1}{2}x \ dx</m>. </caption> 
+  <image xml:id="IntegralGeometryLinePic" width="75%">
+<description>
+Graph of the line y = 1 − ½x. The line crosses the y-axis at 1 and slopes downward to the right. It passes near the points (0, 1), (2, 0), and (4, −1). The x‑ and y‑axes are shown with tick marks from about −1 to 4 on the x-axis and from −1 to 2 on the y-axis.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1] 
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5,0) node [below] at (4.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-1.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3) node [right] at (0,2.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-1.5);
+\draw[color=linecolor, line width=1pt,domain=-1:4]   plot (\x,{1-0.5*\x}) node [right] at (1,1) {$y=1-\frac{1}{2}x$};
+\foreach \x/\xtext in { -1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-1/-1, 1/1, 2/2}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+              
+            </li>
+
+            <li>
+              <p>
+                Compute <m>\displaystyle \int_{0}^{3} f(x) \ dx</m> for the function <m>f</m> graphed in <xref ref="figureIntegralGeometryHalfCircle"/>.
+              </p>
+
+ <figure xml:id="figureIntegralGeometryHalfCircle">
+  <image xml:id="IntegralGeometryHalfCirclePic" width="50%">
+<description>
+Graph of a piecewise function. From x = 0 to x = 2, the graph is a semicircle above the x-axis, starting at the point (0, 0), rising to a peak near y = 1 around x = 1, and returning to (2, 0). From x = 2 to x = 3, the graph is a straight line segment beginning at (2, 0) and slanting upward to the right.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1]
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,2) node [right] at (0,1.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+\draw[color=linecolor, line width=1pt,domain=0:2,smooth]   plot (\x,{sqrt(1-(\x-1)*(\x-1))});
+\draw[color=linecolor, line width=1pt,domain=2:3,smooth]   plot (\x,{\x-2});
+\foreach \x/\xtext in { 1/1, 2/2, 3/3}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/1}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+            </li>
+          </ol>
+        </p>
+        
+      </li>
+
+      <li>
+        <p>
+          Use <xref ref="EstimateL4ViaTable"/> to estimate <m>\displaystyle \int_{0}^{12}f(x) \ dx</m>.
+          Find a left sum <m>L_{4}</m>, a right sum <m>R_{4}</m>, and then average the two.
+        </p>
+
+        <p>
+<table xml:id="EstimateL4ViaTable" >
+        <title>Values of <m>f</m> on <m>[0,12]</m>.</title> 
+     <tabular halign="center" bottom="minor" top="minor">
+      <row header="no" bottom="medium">
+                <cell> <m>x</m> </cell>
+                <cell>0</cell>
+                <cell>3</cell>
+                <cell>6</cell>
+                <cell>9</cell>
+                <cell>12</cell>
+              </row>
+
+              <row>
+                <cell> <m>f(x)</m> </cell>
+                <cell>20</cell>
+                <cell>10</cell>
+                <cell>5</cell>
+                <cell>2</cell>
+                <cell>1</cell>
+              </row>
+
+            </tabular>
+          </table>
+          </p>
+
+          <p />
+          </li>
+
+          <li>
+            <p>
+              [Submit] <xref ref="figureTwoFindXstars"/> illustrates Riemann sum approximations, <m>\displaystyle \sum_{k=1}^{n} f(x_{k}^{*}) \Delta x_{k}</m>, to <m>\displaystyle \int_{a}^{b} f(x) \ dx</m>.
+              In each, determine the values of <m>a, b</m>, and <m>n</m>.
+              Then, give expressions for <m>\Delta x_{k}</m> and <m>x_{k}^{*}</m>.
+            </p>
+
+            <figure xml:id="figureTwoFindXstars">
+  <caption>Riemann sum approximations of <m>\int_a^b f(x) \ dx</m>.</caption> 
+  <sidebyside widths="40% 40%">
+    <image xml:id="FindXstar1" width="45%">
+<description>
+Graph of a decreasing function f(x) on the interval from x = 1 to x = 4. A blue curve slopes downward as x increases. Three left-endpoint rectangles are drawn under the curve, each shaded in light blue, with widths spanning the intervals [1, 2], [2, 3], and [3, 4]. The heights of the rectangles are determined by the function values at x = 1, 2, and 3. Axes are labeled x and y.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1.25]
+      \fill [linecolor!20] (1,0) -- (1,1.455) -- (2,1.455) -- (2,0) -- (1,0);
+    \draw[black] (1,0) -- (1,1.455) -- (2,1.455) -- (2,0) -- (1,0);
+          \fill [linecolor!20] (2,0) -- (2,1.067) -- (3,1.067) -- (3,0) -- (2,0);
+    \draw[black] (2,0) -- (2,1.067) -- (3,1.067) -- (3,0) -- (2,0);
+              \fill [linecolor!20] (3,0) -- (3,0.842) -- (4,0.842) -- (4,0) -- (3,0);
+    \draw[black] (3,0) -- (3,0.842) -- (4,0.842) -- (4,0) -- (3,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5,0) node [below] at (4.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3) node [right] at (0,2.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+\draw[color=linecolor, line width=1pt,domain=1:4]   plot (\x,{4/(\x+1))}) node [above] at (1.5,2) {$\displaystyle f(x)$};
+\foreach \x/\xtext in { 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \x/\xtext in {0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 3.75}
+    \draw[shift={(\x,0)}] (0pt,1.5pt) -- (0pt,-1.5pt);
+\foreach \y/\ytext in {1/1, 2/2}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+  <image xml:id="FindXstar2" width="45%">
+<description>
+Graph of a decreasing function f(x) on the interval from x = 1 to x = 4. The blue curve slopes downward as x increases. 
+Five left‑endpoint rectangles are drawn under the curve, each shaded in light blue. 
+The heights of the rectangles decrease across the intervals [1, 1.6], [1.6, 2.2], [2.2, 2.8], [2.8, 3.4], and [3.4, 4]. 
+Axes are labeled x and y. The rectangles form a left‑endpoint Riemann sum approximation of the area under the curve.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1.25]
+       \fill [linecolor!20] (0.5,0) -- (0.5,2.667) -- (1,2.667) -- (1,0) -- (0.5,0);
+    \draw[black] (0.5,0) -- (0.5,2.667) -- (1,2.667) -- (1,0) -- (0.5,0);
+      \fill [linecolor!20] (1,0) -- (1,2) -- (1.5,2) -- (1.5,0) -- (1,0);
+    \draw[black] (1,0) -- (1,2) -- (1.5,2) -- (1.5,0) -- (1,0);
+          \fill [linecolor!20] (1.5,0) -- (1.5,1.6) -- (2,1.6) -- (2,0) -- (1.5,0);
+    \draw[black] (1.5,0) -- (1.5,1.6) -- (2,1.6) -- (2,0) -- (1.5,0);
+              \fill [linecolor!20] (2,0) -- (2,1.333) -- (2.5,1.333) -- (2.5,0) -- (2,0);
+    \draw[black] (2,0) -- (2,1.333) -- (2.5,1.333) -- (2.5,0) -- (2,0);
+                  \fill [linecolor!20] (2.5,0) -- (2.5,1.143) -- (3,1.143) -- (3,0) -- (2.5,0);
+    \draw[black] (2.5,0) -- (2.5,1.143) -- (3,1.143) -- (3,0) -- (2.5,0);
+                      \fill [linecolor!20] (3,0) -- (3,1) -- (3.5,1) -- (3.5,0) -- (3,0);
+    \draw[black] (3,0) -- (3,1) -- (3.5,1) -- (3.5,0) -- (3,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5,0) node [below] at (4.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3) node [right] at (0,2.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+\draw[color=linecolor, line width=1pt,domain=0.5:3.5]   plot (\x,{4/(\x+1))}) node [above] at (1.5,2) {$\displaystyle f(x)$};
+\foreach \x/\xtext in { 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \x/\xtext in {0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 3.75}
+    \draw[shift={(\x,0)}] (0pt,1.5pt) -- (0pt,-1.5pt);
+\foreach \y/\ytext in {1/1, 2/2}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</sidebyside>
+</figure>
+            
+          </li>
+          </ol>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Prompt <alert>Copilot</alert> “Please produce and execute Python code that illustrates a middle Riemann sum of the function f(x)=x<m>\wedge</m>2+1 from x=1 to x=3 using n=5 rectangles.” Does the AI give you a correct value for the sum being illustrated?
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Read</alert> <url href="https://activecalculus.org/single/sec-4-3-definite-integral.html#axs">section 4.3.2</url> on properties of the definite integral.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=1SqpYAAyBCk&#x26;feature=emb_title">Evaluating Definite Integrals using Integral Properties (8:14)</url>.
+        </p>
+      </li>
+
+
+ 
+
+        </ul>
+
+</section>
+
+<section xml:id="sec-Afterclass43">
+  <title>After class</title>
+
+        <p>
+          Solidifying the concepts discussed in class through practice is necessary to build your skills.
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              <alert>Read</alert> <url href="https://activecalculus.org/single/sec-4-3-definite-integral.html#GEB">section 4.3.3</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=MQG9Nur4fdM&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=87">Average Value of a Function (7:34)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Explore</alert> a nice visualization of <url href="https://www.geogebra.org/m/m7GGErDY">The Average Value of a Function</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Explore</alert> <url href="https://www.geogebra.org/m/nb34Cfvd">the Average Value of a Linear Function</url> geometrically.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-3-definite-integral.html#oxT">exercises 1-2 in section 4.3</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-3-definite-integral.html#ZoV">exercises 7-8 in section 4.3</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Read</alert> <url href="https://activecalculus.org/single/sec-4-3-definite-integral.html#mLK">section 4.3.4 - summary</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-3-definite-integral.html#AMl">(interactive) exercises 3-6 in section 4.3</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-3-definite-integral.html#lDn">exercises 9-10 in section 4.3</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+            </p>
+          </li>
+        </ul>
+
+</section>
+
+      <section xml:id="sec-Advancedlearningobjectives43">
+        <title>Advanced learning objectives</title>
+
+        <p>
+          In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              Compute the <em>average value of a function</em> on the interval <m>[a,b]</m> using <m>\displaystyle \int_{a}^{b} f(x) \ dx</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Interpret the average value of a function as the height of a rectangle.
+            </p>
+          </li>
+        </ul>
+
+      </section>
+
+      <section xml:id="sec-Additionalsuggestions43">
+        <title>Additional suggestions</title>
+
+        <ul>
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=Dxmh7HMS2JM&#x26;feature=youtu.be">Riemann Sum Notation (2:04)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=R6LQa_F-AFc&#x26;feature=youtu.be">Riemann Sums - How to use Sigma Notation (6:33)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Finish (if needed)</alert> <url href="https://activecalculus.org/single/sec-4-3-definite-integral.html#gJZ">Activity 4.3.2</url>.
+            </p>
+
+            <p>
+              <ul>
+                <li>
+                  <p>
+                    (Optional) <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=F8lRiblAgD8">explaining parts (a)-(c) of Activity 4.3.2 (4:00)</url>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    (Optional) <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=bdDS594GSL0">explaining part (d) of Activity 4.3.2 (2:47)</url>.
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=5SIBNRXACWo&#x26;list=PLcJe72hRUmg7YrZ4OUkneU5jmyK4SEH9M&#x26;index=43">Average Value of a Function with an Integral (2:09)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Explore</alert> another way to visualize the <url href="https://www.geogebra.org/m/UkTRUdU5">Average Value of a Function</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Explore</alert> <url href="https://www.geogebra.org/m/aXNuQYsp">three more applets</url> illustrating the average value of a function.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Do</alert> these problems.
+            </p>
+
+            <p>
+              <ol>
+
+           <li>
+              <p>
+                Suppose <m>f(x)</m> is an odd function (as shown in <xref ref="fig0537"/>) with <m>\displaystyle \int_{-2}^{0} f(x) \ dx = 4</m>.
+                <ol>
+                  <li>
+                    <p>
+                      Evaluate <m>\displaystyle \int_{0}^{2} f(x) \ dx</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Evaluate <m>\displaystyle \int_{-2}^{2} f(x) \ dx</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Evaluate <m>\displaystyle \int_{-2}^{2} |f(x)| \ dx</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            <figure xml:id="fig0537">
+              <image source="fig_05_37.jpg" width="50%">              
+<description>
+Graph of a smooth curve f(x) that crosses the x-axis near x = −2, rises to a peak slightly above y = 2, then decreases and crosses the x-axis again near x = 0. 
+The curve continues downward to a trough below y = −2 near x = 2, then rises steeply to the right. The region between the curve and the x-axis is shaded, 
+with positive area above the axis on the left and negative area below the axis on the right.
+</description>
+              </image>
+            </figure>
+              </li>
+
+                <li>
+                  <p>
+                    Consider approximating the definite integral <m>\displaystyle \int_{0.5}^{5} \frac{4}{1+x}\ dx</m> by a Riemann sum approximation
+                    <me>
+                      \sum_{k=1}^{3} \frac{4}{1+\left[ 0.5+k \cdot \left( \frac{3}{2}\right)\right]}\cdot \left( \frac{3}{2}\right).
+                    </me>
+                    Using <xref ref="figureIntegralRiemannSumApprox"/>, carefully illustrate this Riemann sum as in the last problem.
+                    Is this a left sum, a right sum, or neither? Evaluate this sum.
+                  </p>
+
+                  <figure xml:id="figureIntegralRiemannSumApprox">
+                  <image xml:id="IntegralRiemannSumApproxPic" width="50%">
+<description>
+Graph of a decreasing function f(x) for x between 0.5 and 5. The curve begins near y = 3 when x is about 0.5, then slopes downward smoothly, approaching y = 1 as x reaches 5. Axes are labeled x and y with tick marks along both axes.
+</description>
+                 <latex-image>
+\begin{tikzpicture}[thick,scale=1]
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5.5,0) node [below] at (5.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3.5) node [right] at (0,3.25) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+\draw[color=linecolor, line width=1pt,domain=0.5:5]   plot (\x,{4/(\x+1))}) node [above] at (1.5,2) {$\displaystyle f(x)$};
+\foreach \x/\xtext in { 0.5/0.5, 2/2, 3.5/3.5, 5/5}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/1, 2/2, 3/3}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+               </latex-image>
+              </image>
+              </figure>
+                  
+                </li>
+
+                <li>
+                  <p>
+                    Using sigma (<m>\Sigma</m>) notation, give a middle sum Riemann approximation with <m>n=3</m> (see <xref ref="figureIntegralMiddleSumApprox"/>) that estimates the value of the definite integral <m>\displaystyle \int_{0.5}^{5} \frac{4}{1+x}\ dx</m>.
+                    <em>Hint:</em> The previous problem can serve as a guide.
+                  </p>
+
+                  <figure xml:id="figureIntegralMiddleSumApprox">
+                    <caption>A middle sum approximation with <m>n=3</m>.</caption>
+                  <image xml:id="IntegralMiddleSumApproxPic" width="75%">
+<description>
+Graph of a decreasing function f(x) on the interval from x = 1 to x = 5. The curve begins above y = 2 near x = 1 and slopes downward toward y = 1 by x = 5. 
+Four left‑endpoint rectangles are drawn under the curve, each shaded in light blue, spanning the intervals [1, 2], [2, 3], [3, 4], and [4, 5]. 
+The heights of the rectangles decrease from left to right, forming a left‑endpoint Riemann sum approximation of the area under the curve.
+</description>
+                 <latex-image>
+ \begin{tikzpicture}[thick,scale=1.5]
+       \fill [linecolor!20] (0.5,0) -- (0.5,1.778) -- (2,1.778) -- (2,0) -- (0.5,0);
+    \draw[black] (0.5,0) -- (0.5,1.778) -- (2,1.778) -- (2,0) -- (0.5,0);
+      \fill [linecolor!20] (2,0) -- (2,1.067) -- (3.5,1.067) -- (3.5,0) -- (2,0);
+    \draw[black] (2,0) -- (2,1.067) -- (3.5,1.067) -- (3.5,0) -- (2,0);
+      \fill [linecolor!20] (3.5,0) -- (3.5,0.762) -- (5,0.762) -- (5,0) -- (3.5,0);
+    \draw[black] (3.5,0) -- (3.5,0.762) -- (5,0.762) -- (5,0) -- (3.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (6,0) node [below] at (5.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3) node [right] at (0,2.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+\draw[color=linecolor, line width=1pt,domain=0.5:5]   plot (\x,{4/(\x+1))}) node [above] at (1.5,2) {$\displaystyle f(x)$};
+\foreach \x/\xtext in { 1/1, 2/2, 3/3, 4/4, 5/5}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \x/\xtext in {0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 3.75, 4, 4.25, 4.5, 4.75}
+    \draw[shift={(\x,0)}] (0pt,1.5pt) -- (0pt,-1.5pt);
+\foreach \y/\ytext in {1/1, 2/2}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+               </latex-image>
+              </image>
+              </figure>
+                  
+                </li>
+              </ol>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=49oT7gAeeSA&#x26;feature=youtu.be">What Definite Integrals Are (6:38)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=hIcdlnvBc4Y&#x26;feature=youtu.be">Definite Integrals and Riemann Sums (3:51)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Do</alert> these problems.
+            </p>
+
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    Suppose that <m>C(t)</m> represents the daily cost of heating your house, measured in dollars per day, where <m>t</m> is the time measured in days and <m>t=0</m> corresponds to January 1, 2020.
+                    Interpret <m>\displaystyle \int_{0}^{90}C(t) \ dt</m> and <m>\displaystyle \frac{1}{90-0}\int_{0}^{90}C(t) \ dt</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    The value, <m>V</m>, of a Tiffany lamp, worth $225 in 1975, increases at 15%per year.
+                    Its value in dollars <m>t</m> years after 1975 is given by <m>V = 225(1.15)^{t}</m>.
+                    Find the average value of the lamp over the period 1975-2015.
+                    The <url href="https://www.geogebra.org/m/dtvx4EtB">Average Value of a Function</url> applet produces a nice way to calculate this.
+                    <em>Hint: Hold the SHIFT key to stretch each axis pictures as needed.
+                    Stretch the vertical axis, for example, to about 70,000.</em>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+        </ul>
+
+      </section>
+
+      <section xml:id="sec-Answers43">
+        <title>Answers</title>
+
+        <ol>
+          <li>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    <m>\displaystyle \frac{5}{4}</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\displaystyle \frac{\pi+1}{2}</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>L_{4} = (20)(3) + (10)(3) + (5)(3) + (2)(3) = 111, R_{4} = 54</m>; these average to 82.5.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    <m>\displaystyle a=1, b=4, n=3, \Delta x_{k} = 1, x_{k}^{*} = k+\frac{3}{4}</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\displaystyle a=0.5, b=3.5, n=6, \Delta x_{k} = 0.5, x_{k}^{*} = \frac{1}{2}k</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    -4
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    0
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    8
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              This is a right sum <m>R_{3}</m>.
+            </p>
+
+            <p>
+              Here, <m>\displaystyle a=0.5, b=5, n=3, \Delta x_{k} = \frac{3}{2}</m> and
+            </p>
+
+            <p>
+              <m>\displaystyle x_{k}^{*} = \frac{1}{2}+ k\left(\frac{3}{2}\right)</m>. The sum is
+            </p>
+
+            <p>
+              <m>\displaystyle \frac{4}{1+2}(1.5) + \frac{4}{1+3.5}(1.5) + \frac{4}{1+5}(1.5) = 4.\overline{3}</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Here <m>\displaystyle \Delta x_{k} = \frac{6}{4}</m>, <m>\displaystyle x_{k}^{*} = -\frac{1}{4}+ k\left(\frac{6}{4}\right)</m>.
+            </p>
+
+            <p>
+              So, <m>\displaystyle \sum_{k=1}^{3}\frac{4}{1+\left[ -\frac{1}{4}+k\left(\frac{6}{4}\right) \right]}\cdot \left(\frac{6}{4}\right)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\displaystyle \int_{0}^{90}C(t) \ dt</m> represents the total cost to heat house for the first 90 days of 2020 (in dollars).
+            </p>
+
+            <p>
+              <m>\displaystyle \frac{1}{90-0}\int_{0}^{90}C(t) \ dt</m> represents the average cost (dollars per day) of heating the house for the first 90 days of 2020.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\displaystyle \frac{1}{40-0}\int_{0}^{40}V(t) \ dt = \frac{1}{40}\int_{0}^{40}225(1.15)^{t} \ dt \approx \$10,740.46</m>. 
+              The <url href="https://www.geogebra.org/m/dtvx4EtB">Average Value of a Function</url> applet produces a nice way to see this as illustrated 
+              in <xref ref="AverageValueApp1"/>.
+            </p>
+<figure xml:id="AverageValueApp1">
+  <caption>The average value of <m>y=225(1.15)^x</m> on <m>[0,40]</m>.</caption>
+            <image source="AverageValueApp1.jpg" width="90%">
+<description>
+Graph of an exponential function f(x) that increases very rapidly on the interval from about x = 20 to x = 40. The curve starts near the x‑axis on the left and rises 
+steeply to a large value by x = 40. The region under the curve from x = 20 to x = 40 is shaded in blue to represent the integral, with the label “integral ≈ 129618.37.” 
+A horizontal red line labeled “average value: y = 10740.46” crosses the graph. A text box near the curve displays the formula f(x) = 225·1.15^x. Grid lines and axes 
+with tick marks are shown.
+</description>
+            </image>
+          </figure>
+            </li>
+          </ol>
+
+        </section>
+
+          </handout>
