@@ -1,13 +1,364 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "activities",
+  "id": "ws-act-1-1-1",
   "level": "1",
-  "url": "activities.html",
-  "type": "Chapter",
+  "url": "ws-act-1-1-1.html",
+  "type": "Worksheet",
   "number": "",
-  "title": "In-Class Activities",
-  "body": " In-Class Activities   These are copies of the in-class activities distributed during the semester.       "
+  "title": "Average Velocity - Activity 1.1.2",
+  "body": " Average Velocity - Activity 1.1.2    The following questions concern the position function given by , considered in the Preview Activity, and plotted in the given figure.   A plot of on the interval is shown. On the horizontal axis, there are tick marks every units at , , and . On the vertical axis, the values from are omitted to focus on the most important behavior of the graph. The vertical axis has tickmarks every units from the point at the origin up to .  The parabolic curve has -intercept and then rises to its vertex at . The points and are shown on the plot.      Compute the average velocity of the ball on each of the following time intervals: , , , , , , , . Include units for each value.    On , the average velocity is ft\/sec.    ft\/sec; ft\/sec; the other average velocities are, respectively, 6.56, 6.416, 0, 4.8, 6.24, 6.384, all in ft\/sec.    On , the average velocity is ft\/sec. On , the average velocity is 8 ft\/sec. The other average velocities are, respectively (in the order of the intervals listed in the activity), 6.56, 6.416, 0, 4.8, 6.24, 6.384, all measured in feet per second.      On the graph provided in (a), sketch the line that passes through the points and . What is the meaning of the slope of this line? In light of this meaning, what is a geometric way to interpret each of the values computed in the preceding question?    Remember that the slope of a line can be found by taking rise over run. In this context, the slope is found by computing change in over change in .    is the average velocity of the ball between and .    The slope of the line between and is . This is precisely the average velocity of the ball between and , and indeed each of the average velocities computed in (a) can be viewed as the slope of the line joining the points and .      Use a graphing utility to plot the graph of on an interval containing the value . Then, zoom in repeatedly on the point . What do you observe about how the graph appears as you view it more and more closely?    While the curve is a parabola, how does it look up close on a very small interval?    Like a straight line with slope about 6.4.    As we zoom in on the curve at the point , the graph begins to look like a straight line. Indeed, it appears to look like a straight line with slope about 6.4.      What do you conjecture is the velocity of the ball at the instant ? Why?    Instantaneous velocity can be approximated by average velocity on a very small interval.    About 6.4 feet per second.    Observe that the average velocity of the ball on the intervals and is 6.416 and 6.384 feet\/sec respectively. Hence it appears that the ball's velocity at the instant should be about 6.4 feet per second.     "
+},
+{
+  "id": "act-1-1-1",
+  "level": "2",
+  "url": "ws-act-1-1-1.html#act-1-1-1",
+  "type": "Activity",
+  "number": "2",
+  "title": "",
+  "body": "  The following questions concern the position function given by , considered in the Preview Activity, and plotted in the given figure.   A plot of on the interval is shown. On the horizontal axis, there are tick marks every units at , , and . On the vertical axis, the values from are omitted to focus on the most important behavior of the graph. The vertical axis has tickmarks every units from the point at the origin up to .  The parabolic curve has -intercept and then rises to its vertex at . The points and are shown on the plot.      Compute the average velocity of the ball on each of the following time intervals: , , , , , , , . Include units for each value.    On , the average velocity is ft\/sec.    ft\/sec; ft\/sec; the other average velocities are, respectively, 6.56, 6.416, 0, 4.8, 6.24, 6.384, all in ft\/sec.    On , the average velocity is ft\/sec. On , the average velocity is 8 ft\/sec. The other average velocities are, respectively (in the order of the intervals listed in the activity), 6.56, 6.416, 0, 4.8, 6.24, 6.384, all measured in feet per second.      On the graph provided in (a), sketch the line that passes through the points and . What is the meaning of the slope of this line? In light of this meaning, what is a geometric way to interpret each of the values computed in the preceding question?    Remember that the slope of a line can be found by taking rise over run. In this context, the slope is found by computing change in over change in .    is the average velocity of the ball between and .    The slope of the line between and is . This is precisely the average velocity of the ball between and , and indeed each of the average velocities computed in (a) can be viewed as the slope of the line joining the points and .      Use a graphing utility to plot the graph of on an interval containing the value . Then, zoom in repeatedly on the point . What do you observe about how the graph appears as you view it more and more closely?    While the curve is a parabola, how does it look up close on a very small interval?    Like a straight line with slope about 6.4.    As we zoom in on the curve at the point , the graph begins to look like a straight line. Indeed, it appears to look like a straight line with slope about 6.4.      What do you conjecture is the velocity of the ball at the instant ? Why?    Instantaneous velocity can be approximated by average velocity on a very small interval.    About 6.4 feet per second.    Observe that the average velocity of the ball on the intervals and is 6.416 and 6.384 feet\/sec respectively. Hence it appears that the ball's velocity at the instant should be about 6.4 feet per second.    "
+},
+{
+  "id": "ws-act-1-1-2",
+  "level": "1",
+  "url": "ws-act-1-1-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Average Velocity - Activity 1.1.3",
+  "body": " Average Velocity - Activity 1.1.3    Each of the following questions concern , the position function from the Preview Activity.      Compute the average velocity of the ball on the time interval . What is different between this value and the average velocity on the interval ?    Remember to use the formula for average velocity from above: . Think carefully about whether certain quantities are positive or negative.    ft\/sec, which is negative.    ft\/sec. We note that this average velocity is negative, and in fact is the opposite of the average velocity of 24 ft\/sec on the interval .      Use appropriate computing technology to estimate the instantaneous velocity of the ball at . Likewise, estimate the instantaneous velocity of the ball at . Which value is greater?    To estimate the instantaneous velocity at , consider average velocities on the intervals and .    The instantaneous velocity at is approximately ft\/sec; at , the instantaneous velocity is about ft\/sec, and .    Since and , it appears that the instantaneous velocity of the ball at is approximately ft\/sec. Similar computations show that at , it appears the instantaneous velocity is about ft\/sec. Note that , so the instantaneous velocity at is greater because it is less negative. Asking which number is greater is different from asking which number is more negative.      How is the sign of the instantaneous velocity of the ball related to its behavior at a given point in time? That is, what does positive instantaneous velocity tell you the ball is doing? Negative instantaneous velocity?    Think about whether the ball is rising or falling.    When the ball is rising, its instantaneous velocity is positive, while when the ball is falling, its instantaneous velocity is negative.    When the ball is rising, its instantaneous velocity is positive, while when the ball is falling, its instantaneous velocity is negative.      Without doing any computations, what do you expect to be the instantaneous velocity of the ball at ? Why?    What is the average velocity of the ball on small intervals that contain ?    Zero.    Note that is the vertex of the parabola given by . At this point, the ball is neither rising nor falling. On intervals of the form , where , the average velocity of the ball is positive; on intervals of form , where , the average velocity is positive. Hence we expect the instantaneous velocity of the ball at the moment to be zero.     "
+},
+{
+  "id": "act-1-1-2",
+  "level": "2",
+  "url": "ws-act-1-1-2.html#act-1-1-2",
+  "type": "Activity",
+  "number": "3",
+  "title": "",
+  "body": "  Each of the following questions concern , the position function from the Preview Activity.      Compute the average velocity of the ball on the time interval . What is different between this value and the average velocity on the interval ?    Remember to use the formula for average velocity from above: . Think carefully about whether certain quantities are positive or negative.    ft\/sec, which is negative.    ft\/sec. We note that this average velocity is negative, and in fact is the opposite of the average velocity of 24 ft\/sec on the interval .      Use appropriate computing technology to estimate the instantaneous velocity of the ball at . Likewise, estimate the instantaneous velocity of the ball at . Which value is greater?    To estimate the instantaneous velocity at , consider average velocities on the intervals and .    The instantaneous velocity at is approximately ft\/sec; at , the instantaneous velocity is about ft\/sec, and .    Since and , it appears that the instantaneous velocity of the ball at is approximately ft\/sec. Similar computations show that at , it appears the instantaneous velocity is about ft\/sec. Note that , so the instantaneous velocity at is greater because it is less negative. Asking which number is greater is different from asking which number is more negative.      How is the sign of the instantaneous velocity of the ball related to its behavior at a given point in time? That is, what does positive instantaneous velocity tell you the ball is doing? Negative instantaneous velocity?    Think about whether the ball is rising or falling.    When the ball is rising, its instantaneous velocity is positive, while when the ball is falling, its instantaneous velocity is negative.    When the ball is rising, its instantaneous velocity is positive, while when the ball is falling, its instantaneous velocity is negative.      Without doing any computations, what do you expect to be the instantaneous velocity of the ball at ? Why?    What is the average velocity of the ball on small intervals that contain ?    Zero.    Note that is the vertex of the parabola given by . At this point, the ball is neither rising nor falling. On intervals of the form , where , the average velocity of the ball is positive; on intervals of form , where , the average velocity is positive. Hence we expect the instantaneous velocity of the ball at the moment to be zero.    "
+},
+{
+  "id": "ws-act-1-1-3",
+  "level": "1",
+  "url": "ws-act-1-1-3.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Average Velocity - Activity 1.1.4",
+  "body": " Average Velocity - Activity 1.1.4    For the function given by , find the most simplified expression you can for the average velocity of the ball on the interval . Use your result to compute the average velocity on and to estimate the instantaneous velocity at . Finally, compare your earlier work in Activity .    Note that .         Observe first that . Next, recall that , so .  Now, since we assume , we can simplify further to find that . Setting , it follows ft\/sec, and letting approach zero, we see that will approach , so the instantaneous velocity at appears to be feet\/sec. Both results match our earlier work in Activity .    "
+},
+{
+  "id": "act-1-1-3",
+  "level": "2",
+  "url": "ws-act-1-1-3.html#act-1-1-3",
+  "type": "Activity",
+  "number": "4",
+  "title": "",
+  "body": "  For the function given by , find the most simplified expression you can for the average velocity of the ball on the interval . Use your result to compute the average velocity on and to estimate the instantaneous velocity at . Finally, compare your earlier work in Activity .    Note that .         Observe first that . Next, recall that , so .  Now, since we assume , we can simplify further to find that . Setting , it follows ft\/sec, and letting approach zero, we see that will approach , so the instantaneous velocity at appears to be feet\/sec. Both results match our earlier work in Activity .   "
+},
+{
+  "id": "ws-act-1-2-1",
+  "level": "1",
+  "url": "ws-act-1-2-1.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Notion of a Limit - Activity 1.2.2",
+  "body": " The Notion of a Limit - Activity 1.2.2    Estimate the value of each of the following limits by constructing appropriate tables of values. Then determine the exact value of the limit by using algebra to simplify the function. Finally, plot each function on an appropriate interval to check your result visually.           can be factored.     .     .           Expand the expression , and then combine like terms in the numerator.     .     .           Try multiplying the given function by this fancy form of 1: .     .     .     "
+},
+{
+  "id": "act-1-2-1",
+  "level": "2",
+  "url": "ws-act-1-2-1.html#act-1-2-1",
+  "type": "Activity",
+  "number": "5",
+  "title": "",
+  "body": "  Estimate the value of each of the following limits by constructing appropriate tables of values. Then determine the exact value of the limit by using algebra to simplify the function. Finally, plot each function on an appropriate interval to check your result visually.           can be factored.     .     .           Expand the expression , and then combine like terms in the numerator.     .     .           Try multiplying the given function by this fancy form of 1: .     .     .    "
+},
+{
+  "id": "ws-act-1-2-2",
+  "level": "1",
+  "url": "ws-act-1-2-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Notion of a Limit - Activity 1.2.3",
+  "body": " The Notion of a Limit - Activity 1.2.3    Consider a moving object whose position function is given by , where is measured in meters and is measured in minutes.      Determine the most simplified expression for the average velocity of the object on the interval , where .     .         Observe that .      Determine the average velocity of the object on the interval . Include units on your answer.    Recall that .     meters\/min.    Using the expression just found in (a) with , meters\/min.      Determine the instantaneous velocity of the object when . Include units on your answer.    Consider and use your work in (a).     meters per minute.    Taking the limit of average velocity and using our work from (a), we find that , so the instantaneous velocity of the object when is 6 meters per minute.     "
+},
+{
+  "id": "act-1-2-2",
+  "level": "2",
+  "url": "ws-act-1-2-2.html#act-1-2-2",
+  "type": "Activity",
+  "number": "6",
+  "title": "",
+  "body": "  Consider a moving object whose position function is given by , where is measured in meters and is measured in minutes.      Determine the most simplified expression for the average velocity of the object on the interval , where .     .         Observe that .      Determine the average velocity of the object on the interval . Include units on your answer.    Recall that .     meters\/min.    Using the expression just found in (a) with , meters\/min.      Determine the instantaneous velocity of the object when . Include units on your answer.    Consider and use your work in (a).     meters per minute.    Taking the limit of average velocity and using our work from (a), we find that , so the instantaneous velocity of the object when is 6 meters per minute.    "
+},
+{
+  "id": "ws-act-1-2-3",
+  "level": "1",
+  "url": "ws-act-1-2-3.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Notion of a Limit - Activity 1.2.4",
+  "body": " The Notion of a Limit - Activity 1.2.4    For the moving object whose position at time is given by the graph provided, answer each of the following questions. Assume that is measured in feet and is measured in seconds.    The function is graphed on the interval . The vertical scale is the same as the horizontal scale. The graph rises and falls periodically, doing so above and below the line .        Use the graph to estimate the average velocity of the object on each of the following intervals: , , . Draw each line whose slope represents the average velocity you seek.    Remember that average velocity on an interval computes the quotient of change in over change in . This is the slope of the line between the corresponding two points on the graph of .     , , and .    The average velocity on is the slope of the line joining the points and , which is . On , we similarly find , and on , we have .      How could you use average velocities or slopes of lines to estimate the instantaneous velocity of the object at a fixed time?    Think about shorter and shorter time intervals and drawing the lines whose slopes represent average velocity.    Take shorter and shorter time intervals and draw the lines whose slopes represent average velocity. If those lines' slopes are approaching a single number, that number represents the instantaneous velocity.    Take shorter and shorter time intervals and draw the lines whose slopes represent average velocity. If those lines' slopes are approaching a single number, that number represents the instantaneous velocity. For example, to estimate the instantaneous velocity at , we might consider average velocities on , , and .      Use the graph to estimate the instantaneous velocity of the object when . Should this instantaneous velocity at be greater or less than the average velocity on that you computed in (a)? Why?    Think about zooming in on the graph at and drawing a line that, up close, looks just like the curve . What is the approximate slope of that line?    The instantaneous velocity at is greater than the average velocity on .    If we draw the line through and , it looks like the line's slope is approximately 2.5: if we go over one grid-width, we appear to go up about 2.5. The slope of this line is clearly greater than the slope of the line through and , which is 2. Hence the instantaneous velocity at is greater than the average velocity on .     "
+},
+{
+  "id": "act-1-2-3",
+  "level": "2",
+  "url": "ws-act-1-2-3.html#act-1-2-3",
+  "type": "Activity",
+  "number": "7",
+  "title": "",
+  "body": "  For the moving object whose position at time is given by the graph provided, answer each of the following questions. Assume that is measured in feet and is measured in seconds.    The function is graphed on the interval . The vertical scale is the same as the horizontal scale. The graph rises and falls periodically, doing so above and below the line .        Use the graph to estimate the average velocity of the object on each of the following intervals: , , . Draw each line whose slope represents the average velocity you seek.    Remember that average velocity on an interval computes the quotient of change in over change in . This is the slope of the line between the corresponding two points on the graph of .     , , and .    The average velocity on is the slope of the line joining the points and , which is . On , we similarly find , and on , we have .      How could you use average velocities or slopes of lines to estimate the instantaneous velocity of the object at a fixed time?    Think about shorter and shorter time intervals and drawing the lines whose slopes represent average velocity.    Take shorter and shorter time intervals and draw the lines whose slopes represent average velocity. If those lines' slopes are approaching a single number, that number represents the instantaneous velocity.    Take shorter and shorter time intervals and draw the lines whose slopes represent average velocity. If those lines' slopes are approaching a single number, that number represents the instantaneous velocity. For example, to estimate the instantaneous velocity at , we might consider average velocities on , , and .      Use the graph to estimate the instantaneous velocity of the object when . Should this instantaneous velocity at be greater or less than the average velocity on that you computed in (a)? Why?    Think about zooming in on the graph at and drawing a line that, up close, looks just like the curve . What is the approximate slope of that line?    The instantaneous velocity at is greater than the average velocity on .    If we draw the line through and , it looks like the line's slope is approximately 2.5: if we go over one grid-width, we appear to go up about 2.5. The slope of this line is clearly greater than the slope of the line through and , which is 2. Hence the instantaneous velocity at is greater than the average velocity on .    "
+},
+{
+  "id": "ws-act-1-3-1",
+  "level": "1",
+  "url": "ws-act-1-3-1.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Derivative of a Function at a Point - Activity 1.3.2",
+  "body": " The Derivative of a Function at a Point - Activity 1.3.2    Consider the function whose formula is .      What familiar type of function is ? What can you say about the slope of at every value of ?    If , we say is quadratic. If , we say is exponential. What do we say about ?     is linear.    Because is of the form , we call a linear function.      Compute the average rate of change of on the intervals , , and ; simplify each result as much as possible. What do you notice about these quantities?    Remember that to compute the average rate of change of on , we calculate .    The average rate of change on , , and is .    The average rate of change on is . Similar calculations show the average rate of change on is also . On , observe that .      Use the limit definition of the derivative to compute the exact instantaneous rate of change of with respect to at the value . That is, compute using the limit definition. Show your work. Is your result surprising?    Observe that .     .    Using the limit definition of the derivative, we find that .      Without doing any additional computations, what are the values of , , and ? Why?    Think about the how the graph of appears. What is the same at every point?     , , and , since the slope of a linear function is the same at every point.     , , and , since the slope of a linear function is the same at every point.     "
+},
+{
+  "id": "act-1-3-1",
+  "level": "2",
+  "url": "ws-act-1-3-1.html#act-1-3-1",
+  "type": "Activity",
+  "number": "8",
+  "title": "",
+  "body": "  Consider the function whose formula is .      What familiar type of function is ? What can you say about the slope of at every value of ?    If , we say is quadratic. If , we say is exponential. What do we say about ?     is linear.    Because is of the form , we call a linear function.      Compute the average rate of change of on the intervals , , and ; simplify each result as much as possible. What do you notice about these quantities?    Remember that to compute the average rate of change of on , we calculate .    The average rate of change on , , and is .    The average rate of change on is . Similar calculations show the average rate of change on is also . On , observe that .      Use the limit definition of the derivative to compute the exact instantaneous rate of change of with respect to at the value . That is, compute using the limit definition. Show your work. Is your result surprising?    Observe that .     .    Using the limit definition of the derivative, we find that .      Without doing any additional computations, what are the values of , , and ? Why?    Think about the how the graph of appears. What is the same at every point?     , , and , since the slope of a linear function is the same at every point.     , , and , since the slope of a linear function is the same at every point.    "
+},
+{
+  "id": "ws-act-1-3-5",
+  "level": "1",
+  "url": "ws-act-1-3-5.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Derivative of a Function at a Point - Activity 1.3.5",
+  "body": " The Derivative of a Function at a Point - Activity 1.3.5    On a grid in , sketch the graph of over . On another grid in , sketch the graph of over .   Empty grids for plotting graphs of and .              Use the definition of the derivative at a point to calculate the value of , if it exists. Does your answer make sense? Plot the point on the graph of above.    Use the definition with .          This follows since for near 0. So .      Calculate, if it exists, the value of . Plot the point on the graph of .    Use the definition with .          This follows since for near 0. So .      Calculate, if it exists, the value of . Again, illustrate your answer on the graph of .  Note: is a two-sided limit. We investigate the value from each side.          The absolute value function behaves differently for positive and negative.     does not exist     since for . But then we also have the following: since if . So does not exist since the two one-sided limits differ.      Using symmetry, make a conjecture about the values of and and plot the corresponding ordered pairs on the graph of .     and will not exist.      Using the applet found at https:\/\/www.geogebra.org\/m\/qwdxbtGF to check your answers to the above calculations. Be sure to also determine if your results make sense graphically.     "
+},
+{
+  "id": "act-1-3-5",
+  "level": "2",
+  "url": "ws-act-1-3-5.html#act-1-3-5",
+  "type": "Activity",
+  "number": "9",
+  "title": "",
+  "body": "  On a grid in , sketch the graph of over . On another grid in , sketch the graph of over .   Empty grids for plotting graphs of and .              Use the definition of the derivative at a point to calculate the value of , if it exists. Does your answer make sense? Plot the point on the graph of above.    Use the definition with .          This follows since for near 0. So .      Calculate, if it exists, the value of . Plot the point on the graph of .    Use the definition with .          This follows since for near 0. So .      Calculate, if it exists, the value of . Again, illustrate your answer on the graph of .  Note: is a two-sided limit. We investigate the value from each side.          The absolute value function behaves differently for positive and negative.     does not exist     since for . But then we also have the following: since if . So does not exist since the two one-sided limits differ.      Using symmetry, make a conjecture about the values of and and plot the corresponding ordered pairs on the graph of .     and will not exist.      Using the applet found at https:\/\/www.geogebra.org\/m\/qwdxbtGF to check your answers to the above calculations. Be sure to also determine if your results make sense graphically.    "
+},
+{
+  "id": "ws-act-1-4-1",
+  "level": "1",
+  "url": "ws-act-1-4-1.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Derivative Function - Activity 1.4.2",
+  "body": " The Derivative Function - Activity 1.4.2    For each given graph of , sketch an approximate graph of its derivative function, , on the axes immediately below. The scale of the grid for the graph of is ; assume the horizontal scale of the grid for the graph of is identical to that for . If necessary, adjust and label the vertical scale on the axes for .  When you are finished with all 8 graphs, write several sentences that describe your overall process for sketching the graph of the derivative function, given the graph the original function. What are the values of the derivative function that you tend to identify first? What do you do thereafter? How do key traits of the graph of the derivative function exemplify properties of the graph of the original function?   ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE     Points where the slope of the tangent line is equal to zero are particularly important. Try finding these points first in your effort to plot and plotting those zero values on the axes where you'll graph .     ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE      ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE     "
+},
+{
+  "id": "act-1-4-1",
+  "level": "2",
+  "url": "ws-act-1-4-1.html#act-1-4-1",
+  "type": "Activity",
+  "number": "10",
+  "title": "",
+  "body": "  For each given graph of , sketch an approximate graph of its derivative function, , on the axes immediately below. The scale of the grid for the graph of is ; assume the horizontal scale of the grid for the graph of is identical to that for . If necessary, adjust and label the vertical scale on the axes for .  When you are finished with all 8 graphs, write several sentences that describe your overall process for sketching the graph of the derivative function, given the graph the original function. What are the values of the derivative function that you tend to identify first? What do you do thereafter? How do key traits of the graph of the derivative function exemplify properties of the graph of the original function?   ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE     Points where the slope of the tangent line is equal to zero are particularly important. Try finding these points first in your effort to plot and plotting those zero values on the axes where you'll graph .     ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE      ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    ADD ALT TEXT TO THIS IMAGE    "
+},
+{
+  "id": "ws-act-1-4-2",
+  "level": "1",
+  "url": "ws-act-1-4-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Derivative Function - Activity 1.4.3",
+  "body": " The Derivative Function - Activity 1.4.3    For each of the listed functions, determine a formula for the derivative function. For the first two, determine the formula for the derivative by thinking about the nature of the given function and its slope at various points; do not use the limit definition. For the latter four, use the limit definition. Pay careful attention to the function names and independent variables. It is important to be comfortable with using letters other than and . For example, given a function , we call its derivative .          What is the slope of the function at every point?    .    because the slope of the tangent line to the horizontal line given by is zero at every value of .           What is the slope of the function at every point?    .    because the slope of the tangent line to the line given by is 1 at every value of .                .    By the limit definition,                 .    By the limit definition,                 .    By the limit definition,                 .    By the limit definition,      "
+},
+{
+  "id": "act-1-4-2",
+  "level": "2",
+  "url": "ws-act-1-4-2.html#act-1-4-2",
+  "type": "Activity",
+  "number": "11",
+  "title": "",
+  "body": "  For each of the listed functions, determine a formula for the derivative function. For the first two, determine the formula for the derivative by thinking about the nature of the given function and its slope at various points; do not use the limit definition. For the latter four, use the limit definition. Pay careful attention to the function names and independent variables. It is important to be comfortable with using letters other than and . For example, given a function , we call its derivative .          What is the slope of the function at every point?    .    because the slope of the tangent line to the horizontal line given by is zero at every value of .           What is the slope of the function at every point?    .    because the slope of the tangent line to the line given by is 1 at every value of .                .    By the limit definition,                 .    By the limit definition,                 .    By the limit definition,                 .    By the limit definition,     "
+},
+{
+  "id": "ws-act-1-5-1",
+  "level": "1",
+  "url": "ws-act-1-5-1.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Interpreting, Estimating, and Using the Derivative - Activity 1.5.2",
+  "body": " Interpreting, Estimating, and Using the Derivative - Activity 1.5.2    In each of the following contexts, explain the meaning of the given derivative values in two ways that are similar to the sentence structures and discussions of units in the two examples preceding this activity in the text.  First, write a sentence that explicitly describes what we know about the instantaneous rate of change of the given function at a particular instant, with units. Then, write a second sentence that explains the amount of change we expect in the function value if the input variable changes by one unit at the known instant.  Remember not to try to simplify the units on the derivative value, but rather keep the units in the form units of output per unit of input .      Suppose that measures the value of a car (in dollars) after the car has been driven miles. Explain the meaning of the statement by writing two sentences that address the instantaneous rate of change and the predicted change in the function, respectively.  Explicitly, your first sentence might have structure like   means that the instantaneous rate of change of when the car has been driven miles is ,   where the final blank should be completed using the units on the derivative. Your second sentence might have form   When the car has been driven miles, if the car is driven one more mile, we expect that the value of the car will by about .         means that the instantaneous rate of change of the car's value when the car has been driven miles is dollars per mile. In addition, when the car has been driven miles, if the car is driven one more mile, we expect that the value of the car will decrease by about dollars.     means that the instantaneous rate of change of the car's value when the car has been driven miles is dollars per mile. This tells us that when the car has been driven miles, if the car is driven one more mile, we expect that the value of the car will decrease by about dollars.      Suppose that measures the amount of water (in liters) in a tank that is filled with water that is meters deep. Explain the meaning of the statement by writing two sentences in the structure described above.        means that the instantaneous rate of change of volume of water in the tank when the water is meters deep is liters per meter. This tells us that when the water is meters deep, if the water rises one more meter, we expect that the volume of water in the tank will increase by about liters.     means that the instantaneous rate of change of volume of water in the tank when the water is meters deep is liters per meter. This tells us that when the water is meters deep, if the water rises one more meter, we expect that the volume of water in the tank will increase by about liters.      Suppose that measures the temperature of a can of soda (in degrees Celsius) in a refrigerator at time in minutes. Explain the meaning of the statement by writing two sentences in the structure described above.        means that the instantaneous rate of change of the soda's temperature at the instant minutes is degrees Celsius per minute. This tells us that after minutes have elapsed, if one more minute passes, we expect that the soda's temperature will drop by about degrees Celsius.     means that the instantaneous rate of change of the soda's temperature at the instant minutes is degrees Celsius per minute. This tells us that after minutes have elapsed, if one more minute passes, we expect that the soda's temperature will drop by about degrees Celsius.      Suppose that measures the rate at which a person burns calories (in calories per hour) when riding a bike at a speed of kilometers per hour. Explain the meaning of the statement by writing two sentences in the structure described above.        means that the instantaneous rate of change of the rate at which the biker is burning calories when traveling at a speed of kilometers per hour is calories per hour per kilometer per hour. This tells us that when the person is riding at kilometers per hour, if they increase their speed by kilometer per hour, we expect that they will burn about additional calories over the next hour.     means that the instantaneous rate of change of the rate at which the biker is burning calories when traveling at a speed of kilometers per hour is calories per hour per kilometer per hour. This tells us that when the person is riding at kilometers per hour, if they increase their speed by kilometer per hour, we expect that they will burn about additional calories over the next hour.     "
+},
+{
+  "id": "act-1-5-1",
+  "level": "2",
+  "url": "ws-act-1-5-1.html#act-1-5-1",
+  "type": "Activity",
+  "number": "12",
+  "title": "",
+  "body": "  In each of the following contexts, explain the meaning of the given derivative values in two ways that are similar to the sentence structures and discussions of units in the two examples preceding this activity in the text.  First, write a sentence that explicitly describes what we know about the instantaneous rate of change of the given function at a particular instant, with units. Then, write a second sentence that explains the amount of change we expect in the function value if the input variable changes by one unit at the known instant.  Remember not to try to simplify the units on the derivative value, but rather keep the units in the form units of output per unit of input .      Suppose that measures the value of a car (in dollars) after the car has been driven miles. Explain the meaning of the statement by writing two sentences that address the instantaneous rate of change and the predicted change in the function, respectively.  Explicitly, your first sentence might have structure like   means that the instantaneous rate of change of when the car has been driven miles is ,   where the final blank should be completed using the units on the derivative. Your second sentence might have form   When the car has been driven miles, if the car is driven one more mile, we expect that the value of the car will by about .         means that the instantaneous rate of change of the car's value when the car has been driven miles is dollars per mile. In addition, when the car has been driven miles, if the car is driven one more mile, we expect that the value of the car will decrease by about dollars.     means that the instantaneous rate of change of the car's value when the car has been driven miles is dollars per mile. This tells us that when the car has been driven miles, if the car is driven one more mile, we expect that the value of the car will decrease by about dollars.      Suppose that measures the amount of water (in liters) in a tank that is filled with water that is meters deep. Explain the meaning of the statement by writing two sentences in the structure described above.        means that the instantaneous rate of change of volume of water in the tank when the water is meters deep is liters per meter. This tells us that when the water is meters deep, if the water rises one more meter, we expect that the volume of water in the tank will increase by about liters.     means that the instantaneous rate of change of volume of water in the tank when the water is meters deep is liters per meter. This tells us that when the water is meters deep, if the water rises one more meter, we expect that the volume of water in the tank will increase by about liters.      Suppose that measures the temperature of a can of soda (in degrees Celsius) in a refrigerator at time in minutes. Explain the meaning of the statement by writing two sentences in the structure described above.        means that the instantaneous rate of change of the soda's temperature at the instant minutes is degrees Celsius per minute. This tells us that after minutes have elapsed, if one more minute passes, we expect that the soda's temperature will drop by about degrees Celsius.     means that the instantaneous rate of change of the soda's temperature at the instant minutes is degrees Celsius per minute. This tells us that after minutes have elapsed, if one more minute passes, we expect that the soda's temperature will drop by about degrees Celsius.      Suppose that measures the rate at which a person burns calories (in calories per hour) when riding a bike at a speed of kilometers per hour. Explain the meaning of the statement by writing two sentences in the structure described above.        means that the instantaneous rate of change of the rate at which the biker is burning calories when traveling at a speed of kilometers per hour is calories per hour per kilometer per hour. This tells us that when the person is riding at kilometers per hour, if they increase their speed by kilometer per hour, we expect that they will burn about additional calories over the next hour.     means that the instantaneous rate of change of the rate at which the biker is burning calories when traveling at a speed of kilometers per hour is calories per hour per kilometer per hour. This tells us that when the person is riding at kilometers per hour, if they increase their speed by kilometer per hour, we expect that they will burn about additional calories over the next hour.    "
+},
+{
+  "id": "ws-act-1-5-2",
+  "level": "1",
+  "url": "ws-act-1-5-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Interpreting, Estimating, and Using the Derivative - Activity 1.5.3",
+  "body": " Interpreting, Estimating, and Using the Derivative - Activity 1.5.3    A potato is placed in an oven whose temperature is 350 degrees Fahrenheit, and the potato's temperature (in degrees Fahrenheit) is recorded in the following table. Time is measured in minutes. Thanks to Nick Owad of Hood College for conducting experiments with actual potatoes in his oven in order to generate the data for this activity.   Potato temperature data in degrees Fahrenheit.                                                            Use a central difference to estimate the instantaneous rate of change of the potato's temperature at . Include units on your answer.    Think about quantities such as .    degrees per minute.    Using the central difference, we find that degrees per minute.      Use a central difference to estimate the instantaneous rate of change of the potato's temperature at . Include units on your answer.    See the note in (a).    degrees per minute.    Using the central difference, we find that degrees per minute.      Without doing any calculation, which do you expect to be greater: or ? Why?    Is changing faster at or at ?    We expect .    As time goes on, we see that it's usually the case that the amount of increase in the potato's temperature gets less and less, thus we expect the value of to get smaller and smaller as time goes on. We therefore expect .      Suppose we know that and . What are the respective units on these two quantities? What do you expect the temperature of the potato to be when ? when ? Why?    Remember that the units on will be degrees Fahrenheit per minute.    Because at time the potato's temperature is increasing at 1.3941 degrees per minute, we expect that at , the temperature will be about 1.3941 degrees greater than at .    The value is the temperature of the potato in degrees Fahrenheit at time 46, while measures the instantaneous rate of change of the potato's temperature with respect to time at the instant , and its units are degrees per minute. Because at time the potato's temperature is increasing at 1.3941 degrees per minute, we expect that at , the temperature will be about 1.3941 degrees greater than at , or in other words . Similarly, at , two minutes have elapsed from , so we expect an increase of degrees: .      Write a couple of careful sentences that describe the behavior of the temperature of the potato on the time interval , as well as the behavior of the instantaneous rate of change of the potato's temperature on the same time interval.    Be careful to distinguish between the temperature, , and the rate of change of temperature, , in your commentary.    We might say that on the interval the temperature of the potato is increasing, but at a decreasing rate.    Throughout the time interval , the temperature of the potato is increasing. But as time goes on, the rate at which the temperature is rising appears to be decreasing. That is, while the values of continue to get larger as time progresses, the values of seem to be getting smaller (while still remaining positive). We thus might say that on the interval the temperature of the potato is increasing, but at a decreasing rate.     "
+},
+{
+  "id": "act-1-5-2",
+  "level": "2",
+  "url": "ws-act-1-5-2.html#act-1-5-2",
+  "type": "Activity",
+  "number": "13",
+  "title": "",
+  "body": "  A potato is placed in an oven whose temperature is 350 degrees Fahrenheit, and the potato's temperature (in degrees Fahrenheit) is recorded in the following table. Time is measured in minutes. Thanks to Nick Owad of Hood College for conducting experiments with actual potatoes in his oven in order to generate the data for this activity.   Potato temperature data in degrees Fahrenheit.                                                            Use a central difference to estimate the instantaneous rate of change of the potato's temperature at . Include units on your answer.    Think about quantities such as .    degrees per minute.    Using the central difference, we find that degrees per minute.      Use a central difference to estimate the instantaneous rate of change of the potato's temperature at . Include units on your answer.    See the note in (a).    degrees per minute.    Using the central difference, we find that degrees per minute.      Without doing any calculation, which do you expect to be greater: or ? Why?    Is changing faster at or at ?    We expect .    As time goes on, we see that it's usually the case that the amount of increase in the potato's temperature gets less and less, thus we expect the value of to get smaller and smaller as time goes on. We therefore expect .      Suppose we know that and . What are the respective units on these two quantities? What do you expect the temperature of the potato to be when ? when ? Why?    Remember that the units on will be degrees Fahrenheit per minute.    Because at time the potato's temperature is increasing at 1.3941 degrees per minute, we expect that at , the temperature will be about 1.3941 degrees greater than at .    The value is the temperature of the potato in degrees Fahrenheit at time 46, while measures the instantaneous rate of change of the potato's temperature with respect to time at the instant , and its units are degrees per minute. Because at time the potato's temperature is increasing at 1.3941 degrees per minute, we expect that at , the temperature will be about 1.3941 degrees greater than at , or in other words . Similarly, at , two minutes have elapsed from , so we expect an increase of degrees: .      Write a couple of careful sentences that describe the behavior of the temperature of the potato on the time interval , as well as the behavior of the instantaneous rate of change of the potato's temperature on the same time interval.    Be careful to distinguish between the temperature, , and the rate of change of temperature, , in your commentary.    We might say that on the interval the temperature of the potato is increasing, but at a decreasing rate.    Throughout the time interval , the temperature of the potato is increasing. But as time goes on, the rate at which the temperature is rising appears to be decreasing. That is, while the values of continue to get larger as time progresses, the values of seem to be getting smaller (while still remaining positive). We thus might say that on the interval the temperature of the potato is increasing, but at a decreasing rate.    "
+},
+{
+  "id": "ws-act-1-5-5",
+  "level": "1",
+  "url": "ws-act-1-5-5.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Interpreting, Estimating, and Using the Derivative - Activity 1.5.5",
+  "body": " Interpreting, Estimating, and Using the Derivative - Activity 1.5.5    A company manufactures rope, and the total cost of producing feet of rope is dollars.     What does it mean to say that ?    It costs 800 dollars to produce 2000 feet of rope.      What are the units of ?    dollars per foot      Suppose that and . Estimate , and justify your estimate by writing at least one sentence that explains your thinking.     dollars. The cost of producing 2100 feet of rope is approximately the cost of producing 2000 feet. We add the marginal cost of producing rope above 2000 feet.      Do you think is less than, equal to, or greater than ? Why?    greater than; the cost to produce the 2001st foot of rope is likely more than the cost to produce the 3001st foot of rope due to economies of scale      Suppose someone claims that . What would the practical meaning of this derivative value tell you about the approximate cost of the next foot of rope? Is this possible? Why or why not?    If the approximate cost of producing the 5001st foot of rope is roughly dollars (i.e. one gets paid 10 cents to produce this foot), then perhaps an external (government?) subsidy is in play?     "
+},
+{
+  "id": "act-1-5-5",
+  "level": "2",
+  "url": "ws-act-1-5-5.html#act-1-5-5",
+  "type": "Activity",
+  "number": "14",
+  "title": "",
+  "body": "  A company manufactures rope, and the total cost of producing feet of rope is dollars.     What does it mean to say that ?    It costs 800 dollars to produce 2000 feet of rope.      What are the units of ?    dollars per foot      Suppose that and . Estimate , and justify your estimate by writing at least one sentence that explains your thinking.     dollars. The cost of producing 2100 feet of rope is approximately the cost of producing 2000 feet. We add the marginal cost of producing rope above 2000 feet.      Do you think is less than, equal to, or greater than ? Why?    greater than; the cost to produce the 2001st foot of rope is likely more than the cost to produce the 3001st foot of rope due to economies of scale      Suppose someone claims that . What would the practical meaning of this derivative value tell you about the approximate cost of the next foot of rope? Is this possible? Why or why not?    If the approximate cost of producing the 5001st foot of rope is roughly dollars (i.e. one gets paid 10 cents to produce this foot), then perhaps an external (government?) subsidy is in play?    "
+},
+{
+  "id": "ws-act-1-6-2",
+  "level": "1",
+  "url": "ws-act-1-6-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Second Derivative - Activity 1.6.3",
+  "body": " The Second Derivative - Activity 1.6.3    A potato is placed in an oven whose temperature is 350 degrees Fahrenheit, and the potato's temperature (in degrees Fahrenheit) is recorded in Table . Time is measured in minutes. Thanks to Nick Owad of Hood College for conducting experiments with actual potatoes in his oven in order to generate the data for this activity.    Select values of .                                                          Select approximate values of .                                 NA                 NA      In Activity , we used this data to compute approximations to and using central differences. Those values are provided in Table , along with several others computed in the same way.     What are the units on ? What is the precise meaning of the value ?    Remember that the derivative's units are units of output per unit of input.    Degrees Fahrenheit per minute.    has units measured in degrees Fahrenheit per minute.      Use a central difference to estimate the value of .    To estimate , we can use for an appropriate choice of .    .    Using a central difference, .      What is the meaning of the value of that you have computed in (b) in terms of the potato's temperature? Write several careful sentences that describe the overall behavior of the potato's temperature at this point in time. In particular, you should cite the values of , , and , each with appropriate units. Be sure to explicitly discuss what you expect to happen in the minute that transpires from to .    For each of the values and , think about what they tell you about expected upcoming behavior in and , respectively.    At the moment , the temperature of the potato is degrees; its temperature is rising at an instaneous rate of degrees Fahrenheit per minute; and the rate at which the temperature is rising is falling at a rate of degrees Fahrenheit per minute per minute. Over the minute from to , we expect the temperature of the potato to rise about degrees Fahrenheit and for the rate at which its temperature is increasing to drop by about degrees Fahrenheit per minute. We expect that degrees Fahrenheit, and degrees Fahrenheit per minute.    The value , which is measured in degrees Fahrenheit per minute per minute. Along with the other data, this tells us that at the moment , the temperature of the potato is degrees, that its temperature is rising at a rate of degrees Fahrenheit per minute, and that the rate at which the temperature is rising is falling at a rate of degrees Fahrenheit per minute per minute. That is, while the temperature is rising, it is rising at a slower and slower rate. At , we expect that degrees Fahrenheit, and degrees Fahrenheit per minute.      On the interval from to , is the potato's temperature increasing at an increasing rate, increasing at a constant rate, or increasing at a decreasing rate? Why?    Think concavity.    Increasing at a decreasing rate.    On the interval , the potato's temperature increasing at a decreasing rate because the values of the first derivative of are falling. Equivalently, this is because the value of is negative throughout the given time interval.     "
+},
+{
+  "id": "act-1-6-2",
+  "level": "2",
+  "url": "ws-act-1-6-2.html#act-1-6-2",
+  "type": "Activity",
+  "number": "15",
+  "title": "",
+  "body": "  A potato is placed in an oven whose temperature is 350 degrees Fahrenheit, and the potato's temperature (in degrees Fahrenheit) is recorded in Table . Time is measured in minutes. Thanks to Nick Owad of Hood College for conducting experiments with actual potatoes in his oven in order to generate the data for this activity.    Select values of .                                                          Select approximate values of .                                 NA                 NA      In Activity , we used this data to compute approximations to and using central differences. Those values are provided in Table , along with several others computed in the same way.     What are the units on ? What is the precise meaning of the value ?    Remember that the derivative's units are units of output per unit of input.    Degrees Fahrenheit per minute.    has units measured in degrees Fahrenheit per minute.      Use a central difference to estimate the value of .    To estimate , we can use for an appropriate choice of .    .    Using a central difference, .      What is the meaning of the value of that you have computed in (b) in terms of the potato's temperature? Write several careful sentences that describe the overall behavior of the potato's temperature at this point in time. In particular, you should cite the values of , , and , each with appropriate units. Be sure to explicitly discuss what you expect to happen in the minute that transpires from to .    For each of the values and , think about what they tell you about expected upcoming behavior in and , respectively.    At the moment , the temperature of the potato is degrees; its temperature is rising at an instaneous rate of degrees Fahrenheit per minute; and the rate at which the temperature is rising is falling at a rate of degrees Fahrenheit per minute per minute. Over the minute from to , we expect the temperature of the potato to rise about degrees Fahrenheit and for the rate at which its temperature is increasing to drop by about degrees Fahrenheit per minute. We expect that degrees Fahrenheit, and degrees Fahrenheit per minute.    The value , which is measured in degrees Fahrenheit per minute per minute. Along with the other data, this tells us that at the moment , the temperature of the potato is degrees, that its temperature is rising at a rate of degrees Fahrenheit per minute, and that the rate at which the temperature is rising is falling at a rate of degrees Fahrenheit per minute per minute. That is, while the temperature is rising, it is rising at a slower and slower rate. At , we expect that degrees Fahrenheit, and degrees Fahrenheit per minute.      On the interval from to , is the potato's temperature increasing at an increasing rate, increasing at a constant rate, or increasing at a decreasing rate? Why?    Think concavity.    Increasing at a decreasing rate.    On the interval , the potato's temperature increasing at a decreasing rate because the values of the first derivative of are falling. Equivalently, this is because the value of is negative throughout the given time interval.    "
+},
+{
+  "id": "ws-act-1-6-5",
+  "level": "1",
+  "url": "ws-act-1-6-5.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Second Derivative - Activity 1.6.5",
+  "body": " The Second Derivative - Activity 1.6.5     If is positive on an interval, then is on that interval and is on that interval.    increasing; concave up      If is negative on an interval, then is on that interval and is on that interval.    decreasing; concave down      At exactly two of the labeled points in , the derivative is 0; the second derivative is not zero at any of the labeled points. Give the signs of , , and at each marked point.    A plot of with four points labeled.    Determine the signs of , , and at various points.    Point                                                  Signs of , , and at various points.    Point                -  0  +       +  0  -       +  -  -       -  +  +          Sketch graphs of functions satisfying each of the descriptions given below.     (I)  The slope is positive and increasing at first, but then is positive and decreasing.    (II)  The first derivative of the function whose graph is above.    (III)  The second derivative of the first function sketched.       Answers vary but (I) should be increasing and concave up at first and then concave down. (II) should be above the horizontal axis and increasing and then decreasing all while being concave down. (III) should be decreasing and passing through through the horizontal axis when the maximum is reached in (II).     "
+},
+{
+  "id": "act-1-6-5",
+  "level": "2",
+  "url": "ws-act-1-6-5.html#act-1-6-5",
+  "type": "Activity",
+  "number": "16",
+  "title": "",
+  "body": "   If is positive on an interval, then is on that interval and is on that interval.    increasing; concave up      If is negative on an interval, then is on that interval and is on that interval.    decreasing; concave down      At exactly two of the labeled points in , the derivative is 0; the second derivative is not zero at any of the labeled points. Give the signs of , , and at each marked point.    A plot of with four points labeled.    Determine the signs of , , and at various points.    Point                                                  Signs of , , and at various points.    Point                -  0  +       +  0  -       +  -  -       -  +  +          Sketch graphs of functions satisfying each of the descriptions given below.     (I)  The slope is positive and increasing at first, but then is positive and decreasing.    (II)  The first derivative of the function whose graph is above.    (III)  The second derivative of the first function sketched.       Answers vary but (I) should be increasing and concave up at first and then concave down. (II) should be above the horizontal axis and increasing and then decreasing all while being concave down. (III) should be decreasing and passing through through the horizontal axis when the maximum is reached in (II).    "
+},
+{
+  "id": "ws-act-1-7-1",
+  "level": "1",
+  "url": "ws-act-1-7-1.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Limits, Continuity, and Differentiability - Activity 1.7.2",
+  "body": " Limits, Continuity, and Differentiability - Activity 1.7.2    Consider a function that is piecewise-defined according to the formula  Use the given formula to answer the following questions.     For each of the values , compute .    Find the interval in which lies and evaluate the function there.    ; ; ; ; is undefined.    ; ; ; ; is undefined.      For each of the values , determine .    Remember that for , we only consider values of such that . Find the right formula to use in the piecewise definition for to fit the values you are considering.                        For each of the values , determine . If the limit fails to exist, explain why by discussing the left- and right-hand limits at the relevant -value.    Use your work in (b) and compare left- and right-hand limits.    does not exist. The values of the limits as for are .    does not exists because the left-hand limit is while the right-hand limit is . All of the other requested limits exist, as left- and right-hand limits exist and are equal in each case. The respective values of the limits as for are .      For which values of is the following statement true?    Use your work in (a) and (c).    , , and .    For , , and , . At , the limit fails to exist, but . At , the limit is , but . At , the limit is 2, but is undefined.      On the axes provided, sketch an accurate, labeled graph of . Be sure to carefully use open circles (○) and filled circles (●) to represent key points on the graph, as dictated by the piecewise formula.    Graph the piecewise-defined function described here.     Note that is piecewise linear.      The graph of the piecewise-defined function described in this activity.      "
+},
+{
+  "id": "act-1-7-1",
+  "level": "2",
+  "url": "ws-act-1-7-1.html#act-1-7-1",
+  "type": "Activity",
+  "number": "17",
+  "title": "",
+  "body": "  Consider a function that is piecewise-defined according to the formula  Use the given formula to answer the following questions.     For each of the values , compute .    Find the interval in which lies and evaluate the function there.    ; ; ; ; is undefined.    ; ; ; ; is undefined.      For each of the values , determine .    Remember that for , we only consider values of such that . Find the right formula to use in the piecewise definition for to fit the values you are considering.                        For each of the values , determine . If the limit fails to exist, explain why by discussing the left- and right-hand limits at the relevant -value.    Use your work in (b) and compare left- and right-hand limits.    does not exist. The values of the limits as for are .    does not exists because the left-hand limit is while the right-hand limit is . All of the other requested limits exist, as left- and right-hand limits exist and are equal in each case. The respective values of the limits as for are .      For which values of is the following statement true?    Use your work in (a) and (c).    , , and .    For , , and , . At , the limit fails to exist, but . At , the limit is , but . At , the limit is 2, but is undefined.      On the axes provided, sketch an accurate, labeled graph of . Be sure to carefully use open circles (○) and filled circles (●) to represent key points on the graph, as dictated by the piecewise formula.    Graph the piecewise-defined function described here.     Note that is piecewise linear.      The graph of the piecewise-defined function described in this activity.     "
+},
+{
+  "id": "ws-act-1-7-2",
+  "level": "1",
+  "url": "ws-act-1-7-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Limits, Continuity, and Differentiability - Activity 1.7.3",
+  "body": " Limits, Continuity, and Differentiability - Activity 1.7.3    This activity builds on your work in Preview Activity 1.7.1, using the same function as given by the graph that is repeated in the following figure. Assume that .  ADD ALT TEXT TO THIS IMAGE     At which values of does not exist?    Consider the left- and right-hand limits at each value.    ; .    does not exist at since and does not exist at since does not exist due to the infinitely oscillatory behavior of .      At which values of is not defined?    Carefully examine places on the graph where there's an open circle.    .    The only point at which is not defined is at .      At which values of does have a limit, but ?    Are there locations on the graph where the function has a limit but there's a hole in the graph?    ; .    At , note that exists (and appears to have value approximately ), but , and thus . At , , but is not defined, so the limit exists but does not equal the function value.      State all values of for which is not continuous at .    Remember that at least one of three conditions must fail: if the function lacks a limit, if the function is undefined, or if the limit exists but does not equal the function value, then is not continuous at the point.    ; ; ; .    Based on our work in (a), (b), and (c), is not continuous at and because does not have a limit at those points; is not continuous at since is not defined there; and is not continuous at because at that point its limit does not equal its function value.      Which condition is stronger, and hence implies the other: has a limit at or is continuous at ? Explain, and hence complete the following sentence: If at , then at , where you complete the blanks with has a limit and is continuous , using each phrase once.    Note that the definition of being continuous requires the limit to exist.     If is continuous at , then has a limit at .     If is continuous at , then has a limit at , since one of the defining properties of being continuous at is that the function has a limit at that input value. This shows that being continuous is a stronger condition than having a limit.     "
+},
+{
+  "id": "act-1-7-2",
+  "level": "2",
+  "url": "ws-act-1-7-2.html#act-1-7-2",
+  "type": "Activity",
+  "number": "18",
+  "title": "",
+  "body": "  This activity builds on your work in Preview Activity 1.7.1, using the same function as given by the graph that is repeated in the following figure. Assume that .  ADD ALT TEXT TO THIS IMAGE     At which values of does not exist?    Consider the left- and right-hand limits at each value.    ; .    does not exist at since and does not exist at since does not exist due to the infinitely oscillatory behavior of .      At which values of is not defined?    Carefully examine places on the graph where there's an open circle.    .    The only point at which is not defined is at .      At which values of does have a limit, but ?    Are there locations on the graph where the function has a limit but there's a hole in the graph?    ; .    At , note that exists (and appears to have value approximately ), but , and thus . At , , but is not defined, so the limit exists but does not equal the function value.      State all values of for which is not continuous at .    Remember that at least one of three conditions must fail: if the function lacks a limit, if the function is undefined, or if the limit exists but does not equal the function value, then is not continuous at the point.    ; ; ; .    Based on our work in (a), (b), and (c), is not continuous at and because does not have a limit at those points; is not continuous at since is not defined there; and is not continuous at because at that point its limit does not equal its function value.      Which condition is stronger, and hence implies the other: has a limit at or is continuous at ? Explain, and hence complete the following sentence: If at , then at , where you complete the blanks with has a limit and is continuous , using each phrase once.    Note that the definition of being continuous requires the limit to exist.     If is continuous at , then has a limit at .     If is continuous at , then has a limit at , since one of the defining properties of being continuous at is that the function has a limit at that input value. This shows that being continuous is a stronger condition than having a limit.    "
+},
+{
+  "id": "ws-act-1-7-3",
+  "level": "1",
+  "url": "ws-act-1-7-3.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Limits, Continuity, and Differentiability - Activity 1.7.4",
+  "body": " Limits, Continuity, and Differentiability - Activity 1.7.4    In this activity, we explore two different functions and classify the points at which each is not differentiable.  For (a)-(c), let be the function given by the rule . Note that for part (d) we use the function given by the graph in (d).     Reasoning graphically (that is, by discussing the graph of ), explain why is differentiable at every point such that .    What type of function is for all ? For all ?    is piecewise linear.    We know that is given by the formula when and by when . Each of these pieces of is a straight line, so at every point other than the point where they meet, the function has a well-defined slope, and thus is differentiable.      Use the limit definition of the derivative to show that .    Recall that .         Observe that      Explain why fails to exist by using small positive and negative values of .    What is the value of when ?    , but .    Following up on our work in (b), note that whenever , , and thus , while whenever , , and thus Since the right- and left-hand limits are not equal, it follows that does not exist.      Let be the function that we have previously explored in Preview Activity 1.7.1, whose graph is given again in the following figure.  The graph from Preview Activity 1.7.1.  State all values of for which is not differentiable at . For each, provide a reason for your conclusion.    You might start by identifying points where is not continuous.    .    is not differentiable at because at each of these points is not continuous. In addition, is not differentiable at and because the graph of has a corner point (or cusp) at each of these values.      True or false: if a function is differentiable at , then must exist. Why?    What does being differentiable at a point tell you about continuity there?    True.    True: if a function is differentiable at , then must exist. This is true because we know that if is differentiable at a point, then is continuous there, and anytime a function is continuous at a point, it must have a limit there.     "
+},
+{
+  "id": "act-1-7-3",
+  "level": "2",
+  "url": "ws-act-1-7-3.html#act-1-7-3",
+  "type": "Activity",
+  "number": "19",
+  "title": "",
+  "body": "  In this activity, we explore two different functions and classify the points at which each is not differentiable.  For (a)-(c), let be the function given by the rule . Note that for part (d) we use the function given by the graph in (d).     Reasoning graphically (that is, by discussing the graph of ), explain why is differentiable at every point such that .    What type of function is for all ? For all ?    is piecewise linear.    We know that is given by the formula when and by when . Each of these pieces of is a straight line, so at every point other than the point where they meet, the function has a well-defined slope, and thus is differentiable.      Use the limit definition of the derivative to show that .    Recall that .         Observe that      Explain why fails to exist by using small positive and negative values of .    What is the value of when ?    , but .    Following up on our work in (b), note that whenever , , and thus , while whenever , , and thus Since the right- and left-hand limits are not equal, it follows that does not exist.      Let be the function that we have previously explored in Preview Activity 1.7.1, whose graph is given again in the following figure.  The graph from Preview Activity 1.7.1.  State all values of for which is not differentiable at . For each, provide a reason for your conclusion.    You might start by identifying points where is not continuous.    .    is not differentiable at because at each of these points is not continuous. In addition, is not differentiable at and because the graph of has a corner point (or cusp) at each of these values.      True or false: if a function is differentiable at , then must exist. Why?    What does being differentiable at a point tell you about continuity there?    True.    True: if a function is differentiable at , then must exist. This is true because we know that if is differentiable at a point, then is continuous there, and anytime a function is continuous at a point, it must have a limit there.    "
+},
+{
+  "id": "ws-act-1-8-1",
+  "level": "1",
+  "url": "ws-act-1-8-1.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Tangent Line Approximation - Activity 1.8.2",
+  "body": " The Tangent Line Approximation - Activity 1.8.2    Suppose it is known that for a given differentiable function , its local linearization at the point where is given by .     Compute the values of and .    Follow the rule for .    ; .    Using the formula for , ; Since , we see .      What must be the values of and ? Why?    Recall that the form of the local linearization is .    ; .    Since , we see and . Alternatively, we could observe that the value and slope of must match the value and slope of at the point of tangency.      Do you expect the value of to be greater than or less than the value of ? Why?    Is the function increasing or decreasing at ?    Less.    Because , we see that is increasing near , and therefore is expected to be less than .      Use the local linearization to estimate the value of .    Remember that .    .    Observe that .      Suppose that you also know that . What does this tell you about the graph of at ?    What does the second derivative tell you about the shape of a curve?    Concave up.    Since , we know is concave up at .      For near , sketch the graph of the local linearization as well as a possible graph of on the axes provided.  ADD ALT TEXT TO THIS IMAGE    Use your work above.    The illustration below shows a possible graph of near , along with the tangent line through .  ADD ALT TEXT TO THIS IMAGE    In the figure below, we use the results of our previous work to generate the plot shown, which is a possible graph of near , along with the tangent line through .  ADD ALT TEXT TO THIS IMAGE     "
+},
+{
+  "id": "act-1-8-1",
+  "level": "2",
+  "url": "ws-act-1-8-1.html#act-1-8-1",
+  "type": "Activity",
+  "number": "20",
+  "title": "",
+  "body": "  Suppose it is known that for a given differentiable function , its local linearization at the point where is given by .     Compute the values of and .    Follow the rule for .    ; .    Using the formula for , ; Since , we see .      What must be the values of and ? Why?    Recall that the form of the local linearization is .    ; .    Since , we see and . Alternatively, we could observe that the value and slope of must match the value and slope of at the point of tangency.      Do you expect the value of to be greater than or less than the value of ? Why?    Is the function increasing or decreasing at ?    Less.    Because , we see that is increasing near , and therefore is expected to be less than .      Use the local linearization to estimate the value of .    Remember that .    .    Observe that .      Suppose that you also know that . What does this tell you about the graph of at ?    What does the second derivative tell you about the shape of a curve?    Concave up.    Since , we know is concave up at .      For near , sketch the graph of the local linearization as well as a possible graph of on the axes provided.  ADD ALT TEXT TO THIS IMAGE    Use your work above.    The illustration below shows a possible graph of near , along with the tangent line through .  ADD ALT TEXT TO THIS IMAGE    In the figure below, we use the results of our previous work to generate the plot shown, which is a possible graph of near , along with the tangent line through .  ADD ALT TEXT TO THIS IMAGE    "
+},
+{
+  "id": "ws-act-1-8-2",
+  "level": "1",
+  "url": "ws-act-1-8-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "The Tangent Line Approximation - Activity 1.8.3",
+  "body": " The Tangent Line Approximation - Activity 1.8.3    This activity concerns a function about which the following information is known: is a differentiable function defined at every real number has its graph given in the following figure.  The graph of is given. It is a parabola opening downward having a vertex at and -intercepts at and .  Your overall task is to determine as much information as possible about (especially near the value ) by responding to the questions below.     Find a formula for the tangent line approximation, , to at the point .    Find the value of from the given graph of .    .    Since and , we have .      Use the tangent line approximation to estimate the value of . Show your work carefully and clearly.    Remember that .    .    Using our work in (a), .      Sketch a graph of on the righthand grid in the provided figure; label it appropriately. Write a sentence to explain why your graph looks the way it does.    The graph of is the derivative of the graph of .    See .    See .      Is the slope of the tangent line to increasing, decreasing, or neither when ? Explain.    Is increasing, decreasing, or neither when ?    Neither.    The slope of the tangent line to is increasing for because is an increasing function on this interval. Similarly, for , the slope of the tangent line to is decreasing. Right at , the slope of the tangent line to is neither increasing nor decreasing.      Sketch a possible graph of near on the lefthand grid in the provided figure. Include a sketch of (found in part (a)). Explain how you know the graph of looks like you have drawn it.    Draw first. Then think about options for relative to the graph of .    See , which shows, at left, a possible graph of near , along with the tangent line through .   The graph on the left shows what appears to be a cubic with a tangent line at . The graph at the right is that of a downward-sloping line passing through and .      See the plot in , which shows, at left, a possible graph of near , along with the tangent line through . Note that is concave up for since is increasing on that interval, and is concave down for since is decreasing there. Hence changes from concave up to concave down right at , which is also the point near 2 where the graph of is steepest.   The graph on the left shows what appears to be a cubic with a tangent line at . The graph at the right is that of a downward-sloping line passing through and .       Does your estimate in (b) over- or under-estimate the true value of ? Why?    Does the tangent line lie above or below the graph of at ?    Too large.    Because the tangent line to lies above the graph of to the right of , our estimate of is too large the local linearization overshoots the true value of at this point.     "
+},
+{
+  "id": "act-1-8-2",
+  "level": "2",
+  "url": "ws-act-1-8-2.html#act-1-8-2",
+  "type": "Activity",
+  "number": "21",
+  "title": "",
+  "body": "  This activity concerns a function about which the following information is known: is a differentiable function defined at every real number has its graph given in the following figure.  The graph of is given. It is a parabola opening downward having a vertex at and -intercepts at and .  Your overall task is to determine as much information as possible about (especially near the value ) by responding to the questions below.     Find a formula for the tangent line approximation, , to at the point .    Find the value of from the given graph of .    .    Since and , we have .      Use the tangent line approximation to estimate the value of . Show your work carefully and clearly.    Remember that .    .    Using our work in (a), .      Sketch a graph of on the righthand grid in the provided figure; label it appropriately. Write a sentence to explain why your graph looks the way it does.    The graph of is the derivative of the graph of .    See .    See .      Is the slope of the tangent line to increasing, decreasing, or neither when ? Explain.    Is increasing, decreasing, or neither when ?    Neither.    The slope of the tangent line to is increasing for because is an increasing function on this interval. Similarly, for , the slope of the tangent line to is decreasing. Right at , the slope of the tangent line to is neither increasing nor decreasing.      Sketch a possible graph of near on the lefthand grid in the provided figure. Include a sketch of (found in part (a)). Explain how you know the graph of looks like you have drawn it.    Draw first. Then think about options for relative to the graph of .    See , which shows, at left, a possible graph of near , along with the tangent line through .   The graph on the left shows what appears to be a cubic with a tangent line at . The graph at the right is that of a downward-sloping line passing through and .      See the plot in , which shows, at left, a possible graph of near , along with the tangent line through . Note that is concave up for since is increasing on that interval, and is concave down for since is decreasing there. Hence changes from concave up to concave down right at , which is also the point near 2 where the graph of is steepest.   The graph on the left shows what appears to be a cubic with a tangent line at . The graph at the right is that of a downward-sloping line passing through and .       Does your estimate in (b) over- or under-estimate the true value of ? Why?    Does the tangent line lie above or below the graph of at ?    Too large.    Because the tangent line to lies above the graph of to the right of , our estimate of is too large the local linearization overshoots the true value of at this point.    "
 },
 {
   "id": "handouts-2",
@@ -23,7 +374,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#GrapefruitPic",
   "type": "Figure",
-  "number": "1",
+  "number": "10",
   "title": "",
   "body": " Height of a grapefruit over time.   A curve showing the height of a grapefruit over time. The curve increases, reaches a peak, and then decreases.   "
 },
@@ -32,7 +383,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#GrapefruitTableData",
   "type": "Table",
-  "number": "2",
+  "number": "11",
   "title": "Height of the grapefruit above the ground.",
   "body": " Height of the grapefruit above the ground.     (sec)  0  1  2  3  4  5  6     (feet)  6  90  142  162  150  106  30    "
 },
@@ -41,7 +392,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#GrapefruitTableData2",
   "type": "Table",
-  "number": "3",
+  "number": "12",
   "title": "Average velocity of the grapefruit over various time intervals.",
   "body": " Average velocity of the grapefruit over various time intervals.    Time Interval  Average Velocity    [1,1.5]      [1,1.1]      [1,1.01]      [1,1.001]      [1,1.0001]      [0.999,1]      [0.9999,1]      "
 },
@@ -50,7 +401,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#figureKatherinesDistance",
   "type": "Figure",
-  "number": "4",
+  "number": "13",
   "title": "",
   "body": " Katherine's distance vs. time.  Graph of distance d, measured in miles, as a function of time t, measured in minutes. The horizontal axis is labeled t in minutes and runs from 0 to 120. The vertical axis is labeled d in miles and shows values from 0 to about 80. The graph is piecewise linear. From t equals 0 to t equals 30, the distance increases slowly from 0 to about 10 miles. From t equals 30 to t equals 60, the distance increases more rapidly, reaching 40 miles at t equals 60. From t equals 60 to t equals 75, the graph is horizontal at d equals 40, indicating that the distance does not change during this time interval. From t equals 75 to t equals 120, the distance increases again at a steady rate, ending near 80 miles at t equals 120. Changes in slope indicate changes in speed, and the horizontal segment indicates a period of no motion.    "
 },
@@ -59,7 +410,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#figureKatherinesVelocity",
   "type": "Figure",
-  "number": "5",
+  "number": "14",
   "title": "",
   "body": " Katherine's velocity vs. time.  Graph of velocity v, measured in miles per hour, as a function of time t, measured in minutes. The horizontal axis is labeled t in minutes and runs from 0 to 120. The vertical axis is labeled v in miles per hour and shows values from 0 to about 70. The graph is piecewise constant and consists of horizontal line segments. From t equals 0 to t equals 30, the velocity is constant at 20 miles per hour. From t equals 30 to t equals 60, the velocity jumps to 60 miles per hour and remains constant. At t equals 60, the velocity drops abruptly to zero for a short interval. From about t equals 70 to t equals 120, the velocity is constant again at 40 miles per hour. The vertical jumps between segments indicate instantaneous changes in velocity, and there are no sloped segments shown.    "
 },
@@ -68,7 +419,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#GrapefruitTableComputed",
   "type": "Table",
-  "number": "6",
+  "number": "15",
   "title": "Average velocities of the grapefruit on various intervals computed.",
   "body": " Average velocities of the grapefruit on various intervals computed.    Time Interval  Average Velocity    [1,1.5]  60 ft\/sec    [1,1.1]  66.4 ft\/sec    [1,1.01]  67.84 ft\/sec    [1,1.001]  67.984 ft\/sec    [1,1.0001]  67.9984 ft\/sec    [0.999,1]  68.016 ft\/sec    [0.9999,1]  68.0016 ft\/sec    "
 },
@@ -86,7 +437,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#figureTrans",
   "type": "Figure",
-  "number": "7",
+  "number": "16",
   "title": "",
   "body": "  Graph of a function on a coordinate grid. The x-axis is horizontal and the y-axis is vertical. On the left, a smooth curve increases to an open circle near x = −4, then decreases to a filled point at x = 0. From x = 0 to about x = 2, the graph rises from an open circle, then transitions into a rapidly oscillating curve between x ≈ 3 and x ≈ 5. To the right of this, the graph becomes smooth again, rising to a peak near x = 7 and then decreasing.   "
 },
@@ -95,7 +446,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#my0202",
   "type": "Figure",
-  "number": "8",
+  "number": "17",
   "title": "",
   "body": " Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks. On the far left, the graph begins below the x-axis and increases to an open circle near x equals minus four at a y-value slightly above two. From that open circle, the graph curves downward to a filled point at x equals zero with y equal to zero. Near x equals zero, a second branch begins at an open circle below the x-axis. From this point, the graph increases smoothly, passing through an open circle near x equals two at a y-value slightly above one. Just to the right of x equals two, the graph enters a region of rapid oscillation, with the y-values fluctuating repeatedly between positive and negative values over a short interval. For x greater than about four, the oscillations stop and the graph becomes smooth again, rising to a local maximum near x equals six and then decreasing slightly toward the right edge of the graph. The figure shows open circles indicating points where the function is not defined and illustrates smooth behavior, discontinuities, and oscillatory behavior on different intervals.   "
 },
@@ -104,7 +455,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#figureDPAns122",
   "type": "Figure",
-  "number": "9",
+  "number": "18",
   "title": "",
   "body": " One possible graph.  Detailed graph of a piecewise-defined function on a square coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. On the left side of the graph, for x less than 0, a smooth decreasing curve approaches the point (0, 1), ending at an open circle at (0, 1). At x = 0, the function instead has a filled point at (0, −1). From x = 0 to x = 3, the graph is a straight line with negative slope, starting at the open circle at (0, 1) and descending to an open circle at (3, −2). At x = 3, there is a filled point at (3, 1), distinct from the open points on the other pieces. For x greater than 3, the graph is a straight line with positive slope, beginning at an open circle at (3, 2) and increasing to the right. The graph emphasizes discontinuities at x = 0 and x = 3, shown by open circles and filled points at the same x-values but different y-values.    "
 },
@@ -122,7 +473,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphOf1OverX",
   "type": "Figure",
-  "number": "10",
+  "number": "19",
   "title": "",
   "body": " The graph of for .   Graph of a function on a coordinate grid with the x-axis horizontal and the y-axis vertical, both labeled and marked with integer tick marks from −4 to 4. The graph shows a single smooth curve entirely in the left half-plane. The curve begins near the point (−4, 0) and decreases as x increases. It passes near (−2, −1) and becomes steeper as it approaches the y-axis. As x approaches 0 from the left, the function decreases rapidly and approaches y = −4, appearing to have a vertical tangent or vertical asymptote at x = 0. No points of the graph are shown for x greater than or equal to 0.\"    "
 },
@@ -131,7 +482,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphOf2ToX",
   "type": "Figure",
-  "number": "11",
+  "number": "20",
   "title": "",
   "body": " The graph of .   Graph of a function on a coordinate grid with the x-axis horizontal and the y-axis vertical, both labeled. The x-axis shows values from −4 to 4, and the y-axis shows values from approximately −2 to 14. The graph is a single smooth curve that increases for all shown x-values. On the left, near x = −4, the curve lies just above the x-axis and increases slowly. As x increases, the curve rises gradually at first, passing near y = 2 when x is about 1. For x greater than about 1, the curve increases more rapidly, becoming steeper as x approaches 4, where the y-value is near 14. The graph shows no breaks, open circles, or endpoints, indicating a continuous function over the displayed interval.\"    "
 },
@@ -140,7 +491,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphOfx3",
   "type": "Figure",
-  "number": "12",
+  "number": "21",
   "title": "",
   "body": " The graph of .   Graph of a function on a coordinate grid with the x-axis horizontal and the y-axis vertical, both labeled and marked with integers. The x-axis ranges from approximately −4 to 4, and the y-axis ranges from approximately −40 to 40. The graph is a single smooth curve that increases for all shown x-values and has an S-shaped appearance. On the left, for x near −4, the curve is well below the x-axis with y-values near −35 and is increasing. As x increases toward −2, the graph rises steeply, then begins to level off near the x-axis around x = −1. Between x = −1 and x = 1, the curve is relatively flat and crosses the y-axis slightly above y = 0. For x greater than 1, the curve increases more rapidly, becoming steeper as x approaches 4, where the y-value is near 35. The graph shows no open circles, endpoints, or breaks, indicating the function is continuous over the displayed interval.\"    "
 },
@@ -149,7 +500,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureOrderDerivatives",
   "type": "Figure",
-  "number": "13",
+  "number": "22",
   "title": "",
   "body": " The graph of .   Graph of a function labeled y = g(x) on a coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. The graph is a single smooth curve. On the far left, for x less than about −2, the graph is below the x-axis and increasing steeply. The curve rises and reaches a local maximum slightly above the x-axis near x = −1. It then decreases, crossing near the x-axis close to x = 0, and continues downward to a local minimum below the x-axis near x = 1. After this minimum, the graph increases again, crossing the x-axis near x = 2. For x greater than 2, the curve continues to rise, becoming steeper and reaching positive y-values near the right end of the graph. The curve shows no breaks, open circles, or endpoints, indicating that g is continuous over the displayed interval.\"    "
 },
@@ -158,7 +509,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureDistanceHighway",
   "type": "Figure",
-  "number": "14",
+  "number": "23",
   "title": "",
   "body": " The graph of .   Graph of a function with the horizontal axis labeled t and the vertical axis labeled d, both with tick marks. The t-axis runs from 0 to about 3, and the d-axis runs from 0 to about 70. The graph is a single smooth increasing curve. Starting at t = 0, the graph begins near d = 0 and rises steeply for small values of t. As t increases toward 1, the curve continues to increase but with a decreasing slope. Between t = 1 and t = 2, the graph is nearly horizontal near d = 60, indicating very slow increase. After t = 2, the graph rises again and ends near d = 70 at t = 3. The curve has no breaks, endpoints, or open circles, indicating a continuous function over the displayed interval.\"    "
 },
@@ -167,7 +518,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphFull1OverX",
   "type": "Figure",
-  "number": "15",
+  "number": "24",
   "title": "",
   "body": " The graph of together with a secant line through and .   Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks. The graph consists of two separate smooth curves and a secant line. One curve appears in the lower-left portion of the graph, for x less than about −1. This curve decreases as x increases, crossing near y = 0 around x = −3 and then falling rapidly, becoming very steep as it approaches x = 0 from the left. A second curve appears in the upper right portion of the graph, for x greater than about 1. This curve begins at high positive y-values just to the right of x = 1 and decreases as x increases. It passes near the points (2, 1) and (3, 0.5), which are shown as filled points and labeled accordingly. A red line segment is drawn connecting the points (2, 1) and (3, 0.5). This secant line slopes downward from left to right and intersects the graph only at these two labeled points. There is a gap between the two curves near x = 0, indicating the function is not defined or not shown there. The figure emphasizes the use of two points on the graph to form a secant line.\"    "
 },
@@ -176,7 +527,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphOf2ToXAns",
   "type": "Figure",
-  "number": "16",
+  "number": "25",
   "title": "",
   "body": " The graph of with secant and tangent lines.   Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks. The graph shows a smooth increasing curve that passes near the x-axis on the left and rises steeply for x greater than about 1, reaching large y-values by x = 4. Two points on the curve are highlighted and labeled. One point is labeled (−1, one-half), and another is labeled (1, 2). A straight line is drawn through each of these points, representing tangent or linear approximation lines. The line through the point (−1, one-half) has a shallow positive slope and extends across the graph. The line through the point (1, 2) has a steeper positive slope and intersects the curve near that point. At the point (0, 1), the curve passes through the y-axis and is shown to lie between the two straight lines. The figure illustrates how the slopes of the tangent lines differ at different points on the curve and how the function’s rate of change increases as x increases.\"    "
 },
@@ -185,7 +536,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureTangentX3Ans",
   "type": "Figure",
-  "number": "17",
+  "number": "26",
   "title": "",
   "body": " The graph of the tangent line to at is .   Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks from approximately −4 to 4 on the x-axis and −40 to 40 on the y-axis. The graph shows a single smooth increasing curve with an S-shaped appearance. On the left, for x near −4, the curve is well below the x-axis and increasing. As x increases toward −1, the graph flattens slightly near the x-axis, then continues upward. For x greater than about 1, the curve increases rapidly, becoming steep near the right edge of the graph. A straight line is drawn that intersects the curve at a marked point labeled (2, 8). This line has positive slope and passes through the point (2, 8), extending downward to the left and upward to the right. The line is steeper than the curve for x less than 2 and less steep than the curve for x greater than 2. The figure illustrates a tangent or linear approximation to the curve at the point (2, 8), highlighting the local behavior of the function near that point.\"    "
 },
@@ -203,7 +554,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#plotwithtangents",
   "type": "Figure",
-  "number": "18",
+  "number": "27",
   "title": "",
   "body": " A plot of the graph of a function with slopes at several locations illustrated.   Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks. The graph is a single smooth curve. On the left, near x = −2, the curve is above the x-axis and increasing. It reaches a local maximum near x = −1 at a y-value slightly above 4. The curve then decreases, crossing the x-axis near x = 2, and continues downward to a local minimum near x = 4 with a y-value near −3. After this minimum, the curve increases again as x approaches 5. The graph has no open circles, endpoints, or breaks, indicating the function is continuous over the displayed interval.\" "
 },
@@ -212,7 +563,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#PlotTheSlopes",
   "type": "Table",
-  "number": "19",
+  "number": "28",
   "title": "Plot the slopes of the graph of this function.",
   "body": " Plot the slopes of the graph of this function.       -2  -1  0  1  2  3  4  5                 "
 },
@@ -221,7 +572,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#figureplotfprime4",
   "type": "Figure",
-  "number": "20",
+  "number": "29",
   "title": "",
   "body": " The graph of is given. Sketch the graph of .   Graph of a piecewise linear function on a coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. The graph consists of three straight line segments that meet at sharp corners. On the left, the graph begins near x = −5 at a y-value around 5 and decreases linearly to the point (−1, 1), forming a downward-sloping segment. From the point (−1, 1), the graph increases linearly to a peak at the point (1, 5). From this peak, the graph decreases linearly again to the right, ending near the point (5, 3). All endpoints appear solid, and there are no breaks or open circles, indicating the function is defined and continuous over the displayed interval.\"    "
 },
@@ -230,7 +581,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#PlotTheSlopesAns",
   "type": "Table",
-  "number": "21",
+  "number": "30",
   "title": "A table of the slopes of a given function.",
   "body": " A table of the slopes of a given function.       -2  -1  0  1  2  3  4  5       6  2  -1  -2  -2  -1  1  4    "
 },
@@ -239,7 +590,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#subsec-Toprepareforclass14-2-1-3",
   "type": "Figure",
-  "number": "22",
+  "number": "31",
   "title": "A function with its derivative.",
   "body": "A function with its derivative.   Graph showing two functions on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. One curve is labeled f(x) and the other is labeled f′(x). The curve labeled f(x) is a smooth blue curve. It increases from the left, reaching a local maximum near x = −1 at a y-value slightly above 4. It then decreases, crossing the x-axis near x = 2, and continues downward to a local minimum near x = 4 with a y-value below −2. After this minimum, the curve increases again toward the right end of the graph. The curve labeled f′(x) is a smooth black curve with a U-shaped appearance. It crosses the x-axis near x = −1 and x = 4 and has a local minimum below the x-axis near x = 2. The graph illustrates the relationship between f and its derivative: where f(x) has a local maximum or minimum, the derivative f′(x) is zero, and where f(x) is increasing or decreasing, f′(x) is positive or negative, respectively. There are no breaks or open circles shown on either curve, indicating both functions are continuous over the displayed interval.\"   "
 },
@@ -248,7 +599,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#figurepiecewisefprime",
   "type": "Figure",
-  "number": "23",
+  "number": "32",
   "title": "",
   "body": " The graph of given a graph of .   Graph showing a piecewise-defined function f and its derivative f′ on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. The graph of f(x) is drawn with solid line segments. On the left, f decreases linearly from the upper left and reaches a sharp corner at the point (−1, 1). From (−1, 1), the graph increases linearly to a peak near (1, 5). From that peak, f decreases linearly again to the right, ending near the point (5, 3). The corners at x = −1 and x = 1 indicate points where the slope changes abruptly. Several red open circles appear on the graph of f(x). One open circle is shown at the point (−1, 2), and another at (1, 2), indicating values that are not attained by the function at those x-values. Below the x-axis, the graph of f′(x) is shown using horizontal red line segments. For x less than −1, f′(x) is a constant negative value, shown by a horizontal segment ending with an open circle at x = −1. For x between 1 and 5, f′(x) is a constant positive value, shown by a horizontal segment starting with an open circle at x = 1. There is no value of f′ shown at the corner points x = −1 and x = 1, indicating the derivative does not exist at those points. The figure illustrates the relationship between a piecewise linear function and its derivative, emphasizing constant slopes on intervals and non-differentiability at corners.\"    "
 },
@@ -257,7 +608,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#figurepiecewisefprime2",
   "type": "Figure",
-  "number": "24",
+  "number": "33",
   "title": "",
   "body": " The graph of given a graph of .   Graph showing two functions on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. One graph is a smooth blue curve shaped like an upward-opening parabola. It has a minimum near the point (0, −4) and is symmetric about the y-axis. The parabola crosses the x-axis near x = −4 and x = 4 and increases on both sides of its minimum. The second graph is a straight line labeled f′(x). This line has positive slope and passes through the origin. It crosses the x-axis at x = 0 and increases steadily from left to right. The figure illustrates the relationship between a function and its derivative. Where the parabola is decreasing to the left of x = 0, the derivative is negative, and where the parabola is increasing to the right of x = 0, the derivative is positive. The minimum of the parabola occurs where f′(x) equals zero.\"    "
 },
@@ -266,7 +617,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#figurepiecewisefprime3",
   "type": "Figure",
-  "number": "25",
+  "number": "34",
   "title": "",
   "body": " The graph of given a graph of .   Graph showing a function f and its derivative f′ on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. The graph of f(x) is drawn with a thick blue curve. On the left and right, the graph rises steeply upward, with arrows indicating that the function continues to increase beyond the edges of the graph. Between x = −2 and x = 2, the graph forms a smooth, curved arch that reaches a local maximum near the point (0, 4). At x = −2 and x = 2, the graph has sharp corners at the points (−2, 1) and (2, 1), indicating that f is not differentiable at those x-values. The graph of f′(x) is shown in red. It consists of several line segments and rays with open circles indicating points where the derivative is not defined. One red segment with negative slope appears between x = −2 and x = 2, crossing the y-axis near y = −1 and ending with open circles near x = −2 and x = 2. Additional red rays appear to the left of x = −2 and to the right of x = 2 with positive slope, each starting at an open circle. The figure emphasizes the relationship between a function and its derivative, showing that f′(x) is undefined at the corner points of f and changes sign according to whether f is increasing or decreasing.\"    "
 },
@@ -293,7 +644,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#figureWhichIsWhich",
   "type": "Figure",
-  "number": "26",
+  "number": "35",
   "title": "",
   "body": " Identify which graph is , which graph is , and which graph is .   Graph showing three functions plotted on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. One graph is a solid blue curve. It oscillates smoothly across the interval, reaching a high point above y = 6 near x = −4, then decreasing to cross the x-axis near x = −1. The curve continues downward to a deep minimum below y = −5 near x = 4, before increasing again toward the right. A second graph is a black dashed curve. It oscillates with smaller amplitude than the blue curve, crossing the x-axis several times. It has local maxima near x = −4 and x = 4 and a local minimum near x = 1. A third graph is a red dotted curve. This curve also oscillates and appears phase-shifted relative to the black dashed curve. It has a local minimum near x = −4, a local maximum near x = −2, another minimum near x = 1, and a local maximum near x = 3. All three functions are continuous over the displayed interval and intersect or approach one another at several x-values. The figure emphasizes comparison of amplitude, phase shift, and oscillatory behavior among the three functions.\"    "
 },
@@ -302,7 +653,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#figureEmptyGrid16",
   "type": "Figure",
-  "number": "27",
+  "number": "36",
   "title": "",
   "body": " An empty grid.  An empty Cartesian grid.    "
 },
@@ -311,7 +662,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#figureMeetConditions",
   "type": "Figure",
-  "number": "28",
+  "number": "37",
   "title": "",
   "body": " This graph of meets several conditions defined by the derivative of .   Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks. The graph is a single smooth curve. On the left, near x = −5, the curve is below the x-axis and increasing. As x increases, the graph continues upward and reaches a local maximum slightly above y = 2 near x = 0. The curve then decreases to a local minimum just below the x-axis near x = 2. After this minimum, the curve increases again to a second local maximum near x = 4 at a y-value around 2, then decreases sharply toward the right edge of the graph, falling below the x-axis near x = 5. The graph has no open circles, corners, or breaks, indicating the function is continuous and smooth over the displayed interval.\"    "
 },
@@ -329,7 +680,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#TwoPiecewiseFunctions",
   "type": "Figure",
-  "number": "29",
+  "number": "38",
   "title": "",
   "body": " A limit question involving two piecewise-defined functions.   Three side-by-side coordinate graphs. Left: a piecewise linear graph labeled g(x). For x less than zero, a rising line approaches an open circle at (0, 1). For x greater than or equal to zero, a descending line begins at a filled point at (0, 0). Middle: a piecewise linear graph labeled f(x). For x less than or equal to zero, a rising line ends at a filled point at (0, 2). For x greater than zero, a descending line begins at an open circle at (0, 1). Right: a blank coordinate grid with labeled x- and y-axes.          "
 },
@@ -338,7 +689,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#SqueezeThmPic",
   "type": "Figure",
-  "number": "30",
+  "number": "39",
   "title": "",
   "body": " A function is sandwiched between and .   coordinate graph showing three smooth curves intersecting near the y-axis. A red curve opens upward and passes through the point (0, 2), decreasing slightly to the right before rising steeply. A blue curve increases from left to right, crossing y = 2 near x = 0 and continuing upward with moderate slope. A green curve opens downward, reaches a maximum at the point (0, 2), and decreases on both sides. The curves intersect and bound a small shaded region just to the left of x = 0. The x- and y-axes are shown, with the y-axis labeled and tick marks up to y = 3.   "
 },
@@ -347,7 +698,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#figureBempty",
   "type": "Figure",
-  "number": "31",
+  "number": "40",
   "title": "",
   "body": " An empty grid.  An empty Cartesian grid.    "
 },
@@ -356,7 +707,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#figureGraphFminusG",
   "type": "Figure",
-  "number": "32",
+  "number": "41",
   "title": "",
   "body": " The graph of .   A coordinate graph showing the function labeled (f minus g)(x). The graph is a horizontal line at y equals 1 extending left and right with arrowheads. There is an open circle at the point (0, 1). Above it, a filled point is shown at (0, 2). The x- and y-axes are labeled, and the grid includes tick marks at integer values.    "
 },
@@ -365,7 +716,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#figureLimitsGiveC",
   "type": "Figure",
-  "number": "33",
+  "number": "42",
   "title": "",
   "body": " The graph of .   A coordinate graph showing a piecewise linear function. For x less than 2, a solid line with negative slope decreases toward the point (2, 3). At x equals 2, there is a filled point at (2, 3). For x greater than 2, a solid line with positive slope increases to the right from that point. A dotted line with smaller positive slope approaches the point (2, 3) from the left. The x- and y-axes are labeled, with a grid and integer tick marks.    "
 },
@@ -383,7 +734,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#figureGraphycubed",
   "type": "Figure",
-  "number": "34",
+  "number": "43",
   "title": "",
   "body": " The graph of .   A coordinate graph showing a single smooth curve. The curve increases from left to right, starting in the lower left and ending in the upper right. It passes near the origin and flattens slightly around x equals 0 before increasing more steeply for positive x. The x- and y-axes are labeled, with tick marks extending from approximately minus 40 to 40 on the y-axis and minus 4 to 4 on the x-axis.    "
 },
@@ -392,7 +743,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#fig_02_22_sec18",
   "type": "Figure",
-  "number": "35",
+  "number": "44",
   "title": "",
   "body": "  A coordinate graph showing a curve labeled f(x) and a tangent line. The curve increases and is concave upward. Three points on or near the curve are marked: point A at approximately x equals 4 on the curve, point C slightly to the left near x equals 3.9, and point B above the curve on the tangent line. A straight line labeled “Tangent line” touches the curve at point A and extends upward through point B. Vertical dashed lines drop from points A and B to the x-axis, marking x equals 4 and x equals 4.2. The x-axis is labeled with tick marks at 3.9, 4, and 4.2.   "
 },
@@ -401,7 +752,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#figureGraphycubedans",
   "type": "Figure",
-  "number": "36",
+  "number": "45",
   "title": "",
   "body": " The graph of and its tangent line at .   A coordinate graph showing a smooth blue curve and a straight red line. The blue curve increases from left to right, passing near the origin, flattening slightly around x equals 0, and then rising more steeply for positive x. The red line has constant positive slope, intersects the y-axis below zero, and crosses the blue curve near x equals 2. The x- and y-axes are labeled, with tick marks extending from approximately minus 4 to 4 on the x-axis and minus 40 to 40 on the y-axis.    "
 },
@@ -419,7 +770,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#TangentsGeoGebra",
   "type": "Figure",
-  "number": "37",
+  "number": "46",
   "title": "",
   "body": "  A horizontal toolbar showing several drawing and annotation icons. From left to right: a mouse pointer icon, a filled blue dot, a capital letter A, a line segment with two endpoints, a curved line drawn inside a rectangular selection, a triangle formed by three connected points, and a circle icon. Each icon is displayed inside a square button.   "
 },
@@ -428,7 +779,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#figureGraphycubed2",
   "type": "Figure",
-  "number": "38",
+  "number": "47",
   "title": "",
   "body": " The graph of .   A coordinate graph showing a single smooth increasing curve. The curve starts in the lower left and rises to the upper right, flattening slightly near x equals 0 before increasing more steeply for positive x. It passes close to the origin. The x- and y-axes are labeled, with tick marks extending from approximately minus 4 to 4 on the x-axis and minus 40 to 40 on the y-axis.    "
 },
@@ -437,7 +788,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#figureGraphycubedans2",
   "type": "Figure",
-  "number": "39",
+  "number": "48",
   "title": "",
   "body": " The graph of and its tangent line at .   A coordinate graph showing a smooth blue curve and a straight red line. The blue curve increases from left to right, passing near the origin, flattening slightly around x equals 0, and then rising more steeply for positive x. The red line has constant positive slope, intersects the y-axis below zero, and crosses the blue curve at a point between x equals 1 and x equals 2. The x- and y-axes are labeled, with tick marks extending from approximately minus 4 to 4 on the x-axis and minus 40 to 40 on the y-axis.    "
 },
@@ -464,7 +815,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-12.html#figureproductquotient1",
   "type": "Figure",
-  "number": "40",
+  "number": "49",
   "title": "",
   "body": " The graph of and and two particular tangent lines.    Two separate coordinate graphs are shown. On the left, a smooth blue curve labeled f(x) increases from left to right. Two filled points on the curve are labeled with coordinates (2, 3) and (4, 4.8).     On the right, a smooth blue curve labeled g(x) decreases from left to right. A horizontal segment at y equals 5 includes two filled endpoints labeled (0, 5) and (2, 5). Farther to the right, a filled point on the curve is labeled (3.5, 3), with a straight black line tangent to the curve at that point.     "
 },
@@ -491,7 +842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#TangentsGeo2",
   "type": "Figure",
-  "number": "41",
+  "number": "50",
   "title": "",
   "body": "  A horizontal toolbar containing drawing and annotation icons. From left to right: a mouse pointer icon, a filled blue point, a capital letter A, a line segment with two endpoints, a curved line drawn inside a rectangular selection outline, a triangle formed by three connected points, and a circle with a central point. Each icon appears inside a square button.   "
 },
@@ -500,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#figurechain",
   "type": "Figure",
-  "number": "42",
+  "number": "51",
   "title": "",
   "body": " The graph of and .    A coordinate graph showing a smooth curve labeled f(x). The curve decreases from the upper left, reaches a local minimum just right of x equals 0, then increases to a local maximum near x equals 3, and finally decreases again toward the lower right. The graph crosses the x-axis near x equals 1 and again near x equals 4. The x- and y-axes are labeled, with a grid and integer tick marks.     A coordinate graph showing a smooth curve labeled h(x). The curve rises from the lower left to a local maximum left of x equals minus 2, then decreases to a local minimum near x equals minus 1. It rises slightly near x equals 0, dips again near x equals 1, and then rises to a higher local maximum near x equals 2. After that, the curve decreases steeply toward the lower right. The x- and y-axes are labeled, with a grid and integer tick marks.     "
 },
@@ -509,7 +860,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#figureChainGraphfg",
   "type": "Figure",
-  "number": "43",
+  "number": "52",
   "title": "",
   "body": " The graph of and .   A coordinate graph showing two functions, f and g. Function g is drawn as a solid blue piecewise linear graph: it rises steeply from the lower left to a peak near x equals 2, then decreases steadily to the right. Function f is drawn as a red dashed curve: it decreases to a minimum near x equals 1, then increases and continues upward to the right. The two graphs intersect at a point near x equals 4. The x- and y-axes are labeled, with a grid and integer tick marks.    "
 },
@@ -518,7 +869,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#figurechain2",
   "type": "Figure",
-  "number": "44",
+  "number": "53",
   "title": "",
   "body": " The graphs of and and some tangent lines.    A coordinate graph showing a smooth blue curve labeled f(x). A filled point on the curve is labeled with coordinates (2, 3). From that point, a straight black line extends upward to the right to a filled point labeled (4, 4.8). The straight segment lies above the curve between the two points. No axes or grid are shown.     A coordinate graph showing a smooth blue curve labeled g(x). A horizontal segment at y equals 5 has filled endpoints labeled (0, 5) and (2, 5). At x equals 2, the curve reaches a local maximum at the filled point (2, 5) and then decreases to the right. Two filled points on the decreasing part of the curve are labeled (3, 4) and (3.5, 3). A straight black line segment is tangent to the curve near the point (3.5, 3).     "
 },
@@ -527,7 +878,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#figureChainsqrt",
   "type": "Figure",
-  "number": "45",
+  "number": "54",
   "title": "",
   "body": " The graph of and a tangent line at .   A coordinate graph showing two functions. A solid blue straight line decreases from left to right, starting above y equals 4 on the left and ending below y equals 1 near x equals 6. A red dashed curve increases from the left to a peak near x equals 2, then decreases and approaches the blue line. The two graphs meet at a filled point near x equals 3. Past x equals 6, the red dashed curve turns upward slightly while the blue line continues downward. The x- and y-axes are labeled, with a grid and integer tick marks.    "
 },
@@ -545,7 +896,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-15.html#sec-Toprepareforclass26-3-4-2-1-2-2",
   "type": "Figure",
-  "number": "46",
+  "number": "55",
   "title": "",
   "body": "  A horizontal toolbar showing construction and annotation tools. From left to right: a mouse pointer icon, a filled point, a capital letter A, a line segment connecting two points, perpendicular axes with a point, a triangle formed by three connected points, a circle with a central point, a circle with two marked points, three connected points forming a polygonal shape, a slanted line with a point, a slider labeled a equals 2, and a four‑arrow move icon.   "
 },
@@ -554,7 +905,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-15.html#sec-Toprepareforclass26-3-4-2-1-3-2",
   "type": "Figure",
-  "number": "47",
+  "number": "56",
   "title": "",
   "body": "  A horizontal toolbar showing geometry and graphing tool icons. From left to right: a mouse pointer icon; a filled blue point; a capital letter A; a line segment connecting two points; perpendicular coordinate axes with a point; a triangle formed by three connected points; a circle with a central point; a circle with two marked points; three points connected by short line segments; a line with a marked point; a slider labeled a equals 2; and a four‑arrow move icon. Each icon appears inside a square button, with one of the point‑connection tools highlighted.   "
 },
@@ -563,7 +914,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-15.html#figureffprime26",
   "type": "Figure",
-  "number": "48",
+  "number": "57",
   "title": "",
   "body": " Graphs of and .   Two coordinate graphs are shown side by side. On the left, a graph labeled f(x) shows a smooth increasing curve. The curve rises steadily from low values near x equals 0 to near y equals 20 at x equals 40, with the slope increasing as x increases. On the right, a graph labeled f prime of x shows a smooth curve that increases from near y equals 0.1 at x equals 0 to a maximum around x equals 30, then decreases sharply toward y equals 0 near x equals 40. Both graphs have labeled x-axes, grids, and tick marks, with the left graph ranging up to y equals 20 and the right up to y equals 0.8.   "
 },
@@ -572,7 +923,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-15.html#FunctionAndInverseData",
   "type": "Table",
-  "number": "49",
+  "number": "58",
   "title": "Values of <span class=\"process-math\">\\(f(x)\\)<\/span> and <span class=\"process-math\">\\(f'(x)\\text{.}\\)<\/span>",
   "body": " Values of and .               0  1  0.7    1  2  1.4    2  4  2.8    3  8  5.5    "
 },
@@ -581,7 +932,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-15.html#figureffprimeTWO26",
   "type": "Figure",
-  "number": "50",
+  "number": "59",
   "title": "",
   "body": " Graphs of and .   A coordinate graph showing two curves labeled f(x) and f inverse of x. The curve f(x) increases steeply from left to right and has a filled point labeled P near y equals 8. The curve f inverse of x increases more gradually to the right and has a filled point labeled Q near x equals 7 and y equals 3. Both curves lie in the first quadrant. The x- and y-axes are labeled, with tick marks shown.   "
 },
@@ -599,7 +950,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-16.html#figureImplicitGraph1",
   "type": "Figure",
-  "number": "51",
+  "number": "60",
   "title": "",
   "body": " Graph of the curve with a tangent line at .   A coordinate graph showing two curves. One curve is drawn in black and forms a closed, rounded shape extending approximately from y equals minus 1 to y equals 1, with its rightmost point near x equals 1.2. A straight blue line slopes downward from left to right, starting near y equals 1.5 at x equals 0 and crossing the black curve near x equals 1 and y equals 0.5. The x- and y-axes are shown with dotted grid lines and tick marks at regular intervals.   "
 },
@@ -626,7 +977,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-18.html#GeoGebraConstructLhopital",
   "type": "Figure",
-  "number": "52",
+  "number": "61",
   "title": "",
   "body": " A GeoGebra construction used to investigate a limit that is indeterminant.   A Geogebra display showing three functions and an expressions panel. In the expressions list on the left, f(x) equals x to the fifth plus x minus 2, g(x) equals x squared minus 1, and h(x) equals f(x) divided by g(x). On the right, three curves are plotted on the same coordinate grid. A black upward‑opening parabola represents g(x). A blue curve with steep growth near x equals 1 represents f(x). A red curve labeled h is drawn above the others and has a minimum near x equals 0. The x- and y-axes are shown with grid lines and tick marks.   "
 },
@@ -635,7 +986,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-18.html#LHopitalExcel1Pic",
   "type": "Figure",
-  "number": "53",
+  "number": "62",
   "title": "",
   "body": " A spreadsheet can be used to form a hypothesis about the value of a limit.   A spreadsheet-style table showing numerical values for the expression (exp(2x) minus 1) divided by x. The table is split into two sections. On the left, x takes negative values from minus 0.1 to minus 0.00001, with corresponding values approaching 2 from below. On the right, x takes positive values from 0.01 to 0.00001, with corresponding values approaching 2 from above. The values are arranged to show the behavior of the expression as x approaches zero.   "
 },
@@ -644,7 +995,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-18.html#figureSignLhopital",
   "type": "Figure",
-  "number": "54",
+  "number": "63",
   "title": "",
   "body": " The graph of and .   A coordinate graph showing two curves labeled f(x) and g(x). The blue curve f(x) lies above the x-axis near the middle and has a shallow minimum at a point above x equals a, then rises to the left and right. The red curve g(x) lies below the x-axis and has a maximum at the point directly below x equals a. Both curves touch the x-axis at the same point labeled a. The x- and y-axes are shown with arrows.    "
 },
@@ -653,7 +1004,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-18.html#figureGraphicLhopital",
   "type": "Figure",
-  "number": "55",
+  "number": "64",
   "title": "",
   "body": " The graphs of and and their tangent lines at .   A coordinate graph showing a curve labeled f and a second curve labeled g, both passing through the point (2, 0). At that point, two dotted straight lines are shown. A blue dotted line labeled y equals 1.8 times (x minus 2) has a steeper positive slope. A red dotted line labeled y equals four‑fifths times (x minus 2) has a gentler positive slope. The curve g lies above the curve f to the right of x equals 2 and below it to the left. The x‑ and y‑axes are labeled, with a grid and the point (2, 0) marked.    "
 },
@@ -671,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#figureEmptyGrid33",
   "type": "Figure",
-  "number": "56",
+  "number": "65",
   "title": "",
   "body": "  An empty Cartesian grid.    "
 },
@@ -680,7 +1031,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#figureEmptyGridb33",
   "type": "Figure",
-  "number": "57",
+  "number": "66",
   "title": "",
   "body": "  An empty Cartesian grid.    "
 },
@@ -689,7 +1040,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#ctsfcn33",
   "type": "Figure",
-  "number": "58",
+  "number": "67",
   "title": "",
   "body": "  A graph of a smooth function y versus x on the interval from x = 0 to x = 10. The curve starts near y = 6 at x close to 0, decreases steeply to a local minimum near y = 1.7 around x = 2, then rises gently to a local maximum near y = 2.3 around x = 4. The graph then decreases to a deeper minimum near y = 1 around x = 7, after which it rises sharply to about y = 4.5 at x = 9, and finally decreases to about y = 2 at x = 10.    "
 },
@@ -698,7 +1049,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#x3fcn33",
   "type": "Figure",
-  "number": "59",
+  "number": "68",
   "title": "",
   "body": "  A graph of a function f with axes labeled x and y. The curve is increasing and S-shaped, passing through the origin. It is concave up for positive x and concave down for negative x, flattening slightly near x = 0 and rising more steeply as x approaches 1. The function continues smoothly for negative x, decreasing below the x-axis.    "
 },
@@ -707,7 +1058,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#ScoreGame",
   "type": "Figure",
-  "number": "60",
+  "number": "69",
   "title": "",
   "body": "  An interactive graph titled “Reconstruct f from its First Derivative.” The coordinate plane shows scattered blue points representing values of f′ at various x-values. A smooth red curve is drawn through these points, representing a reconstruction of the original function f. The curve is slightly decreasing for negative x, reaches a minimum near x = 0, then increases for positive x with a local maximum near x = 5 before decreasing slightly. Interface elements such as checkboxes and buttons surround the graph.   "
 },
@@ -716,7 +1067,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#Graph1Overxxm1",
   "type": "Figure",
-  "number": "61",
+  "number": "70",
   "title": "",
   "body": " The graph of .   A graph of the function f(x) = 1 divided by x times (x minus 1). There are vertical asymptotes at x = 0 and x = 1. For x less than 0, the graph is above the x-axis and increases toward positive infinity as x approaches 0 from the left. Between x = 0 and x = 1, the graph is below the x-axis, with a labeled point at (1\/2, −4), and decreases toward negative infinity near both asymptotes. For x greater than 1, the graph is above the x-axis and decreases toward zero as x increases.   "
 },
@@ -725,7 +1076,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#Graphsqrtabsx",
   "type": "Figure",
-  "number": "62",
+  "number": "71",
   "title": "",
   "body": "  A graph of a function y versus x that is symmetric about the y-axis. The curve has a sharp minimum cusp at the origin, where y equals zero. For x greater than zero, the function increases and is concave down, reaching about y = 2 near x = 3. For x less than zero, the graph is a mirror image, also increasing toward y = 2 as x approaches −3.    "
 },
@@ -734,7 +1085,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#NoGlobalMaxMin",
   "type": "Figure",
-  "number": "63",
+  "number": "72",
   "title": "",
   "body": "  A graph of a piecewise-defined function in the x–y plane. In the first quadrant, a line segment rises from the point (0, 1) to an open circle at (1, 2). In the fourth quadrant, a line segment decreases from a filled point at (1, −1) to an open circle at (2, −2). On the x-axis, there is a horizontal segment from x = 2 to x = 3 at y = 0 with filled endpoints. Open and closed circles indicate excluded and included endpoints, respectively.    "
 },
@@ -752,7 +1103,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-20.html#EVTExample1",
   "type": "Figure",
-  "number": "64",
+  "number": "73",
   "title": "",
   "body": " The graph of .   A graph of y equals g of x on the x–y plane, with x-values labeled 0, a, c, and b. An open circle appears at x = a on a downward-curving arc. The curve dips to a minimum near x = c and then rises to a filled point at x = b. A separate filled point is shown above the curve between 0 and a, indicating a function value not on the main curve.   "
 },
@@ -761,7 +1112,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-20.html#figureGraph35",
   "type": "Figure",
-  "number": "65",
+  "number": "74",
   "title": "",
   "body": "  A graph of a function y versus x showing a smooth curve. The graph starts at a filled point at the origin (0, 0), decreases to a minimum at the labeled point (1, −2), and then increases to a filled point at (2, 4 minus 3 times the square root of 2). The curve is U-shaped and lies below the x-axis between x = 0 and x = 2.    "
 },
@@ -779,7 +1130,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-21.html#figuretrianglecut36",
   "type": "Figure",
-  "number": "66",
+  "number": "75",
   "title": "",
   "body": "  A coordinate diagram showing a triangular region in the x–y plane. The region has vertices at (0, 0), (1, 0), and (1, 2), with solid line segments connecting these points. The horizontal axis is marked at x = 0 and x = 1, and the vertical axis is marked at y = 2. A dotted vertical line is drawn at an x-value between 0 and 1, intersecting the triangle and labeled x.    "
 },
@@ -788,7 +1139,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-21.html#AlainaBusStop",
   "type": "Figure",
-  "number": "67",
+  "number": "76",
   "title": "",
   "body": "  Three diagrams labeled (a), (b), and (c) show different walking routes in a park to reach a bus stop. In each diagram, the park is rectangular, with a vertical side labeled 600 feet and the distance to the bus stop along the top labeled 2000 feet. In (a) and (c), a diagonal path crosses the park from a corner toward the bus stop, while in (b) the path follows the edges of the park only. In (c), the bottom edge is marked as two segments of 1000 feet each. The diagrams compare possible paths and distances to the bus stop.   "
 },
@@ -797,7 +1148,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-21.html#figurefirstderivativesignchart36",
   "type": "Figure",
-  "number": "68",
+  "number": "77",
   "title": "",
   "body": "  A number line labeled A′(x). Three marked x-values appear: 0, the square root of 2 divided by 2, and 1. A plus sign above the left interval indicates A′(x) is positive there, a minus sign above the middle interval indicates A′(x) is negative, and a plus sign above the right interval indicates A′(x) is positive again.    "
 },
@@ -806,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-21.html#AlainaExampleAns",
   "type": "Figure",
-  "number": "69",
+  "number": "78",
   "title": "",
   "body": "  A graph of a smooth function over x-values from 0 to about 2000. The curve decreases gradually from left to right, then reaches a minimum near the labeled point (1463.34, 445.14). After this point, the graph turns upward slightly, indicating a minimum at that location.   "
 },
@@ -824,7 +1175,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#PlaneData1",
   "type": "Table",
-  "number": "70",
+  "number": "79",
   "title": "A plane travels down a runway.",
   "body": " A plane travels down a runway.    time (sec)  0  2  4  6  8  10    velocity (ft\/sec)  0  99  140  171.5  198  221.4    "
 },
@@ -833,7 +1184,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#figurePlane1LowEstimate",
   "type": "Figure",
-  "number": "71",
+  "number": "80",
   "title": "",
   "body": " A lower estimate for the distance a plane travels.   Scatter plot showing velocity versus time. The horizontal axis is labeled t (sec) and ranges from 0 to 10 seconds. The vertical axis is labeled v (ft\/sec) and ranges from 0 to 225 feet per second. There are seven plotted points: (0, 0), (2, 100), (4, 140), (6, 170), (8, 200), and (10, 225). The points show an increasing trend, indicating velocity rises as time increases.    "
 },
@@ -842,7 +1193,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#figurePlane1HighEstimate",
   "type": "Figure",
-  "number": "72",
+  "number": "81",
   "title": "",
   "body": " An upper estimate for the distance a plane travels.   Scatter plot showing velocity versus time. The horizontal axis is labeled t and ranges from 0 to 10 seconds. The vertical axis is labeled v and ranges from 0 to 225. There are seven plotted points: (0, 0), (2, 100), (4, 140), (6, 170), (8, 190), and (10, 225). The points show an increasing trend, indicating velocity rises as time increases.    "
 },
@@ -851,7 +1202,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#PlaneData2",
   "type": "Table",
-  "number": "73",
+  "number": "82",
   "title": "Additional detail regarding the plane traveling down a runway.",
   "body": " Additional detail regarding the plane traveling down a runway.    time (sec)  0  1  2  3  4  5  6  7  8  9  10    velocity (ft\/sec)  0  75  99  125  140  162  171.5  182  198  215  221.4    "
 },
@@ -860,7 +1211,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#figurePlane2LowEstimate",
   "type": "Figure",
-  "number": "74",
+  "number": "83",
   "title": "",
   "body": " A better lower estimate for the distance a plane travels.   Scatter plot showing velocity versus time. The horizontal axis is labeled t and ranges from 0 to 10. The vertical axis is labeled v and ranges from 0 to 225. There are eleven plotted points: (0, 0), (1, 75), (2, 100), (3, 125), (4, 140), (5, 160), (6, 170), (7, 190), (8, 200), (9, 215), and (10, 225). The points form an upward trend, indicating velocity increases steadily as time increases.    "
 },
@@ -869,7 +1220,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#figurePlane2HighEstimate",
   "type": "Figure",
-  "number": "75",
+  "number": "84",
   "title": "",
   "body": " A better upper estimate for the distance a plane travels.   Scatter plot showing velocity versus time. The horizontal axis is labeled t and ranges from 0 to 10. The vertical axis is labeled v and ranges from 0 to 225. There are eleven plotted points: (0, 0), (1, 75), (2, 100), (3, 125), (4, 140), (5, 160), (6, 170), (7, 190), (8, 200), (9, 215), and (10, 225). The points form an upward trend, indicating velocity increases steadily as time increases.    "
 },
@@ -878,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#figurePlane1LowEstimateAns",
   "type": "Figure",
-  "number": "76",
+  "number": "85",
   "title": "",
   "body": " Computing a lower estimate for the distance a plane travels.   Step graph showing velocity versus time with shaded rectangles under the steps. The horizontal axis is labeled t (sec) and ranges from 0 to 10 seconds. The vertical axis is labeled v (ft\/sec) and ranges from 0 to 225 feet per second. Seven black points mark data values: (0, 0), (2, 100), (4, 140), (6, 170), (8, 200), and (10, 225). Light blue shaded rectangles represent intervals between these points, forming a step-like approximation of the increasing velocity trend.    "
 },
@@ -887,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#figurePlane1HighEstimateAns",
   "type": "Figure",
-  "number": "77",
+  "number": "86",
   "title": "",
   "body": " Computing an upper estimate for the distance a plane travels.   Step graph showing velocity versus time with shaded rectangles under the steps. The horizontal axis is labeled t and ranges from 0 to 10. The vertical axis is labeled v and ranges from 0 to 225. Seven black points mark data values: (0, 0), (2, 100), (4, 140), (6, 170), (8, 200), and (10, 225). Light blue shaded rectangles represent intervals between these points, forming a step-like approximation of the increasing velocity trend.    "
 },
@@ -896,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#figurePlane2LowEstimateAns",
   "type": "Figure",
-  "number": "78",
+  "number": "87",
   "title": "",
   "body": " Computing a better lower estimate for the distance a plane travels.   Step graph showing velocity versus time with shaded rectangles under the steps. The horizontal axis is labeled t and ranges from 0 to 10. The vertical axis is labeled v and ranges from 0 to 225. Eleven black points mark data values: (0, 0), (1, 75), (2, 100), (3, 125), (4, 140), (5, 160), (6, 170), (7, 190), (8, 200), (9, 215), and (10, 225). Light blue shaded rectangles represent intervals between these points, forming a step-like approximation of the increasing velocity trend.    "
 },
@@ -905,7 +1256,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#figurePlane2HighEstimateAns",
   "type": "Figure",
-  "number": "79",
+  "number": "88",
   "title": "",
   "body": " Computing a better upper estimate for the distance a plane travels.   Step graph showing velocity versus time with shaded rectangles under the steps. The horizontal axis is labeled t and ranges from 0 to 10. The vertical axis is labeled v and ranges from 0 to 225. Eleven black points mark data values: (0, 0), (1, 75), (2, 100), (3, 125), (4, 140), (5, 160), (6, 170), (7, 190), (8, 200), (9, 215), and (10, 225). Light blue shaded rectangles represent intervals between these points, forming a step-like approximation of the increasing velocity trend.    "
 },
@@ -923,7 +1274,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-23.html#figureLeftSum1MX2",
   "type": "Figure",
-  "number": "80",
+  "number": "89",
   "title": "",
   "body": " A left Riemann sum with rectangles.   Graph of the function y = 1 − x² on the interval from 0 to 1, shown as a downward‑curving blue parabola. Four left-endpoint rectangles with heights taken from the curve are drawn under the graph, forming a decreasing sequence of blue shaded rectangles that approximate the area under the curve.    "
 },
@@ -932,7 +1283,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-23.html#figureRightSum1MX2",
   "type": "Figure",
-  "number": "81",
+  "number": "90",
   "title": "",
   "body": " A right Riemann sum with rectangles.   Graph of the function y = 1 − x² on the interval from 0 to 1, shown as a downward‑curving blue parabola. Four right‑endpoint rectangles are drawn under the curve, each shaded in light blue, with heights decreasing as x increases. The rectangles form an approximation of the area under the curve.    "
 },
@@ -941,7 +1292,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-23.html#figure1MX2",
   "type": "Figure",
-  "number": "82",
+  "number": "91",
   "title": "",
   "body": " The graph of .   Graph of the function y = 1 − x² on the interval from 0 to 1. The curve begins at the point (0, 1) on the y‑axis and decreases smoothly in a downward‑opening arc, reaching the point (1, 0) on the x‑axis. Axes are labeled x and y.    "
 },
@@ -950,7 +1301,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-23.html#RiemannSumAppletOutput1",
   "type": "Figure",
-  "number": "83",
+  "number": "92",
   "title": "",
   "body": " A middle sum used to compute the area under and above using rectangles.   Interactive diagram illustrating Riemann sum approximations for the function f(x) = 1 − x² on the interval from 0 to 1. The curve of the function is shown as a downward-opening parabola. Four subintervals are used, and shaded rectangular bars represent sample rectangles for the selected sample point method. Vertical dashed lines show subinterval boundaries. A sidebar on the left displays options for selecting sample point placement, including relative point, midpoint, random, upper sum, and lower sum. The sidebar also lists numerical approximation values: relative sample approximation 0.67188, random approximation 0.72847, upper sum 0.78125, lower sum 0.53125, and the exact integral value 0.66667. The diagram visually compares the rectangles to the parabola to demonstrate over- and underestimates in the Riemann sum.   "
 },
@@ -959,7 +1310,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-23.html#figureln4xOn13",
   "type": "Figure",
-  "number": "84",
+  "number": "93",
   "title": "",
   "body": " The graph of on .   Graph of the function y = ln(4x) on the interval from x = 1 to x = 3, shown as an increasing concave‑down curve. Five left‑endpoint rectangles are drawn under the curve, each shaded in light blue, with heights determined by the function value at the left end of each subinterval. The rectangles rise in height as x increases, forming a left‑endpoint Riemann sum approximation of the area under the curve.    "
 },
@@ -968,7 +1319,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-23.html#figureRiemannSumf17",
   "type": "Figure",
-  "number": "85",
+  "number": "94",
   "title": "",
   "body": " A Riemann sum for on .   Graph of an increasing concave-down function f on the interval from x = 1 to x = 7. Three right-endpoint rectangles are drawn under the curve, each shaded in light blue. The first rectangle spans x = 1 to 3, the second from x = 3 to 5, and the third from x = 5 to 7. The heights of the rectangles correspond to the function values at x = 3, 5, and 7, creating a right-endpoint Riemann sum approximation of the area under the curve.    "
 },
@@ -977,7 +1328,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-23.html#RiemannSumAppletOutput2",
   "type": "Figure",
-  "number": "86",
+  "number": "95",
   "title": "",
   "body": "  Interactive diagram illustrating Riemann sum approximations for the function f(x) = 1 − x². The curve is a downward‑opening parabola shown over the interval from x = 0 to approximately 1.2. Four midpoint rectangles are drawn under the curve, each shaded in light orange, with heights determined by the function value at each subinterval’s midpoint. Vertical dashed lines mark the subinterval boundaries. On the left side of the image, a control panel displays options for sample point placement, the number of subintervals (n = 4), and numerical approximation values: relative 0.67188, random 0.64026, upper 0.78125, lower 0.53125, and the exact integral 0.66667.   "
 }
