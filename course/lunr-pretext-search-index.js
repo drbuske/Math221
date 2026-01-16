@@ -908,6 +908,78 @@ var ptx_lunr_docs = [
   "number": "79",
   "title": "",
   "body": " Computing a better upper estimate for the distance a plane travels.   Step graph showing velocity versus time with shaded rectangles under the steps. The horizontal axis is labeled t and ranges from 0 to 10. The vertical axis is labeled v and ranges from 0 to 225. Eleven black points mark data values: (0, 0), (1, 75), (2, 100), (3, 125), (4, 140), (5, 160), (6, 170), (7, 190), (8, 200), (9, 215), and (10, 225). Light blue shaded rectangles represent intervals between these points, forming a step-like approximation of the increasing velocity trend.    "
+},
+{
+  "id": "handouts-23",
+  "level": "1",
+  "url": "handouts-23.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Daily Prep 4.2 - Riemann Sums",
+  "body": " Daily Prep 4.2 - Riemann Sums   Overview  We have begun to see several reasons why we are interested in the area that lies between a given curve and the -axis. The notion of a Riemann sum provides a formal symbolic way to consider approximations to this area. The notation that corresponds with Riemann sums is complicated: indeed, we will often consider expressions such as , and it is essential that you work to make sense of this notation and what it represents. As we progress from estimating certain areas to finding those areas exactly, we will soon start to use limits along with Riemann sums. There, too, it is essential that you recognize what a Riemann sum represents. At the core of all of this, don’t miss the fundamentally simple idea at the foundation: represents the area of a certain rectangle.    Basic learning objectives  These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated in italics .    Use basic notation for a Riemann sum . That is, when we write , to know what this represents geometrically and what this quantity aspires to measure.    Compare and contrast left, right, and middle Riemann sums ( ).      To prepare for class  Complete all actions listed below. Respond to the questions highlighted with Submit .     Read motivating questions and the introduction to section 4.2 (up until Preview Activity 4.2.1).     Do  Preview Activity 4.2.1 .     Watch video Quick Review - Riemann Sums (3:28) .     Read  section 4.2.2 up to Activity 4.2.2.     Watch video Sigma Notation (7:14) .    Prompt Copilot “How is sigma notation related to for loops that are written in computer code?” Follow up the response with prompting “Is there a more appropriate analogy for sigma notation than for loops that I mentioned above?”     Do these problems.     [Submit]   Express using sigma notation.    If , and , compute the value of .     is a polynomial. How is more commonly written? What is the degree of ?       [Submit] In this problem, we seek to estimate the area under the curve , above the -axis, and between and .     Determine an upper estimate for the area using the four rectangles found in (a left sum ).   A left Riemann sum with rectangles.   Graph of the function y = 1 − x² on the interval from 0 to 1, shown as a downward‑curving blue parabola. Four left-endpoint rectangles with heights taken from the curve are drawn under the graph, forming a decreasing sequence of blue shaded rectangles that approximate the area under the curve.       Determine a lower estimate for the area using the four rectangles in . Notice the last rectangle has zero height! This is a right sum, .   A right Riemann sum with rectangles.   Graph of the function y = 1 − x² on the interval from 0 to 1, shown as a downward‑curving blue parabola. Four right‑endpoint rectangles are drawn under the curve, each shaded in light blue, with heights decreasing as x increases. The rectangles form an approximation of the area under the curve.       If , which of these gives an upper estimate for the area under the curve , above the -axis, between and ? which gives a lower estimate? what does the third quantity represent? Sketch it on the graph in .                      The graph of .   Graph of the function y = 1 − x² on the interval from 0 to 1. The curve begins at the point (0, 1) on the y‑axis and decreases smoothly in a downward‑opening arc, reaching the point (1, 0) on the x‑axis. Axes are labeled x and y.       Many applets and packaged software can compute areas of these approximating rectangles quickly. Use the applet The Riemann Sum to compute the value of a left, right, and middle sum using rectangles. [The middle sum is shown in .]   A middle sum used to compute the area under and above using rectangles.   Interactive diagram illustrating Riemann sum approximations for the function f(x) = 1 − x² on the interval from 0 to 1. The curve of the function is shown as a downward-opening parabola. Four subintervals are used, and shaded rectangular bars represent sample rectangles for the selected sample point method. Vertical dashed lines show subinterval boundaries. A sidebar on the left displays options for selecting sample point placement, including relative point, midpoint, random, upper sum, and lower sum. The sidebar also lists numerical approximation values: relative sample approximation 0.67188, random approximation 0.72847, upper sum 0.78125, lower sum 0.53125, and the exact integral value 0.66667. The diagram visually compares the rectangles to the parabola to demonstrate over- and underestimates in the Riemann sum.      Compute each of these sums using rectangles. Form a conjecture about the exact area based on this output.          Prompt Copilot “Please produce and execute Python code that illustrates a Riemann sum of the function f(x)=x 2+1 from x=1 to x=3 using n=5 rectangles.” Does the AI produce a left or a right Riemann sum? Does the AI give you a correct value for the sum being illustrated?     Read  section 4.2.3 on Riemann Sums.    [Submit] Read section 4.2.3 again. In this paragraph regarding midpoint Riemann sums , the authors define A diagram illustrating the resulting Riemann sum is shown on the right in this figure . Draw a similar diagram for the Riemann sum resulting from  Hint: You may wish to try a simple example in which , and .      Watch video Computing a Left-Hand Riemann Sum (8:54) .     Explore the applet The Riemann Sum by replicating the value of found in the previous video (18.8787).     Watch video Another Riemann Sum Example (10:33) .      After class  Solidifying the concepts discussed in class through practice is necessary to build your skills.     Do  Activity 4.2.3 . Then, watch a video solution to Activity 4.2.3 (7:40) .     Read  section 4.2.4 .     Watch video Calculating Right and Midpoint Riemann Sums (9:32) .     Do  Activity 4.2.4 . Then, watch a video solution to Activity 4.2.4 (6:27) .     Do  exercise 1 in section 4.2.6 .     Do  exercises 4-5 in section 4.2.6 .     Read  section 4.2.5 - summary .     Do  exercises 2-3 in section 4.2.6 .     Do  exercises 6-7 in section 4.2.6 .     Start working on the MOMwork (MyOpenMath) assignment for this section.      Advanced learning objectives  In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:    Compute by hand, for small values of , , or , and draw an accurate corresponding picture.    Explain how Riemann sums detect net-signed area between a given function and the -axis on an interval of choice.      Additional suggestions     Watch video Summation Notation (4:26) .     Watch  video solution to Activity 4.2.2 (6:00) .     Do these problems.     Consider on as shown in . We calculate left and right Riemann sums for .   The graph of on .   Graph of the function y = ln(4x) on the interval from x = 1 to x = 3, shown as an increasing concave‑down curve. Five left‑endpoint rectangles are drawn under the curve, each shaded in light blue, with heights determined by the function value at the left end of each subinterval. The rectangles rise in height as x increases, forming a left‑endpoint Riemann sum approximation of the area under the curve.        Calculate , the width of each subinterval.    Does the diagram illustrate a left or a right Riemann sum?    Calculate the value of the left and right Riemann sum with a calculator. Verify your result using both this Riemann Sum applet and a spreadsheet such as Excel .    Based on your answer above, give approximate lower and upper bounds on the area under , above the -axis, and between and .        represents a Riemann sum for on .   A Riemann sum for on .   Graph of an increasing concave-down function f on the interval from x = 1 to x = 7. Three right-endpoint rectangles are drawn under the curve, each shaded in light blue. The first rectangle spans x = 1 to 3, the second from x = 3 to 5, and the third from x = 5 to 7. The heights of the rectangles correspond to the function values at x = 3, 5, and 7, creating a right-endpoint Riemann sum approximation of the area under the curve.        Identify the number of subintervals .    What is the length of each subinterval?    Does represent a left, right, or midpoint Riemann sum?    Using sigma notation, , write an algebraic representation of this Riemann sum.            Answers   To prepare for class                  is a more common description. This is a polynomial of degree 4.                    The first sum represents a left sum (an overestimate).  The second sum represents a right sum (an underestimate).  The last sum represents a middle sum.    The middle sum is illustrated in . Note that to move the endpoints, just drag the blue dots to 0 and 1 accordingly. Also, to stretch the axes, the SHIFT key can be held as you drag either the - or -axis.    Interactive diagram illustrating Riemann sum approximations for the function f(x) = 1 − x². The curve is a downward‑opening parabola shown over the interval from x = 0 to approximately 1.2. Four midpoint rectangles are drawn under the curve, each shaded in light orange, with heights determined by the function value at each subinterval’s midpoint. Vertical dashed lines mark the subinterval boundaries. On the left side of the image, a control panel displays options for sample point placement, the number of subintervals (n = 4), and numerical approximation values: relative 0.67188, random 0.64026, upper 0.78125, lower 0.53125, and the exact integral 0.66667.      A reasonable conjecture would be that the exact area is 2\/3.         Additional suggestions            This is a right Riemann sum.     and                     This is a left Riemann sum.     . Alternatively, .         "
+},
+{
+  "id": "figureLeftSum1MX2",
+  "level": "2",
+  "url": "handouts-23.html#figureLeftSum1MX2",
+  "type": "Figure",
+  "number": "80",
+  "title": "",
+  "body": " A left Riemann sum with rectangles.   Graph of the function y = 1 − x² on the interval from 0 to 1, shown as a downward‑curving blue parabola. Four left-endpoint rectangles with heights taken from the curve are drawn under the graph, forming a decreasing sequence of blue shaded rectangles that approximate the area under the curve.    "
+},
+{
+  "id": "figureRightSum1MX2",
+  "level": "2",
+  "url": "handouts-23.html#figureRightSum1MX2",
+  "type": "Figure",
+  "number": "81",
+  "title": "",
+  "body": " A right Riemann sum with rectangles.   Graph of the function y = 1 − x² on the interval from 0 to 1, shown as a downward‑curving blue parabola. Four right‑endpoint rectangles are drawn under the curve, each shaded in light blue, with heights decreasing as x increases. The rectangles form an approximation of the area under the curve.    "
+},
+{
+  "id": "figure1MX2",
+  "level": "2",
+  "url": "handouts-23.html#figure1MX2",
+  "type": "Figure",
+  "number": "82",
+  "title": "",
+  "body": " The graph of .   Graph of the function y = 1 − x² on the interval from 0 to 1. The curve begins at the point (0, 1) on the y‑axis and decreases smoothly in a downward‑opening arc, reaching the point (1, 0) on the x‑axis. Axes are labeled x and y.    "
+},
+{
+  "id": "RiemannSumAppletOutput1",
+  "level": "2",
+  "url": "handouts-23.html#RiemannSumAppletOutput1",
+  "type": "Figure",
+  "number": "83",
+  "title": "",
+  "body": " A middle sum used to compute the area under and above using rectangles.   Interactive diagram illustrating Riemann sum approximations for the function f(x) = 1 − x² on the interval from 0 to 1. The curve of the function is shown as a downward-opening parabola. Four subintervals are used, and shaded rectangular bars represent sample rectangles for the selected sample point method. Vertical dashed lines show subinterval boundaries. A sidebar on the left displays options for selecting sample point placement, including relative point, midpoint, random, upper sum, and lower sum. The sidebar also lists numerical approximation values: relative sample approximation 0.67188, random approximation 0.72847, upper sum 0.78125, lower sum 0.53125, and the exact integral value 0.66667. The diagram visually compares the rectangles to the parabola to demonstrate over- and underestimates in the Riemann sum.   "
+},
+{
+  "id": "figureln4xOn13",
+  "level": "2",
+  "url": "handouts-23.html#figureln4xOn13",
+  "type": "Figure",
+  "number": "84",
+  "title": "",
+  "body": " The graph of on .   Graph of the function y = ln(4x) on the interval from x = 1 to x = 3, shown as an increasing concave‑down curve. Five left‑endpoint rectangles are drawn under the curve, each shaded in light blue, with heights determined by the function value at the left end of each subinterval. The rectangles rise in height as x increases, forming a left‑endpoint Riemann sum approximation of the area under the curve.    "
+},
+{
+  "id": "figureRiemannSumf17",
+  "level": "2",
+  "url": "handouts-23.html#figureRiemannSumf17",
+  "type": "Figure",
+  "number": "85",
+  "title": "",
+  "body": " A Riemann sum for on .   Graph of an increasing concave-down function f on the interval from x = 1 to x = 7. Three right-endpoint rectangles are drawn under the curve, each shaded in light blue. The first rectangle spans x = 1 to 3, the second from x = 3 to 5, and the third from x = 5 to 7. The heights of the rectangles correspond to the function values at x = 3, 5, and 7, creating a right-endpoint Riemann sum approximation of the area under the curve.    "
+},
+{
+  "id": "RiemannSumAppletOutput2",
+  "level": "2",
+  "url": "handouts-23.html#RiemannSumAppletOutput2",
+  "type": "Figure",
+  "number": "86",
+  "title": "",
+  "body": "  Interactive diagram illustrating Riemann sum approximations for the function f(x) = 1 − x². The curve is a downward‑opening parabola shown over the interval from x = 0 to approximately 1.2. Four midpoint rectangles are drawn under the curve, each shaded in light orange, with heights determined by the function value at each subinterval’s midpoint. Vertical dashed lines mark the subinterval boundaries. On the left side of the image, a control panel displays options for sample point placement, the number of subintervals (n = 4), and numerical approximation values: relative 0.67188, random 0.64026, upper 0.78125, lower 0.53125, and the exact integral 0.66667.   "
 }
 ]
 
