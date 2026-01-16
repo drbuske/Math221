@@ -17,20 +17,52 @@
 
 </section>
 
+<section>
+  <title>Basic learning objectives</title>
+
+    <p>
+      These are the tasks you should be able to perform with reasonable
+      fluency when you arrive at our next class meeting.
+      Important new
+      vocabulary words are indicated <em>in italics</em>.
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          Use basic notation for a <em>Riemann sum</em>.
+          That is, when we write <m>\sum_{i=1}^{n}f(x_{i}) \Delta x</m>, to know what this represents geometrically and what this quantity aspires to measure.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Compare and contrast <em>left, right, and middle Riemann sums</em> (<m>L_{n}, R_{n}, M_{n}</m>).
+        </p>
+      </li>
+    </ul>
+
+  </section>
+
+<section>
+  <title>To prepare for class</title>
+
   <p>
     Complete all actions listed below.
     Respond to the questions highlighted with <em>Submit</em>.
   </p>
-  <dl>
+  <ul>
   <li>
     <p>
-      <alert>Read</alert> motivating questions and the introduction to <url href="https://activecalculus.org/single/sec-4-2-Riemann.html">section 4.2</url> (up until Preview Activity 4.2.1).
+      <alert>Read</alert> motivating questions and the introduction to <url href="
+https://activecalculus.org/single2e/sec-4-2-Riemann.html#sec-4-2-Riemann-3">section 4.2</url> (up until Preview Activity 4.2.1).
     </p>
   </li>
 
   <li>
     <p>
-      <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#lfo">Preview Activity 4.2.1</url>.
+      <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-4-2-Riemann.html#PA-4-2">Preview Activity 4.2.1</url>.
     </p>
   </li>
 
@@ -42,7 +74,8 @@
 
   <li>
     <p>
-      <alert>Read</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#jCJ">section 4.2.1</url> up to Activity 4.2.2.
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-4-2-Riemann.html#sigma-notation">section 4.2.2</url> up to Activity 4.2.2.
     </p>
   </li>
 
@@ -53,9 +86,6 @@
   </li>
 
   <li>
-    <title> <image source="CopilotLogo.jpg" />
-
-    </title>
 
     <p>
       Prompt <alert>Copilot</alert> “How is sigma notation related to for loops that are written in computer code?” Follow up the response with prompting “Is there a more appropriate analogy for sigma notation than for loops that I mentioned above?”
@@ -68,13 +98,12 @@
     </p>
 
     <p>
-      <dl>
-      <li>
-        <title> <em>Submit</em> 1.</title>
+      <ol>
 
-        <p>
+      <li>
+        <p> [Submit]
           <ol>
-            <li>
+            <li> 
               <p>
                 Express <m>\displaystyle 3(4)^{2} + 3(5)^{2} + 3(6)^{2} + 3(7)^{2}</m> using sigma notation.
               </p>
@@ -96,43 +125,96 @@
       </li>
 
       <li>
-        <title> <em>Submit</em> 2.</title>
-
         <p>
-          In this problem, we seek to estimate the area under the curve <m>y=1-x^{2}</m>, above the <m>x</m>-axis, and between <m>x=0</m> and <m>x=1</m>.
+          [Submit] In this problem, we seek to estimate the area under the curve <m>y=1-x^{2}</m>, above the <m>x</m>-axis, and between <m>x=0</m> and <m>x=1</m>.
         </p>
 
         <p>
           <ol>
             <li>
               <p>
-                Determine an upper estimate for the area using  these four rectangles (a left sum <m>L_{4}</m>).
+                Determine an upper estimate for the area using the four rectangles found in <xref ref="figureLeftSum1MX2"/> (a left sum <m>L_{4}</m>).
               </p>
 
-              [linecolor!20] (0,0) – (0,4) – (1,4) – (1,0) – (0,0)[black] (0,0) – (0,4) – (1,4) – (1,0) – (0,0) [linecolor!20] (1,0) – (1,3.75) – (2,3.75) – (2,0) – (1,0)[black] (1,0) – (1,3.75) – (2,3.75) – (2,0) – (1,0) [linecolor!20] (2,0) – (2,3) – (3,3) – (3,0) – (2,0)[black] (2,0) – (2,3) – (3,3) – (3,0) – (2,0) [linecolor!20] (3,0) – (3,1.75) – (4,1.75) – (4,0) – (3,0)[black] (3,0) – (3,1.75) – (4,1.75) – (4,0) – (3,0) [black!80,line width=0.3pt,-latex] (0,0) – (5,0) node [below] at (4.75,0) {$x$} [black!80,line width=0.3pt,-latex] (0,0) – (-0.5,0) [black!80,line width=0.3pt,-latex] (0,0) – (0,5) node [right] at (0,4.75) {$y$} [black!80,line width=0.3pt,-latex] (0,0) – (0,-0.5)[color=linecolor, line width=1pt,domain=0:4] plot (\x,{4*(1-1/16*\x*\x)}) node [right] at (3,3) {$y=1-x^{2}$} / in  4/1[shift={(\x,0)}] (0pt,3pt) – (0pt,-3pt) node[below] {$\xtext$} / in 4/1[shift={(0,\y)}] (-2pt,0pt) – (2pt,0pt) node[left] {$\ytext$}<p />
-            </li>
+ <figure xml:id="figureLeftSum1MX2">
+  <caption>A left Riemann sum with <m>n=4</m> rectangles.</caption> 
+  <image xml:id="LeftSum1MX2Pic" width="50%">
+<description>
+Graph of the function y = 1 − x² on the interval from 0 to 1, shown as a downward‑curving blue parabola. Four left-endpoint rectangles with heights taken from the curve are drawn under the graph, forming a decreasing sequence of blue shaded rectangles that approximate the area under the curve.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.9]
+  \fill [linecolor!20] (0,0) -- (0,4) -- (1,4) -- (1,0) -- (0,0);
+    \draw[black] (0,0) -- (0,4) -- (1,4) -- (1,0) -- (0,0);
+      \fill [linecolor!20] (1,0) -- (1,3.75) -- (2,3.75) -- (2,0) -- (1,0);
+    \draw[black] (1,0) -- (1,3.75) -- (2,3.75) -- (2,0) -- (1,0);
+          \fill [linecolor!20] (2,0) -- (2,3) -- (3,3) -- (3,0) -- (2,0);
+    \draw[black] (2,0) -- (2,3) -- (3,3) -- (3,0) -- (2,0);
+              \fill [linecolor!20] (3,0) -- (3,1.75) -- (4,1.75) -- (4,0) -- (3,0);
+    \draw[black] (3,0) -- (3,1.75) -- (4,1.75) -- (4,0) -- (3,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5,0) node [below] at (4.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,5) node [right] at (0,4.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+\draw[color=linecolor, line width=1pt,domain=0:4]   plot (\x,{4*(1-1/16*\x*\x)}) node [right] at (3,3) {$y=1-x^2$};
+\foreach \x/\xtext in { 4/1}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {4/1}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
 
+
+            </li>
             <li>
               <p>
-                Determine a lower estimate for the area using these  four rectangles.
+                Determine a lower estimate for the area using the four rectangles in <xref ref="figureRightSum1MX2"/>.
                 Notice the last rectangle has zero height!
-              </p>
-
-              <p>
                 This is a right sum, <m>R_{4}</m>.
               </p>
-              [linecolor!20] (0,0) – (0,3.75) – (1,3.75) – (1,0) – (0,0)[black] (0,0) – (0,3.75) – (1,3.75) – (1,0) – (0,0) [linecolor!20] (1,0) – (1,3) – (2,3) – (2,0) – (1,0)[black] (1,0) – (1,3) – (2,3) – (2,0) – (1,0) [linecolor!20] (2,0) – (2,1.75) – (3,1.75) – (3,0) – (2,0)[black] (2,0) – (2,1.75) – (3,1.75) – (3,0) – (2,0) [linecolor!20] (3,0) – (3,0) – (4,0) – (4,0) – (3,0)[black] (3,0) – (3,0) – (4,0) – (4,0) – (3,0) [black!80,line width=0.3pt,-latex] (0,0) – (5,0) node [below] at (4.75,0) {$x$} [black!80,line width=0.3pt,-latex] (0,0) – (-0.5,0) [black!80,line width=0.3pt,-latex] (0,0) – (0,5) node [right] at (0,4.75) {$y$} [black!80,line width=0.3pt,-latex] (0,0) – (0,-0.5)[color=linecolor, line width=1pt,domain=0:4] plot (\x,{4*(1-1/16*\x*\x)}) node [right] at (3,3) {$y=1-x^{2}$} / in  4/1[shift={(\x,0)}] (0pt,3pt) – (0pt,-3pt) node[below] {$\xtext$} / in 4/1[shift={(0,\y)}] (-2pt,0pt) – (2pt,0pt) node[left] {$\ytext$}
+
+<figure xml:id="figureRightSum1MX2">
+  <caption>A right Riemann sum with <m>n=4</m> rectangles.</caption> 
+  <image xml:id="RightSum1MX2Pic" width="50%">
+<description>
+Graph of the function y = 1 − x² on the interval from 0 to 1, shown as a downward‑curving blue parabola. Four right‑endpoint rectangles are drawn under the curve, each shaded in light blue, with heights decreasing as x increases. The rectangles form an approximation of the area under the curve.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.9]
+  \fill [linecolor!20] (0,0) -- (0,3.75) -- (1,3.75) -- (1,0) -- (0,0);
+    \draw[black] (0,0) -- (0,3.75) -- (1,3.75) -- (1,0) -- (0,0);
+      \fill [linecolor!20] (1,0) -- (1,3) -- (2,3) -- (2,0) -- (1,0);
+    \draw[black] (1,0) -- (1,3) -- (2,3) -- (2,0) -- (1,0);
+          \fill [linecolor!20] (2,0) -- (2,1.75) -- (3,1.75) -- (3,0) -- (2,0);
+    \draw[black] (2,0) -- (2,1.75) -- (3,1.75) -- (3,0) -- (2,0);
+              \fill [linecolor!20] (3,0) -- (3,0) -- (4,0) -- (4,0) -- (3,0);
+    \draw[black] (3,0) -- (3,0) -- (4,0) -- (4,0) -- (3,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5,0) node [below] at (4.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,5) node [right] at (0,4.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+\draw[color=linecolor, line width=1pt,domain=0:4]   plot (\x,{4*(1-1/16*\x*\x)}) node [right] at (3,3) {$y=1-x^2$};
+\foreach \x/\xtext in { 4/1}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {4/1}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+              
             </li>
 
             <li>
               <p>
-                If <m>f(x) = 1-x^{2}</m>, which of these gives an upper estimate for the area under the curve <m>y=f(x)</m>, above the <m>x</m>-axis, between <m>x=0</m> and <m>x=1</m>? which gives a lower estimate? what does the third quantity represent? Sketch it on the graph provided.
+                If <m>f(x) = 1-x^{2}</m>, which of these gives an upper estimate for the area under the curve <m>y=f(x)</m>, above the <m>x</m>-axis, between <m>x=0</m> and <m>x=1</m>? which gives a lower estimate? what does the third quantity represent? Sketch it on the graph in <xref ref="figure1MX2"/>.
               </p>
 
               <p>
-                <dl>
+                <ul>
                 <li>
-                  <title> <m>\circ</m> </title>
 
                   <p>
                     <m>\displaystyle \frac{1}{4}f(0) + \frac{1}{4}f\left(\frac{1}{4}\right) + \frac{1}{4}f\left(\frac{2}{4}\right) + \frac{1}{4}f\left(\frac{3}{4}\right) = \sum_{k=1}^{4}f\left(\frac{k-1}{4}\right) \cdot \frac{1}{4}</m>
@@ -140,7 +222,7 @@
                 </li>
 
                 <li>
-                  <title> <m>\circ</m> </title>
+ 
 
                   <p>
                     <m>\displaystyle \frac{1}{4}f\left(\frac{1}{8}\right) + \frac{1}{4}f\left(\frac{3}{8}\right) + \frac{1}{4}f\left(\frac{5}{8}\right) + \frac{1}{4}f\left(\frac{7}{8}\right) = \sum_{k=1}^{4}f\left(\frac{(k-1)+k}{8}\right) \cdot \frac{1}{4}</m>
@@ -148,25 +230,53 @@
                 </li>
 
                 <li>
-                  <title> <m>\circ</m> </title>
+
 
                   <p>
                     <m>\displaystyle \frac{1}{4}f\left(\frac{1}{4}\right) + \frac{1}{4}f\left(\frac{2}{4}\right) + \frac{1}{4}f\left(\frac{3}{4}\right) + \frac{1}{4}f\left(\frac{4}{4}\right) = \sum_{k=1}^{4}f\left(\frac{k}{4}\right) \cdot \frac{1}{4}</m>
                   </p>
                 </li>
-                </dl>
+                </ul>
               </p>
-              [domain=-3:3] [black!80,line width=0.3pt,-latex] (0,0) – (5,0) node [below] at (4.75,0) {$x$} [black!80,line width=0.3pt,-latex] (0,0) – (-0.5,0) [black!80,line width=0.3pt,-latex] (0,0) – (0,5) node [right] at (0,4.75) {$y$} [black!80,line width=0.3pt,-latex] (0,0) – (0,-0.5)[color=linecolor, line width=1pt,domain=0:4] plot (\x,{4*(1-1/16*\x*\x)}) node [right] at (3,3) {$y=1-x^{2}$} / in  4/1[shift={(\x,0)}] (0pt,3pt) – (0pt,-3pt) node[below] {$\xtext$} / in 4/1[shift={(0,\y)}] (-2pt,0pt) – (2pt,0pt) node[left] {$\ytext$}
+
+<figure xml:id="figure1MX2">
+  <caption>The graph of <m>y=1-x^2</m>.</caption> 
+  <image xml:id="f1MX2Pic" width="50%">
+<description>
+Graph of the function y = 1 − x² on the interval from 0 to 1. The curve begins at the point (0, 1) on the y‑axis and decreases smoothly in a downward‑opening arc, reaching the point (1, 0) on the x‑axis. Axes are labeled x and y.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.75] [domain=-3:3]
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5,0) node [below] at (4.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,5) node [right] at (0,4.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+\draw[color=linecolor, line width=1pt,domain=0:4]   plot (\x,{4*(1-1/16*\x*\x)}) node [right] at (3,3) {$y=1-x^2$};
+\foreach \x/\xtext in { 4/1}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {4/1}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+              
             </li>
 
             <li>
               <p>
                 Many applets and packaged software can compute areas of these approximating rectangles quickly.
                 Use the applet <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/integration_riemann_sum.html">The Riemann Sum</url> to compute the value of a left, right, and middle sum using <m>n=4</m> rectangles.
-                [The middle sum is shown below.]
+                [The middle sum is shown in <xref ref="RiemannSumAppletOutput1"/>.]
               </p>
-
-              <image source="RiemannSumAppletOutput1.jpg" />
+<figure xml:id="RiemannSumAppletOutput1">
+  <caption>A middle sum used to compute the area under <m>f(x)=1-x^2</m> and above <m>[0,1]</m> using <m>n=4</m> rectangles.</caption>
+ <image source="RiemannSumAppletOutput1.jpg">
+<description>
+Interactive diagram illustrating Riemann sum approximations for the function f(x) = 1 − x² on the interval from 0 to 1. The curve of the function is shown as a downward-opening parabola. Four subintervals are used, and shaded rectangular bars represent sample rectangles for the selected sample point method. Vertical dashed lines show subinterval boundaries. A sidebar on the left displays options for selecting sample point placement, including relative point, midpoint, random, upper sum, and lower sum. The sidebar also lists numerical approximation values: relative sample approximation 0.67188, random approximation 0.72847, upper sum 0.78125, lower sum 0.53125, and the exact integral value 0.66667. The diagram visually compares the rectangles to the parabola to demonstrate over- and underestimates in the Riemann sum.
+</description>
+              </image>
+            </figure>
               </li>
 
               <li>
@@ -178,14 +288,11 @@
             </ol>
           </p>
         </li>
-        </dl>
+        </ol>
       </p>
     </li>
 
     <li>
-      <title> <image source="CopilotLogo.jpg" />
-
-      </title>
 
       <p>
         Prompt <alert>Copilot</alert> “Please produce and execute Python code that illustrates a Riemann sum of the function f(x)=x<m>\wedge</m>2+1 from x=1 to x=3 using n=5 rectangles.” Does the AI produce a left or a right Riemann sum? Does the AI give you a correct value for the sum being illustrated?
@@ -194,19 +301,22 @@
 
     <li>
       <p>
-        <alert>Read</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#PJS">section 4.2.2</url> on Riemann Sums.
+        <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-4-2-Riemann.html#sec-4-2-Riemann-5">section 4.2.3</url> on Riemann Sums.
       </p>
     </li>
 
     <li>
-      <title> <em>Submit</em> </title>
+      
 
       <p>
-        <alert>Read</alert> section 4.2.2 again. In <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#sec-4-2-Riemann-5-15">this paragraph regarding midpoint Riemann sums</url>, the authors define
+        [Submit] <alert>Read</alert> section 4.2.3 again. In <url href="
+https://activecalculus.org/single2e/sec-4-2-Riemann.html#sec-4-2-Riemann-5-15">this paragraph regarding midpoint Riemann sums</url>, the authors define
         <me>
           \overline{x}_{i+1}= \frac{x_{i} + x_{i+1}}{2}.
         </me>
-        A diagram illustrating the resulting Riemann sum is shown <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#sec-4-2-Riemann-5-11">on the right in this figure</url>.
+        A diagram illustrating the resulting Riemann sum is shown <url href="
+https://activecalculus.org/single2e/sec-4-2-Riemann.html#F-4-2-RightMidSum">on the right in this figure</url>.
         Draw a similar diagram for the Riemann sum resulting from
         <me>
           \widehat{x}_{i+1}= \frac{x_{i}}{3}+ \frac{2x_{i+1}}{3}.
@@ -232,10 +342,12 @@
         <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=FvhD3BblfvI&#x26;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&#x26;index=82">Another Riemann Sum Example (10:33)</url>.
       </p>
     </li>
-    </dl>
+    </ul>
 
-    <p>
-    </p>
+  </section>
+
+  <section xml:id="sec-Afterclass42">
+    <title>After class</title>
 
     <p>
       Solidifying the concepts discussed in class through practice is necessary to build your skills.
@@ -244,13 +356,15 @@
     <ul>
       <li>
         <p>
-          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#KNA">Activity 4.2.3</url>. Then, <alert>watch</alert> a <url href="https://www.youtube.com/watch?v=jJ7r2FtLaJo">video solution to Activity 4.2.3 (7:40)</url>.
+          <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-4-2-Riemann.html#act-4-2-2">Activity 4.2.3</url>. Then, <alert>watch</alert> a <url href="https://www.youtube.com/watch?v=jJ7r2FtLaJo">video solution to Activity 4.2.3 (7:40)</url>.
         </p>
       </li>
 
       <li>
         <p>
-          <alert>Read</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#vRb">section 4.2.3</url>.
+          <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-4-2-Riemann.html#sec-4-2-Riemann-6">section 4.2.4</url>.
         </p>
       </li>
 
@@ -262,37 +376,43 @@
 
       <li>
         <p>
-          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#ZAZ">Activity 4.2.4</url>. Then, <alert>watch</alert> a <url href="https://www.youtube.com/watch?v=iIjiyvV0Ma4">video solution to Activity 4.2.4 (6:27)</url>.
+          <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-4-2-Riemann.html#act-4-2-3">Activity 4.2.4</url>. Then, <alert>watch</alert> a <url href="https://www.youtube.com/watch?v=iIjiyvV0Ma4">video solution to Activity 4.2.4 (6:27)</url>.
         </p>
       </li>
 
       <li>
         <p>
-          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#aBs">exercise 1 in section 4.2</url>.
+          <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-4-2-Riemann.html#Library__Michigan__Chap5Sec1__Q05.pg">exercise 1 in section 4.2.6</url>.
         </p>
       </li>
 
       <li>
         <p>
-          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#SWT">exercises 4-5 in section 4.2</url>.
+          <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-4-2-Riemann.html#Library__Rochester__setIntegrals0Theory__S05.01.AreaDistance.PTP03.pg">exercises 4-5 in section 4.2.6</url>.
         </p>
       </li>
 
       <li>
         <p>
-          <alert>Read</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#bYk">section 4.2.4 - summary</url>.
+          <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-4-2-Riemann.html#sec-4-2-Riemann-7">section 4.2.5 - summary</url>.
         </p>
       </li>
 
       <li>
         <p>
-          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#GIB">exercises 2-3 in section 4.2</url>.
+          <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-4-2-Riemann.html#Library__Rochester__setIntegrals0Theory__S05.01.AreaDistance.PTP01.pg">exercises 2-3 in section 4.2.6</url>.
         </p>
       </li>
 
       <li>
         <p>
-          <alert>Do</alert> <url href="https://activecalculus.org/single/sec-4-2-Riemann.html#fll">exercises 6-7 in section 4.2</url>.
+          <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-4-2-Riemann.html#Library__FortLewis__Calc1__05-02-Definite-integral__HGM5-05-02-Definite-integral-25b.pg">exercises 6-7 in section 4.2.6</url>.
         </p>
       </li>
 
@@ -303,43 +423,12 @@
       </li>
     </ul>
 
-    <p>
-    </p>
+  </section>
 
-    <p>
-    </p>
 
-    <p>
-      These are the tasks you should be able to perform with reasonable
-    </p>
 
-    <p>
-      fluency when you arrive at our next class meeting.
-      Important new
-    </p>
-
-    <p>
-      vocabulary words are indicated <em>in italics</em>.
-      Check each box when you feel confident you have a firm grasp on that objective.
-    </p>
-
-    <ul>
-      <li>
-        <p>
-          Use basic notation for a <em>Riemann sum</em>.
-          That is, when we write <m>\sum_{i=1}^{n}f(x_{i}) \Delta x</m>, to know what this represents geometrically and what this quantity aspires to measure.
-        </p>
-      </li>
-
-      <li>
-        <p>
-          Compare and contrast <em>left, right, and middle Riemann sums</em> (<m>L_{n}, R_{n}, M_{n}</m>).
-        </p>
-      </li>
-    </ul>
-
-    <p>
-    </p>
+  <section xml:id="subsec-Advancedlearningobjectives42">
+    <title>Advanced learning objectives</title>
 
     <p>
       In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
@@ -359,8 +448,12 @@
       </li>
     </ul>
 
-    <p>
-    </p>
+  </section>
+
+  <section xml:id="sec-Additionalsuggestions42">
+    <title>Additional suggestions</title>
+    
+
 
     <ul>
       <li>
@@ -384,9 +477,41 @@
           <ol>
             <li>
               <p>
-                Consider <m>f(x) = \ln 4x</m> on <m>[1,3]</m>.
+                Consider <m>f(x) = \ln 4x</m> on <m>[1,3]</m> as shown in <xref ref="figureln4xOn13"/>.
                 We calculate left and right Riemann sums for <m>n=5</m>.
               </p>
+
+  <figure xml:id="figureln4xOn13">
+  <caption>The graph of <m>\ln 4x</m> on <m>[1,3]</m>.</caption> 
+  <image xml:id="ln4xOn13Pic" width="50%">
+<description>
+Graph of the function y = ln(4x) on the interval from x = 1 to x = 3, shown as an increasing concave‑down curve. Five left‑endpoint rectangles are drawn under the curve, each shaded in light blue, with heights determined by the function value at the left end of each subinterval. The rectangles rise in height as x increases, forming a left‑endpoint Riemann sum approximation of the area under the curve.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1.1]
+  \fill [linecolor!10] (1,0) -- (1,1.723) -- (1.4,1.723) -- (1.4,0) -- (1,0);
+    \draw[black] (1,0) -- (1,1.723) -- (1.4,1.723) -- (1.4,0) -- (1,0);
+      \fill [linecolor!10] (1.4,0) -- (1.4,1.974) -- (1.8,1.974) -- (1.8,0) -- (1.4,0);
+    \draw[black] (1.4,0) -- (1.4,1.974) -- (1.8,1.974) -- (1.8,0) -- (1.4,0);
+          \fill [linecolor!10] (1.8,0) -- (1.8,2.175) -- (2.2,2.175) -- (2.2,0) -- (1.8,0);
+    \draw[black] (1.8,0) -- (1.8,2.175) -- (2.2,2.175) -- (2.2,0) -- (1.8,0);
+              \fill [linecolor!10] (2.2,0) -- (2.2,2.342) -- (2.6,2.324) -- (2.6,0) -- (2.2,0);
+    \draw[black] (2.2,0) -- (2.2,2.342) -- (2.6,2.324) -- (2.6,0) -- (2.2,0);
+     \fill [linecolor!10] (2.6,0) -- (2.6,2.485) -- (3,2.485) -- (3,0) -- (2.6,0);
+    \draw[black] (2.6,0) -- (2.6,2.485) -- (3,2.485) -- (3,0) -- (2.6,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,4) node [right] at (0,3.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+\draw[color=linecolor, line width=1pt,domain=0.5:3.5]   plot (\x,{ln (4*\x)}) node [right] at (3,3) {$y=\ln 4x$};
+\foreach \x/\xtext in { 1/1, 2/2, 3/3}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/1, 2/2, 3/3}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
 
               <p>
                 <ol>
@@ -398,7 +523,7 @@
 
                   <li>
                     <p>
-                      Does the diagram illustrate a left or a right Riemann  sum?
+                      Does the diagram illustrate a left or a right Riemann sum?
                     </p>
                   </li>
 
@@ -407,7 +532,6 @@
                       Calculate the value of the left and right Riemann  sum with a calculator.
                       Verify your result using both this  <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/integration_riemann_sum.html">Riemann Sum applet</url> and a spreadsheet such as <em>Excel</em>.
                     </p>
-                    [linecolor!10] (1,0) – (1,1.723) – (1.4,1.723) – (1.4,0) – (1,0)[black] (1,0) – (1,1.723) – (1.4,1.723) – (1.4,0) – (1,0) [linecolor!10] (1.4,0) – (1.4,1.974) – (1.8,1.974) – (1.8,0) – (1.4,0)[black] (1.4,0) – (1.4,1.974) – (1.8,1.974) – (1.8,0) – (1.4,0) [linecolor!10] (1.8,0) – (1.8,2.175) – (2.2,2.175) – (2.2,0) – (1.8,0)[black] (1.8,0) – (1.8,2.175) – (2.2,2.175) – (2.2,0) – (1.8,0) [linecolor!10] (2.2,0) – (2.2,2.342) – (2.6,2.324) – (2.6,0) – (2.2,0)[black] (2.2,0) – (2.2,2.342) – (2.6,2.324) – (2.6,0) – (2.2,0) [linecolor!10] (2.6,0) – (2.6,2.485) – (3,2.485) – (3,0) – (2.6,0)[black] (2.6,0) – (2.6,2.485) – (3,2.485) – (3,0) – (2.6,0) [black!80,line width=0.3pt,-latex] (0,0) – (4,0) node [below] at (3.75,0) {$x$} [black!80,line width=0.3pt,-latex] (0,0) – (-0.5,0) [black!80,line width=0.3pt,-latex] (0,0) – (0,4) node [right] at (0,3.75) {$y$} [black!80,line width=0.3pt,-latex] (0,0) – (0,-0.5)[color=linecolor, line width=1pt,domain=0.5:3.5] plot (\x,{ln (4*\x)}) node [right] at (3,3) {$y=\ln 4x$} / in  1/1, 2/2, 3/3[shift={(\x,0)}] (0pt,3pt) – (0pt,-3pt) node[below] {$\xtext$} / in 1/1, 2/2, 3/3[shift={(0,\y)}] (-2pt,0pt) – (2pt,0pt) node[left] {$\ytext$}
                   </li>
 
                   <li>
@@ -421,9 +545,37 @@
 
             <li>
               <p>
-                The following figure represents a Riemann sum for <m>f</m> on <m>[1,7]</m>.
+                <xref ref="figureRiemannSumf17"/> represents a Riemann sum for <m>f</m> on <m>[1,7]</m>.
               </p>
-              [linecolor!10] (1,0) – (1,1.581) – (3,1.581) – (3,0) – (1,0)[black] (1,0) – (1,1.581) – (3,1.581) – (3,0) – (1,0) [linecolor!10] (3,0) – (3,2.739) – (5,2.739) – (5,0) – (3,0)[black] (3,0) – (3,2.739) – (5,2.739) – (5,0) – (3,0) [linecolor!10] (5,0) – (5,3.536) – (7,3.536) – (7,0) – (5,0)[black] (5,0) – (5,3.536) – (7,3.536) – (7,0) – (5,0) [black!80,line width=0.3pt,-latex] (0,0) – (8,0) node [below] at (7.75,0) {$x$} [black!80,line width=0.3pt,-latex] (0,0) – (-0.5,0) [black!80,line width=0.3pt,-latex] (0,0) – (0,5) node [right] at (0,4.75) {$y$} [black!80,line width=0.3pt,-latex] (0,0) – (0,-0.5)[color=linecolor, line width=1pt,domain=1:7] plot (\x,{0.5*3.168*sqrt(\x)}) node [right] at (3,3.5) {$f$} / in  1/1, 2/2, 3/3, 4/4, 5/5, 6/6, 7/7[shift={(\x,0)}] (0pt,3pt) – (0pt,-3pt) node[below] {$\xtext$} / in 1/2, 2/4, 3/6, 4/8[shift={(0,\y)}] (-2pt,0pt) – (2pt,0pt) node[left] {$\ytext$}
+
+  <figure xml:id="figureRiemannSumf17">
+  <caption>A Riemann sum for <m>f</m> on <m>[1,7]</m>.</caption> 
+  <image xml:id="RiemannSumf17Pic" width="60%">
+<description>
+Graph of an increasing concave-down function f on the interval from x = 1 to x = 7. Three right-endpoint rectangles are drawn under the curve, each shaded in light blue. The first rectangle spans x = 1 to 3, the second from x = 3 to 5, and the third from x = 5 to 7. The heights of the rectangles correspond to the function values at x = 3, 5, and 7, creating a right-endpoint Riemann sum approximation of the area under the curve.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=0.9]
+  \fill [linecolor!10] (1,0) -- (1,1.581) -- (3,1.581) -- (3,0) -- (1,0);
+    \draw[black] (1,0) -- (1,1.581) -- (3,1.581) -- (3,0) -- (1,0);
+      \fill [linecolor!10] (3,0) -- (3,2.739) -- (5,2.739) -- (5,0) -- (3,0);
+    \draw[black] (3,0) -- (3,2.739) -- (5,2.739) -- (5,0) -- (3,0);
+          \fill [linecolor!10] (5,0) -- (5,3.536) -- (7,3.536) -- (7,0) -- (5,0);
+    \draw[black] (5,0) -- (5,3.536) -- (7,3.536) -- (7,0) -- (5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (8,0) node [below] at (7.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,5) node [right] at (0,4.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+\draw[color=linecolor, line width=1pt,domain=1:7]   plot (\x,{0.5*3.168*sqrt(\x)}) node [right] at (3,3.5) {$f$};
+\foreach \x/\xtext in { 1/1, 2/2, 3/3, 4/4, 5/5, 6/6, 7/7}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/2, 2/4, 3/6, 4/8}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+            
               <p>
                 <ol>
                   <li>
@@ -440,17 +592,14 @@
 
                   <li>
                     <p>
-                      Does the figure represent a left, right, or midpoint Riemann sum?
+                      Does <xref ref="figureRiemannSumf17"/> represent a left, right, or midpoint Riemann sum?
                     </p>
                   </li>
 
                   <li>
                     <p>
                       Using sigma notation, <m>\displaystyle \sum</m>, write an algebraic representation of this Riemann sum.
-                      That is, fill in the following boxes with specific values (either constants or expressions involving <m>k</m>):
-                      <me>
-                        \sum_{\fbox{$k=$\hspace{3mm}}}^{\fbox{\hspace{3mm}}}f\left({\fbox{\hspace{5mm}}}\right){\fbox{\hspace{5mm}}}
-                      </me>
+                      
                     </p>
                   </li>
                 </ol>
@@ -461,9 +610,13 @@
       </li>
     </ul>
 
-    <p />
-      <p>
-      </p>
+  </section>
+
+  <section xml:id="sec-Answers42">
+    <title>Answers</title>
+    
+<subsection xml:id="subsec-Toprepareforclass42">
+  <title>To prepare for class</title>
 
       <ol>
         <li>
@@ -521,12 +674,17 @@
 
               <li>
                 <p>
-                  The middle sum is illustrated below.
+                  The middle sum is illustrated in <xref ref="RiemannSumAppletOutput2"/>.
                   Note that to move the endpoints, just drag the blue dots to 0 and 1 accordingly.
                   Also, to stretch the axes, the SHIFT key can be held as you drag either the <m>x</m>- or <m>y</m>-axis.
                 </p>
-
-                <image source="RiemannSumAppletOutput2.jpg" />
+              <figure xml:id="RiemannSumAppletOutput2">
+                <image source="RiemannSumAppletOutput2.jpg" >     
+<description>
+Interactive diagram illustrating Riemann sum approximations for the function f(x) = 1 − x². The curve is a downward‑opening parabola shown over the interval from x = 0 to approximately 1.2. Four midpoint rectangles are drawn under the curve, each shaded in light orange, with heights determined by the function value at each subinterval’s midpoint. Vertical dashed lines mark the subinterval boundaries. On the left side of the image, a control panel displays options for sample point placement, the number of subintervals (n = 4), and numerical approximation values: relative 0.67188, random 0.64026, upper 0.78125, lower 0.53125, and the exact integral 0.66667.
+</description>
+                </image>
+              </figure>
                 </li>
 
                 <li>
@@ -538,6 +696,13 @@
             </p>
           </li>
 
+        </ol>
+        </subsection>
+
+        <subsection xml:id="subsec-Additionalsuggestions42">
+          <title>Additional suggestions</title>
+
+        <ol>
           <li>
             <p>
               <ol>
@@ -592,5 +757,9 @@
             </p>
           </li>
         </ol>
+
+        </subsection>
+
+          </section>
 
         </handout>
