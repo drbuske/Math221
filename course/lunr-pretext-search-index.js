@@ -1171,6 +1171,87 @@ var ptx_lunr_docs = [
   "body": " Two different views of , an antiderivative of .        "
 },
 {
+  "id": "handouts-27",
+  "level": "1",
+  "url": "handouts-27.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Daily Prep 5.2 - The Second Fundamental Theorem of Calculus",
+  "body": " Daily Prep 5.2 - The Second Fundamental Theorem of Calculus   Overview  To this point, you have become reasonably proficient at computing the derivative of a given function algebraically, graphically, and numerically. In this section, we find a single formula that defines an antiderivative of any function . The second part of the Fundamental Theorem of Calculus will also enable us to better see how the processes of differentiation and integration are related as near inverse processes.    Basic learning objectives  These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated in italics .    Evaluate integrals that have a variable in one of their limits.    State the Second Fundamental Theorem of Calculus and use it to state an antiderivative for a given function.      To prepare for class  Complete all actions listed below. Respond to the questions highlighted with Submit .     Read motivating questions and the introduction to section 5.2 (up until Preview Activity 5.2.1).     Do these problems.     Consider the constant function .     Using geometry, compute .    Using geometry, compute .    Compute for any . may help.   The area under on the interval .   A horizontal line at y = 4 represents f(t). A shaded rectangle extends from t = 1 to t = x, with height 4.       Define the area function  , . What is ? ? Write a general formula for .       Let for all .     Using geometry, compute .    Using geometry, compute .    Compute for any . may help.   The area under on the interval .   A straight line labeled f(t) increases from left to right. The shaded region is the area under the line from t = 0 to t = x, forming a triangle.       Define another area function  . What is ? ? ? Write a general formula for .     Define a third area function for any . What is ? ? ? Write a general formula for . may help.   The area under on the interval .   A straight line labeled f(t) rises from left to right. The shaded region is the area under the line from t = 0 to t = x, with a vertical line at t = x forming the right boundary.          In the two previous problems, we have computed three different area functions.     Fill in the blanks:    For functions and from the previous two exercises, do you spot a pattern with their derivatives?                                You should notice a very interesting fact about the derivatives of the area functions - a fundamentally beautiful property. What is it?    Define one final function, . Don’t worry about trying to find a simple formula for . But, using our amazing fact, compute .   An illustration of .   Graph of f(t) with a shaded region under the curve from the left up to t = x, where a vertical line at t = x marks the right boundary of the shaded area.             Do  Preview Activity 5.2.1 .     (Optional) Watch video solution to Preview Activity 5.2.1 (3:46) .       [Submit] Read  section 5.2.2 up to Activity 5.2.2.     In equation 5.2.1, it is claimed that The author explains why this is true with an equation. Draw a well-labeled figure using the graph of and areas under that curve that illustrates why the numerators are indeed equal for any function . Hint: A property from section 4.3.3 may help.     The author goes on to say “Now, observe that for small values of , by a simple left-hand approximation of the integral.” Show this is also the case by drawing a well-labeled figure illustrating this one-rectangle Riemann sum.        Watch  Sketching the Graph of an Integral Function (8:15) .    [Submit] Do  Activity 5.2.2 . If you get stuck, you may watch the video solution to Activity 5.2.2 (8:09) .     Read  section 5.2.3 .     Watch video Second Fundamental Theorem of Calculus (Part 2): Understanding the Theorem (5:37) .    Prompt Copilot “What is the difference between d\/dx(int_a x f(t) dt) and int_a x f’(t) dt?”    Prompt Copilot “Can you show me a standard example from calculus in which I need to apply both the second Fundamental Theorem of Calculus and the chain rule?”     Watch video Quick Recap - Second Fundamental Theorem (2:46) .    [Submit] Explore applet Second Fundamental Theorem of Calculus . Enter and Starting -value: 0 and then answer these questions:     Place the dot labeled ‘ ’ at 1 on the -axis. Give an expression that represents the area of the purple shaded region.    Give an expression that represents as defined in the applet.    Check the ‘Show the graph of ’ box in the lower left. Slide point ‘x’ left and right to sketch out . Which of the following best describes the function drawn?      is the net signed area of the purple shaded area under from 0 to .     is the antiderivative of that satisfies .     .       What does the applet illustrate to you?     Suggestions for submission .               All three options describe .    The applet should illustrate how the area function relates to its integrand via the Second Fundamental Theorem of Calculus. Of course, your viewpoints will vary.         After class  Solidifying the concepts discussed in class through practice is necessary to build your skills.     Read  section 5.2.4 .     Explore the applet Fundamental Theorem of Calculus . Note: Ignore the title of the applet. This applet illustrates the Second Fundamental Theorem as described in our text. As always, let the questions at the bottom guide your exploration. This applet demonstrates how integration and differentiation are nearly inverse processes well.     Watch video Differentiating an Integral Function (7:03) .     Do  exercises 1-4 in section 5.2.6 .     Read  section 5.2.5 - summary .     Do  exercises 5-6 in section 5.2.6 .     Start working on the MOMwork (MyOpenMath) assignment for this section.      Advanced learning objectives  In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:    Use the Second Fundamental Theorem of Calculus to differentiate an integral that has a variable in its limits.    Analyze an integral function using the usual techniques from differential calculus.    Recognize the difference between a definite integral that evaluates to a number (such as ) and a definite integral that evaluates to a function (such as ).      Additional suggestions     Do these problems.     The graph of is as shown. Let where is as shown in .   The graph of .   A curve f rises from the origin to a peak and then decreases toward x = 1. The region under the curve from x = 0 to x = u is shaded, with u marked between 0 and 1.       What is the domain of ? Can you estimate the range?    Is continuous? Is differentiable?    Where does the graph of achieve its maximum?  Where does it achieve its minimum?    Where is concave up\/down?       Let , where is the function whose graph is shown in . Where is concave downward? Explain.   The graph of defines a function via .   Graph of f(t), a smooth curve that rises to a peak near t = −1, dips below the axis near t = 1, and then increases steeply for t > 2.           Finish (if needed)  Activity 5.2.3 .     (Optional) Watch video solution to Activity 5.2.3 (8:59) .        Do these problems.     Compute if . Hint: If , and , then .    Find if .         Answers   To prepare for class       4    12          , and                24          , and      , and           This summarizes the results of the previous two problems.    Functions and and their derivatives.                                The derivative of .              Additional suggestions        ; .    Yes to both. .    Maximum at . Minimum at .     when which is approximately . when which is approximately .        and on . So, is concave downward on .     .     so that . It follows then that .      "
+},
+{
+  "id": "figureAreaUnder4",
+  "level": "2",
+  "url": "handouts-27.html#figureAreaUnder4",
+  "type": "Figure",
+  "number": "106",
+  "title": "",
+  "body": " The area under on the interval .   A horizontal line at y = 4 represents f(t). A shaded rectangle extends from t = 1 to t = x, with height 4.    "
+},
+{
+  "id": "figureAreaUnder2tP2",
+  "level": "2",
+  "url": "handouts-27.html#figureAreaUnder2tP2",
+  "type": "Figure",
+  "number": "107",
+  "title": "",
+  "body": " The area under on the interval .   A straight line labeled f(t) increases from left to right. The shaded region is the area under the line from t = 0 to t = x, forming a triangle.    "
+},
+{
+  "id": "figureAreaUnder2tP2third",
+  "level": "2",
+  "url": "handouts-27.html#figureAreaUnder2tP2third",
+  "type": "Figure",
+  "number": "108",
+  "title": "",
+  "body": " The area under on the interval .   A straight line labeled f(t) rises from left to right. The shaded region is the area under the line from t = 0 to t = x, with a vertical line at t = x forming the right boundary.    "
+},
+{
+  "id": "PatternFTCPart2",
+  "level": "2",
+  "url": "handouts-27.html#PatternFTCPart2",
+  "type": "Table",
+  "number": "109",
+  "title": "For functions <span class=\"process-math\">\\(A(x), B(x)\\)<\/span> and <span class=\"process-math\">\\(C(x)\\)<\/span> from the previous two exercises, do you spot a pattern with their derivatives?",
+  "body": " For functions and from the previous two exercises, do you spot a pattern with their derivatives?                            "
+},
+{
+  "id": "FTCDiscover1",
+  "level": "2",
+  "url": "handouts-27.html#FTCDiscover1",
+  "type": "Figure",
+  "number": "110",
+  "title": "",
+  "body": " An illustration of .   Graph of f(t) with a shaded region under the curve from the left up to t = x, where a vertical line at t = x marks the right boundary of the shaded area.   "
+},
+{
+  "id": "fundthm1",
+  "level": "2",
+  "url": "handouts-27.html#fundthm1",
+  "type": "Figure",
+  "number": "111",
+  "title": "",
+  "body": " The graph of .   A curve f rises from the origin to a peak and then decreases toward x = 1. The region under the curve from x = 0 to x = u is shaded, with u marked between 0 and 1.   "
+},
+{
+  "id": "figureIntegralCubic52",
+  "level": "2",
+  "url": "handouts-27.html#figureIntegralCubic52",
+  "type": "Figure",
+  "number": "112",
+  "title": "",
+  "body": " The graph of defines a function via .   Graph of f(t), a smooth curve that rises to a peak near t = −1, dips below the axis near t = 1, and then increases steeply for t > 2.    "
+},
+{
+  "id": "PatternFTCPart2Ans",
+  "level": "2",
+  "url": "handouts-27.html#PatternFTCPart2Ans",
+  "type": "Table",
+  "number": "113",
+  "title": "Functions <span class=\"process-math\">\\(A(x), B(x)\\)<\/span> and <span class=\"process-math\">\\(C(x)\\)<\/span> and their derivatives.",
+  "body": " Functions and and their derivatives.                            "
+},
+{
   "id": "ws-act-1-1-1",
   "level": "1",
   "url": "ws-act-1-1-1.html",
