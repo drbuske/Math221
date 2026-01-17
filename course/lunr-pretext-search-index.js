@@ -1054,6 +1054,60 @@ var ptx_lunr_docs = [
   "body": " The average value of on .   Graph of an exponential function f(x) that increases very rapidly on the interval from about x = 20 to x = 40. The curve starts near the x‑axis on the left and rises steeply to a large value by x = 40. The region under the curve from x = 20 to x = 40 is shaded in blue to represent the integral, with the label “integral ≈ 129618.37.” A horizontal red line labeled “average value: y = 10740.46” crosses the graph. A text box near the curve displays the formula f(x) = 225·1.15^x. Grid lines and axes with tick marks are shown.   "
 },
 {
+  "id": "handouts-25",
+  "level": "1",
+  "url": "handouts-25.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Daily Prep 4.4 - The Fundamental Theorem of Calculus",
+  "body": " Daily Prep 4.4 - The Fundamental Theorem of Calculus   Overview  In this section we see how antiderivatives allow us to compute a definite integral using the The Fundamental Theorem of Calculus. In this result, we see formally how the net-signed area under a curve is connected to the antiderivative of the function that generates the curve. This result extends our earlier work where we saw that slopes on the graph of generate heights on the graph of ; now we can also see that net-signed areas between and the -axis are connected to differences in heights on .    Basic learning objectives  These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated in italics .    Recognize that the change in position of an object gives the net-signed area bounded by a velocity curve on an interval : .    Define an antiderivative .    State the Fundamental Theorem of Calculus: , where is any antiderivative of .    Apply the Fundamental Theorem of Calculus to compute definite integrals.      To prepare for class  Complete all actions listed below. Respond to the questions highlighted with Submit .     Read motivating questions and the introduction to section 4.4 (up until Preview Activity 4.4.1).     Do  Preview Activity 4.4.1 .     (Optional) Watch  video solution of Preview Activity 4.4.1 (8:24) .    (Optional) Solutions to the Preview Activity 4.4.1 appear in Answers below.        Watch video Quick Review - The Fundamental Theorem of Calculus (3:14) .     Read  section 4.4.2 up to Activity 4.4.2.    Prompt Copilot “How is the fundamental theorem of calculus related to finding distance traveled by finding area under a velocity curve?”    [Submit] Watch video Fundamental Theorem of Calculus with Power Functions (7:32) . Note that the presenter does a terrible job in evaluation of by not using any = signs in the presentation. Correct this by carefully writing the solution properly using appropriate notation (i.e. use equality signs as needed).     Do these problems.     Evaluate . Sketch a graph with the shaded region the answer represents. Does your answer appear to be reasonable?  Prompt Copilot “Evaluate $int_0 1 1-x 2 dx$. Then, produce and execute python code that will sketch a graph with the shaded region the answer represents.”       Use geometry to evaluate .    Use the Fundamental Theorem of Calculus to evaluate this definite integral. Note that you should get the same numerical value!       Evaluate . Sketch a graph with the shaded region the answer represents. Does your answer appear to be reasonable? Hint: What function has derivative of ?        [Submit] Explore the applet 1st Fundamental Theorem built in Desmos. The applet shows that the area under a curve defined by (shaded blue) is equal to the difference in heights of an antiderivative at the endpoints and . Then, draw your own well-labeled figure illustrating this idea for . Be sure that your figure (a) clearly shades the area being computed, (b) contains graphs of both and antiderivative , and (c) shows the difference in heights .     Read  section 4.4.3 .     Watch video Fundamental Theorem of Calculus with Exponential Functions (7:56) .     Do these problems.        Use the Fundamental Theorem of Calculus to evaluate .    Calculate two ways: (i) numerically using GeoGebra and (ii) exactly using the fundamental theorem of calculus. How do these values compare?    Give examples of two different functions and limits of integration and such that .       Find two antiderivatives of .       [Submit] Explore the applet Practice Applying the Fundamental Theorem of Calculus by trying a few of these by hand and checking that you get the same result. Take a screen capture of one problem it presents and submit with it your written work showing that you get the same result.      After class  Solidifying the concepts discussed in class through practice is necessary to build your skills.     Do  exercises 1-6 in section 4.4.6 .     Read  section 4.4.4 .     Watch video Applications of the Total Change Theorem (6:40) .     Do  exercise 7 in section 4.4.6 .     Read  section 4.4.5 - summary .     Do  exercises 8-10 in section 4.4.6 .     Start working on the MOMwork (MyOpenMath) assignment for this section.      Advanced learning objectives  In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:    Compute the family of antiderivatives of a function.    Explain why two antiderivatives of the same function only differ by a constant.    State the Total Change Theorem and explain it’s relationship to the Fundamental Theorem of Calculus.    Apply the Total Change Theorem to solve applied problems.      Additional suggestions     Watch video Antiderivatives Part I - Polynomials and the Power Rule (8:22) .     Watch video First Fundamental Theorem of Calculus (8:00) .     Watch video Antiderivatives Part II - 1\/x, Exponentials, and Trig Functions (6:21) .     Explore another good applet illustrating the Fundamental Theorem of Calculus Part 1 .     Do these problems.     Find a single antiderivative for each of the following functions. In each case, you will want to reverse the chain rule.                       Suppose you know that a certain function is twice differentiable and that its graph over is given in . As you see, the printer was sloppy and spilled a lot of ink on the graph. Using the Fundamental Theorem of Calculus, decide whether each of the following definite integrals is positive, negative, or zero. Defend your answers.                 A printer has spilled ink on the graph of .   Graph of a highly oscillating function f(x) plotted on a grid. The curve rises and falls several times between x = −4 and x = 8, with peaks and valleys of varying heights. Several large solid black circles of different sizes are drawn on top of the graph at various x-values, obscuring portions of the curve. The axes are labeled x and y.           Do  Activity 4.4.4 .      Watch video solution to (a) and (b) to Activity 4.4.4 (3:27) .     Watch video solution to (c) and (d) of Activity 4.4.4 (5:34) .         Answers   Preview Activity 4.4.1           Maximum height is at time second. It lands at time seconds.     feet; feet; feet. The first value represents the distance the balloon traveled upward from launch until it reached it’s peak. The second value represents the (signed) distance the balloon traveled from peak until hitting the ground (i.e. the displacement). The third value represents the displacement of the balloon from launch until hitting the ground.    40 feet    The total net signed area is 4-36=-32.     The net signed area under the graph of is 4-36=-32.   Graph of a linear velocity function v(t) decreasing from v = 20 at t = 0 to about v = −50 at t = 2. The line slopes downward as t increases. The region above the t-axis from t = 0 to t = 1 is shaded in light blue, and the region below the t-axis from t = 1 to t = 2 is shaded in light red. Axes are labeled t and v.       To prepare for class    2\/3 is a reasonable answer for the area of the shaded region in .   The area under between and is .   Graph of the function f(x) = 1 − x², a downward‑opening parabola. The curve reaches its maximum at (0, 1) and crosses the x‑axis at x = ±1. The region under the curve from x = 0 to x = 1 is shaded in light blue. Axes are labeled x and y.           ; this is the signed area shown in .   The signed area under between and is .   Graph of the line y = 1 − ½x, which slopes downward from left to right. The region above the x‑axis and to the left of x = 1 is shaded in light blue, forming a triangular area. To the right, the region below the x‑axis and between x = 3 and x = 4 is shaded in light red, forming another triangular area. Axes are labeled x and y.        where , for example.        is a reasonable answer for the area of the shaded region in .   The signed area under between and is 1.   Graph of the function f(x) = cos x. The curve begins at its maximum value y = 1 when x = 0, then decreases smoothly as x increases, crossing the x-axis just after x = 1. The region under the curve from x = 0 to x = 1 is shaded in light blue. Axes are labeled x and y.         More to prepare for class             where is one antiderivative of . GeoGebra should estimate this to be 1.71.    If , then If , then since is one antiderivative of .        and work.      Additional suggestions                            positive    negative         "
+},
+{
+  "id": "figureSpilledInk",
+  "level": "2",
+  "url": "handouts-25.html#figureSpilledInk",
+  "type": "Figure",
+  "number": "95",
+  "title": "",
+  "body": " A printer has spilled ink on the graph of .   Graph of a highly oscillating function f(x) plotted on a grid. The curve rises and falls several times between x = −4 and x = 8, with peaks and valleys of varying heights. Several large solid black circles of different sizes are drawn on top of the graph at various x-values, obscuring portions of the curve. The axes are labeled x and y.    "
+},
+{
+  "id": "figurePreviewAct441Ans",
+  "level": "2",
+  "url": "handouts-25.html#figurePreviewAct441Ans",
+  "type": "Figure",
+  "number": "96",
+  "title": "",
+  "body": " The net signed area under the graph of is 4-36=-32.   Graph of a linear velocity function v(t) decreasing from v = 20 at t = 0 to about v = −50 at t = 2. The line slopes downward as t increases. The region above the t-axis from t = 0 to t = 1 is shaded in light blue, and the region below the t-axis from t = 1 to t = 2 is shaded in light red. Axes are labeled t and v.    "
+},
+{
+  "id": "figureAreaUnder1MX2",
+  "level": "2",
+  "url": "handouts-25.html#figureAreaUnder1MX2",
+  "type": "Figure",
+  "number": "97",
+  "title": "",
+  "body": " The area under between and is .   Graph of the function f(x) = 1 − x², a downward‑opening parabola. The curve reaches its maximum at (0, 1) and crosses the x‑axis at x = ±1. The region under the curve from x = 0 to x = 1 is shaded in light blue. Axes are labeled x and y.    "
+},
+{
+  "id": "figureAreaUnder1MhalfX",
+  "level": "2",
+  "url": "handouts-25.html#figureAreaUnder1MhalfX",
+  "type": "Figure",
+  "number": "98",
+  "title": "",
+  "body": " The signed area under between and is .   Graph of the line y = 1 − ½x, which slopes downward from left to right. The region above the x‑axis and to the left of x = 1 is shaded in light blue, forming a triangular area. To the right, the region below the x‑axis and between x = 3 and x = 4 is shaded in light red, forming another triangular area. Axes are labeled x and y.    "
+},
+{
+  "id": "figureAreaUndercosX",
+  "level": "2",
+  "url": "handouts-25.html#figureAreaUndercosX",
+  "type": "Figure",
+  "number": "99",
+  "title": "",
+  "body": " The signed area under between and is 1.   Graph of the function f(x) = cos x. The curve begins at its maximum value y = 1 when x = 0, then decreases smoothly as x increases, crossing the x-axis just after x = 1. The region under the curve from x = 0 to x = 1 is shaded in light blue. Axes are labeled x and y.    "
+},
+{
   "id": "ws-act-1-1-1",
   "level": "1",
   "url": "ws-act-1-1-1.html",
