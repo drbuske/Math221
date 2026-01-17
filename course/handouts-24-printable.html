@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: tacoma                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Daily Prep 4.3 - The Definite Integral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/print-worksheet.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="MATH 221">
+<meta property="book:author" content="Dale Buske">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.10';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.3dca4b99808f4053.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.80892ed1280c2803.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="http://drbuske.github.io/sacalc"><img src="external/SCSU_StC_Pri_DkBlkBG.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">MATH 221</span> <span class="subtitle">Calculus I</span></a></h1>
+<p class="byline">Dale Buske</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="handouts-23.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="handouts.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth1 focused" data-preexpanded-levels="0" data-max-levels="1"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Daily Prep</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-2.html" class="internal"><span class="title">Daily Prep 1.1 - Average Velocity</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-6" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-7" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-8" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-2.html#DP11Answers" class="internal"><span class="title">Answers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-2.html#subsec-Toprepareforclass11" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-2.html#subsec-Afterclass11" class="internal"><span class="title">After class</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-3.html" class="internal"><span class="title">Daily Prep 1.2 - The Notion of a Limit</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-5" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-6" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-8" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-4.html" class="internal"><span class="title">Daily Prep 1.3 - The Derivative of a Function at a Point</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#Overview13" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-13Basiclearningobjectives" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-13Toprepareforclass" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-13Afterclass" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-13Advancedlearningobjectives" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-Additionalsuggestions13" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-4.html#secAnswers13" class="internal"><span class="title">Answers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-4.html#subsec-Toprepareforclass13" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-4.html#subsec-Afterclass13" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-4.html#subsec-Additionalsuggestions13" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-5.html" class="internal"><span class="title">Daily Prep 1.4 - The Derivative Function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-5.html#handouts-5-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-5.html#Basiclearningobjectives14" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-5.html#Toprepareforclass14" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-5.html#Afterclass13" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-5.html#secAdvancedlearningobjectives14" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-5.html#sec-Additionalsuggestions14" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-5.html#handouts-5-8" class="internal"><span class="title">Answers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-5.html#subsec-Toprepareforclass14" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="handouts-5.html#subsubsec-Additionalsuggestions14" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-6.html" class="internal"><span class="title">Daily Prep 1.5 - Interpreting, Estimating, and Using the Derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-6.html#handouts-6-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-6.html#handouts-6-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-6.html#sec-Toprepareforclass15" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-6.html#handouts-6-5" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-6.html#sec-Advancedlearningobjectives15" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-6.html#handouts-6-7" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-7.html" class="internal"><span class="title">Daily Prep 1.6 - The Second Derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-7.html#handouts-7-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-7.html#handouts-7-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-7.html#handouts-7-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-7.html#handouts-7-5" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-7.html#handouts-7-6" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-7.html#handouts-7-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-7.html#handouts-7-8" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-8.html" class="internal"><span class="title">Daily Prep 1.7 - Limits, Continuity, and Differentiability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-8.html#handouts-8-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-8.html#handouts-8-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-8.html#sec-Toprepareforclass17" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-8.html#sec-Afterclass17" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-8.html#sec-Advancedlearningobjectives17" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-8.html#sec-Additionalsuggestions17" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-8.html#sec-Answers17" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-9.html" class="internal"><span class="title">Daily Prep 1.8 - The Tangent Line Approximation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-9.html#handouts-9-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-9.html#handouts-9-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-9.html#handouts-9-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-9.html#handouts-9-5" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-9.html#handouts-9-6" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-9.html#handouts-9-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-9.html#handouts-9-8" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-10.html" class="internal"><span class="title">Daily Prep 2.1 - Elementary Differentiation Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-10.html#handouts-10-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-10.html#handouts-10-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-10.html#sec-Toprepareforclass21" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-10.html#sec-Afterclass21" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-10.html#sec-Advancedlearningobjectives21" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-10.html#sec-Additionalsuggestions21" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-10.html#sec-Answers21" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-11.html" class="internal"><span class="title">Daily Prep 2.2 - The Sine and Cosine Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-11.html#handouts-11-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-11.html#handouts-11-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-11.html#sec-Toprepareforclass22" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-11.html#sec-Afterclass22" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-11.html#sec-Advancedlearningobjectives22" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-11.html#sec-Additionalsuggestions22" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-12.html" class="internal"><span class="title">Daily Prep 2.3 - The Product and Quotient Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-12.html#handouts-12-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-12.html#sec-Basiclearningobjectives23" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-12.html#sec-Toprepareforclass23" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-12.html#sec-Afterclass23" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-12.html#sec-Advancedlearningobjectives23" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-12.html#handouts-12-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-12.html#sec-Answers23" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-13.html" class="internal"><span class="title">Daily Prep 2.4 - Derivatives of the Other Trig Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-13.html#handouts-13-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-13.html#sec-Basiclearningobjectives24" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-13.html#handouts-13-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-13.html#sec-Afterclass24" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-13.html#sec-Advancedlearningobjectives24" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-13.html#sec-Additionalsuggestions24" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-14.html" class="internal"><span class="title">Daily Prep 2.5 - The Chain Rule</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-14.html#sec-Toprepareforclass25" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-14.html#sec-Afterclass25" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-14.html#sec-Advancedlearningobjectives25" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-14.html#sec-Answers25" class="internal"><span class="title">Answers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#subsec-Toprepareforclass25" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#subsec-FromAfterclass25" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#subsec-Additionalsuggestions25" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-15.html" class="internal"><span class="title">Daily Prep 2.6 - Derivatives of Inverse Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-15.html#handouts-15-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-15.html#sec-Basiclearningobjectives26" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-15.html#sec-Toprepareforclass26" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-15.html#sec-Afterclass26" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-15.html#sec-Advancedlearningobjectives26" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-15.html#sec-Additionalsuggestions26" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-15.html#sec-Answers26" class="internal"><span class="title">Answers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-15.html#subsec-Toprepareforclass26" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-15.html#subsec-Additionalsuggestions26" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-16.html" class="internal"><span class="title">Daily Prep 2.7 - Implicit Differentiation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-16.html#handouts-16-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-16.html#handouts-16-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-16.html#sec-Toprepareforclass27" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-16.html#sec-Afterclass27" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-16.html#sec-Advancedlearningobjectives27" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-16.html#sec-Additionalsuggestions27" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-16.html#sec-Answers27" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-17.html" class="internal"><span class="title">Daily Prep 3.1 - Related Rates</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-17.html#handouts-17-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-17.html#handouts-17-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-17.html#sec-Toprepareforclass31" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-17.html#sec-Afterclass31" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-17.html#sec-Advancedlearningobjectives31" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-17.html#handouts-17-7" class="internal"><span class="title">Answers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-17.html#handouts-17-7-2" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-17.html#subsec-Afterclass31" class="internal"><span class="title">After class</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-18.html" class="internal"><span class="title">Daily Prep 3.2 - Using Derivatives to Evaluate Limits</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-18.html#handouts-18-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-18.html#handouts-18-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-18.html#sec-Toprepareforclass32" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-18.html#sec-afterclass32" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-18.html#sec-Advancedlearningobjectives32" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-18.html#sec-Additionalsuggestions32" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-18.html#handouts-18-8" class="internal"><span class="title">Answers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-18.html#subsec-Toprepareforclass32" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-18.html#subsec-Afterclass32" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-18.html#subsec-Additionalsuggestions32" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-19.html" class="internal"><span class="title">Daily Prep 3.3 - Using Derivatives to Identify Extreme Values</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-19.html#handouts-19-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-19.html#handouts-19-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-19.html#sec-Toprepareforclass33" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-19.html#sec-Afterclass33" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-19.html#sec-Advancedlearningobjectives33" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-19.html#sec-Additionalsuggestions33" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-19.html#sec-Answers33" class="internal"><span class="title">Answers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-19.html#subsec-Toprepareforclass33" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-19.html#subsec-Afterclass33" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-19.html#subsec-Additionalsuggestions33" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-20.html" class="internal"><span class="title">Daily Prep 3.5 - Global Optimization</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-20.html#handouts-20-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-20.html#handouts-20-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-20.html#sec-Toprepareforclass35" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-20.html#sec-Afterclass35" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-20.html#sec-Advancedlearningobjectives35" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-20.html#sec-Additionalsuggestions35" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-20.html#sec-Answers35" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-21.html" class="internal"><span class="title">Daily Prep 3.6 - Applied Optimization</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-21.html#handouts-21-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-21.html#handouts-21-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-21.html#handouts-21-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-21.html#handouts-21-5" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-21.html#handouts-21-6" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-21.html#handouts-21-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-21.html#handouts-21-8" class="internal"><span class="title">Answers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-21.html#subsec-Toprepareforclass36" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="handouts-21.html#subsubsec-Afterclass36" class="internal"><span class="title">After class</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-22.html" class="internal"><span class="title">Daily Prep 4.1 - Determining Distance from Velocity</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-22.html#handouts-22-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-22.html#handouts-22-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-22.html#handouts-22-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-22.html#handouts-22-5" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-22.html#handouts-22-6" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-22.html#handouts-22-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-22.html#handouts-22-8" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-23.html" class="internal"><span class="title">Daily Prep 4.2 - Riemann Sums</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-23.html#handouts-23-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-23.html#handouts-23-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-23.html#handouts-23-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-23.html#sec-Afterclass42" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-23.html#subsec-Advancedlearningobjectives42" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-23.html#sec-Additionalsuggestions42" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-23.html#sec-Answers42" class="internal"><span class="title">Answers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-23.html#subsec-Toprepareforclass42" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-23.html#subsec-Additionalsuggestions42" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout contains-active">
+<div class="toc-title-box"><a href="handouts-24.html" class="internal"><span class="title">Daily Prep 4.3 - The Definite Integral</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-24.html#handouts-24-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-24.html#handouts-24-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-24.html#sec-Toprepareforclass43" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-24.html#sec-Afterclass43" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-24.html#sec-Advancedlearningobjectives43" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-24.html#sec-Additionalsuggestions43" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-24.html#sec-Answers43" class="internal"><span class="title">Answers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-24.html#subsec-Toprepareforclass43" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-24.html#subsec-Additionalsuggestions43" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-24.html#subsec-Andyetadditionalsuggestions43" class="internal"><span class="title">And yet additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-1-1.html" class="internal"><span class="title">Average Velocity - Activity 1.1.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-1-2.html" class="internal"><span class="title">Average Velocity - Activity 1.1.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-1-3.html" class="internal"><span class="title">Average Velocity - Activity 1.1.4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-2-1.html" class="internal"><span class="title">The Notion of a Limit - Activity 1.2.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-2-2.html" class="internal"><span class="title">The Notion of a Limit - Activity 1.2.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-2-3.html" class="internal"><span class="title">The Notion of a Limit - Activity 1.2.4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-3-1.html" class="internal"><span class="title">The Derivative of a Function at a Point - Activity 1.3.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-3-5.html" class="internal"><span class="title">The Derivative of a Function at a Point - Activity 1.3.5</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-4-1.html" class="internal"><span class="title">The Derivative Function - Activity 1.4.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-4-2.html" class="internal"><span class="title">The Derivative Function - Activity 1.4.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-5-1.html" class="internal"><span class="title">Interpreting, Estimating, and Using the Derivative - Activity 1.5.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-5-2.html" class="internal"><span class="title">Interpreting, Estimating, and Using the Derivative - Activity 1.5.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-5-5.html" class="internal"><span class="title">Interpreting, Estimating, and Using the Derivative - Activity 1.5.5</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-6-2.html" class="internal"><span class="title">The Second Derivative - Activity 1.6.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-6-5.html" class="internal"><span class="title">The Second Derivative - Activity 1.6.5</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-7-1.html" class="internal"><span class="title">Limits, Continuity, and Differentiability - Activity 1.7.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-7-2.html" class="internal"><span class="title">Limits, Continuity, and Differentiability - Activity 1.7.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-7-3.html" class="internal"><span class="title">Limits, Continuity, and Differentiability - Activity 1.7.4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-8-1.html" class="internal"><span class="title">The Tangent Line Approximation - Activity 1.8.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-8-2.html" class="internal"><span class="title">The Tangent Line Approximation - Activity 1.8.3</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="handout" id="handouts-24" data-margins="0.75in 0.75in 0.75in 0.75in"><h1 class="heading hide-type">
+<span class="type">Handout</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Daily Prep 4.3 - The Definite Integral</span><div class="print-links"><a href="handouts-24-printable.html" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h1>
+<section class="section" id="handouts-24-2"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Overview</span>
+</h2>
+<div class="para" id="handouts-24-2-2">In this section we introduce a notation used for expressing the limit of a Riemann sum. We thus define what a definite integral is. We will be discussing the definition, meaning, and use of the definite integral for the remainder of the course. Surprisingly, it has a very strong and natural connection to the derivative – a connection we will discuss and explore in Section 4.4. However, in this section, we deduce the properties that this new mathematical object, the definite integral, has based on its definition and its geometrical interpretation.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-24-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Overview"><a href="#handouts-24-2" title="Copy heading and permalink for Section: Overview" aria-label="Copy heading and permalink for Section: Overview">🔗</a></div></section><section class="section" id="handouts-24-3"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Basic learning objectives</span>
+</h2>
+<div class="para" id="handouts-24-3-2">These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated <em class="emphasis">in italics</em>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-24-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="handouts-24-3-3">
+<li id="handouts-24-3-3-1">
+<div class="para" id="handouts-24-3-3-1-1">Recognize the parts of the limit definition of the definite integral, especially how the definite integral results from taking a limit of Riemann sums.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-24-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-24-3-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-24-3-3-2">
+<div class="para" id="handouts-24-3-3-2-1">Identify an <em class="emphasis">integral sign</em>, <em class="emphasis">integrand</em>, and <em class="emphasis">limits of integration</em>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-24-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-24-3-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-24-3-3-3">
+<div class="para" id="handouts-24-3-3-3-1">Explain what it means to evaluate a <em class="emphasis">definite integral</em>.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-24-3-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-24-3-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-24-3-3-4">
+<div class="para" id="handouts-24-3-3-4-1">Interpret, geometrically, the quantity denoted by <span class="process-math">\(\displaystyle \int_{a}^{b} f(x) \ dx\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-24-3-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-24-3-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handouts-24-3-3-5">
+<div class="para" id="handouts-24-3-3-5-1">Recognize and apply properties that the definite integral possesses. Use these properties to evaluate definite integrals in special circumstances.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-24-3-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handouts-24-3-3-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section: Basic learning objectives"><a href="#handouts-24-3" title="Copy heading and permalink for Section: Basic learning objectives" aria-label="Copy heading and permalink for Section: Basic learning objectives">🔗</a></div></section><section class="section" id="sec-Toprepareforclass43"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">To prepare for class</span>
+</h2>
+<div class="para" id="sec-Toprepareforclass43-2">Complete all actions listed below. Respond to the questions highlighted with <em class="emphasis">Submit</em>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="sec-Toprepareforclass43-3">
+<li id="sec-Toprepareforclass43-3-1">
+<div class="para" id="sec-Toprepareforclass43-3-1-1">
+<em class="alert">Read</em> motivating questions and the introduction to <a class="external" href="https://activecalculus.org/single2e/sec-4-3-definite-integral.html#sec-4-3-definite-integral-3" target="_blank">section 4.3</a> (up until Preview Activity 4.3.1).<div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Toprepareforclass43-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Toprepareforclass43-3-2">
+<div class="para" id="sec-Toprepareforclass43-3-2-1">[Submit] <em class="alert">Do</em> <a class="external" href="https://activecalculus.org/single2e/sec-4-3-definite-integral.html#PA-4-3" target="_blank">Preview Activity 4.3.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Toprepareforclass43-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Toprepareforclass43-3-3">
+<div class="para" id="sec-Toprepareforclass43-3-3-1">
+<em class="alert">Watch</em> video <a class="external" href="https://www.youtube.com/watch?v=Lp5KsXN4UOQ&amp;feature=emb_title" target="_blank">Quick Review - The Definite Integral (3:00)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Toprepareforclass43-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Toprepareforclass43-3-4">
+<div class="para" id="sec-Toprepareforclass43-3-4-1">
+<em class="alert">Read</em> <a class="external" href="https://activecalculus.org/single2e/sec-4-3-definite-integral.html#sec-4-3-definite-integral-4" target="_blank">section 4.3.2</a> up to Activity 4.3.2.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Toprepareforclass43-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Toprepareforclass43-3-5">
+<div class="para" id="sec-Toprepareforclass43-3-5-1">[Submit] <em class="alert">Explore</em> the applet <a class="external" href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/integration_intro_geometric.html" target="_blank">Gaining Geometric Intuition</a>. Submit answers to questions #3-6 at the bottom of the webpage.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Toprepareforclass43-3-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Toprepareforclass43-3-6">
+<div class="para" id="sec-Toprepareforclass43-3-6-1">Prompt <em class="alert">Copilot</em> “Please produce and execute Python code that illustrates an upper Riemann sum of the function <span class="process-math">\(f(x)=\cos(x)+1\)</span> from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=3\pi\)</span> using n=10 rectangles.”<div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Toprepareforclass43-3-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Toprepareforclass43-3-7">
+<div class="para" id="sec-Toprepareforclass43-3-7-1">
+<em class="alert">Do</em> these problems.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-Toprepareforclass43-3-7-2">
+<ol class="decimal" id="sec-Toprepareforclass43-3-7-2-1">
+<li id="sec-Toprepareforclass43-3-7-2-1-1">
+<div class="para logical" id="sec-Toprepareforclass43-3-7-2-1-1-1">
+<ol class="lower-alpha lower-alpha-level-1" id="sec-Toprepareforclass43-3-7-2-1-1-1-1">
+<li id="sec-Toprepareforclass43-3-7-2-1-1-1-1-1">
+<div class="para" id="sec-Toprepareforclass43-3-7-2-1-1-1-1-1-1">Use geometry to evaluate <span class="process-math">\(\displaystyle \int_{-1}^{4} 1-\frac{1}{2}x \ dx\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-7-2-1-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="figureIntegralGeometryLine"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/latex-image/IntegralGeometryLinePic.svg" role="img" class="contained" alt="Graph of the line y = 1 − ½x. The line crosses the y-axis at 1 and slopes downward to the right. It passes near the points (0, 1), (2, 0), and (4, −1). The x‑ and y‑axes are shown with tick marks from about −1 to 4 on the x-axis and from −1 to 2 on the y-axis."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">87<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The graph of <span class="process-math">\(y=1-\frac{1}{2}x\)</span> can be used to evaluate <span class="process-math">\(\displaystyle \int_{-1}^4 1-\frac{1}{2}x \ dx\text{.}\)</span><div class="autopermalink" data-description="Figure 87"><a href="#figureIntegralGeometryLine" title="Copy heading and permalink for Figure 87" aria-label="Copy heading and permalink for Figure 87">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item"><a href="#sec-Toprepareforclass43-3-7-2-1-1-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Toprepareforclass43-3-7-2-1-1-1-1-2">
+<div class="para" id="sec-Toprepareforclass43-3-7-2-1-1-1-1-2-1">Compute <span class="process-math">\(\displaystyle \int_{0}^{3} f(x) \ dx\)</span> for the function <span class="process-math">\(f\)</span> graphed in <a href="handouts-24.html#figureIntegralGeometryHalfCircle" class="xref" data-knowl="./knowl/xref/figureIntegralGeometryHalfCircle.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 88">Figure 88</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-7-2-1-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="figureIntegralGeometryHalfCircle"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/IntegralGeometryHalfCirclePic.svg" role="img" class="contained" alt="Graph of a piecewise function. From x = 0 to x = 2, the graph is a semicircle above the x-axis, starting at the point (0, 0), rising to a peak near y = 1 around x = 1, and returning to (2, 0). From x = 2 to x = 3, the graph is a straight line segment beginning at (2, 0) and slanting upward to the right."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">88<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 88"><a href="#figureIntegralGeometryHalfCircle" title="Copy heading and permalink for Figure 88" aria-label="Copy heading and permalink for Figure 88">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item"><a href="#sec-Toprepareforclass43-3-7-2-1-1-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-7-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Toprepareforclass43-3-7-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Toprepareforclass43-3-7-2-1-2">
+<div class="para" id="sec-Toprepareforclass43-3-7-2-1-2-1">Use <a href="handouts-24.html#EstimateL4ViaTable" class="xref" data-knowl="./knowl/xref/EstimateL4ViaTable.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 89: Values of f on [0,12]">Table 89</a> to estimate <span class="process-math">\(\displaystyle \int_{0}^{12}f(x) \ dx\text{.}\)</span> Find a left sum <span class="process-math">\(L_{4}\text{,}\)</span> a right sum <span class="process-math">\(R_{4}\text{,}\)</span> and then average the two.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-7-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Toprepareforclass43-3-7-2-1-2-2">
+<figure class="table table-like" id="EstimateL4ViaTable"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">89<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Values of <span class="process-math">\(f\)</span> on <span class="process-math">\([0,12]\text{.}\)</span><div class="autopermalink" data-description="Table 89: Values of f on [0,12]"><a href="#EstimateL4ViaTable" title="Copy heading and permalink for Table 89: Values of f on [0,12]" aria-label="Copy heading and permalink for Table 89: Values of f on [0,12]">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r0 l0 t1 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r0 l0 t1 lines">0</td>
+<td class="c m b2 r0 l0 t1 lines">3</td>
+<td class="c m b2 r0 l0 t1 lines">6</td>
+<td class="c m b2 r0 l0 t1 lines">9</td>
+<td class="c m b2 r0 l0 t1 lines">12</td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="c m b1 r0 l0 t0 lines">20</td>
+<td class="c m b1 r0 l0 t0 lines">10</td>
+<td class="c m b1 r0 l0 t0 lines">5</td>
+<td class="c m b1 r0 l0 t0 lines">2</td>
+<td class="c m b1 r0 l0 t0 lines">1</td>
+</tr>
+</table></div></figure><div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-7-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Toprepareforclass43-3-7-2-1-2-3"><div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-7-2-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Toprepareforclass43-3-7-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Toprepareforclass43-3-7-2-1-3">
+<div class="para" id="sec-Toprepareforclass43-3-7-2-1-3-1">[Submit] <a href="handouts-24.html#figureTwoFindXstars" class="xref" data-knowl="./knowl/xref/figureTwoFindXstars.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 90">Figure 90</a> illustrates Riemann sum approximations, <span class="process-math">\(\displaystyle \sum_{k=1}^{n} f(x_{k}^{*}) \Delta x_{k}\text{,}\)</span> to <span class="process-math">\(\displaystyle \int_{a}^{b} f(x) \ dx\text{.}\)</span> In each, determine the values of <span class="process-math">\(a, b\text{,}\)</span> and <span class="process-math">\(n\text{.}\)</span> Then, give expressions for <span class="process-math">\(\Delta x_{k}\)</span> and <span class="process-math">\(x_{k}^{*}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-7-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="figureTwoFindXstars"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;grid-template-columns:44.4444444444444% 44.4444444444444%;column-gap:10%;">
+<div class="sbspanel sbspanel--top top" style=""><img src="generated/latex-image/FindXstar1.svg" role="img" class="contained" alt="Graph of a decreasing function f(x) on the interval from x = 1 to x = 4. A blue curve slopes downward as x increases. Three left-endpoint rectangles are drawn under the curve, each shaded in light blue, with widths spanning the intervals [1, 2], [2, 3], and [3, 4]. The heights of the rectangles are determined by the function values at x = 1, 2, and 3. Axes are labeled x and y."></div>
+<div class="sbspanel sbspanel--top top" style=""><img src="generated/latex-image/FindXstar2.svg" role="img" class="contained" alt="Graph of a decreasing function f(x) on the interval from x = 1 to x = 4. The blue curve slopes downward as x increases. Five left‑endpoint rectangles are drawn under the curve, each shaded in light blue. The heights of the rectangles decrease across the intervals [1, 1.6], [1.6, 2.2], [2.2, 2.8], [2.8, 3.4], and [3.4, 4]. Axes are labeled x and y. The rectangles form a left‑endpoint Riemann sum approximation of the area under the curve."></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">90<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Riemann sum approximations of <span class="process-math">\(\int_a^b f(x) \ dx\text{.}\)</span><div class="autopermalink" data-description="Figure 90"><a href="#figureTwoFindXstars" title="Copy heading and permalink for Figure 90" aria-label="Copy heading and permalink for Figure 90">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item"><a href="#sec-Toprepareforclass43-3-7-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Toprepareforclass43-3-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Toprepareforclass43-3-8">
+<div class="para" id="sec-Toprepareforclass43-3-8-1">Prompt <em class="alert">Copilot</em> “Please produce and execute Python code that illustrates a middle Riemann sum of the function f(x)=x<span class="process-math">\(\wedge\)</span>2+1 from x=1 to x=3 using n=5 rectangles.” Does the AI give you a correct value for the sum being illustrated?<div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Toprepareforclass43-3-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Toprepareforclass43-3-9">
+<div class="para" id="sec-Toprepareforclass43-3-9-1">
+<em class="alert">Read</em> <a class="external" href="https://activecalculus.org/single2e/sec-4-3-definite-integral.html#sec-4-3-definite-integral-5" target="_blank">section 4.3.3</a> on properties of the definite integral.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Toprepareforclass43-3-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Toprepareforclass43-3-10">
+<div class="para" id="sec-Toprepareforclass43-3-10-1">
+<em class="alert">Watch</em> video <a class="external" href="https://www.youtube.com/watch?v=1SqpYAAyBCk&amp;feature=emb_title" target="_blank">Evaluating Definite Integrals using Integral Properties (8:14)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Toprepareforclass43-3-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Toprepareforclass43-3-10" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section: To prepare for class"><a href="#sec-Toprepareforclass43" title="Copy heading and permalink for Section: To prepare for class" aria-label="Copy heading and permalink for Section: To prepare for class">🔗</a></div></section><section class="section" id="sec-Afterclass43"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">After class</span>
+</h2>
+<div class="para" id="sec-Afterclass43-2">Solidifying the concepts discussed in class through practice is necessary to build your skills.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Afterclass43-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="sec-Afterclass43-3">
+<li id="sec-Afterclass43-3-1">
+<div class="para" id="sec-Afterclass43-3-1-1">
+<em class="alert">Read</em> <a class="external" href="https://activecalculus.org/single2e/sec-4-3-definite-integral.html#sec-4-3-definite-integral-6" target="_blank">section 4.3.4</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Afterclass43-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Afterclass43-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Afterclass43-3-2">
+<div class="para" id="sec-Afterclass43-3-2-1">
+<em class="alert">Watch</em> video <a class="external" href="https://www.youtube.com/watch?v=MQG9Nur4fdM&amp;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&amp;index=87" target="_blank">Average Value of a Function (7:34)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Afterclass43-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Afterclass43-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Afterclass43-3-3">
+<div class="para" id="sec-Afterclass43-3-3-1">
+<em class="alert">Explore</em> a nice visualization of <a class="external" href="https://www.geogebra.org/m/m7GGErDY" target="_blank">The Average Value of a Function</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Afterclass43-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Afterclass43-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Afterclass43-3-4">
+<div class="para" id="sec-Afterclass43-3-4-1">
+<em class="alert">Explore</em> <a class="external" href="https://www.geogebra.org/m/nb34Cfvd" target="_blank">the Average Value of a Linear Function</a> geometrically.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Afterclass43-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Afterclass43-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Afterclass43-3-5">
+<div class="para" id="sec-Afterclass43-3-5-1">
+<em class="alert">Do</em> <a class="external" href="https://activecalculus.org/single2e/sec-4-3-definite-integral.html#Library__Michigan__Chap5Sec2__Q27.pg" target="_blank">exercises 1-2 in section 4.3.6</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Afterclass43-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Afterclass43-3-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Afterclass43-3-6">
+<div class="para" id="sec-Afterclass43-3-6-1">
+<em class="alert">Do</em> <a class="external" href="https://activecalculus.org/single2e/sec-4-3-definite-integral.html#Library__Rochester__setIntegrals3Definite__S05.02.DefiniteIntegral.PTP18.pg" target="_blank">exercises 7-8 in section 4.3.6</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Afterclass43-3-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Afterclass43-3-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Afterclass43-3-7">
+<div class="para" id="sec-Afterclass43-3-7-1">
+<em class="alert">Read</em> <a class="external" href="https://activecalculus.org/single/sec-4-3-definite-integral.html#mLK" target="_blank">section 4.3.5 - summary</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Afterclass43-3-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Afterclass43-3-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Afterclass43-3-8">
+<div class="para" id="sec-Afterclass43-3-8-1">
+<em class="alert">Do</em> <a class="external" href="https://activecalculus.org/single2e/sec-4-3-definite-integral.html#Library__Michigan__Chap5Sec3__Q11.pg" target="_blank">(interactive) exercises 3-6 in section 4.3.6</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Afterclass43-3-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Afterclass43-3-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Afterclass43-3-9">
+<div class="para" id="sec-Afterclass43-3-9-1">
+<em class="alert">Do</em> <a class="external" href="https://activecalculus.org/single2e/sec-4-3-definite-integral.html#ez-4-3-9" target="_blank">exercises 9-10 in section 4.3.6</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Afterclass43-3-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Afterclass43-3-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Afterclass43-3-10">
+<div class="para" id="sec-Afterclass43-3-10-1">
+<em class="alert">Start working</em> on the <a class="external" href="https://www.myopenmath.com/index.php" target="_blank">MOMwork</a> (MyOpenMath) assignment for this section.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Afterclass43-3-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Afterclass43-3-10" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section: After class"><a href="#sec-Afterclass43" title="Copy heading and permalink for Section: After class" aria-label="Copy heading and permalink for Section: After class">🔗</a></div></section><section class="section" id="sec-Advancedlearningobjectives43"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Advanced learning objectives</span>
+</h2>
+<div class="para" id="sec-Advancedlearningobjectives43-2">In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:<div class="autopermalink" data-description="Paragraph"><a href="#sec-Advancedlearningobjectives43-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="sec-Advancedlearningobjectives43-3">
+<li id="sec-Advancedlearningobjectives43-3-1">
+<div class="para" id="sec-Advancedlearningobjectives43-3-1-1">Compute the <em class="emphasis">average value of a function</em> on the interval <span class="process-math">\([a,b]\)</span> using <span class="process-math">\(\displaystyle \int_{a}^{b} f(x) \ dx\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-Advancedlearningobjectives43-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Advancedlearningobjectives43-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Advancedlearningobjectives43-3-2">
+<div class="para" id="sec-Advancedlearningobjectives43-3-2-1">Interpret the average value of a function as the height of a rectangle.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Advancedlearningobjectives43-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Advancedlearningobjectives43-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section: Advanced learning objectives"><a href="#sec-Advancedlearningobjectives43" title="Copy heading and permalink for Section: Advanced learning objectives" aria-label="Copy heading and permalink for Section: Advanced learning objectives">🔗</a></div></section><section class="section" id="sec-Additionalsuggestions43"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Additional suggestions</span>
+</h2>
+<ul class="disc" id="sec-Additionalsuggestions43-2">
+<li id="sec-Additionalsuggestions43-2-1">
+<div class="para" id="sec-Additionalsuggestions43-2-1-1">
+<em class="alert">Watch</em> video <a class="external" href="https://www.youtube.com/watch?v=Dxmh7HMS2JM&amp;feature=youtu.be" target="_blank">Riemann Sum Notation (2:04)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions43-2-2">
+<div class="para" id="sec-Additionalsuggestions43-2-2-1">
+<em class="alert">Watch</em> video <a class="external" href="https://www.youtube.com/watch?v=R6LQa_F-AFc&amp;feature=youtu.be" target="_blank">Riemann Sums - How to use Sigma Notation (6:33)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions43-2-3">
+<div class="para" id="sec-Additionalsuggestions43-2-3-1">
+<em class="alert">Finish (if needed)</em> <a class="external" href="https://activecalculus.org/single2e/sec-4-3-definite-integral.html#act-4-3-1" target="_blank">Activity 4.3.2</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-Additionalsuggestions43-2-3-2">
+<ul class="circle" id="sec-Additionalsuggestions43-2-3-2-1">
+<li id="sec-Additionalsuggestions43-2-3-2-1-1">
+<div class="para" id="sec-Additionalsuggestions43-2-3-2-1-1-1">(Optional) <em class="alert">Watch</em> video <a class="external" href="https://www.youtube.com/watch?v=F8lRiblAgD8" target="_blank">explaining parts (a)-(c) of Activity 4.3.2 (4:00)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-3-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-3-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions43-2-3-2-1-2">
+<div class="para" id="sec-Additionalsuggestions43-2-3-2-1-2-1">(Optional) <em class="alert">Watch</em> video <a class="external" href="https://www.youtube.com/watch?v=bdDS594GSL0" target="_blank">explaining part (d) of Activity 4.3.2 (2:47)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-3-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-3-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions43-2-4">
+<div class="para" id="sec-Additionalsuggestions43-2-4-1">
+<em class="alert">Watch</em> video <a class="external" href="https://www.youtube.com/watch?v=5SIBNRXACWo&amp;list=PLcJe72hRUmg7YrZ4OUkneU5jmyK4SEH9M&amp;index=43" target="_blank">Average Value of a Function with an Integral (2:09)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions43-2-5">
+<div class="para" id="sec-Additionalsuggestions43-2-5-1">
+<em class="alert">Explore</em> another way to visualize the <a class="external" href="https://www.geogebra.org/m/UkTRUdU5" target="_blank">Average Value of a Function</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions43-2-6">
+<div class="para" id="sec-Additionalsuggestions43-2-6-1">
+<em class="alert">Explore</em> <a class="external" href="https://www.geogebra.org/m/aXNuQYsp" target="_blank">three more applets</a> illustrating the average value of a function.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions43-2-7">
+<div class="para" id="sec-Additionalsuggestions43-2-7-1">
+<em class="alert">Do</em> these problems.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-Additionalsuggestions43-2-7-2">
+<ol class="decimal" id="sec-Additionalsuggestions43-2-7-2-1">
+<li id="sec-Additionalsuggestions43-2-7-2-1-1">
+<div class="para logical" id="sec-Additionalsuggestions43-2-7-2-1-1-1">
+<div class="para">Suppose <span class="process-math">\(f(x)\)</span> is an odd function (as shown in <a href="handouts-24.html#fig0537" class="xref" data-knowl="./knowl/xref/fig0537.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 91">Figure 91</a>) with <span class="process-math">\(\displaystyle \int_{-2}^{0} f(x) \ dx = 4\text{.}\)</span>
+</div>
+<ol class="lower-alpha lower-alpha-level-1" id="sec-Additionalsuggestions43-2-7-2-1-1-1-4">
+<li id="sec-Additionalsuggestions43-2-7-2-1-1-1-4-1">
+<div class="para" id="sec-Additionalsuggestions43-2-7-2-1-1-1-4-1-1">Evaluate <span class="process-math">\(\displaystyle \int_{0}^{2} f(x) \ dx\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-7-2-1-1-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-7-2-1-1-1-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions43-2-7-2-1-1-1-4-2">
+<div class="para" id="sec-Additionalsuggestions43-2-7-2-1-1-1-4-2-1">Evaluate <span class="process-math">\(\displaystyle \int_{-2}^{2} f(x) \ dx\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-7-2-1-1-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-7-2-1-1-1-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions43-2-7-2-1-1-1-4-3">
+<div class="para" id="sec-Additionalsuggestions43-2-7-2-1-1-1-4-3-1">Evaluate <span class="process-math">\(\displaystyle \int_{-2}^{2} |f(x)| \ dx\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-7-2-1-1-1-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-7-2-1-1-1-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-7-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig0537"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/fig_05_37.jpg" class="contained" alt="Graph of a smooth curve f(x) that crosses the x-axis near x = −2, rises to a peak slightly above y = 2, then decreases and crosses the x-axis again near x = 0. The curve continues downward to a trough below y = −2 near x = 2, then rises steeply to the right. The region between the curve and the x-axis is shaded, with positive area above the axis on the left and negative area below the axis on the right."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">91<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 91"><a href="#fig0537" title="Copy heading and permalink for Figure 91" aria-label="Copy heading and permalink for Figure 91">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-7-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions43-2-7-2-1-2">
+<div class="para logical" id="sec-Additionalsuggestions43-2-7-2-1-2-1">
+<div class="para">Consider approximating the definite integral <span class="process-math">\(\displaystyle \int_{0.5}^{5} \frac{4}{1+x}\ dx\)</span> by a Riemann sum approximation</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/figureIntegralRiemannSumApprox.html" id="sec-Additionalsuggestions43-2-7-2-1-2-1-2">
+\begin{equation*}
+\sum_{k=1}^{3} \frac{4}{1+\left[ 0.5+k \cdot \left( \frac{3}{2}\right)\right]}\cdot \left( \frac{3}{2}\right).
+\end{equation*}
+</div>
+<div class="para">Using <a href="handouts-24.html#figureIntegralRiemannSumApprox" class="xref" data-knowl="./knowl/xref/figureIntegralRiemannSumApprox.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 92">Figure 92</a>, carefully illustrate this Riemann sum as in the last problem. Is this a left sum, a right sum, or neither? Evaluate this sum.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-7-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="figureIntegralRiemannSumApprox"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/IntegralRiemannSumApproxPic.svg" role="img" class="contained" alt="Graph of a decreasing function f(x) for x between 0.5 and 5. The curve begins near y = 3 when x is about 0.5, then slopes downward smoothly, approaching y = 1 as x reaches 5. Axes are labeled x and y with tick marks along both axes."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">92<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 92"><a href="#figureIntegralRiemannSumApprox" title="Copy heading and permalink for Figure 92" aria-label="Copy heading and permalink for Figure 92">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-7-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions43-2-7-2-1-3">
+<div class="para" id="sec-Additionalsuggestions43-2-7-2-1-3-1">Using sigma (<span class="process-math">\(\Sigma\)</span>) notation, give a middle sum Riemann approximation with <span class="process-math">\(n=3\)</span> (see <a href="handouts-24.html#figureIntegralMiddleSumApprox" class="xref" data-knowl="./knowl/xref/figureIntegralMiddleSumApprox.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 93">Figure 93</a>) that estimates the value of the definite integral <span class="process-math">\(\displaystyle \int_{0.5}^{5} \frac{4}{1+x}\ dx\text{.}\)</span> <em class="emphasis">Hint:</em> The previous problem can serve as a guide.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-7-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="figureIntegralMiddleSumApprox"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/latex-image/IntegralMiddleSumApproxPic.svg" role="img" class="contained" alt="Graph of a decreasing function f(x) on the interval from x = 1 to x = 5. The curve begins above y = 2 near x = 1 and slopes downward toward y = 1 by x = 5. Four left‑endpoint rectangles are drawn under the curve, each shaded in light blue, spanning the intervals [1, 2], [2, 3], [3, 4], and [4, 5]. The heights of the rectangles decrease from left to right, forming a left‑endpoint Riemann sum approximation of the area under the curve."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">93<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A middle sum approximation with <span class="process-math">\(n=3\text{.}\)</span><div class="autopermalink" data-description="Figure 93"><a href="#figureIntegralMiddleSumApprox" title="Copy heading and permalink for Figure 93" aria-label="Copy heading and permalink for Figure 93">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-7-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions43-2-8">
+<div class="para" id="sec-Additionalsuggestions43-2-8-1">
+<em class="alert">Watch</em> video <a class="external" href="https://www.youtube.com/watch?v=49oT7gAeeSA&amp;feature=youtu.be" target="_blank">What Definite Integrals Are (6:38)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions43-2-9">
+<div class="para" id="sec-Additionalsuggestions43-2-9-1">
+<em class="alert">Watch</em> video <a class="external" href="https://www.youtube.com/watch?v=hIcdlnvBc4Y&amp;feature=youtu.be" target="_blank">Definite Integrals and Riemann Sums (3:51)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions43-2-10">
+<div class="para" id="sec-Additionalsuggestions43-2-10-1">
+<em class="alert">Do</em> these problems.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-Additionalsuggestions43-2-10-2">
+<ol class="decimal" id="sec-Additionalsuggestions43-2-10-2-1">
+<li id="sec-Additionalsuggestions43-2-10-2-1-1">
+<div class="para" id="sec-Additionalsuggestions43-2-10-2-1-1-1">Suppose that <span class="process-math">\(C(t)\)</span> represents the daily cost of heating your house, measured in dollars per day, where <span class="process-math">\(t\)</span> is the time measured in days and <span class="process-math">\(t=0\)</span> corresponds to January 1, 2020. Interpret <span class="process-math">\(\displaystyle \int_{0}^{90}C(t) \ dt\)</span> and <span class="process-math">\(\displaystyle \frac{1}{90-0}\int_{0}^{90}C(t) \ dt\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-10-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-10-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions43-2-10-2-1-2">
+<div class="para" id="sec-Additionalsuggestions43-2-10-2-1-2-1">The value, <span class="process-math">\(V\text{,}\)</span> of a Tiffany lamp, worth $225 in 1975, increases at 15% per year. Its value in dollars <span class="process-math">\(t\)</span> years after 1975 is given by <span class="process-math">\(V = 225(1.15)^{t}\text{.}\)</span> Find the average value of the lamp over the period 1975-2015. The <a class="external" href="https://www.geogebra.org/m/dtvx4EtB" target="_blank">Average Value of a Function</a> applet produces a nice way to calculate this. <em class="emphasis">Hint: Hold the SHIFT key to stretch each axis pictures as needed. Stretch the vertical axis, for example, to about 70,000.</em><div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-10-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-10-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Additionalsuggestions43-2-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Additionalsuggestions43-2-10" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section: Additional suggestions"><a href="#sec-Additionalsuggestions43" title="Copy heading and permalink for Section: Additional suggestions" aria-label="Copy heading and permalink for Section: Additional suggestions">🔗</a></div></section><section class="section" id="sec-Answers43"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Answers</span>
+</h2>
+<section class="subsection" id="subsec-Toprepareforclass43"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">To prepare for class</span>
+</h3>
+<ol class="decimal" id="subsec-Toprepareforclass43-2">
+<li id="subsec-Toprepareforclass43-2-1">
+<div class="para logical" id="subsec-Toprepareforclass43-2-1-1">
+<ol class="lower-alpha lower-alpha-level-1" id="subsec-Toprepareforclass43-2-1-1-1">
+<li id="subsec-Toprepareforclass43-2-1-1-1-1">
+<div class="para" id="subsec-Toprepareforclass43-2-1-1-1-1-1">
+<span class="process-math">\(\displaystyle \displaystyle \frac{5}{4}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Toprepareforclass43-2-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#subsec-Toprepareforclass43-2-1-1-1-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="subsec-Toprepareforclass43-2-1-1-1-2">
+<div class="para" id="subsec-Toprepareforclass43-2-1-1-1-2-1">
+<span class="process-math">\(\displaystyle \displaystyle \frac{\pi+1}{2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Toprepareforclass43-2-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.b"><a href="#subsec-Toprepareforclass43-2-1-1-1-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Toprepareforclass43-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-Toprepareforclass43-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-Toprepareforclass43-2-2">
+<div class="para" id="subsec-Toprepareforclass43-2-2-1">
+<span class="process-math">\(L_{4} = (20)(3) + (10)(3) + (5)(3) + (2)(3) = 111, R_{4} = 54\text{;}\)</span> these average to 82.5.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Toprepareforclass43-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-Toprepareforclass43-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-Toprepareforclass43-2-3">
+<div class="para logical" id="subsec-Toprepareforclass43-2-3-1">
+<ol class="lower-alpha lower-alpha-level-1" id="subsec-Toprepareforclass43-2-3-1-1">
+<li id="subsec-Toprepareforclass43-2-3-1-1-1">
+<div class="para" id="subsec-Toprepareforclass43-2-3-1-1-1-1">
+<span class="process-math">\(\displaystyle \displaystyle a=1, b=4, n=3, \Delta x_{k} = 1, x_{k}^{*} = k+\frac{3}{4}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Toprepareforclass43-2-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.a"><a href="#subsec-Toprepareforclass43-2-3-1-1-1" title="Copy heading and permalink for Item 3.a" aria-label="Copy heading and permalink for Item 3.a">🔗</a></div>
+</li>
+<li id="subsec-Toprepareforclass43-2-3-1-1-2">
+<div class="para" id="subsec-Toprepareforclass43-2-3-1-1-2-1">
+<span class="process-math">\(\displaystyle \displaystyle a=0.5, b=3.5, n=6, \Delta x_{k} = 0.5, x_{k}^{*} = \frac{1}{2}k\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Toprepareforclass43-2-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.b"><a href="#subsec-Toprepareforclass43-2-3-1-1-2" title="Copy heading and permalink for Item 3.b" aria-label="Copy heading and permalink for Item 3.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Toprepareforclass43-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-Toprepareforclass43-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Subsection: To prepare for class"><a href="#subsec-Toprepareforclass43" title="Copy heading and permalink for Subsection: To prepare for class" aria-label="Copy heading and permalink for Subsection: To prepare for class">🔗</a></div></section><section class="subsection" id="subsec-Additionalsuggestions43"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Additional suggestions</span>
+</h3>
+<ol class="decimal" id="subsec-Additionalsuggestions43-2">
+<li id="subsec-Additionalsuggestions43-2-1">
+<div class="para logical" id="subsec-Additionalsuggestions43-2-1-1">
+<ol class="lower-alpha lower-alpha-level-1" id="subsec-Additionalsuggestions43-2-1-1-1">
+<li id="subsec-Additionalsuggestions43-2-1-1-1-1">
+<div class="para" id="subsec-Additionalsuggestions43-2-1-1-1-1-1">-4<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Additionalsuggestions43-2-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#subsec-Additionalsuggestions43-2-1-1-1-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="subsec-Additionalsuggestions43-2-1-1-1-2">
+<div class="para" id="subsec-Additionalsuggestions43-2-1-1-1-2-1">0<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Additionalsuggestions43-2-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.b"><a href="#subsec-Additionalsuggestions43-2-1-1-1-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+<li id="subsec-Additionalsuggestions43-2-1-1-1-3">
+<div class="para" id="subsec-Additionalsuggestions43-2-1-1-1-3-1">8<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Additionalsuggestions43-2-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.c"><a href="#subsec-Additionalsuggestions43-2-1-1-1-3" title="Copy heading and permalink for Item 1.c" aria-label="Copy heading and permalink for Item 1.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Additionalsuggestions43-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-Additionalsuggestions43-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-Additionalsuggestions43-2-2">
+<div class="para" id="subsec-Additionalsuggestions43-2-2-1">This is a right sum <span class="process-math">\(R_{3}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Additionalsuggestions43-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Additionalsuggestions43-2-2-2">Here, <span class="process-math">\(\displaystyle a=0.5, b=5, n=3, \Delta x_{k} = \frac{3}{2}\)</span> and<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Additionalsuggestions43-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Additionalsuggestions43-2-2-3">
+<span class="process-math">\(\displaystyle x_{k}^{*} = \frac{1}{2}+ k\left(\frac{3}{2}\right)\text{.}\)</span> The sum is<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Additionalsuggestions43-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Additionalsuggestions43-2-2-4">
+<span class="process-math">\(\displaystyle \frac{4}{1+2}(1.5) + \frac{4}{1+3.5}(1.5) + \frac{4}{1+5}(1.5) = 4.\overline{3}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Additionalsuggestions43-2-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-Additionalsuggestions43-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-Additionalsuggestions43-2-3">
+<div class="para" id="subsec-Additionalsuggestions43-2-3-1">Here <span class="process-math">\(\displaystyle \Delta x_{k} = \frac{6}{4}\text{,}\)</span> <span class="process-math">\(\displaystyle x_{k}^{*} = -\frac{1}{4}+ k\left(\frac{6}{4}\right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Additionalsuggestions43-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Additionalsuggestions43-2-3-2">So, <span class="process-math">\(\displaystyle \sum_{k=1}^{3}\frac{4}{1+\left[ -\frac{1}{4}+k\left(\frac{6}{4}\right) \right]}\cdot \left(\frac{6}{4}\right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Additionalsuggestions43-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-Additionalsuggestions43-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Subsection: Additional suggestions"><a href="#subsec-Additionalsuggestions43" title="Copy heading and permalink for Subsection: Additional suggestions" aria-label="Copy heading and permalink for Subsection: Additional suggestions">🔗</a></div></section><section class="subsection" id="subsec-Andyetadditionalsuggestions43"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">And yet additional suggestions</span>
+</h3>
+<ol class="decimal" id="subsec-Andyetadditionalsuggestions43-2">
+<li id="subsec-Andyetadditionalsuggestions43-2-1">
+<div class="para" id="subsec-Andyetadditionalsuggestions43-2-1-1">
+<span class="process-math">\(\displaystyle \int_{0}^{90}C(t) \ dt\)</span> represents the total cost to heat house for the first 90 days of 2020 (in dollars).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Andyetadditionalsuggestions43-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Andyetadditionalsuggestions43-2-1-2">
+<span class="process-math">\(\displaystyle \frac{1}{90-0}\int_{0}^{90}C(t) \ dt\)</span> represents the average cost (dollars per day) of heating the house for the first 90 days of 2020.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Andyetadditionalsuggestions43-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-Andyetadditionalsuggestions43-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-Andyetadditionalsuggestions43-2-2">
+<div class="para" id="subsec-Andyetadditionalsuggestions43-2-2-1">
+<span class="process-math">\(\displaystyle \frac{1}{40-0}\int_{0}^{40}V(t) \ dt = \frac{1}{40}\int_{0}^{40}225(1.15)^{t} \ dt \approx \$10,740.46\text{.}\)</span> The <a class="external" href="https://www.geogebra.org/m/dtvx4EtB" target="_blank">Average Value of a Function</a> applet produces a nice way to see this as illustrated in <a href="handouts-24.html#AverageValueApp1" class="xref" data-knowl="./knowl/xref/AverageValueApp1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 94">Figure 94</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Andyetadditionalsuggestions43-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="AverageValueApp1"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/AverageValueApp1.jpg" class="contained" alt="Graph of an exponential function f(x) that increases very rapidly on the interval from about x = 20 to x = 40. The curve starts near the x‑axis on the left and rises steeply to a large value by x = 40. The region under the curve from x = 20 to x = 40 is shaded in blue to represent the integral, with the label “integral ≈ 129618.37.” A horizontal red line labeled “average value: y = 10740.46” crosses the graph. A text box near the curve displays the formula f(x) = 225·1.15^x. Grid lines and axes with tick marks are shown."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">94<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The average value of <span class="process-math">\(y=225(1.15)^x\)</span> on <span class="process-math">\([0,40]\text{.}\)</span><div class="autopermalink" data-description="Figure 94"><a href="#AverageValueApp1" title="Copy heading and permalink for Figure 94" aria-label="Copy heading and permalink for Figure 94">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item 2"><a href="#subsec-Andyetadditionalsuggestions43-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Subsection: And yet additional suggestions"><a href="#subsec-Andyetadditionalsuggestions43" title="Copy heading and permalink for Subsection: And yet additional suggestions" aria-label="Copy heading and permalink for Subsection: And yet additional suggestions">🔗</a></div></section><div class="autopermalink" data-description="Section: Answers"><a href="#sec-Answers43" title="Copy heading and permalink for Section: Answers" aria-label="Copy heading and permalink for Section: Answers">🔗</a></div></section><div class="autopermalink" data-description="Handout: Daily Prep 4.3 - The Definite Integral"><a href="#handouts-24" title="Copy heading and permalink for Handout: Daily Prep 4.3 - The Definite Integral" aria-label="Copy heading and permalink for Handout: Daily Prep 4.3 - The Definite Integral">🔗</a></div></section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="handouts-23.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
