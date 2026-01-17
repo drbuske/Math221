@@ -62,6 +62,7 @@
       <xi:include href="./handouts/42PrepRiemannSums.ptx"/> 
       <xi:include href="./handouts/43PrepTheDefiniteIntegral.ptx"/>
       <xi:include href="./handouts/44PrepFundamentalTheoremCalculus.ptx"/>
+      <xi:include href="./handouts/51PrepConstructingAntiderivatives.ptx"/>
     </chapter>
 
     <chapter xml:id="activities">
