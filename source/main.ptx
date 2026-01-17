@@ -63,6 +63,7 @@
       <xi:include href="./handouts/43PrepTheDefiniteIntegral.ptx"/>
       <xi:include href="./handouts/44PrepFundamentalTheoremCalculus.ptx"/>
       <xi:include href="./handouts/51PrepConstructingAntiderivatives.ptx"/>
+      <xi:include href="./handouts/52PrepSecondFundamentalThmOfCalculus.ptx"/>
     </chapter>
 
     <chapter xml:id="activities">

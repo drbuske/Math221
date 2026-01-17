@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 5.2 - The Second Fundamental Theorem of Calculus</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    To this point, you have become reasonably proficient at computing the derivative of a given function algebraically, graphically, and numerically.
+    In this section, we find a single formula that defines an antiderivative of <em>any</em> function <m>f(t)</m>.
+    The second part of the Fundamental Theorem of Calculus will also enable us to better see how the processes of differentiation and integration are related as near inverse processes.
+  </p>
+
+</section>
+
+<section>
+  <title>Basic learning objectives</title>
+
+        <p>
+          These are the tasks you should be able to perform with reasonable
+          fluency when you arrive at our next class meeting.
+          Important new
+          vocabulary words are indicated <em>in italics</em>.
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              Evaluate integrals that have a variable in one of their limits.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              State the Second Fundamental Theorem of Calculus and use it to state an antiderivative for a given function.
+            </p>
+          </li>
+        </ul>
+
+</section>
+
+<section xml:id="sec-Toprepareforclass52">
+  <title>To prepare for class</title>
+
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Read</alert> motivating questions and the introduction to <url href="
+https://activecalculus.org/single2e/sec-5-2-FTC2.html#sec-5-2-FTC2-3">section 5.2</url> (up until Preview Activity 5.2.1).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> these problems.
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            Consider the constant function <m>f(t) = 4</m>.
+          </p>
+          
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Using geometry, compute <m>\displaystyle \int_{1}^{2} f(t) \ dt</m>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Using geometry, compute <m>\displaystyle \int_{1}^{4} f(t) \ dt</m>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Compute <m>\displaystyle \int_{1}^{x} f(t) \ dt</m> for any <m>x \geq 1</m>.  <xref ref="figureAreaUnder4"/> may help.
+                </p>
+
+                <figure xml:id="figureAreaUnder4">
+                <caption>The area under <m>f(t)=4</m> on the interval <m>[1,x]</m>. </caption> 
+                <image xml:id="AreaUnder4Pic" width="50%">
+<description>
+A horizontal line at y = 4 represents f(t). A shaded rectangle extends from t = 1 to t = x, with height 4.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1]
+  \fill [linecolor!10] (1,0) -- (1,4) -- (3,4) -- (3,0) -- (1,0);
+    \draw[black] (1,0) -- (1,4) -- (3,4) -- (3,0) -- (1,0);;
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.75,0) {$t$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,5) node [right] at (0,4.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+\draw[color=linecolor, line width=1pt,domain=-0.5:4.5]   plot (\x,{4}) node [above] at (3.5,4.05) {$f(t)$};
+\foreach \x/\xtext in { 1/1,  3/x}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {1/1,  2/2, 3/3, 4/4}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+              </li>
+
+              <li>
+                <p>
+                  Define the <em>area function</em> <m>\displaystyle A(x) = \int_{1}^{x} f(t) \ dt</m>, <m>1 \leq x \leq 4</m>.
+                  What is <m>A(2.5)</m>? <m>A(1)</m>? Write a general formula for <m>A(x)</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Let <m>f(t) = 2t+2</m> for all <m>t</m>.
+          </p>
+          
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Using geometry, compute <m>\displaystyle \int_{0}^{2} f(t) \ dt</m>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Using geometry, compute <m>\displaystyle \int_{0}^{4} f(t) \ dt</m>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Compute <m>\displaystyle \int_{0}^{x} f(t) \ dt</m> for any <m>x \geq 0</m>.  <xref ref="figureAreaUnder2tP2"/> may help.
+                </p>
+
+                <figure xml:id="figureAreaUnder2tP2">
+                <caption>The area under <m>f(t)=2t+2</m> on the interval <m>[0,x]</m>. </caption> 
+                <image xml:id="AreaUnder2tP2Pic" width="50%">
+<description>
+A straight line labeled f(t) increases from left to right. The shaded region is the area under 
+the line from t = 0 to t = x, forming a triangle.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1]
+  \fill [linecolor!10] (0,0) -- (0,0.5) -- (3,2) -- (3,0) -- (0,0);
+    \draw[black] (0,0) -- (0,0.5) -- (3,2) -- (3,0) -- (0,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.75,0) {$t$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-1.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3) node [right] at (0,2.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+\draw[color=linecolor, line width=1pt,domain=-1.5:3.5]   plot (\x,{0.25*(2*\x+2)}) node [above] at (3,2.05) {$f(t)$};
+\foreach \x/\xtext in { -1/-1,  3/x}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {0.5/2, 1/4, 1.5/6, 2/8}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+              </li>
+
+              <li>
+                <p>
+                  Define another <em>area function</em> <m>\displaystyle B(x) = \int_{0}^{x} f(t) \ dt</m>.
+                  What is <m>B(2)</m>? <m>B(4)</m>? <m>B(0)</m>? Write a general formula for <m>B(x)</m>.
+                </p>
+
+                <p />
+                </li>
+
+                <li>
+                  <p>
+                    Define a third area function <m>\displaystyle C(x) = \int_{-1}^{x} f(t) \ dt</m> for any <m>x \geq -1</m>.
+                    What is <m>C(2)</m>? <m>C(4)</m>? <m>C(-1)</m>? Write a general formula for <m>C(x)</m>.  <xref ref="figureAreaUnder2tP2third"/> may help.
+                  </p>
+
+                  <figure xml:id="figureAreaUnder2tP2third">
+                <caption>The area under <m>f(t)=2t+2</m> on the interval <m>[-1,x]</m>. </caption> 
+                <image xml:id="AreaUnder2tP2thirdPic" width="50%">
+<description>
+A straight line labeled f(t) rises from left to right. The shaded region is the area under the line from t = 0 to t = x, with a vertical line at t = x forming the right boundary.
+</description>
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=1]
+  \fill [linecolor!10] (-1,0) -- (3,2) -- (3,0) -- (-1,0);
+    \draw[black] (-1,0) -- (3,2) -- (3,0) -- (-1,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.75,0) {$t$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-1.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3) node [right] at (0,2.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+\draw[color=linecolor, line width=1pt,domain=-1.5:3.5]   plot (\x,{0.25*(2*\x+2)}) node [above] at (3,2.05) {$f(t)$};
+\foreach \x/\xtext in { -1/-1,  3/x}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {0.5/2, 1/4, 1.5/6, 2/8}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+                </li>
+              </ol>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              In the two previous problems, we have computed three different area functions.
+            </p>
+
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    Fill in the blanks:
+                  </p>
+
+                  <p>
+<table xml:id="PatternFTCPart2" >
+        <title>For functions <m>A(x), B(x)</m> and <m>C(x)</m> from the previous two exercises, do you spot a pattern with their derivatives?</title> 
+     <tabular halign="left" bottom="minor" top="minor">
+      <row header="no" bottom="minor">
+                          <cell> <m>A(x) = {\hspace{40mm}}</m> </cell>
+                          <cell> <m>A'(x) = {\hspace{40mm}} </m> </cell>
+                        </row>
+
+                        <row>
+                          <cell> <m>B(x) ={\hspace{40mm}}</m> </cell>
+                          <cell> <m>B'(x) ={\hspace{40mm}}</m> </cell>
+                        </row>
+
+                        <row>
+                          <cell> <m>C(x) ={\hspace{40mm}}</m> </cell>
+                          <cell> <m>C'(x) ={\hspace{40mm}}</m> </cell>
+                        </row>
+
+                      </tabular>
+                    </table>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      You should notice a very interesting fact about the derivatives of the area functions - a fundamentally beautiful property.
+                      What is it?
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Define one final function, <m>\displaystyle D(x) = \int_{0}^{x} 0.2t \sin(\cos(\sin t)) \ dt</m>.
+                      Don’t worry about trying to find a simple formula for <m>D(x)</m>.
+                      But, using our amazing fact, compute <m>D'(x)</m>.
+                    </p>
+
+                    
+                  <figure xml:id="FTCDiscover1">
+                    <caption>An illustration of <m>\displaystyle D(x) = \int_{0}^{x} 0.2t \sin(\cos(\sin t)) \ dt</m>.</caption>
+                    <image source="FTCDiscover1.jpg" width="75%">             
+<description>
+Graph of f(t) with a shaded region under the curve from the left up to t = x, where a vertical line at t = x marks the right boundary of the shaded area.
+</description>
+                    </image>
+                  </figure>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-5-2-FTC2.html#PA-5-2">Preview Activity 5.2.1</url>.
+          </p>
+
+          <p>
+            <ul>
+              <li>
+                <p>
+                  (Optional) <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=ReYevyODznc">solution to Preview Activity 5.2.1 (3:46)</url>.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            [Submit] <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-5-2-FTC2.html#sec-5-2-FTC2-4">section 5.2.2</url> up to Activity 5.2.2.
+          </p>
+
+          <p>
+            <ol>
+              <li>
+                <p>
+                  In equation 5.2.1, it is claimed that
+                  <me>
+                    \lim_{h \rightarrow 0}\frac{\int_{c}^{x+h}f(t) \ dt - \int_{c}^{x} f(t) \ dt}{h}= \lim_{h \rightarrow 0}\frac{\int_{x}^{x+h}f(t) \ dt}{h}.
+                  </me>
+                  The author explains why this is true with an equation.
+                  Draw a well-labeled figure using the graph of <m>f(t)</m> and areas under that curve that illustrates why the numerators are indeed equal for any function <m>f(t)</m>.
+                  <em>Hint: A property from <url href="
+https://activecalculus.org/single2e/sec-4-3-definite-integral.html#sec-4-3-definite-integral-5">section 4.3.3</url> may help.</em>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  The author goes on to say “Now, observe that for small values of <m>h</m>,
+                  <me>
+                    \int_{x}^{x+h}f(t) \ dt \approx f(x) \cdot h,
+                  </me>
+                  by a simple left-hand approximation of the integral.” Show this is also the case by drawing a well-labeled figure illustrating this one-rectangle Riemann sum.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Watch</alert> <url href="https://www.youtube.com/watch?v=EL48G_vtzKw&#x26;feature=emb_title">Sketching the Graph of an Integral Function (8:15)</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            [Submit] <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-5-2-FTC2.html#act-5-2-1">Activity 5.2.2</url>. If you get stuck, you may <alert>watch</alert> the video <url href="https://www.youtube.com/watch?v=-XXAwXS_DP0">solution to Activity 5.2.2 (8:09)</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-5-2-FTC2.html#sec-5-2-FTC2-5">section 5.2.3</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=9wL-DiOLxLw&#x26;feature=youtu.be">Second Fundamental Theorem of Calculus (Part 2): Understanding the Theorem (5:37)</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Prompt <alert>Copilot</alert> “What is the difference between d/dx(int_a<m>\wedge</m>x f(t) dt) and int_a<m>\wedge</m>x f’(t) dt?”
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Prompt <alert>Copilot</alert> “Can you show me a standard example from calculus in which I need to apply both the second Fundamental Theorem of Calculus and the chain rule?”
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=2bWL6k_ER9g&#x26;feature=emb_title">Quick Recap - Second Fundamental Theorem (2:46)</url>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            [Submit] <alert>Explore</alert> applet <url href="https://www.geogebra.org/m/tFXTp3ar">Second Fundamental Theorem of Calculus</url>. Enter <m>f(x)=\cos(x^{2})</m> and <em>Starting <m>x</m>-value: 0</em> and then answer these questions:
+          </p>
+
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Place the dot labeled ‘<m>x</m>’ at 1 on the <m>x</m>-axis.
+                  Give an expression that represents the area of the purple shaded region.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Give an expression that represents <m>F(x)</m> as defined in the applet.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Check the ‘Show the graph of <m>F</m>’ box in the lower left.
+                  Slide point ‘x’ left and right to sketch out <m>F(x)</m>.
+                  Which of the following best describes the function <m>F(x)</m> drawn?
+                </p>
+
+                <p>
+                  <ul>
+                    <li>
+                      <p>
+                        <m>F(x)</m> is the net signed area of the purple shaded area under <m>f(x) = \cos(x^{2})</m> from 0 to <m>x</m>.
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        <m>F(x)</m> is the antiderivative of <m>f(x)=\cos(x^{2})</m> that satisfies <m>F(0)=0</m>.
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        <m>F'(x)=\cos(x^{2})</m>.
+                      </p>
+                    </li>
+                  </ul>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  What does the applet illustrate to you?
+                </p>
+              </li>
+            </ol>
+          </p>
+
+          <p>
+                Suggestions for <em>submission</em>.
+          </p>
+
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\displaystyle \int_{0}^{x} \cos(t^{2}) \ dt</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>\displaystyle F(x) = \int_{0}^{x} \cos(t^{2}) \ dt</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      All three options describe <m>F(x)</m>.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      The applet should illustrate how the area function <m>F(x)</m> relates to its integrand via the Second Fundamental Theorem of Calculus.
+                      Of course, your viewpoints will vary.
+                    </p>
+                  </li>
+                </ol>
+              </p>
+
+        </li>
+        </ul>
+
+</section>
+
+<section xml:id="sec-Afterclass52">
+  <title>After class</title>
+
+        <p>
+          Solidifying the concepts discussed in class through practice is necessary to build your skills.
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-5-2-FTC2.html#sec-5-2-FTC2-6">section 5.2.4</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Explore</alert> the applet <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/integration_FTC.html">Fundamental Theorem of Calculus</url>. Note: Ignore the title of the applet. This applet illustrates the Second Fundamental Theorem as described in our text. As always, let the questions at the bottom guide your exploration. This applet demonstrates how integration and differentiation are nearly inverse processes well.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=1P6kBhdiblw&#x26;feature=emb_title">Differentiating an Integral Function (7:03)</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-5-2-FTC2.html#Library__WHFreeman__Rogawski_Calculus_Early_Transcendentals_Second_Edition__5_The_Integral__5-_4_The_Fundamental_Theorem_of_Calculus_Part_II__5-_4-_35">exercises 1-4 in section 5.2.6</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-5-2-FTC2.html#sec-5-2-FTC2-7">section 5.2.5 - summary</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-5-2-FTC2.html#ez-5-2-5">exercises 5-6 in section 5.2.6</url>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+            </p>
+          </li>
+        </ul>
+
+</section>
+
+      <section xml:id="sec-Advancedlearningobjectives52">
+        <title>Advanced learning objectives</title>
+
+        <p>
+          In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              Use the Second Fundamental Theorem of Calculus to differentiate an integral that has a variable in its limits.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Analyze an integral function using the usual techniques from differential calculus.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Recognize the difference between a definite integral that evaluates to a number (such as <m>\int_{1}^{2} x \ dx</m>) and a definite integral that evaluates to a function (such as <m>\int_{1}^{x} t \ dt</m>).
+            </p>
+          </li>
+        </ul>
+
+      </section>
+
+      <section xml:id="sec-Additionalsuggestions52">
+        <title>Additional suggestions</title>
+
+        <ul>
+          <li>
+            <p>
+              <alert>Do</alert> these problems.
+            </p>
+
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    The graph of <m>f(x)</m> is as shown.
+                    Let <m>\displaystyle g(u) = \int_{0}^{u} f(x) \ dx</m> where <m>f</m> is as 
+                    shown in <xref ref="fundthm1"/>.
+                  </p>
+
+                  <figure xml:id="fundthm1">
+                    <caption>The graph of <m>f</m>.</caption>
+                  <image source="fundthm1.jpg" width="50%" >
+<description>
+A curve f rises from the origin to a peak and then decreases toward x = 1. The region under the curve from x = 0 to x = u is shaded, with u marked between 0 and 1.
+</description>
+                  </image>
+                </figure>
+                    <p>
+                      <ol>
+                        <li>
+                          <p>
+                            What is the domain of <m>g</m>? Can you estimate the range?
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            Is <m>g</m> continuous? Is <m>g</m> differentiable?
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            Where does the graph of <m>g</m> achieve its maximum?
+                          </p>
+
+                          <p>
+                            Where does it achieve its minimum?
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            Where is <m>g</m> concave up/down?
+                          </p>
+                        </li>
+                      </ol>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Let <m>\displaystyle F(x) = \int_{1}^{x} f(t) \ dt</m>, where <m>f</m> is the 
+                      function whose graph is shown in <xref ref="figureIntegralCubic52"/>.
+                      Where is <m>F</m> concave downward? Explain.
+                    </p>
+
+                    <figure xml:id="figureIntegralCubic52">
+                <caption>The graph of <m>f(t)</m> defines a function <m>F(x)</m> via <m>\displaystyle F(x) = \int_{1}^{x} f(t) \ dt</m>. </caption> 
+                <image xml:id="IntegralCubic52dPic" width="50%">
+<description>
+Graph of f(t), a smooth curve that rises to a peak near t = −1, dips below the axis near 
+t = 1, and then increases steeply for t > 2.
+</description>
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=1]
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (3,0) node [below] at (2.75,0) {$t$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-2.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,2.5) node [right] at (0,2.25) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-2.5);
+\draw[color=linecolor, line width=1pt,domain=-2.25:2.25,smooth]   plot (\x,{(0.3333*\x*\x*\x-\x)}) node [left] at (2,1.5) {$f(t)$};
+\foreach \x/\xtext in {-2/-2, -1/-1, 1/1, 2/2}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in { -2/-2, -1/-1, 1/1, 2/2}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+                    
+                  </li>
+                </ol>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <alert>Finish (if needed)</alert> <url href="
+https://activecalculus.org/single2e/sec-5-2-FTC2.html#act-5-2-2">Activity 5.2.3</url>.
+              </p>
+
+              <p>
+                <ul>
+                  <li>
+                    <p>
+                      (Optional) <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=Q_boFAPky80">solution to Activity 5.2.3 (8:59)</url>.
+                    </p>
+                  </li>
+                </ul>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <alert>Do</alert> these problems.
+              </p>
+
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Compute <m>H'(x)</m> if <m>\displaystyle H(x) = \int_{1}^{3x}e^{-t^2}\ dt</m>.
+                      <em>Hint:</em> If <m>g(x) = 3x</m>, and <m>\displaystyle F(x) = \int_{1}^{x} e^{-t^2}\ dt</m>, then <m>H(x) = F(g(x))</m>.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Find <m>f(6)</m> if <m>\displaystyle \int_{0}^{x} f(t) \ dt = x\cos\pi x</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+          </ul>
+
+</section>
+
+<section xml:id="sec-Answers52">
+  <title>Answers</title>
+  
+<subsection>
+  <title>To prepare for class</title>
+
+          <ol>
+          <li>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    4
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    12
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>4(x-1)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>A(2.5)=6, A(1)=0</m>, and <m>A(x)=4(x-1)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    <m>2(2)+\frac{1}{2}(2)(4)=8</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    24
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>x^{2}+2x</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>B(2)=8, B(4)=24, B(0)=0</m>, and <m>B(x)=x^{2}+2x</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>C(2)=9, C(4)=25, C(-1)=0</m>, and <m>C(x)=x^{2}+2x+1</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    This summarizes the results of the previous two problems.
+                  </p>
+
+                  <p>
+<table xml:id="PatternFTCPart2Ans" >
+        <title>Functions <m>A(x), B(x)</m> and <m>C(x)</m> and their derivatives.</title> 
+     <tabular halign="left" bottom="minor" top="minor">
+      <row header="no" bottom="minor">
+                          <cell> <m>A(x) = 4(x-1){\hspace{30mm}}</m> </cell>
+                          <cell> <m>A'(x) = 4{\hspace{30mm}}</m> </cell>
+                        </row>
+
+                        <row>
+                          <cell> <m>B(x) = x^{2}+2x</m> </cell>
+                          <cell> <m>B'(x) = 2x+2</m> </cell>
+                        </row>
+
+                        <row>
+                          <cell> <m>C(x) = x^{2}+2x+1</m> </cell>
+                          <cell> <m>C'(x) = 2x+2</m> </cell>
+                        </row>
+
+                      </tabular>
+                    </table>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      The derivative of <m>\displaystyle \int_{a}^{x} f(t) \ dt = f(x)</m>.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>D'(x) = 0.2x \sin(\cos(\sin(x)))</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+          </ol>
+        </subsection>
+
+
+
+            <subsection xml:id="subsec-Additionalsuggestions52">
+              <title>Additional suggestions</title>
+              
+          <ol>
+            <li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>[0,1]</m>; <m>[0,1/2]</m>.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Yes to both.
+                      <m>g'(u) = f(u)</m>.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Maximum at <m>u=1</m>.
+                      Minimum at <m>u=0</m>.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>g''(u) > 0</m> when <m>f'(u) > 0</m> which is approximately <m>(0,2/3)</m>. <m>g''(u)&#x3C;0</m> when <m>f'(u) &#x3C; 0</m> which is approximately <m>(2/3,1)</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>F'(x) = f(x)</m> and <m>F''(x) = f'(x) &#x3C; 0</m> on <m>(-1,1)</m>. So, <m>F(x)</m> is concave downward on <m>(-1,1)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>H'(x) = F'(g(x))\cdot g'(x) = e^{-g(x)^2}\cdot 3 = e^{-(3x)^2}\cdot 3 = 3e^{-9x^2}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\displaystyle \frac{d}{dx}\int_{0}^{x} f(t) \ dt = \frac{d}{dx}(x \cos(\pi x)</m> so that <m>f(x) = 1\cdot \cos(\pi x) + x(-\pi \sin(\pi x))</m>. It follows then that <m>f(6) = \cos(6\pi) - 6\pi\sin(6\pi) = 1</m>.
+              </p>
+            </li>
+            </ol>
+            </subsection>
+</section>
+</handout>
