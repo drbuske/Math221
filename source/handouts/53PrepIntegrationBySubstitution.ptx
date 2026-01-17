@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Daily Prep 5.3 - Integration by Substitution</title>
+
+<section>
+    <title>Overview</title>
+
+  <p>
+    In this section, we see how it is possible to reverse the chain rule.
+    This technique is called integration by substitution.
+    Knowing how to antidifferentiate basic functions and the substitution rule together will allow us to antidifferentiate more complex functions.
+  </p>
+
+</section>
+
+<section>
+  <title>Basic learning objectives</title>
+
+  <p>
+    These are the tasks you should be able to perform with reasonable
+    fluency when you arrive at our next class meeting.
+    Important new
+    vocabulary words are indicated <em>in italics</em>.
+  </p>
+
+  <ul>
+    <li>
+      <p>
+        Recognize the notation for an <em>indefinite integral</em> and state its meaning.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Determine the general antiderivative given a composite function whose “inner” function is linear.
+      </p>
+    </li>
+  </ul>
+
+</section>
+
+<section xml:id="sec-Toprepareforclass53">
+  <title>To prepare for class</title>
+
+  <p>
+    Complete all actions listed below.
+    Respond to the questions highlighted with <em>Submit</em>.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Read</alert> motivating questions and the introduction to <url href="
+https://activecalculus.org/single2e/sec-5-3-substitution.html#sec-5-3-substitution-3">section 5.3</url> (up until Preview Activity 5.3.1).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-5-3-substitution.html#PA-5-3">Preview Activity 5.3.1</url> parts (a) and (b) numbers (i) and (ii).
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            (Optional) <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=2MLcQrIzQHk">solution to Preview Activity 5.3.1 (7:23)</url>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-5-3-substitution.html#sec-5-3-substitution-4">section 5.3.2</url> up to Activity 5.3.2.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Prompt <alert>Copilot</alert> “Walk me through an example in which <m>u</m>-substitution is used to calculate an indefinite integral.”
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-5-3-substitution.html#sec-5-3-substitution-5">section 5.3.3</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=p_z5AU2z4DI&#x26;feature=emb_title">Integration by Substitution Example 1 (3:43)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=G7zJdIpXIq8&#x26;feature=emb_title">Integration by Substitution Example 2 (3:50)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=_Y-01MZOebQ&#x26;feature=emb_title">Integration by Substitution Example 3 (4:42)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=NjcjFwX653s&#x26;feature=emb_title">Integration by Substitution Example 4 (4:19)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=YPle_z6tOeY&#x26;feature=emb_title">Integration by Substitution Example 5 (3:40)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> these problems.
+    </p>
+
+    <p>
+      <ol>
+      <li>
+        <p>
+          [Submit] <alert>Explore</alert> the applet <url href="https://www.geogebra.org/m/YPSNUfpm">U-Substitition by Tim Brzezinski</url>. It illustrates the idea of <m>u</m>-substitition. No matter the value of <m>a</m>, <m>b</m>, of how you position the slider, how are the areas of the green and blue regions related?
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Using the <m>u</m>-substitution <m>u(x) = x^{3}</m>, find <m>\displaystyle \int 3x^{2} \cos(x^{3}) \ dx</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Repeat (a) using the applet <url href="https://www.geogebra.org/m/uzSwyMa5">Integration by Substitution by Ravinder Kumar</url>.
+                Note that you will need to enter the integrand <em>and</em> the function <m>u(x)</m>.
+                It then gives step by step instructions.
+                Note also that the applet uses <m>v(x)</m> rather than <m>u(x)</m>.
+                Does your answer match that you found in (a)?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Use the applet to check the correctness of <url href="
+https://activecalculus.org/single2e/sec-5-3-substitution.html#Ex-5-3-usub">Example 5.3.2 in the text</url>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+      </ol>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=uTT6e-yXZyA&#x26;feature=emb_title">Quick Recap - Integration by Substitution (3:27)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      [Submit] <alert>Do</alert> write a paragraph or two with your reflections on the value of each of the following as they appeared in the Daily Prep assignments this semester. These comments will be used to improve the Daily Prep assignments for the next semester.
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            The readings from the textbook
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The interactive applets (often using <em>GeoGebra</em>)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The videos
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The problems in the textbook (interactive and written)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The problems not in the textbook
+          </p>
+        </li>
+      </ol>
+    </p>
+  </li>
+  </ul>
+
+</section>
+
+<section xml:id="sec-Afterclass53">
+  <title>After class</title>
+
+  <p>
+    Solidifying the concepts discussed in class through practice is necessary to build your skills.
+  </p>
+  <ul>
+  <li>
+    <p>
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-5-3-substitution.html#sec-5-3-substitution-6">section 5.3.4</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Explore</alert> the applet <url href="https://www.geogebra.org/m/NKhaCFhH">Integration by Substitution by John Golden</url>. Answer the single question of ‘Why are these definite integrals equal?’ In fact, write down both integrands and both limits of integration and then approximate each definite integral using a Riemann Sum via the applet <url href="https://www.geogebra.org/m/RCVce5W4">Riemann Sums by J Mulholland</url>. This should convince you that both definite integrals do indeed have the same value.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=Iia2ZdvYFIc&#x26;feature=emb_title">Integration by Substitution Example 6 (3:08)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=buu_jlQBAjI&#x26;feature=emb_title">Definite Integrals using Substitution (4:31)</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Prompt <alert>Copilot</alert> “If the function <m>u</m> is not one-to-one, the method of <m>u</m>-substitution as applied to a definite integral may fail.
+      Give me an example showing this.”
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-5-3-substitution.html#csafranski__5-_3HW_prob1">exercises 1-3 in section 5.3.6</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> these problems.
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            Find <m>\displaystyle \int x^{3} \sqrt{x^{4}+5}\ dx</m> by letting <m>u(x) = x^{4} + 5</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find <m>\displaystyle \int x\sqrt{x+2}\ dx</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find <m>\displaystyle \int \tan(x) \ dx</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find <m>\displaystyle \int \sec(x) \ dx</m>.
+            <em>Hint:</em> Multiply the integrand by <m>\displaystyle \frac{\sec(x) + \tan(x)}{\sec(x) + \tan(x)}</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Read</alert> <url href="
+https://activecalculus.org/single2e/sec-5-3-substitution.html#sec-5-3-substitution-7">section 5.3.5 - summary</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Do</alert> <url href="
+https://activecalculus.org/single2e/sec-5-3-substitution.html#Library__Michigan__Chap7Sec1__Q55">exercises 7-10 in section 5.3.6</url>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      <alert>Start working</alert> on the <url href="https://www.myopenmath.com/index.php">MOMwork</url> (MyOpenMath) assignment for this section.
+    </p>
+  </li>
+  </ul>
+
+</section>
+
+<section xml:id="sec-Advancedlearningobjectives53">
+  <title>Advanced learning objectives</title>
+
+  <p>
+    In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:
+  </p>
+
+  <ul>
+    <li>
+      <p>
+        Use proper notation when using Integration by Substitution.
+        In particular, fully convert an integral from <m>x</m>’s to <m>u</m>’s and back again, without mixing the two variables.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Use Integration by Substitution in unusual cases, such as those where there is not an obvious substitution.
+      </p>
+    </li>
+  </ul>
+
+</section>
+
+<section xml:id="sec-Additionalsuggestions53">
+  <title>Additional suggestions</title>
+
+  <ul>
+    <li>
+      <p>
+        <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=pBfyWU_lf04&#x26;feature=youtu.be">U-Substitution for Antiderivatives (8:13)</url>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Finish (if needed)</alert> <url href="
+https://activecalculus.org/single2e/sec-5-3-substitution.html#act-5-3-1">Activity 5.3.2</url>.
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=bqot6L-41Ag">solution to (a)-(c) of Activity 5.3.2 (4:08)</url> and <url href="https://www.youtube.com/watch?v=4S4LxP62eqs">solution to (d)-(f) of Activity 5.3.2 (4:57)</url>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Finish (if needed)</alert> <url href="
+https://activecalculus.org/single2e/sec-5-3-substitution.html#act-5-3-2">Activity 5.3.3</url>.
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              (Optional) <alert>Watch</alert> video <url href="https://www.youtube.com/watch?v=CN0F8OGkLhU">solution to Activity 5.3.3 (4:36)</url>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <alert>Do</alert> more practice via the applet <url href="https://www.geogebra.org/m/y95xjghz">Integration by Substitution by R. Kumar</url>. Clicking ‘Practice’ generates a new problem. Clicking ‘Show Answer’ can be used to check your work.
+      </p>
+    </li>
+  </ul>
+
+</section>
+
+<section xml:id="sec-Answers53">
+  <title>Answers</title>
+
+  <subsection xml:id="subsec-Toprepareforclass53">
+    <title>To prepare for class</title>
+    
+  <ol>
+    <li>
+      <p>
+        The blue and green regions have exactly the same area.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>\sin(x^{3}) + C</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Yes, it matches.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+  </ol>
+
+    </subsection>
+    <subsection xml:id="subsec-Afterclass53">
+      <title>After class</title>
+  <ol>
+    <li>
+      <p>
+        <m>\displaystyle \int x^{3} \sqrt{x^{4}+5}\ dx</m> by letting <m>u(x) = x^{4} + 5 = \frac{1}{6}(x^{4}+5)^{3/2}+ C</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Let <m>u(x) = x+2</m>.
+        Then <m>x = u-2</m>.
+        This allows one to write the integral in terms of <m>u</m> rather easily.
+        Thus, <m>\displaystyle \int x\sqrt{x+2}\ dx = \frac{2}{5}(x+2)^{5/2}- \frac{4}{3}(x+2)^{3/2}+C</m>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Use the substitution <m>u=\cos x</m>.
+        Then <m>\displaystyle \int \tan(x) \ dx = \int \frac{\sin x}{\cos x}\ dx = -\int \frac{1}{u}\ du = -\ln |\cos x| + C</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        <m>\displaystyle \int \sec(x) \ dx = \ln | \sec x + \tan x | + C</m>
+      </p>
+    </li>
+  </ol>
+</subsection>
+</section>
+
+</handout>

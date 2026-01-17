@@ -64,6 +64,7 @@
       <xi:include href="./handouts/44PrepFundamentalTheoremCalculus.ptx"/>
       <xi:include href="./handouts/51PrepConstructingAntiderivatives.ptx"/>
       <xi:include href="./handouts/52PrepSecondFundamentalThmOfCalculus.ptx"/>
+      <xi:include href="./handouts/53PrepIntegrationBySubstitution.ptx"/>
     </chapter>
 
     <chapter xml:id="activities">
