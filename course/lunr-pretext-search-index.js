@@ -1108,6 +1108,69 @@ var ptx_lunr_docs = [
   "body": " The signed area under between and is 1.   Graph of the function f(x) = cos x. The curve begins at its maximum value y = 1 when x = 0, then decreases smoothly as x increases, crossing the x-axis just after x = 1. The region under the curve from x = 0 to x = 1 is shaded in light blue. Axes are labeled x and y.    "
 },
 {
+  "id": "handouts-26",
+  "level": "1",
+  "url": "handouts-26.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Daily Prep 5.1 - Constructing Accurate Graphs of Antiderivatives",
+  "body": " Daily Prep 5.1 - Constructing Accurate Graphs of Antiderivatives   Overview  In this section, we once again address the question of how to construct the graph of if we know the graph of its derivative . We also take a look at functions defined as a definite integral with a variable as a limit of integration, and see how this is a type of function that we can analyze.    Basic learning objectives  These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated in italics .    Evaluate integral functions such as at various values when given a simple formula or graph for .      To prepare for class  Complete all actions listed below. Respond to the questions highlighted with Submit .     Read motivating questions and the introduction to section 5.1 (up until Preview Activity 5.1.1).     Explore the applet Identify an Antiderivative Function to use cues given in the graph of a function in construction of an antiderivative of it. Practice as you wish.     Do  Preview Activity 5.1.1 .     (Optional) Watch video solution to Preview Activity 5.1.1 (7:19) .        Read  section 5.1.2 up to Activity 5.1.2.     Do  Activity 5.1.2 .     (Optional) Watch video solution to Activity 5.1.2 (8:18) .        Watch video How to Sketch the Graph of an Antiderivative (12:17) .    [Submit] Read  section 5.1.3 . For the situation presented in Figure 5.1.3, it is said that “Similarly, , , and . Explain how it is that and .     Watch video Sketching the Graph of an Antiderivative with Initial Condition (7:26) .    [Submit] Explore applet The Area Function . Submit answers to the two questions asked at the bottom of that page.     Do the following problems.     The graph of is given in .   The graph of .   Graph of a piecewise linear function f(x): constant at y = 1 from x = 0 to x = 2, then decreasing linearly to the point (4, 0), and continuing downward to about (5, –0.5).     Sketch a graph of an antiderivative satisfying                  Sketch two functions such that . In one case, let and in the other let . gives a graph of .   The graph of .   Graph of f(x) formed by two line segments meeting at (1, 0): one rising from (1, 0) to (2, 2) and one rising from (1, 0) to (0, 2).       [Submit] Graph an antiderivative of for which . Discuss maxima, minima, concavity, and intervals of increase\/decrease.   The graph of .   Graph of f(x) = 1 \/ (1 + x⁴), showing a smooth peak at x = 0 with value 1, decreasing symmetrically and approaching 0 as x moves toward −1 and 2.          Prompt Copilot “How can I use the concept of signed area under a curve to plot the antiderivative of a given graph of a function?” Follow the response you receive with the prompt “Can you repeat this but use integral signs to help me understand how definite integrals play a role in this process?”    Prompt Copilot “If a function is positive, decreasing, and concave up, what graphical properties should I expect an antiderivative to have?” You may get a response with the phrase horizontal inflection point . What is that?      After class  Solidifying the concepts discussed in class through practice is necessary to build your skills.     Finish (if needed)  Activity 5.1.3 .     (Optional) Watch video solution to Activity 5.1.3(a) (6:41) and solution to Activity 5.1.3(c) (4:35) .        Do  exercises 1-4 in section 5.1.6 .     Read  section 5.1.4 .     Watch video Graphing Functions Defined as Integrals (11:37) .     Explore the applet Area Function . The default blue function is obviously . The red dotted function is where is determined by the slider. What is the value of this lower limit ?     Explore the applet Area Function . For the default function given, change the value of to 1. Does it make sense that has a local max at -1 and a local min at 3? What about the graph of tells you that might happen?     Do  exercise 5 in section 5.1.6 .     Read  section 5.1.5 - summary .     Do  exercises 6-7 in section 5.1.6 .     Start working on the MOMwork (MyOpenMath) assignment for this section.      Advanced learning objectives  In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:    Draw the graph of , when given and an initial condition.    Interpret the physical and graphical meaning of a function in the form .      Additional suggestions     Watch video Accumulation Functions (4:42) .     Watch video solution to Activity 5.1.4 (7:53) .      Answers    If , the graph of starts at the origin. If , the graph of starts one unit higher.   Graphs of . The graph for which is in solid blue. The graph for which is in dashed red.   Two curves are shown: a red curve and a blue curve, both increasing from the left and leveling off near x = 4. The red curve starts higher and stays above the blue curve for all x.       The solid blue curve is that of when . The dashed red curve is that of when .   Graphs of . The graph for which is in solid blue. The graph for which is in dashed red.   Two increasing curves are shown. The blue curve starts at the point (0, 0) and rises smoothly to the right. The red curve starts at (0, 1) and rises above the blue curve for all x.       If , then note that is always increasing since always holds. Hence, there is no maximum or minimum. Since on and on , we have that the same is true for . So, is concave up on and concave down on . Knowing the graph of goes through the point gives a good sense of how behaves. shows two different views of .   Two different views of , an antiderivative of .            "
+},
+{
+  "id": "figureFindAntiderivative1",
+  "level": "2",
+  "url": "handouts-26.html#figureFindAntiderivative1",
+  "type": "Figure",
+  "number": "100",
+  "title": "",
+  "body": " The graph of .   Graph of a piecewise linear function f(x): constant at y = 1 from x = 0 to x = 2, then decreasing linearly to the point (4, 0), and continuing downward to about (5, –0.5).    "
+},
+{
+  "id": "figureFindAntiderivative2",
+  "level": "2",
+  "url": "handouts-26.html#figureFindAntiderivative2",
+  "type": "Figure",
+  "number": "101",
+  "title": "",
+  "body": " The graph of .   Graph of f(x) formed by two line segments meeting at (1, 0): one rising from (1, 0) to (2, 2) and one rising from (1, 0) to (0, 2).    "
+},
+{
+  "id": "figureFindAntiderivative3",
+  "level": "2",
+  "url": "handouts-26.html#figureFindAntiderivative3",
+  "type": "Figure",
+  "number": "102",
+  "title": "",
+  "body": " The graph of .   Graph of f(x) = 1 \/ (1 + x⁴), showing a smooth peak at x = 0 with value 1, decreasing symmetrically and approaching 0 as x moves toward −1 and 2.    "
+},
+{
+  "id": "figureFindAntiderivative1Ans",
+  "level": "2",
+  "url": "handouts-26.html#figureFindAntiderivative1Ans",
+  "type": "Figure",
+  "number": "103",
+  "title": "",
+  "body": " Graphs of . The graph for which is in solid blue. The graph for which is in dashed red.   Two curves are shown: a red curve and a blue curve, both increasing from the left and leveling off near x = 4. The red curve starts higher and stays above the blue curve for all x.    "
+},
+{
+  "id": "figureFindAntiderivative2Ans",
+  "level": "2",
+  "url": "handouts-26.html#figureFindAntiderivative2Ans",
+  "type": "Figure",
+  "number": "104",
+  "title": "",
+  "body": " Graphs of . The graph for which is in solid blue. The graph for which is in dashed red.   Two increasing curves are shown. The blue curve starts at the point (0, 0) and rises smoothly to the right. The red curve starts at (0, 1) and rises above the blue curve for all x.    "
+},
+{
+  "id": "AntiOf1Over1PX4",
+  "level": "2",
+  "url": "handouts-26.html#AntiOf1Over1PX4",
+  "type": "Figure",
+  "number": "105",
+  "title": "",
+  "body": " Two different views of , an antiderivative of .        "
+},
+{
   "id": "ws-act-1-1-1",
   "level": "1",
   "url": "ws-act-1-1-1.html",
