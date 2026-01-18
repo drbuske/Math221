@@ -1,0 +1,128 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2012-2025                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+<worksheet label="ws-act-3-1-0">
+   <title>Related Rates - Activity 3.1.0</title>
+    <activity xml:id="act-3-1-0" workspace="3cm">
+      <introduction>
+        <p>
+         A sailboat is sitting at rest near its dock.
+A rope attached to the bow of the boat is drawn in over a pulley that stands on a post on the end 
+of the dock that is 5 feet higher than the bow as in <xref ref="DockAndBoatPic"/>.
+If the rope is being pulled in at a rate of 2 feet per second, how fast is the boat approaching 
+the dock when the length of rope from bow to pulley is 13 feet? 
+        </p>
+        <figure xml:id="DockAndBoatPic">
+          <caption>A rope is attached to a sailboat from a dock that is 5 feet higher than the bow.</caption>
+        <image width="75%" source="images/DockAndBoat.jpg">
+<description>
+A right triangle is drawn between a dock on the left and a small boat with a pirate flag on the 
+right. One leg runs vertically down from the dock, another runs horizontally toward the boat, 
+and the hypotenuse connects the dock to the boat.
+</description>
+        </image>
+      </figure>
+      </introduction>
+
+      <task workspace="3cm" xml:id="act-3-1-0-task-0">
+        <statement>
+          <p>
+            In the right triangle in the <xref ref="DockAndBoatPic"/>, indicate 
+which sides are constant over time and which sides vary. 
+Then, label each side of the triangle with a variable or a constant accordingly.  
+          </p>
+        </statement>
+        <hint>
+          <p>
+            The boat will always be 5 feet higher than the bow of the boat.  But the other distances 
+            in this problem vary.  
+          </p>
+        </hint>
+        <answer>
+          <p>
+            Label the height of the triangle as 5 (since it is constant).  Label the base of the 
+            right triangle as <m>x</m> and the hypotenuse as <m>z</m>. 
+          </p>
+        </answer>
+        
+      </task>
+      <task workspace="9cm" xml:id="act-3-1-0-task-1">
+        <statement>
+          <p>
+            Using derivative notation, state which rate is given and which rate is to be calculated.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            The derivatives are all functions of time <m>t</m>.
+          </p>
+        </hint>
+        <answer>
+          <p>
+            It is known that <m> \frac{dz}{dt} = -2</m> feet per second.  We look to calculate 
+            the rate <m>\frac{dx}{dt}</m> when <m>z=13</m> feet. 
+          </p>
+        </answer>
+        
+      </task>
+      <task workspace="4cm" xml:id="act-3-5-0-task-2">
+        <statement>
+          <p>
+            Determine an equation that relates the two variables identified in (a).  
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Use the Pythagorean Theorem.
+          </p>
+        </hint>
+        <answer>
+          <p>
+            <m>x(t)^2 + 5^2 = z(t)^2</m>
+          </p>
+        </answer>
+        
+      </task>
+      <task workspace="3cm" xml:id="act-3-5-0-task-3">
+        <statement>
+          <p>
+            Use implicit differentiation on the equation found in (c) to relate the two rates 
+            identified in (b).  Use this to determine how fast the boat is approaching the 
+            dock when the length of the rope from bow to pulley is 13 feet.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Will the rate in question be positive or negative?  Be sure you get a sign on the answer
+            that you expect.  
+          </p>
+        </hint>
+        <answer>
+          <p>
+            <m>-\frac{13}{6}</m> feet per second
+          </p>
+        </answer>
+        <solution>
+          <p>
+            Since <m>\displaystyle 2x \cdot \frac{dx}{dt} + 0 = 2z \cdot \frac{dz}{dt}</m>, we have that 
+            <m>\displaystyle \frac{dx}{dt} = \frac{2z \cdot \frac{dz}{dt}}{2x}</m>.  When <m>z = 13</m>
+            feet, <m>x(t)^2 + 5^2 = 13^2</m> so that <m>x=12</m> feet.  Thus, 
+            <md><mrow> \frac{dx}{dt}\Big|_{z=13} = \amp \mathstrut \frac{2(13)(-2)}{2(12)}</mrow>
+              <mrow> = \amp \mathstrut -\frac{13}{6} ft/sec </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+    </activity>
+   
+</worksheet>
