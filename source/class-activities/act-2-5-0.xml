@@ -1,0 +1,216 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2012-2025                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+<worksheet label="ws-act-2-5-0">
+   <title>The Chain Rule - Activity 2.5.0</title>
+    <activity xml:id="act-2-5-0" workspace="3cm">
+      <introduction>
+        <p>
+      For each function given below, identify its fundamental algebraic structure.
+In particular, is the given function a sum, product, quotient, or composition of basic functions? 
+If the function is a composition of basic functions, state a formula for the inner function 
+<m>g</m> and the outer function <m>f</m> so that the overall composite function can be written 
+in the form <m>f(g(x))</m>.
+If the function is a sum, product, or quotient of basic functions, use the appropriate rule 
+to determine its derivative.
+      </p>
+      </introduction>
+      <task workspace="5cm" xml:id="act-2-5-0-task-0">
+        <statement>
+          <p>
+            <m>\displaystyle h(x) = \cos(e^x)</m> 
+          </p>
+        </statement>
+        
+        <answer>
+          <p>This is a composition of functions.  <m>h(x)=f(g(x))</m> where <m>f(x)=\cos x</m> and
+            <m>g(x)=e^x</m>.
+          </p>
+        </answer>
+        
+      </task>
+      <task workspace="6cm" xml:id="act-2-5-0-task-1">
+        <statement>
+          <p>
+            <m>\displaystyle p(x) = x^3 e^x</m>
+          </p>
+        </statement>
+        
+        <solution>
+          <p>This is a product of functions.  The product rule gives 
+            <md><mrow> p'(x) = \amp \mathstrut \frac{d}{dx}(x^3)e^x + x^3\frac{d}{dx}(e^x)</mrow>
+            <mrow> = \amp \mathstrut 3x^2\cdot e^x + x^3 \cdot e^x </mrow>
+            <mrow> = \amp \mathstrut x^2e^x (3+x). </mrow>
+            </md>
+          </p>
+        </solution>
+        
+      </task>
+      <task workspace="7cm" xml:id="act-2-5-0-task-2">
+        <statement>
+          <p>
+            <m>\displaystyle r(x) = (\cos x)^3</m> 
+          </p>
+        </statement>
+        
+        <answer>
+          <p>This is a composition of functions.  <m>r(x)=f(g(x))</m> where <m>f(x) = x^3</m> 
+            and <m>g(x) = \cos x</m>.
+          </p>
+        </answer>
+        
+      </task>
+      <task workspace="6cm" xml:id="act-2-5-0-task-3">
+        <statement>
+          <p>
+            <m>\displaystyle m(x) = 3^{\cos x}</m> 
+          </p>
+        </statement>
+        
+        <answer>
+          <p>This is a composition of functions.  <m>m(x) = f(g(x))</m> where <m>f(x) = 3^x</m>
+            and <m>g(x) = \cos x</m>. 
+          </p>
+        </answer>
+        
+      </task>
+
+      <task workspace="6cm" xml:id="act-2-5-0-task-4">
+        <statement>
+          <p>
+            <m>\displaystyle w(x) = \sqrt{\cos x}</m> 
+          </p>
+        </statement>
+        
+        <answer>
+          <p>This is a composition of functions.  <m>w(x) = f(g(x))</m> where <m>f(x) = \sqrt{x}</m>
+            and <m>g(x) = \cos x</m>. 
+          </p>
+        </answer>
+        
+      </task>
+
+      <task workspace="6cm" xml:id="act-2-5-0-task-5">
+        <statement>
+          <p>
+            <m>\displaystyle w(x) = \sqrt{\cos x} + 3^{\cos x}</m> 
+          </p>
+        </statement>
+        
+        <answer>
+          <p>This is a composition of functions.  <m>w(x) = f(g(x))</m> where <m>f(x) = \sqrt{x} + 3^x</m>
+            and <m>g(x) = \cos x</m>. 
+          </p>
+        </answer>
+        
+      </task>
+
+      <task workspace="6cm" xml:id="act-2-5-0-task-6">
+        <statement>
+          <p>
+            <m>\displaystyle s(x) = \cos x - \sqrt{x} - \frac{3^x}{\cos x}</m> 
+          </p>
+        </statement>
+        
+        <solution>
+          <p>This is a difference of functions.  The quotient rule can also be applied.
+            <m>s'(x) = -\sin x - \frac{1}{2}x^{-1/2} - \frac{\cos x \cdot (\ln 3) 3^x - 3^x (-\sin x)}{\cos^2 x}</m>.
+          </p>
+        </solution>
+        
+      </task>
+
+      <task workspace="6cm" xml:id="act-2-5-0-task-7">
+        <statement>
+          <p>
+            <m>\displaystyle p(x) = 4\cos(\sqrt{x}) - 3^{\sqrt{x}}</m> 
+          </p>
+        </statement>
+        
+        <solution>
+          <p>This is a composite of functions.  <m>p(x) = f(g(x))</m> where <m>f(x) = 4\cos x - 3^x</m>
+            and <m>g(x)=\sqrt{x}</m>.
+          </p>
+        </solution>
+
+      </task>
+
+        <task workspace="6cm" xml:id="act-2-5-0-task-8">
+        <statement>
+          <p>
+            <m>\displaystyle r(x) = 4\cos(\sqrt{x}) - 3^{\sqrt{x}} + 7</m> 
+          </p>
+        </statement>
+        
+        <solution>
+          <p>This is a composite of functions.  <m>r(x) = f(g(x))</m> where <m>f(x) = 4\cos x - 3^x+7</m>
+            and <m>g(x)=\sqrt{x}</m>.
+          </p>
+        </solution>
+
+      </task>
+
+        <task workspace="6cm" xml:id="act-2-5-0-task-9">
+        <statement>
+          <p>
+            <m>\displaystyle r(x) = 4\cos(\sqrt{x}+2) - 3^{\sqrt{x}+2}</m> 
+          </p>
+        </statement>
+        
+        <solution>
+          <p>This is a composite of functions.  <m>r(x) = f(g(x))</m> where <m>f(x) = 4\cos x - 3^x</m>
+            and <m>g(x)=\sqrt{x}+2</m>.
+          </p>
+        </solution>
+        
+      </task>
+
+      <task workspace="6cm" xml:id="act-2-5-0-task-10">
+        <statement>
+          <p>
+The two functions that follow are each a composition of <em>three</em> basic functions.
+State formulas for <m>f</m>, <m>g</m>, and <m>h</m> so that the function can be written 
+as <m>f(g(h(x)))</m>.
+      </p>
+
+          <p>
+            <m>\displaystyle p(x) = 3^{\cos(\sqrt{x})}</m> 
+          </p>
+        </statement>
+        
+        <solution>
+          <p>This is a composite of three fundamental functions.  <m>p(x) = f(g(h(x)))</m> 
+            where <m>f(x) = 3^x</m>, <m>g(x)=\cos x</m>, and <m>h(x) = \sqrt{x}</m>.
+          </p>
+        </solution>
+        
+      </task>
+
+      <task workspace="6cm" xml:id="act-2-5-0-task-11">
+        <statement>
+          <p>
+            <m>\displaystyle p(x) = 2(\sqrt{\cos x})^3 + 3^{\sqrt{\cos x}}</m> 
+          </p>
+        </statement>
+        
+        <solution>
+          <p>This is a composite of three fundamental functions.  <m>r(x) = f(g(h(x)))</m> 
+            where <m>f(x) = 2x^3 + 3^x</m>, <m>g(x)=\sqrt{x}</m>, and <m>h(x) = \cos x</m>.
+          </p>
+        </solution>
+        
+      </task>
+
+    </activity>
+   
+</worksheet>

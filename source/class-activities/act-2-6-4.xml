@@ -1,0 +1,236 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2012-2019                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+<worksheet label="ws-act-2-6-4">
+   <title>Derivatives of Inverse Functions - Activity 2.6.5</title>
+    <activity xml:id="act-2-6-4" workspace="5cm">
+      <introduction>
+        <p>
+      The graph of <m>f(x)=x^3+x+1</m> is shown in <xref ref="figureFindInverseDerivativeGraph"/>.  
+      </p>
+
+      <figure xml:id="figureFindInverseDerivativeGraph">
+  <caption>The graph of <m>f(x)=x^3+x+1</m>.</caption> 
+  <image xml:id="FindInverseDerivativeGraphPic" width="75%">
+<description>
+Graph of a smooth increasing curve y = f(x) with a labeled point at (1, 3). The point is marked 
+on the curve, which rises steeply for x greater than 1 and more gradually for x less than 1.
+</description>
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=1.25] [domain=-3:3]
+\draw[step=1cm,color=gray!25] (-2,-2) grid (4,4);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (-2,0);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,-2);
+\draw[color=linecolor, line width=1.5pt,domain=-1.25:1.25,smooth]   plot (\x,{\x*\x*\x+\x+1}) node [right] at (1.5,3.75) {$y=f(x)$};
+\fill (1,3) circle (3pt) node [right] (1,3.25) {$(1,3)$};
+\foreach \x/\xtext in {  -1/-1, 1/1, 2/2, 3/3}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-1/-1, 1/1, 2/2, 3/3}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+      </introduction>
+      <task workspace="3cm" xml:id="act-2-6-4-task-0">
+        <statement>
+          <p>
+            Calculate the value of <m>f^{-1}(3)</m>.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            <m>f(1)=?</m>
+          </p>
+        </hint>
+        <answer>
+          <p><m>f^{-1}(3)=1</m>.
+          </p>
+        </answer>
+        
+      </task>
+      <task workspace="5cm" xml:id="act-2-6-4-task-1">
+        <statement>
+          <p>
+            Plot and label the point <m>(3,f^{-1}(3))</m>. 
+          </p>
+        </statement>
+        
+        <answer>
+          <p>The point <m>(3,1)</m> is the reflection of the point <m>(1,3)</m> across the line <m>y=x</m>.
+          </p>
+        </answer>
+        
+      </task>
+      <task workspace="5cm" xml:id="act-2-6-4-task-2">
+        <statement>
+          <p>
+            Sketch the graph of <m>f^{-1}(x)</m> on the grid given in <xref ref="figureFindInverseDerivativeGraph"/>. 
+          </p>
+        </statement>
+        
+        <answer>
+          <p>Note that the graph of <m>f^{-1}(x)</m> is a reflection about <m>y=x</m>.
+          </p>
+
+          <figure xml:id="figureFindInverseDerivativeGraphAns">
+  <caption>The graph of <m>f(x)=x^3+x+1</m> in solid blue and the graph of <m>f^{-1}(x)</m>
+    in dashed red.</caption> 
+  <image xml:id="FindInverseDerivativeGraphAnsPic" width="50%">
+<description>
+Graph of a blue function y = f(x) that passes through the point (1, 3), shown with the dashed 
+line y = x and the red dashed graph of its inverse passing through (3, 1). The two curves 
+reflect across the line y = x.
+</description>
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=1.25] [domain=-3:3]
+\draw[step=1cm,color=gray!25] (-2,-2) grid (4,4);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (-2,0);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,-2);
+\draw[color=linecolor, line width=1.5pt,domain=-1.25:1.25,smooth]   plot (\x,{\x*\x*\x+\x+1}) node [right] at (1.5,3.75) {$y=f(x)$};
+\draw[color=red, line width=1.5pt,dashed,domain=-1.25:1.25,smooth]   plot ({\x*\x*\x+\x+1},\x) node [right] at (3.75,1.25) {$y=f^{-1}(x)$};
+\draw[color=black, line width=1pt,domain=-1.5:3.5,dashed] plot (\x, \x) node [right] at (3,3) {$y=x$};
+\fill (1,3) circle (3pt) node [right] (1,3.25) {$(1,3)$};
+\fill (3,1) circle (3pt) node [right] (3,0.75) {$(3,1)$};
+\foreach \x/\xtext in {  -1/-1, 1/1, 2/2, 3/3}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-1/-1, 1/1, 2/2, 3/3}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+        </answer>
+        
+      </task>
+      <task workspace="5cm" xml:id="act-2-6-4-task-3">
+        <statement>
+          <p>
+Determine the value of <m>f'(1)</m>.
+Then, sketch the tangent line to <m>y=f(x)</m> through the point <m>(1,3)</m>.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            <m>f'(x)=3x^2+1</m>
+          </p>
+        </hint>
+        <solution>
+          <p><m>f'(x)=3x^2+1</m> gives <m>f'(1)=4</m>.  The equation of the tangent line is then
+            <m>y-3 = 4(x-1)</m> which is plotted in <xref ref="figureFindInverseDerivativeGraphLineAns"/>.   
+          </p>
+
+   <figure xml:id="figureFindInverseDerivativeGraphLineAns">
+  <caption>The graph of <m>f(x)=x^3+x+1</m> in solid blue and the graph of <m>f^{-1}(x)</m>
+    in dashed red.</caption> 
+  <image xml:id="FindInverseDerivativeGraphLineAnsPic" width="50%">
+<description>
+Graph of a blue function y = f(x) passing through (1, 3), shown with the dashed line y = x and the dashed red graph of its inverse passing through (3, 1). A black tangent line at (1, 3) with equation y = 4x − 1 is also drawn.
+</description>
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=1.25] [domain=-3:3]
+\draw[step=1cm,color=gray!25] (-2,-2) grid (4,4);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (-2,0);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,-2);
+\draw[color=linecolor, line width=1.5pt,domain=-1.25:1.25,smooth]   plot (\x,{\x*\x*\x+\x+1}) node [right] at (1.5,3.75) {$y=f(x)$};
+\draw[color=red, line width=1.5pt,dashed,domain=-1.25:1.25,smooth]   plot ({\x*\x*\x+\x+1},\x) node [right] at (3.75,1.5) {$y=f^{-1}(x)$};
+\draw[color=black, line width=1pt,domain=-0.25:1.25] plot (\x, {4*\x-1}) node[right] at (1,1.5) {$y=4x-1$};
+\draw[color=black, line width=1pt,domain=-1.5:3.5,dashed] plot (\x, \x) node [right] at (3,3) {$y=x$};
+\fill (1,3) circle (3pt) node [right] (1,3.25) {$(1,3)$};
+\fill (3,1) circle (3pt) node [right] (3,0.75) {$(3,1)$};
+\foreach \x/\xtext in {  -1/-1, 1/1, 2/2, 3/3}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-1/-1, 1/1, 2/2, 3/3}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+        </solution>
+        
+      </task>
+      <task workspace="6cm" xml:id="act-2-6-4-task-4">
+        <statement>
+          <p>
+Sketch the tangent line to <m>y=f^{-1}(x)</m> at <m>x=3</m>.
+What is the equation for this tangent line? 
+          </p>
+        </statement>
+        
+        <solution>
+          <p>
+            Since the slope is the reciprocal of the slope to the tangent line to <m>f(x)</m>
+            at <m>(1,3)</m>, we compute the tangent line at <m>x=3</m> as 
+            <me>
+              y-1 = \frac{1}{4}(x-3)
+            </me>.
+          </p>
+
+<figure xml:id="figureFindInverseDerivativeGraphLine2Ans">
+  <caption>The graph of <m>f(x)=x^3+x+1</m> in solid blue and the graph of <m>f^{-1}(x)</m>
+    in dashed red.  Tangent lines at <m>(1,3)</m> and <m>(3,1)</m> to each are shown.</caption> 
+  <image xml:id="FindInverseDerivativeGraphLine2AnsPic" width="50%">
+<description>
+Graph of a blue function y = f(x) passing through the point (1, 3), shown with the dashed line y = x and the dashed red graph of the inverse function passing through (3, 1). A black tangent line at (1, 3) with equation y = 4x − 1 and the corresponding reflected line at (3, 1) with equation y = ¼x + ¼ are also drawn.
+</description>
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=1.25] [domain=-3:3]
+\draw[step=1cm,color=gray!25] (-2,-2) grid (4,4);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (-2,0);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,-2);
+\draw[color=linecolor, line width=1.5pt,domain=-1.25:1.25,smooth]   plot (\x,{\x*\x*\x+\x+1}) node [right] at (1.5,3.75) {$y=f(x)$};
+\draw[color=red, line width=1.5pt,dashed,domain=-1.25:1.25,smooth]   plot ({\x*\x*\x+\x+1},\x) node [right] at (3.75,1.5) {$y=f^{-1}(x)$};
+\draw[color=black, line width=1pt,domain=-0.25:1.25] plot (\x, {4*\x-1}) node[right] at (1,1.5) {$y=4x-1$};
+\draw[color=black, line width=1pt,domain=-1.75:3.75] plot (\x, {0.25*\x+0.25}) node[right] at (1.5,0.25) {$y=\frac{1}{4}x+\frac{1}{4}$};
+\draw[color=black, line width=1pt,domain=-1.5:3.5,dashed] plot (\x, \x) node [right] at (3,3) {$y=x$};
+\fill (1,3) circle (3pt) node [right] (1,3.25) {$(1,3)$};
+\fill (3,1) circle (3pt) node [right] (3,0.75) {$(3,1)$};
+\foreach \x/\xtext in {  -1/-1, 1/1, 2/2, 3/3}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-1/-1, 1/1, 2/2, 3/3}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+        </solution>
+      </task>
+
+      <task workspace="6cm" xml:id="act-2-6-4-task-5">
+        <statement>
+          <p>
+Fill-in the blanks in the following sentence: The <m>\underline{\hspace{20mm}}</m> of the tangent 
+line to <m>y=f^{-1}(x)</m> at <m>x=\underline{\hspace{20mm}}</m> is the <m>x=\underline{\hspace{20mm}}</m> 
+of the slope of the tangent line to <m>y=f(x)</m> at <m>x=a</m>.
+Use items from this list: <alert> <m>a</m>,    <m>b</m> ,   <m>f(a)</m>  ,   <m>f(b)</m>  ,   concavity  ,   slope ,    negative   ,  reciprocal</alert>
+          </p>
+        </statement>
+<answer>
+  <p>
+    slope; <m>f(a)</m>; reciprocal
+  </p>
+</answer>
+      </task>
+    </activity>
+   
+</worksheet>
