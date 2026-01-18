@@ -38,7 +38,7 @@
       <title>Daily Prep</title>
       <!-- Include handouts -->
       <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
-      <xi:include href="./handouts/11PrepAverageVelocity.ptx"/>
+      <!-- <xi:include href="./handouts/11PrepAverageVelocity.ptx"/>
       <xi:include href="./handouts/12PrepNotionOfLimit.ptx"/> 
       <xi:include href="./handouts/13PrepDerivativeAtAPoint.ptx"/> 
       <xi:include href="./handouts/14PrepTheDerivativeFunction.ptx"/>
@@ -64,7 +64,7 @@
       <xi:include href="./handouts/44PrepFundamentalTheoremCalculus.ptx"/>
       <xi:include href="./handouts/51PrepConstructingAntiderivatives.ptx"/>
       <xi:include href="./handouts/52PrepSecondFundamentalThmOfCalculus.ptx"/>
-      <xi:include href="./handouts/53PrepIntegrationBySubstitution.ptx"/>
+      <xi:include href="./handouts/53PrepIntegrationBySubstitution.ptx"/> -->
     </chapter>
 
     <chapter xml:id="activities">
@@ -78,6 +78,11 @@
 
       <!-- Remove the example and replace with your own activities -->
       <!-- <xi:include href="./activities/01-intro-activity.ptx"/> -->
+
+      
+  <section xml:id="ACchapter1activities">
+    <title>Chapter 1 Activities</title>
+
       <xi:include href="./class-activities/act-1-1-1.xml"/>
       <xi:include href="./class-activities/act-1-1-2.xml"/>
       <xi:include href="./class-activities/act-1-1-3.xml"/>
@@ -98,6 +103,22 @@
       <xi:include href="./class-activities/act-1-7-3.xml"/>
       <xi:include href="./class-activities/act-1-8-1.xml"/>
       <xi:include href="./class-activities/act-1-8-2.xml"/> 
+
+  </section>
+  <section xml:id="ACchapter2activities">
+    <title>Chapter 2 Activities</title>
+      <xi:include href="./class-activities/act-2-1-1.xml"/>
+      <xi:include href="./class-activities/act-2-1-2.xml"/>
+      <xi:include href="./class-activities/act-2-1-3.xml"/>
+      <xi:include href="./class-activities/act-2-2-3.xml"/>
+      <xi:include href="./class-activities/act-2-3-1.xml"/>
+      <xi:include href="./class-activities/act-2-3-3.xml"/>
+  </section>
+
+    <section xml:id="ACchapter3activities">
+    <title>Chapter 3 Activities</title>
+      
+  </section>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
 
