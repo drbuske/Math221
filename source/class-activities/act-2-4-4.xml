@@ -1,0 +1,248 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2012-2025                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+<worksheet label="ws-act-2-4-4">
+   <title>Derivatives of Other Trigonometric Functions - Activity 2.4.5</title>
+    <activity xml:id="act-2-4-4" workspace="3cm">
+      <introduction>
+        <p>
+       The purpose of this activity is to confidently produce the derivative of the secant 
+       function by hypothesizing its properties, deriving its formula algebraically, and 
+       then looking back to see if our answer is reasonable. 
+
+      </p>
+      </introduction>
+      <task workspace="5cm" xml:id="act-2-4-4-task-0">
+        <statement>
+          <p>
+            Using <em>GeoGebra</em>, graph <m>f(x) = \sec x</m>.
+<em>GeoGebra</em> can be found by “googling” the phrase “GeoGebra classic”.
+          </p>
+        </statement>
+        
+        <answer>
+          <p>
+            <figure xml:id="GraphOfSecX">
+              <caption>GeoGebra gives the graph of <m>\sec(x)</m>.</caption>
+              <image source="GraphOfSecX.jpg" width="90%">     
+<description>
+Graph of f(x) = sec(x), shown as repeating U-shaped and inverted U-shaped branches with vertical asymptotes at odd multiples of π/2.
+</description>
+              </image>
+            </figure>
+          </p>
+        </answer>
+        
+      </task>
+      <task workspace="6cm" xml:id="act-2-4-4-task-1">
+        <statement>
+          <p>
+            <ol marker="(i)">
+<li>
+  <p>
+    Is <m>f(x) = \sec x</m> continuous?
+  </p>
+</li>
+
+<li>
+  <p>
+    True or False: We expect <m>f'(x)</m> to be continuous.
+    Defend your response.
+  </p>
+</li>
+</ol>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Remember that the derivative is slope.
+          </p>
+        </hint>
+        <answer>
+          <p><ol marker="(i)">
+            <li>
+              <p>
+                No.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                False.  <m>\sec(x)</m> is not continuous so we should not expect its derivative to be 
+                continuous either.
+              </p>
+            </li>
+          </ol>
+          </p>
+        </answer>
+
+      </task>
+      <task workspace="7cm" xml:id="act-2-4-4-task-2">
+        <statement>
+          <p>
+            <ol marker="(i)">
+<li>
+  <p>
+    <m>f(x) = \sec x</m> is periodic. What is its period?
+  </p>
+</li>
+
+<li>
+  <p>
+    True or False: We expect <m>f'(x)</m> to be periodic.
+    Defend your response.
+  </p>
+</li>
+
+<li>
+  <p>
+    At various <m>x</m>-values, we expect <m>f'(x) = 0</m>.
+    In fact, we expect this to happen periodically.
+    How often should we expect <m>f'(x)=0</m>?
+  </p>
+</li>
+</ol>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            This of period as the length of the motif.
+          </p>
+        </hint>
+        <answer>
+          <p><ol marker="(i)">
+            <li>
+              <p>
+                <m>2\pi</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                True.  The slope is periodic if the function is periodic.  
+              </p>
+            </li>
+            <li>
+              <p>
+                Every <m>\pi</m> units.
+              </p>
+            </li>
+          </ol>
+          </p>
+        </answer>
+        
+      </task>
+      <task workspace="6cm" xml:id="act-2-4-4-task-3">
+        <statement>
+          <p>
+           <ol marker="(i)">
+<li>
+  <p>
+    Between <m>-\pi/2</m> and <m>\pi/2</m>, do we expect <m>f'(x)</m> to be increasing or decreasing? Why?
+  </p>
+</li>
+
+<li>
+  <p>
+    Between <m>\pi/2</m> and <m>3\pi/2</m>, do we expect <m>f'(x)</m> to be increasing or decreasing? Why?
+  </p>
+</li>
+</ol>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Think about the slope.
+          </p>
+        </hint>
+        <answer>
+          <p>
+            <ol marker="(i)">
+              <li>
+                <p>
+                  Increasing.  <m>\sec(x)</m> is concave up.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Decreasing.  <m>\sec(x)</m> is concave down.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </answer>
+        
+      </task>
+
+      <task workspace="6cm" xml:id="act-2-4-4-task-4">
+        <statement>
+          <p>
+             In <em>GeoGebra</em>, use the second input box to estimate <m>f'(x)</m> by typing the 
+             expression <m>\displaystyle \frac{f(x+0.01)-f(x)}{0.01}</m>.
+<em>GeoGebra</em> will label this as <m>g(x)</m> and plot it for you.
+Does the estimated graph of <m>f'(x)</m> found in this manner appear to have all of the 
+properties guessed in parts (b)-(d)? If not, which ones does it fail to have?
+          </p>
+        </statement>
+
+        <answer>
+          <p>Yes, it has all of the expected properties.
+          </p>
+          <figure xml:id="GraphOfSecXPDerivative">
+              <caption>GeoGebra gives the graph of <m>\sec(x)</m> and an estimate of its 
+                derivative by using a difference quotient.</caption>
+              <image source="GraphOfSecXPDerivative.jpg" width="90%">   
+<description>
+A GeoGebra screen showing the graph of f(x) = sec(x) in solid blue and the difference quotient g(x) = (sec(x + 0.01) − sec(x)) / 0.01 in dashed red. The graphs display repeated vertical asymptotes at multiples of π/2.
+</description>
+              </image>
+            </figure>
+        </answer>
+      </task>
+
+      <task workspace="6cm" xml:id="act-2-4-4-task-5">
+        <statement>
+          <p>
+           Using the quotient rule, compute <m>f'(x)</m> if <m>f(x) = \sec x</m>.
+Use trigonometric identities to simplify your result.
+          </p>
+        </statement>
+        <hint>
+          <p><m>\displaystyle \sec(x) = \frac{1}{\cos(x)}</m>
+          </p>
+        </hint>
+        <answer>
+          <p>
+            <md><mrow>\displaystyle \frac{d}{dx}\left( \frac{1}{\cos(x)} \right) = \amp \mathstrut \frac{ (\cos(x))(0)-(1)(-\sin(x))}{\cos^2(x)} </mrow>
+              <mrow> = \amp \mathstrut \frac{\sin(x)}{\cos^2(x)} </mrow>
+              <mrow> = \amp \mathstrut \tan(x)\sec(x) </mrow>
+            </md>
+          </p>
+        </answer>
+      </task>
+
+      <task workspace="6cm" xml:id="act-2-4-4-task-6">
+        <statement>
+          <p>
+In the third box in <em>GeoGebra</em>, enter the formula for <m>f'(x)</m> you found above.
+Does the graph <em>GeoGebra</em> produces appear to be similar to the estimate you produced in part (e)? Should it? 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Yes and yes.
+          </p>
+        </answer>
+      </task>
+    </activity>
+   
+</worksheet>
