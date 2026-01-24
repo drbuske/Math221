@@ -1,0 +1,174 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2012-2025                                                  -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+<worksheet label="ws-act-4-4-5">
+   <title>The Fundamental Theorem of Calculus - Activity 4.4.5</title>
+    <activity xml:id="act-4-4-5" workspace="5cm">
+      <introduction>
+        <p>
+          Water is leaking out of a tank at a rate of <m>r(t)</m> gallons per hour, where <m>t</m> is measured in hours.  The function <m>r(t)</m> is given in <xref ref="Act445Pic1"/>.  On the interval <m>0 \leq t \leq 5</m>, the formula for <m>r</m> is <m>r(t) = 0.6t^2 - 6t+25</m>.  On the interval <m>25 \leq t \leq 30</m>, the formula for <m>r</m> is <m>r(t) = 0.6t^2 - 30t+385</m>.  
+        </p>
+
+<figure xml:id="Act445Pic1">
+<caption>Water leaks out of a tank at a rate of <m>r(t)</m> gallons per hours.</caption>
+<image width="50%" source="images/TankLeaking.jpg">
+<description>
+Graph of r(t) versus time t, showing a curve that starts above 20, decreases steeply to about 
+10 near t = 5, remains nearly constant around 10 from about t = 5 to t = 25, then rises steeply 
+again to above 20 by t = 30.
+</description>
+</image>
+</figure>
+      </introduction>
+      <task workspace="9cm" xml:id="act-4-4-5-task-0">
+        <statement>
+          <p>
+            What is the exact total number of gallons that have leaked out of the tank during the first 5 hours?
+          </p>
+        </statement>
+        <hint>
+          <p>
+            What are the units on the area of a rectangle found in a Riemann sum for the function <m>y= r(t)</m>?
+          </p>
+        </hint>
+        <answer>
+          <p>
+            75 gallons
+          </p>
+        </answer>
+        <solution>
+          <p>
+             <md><mrow>\int_0^{5} r(t) \, dt = \mathstrut \amp \int_0^5 0.6t^2 - 6t + 25 \, dt </mrow>
+<mrow> =\mathstrut \amp  \left. \left( 0.2 t^3 -3 t^2 + 25t \right) \right|_{t=0}^{t=5}</mrow>
+<mrow>=\mathstrut \amp  \left( -0.2 (5)^3 -3(5)^2 + 25(5) \right) - (0 - 0 + 0)</mrow>
+<mrow>=\mathstrut \amp  75 \ \text{gallons}</mrow></md>.
+            Thus,
+             exactly <m>75</m> gallons leaked out of the tank in the first 5 hours.
+          </p>
+        </solution>
+      </task>
+      <task workspace="9cm" xml:id="act-4-4-5-task-1">
+        <statement>
+          <p>
+            Let <m>R(t)</m> be an antiderivative of <m>r(t)</m>.  What is the meaning of <m>R(30)-R(0)</m> in the context of the tank leaking?  Include units on your answer. 
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Use the FTC.
+          </p>
+        </hint>
+        <answer>
+          <p><m>R(30) - R(0) = \int_0^{30} R'(t) \, dt = \int_0^{30} r(t) \, dt</m> is the total number of gallons that have leaked
+out over the time interval <m>[0,30]</m>.  That is, during the first 30 hours.  
+          </p>
+        </answer>
+        <solution>
+          <p>
+            We observe first that by the Total Change Theorem,
+            <m>R(30) - R(0) = \int_0^{30} R'(t) \, dt = \int_0^{30} r(t) \, dt</m>,
+            and therefore, as discussed in (a),
+            the meaning of this value is the total amount that has leaked on <m>[0,30]</m>.
+          </p>
+        </solution>
+      </task>
+      <task workspace="3cm" xml:id="act-4-4-5-task-2">
+        <statement>
+          <p>
+            Determine the exact average rate at which the tank is leaking during these 30 hours. Hint: Use symmetry to your advantage.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Recall the formula for <m>r_{\operatorname{AVG} [0,30]}</m>.
+          </p>
+        </hint>
+        <answer>
+          <p>
+            The exact average rate at which the tank leaked on <m>0 \le t \le 30</m> is
+            <me>
+              r_{\operatorname{AVG} [0,30]} = \frac{1}{30-0} \int_0^{30} r(t) \, dt = \frac{1}{30} \cdot 350 = \frac{350}{30} \approx 11.67 \ \text{gal/hr}
+            </me>.
+          </p>
+        </answer>
+        <solution>
+          <p>
+            The exact average rate at which the person burned calories on <m>0 \le t \le 30</m> is given by
+            <me>
+              r_{\text{AVG} [0,30]} = \frac{1}{30-0} \int_0^{30} r(t) \, dt
+            </me>.
+            To calculate <m>\int_0^{30} r(t) \, dt</m>,
+            we recognize that <m>r(t)</m> is defined in piecewise fashion,
+            and use the additive property of the definite integral,
+            which tells us that
+            <me>
+              \int_0^{30} r(t) \, dt = \int_0^{5} r(t) \, dt +  \int_{5}^{25} r(t) \, dt +  \int_{25}^{30} r(t) \, dt
+            </me>.
+            We know from our work in (a) that <m>\int_0^{5} r(t) \, dt = 75</m>.
+            Since <m>r(t) = 10</m> is constant on <m>5 \le t \le 25</m>,
+            it follows that <m>\int_{5}^{25} r(t) \, dt  = 10 \cdot 20 = 200</m>.
+            And finally,
+            it is straightforward to show using symmetry
+            on <m>25 \le t \le 30</m> that <m>\int_{25}^{30} c(t) \, dt = 75</m>.
+            Hence,
+            <md><mrow>\int_0^{30} r(t) \, dt =\mathstrut \amp  \int_0^{5} r(t) \, dt +  \int_{5}^{25} r(t) \, dt +  \int_{25}^{30} r(t) \, dt</mrow><mrow>=\mathstrut \amp  75 + 200 + 75</mrow><mrow>=\mathstrut \amp  350 \ \text{gallons}</mrow></md>.
+            Now, it follows that the exact average rate at which the tank is leaking on <m>[0,30]</m> is
+            <me>
+              r_{\text{AVG} [0,30]} = \frac{1}{30-0} \int_0^{30} r(t) \, dt = \frac{1}{30} \cdot 350 = \frac{350}{30} \approx 11.67 \ \text{gal/hr}
+            </me>.
+          </p>
+        </solution>
+      </task>
+      <task workspace="4cm" xml:id="act-4-4-5-task-3">
+        <statement>
+          <p>
+            At what time(s), if any, is the instantaneous rate at which the tank is leaking equal to the average rate at which the tank leaks, on the time interval <m>0 \leq t \leq 30</m>?
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Think carefully about which function tells you the instantaneous rate at which the tank is leaking.
+          </p>
+        </hint>
+        <answer>
+          <p>
+            One time at which the instantaneous rate at which the tank is leaking equals the average rate on <m>[0,30]</m> is <m>t = \frac{10}{3}</m>.
+          </p>
+        </answer>
+        <solution>
+          <p>
+            It makes sense intuitively that there must be at least one time at which the instantaneous rate at which the tank is leaking equals the average rate at which the tank is leaking,
+            as it would be impossible for a continuous instantaneous rate of change to always be above its average value.
+            Since we know from (c) that <m>r_{\text{AVG} [0,30]} = \frac{35}{3}</m>,
+            and <m>r(t)</m> tells us the instantaneous rate at which the tank is leaking,
+            it follows that we want to solve the equation
+            <me>
+              r(t) = \frac{35}{3}
+            </me>.
+            From the graph,
+            it appears that there are two such values of <m>t</m> for which this equation is true,
+            one in the first five minutes, and one in the last five.
+            For instance, solving
+            <me>
+              0.6t^2 -6t + 25 = \frac{35}{3}
+            </me>,
+            it follows that <m>t = \frac{10}{3} \approx 3.33</m>,
+            (the only solution that lies in <m>0 \le t \le 5</m>).
+            So one time at which the instantaneous rate at which the tank is leaking equals the average rate on <m>[0,30]</m> is <m>t = \frac{10}{3} \approx 3.33</m>.
+            Similar reasoning leads to the second time, <m>t = \frac{80}{3} \approx 26.67</m> that lies in <m>[25,30]</m>.
+          </p>
+        </solution>
+      </task>
+    </activity>
+   
+</worksheet>

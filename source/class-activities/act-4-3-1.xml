@@ -1,0 +1,175 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2012-2019                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+<worksheet label="ws-act-4-3-1">
+   <title>The Definite Integral - Activity 4.3.2</title>
+    <activity xml:id="act-4-3-1" workspace="6cm">
+      <introduction>
+        <p>
+      Use known geometric formulas and the net signed area interpretation of the definite integral to evaluate each of the definite integrals below.
+    </p>
+        <p/>
+      </introduction>
+      <task workspace="5cm" xml:id="act-4-3-1-task-0">
+        <statement>
+          <p>
+            <m>\int_0^1 3x \, dx</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Sketch the region bounded by <m>y = 3x</m> and the <m>x</m>-axis on <m>[0,1]</m>.
+          </p>
+        </hint>
+        <answer>
+          <p><m> \int_0^1 3x \, dx = \frac{3}{2}</m>.
+          </p>
+        </answer>
+        <solution>
+          <p>
+            Because <m>y = 3x</m> and the <m>x</m>-axis bound a triangle with base of length 1 and height <m>3</m> on the interval <m>[0,1]</m>,
+            it follows that
+            <me>
+              \int_0^1 3x \, dx = \frac{1}{2} \cdot 1 \cdot 3 = \frac{3}{2}
+            </me>.
+          </p>
+        </solution>
+      </task>
+      <task workspace="6cm" xml:id="act-4-3-1-task-1">
+        <statement>
+          <p>
+            <m>\int_{-1}^4 (2-2x) \, dx</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Sketch the region bounded by
+            <m>y = 2-2x</m> and the <m>x</m>-axis on <m>[-1,4]</m>.
+          </p>
+        </hint>
+        <answer>
+          <p><m> \int_{-1}^4 (2-2x) \, dx = -5</m>.
+          </p>
+        </answer>
+        <solution>
+          <p>
+            For <m>\int_{-1}^4 (2-2x) \, dx</m>,
+            we first sketch the region bounded by the function,
+            as shown below.
+          </p>
+
+          <figure xml:id="Act432Pic2">
+  <caption>The graph of <m>y=2-2x</m> on <m>[-1,4]</m>.  Regions above and below are shaded.  
+  The blue region contributes positive value to the definite integral; the red region contributes negative value.</caption>
+          <image width="65%" source="images/4_3_Act1bSoln">
+<description>
+Graph of the line y = 2 − 2x with marked points at (−1, 4), (1, 0), and (4, −6). The region above 
+the x-axis between x = −1 and x = 1 is shaded blue and labeled A₁, while the region below the 
+x-axis between x = 1 and x = 4 is shaded red and labeled A₂.
+</description>
+          </image>
+        </figure>
+
+          <p>
+            The line creates two triangles,
+            one with area <m>A_1 = \frac{1}{2} \cdot 2 \cdot 4 = 4</m> and the other with area <m>A_2 = \frac{1}{2} \cdot 3 \cdot 6 = 9</m>.
+            Since the latter area corresponds to a region below the <m>x</m>-axis,
+            we associate a negative sign to it, and hence find that
+            <me>
+              \int_{-1}^4 (2-2x) \, dx = A_1 - A_2 = 4 - 9 = -5
+            </me>.
+          </p>
+        </solution>
+      </task>
+      <task workspace="7cm" xml:id="act-4-3-1-task-2">
+        <statement>
+          <p>
+            <m>\int_{-1}^0 -\sqrt{1-x^2} \, dx</m>
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Observe that <m>y = -\sqrt{1-x^2}</m> is the bottom quarter the circle whose equation is <m>x^2 + y^2 = 1</m>.
+          </p>
+        </hint>
+        <answer>
+          <p><m> \int_{-1}^0 -\sqrt{1-x^2} \, dx = -\frac{\pi}{4}</m>.
+          </p>
+        </answer>
+        <solution>
+          <p>
+            For <m>\int_{-1}^0 -\sqrt{1-x^2} \, dx</m>,
+            we simply observe that this function is the bottom quarter of a circle of radius 1, 
+            and thus the bounded region is a quarter disk of radius 1, thus having an area 
+            of <m>\frac{\pi}{4}</m>.
+            Therefore,
+            <me>
+              \int_{-1}^0 -\sqrt{1-x^2} \, dx = -\frac{\pi}{4}
+            </me>.
+          </p>
+        </solution>
+      </task>
+      <task workspace="6cm" xml:id="act-4-3-1-task-3">
+        <statement>
+          <p><m>\int_{-3}^4 g(x) \, dx</m>,
+            where <m>g</m> is the function pictured in <xref ref="Act432Pic4"/>.
+            Assume that each portion of <m>g</m> is either part of a line or part of a circle.
+          </p>
+<figure xml:id="Act432Pic4">
+  <caption>The graph of <m>g(x)</m>. </caption>
+          <image width="65%" source="images/4_3_Act1">
+<description>
+Graph of y = g(x) on Cartesian axes showing a piecewise curve. Starting near x = −3, the 
+graph rises to about g(−2) = 1, then curves downward crossing the x-axis near x = −1 and 
+reaching a flat minimum at y = −1 around x = 0 to 1. It then rises, crossing the x-axis 
+near x = 2, and forms a rounded hump peaking near y = 1 around x = 3 before returning to 
+zero by x = 4.
+</description>
+          </image>
+        </figure>
+
+        </statement>
+        <hint>
+          <p>
+            Use known formulas for the area of a triangle,
+            square, or circle appropriately.
+          </p>
+        </hint>
+        <answer>
+          <p><m> \int_{-3}^4 g(x) \, dx = \frac{3\pi}{4} - \frac{3}{2}</m>.
+          </p>
+        </answer>
+        <solution>
+          <p>
+            Finally, for <m>\int_{-3}^4 g(x) \, dx</m>,
+            where <m>g</m> is the function pictured in the problem,
+            we consider the function on seven consecutive subintervals of length 1.
+            Observe that on <m>[-3,-2]</m>,
+            the bounded area is <m>\frac{1}{2}</m>.
+            On <m>[-2,-1]</m>, the area is <m>\frac{1}{4} \pi</m>.
+            Similarly,
+            on the next five subintervals of length 1, the areas bounded are respectively <m>\frac{1}{2}</m>,
+            <m>1</m>, <m>\frac{1}{2}</m>,
+            <m>\frac{1}{4} \pi</m>,
+            and <m>\frac{1}{4} \pi</m>.
+            Thus, the value of the integral is
+            <me>
+              \int_{-3}^4 g(x) \, dx = \frac{1}{2} + \frac{\pi}{4} - \frac{1}{2} - 1 - \frac{1}{2} + \frac{\pi}{4} + \frac{\pi}{4} = \frac{3\pi}{4} - \frac{3}{2}
+            </me>,
+            which is approximately 0.8562.
+          </p>
+        </solution>
+      </task>
+    </activity>
+   
+</worksheet>
