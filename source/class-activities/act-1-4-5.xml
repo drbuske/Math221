@@ -1,0 +1,173 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2012-2025                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+<worksheet label="ws-act-1-4-5">
+   <title>The Derivative Function - Activity 1.4.5</title>
+    <activity xml:id="act-1-4-5" workspace="3cm">
+      <introduction>
+        <p>
+          The graph of a function <m>f</m> is given in <xref ref="Act145Pic1"/>.  
+<figure xml:id="Act145Pic1">
+<caption>The graph of <m>f(x)</m>.</caption>
+<image width="50%">
+<description>
+A piecewise linear graph on an x–y coordinate plane. The graph starts near (–4.5, 4.5) and slopes downward to a low point at about (–1, 1). From there it rises 
+sharply to a peak around (1, 5), then slopes downward again to roughly (4, 3). The axes are labeled x and y, with gridlines visible.
+</description>
+<latex-image>
+\begin{tikzpicture}[thick,scale=0.9] [domain=-5:5]
+\draw[step=1cm,color=gray!50] (-5,-2) grid (5,5);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5,0) node [below] at (4.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,5) node [right] at (0,4.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-2);
+\draw[color=blue, line width=2pt,domain=-5:-1]   plot (\x,{-\x});
+\draw[color=blue, line width=2pt,domain=-1:1]   plot (\x,{2*\x+3});
+\draw[color=blue, line width=2pt,domain=1:5]   plot (\x,{-0.5*\x+5.5});
+\foreach \x/\xtext in {-4/-4, -3/-3, -2/-2, -1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in { -1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+</latex-image>
+</image>
+</figure>
+      </p>
+      </introduction>
+      <task workspace="2cm" xml:id="act-1-4-5-task-0">
+        <statement>
+          <p>
+            On <xref ref="Act145Pic1"/>, carefully sketch the graph of <m>f'</m> from the graph of <m>f</m>. 
+          </p>
+        </statement>
+        <hint>
+          <p>
+            What is the slope of the function at every point?
+          </p>
+        </hint>
+        <answer>
+          <p>
+<figure xml:id="Act145Ans">
+<caption>The graph of <m>f(x)</m> (in blue) and <m>f'(x)</m> (in red,dashed).</caption>
+<image width="50%">
+<description>
+A graph on an x–y coordinate plane showing a piecewise linear blue function and its derivative marked in red. The blue graph descends from the left to a low point 
+near (–1, 1), then rises sharply to a peak around (1, 5), and slopes downward again toward the right. Red dashed horizontal segments represent derivative values: 
+a segment around y = –1 from x less than –1 with open circles at boundaries, a segment at y = 2 between –1 and 1 with open circles at x = –1 and x = 1, and a segment at 
+y ≈ –0.5 for x greater than 1 with an open circle at x = 1. The axes include gridlines, labeled x and y.
+</description>
+<latex-image>
+\begin{tikzpicture}[thick,scale=0.9] [domain=-5:5]
+\draw[step=1cm,color=gray!50] (-5,-2) grid (5,5);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5,0) node [below] at (4.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,5) node [right] at (0,4.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-2);
+\draw[color=blue, line width=2pt,domain=-5:-1]   plot (\x,{-\x});
+\draw[color=red, line width=2pt, domain=-5:-1,dashed] plot(\x,-1);
+\draw[color=blue, line width=2pt,domain=-1:1]   plot (\x,{2*\x+3});
+\draw[color=red, line width=2pt, domain=-1:1,dashed] plot(\x,2);
+\draw[color=blue, line width=2pt,domain=1:5]   plot (\x,{-0.5*\x+5.5});
+\draw[color=red, line width=2pt, domain=1:5,dashed] plot(\x,-0.5);
+\fill [red] (-1,-1) circle(3pt);
+\fill [white] (-1,-1) circle(2pt);
+\fill [red] (-1,2) circle(3pt);
+\fill [white] (-1,2) circle(2pt);
+\fill [red] (1,2) circle(3pt);
+\fill [white] (1,2) circle(2pt);
+\fill [red] (1,-0.5) circle(3pt);
+\fill [white] (1,-0.5) circle(2pt);
+\foreach \x/\xtext in {-4/-4, -3/-3, -2/-2, -1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in { -1/-1, 1/1, 2/2, 3/3, 4/4}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+</latex-image>
+</image>
+</figure>
+
+          </p>
+        </answer>
+        </task>
+      <task workspace="2.2cm" xml:id="act-1-4-5-task-1">
+        <statement>
+          <p>
+            Determine values of <m>f(3)</m> and <m>f'(3)</m> from the graph of <m>f(x)</m> (if they exist).  
+          </p>
+        </statement>
+        <answer>
+          <p><m>f(3)=3</m> and <m>f'(3)=-0.5</m>.
+          </p>
+        </answer>
+      </task>
+      <task workspace="6cm" xml:id="act-1-4-5-task-2">
+        <statement>
+          <p>
+            Do you think <m>f'(1)</m> exists?  Defend your answer.  
+          </p>
+        </statement>
+        <answer>
+          <p>It does not exist since the slope radically changes at <m>x=1</m>.  
+          </p>
+        </answer>
+      </task>
+      <task workspace="6cm" xml:id="act-1-4-5-task-3">
+        <statement>
+          <p>
+            Compare the values of 
+<m>\displaystyle \lim_{h \rightarrow 0^-} \frac{f(1+h)-f(1)}{h}</m> and  <m>\displaystyle \lim_{h \rightarrow 0^+} \frac{f(1+h)-f(1)}{h}</m>.  
+What does this tell us?  
+          </p>
+        </statement>
+        <hint>
+          <p>
+            To the left of <m>x=1</m>, what is the slope of the function?  To the right of <m>x=1</m>?, what is this slope?  
+          </p>
+        </hint>
+        <answer>
+          <p>
+<m>\displaystyle \lim_{h \rightarrow 0^-} \frac{f(1+h)-f(1)}{h} = 2</m> and <m>\displaystyle \lim_{h \rightarrow 0^+} \frac{f(1+h)-f(1)}{h} = -0.5</m>.  Since these values are different, the two-sided limit <m>\displaystyle \lim_{h \rightarrow 0} \frac{f(1+h)-f(1)}{h}</m> which represents <m>f'(1)</m> does not exist.  
+          </p>
+        </answer>
+              </task>
+      <task workspace="10cm" xml:id="act-1-4-5-task-4">
+        <statement>
+          <p>
+            Write a piecewise function describing <m>f'(x)</m>.  
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>f'(x) = \begin{cases} -1 {\textrm{ if }} -5 &lt; x &lt; -1 \\ 2 {\textrm{ if }} -1 &lt; x &lt; 1 \\ -0.5 {\textrm{ if }} 1 &lt; x &lt; 5 \end{cases}</m>
+          </p>
+        </answer>
+        </task>
+      <task workspace="10cm" xml:id="act-1-4-5-task-5">
+        <statement>
+          <p>
+            Does <m>f</m> or <m>f'</m> have a larger domain?  Will this always be true?  Why or why not?  
+          </p>
+        </statement>
+        <hint>
+          <p>
+            What is the domain of <m>f'</m>?
+          </p>
+        </hint>
+        <answer>
+          <p>The domain of <m>f</m> is <m>[-5,5]</m>.  The domain of <m>f'</m> is <m> [-5,-1) \cup (-1,1) \cup (1,5] </m>.  So <m>f</m> has the larger domain.  This will always be true since the derivative does not exist if the function is not defined at a given point.  
+          </p>
+        </answer>  
+      </task>
+    </activity>
+   
+</worksheet>
