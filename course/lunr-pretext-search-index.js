@@ -2672,6 +2672,15 @@ var ptx_lunr_docs = [
   "number": "65",
   "title": "",
   "body": "  Evaluate each of the following definite integrals exactly through an appropriate -substitution.          Let .    .    Let , so and . Note that implies and implies . Thus, .           and form a function-derivative pair    .    First consider the corresponding indefinite integral, , and let so that . We see , and thus . Applying this antiderivative to the definite integral, we see that .                .    Using the substitution , it follows that . Hence, .    "
+},
+{
+  "id": "past_exams",
+  "level": "1",
+  "url": "past_exams.html",
+  "type": "Chapter",
+  "number": "",
+  "title": "Past Exams",
+  "body": " Past Exams  "
 }
 ]
 
