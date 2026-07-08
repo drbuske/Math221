@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: tacoma                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Daily Prep 1.4 - The Derivative Function</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="MATH 221">
+<meta property="og:title" content="MATH 221">
+<meta property="book:title" content="MATH 221">
+<meta name="twitter:description" content="Calculus I">
+<meta property="og:description" content="Calculus I">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.43"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.9';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.846a0d6fafaa99e0.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bbcfc02849ebc023.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="http://drbuske.github.io/Math221"><img src="external/SCSU_StC_Pri_DkBlkBG.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">MATH 221</span> <span class="subtitle">Calculus I</span></a></h1>
+<p class="byline">Dale Buske</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-embed-button" class="ptx-embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><dialog class="ptx-dialog ptx-embed-popup" id="ptx-embed-popup"><div class="ptx-embed-popup-controls">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<button class="ptx-embed-close-button button" id="ptx-embed-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-embed-code-container">
+<textarea class="ptx-embed-code-textbox" id="ptx-embed-code-textbox" readonly aria-label="Embed"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button autofocus="autofocus" class="ptx-embed-copy-button button" id="ptx-embed-copy-button" title="Copy"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="handouts-4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="handouts.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="handouts-6.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth1 focused" data-preexpanded-levels="0" data-max-levels="1"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Daily Prep</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-handouts">
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-2.html" class="internal"><span class="title">Daily Prep 1.1 - Average Velocity</span></a></div>
+<ul id="ptx-toc-group-handouts-2" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-7" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-8" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-2.html#handouts-2-9" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-2.html#DP11Answers" class="internal"><span class="title">Answers</span></a></div>
+<ul id="ptx-toc-group-DP11Answers" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-2.html#subsec-Toprepareforclass11" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-2.html#subsec-Afterclass11" class="internal"><span class="title">After class</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-3.html" class="internal"><span class="title">Daily Prep 1.2 - The Notion of a Limit</span></a></div>
+<ul id="ptx-toc-group-handouts-3" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-5" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-6" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-3.html#handouts-3-8" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-4.html" class="internal"><span class="title">Daily Prep 1.3 - The Derivative of a Function at a Point</span></a></div>
+<ul id="ptx-toc-group-handouts-4" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#Overview13" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-13Basiclearningobjectives" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-13Toprepareforclass" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-13Afterclass" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-13Advancedlearningobjectives" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-4.html#sec-Additionalsuggestions13" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-4.html#secAnswers13" class="internal"><span class="title">Answers</span></a></div>
+<ul id="ptx-toc-group-secAnswers13" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-4.html#subsec-Toprepareforclass13" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-4.html#subsec-Afterclass13" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-4.html#subsec-Additionalsuggestions13" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout contains-active">
+<div class="toc-title-box"><a href="handouts-5.html" class="internal"><span class="title">Daily Prep 1.4 - The Derivative Function</span></a></div>
+<ul class="structural toc-item-list active" id="ptx-toc-group-handouts-5">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-5.html#handouts-5-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-5.html#Basiclearningobjectives14" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-5.html#Toprepareforclass14" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-5.html#Afterclass13" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-5.html#secAdvancedlearningobjectives14" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-5.html#sec-Additionalsuggestions14" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-5.html#handouts-5-8" class="internal"><span class="title">Answers</span></a></div>
+<ul id="ptx-toc-group-handouts-5-8" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-5.html#subsec-Toprepareforclass14" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="handouts-5.html#subsubsec-Additionalsuggestions14" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-6.html" class="internal"><span class="title">Daily Prep 1.5 - Interpreting, Estimating, and Using the Derivative</span></a></div>
+<ul id="ptx-toc-group-handouts-6" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-6.html#handouts-6-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-6.html#handouts-6-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-6.html#sec-Toprepareforclass15" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-6.html#handouts-6-5" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-6.html#sec-Advancedlearningobjectives15" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-6.html#handouts-6-7" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-7.html" class="internal"><span class="title">Daily Prep 1.6 - The Second Derivative</span></a></div>
+<ul id="ptx-toc-group-handouts-7" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-7.html#handouts-7-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-7.html#handouts-7-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-7.html#handouts-7-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-7.html#handouts-7-5" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-7.html#handouts-7-6" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-7.html#handouts-7-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-7.html#handouts-7-8" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-8.html" class="internal"><span class="title">Daily Prep 1.7 - Limits, Continuity, and Differentiability</span></a></div>
+<ul id="ptx-toc-group-handouts-8" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-8.html#handouts-8-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-8.html#handouts-8-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-8.html#sec-Toprepareforclass17" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-8.html#sec-Afterclass17" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-8.html#sec-Advancedlearningobjectives17" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-8.html#sec-Additionalsuggestions17" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-8.html#sec-Answers17" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-9.html" class="internal"><span class="title">Daily Prep 1.8 - The Tangent Line Approximation</span></a></div>
+<ul id="ptx-toc-group-handouts-9" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-9.html#handouts-9-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-9.html#handouts-9-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-9.html#handouts-9-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-9.html#handouts-9-5" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-9.html#handouts-9-6" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-9.html#handouts-9-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-9.html#handouts-9-8" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-10.html" class="internal"><span class="title">Daily Prep 2.1 - Elementary Differentiation Rules</span></a></div>
+<ul id="ptx-toc-group-handouts-10" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-10.html#handouts-10-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-10.html#handouts-10-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-10.html#sec-Toprepareforclass21" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-10.html#sec-Afterclass21" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-10.html#sec-Advancedlearningobjectives21" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-10.html#sec-Additionalsuggestions21" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-10.html#sec-Answers21" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-11.html" class="internal"><span class="title">Daily Prep 2.2 - The Sine and Cosine Functions</span></a></div>
+<ul id="ptx-toc-group-handouts-11" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-11.html#handouts-11-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-11.html#handouts-11-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-11.html#sec-Toprepareforclass22" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-11.html#sec-Afterclass22" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-11.html#sec-Advancedlearningobjectives22" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-11.html#sec-Additionalsuggestions22" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-12.html" class="internal"><span class="title">Daily Prep 2.3 - The Product and Quotient Rules</span></a></div>
+<ul id="ptx-toc-group-handouts-12" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-12.html#handouts-12-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-12.html#sec-Basiclearningobjectives23" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-12.html#sec-Toprepareforclass23" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-12.html#sec-Afterclass23" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-12.html#sec-Advancedlearningobjectives23" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-12.html#handouts-12-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-12.html#sec-Answers23" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-13.html" class="internal"><span class="title">Daily Prep 2.4 - Derivatives of the Other Trig Functions</span></a></div>
+<ul id="ptx-toc-group-handouts-13" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-13.html#handouts-13-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-13.html#sec-Basiclearningobjectives24" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-13.html#handouts-13-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-13.html#sec-Afterclass24" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-13.html#sec-Advancedlearningobjectives24" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-13.html#sec-Additionalsuggestions24" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-14.html" class="internal"><span class="title">Daily Prep 2.5 - The Chain Rule</span></a></div>
+<ul id="ptx-toc-group-handouts-14" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-14.html#sec-Toprepareforclass25" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-14.html#sec-Afterclass25" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-14.html#sec-Advancedlearningobjectives25" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-14.html#sec-Answers25" class="internal"><span class="title">Answers</span></a></div>
+<ul id="ptx-toc-group-sec-Answers25" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#subsec-Toprepareforclass25" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#subsec-FromAfterclass25" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#subsec-Additionalsuggestions25" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-15.html" class="internal"><span class="title">Daily Prep 2.6 - Derivatives of Inverse Functions</span></a></div>
+<ul id="ptx-toc-group-handouts-15" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-15.html#handouts-15-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-15.html#sec-Basiclearningobjectives26" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-15.html#sec-Toprepareforclass26" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-15.html#sec-Afterclass26" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-15.html#sec-Advancedlearningobjectives26" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-15.html#sec-Additionalsuggestions26" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-15.html#sec-Answers26" class="internal"><span class="title">Answers</span></a></div>
+<ul id="ptx-toc-group-sec-Answers26" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-15.html#subsec-Toprepareforclass26" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-15.html#subsec-Additionalsuggestions26" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-16.html" class="internal"><span class="title">Daily Prep 2.7 - Implicit Differentiation</span></a></div>
+<ul id="ptx-toc-group-handouts-16" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-16.html#handouts-16-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-16.html#handouts-16-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-16.html#sec-Toprepareforclass27" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-16.html#sec-Afterclass27" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-16.html#sec-Advancedlearningobjectives27" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-16.html#sec-Additionalsuggestions27" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-16.html#sec-Answers27" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-17.html" class="internal"><span class="title">Daily Prep 3.1 - Related Rates</span></a></div>
+<ul id="ptx-toc-group-handouts-17" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-17.html#handouts-17-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-17.html#handouts-17-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-17.html#sec-Toprepareforclass31" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-17.html#sec-Afterclass31" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-17.html#sec-Advancedlearningobjectives31" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-17.html#handouts-17-7" class="internal"><span class="title">Answers</span></a></div>
+<ul id="ptx-toc-group-handouts-17-7" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-17.html#handouts-17-7-2" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-17.html#subsec-Afterclass31" class="internal"><span class="title">After class</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-18.html" class="internal"><span class="title">Daily Prep 3.2 - Using Derivatives to Evaluate Limits</span></a></div>
+<ul id="ptx-toc-group-handouts-18" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-18.html#handouts-18-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-18.html#handouts-18-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-18.html#sec-Toprepareforclass32" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-18.html#sec-afterclass32" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-18.html#sec-Advancedlearningobjectives32" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-18.html#sec-Additionalsuggestions32" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-18.html#handouts-18-8" class="internal"><span class="title">Answers</span></a></div>
+<ul id="ptx-toc-group-handouts-18-8" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-18.html#subsec-Toprepareforclass32" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-18.html#subsec-Afterclass32" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-18.html#subsec-Additionalsuggestions32" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-19.html" class="internal"><span class="title">Daily Prep 3.3 - Using Derivatives to Identify Extreme Values</span></a></div>
+<ul id="ptx-toc-group-handouts-19" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-19.html#handouts-19-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-19.html#handouts-19-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-19.html#sec-Toprepareforclass33" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-19.html#sec-Afterclass33" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-19.html#sec-Advancedlearningobjectives33" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-19.html#sec-Additionalsuggestions33" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-19.html#sec-Answers33" class="internal"><span class="title">Answers</span></a></div>
+<ul id="ptx-toc-group-sec-Answers33" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-19.html#subsec-Toprepareforclass33" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-19.html#subsec-Afterclass33" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-19.html#subsec-Additionalsuggestions33" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-20.html" class="internal"><span class="title">Daily Prep 3.5 - Global Optimization</span></a></div>
+<ul id="ptx-toc-group-handouts-20" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-20.html#handouts-20-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-20.html#handouts-20-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-20.html#sec-Toprepareforclass35" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-20.html#sec-Afterclass35" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-20.html#sec-Advancedlearningobjectives35" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-20.html#sec-Additionalsuggestions35" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-20.html#sec-Answers35" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-21.html" class="internal"><span class="title">Daily Prep 3.6 - Applied Optimization</span></a></div>
+<ul id="ptx-toc-group-handouts-21" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-21.html#handouts-21-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-21.html#handouts-21-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-21.html#handouts-21-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-21.html#handouts-21-5" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-21.html#handouts-21-6" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-21.html#handouts-21-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-21.html#handouts-21-8" class="internal"><span class="title">Answers</span></a></div>
+<ul id="ptx-toc-group-handouts-21-8" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-21.html#subsec-Toprepareforclass36" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="handouts-21.html#subsubsec-Afterclass36" class="internal"><span class="title">After class</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-22.html" class="internal"><span class="title">Daily Prep 4.1 - Determining Distance from Velocity</span></a></div>
+<ul id="ptx-toc-group-handouts-22" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-22.html#handouts-22-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-22.html#handouts-22-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-22.html#handouts-22-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-22.html#handouts-22-5" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-22.html#handouts-22-6" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-22.html#handouts-22-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-22.html#handouts-22-8" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-23.html" class="internal"><span class="title">Daily Prep 4.2 - Riemann Sums</span></a></div>
+<ul id="ptx-toc-group-handouts-23" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-23.html#handouts-23-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-23.html#handouts-23-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-23.html#handouts-23-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-23.html#sec-Afterclass42" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-23.html#subsec-Advancedlearningobjectives42" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-23.html#sec-Additionalsuggestions42" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-23.html#sec-Answers42" class="internal"><span class="title">Answers</span></a></div>
+<ul id="ptx-toc-group-sec-Answers42" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-23.html#subsec-Toprepareforclass42" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-23.html#subsec-Additionalsuggestions42" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-24.html" class="internal"><span class="title">Daily Prep 4.3 - The Definite Integral</span></a></div>
+<ul id="ptx-toc-group-handouts-24" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-24.html#handouts-24-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-24.html#handouts-24-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-24.html#sec-Toprepareforclass43" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-24.html#sec-Afterclass43" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-24.html#sec-Advancedlearningobjectives43" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-24.html#sec-Additionalsuggestions43" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-24.html#sec-Answers43" class="internal"><span class="title">Answers</span></a></div>
+<ul id="ptx-toc-group-sec-Answers43" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-24.html#subsec-Toprepareforclass43" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-24.html#subsec-Additionalsuggestions43" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-24.html#subsec-Andyetadditionalsuggestions43" class="internal"><span class="title">And yet additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-25.html" class="internal"><span class="title">Daily Prep 4.4 - The Fundamental Theorem of Calculus</span></a></div>
+<ul id="ptx-toc-group-handouts-25" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-25.html#handouts-25-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-25.html#handouts-25-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-25.html#sec-Toprepareforclass44" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-25.html#sec-Afterclass44" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-25.html#sec-Advancedlearningobjectives44" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-25.html#sec-Additionalsuggestions44" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-25.html#handouts-25-8" class="internal"><span class="title">Answers</span></a></div>
+<ul id="ptx-toc-group-handouts-25-8" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-25.html#subsec-Toprepareforclass44" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-25.html#subsec-Moretoprepareforclass44" class="internal"><span class="title">More to prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-25.html#subsec-Additionalsuggestions44" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-26.html" class="internal"><span class="title">Daily Prep 5.1 - Constructing Accurate Graphs of Antiderivatives</span></a></div>
+<ul id="ptx-toc-group-handouts-26" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-26.html#handouts-26-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-26.html#handouts-26-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-26.html#handouts-26-4" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-26.html#handouts-26-5" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-26.html#handouts-26-6" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-26.html#handouts-26-7" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-26.html#handouts-26-8" class="internal"><span class="title">Answers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-27.html" class="internal"><span class="title">Daily Prep 5.2 - The Second Fundamental Theorem of Calculus</span></a></div>
+<ul id="ptx-toc-group-handouts-27" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-27.html#handouts-27-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-27.html#handouts-27-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-27.html#sec-Toprepareforclass52" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-27.html#sec-Afterclass52" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-27.html#sec-Advancedlearningobjectives52" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-27.html#sec-Additionalsuggestions52" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-27.html#sec-Answers52" class="internal"><span class="title">Answers</span></a></div>
+<ul id="ptx-toc-group-sec-Answers52" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-27.html#sec-Answers52-2" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-27.html#subsec-Additionalsuggestions52" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-28.html" class="internal"><span class="title">Daily Prep 5.3 - Integration by Substitution</span></a></div>
+<ul id="ptx-toc-group-handouts-28" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-28.html#handouts-28-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-28.html#handouts-28-3" class="internal"><span class="title">Basic learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-28.html#sec-Toprepareforclass53" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-28.html#sec-Afterclass53" class="internal"><span class="title">After class</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-28.html#sec-Advancedlearningobjectives53" class="internal"><span class="title">Advanced learning objectives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="handouts-28.html#sec-Additionalsuggestions53" class="internal"><span class="title">Additional suggestions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="handouts-28.html#sec-Answers53" class="internal"><span class="title">Answers</span></a></div>
+<ul id="ptx-toc-group-sec-Answers53" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-28.html#subsec-Toprepareforclass53" class="internal"><span class="title">To prepare for class</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-28.html#subsec-Afterclass53" class="internal"><span class="title">After class</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul id="ptx-toc-group-activities" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-1-1.html" class="internal"><span class="title">Average Velocity - Activity 1.1.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-1-2.html" class="internal"><span class="title">Average Velocity - Activity 1.1.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-1-3.html" class="internal"><span class="title">Average Velocity - Activity 1.1.4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-2-1.html" class="internal"><span class="title">The Notion of a Limit - Activity 1.2.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-2-2.html" class="internal"><span class="title">The Notion of a Limit - Activity 1.2.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-2-3.html" class="internal"><span class="title">The Notion of a Limit - Activity 1.2.4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-3-1.html" class="internal"><span class="title">The Derivative of a Function at a Point - Activity 1.3.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-3-5.html" class="internal"><span class="title">The Derivative of a Function at a Point - Activity 1.3.5</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-4-1.html" class="internal"><span class="title">The Derivative Function - Activity 1.4.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-4-2.html" class="internal"><span class="title">The Derivative Function - Activity 1.4.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-4-5.html" class="internal"><span class="title">The Derivative Function - Activity 1.4.5</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-5-1.html" class="internal"><span class="title">Interpreting, Estimating, and Using the Derivative - Activity 1.5.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-5-2.html" class="internal"><span class="title">Interpreting, Estimating, and Using the Derivative - Activity 1.5.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-5-5.html" class="internal"><span class="title">Interpreting, Estimating, and Using the Derivative - Activity 1.5.5</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-6-2.html" class="internal"><span class="title">The Second Derivative - Activity 1.6.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-6-5.html" class="internal"><span class="title">The Second Derivative - Activity 1.6.5</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-7-1.html" class="internal"><span class="title">Limits, Continuity, and Differentiability - Activity 1.7.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-7-2.html" class="internal"><span class="title">Limits, Continuity, and Differentiability - Activity 1.7.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-7-3.html" class="internal"><span class="title">Limits, Continuity, and Differentiability - Activity 1.7.4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-8-1.html" class="internal"><span class="title">The Tangent Line Approximation - Activity 1.8.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-1-8-2.html" class="internal"><span class="title">The Tangent Line Approximation - Activity 1.8.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-2-1-1.html" class="internal"><span class="title">Elementary Derivative Rules - Activity 2.1.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-2-1-2.html" class="internal"><span class="title">Elementary Derivative Rules - Activity 2.1.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-2-1-3.html" class="internal"><span class="title">Elementary Derivative Rules - Activity 2.1.4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-2-2-3.html" class="internal"><span class="title">Sine and Cosine - Activity 2.2.4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-2-3-1.html" class="internal"><span class="title">The Product Rule - Activity 2.3.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-2-3-3.html" class="internal"><span class="title">The Quotient Rule - Activity 2.3.4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-2-4-4.html" class="internal"><span class="title">Derivatives of Other Trigonometric Functions - Activity 2.4.5</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-2-5-0.html" class="internal"><span class="title">The Chain Rule - Activity 2.5.0</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-2-5-1.html" class="internal"><span class="title">The Chain Rule - Activity 2.5.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-2-5-2.html" class="internal"><span class="title">The Chain Rule - Activity 2.5.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-2-6-1.html" class="internal"><span class="title">Derivatives of Inverse Functions - Activity 2.6.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-2-6-4.html" class="internal"><span class="title">Derivatives of Inverse Functions - Activity 2.6.5</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-2-7-1.html" class="internal"><span class="title">Implicit Differentiation - Activity 2.7.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-2-7-3.html" class="internal"><span class="title">Implicit Differentiation - Activity 2.7.4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-3-1-0.html" class="internal"><span class="title">Related Rates - Activity 3.1.0</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-3-1-1.html" class="internal"><span class="title">Related Rates - Activity 3.1.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-3-1-3.html" class="internal"><span class="title">Related Rates - Activity 3.1.4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-3-1-4.html" class="internal"><span class="title">Related Rates - Activity 3.1.5</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-3-2-2.html" class="internal"><span class="title">Using Derivatives to Evaluate Limits - Activity 3.2.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-3-2-3.html" class="internal"><span class="title">Using Derivatives to Evaluate Limits - Activity 3.2.4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-3-3-1.html" class="internal"><span class="title">Using Derivatives to Identify Extreme Values - Activity 3.3.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-3-3-2.html" class="internal"><span class="title">Using Derivatives to Identify Extreme Values - Activity 3.3.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-3-5-2.html" class="internal"><span class="title">Global Optimization - Activity 3.5.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-3-5-3.html" class="internal"><span class="title">Global Optimization - Activity 3.5.4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-3-6-0.html" class="internal"><span class="title">Applied Optimization - Activity 3.6.0</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-3-6-1.html" class="internal"><span class="title">Applied Optimization - Activity 3.6.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-3-6-2.html" class="internal"><span class="title">Applied Optimization - Activity 3.6.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-4-1-1.html" class="internal"><span class="title">Determining Distance Traveled from Velocity - Activity 4.1.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-4-1-2.html" class="internal"><span class="title">Determining Distance Traveled from Velocity - Activity 4.1.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-4-1-3.html" class="internal"><span class="title">Determining Distance Traveled from Velocity - Activity 4.1.4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-4-2-1.html" class="internal"><span class="title">Riemann Sums - Activity 4.2.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-4-2-5.html" class="internal"><span class="title">Riemann Sums - Activity 4.2.5</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-4-3-1.html" class="internal"><span class="title">The Definite Integral - Activity 4.3.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-4-3-2.html" class="internal"><span class="title">The Definite Integral - Activity 4.3.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-4-4-1.html" class="internal"><span class="title">The Fundamenatal Theorem of Calculus - Activity 4.4.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-4-4-2.html" class="internal"><span class="title">The Fundamental Theorem of Calculus - Activity 4.4.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-4-4-5.html" class="internal"><span class="title">The Fundamental Theorem of Calculus - Activity 4.4.5</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-5-1-2.html" class="internal"><span class="title">Constructing Accurate Graphs of Antiderivatives - Activity 5.1.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-5-1-3.html" class="internal"><span class="title">Constructing Accurate Graphs of Antiderivatives - Activity 5.1.4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-5-2-2.html" class="internal"><span class="title">The Second Fundamental Theorem of Calculus - Activity 5.2.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-5-2-3.html" class="internal"><span class="title">The Second Fundamental Theorem of Calculus - Activity 5.2.4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-5-3-1.html" class="internal"><span class="title">Integration by Substitution - Activity 5.3.2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-5-3-2.html" class="internal"><span class="title">Integration by Substitution - Activity 5.3.3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-act-5-3-3.html" class="internal"><span class="title">Integration by Substitution - Activity 5.3.4</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="handout" id="handouts-5" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h2 class="heading hide-type">
+<span class="type">Handout</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Daily Prep 1.4 - The Derivative Function</span><div class="print-links"><a href="?printpreview=handouts-5" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h2>
+<section class="section" id="handouts-5-2">
+<h3 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Overview</span>
+</h3>
+<div class="para" id="handouts-5-2-2">We have recently learned that we can describe the instantaneous rate of change of a function <span class="process-math">\(f\)</span> at a value <span class="process-math">\(a\)</span> by computing <span class="process-math">\(\displaystyle f'(a)=\lim_{h\rightarrow 0}\frac{f(a+h)-f(a)}{h}\text{,}\)</span> provided this limit exists. When we can find <span class="process-math">\(f'(a)\text{,}\)</span> we understand that this value represents the instantaneous rate of change of the function with respect to the input variable, and also the slope of the tangent line to the curve <span class="process-math">\(y=f(x)\)</span> at the point <span class="process-math">\((a,f(a))\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#handouts-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="handouts-5-2-3">By viewing the constant <span class="process-math">\(a\)</span> as a variable in its own right, we will next begin thinking about how <span class="process-math">\(y=f'(x)\)</span> is itself a function, indeed a function that is related to - or derived from - the original function <span class="process-math">\(f\text{.}\)</span> One of the next big questions is: given a function <span class="process-math">\(y=f(x)\text{,}\)</span> can we find a graph of or formula for or other information about this new function <span class="process-math">\(f'(x)\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#handouts-5-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="handouts-5-2-4">The section covers the following topics: The derivative as a function. The relationship between the graph of <span class="process-math">\(f\)</span> and the graph of <span class="process-math">\(f'\text{.}\)</span> Computing the derivative function of basic functions using the definition of the derivative.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#handouts-5-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Section: Overview"><a tabindex="-1" href="#handouts-5-2" title="Copy heading and permalink for Section: Overview" aria-label="Copy heading and permalink for Section: Overview">🔗</a></div>
+</section>
+<section class="section" id="Basiclearningobjectives14">
+<h3 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Basic learning objectives</span>
+</h3>
+<div class="para" id="Basiclearningobjectives14-2">These are the tasks you should be able to perform with reasonable fluency when you arrive at our next class meeting. Important new vocabulary words are indicated <em class="emphasis">in italics</em>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Basiclearningobjectives14-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="Basiclearningobjectives14-3">
+<li id="Basiclearningobjectives14-3-1">
+<div class="para" id="Basiclearningobjectives14-3-1-1">State the definition of the derivative function.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Basiclearningobjectives14-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Basiclearningobjectives14-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Basiclearningobjectives14-3-2">
+<div class="para" id="Basiclearningobjectives14-3-2-1">Illustrate on a graph how a function can fail to be differentiable at a point.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Basiclearningobjectives14-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Basiclearningobjectives14-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Section: Basic learning objectives"><a tabindex="-1" href="#Basiclearningobjectives14" title="Copy heading and permalink for Section: Basic learning objectives" aria-label="Copy heading and permalink for Section: Basic learning objectives">🔗</a></div>
+</section>
+<section class="section" id="Toprepareforclass14">
+<h3 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">To prepare for class</span>
+</h3>
+<div class="para" id="Toprepareforclass14-2">Complete all actions listed below. Respond to the questions highlighted with <em class="emphasis">Submit</em>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="Toprepareforclass14-3">
+<li id="Toprepareforclass14-3-1">
+<div class="para" id="Toprepareforclass14-3-1-1">
+<em class="alert">Read</em> motivating questions and the paragraph following in <a class="external" href="https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#sec-1-4-derivative-fxn" target="_blank">section 1.4</a> (up until the preview activity).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Toprepareforclass14-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Toprepareforclass14-3-2">
+<div class="para" id="Toprepareforclass14-3-2-1">📝 [Submit] <em class="alert">Do</em> <a class="external" href="https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#PA-1-4" target="_blank">Preview Activity 1.4.1</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="Toprepareforclass14-3-2-2">
+<ul class="circle" id="Toprepareforclass14-3-2-2-1">
+<li id="Toprepareforclass14-3-2-2-1-1">
+<div class="para" id="Toprepareforclass14-3-2-2-1-1-1">(Optional) <em class="alert">Watch</em> <a class="external" href="https://www.youtube.com/watch?v=8AZUPemMmC8" target="_blank">video solution to Preview Activity 1.4.1</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Toprepareforclass14-3-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Toprepareforclass14-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Toprepareforclass14-3-3">
+<div class="para" id="Toprepareforclass14-3-3-1">
+<em class="alert">Read</em> <a class="external" href="https://activecalculus.org/single/sec-1-4-derivative-fxn.html#Lgq" target="_blank">section 1.4.1</a> up until Activity 1.4.2. Be sure to take note of the definition of the <em class="emphasis">derivative as a function</em> (<a class="external" href="https://activecalculus.org/single/sec-1-4-derivative-fxn.html#XuI" target="_blank">Definition 1.4.2</a>).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Toprepareforclass14-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Toprepareforclass14-3-4">
+<div class="para" id="Toprepareforclass14-3-4-1">📝 [Submit] <em class="alert">Explore</em> the two applets mentioned in the text. The first applet, <a class="external" href="https://davidaustinm.github.io/calculus/fpgraph/index.html" target="_blank">Graphing the derivative function</a> is intended to experiment with moving the red point. For the second applet, <a class="external" href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_as_a_function.html" target="_blank">The Derivative as a Function</a>, answer the <em class="emphasis">Explore</em> questions found on the website. Submit a screen capture of the second applet, <a class="external" href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_as_a_function.html" target="_blank">The Derivative as a Function</a> as well as answers to the <em class="emphasis">Explore</em> questions found on the website.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Toprepareforclass14-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Toprepareforclass14-3-5">
+<div class="para" id="Toprepareforclass14-3-5-1">Ask <em class="alert">Copilot</em> to create the graph of a simple function <span class="process-math">\(f(x)\)</span> of your choosing and its derivative graph. Does the image produced make any sense?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Toprepareforclass14-3-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Toprepareforclass14-3-6">
+<div class="para" id="Toprepareforclass14-3-6-1">Ask <em class="alert">Copilot</em> to produce an algorithm for you to calculate the derivative function <span class="process-math">\(f'(x)\)</span> for a function <span class="process-math">\(f(x)\)</span> using the limit definition. Follow up by asking <em class="alert">Copilot</em> to illustrate how this algorithm works on <span class="process-math">\(f(x) = \sqrt{x}\text{.}\)</span> Finally, ask why the numerator was rationalized. Tell it that you feel like that is some sort of odd trick.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Toprepareforclass14-3-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Toprepareforclass14-3-7">
+<div class="para" id="Toprepareforclass14-3-7-1">📝 [Submit] Ask <em class="alert">Copilot</em> for alternate versions of the limit definition of the derivative of a function <span class="process-math">\(f(x)\text{.}\)</span> Submit at least one alternate, but equivalent to <a class="external" href="https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#D-derivative-defn-x" target="_blank">found in our textbook</a>, version of the definition of <span class="process-math">\(f'(x)\)</span> that uses a limit.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Toprepareforclass14-3-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Toprepareforclass14-3-8">
+<div class="para" id="Toprepareforclass14-3-8-1">
+<em class="alert">Watch</em> this video for an example of how to algebraically find the formula for the derivative function: <a class="external" href="https://www.youtube.com/watch?v=62mySLhhfaQ&amp;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&amp;index=12" target="_blank">Limit Definition of Derivative (5:36)</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Toprepareforclass14-3-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Toprepareforclass14-3-9">
+<div class="para" id="Toprepareforclass14-3-9-1">
+<em class="alert">Watch</em> the following video which discusses the definition of the derivative as a function: <a class="external" href="https://www.youtube.com/watch?v=Fzrkq1r-sAI&amp;list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-&amp;index=11" target="_blank">Quick Review: The derivative function (2:38)</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="Toprepareforclass14-3-9-2"><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Toprepareforclass14-3-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Toprepareforclass14-3-10">
+<div class="para" id="Toprepareforclass14-3-10-1">
+<em class="alert">Do</em> these exercises.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="Toprepareforclass14-3-10-2">
+<li id="Toprepareforclass14-3-10-2-1">
+<div class="para" id="Toprepareforclass14-3-10-2-1-1">Complete the table below with estimated values of the derivative of the function <span class="process-math">\(f(x)\)</span> shown. Then, plot these ordered pairs <span class="process-math">\((x,f'(x))\)</span> from the table on the same set of axes. ‘Connect the dots’ to form a sketch of the graph of <span class="process-math">\(f'\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-10-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="plotwithtangents"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/fig_02_27.jpg" class="contained" alt='Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks. The graph is a single smooth curve. On the left, near x = −2, the curve is above the x-axis and increasing. It reaches a local maximum near x = −1 at a y-value slightly above 4. The curve then decreases, crossing the x-axis near x = 2, and continues downward to a local minimum near x = 4 with a y-value near −3. After this minimum, the curve increases again as x approaches 5. The graph has no open circles, endpoints, or breaks, indicating the function is continuous over the displayed interval."'></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A plot of the graph of a function with slopes at several locations illustrated.<div class="autopermalink" aria-hidden="true" data-description="Figure 21"><a tabindex="-1" href="#plotwithtangents" title="Copy heading and permalink for Figure 21" aria-label="Copy heading and permalink for Figure 21">🔗</a></div></figcaption>
+</figure>
+<figure class="table table-like" id="PlotTheSlopes"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">22<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Plot the slopes of the graph of this function.<div class="autopermalink" aria-hidden="true" data-description="Table 22: Plot the slopes of the graph of this function."><a tabindex="-1" href="#PlotTheSlopes" title="Copy heading and permalink for Table 22: Plot the slopes of the graph of this function." aria-label="Copy heading and permalink for Table 22: Plot the slopes of the graph of this function.">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r0 l0 t1 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r0 l0 t1 lines">-2</td>
+<td class="c m b2 r0 l0 t1 lines">-1</td>
+<td class="c m b2 r0 l0 t1 lines">0</td>
+<td class="c m b2 r0 l0 t1 lines">1</td>
+<td class="c m b2 r0 l0 t1 lines">2</td>
+<td class="c m b2 r0 l0 t1 lines">3</td>
+<td class="c m b2 r0 l0 t1 lines">4</td>
+<td class="c m b2 r0 l0 t1 lines">5</td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(f'(x)\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+<td class="c m b1 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Toprepareforclass14-3-10-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Toprepareforclass14-3-10-2-2">
+<div class="para" id="Toprepareforclass14-3-10-2-2-1">Sketch the graph of <span class="process-math">\(f'\)</span> from the graph of <span class="process-math">\(f\)</span> given.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-10-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="figureplotfprime4"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/latex-image/piecewisefprime4Pic.svg" role="img" class="contained" alt='Graph of a piecewise linear function on a coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. The graph consists of three straight line segments that meet at sharp corners. On the left, the graph begins near x = −5 at a y-value around 5 and decreases linearly to the point (−1, 1), forming a downward-sloping segment. From the point (−1, 1), the graph increases linearly to a peak at the point (1, 5). From this peak, the graph decreases linearly again to the right, ending near the point (5, 3). All endpoints appear solid, and there are no breaks or open circles, indicating the function is defined and continuous over the displayed interval."'></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">23<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The graph of <span class="process-math">\(f(x)\)</span> is given.  Sketch the graph of <span class="process-math">\(f'(x)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 23"><a tabindex="-1" href="#figureplotfprime4" title="Copy heading and permalink for Figure 23" aria-label="Copy heading and permalink for Figure 23">🔗</a></div></figcaption>
+</figure>
+<div class="para logical" id="Toprepareforclass14-3-10-2-2-3">
+<ol class="lower-alpha lower-alpha-level-1" id="Toprepareforclass14-3-10-2-2-3-1">
+<li id="Toprepareforclass14-3-10-2-2-3-1-1">
+<div class="para" id="Toprepareforclass14-3-10-2-2-3-1-1-1">Does <span class="process-math">\(f\)</span> or <span class="process-math">\(f'\)</span> have a larger domain?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-10-2-2-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Toprepareforclass14-3-10-2-2-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Toprepareforclass14-3-10-2-2-3-1-2">
+<div class="para" id="Toprepareforclass14-3-10-2-2-3-1-2-1">Compare the values of<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-10-2-2-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="Toprepareforclass14-3-10-2-2-3-1-2-2">
+<span class="process-math">\(\displaystyle \lim_{h \rightarrow 0^-}\frac{f(1+h)-f(1)}{h}\)</span> and  <span class="process-math">\(\displaystyle \lim_{h \rightarrow 0^+}\frac{f(1+h)-f(1)}{h}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-10-2-2-3-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="Toprepareforclass14-3-10-2-2-3-1-2-3">What does this tell you?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-10-2-2-3-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Toprepareforclass14-3-10-2-2-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Toprepareforclass14-3-10-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Toprepareforclass14-3-10-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Toprepareforclass14-3-10" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<article class="exercise exercise-like" id="dp-1-4-cardsort-derivative-function"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Connecting a Function to its Derivative.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-dp-1-4-cardsort-derivative-function">
+<span data-subcomponent="question">
+<div class="para" id="dp-1-4-cardsort-derivative-function-2-1">Sort each statement to the appropriate conclusion about the derivative function <span class="process-math">\(f'\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#dp-1-4-cardsort-derivative-function-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></span><li data-subcomponent="draggable" id="rs-dp-1-4-cardsort-derivative-function_drag1" data-category="1">The graph of <span class="process-math">\(f\)</span> has a horizontal tangent line at <span class="process-math">\(x=a\text{.}\)</span>
+</li>
+<li data-subcomponent="draggable" id="rs-dp-1-4-cardsort-derivative-function_drag2" data-category="1">The instantaneous rate of change of <span class="process-math">\(f\)</span> at <span class="process-math">\(x=a\)</span> is zero.</li>
+<li data-subcomponent="dropzone" for="rs-dp-1-4-cardsort-derivative-function_drag1" data-category="1">
+<div class="para" id="dp-1-4-cardsort-derivative-function-3-1-3-1"><span class="process-math">\(f'(a)=0\text{.}\)</span></div>
+</li>
+<li data-subcomponent="draggable" id="rs-dp-1-4-cardsort-derivative-function_drag3" data-category="2">The graph of <span class="process-math">\(f\)</span> is increasing near <span class="process-math">\(x=a\text{.}\)</span>
+</li>
+<li data-subcomponent="draggable" id="rs-dp-1-4-cardsort-derivative-function_drag4" data-category="2">Tangent lines to <span class="process-math">\(f\)</span> near <span class="process-math">\(x=a\)</span> have positive slope.</li>
+<li data-subcomponent="dropzone" for="rs-dp-1-4-cardsort-derivative-function_drag2" data-category="2">
+<div class="para" id="dp-1-4-cardsort-derivative-function-3-2-3-1"><span class="process-math">\(f'(a) &gt; 0\text{.}\)</span></div>
+</li>
+<li data-subcomponent="draggable" id="rs-dp-1-4-cardsort-derivative-function_drag5" data-category="3">The graph of <span class="process-math">\(f\)</span> is decreasing near <span class="process-math">\(x=a\text{.}\)</span>
+</li>
+<li data-subcomponent="draggable" id="rs-dp-1-4-cardsort-derivative-function_drag6" data-category="3">Tangent lines to <span class="process-math">\(f\)</span> near <span class="process-math">\(x=a\)</span> have negative slope.</li>
+<li data-subcomponent="dropzone" for="rs-dp-1-4-cardsort-derivative-function_drag3" data-category="3">
+<div class="para" id="dp-1-4-cardsort-derivative-function-3-3-3-1"><span class="process-math">\(f'(a) &lt; 0\text{.}\)</span></div>
+</li>
+<li data-subcomponent="draggable" id="rs-dp-1-4-cardsort-derivative-function_drag7" data-category="4">The graph of <span class="process-math">\(f\)</span> has a sharp corner at <span class="process-math">\(x=a\text{.}\)</span>
+</li>
+<li data-subcomponent="draggable" id="rs-dp-1-4-cardsort-derivative-function_drag8" data-category="4">The left- and right-hand slopes at <span class="process-math">\(x=a\)</span> are different.</li>
+<li data-subcomponent="dropzone" for="rs-dp-1-4-cardsort-derivative-function_drag4" data-category="4">
+<div class="para" id="dp-1-4-cardsort-derivative-function-3-4-3-1">
+<span class="process-math">\(f'(a)\)</span> does not exist.</div>
+</li>
+</ul></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 24: Connecting a Function to its Derivative"><a tabindex="-1" href="#dp-1-4-cardsort-derivative-function" title="Copy heading and permalink for Checkpoint 24: Connecting a Function to its Derivative" aria-label="Copy heading and permalink for Checkpoint 24: Connecting a Function to its Derivative">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Section: To prepare for class"><a tabindex="-1" href="#Toprepareforclass14" title="Copy heading and permalink for Section: To prepare for class" aria-label="Copy heading and permalink for Section: To prepare for class">🔗</a></div>
+</section>
+<section class="section" id="Afterclass13">
+<h3 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">After class</span>
+</h3>
+<div class="para" id="Afterclass13-2">Solidifying the concepts discussed in class through practice is necessary to build your skills.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Afterclass13-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="Afterclass13-3">
+<li id="Afterclass13-3-1">
+<div class="para" id="Afterclass13-3-1-1">
+<em class="alert">Watch</em> the following video on trying to graph the derivative function: <a class="external" href="https://www.youtube.com/watch?time_continue=107&amp;v=Dei5ethzKHU&amp;feature=emb_title" target="_blank">Try to Graph the Derivative Function (7:39)</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Afterclass13-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Afterclass13-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Afterclass13-3-2">
+<div class="para" id="Afterclass13-3-2-1">
+<em class="alert">Watch</em> another video on sketching a derivative graph: <a class="external" href="https://www.youtube.com/watch?v=TSgyDembmXg&amp;feature=emb_title" target="_blank">Sketching a Derivative Graph (6:13)</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Afterclass13-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Afterclass13-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Afterclass13-3-3">
+<div class="para" id="Afterclass13-3-3-1">
+<em class="alert">Explore</em> this applets that gives you practice identifying the graph of the derivative knowing the graph of a function: <a class="external" href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_matching.html" target="_blank">Identify the Derivative Function</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Afterclass13-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Afterclass13-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Afterclass13-3-4">
+<div class="para" id="Afterclass13-3-4-1">
+<em class="alert">Do</em> <a class="external" href="https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#Library__Michigan__Chap2Sec3__Q09.pg" target="_blank">Exercises 1-9 in section 1.4.4</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Afterclass13-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Afterclass13-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Afterclass13-3-5">
+<div class="para" id="Afterclass13-3-5-1">
+<em class="alert">Explore</em> the following <a class="external" href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_try_to_graph.html" target="_blank">applet</a> where you will try to graph the derivative function. Try to score above 80%! This is great practice for the exam.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Afterclass13-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Afterclass13-3-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Afterclass13-3-6">
+<div class="para" id="Afterclass13-3-6-1">
+<em class="alert">Explore</em> graph transformations with this applet: <a class="external" href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_graph_transformation.html" target="_blank">Derivatives and Graph Transformations</a>. Make sure you write answers to the questions asked of you. This is a great applet and well worth your time exploring!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Afterclass13-3-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Afterclass13-3-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Afterclass13-3-7">
+<div class="para" id="Afterclass13-3-7-1">
+<em class="alert">Explore</em> the concept of antiderivative functions with this applet: <a class="external" href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_matching_antiderivative.html" target="_blank">Identify an Antiderivative Function</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Afterclass13-3-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Afterclass13-3-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Afterclass13-3-8">
+<div class="para" id="Afterclass13-3-8-1">
+<em class="alert">Do</em> <a class="external" href="https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#ez-1-4-10" target="_blank">Exercises 10-13 in section 1.4.4</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Afterclass13-3-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Afterclass13-3-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="Afterclass13-3-9">
+<div class="para" id="Afterclass13-3-9-1">
+<em class="alert">Start working</em> on the <a class="external" href="https://www.myopenmath.com/index.php" target="_blank">MOMwork</a> (MyOpenMath) assignment for this section.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Afterclass13-3-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#Afterclass13-3-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Section: After class"><a tabindex="-1" href="#Afterclass13" title="Copy heading and permalink for Section: After class" aria-label="Copy heading and permalink for Section: After class">🔗</a></div>
+</section>
+<section class="section" id="secAdvancedlearningobjectives14">
+<h3 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Advanced learning objectives</span>
+</h3>
+<div class="para" id="secAdvancedlearningobjectives14-2">In addition to mastering the basic objectives, here are the tasks you should be able to perform after class, with practice:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#secAdvancedlearningobjectives14-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="secAdvancedlearningobjectives14-3">
+<li id="secAdvancedlearningobjectives14-3-1">
+<div class="para" id="secAdvancedlearningobjectives14-3-1-1">Given a graph of a function <span class="process-math">\(f\text{,}\)</span> identify the graph of its derivative <span class="process-math">\(f'\)</span> from a list, and describe aspects of the behavior of the graph of <span class="process-math">\(f'\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#secAdvancedlearningobjectives14-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#secAdvancedlearningobjectives14-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="secAdvancedlearningobjectives14-3-2">
+<div class="para" id="secAdvancedlearningobjectives14-3-2-1">Sketch the graph of the derivative <span class="process-math">\(f'(x)\)</span> given the graph of <span class="process-math">\(f(x)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#secAdvancedlearningobjectives14-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#secAdvancedlearningobjectives14-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="secAdvancedlearningobjectives14-3-3">
+<div class="para" id="secAdvancedlearningobjectives14-3-3-1">Given an algebraic description of a function, derive a formula for the derivative function using the definition of the derivative.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#secAdvancedlearningobjectives14-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#secAdvancedlearningobjectives14-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Section: Advanced learning objectives"><a tabindex="-1" href="#secAdvancedlearningobjectives14" title="Copy heading and permalink for Section: Advanced learning objectives" aria-label="Copy heading and permalink for Section: Advanced learning objectives">🔗</a></div>
+</section>
+<section class="section" id="sec-Additionalsuggestions14">
+<h3 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Additional suggestions</span>
+</h3>
+<ul class="disc" id="sec-Additionalsuggestions14-2">
+<li id="sec-Additionalsuggestions14-2-1">
+<div class="para" id="sec-Additionalsuggestions14-2-1-1">Do these exercises.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-Additionalsuggestions14-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="sec-Additionalsuggestions14-2-1-2">
+<li id="sec-Additionalsuggestions14-2-1-2-1">
+<div class="para logical" id="sec-Additionalsuggestions14-2-1-2-1-1">
+<div class="para">Complete the following computation giving the derivative of the function <span class="process-math">\(f(x) = x^{2} - 4\text{.}\)</span> Then, graph <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(f'(x)\)</span> together.</div>
+<div class="displaymath process-math" id="sec-Additionalsuggestions14-2-1-2-1-1-4">
+\begin{align*}
+f'(x) = \mathstrut \amp \lim_{h \rightarrow 0} \frac{f(x+h)-f(x)}{h} \\
+= \mathstrut \amp \lim_{h \rightarrow 0} \frac{(x+h)^2-4-[x^2-4]}{h} \\
+= \mathstrut \amp \cdots 
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-Additionalsuggestions14-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-Additionalsuggestions14-2-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions14-2-1-2-2">
+<div class="para logical" id="sec-Additionalsuggestions14-2-1-2-2-1">
+<ol class="lower-alpha lower-alpha-level-1" id="sec-Additionalsuggestions14-2-1-2-2-1-1">
+<li id="sec-Additionalsuggestions14-2-1-2-2-1-1-1">
+<div class="para" id="sec-Additionalsuggestions14-2-1-2-2-1-1-1-1">Determine the values of <span class="process-math">\(g'(0)\text{,}\)</span> <span class="process-math">\(g'(1)\text{,}\)</span> <span class="process-math">\(g'(2)\text{,}\)</span> and <span class="process-math">\(g'(3)\)</span> if <span class="process-math">\(g(x) = |x^{2} - 4|\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-Additionalsuggestions14-2-1-2-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-Additionalsuggestions14-2-1-2-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions14-2-1-2-2-1-1-2">
+<div class="para" id="sec-Additionalsuggestions14-2-1-2-2-1-1-2-1">Sketch the graph of <span class="process-math">\(g(x)\)</span> and <span class="process-math">\(g'(x)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-Additionalsuggestions14-2-1-2-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-Additionalsuggestions14-2-1-2-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Additionalsuggestions14-2-1-2-2-1-1-3">
+<div class="para" id="sec-Additionalsuggestions14-2-1-2-2-1-1-3-1">Is <span class="process-math">\(g\)</span> differentiable at <span class="process-math">\(x=-2\text{?}\)</span> Is <span class="process-math">\(g\)</span> continuous at <span class="process-math">\(x=-2\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-Additionalsuggestions14-2-1-2-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-Additionalsuggestions14-2-1-2-2-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-Additionalsuggestions14-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-Additionalsuggestions14-2-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-Additionalsuggestions14-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Section: Additional suggestions"><a tabindex="-1" href="#sec-Additionalsuggestions14" title="Copy heading and permalink for Section: Additional suggestions" aria-label="Copy heading and permalink for Section: Additional suggestions">🔗</a></div>
+</section>
+<section class="section" id="handouts-5-8">
+<h3 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Answers</span>
+</h3>
+<section class="subsection" id="subsec-Toprepareforclass14">
+<h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">To prepare for class</span>
+</h4>
+<ol class="decimal" id="subsec-Toprepareforclass14-2">
+<li id="subsec-Toprepareforclass14-2-1">
+<div class="para" id="subsec-Toprepareforclass14-2-1-1">The values in <a href="handouts-5.html#PlotTheSlopesAns" class="xref" data-knowl="./knowl/xref/PlotTheSlopesAns.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 25: A table of the slopes of a given function.">Table 25</a> are estimates.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Toprepareforclass14-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="PlotTheSlopesAns"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">25<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A table of the slopes of a given function.<div class="autopermalink" aria-hidden="true" data-description="Table 25: A table of the slopes of a given function."><a tabindex="-1" href="#PlotTheSlopesAns" title="Copy heading and permalink for Table 25: A table of the slopes of a given function." aria-label="Copy heading and permalink for Table 25: A table of the slopes of a given function.">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r0 l0 t1 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r0 l0 t1 lines">-2</td>
+<td class="c m b2 r0 l0 t1 lines">-1</td>
+<td class="c m b2 r0 l0 t1 lines">0</td>
+<td class="c m b2 r0 l0 t1 lines">1</td>
+<td class="c m b2 r0 l0 t1 lines">2</td>
+<td class="c m b2 r0 l0 t1 lines">3</td>
+<td class="c m b2 r0 l0 t1 lines">4</td>
+<td class="c m b2 r0 l0 t1 lines">5</td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(f'(x)\)</span></td>
+<td class="c m b1 r0 l0 t0 lines">6</td>
+<td class="c m b1 r0 l0 t0 lines">2</td>
+<td class="c m b1 r0 l0 t0 lines">-1</td>
+<td class="c m b1 r0 l0 t0 lines">-2</td>
+<td class="c m b1 r0 l0 t0 lines">-2</td>
+<td class="c m b1 r0 l0 t0 lines">-1</td>
+<td class="c m b1 r0 l0 t0 lines">1</td>
+<td class="c m b1 r0 l0 t0 lines">4</td>
+</tr>
+</table></div>
+</figure>
+<figure class="figure figure-like" id="subsec-Toprepareforclass14-2-1-3"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/fig_02_28.jpg" class="contained" alt='Graph showing two functions on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. One curve is labeled f(x) and the other is labeled f′(x). The curve labeled f(x) is a smooth blue curve. It increases from the left, reaching a local maximum near x = −1 at a y-value slightly above 4. It then decreases, crossing the x-axis near x = 2, and continues downward to a local minimum near x = 4 with a y-value below −2. After this minimum, the curve increases again toward the right end of the graph. The curve labeled f′(x) is a smooth black curve with a U-shaped appearance. It crosses the x-axis near x = −1 and x = 4 and has a local minimum below the x-axis near x = 2. The graph illustrates the relationship between f and its derivative: where f(x) has a local maximum or minimum, the derivative f′(x) is zero, and where f(x) is increasing or decreasing, f′(x) is positive or negative, respectively. There are no breaks or open circles shown on either curve, indicating both functions are continuous over the displayed interval."'></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">26<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" aria-hidden="true" data-description="Figure 26: A function with its derivative."><a tabindex="-1" href="#subsec-Toprepareforclass14-2-1-3" title="Copy heading and permalink for Figure 26: A function with its derivative." aria-label="Copy heading and permalink for Figure 26: A function with its derivative.">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#subsec-Toprepareforclass14-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-Toprepareforclass14-2-2">
+<div class="para" id="subsec-Toprepareforclass14-2-2-1">The graph of <span class="process-math">\(f'\)</span> is in red in <a href="handouts-5.html#figurepiecewisefprime" class="xref" data-knowl="./knowl/xref/figurepiecewisefprime.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 27">Figure 27</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Toprepareforclass14-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="figurepiecewisefprime"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/latex-image/piecewisefprimePic.svg" role="img" class="contained" alt='Graph showing a piecewise-defined function f and its derivative f′ on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. The graph of f(x) is drawn with solid line segments. On the left, f decreases linearly from the upper left and reaches a sharp corner at the point (−1, 1). From (−1, 1), the graph increases linearly to a peak near (1, 5). From that peak, f decreases linearly again to the right, ending near the point (5, 3). The corners at x = −1 and x = 1 indicate points where the slope changes abruptly. Several red open circles appear on the graph of f(x). One open circle is shown at the point (−1, 2), and another at (1, 2), indicating values that are not attained by the function at those x-values. Below the x-axis, the graph of f′(x) is shown using horizontal red line segments. For x less than −1, f′(x) is a constant negative value, shown by a horizontal segment ending with an open circle at x = −1. For x between 1 and 5, f′(x) is a constant positive value, shown by a horizontal segment starting with an open circle at x = 1. There is no value of f′ shown at the corner points x = −1 and x = 1, indicating the derivative does not exist at those points. The figure illustrates the relationship between a piecewise linear function and its derivative, emphasizing constant slopes on intervals and non-differentiability at corners."'></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">27<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The graph of <span class="process-math">\(f'(x)\)</span> given a graph of <span class="process-math">\(f(x)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 27"><a tabindex="-1" href="#figurepiecewisefprime" title="Copy heading and permalink for Figure 27" aria-label="Copy heading and permalink for Figure 27">🔗</a></div></figcaption>
+</figure>
+<div class="para logical" id="subsec-Toprepareforclass14-2-2-3">
+<ol class="lower-alpha ol-marker-2" id="subsec-Toprepareforclass14-2-2-3-1">
+<li id="subsec-Toprepareforclass14-2-2-3-1-1">
+<div class="para" id="subsec-Toprepareforclass14-2-2-3-1-1-1">The domain of <span class="process-math">\(f\)</span> is larger than the domain  of <span class="process-math">\(f'\)</span> (note the holes).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Toprepareforclass14-2-2-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2.a"><a tabindex="-1" href="#subsec-Toprepareforclass14-2-2-3-1-1" title="Copy heading and permalink for Item 2.a" aria-label="Copy heading and permalink for Item 2.a">🔗</a></div>
+</li>
+<li id="subsec-Toprepareforclass14-2-2-3-1-2">
+<div class="para" id="subsec-Toprepareforclass14-2-2-3-1-2-1">
+<span class="process-math">\(\displaystyle \lim_{h \rightarrow 0^-}\frac{f(1+h)-f(1)}{h}= 2\)</span> while  <span class="process-math">\(\displaystyle \lim_{h \rightarrow 0^+}\frac{f(1+h)-f(1)}{h}= -\frac{1}{2}\text{.}\)</span>  This tells us that <span class="process-math">\(f'(1)\)</span> does not exist.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Toprepareforclass14-2-2-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2.b"><a tabindex="-1" href="#subsec-Toprepareforclass14-2-2-3-1-2" title="Copy heading and permalink for Item 2.b" aria-label="Copy heading and permalink for Item 2.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Toprepareforclass14-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#subsec-Toprepareforclass14-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: To prepare for class"><a tabindex="-1" href="#subsec-Toprepareforclass14" title="Copy heading and permalink for Subsection: To prepare for class" aria-label="Copy heading and permalink for Subsection: To prepare for class">🔗</a></div>
+</section>
+<section class="subsubsection" id="subsubsec-Additionalsuggestions14">
+<h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Additional suggestions</span>
+</h4>
+<ol class="decimal" id="subsubsec-Additionalsuggestions14-2">
+<li id="subsubsec-Additionalsuggestions14-2-1">
+<div class="para" id="subsubsec-Additionalsuggestions14-2-1-1">Be sure to master this type of computation!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Additionalsuggestions14-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/figurepiecewisefprime2.html" id="subsubsec-Additionalsuggestions14-2-1-2">
+\begin{align*}
+f’(x) = \amp \lim_{h \rightarrow 0}\frac{f(x+h) - f(x)}{h} \\
+= \mathstrut \amp \lim_{h \rightarrow 0} \frac{ (x+h)^{2} - 4 - [x^{2} - 4]}{h} \\
+= \mathstrut \amp \lim_{h \rightarrow 0} \frac{x^{2} + 2xh+h^{2}-4 - x^{2} + 4}{h} \\
+= \mathstrut \amp \lim_{h \rightarrow 0} \frac{2xh+h^{2}}{h} \\
+= \mathstrut \amp \lim_{h \rightarrow 0} 2x + h \\
+= \mathstrut \amp 2x 
+\end{align*}
+</div>
+<div class="para" id="subsubsec-Additionalsuggestions14-2-1-3">The graph of <span class="process-math">\(f'(x)\)</span> in <a href="handouts-5.html#figurepiecewisefprime2" class="xref" data-knowl="./knowl/xref/figurepiecewisefprime2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 28">Figure 28</a> is in red.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Additionalsuggestions14-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="figurepiecewisefprime2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/piecewisefprime2Pic.svg" role="img" class="contained" alt='Graph showing two functions on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. One graph is a smooth blue curve shaped like an upward-opening parabola. It has a minimum near the point (0, −4) and is symmetric about the y-axis. The parabola crosses the x-axis near x = −4 and x = 4 and increases on both sides of its minimum. The second graph is a straight line labeled f′(x). This line has positive slope and passes through the origin. It crosses the x-axis at x = 0 and increases steadily from left to right. The figure illustrates the relationship between a function and its derivative. Where the parabola is decreasing to the left of x = 0, the derivative is negative, and where the parabola is increasing to the right of x = 0, the derivative is positive. The minimum of the parabola occurs where f′(x) equals zero."'></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">28<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The graph of <span class="process-math">\(f'(x)=2x\)</span> given a graph of <span class="process-math">\(f(x)=x^2-4\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 28"><a tabindex="-1" href="#figurepiecewisefprime2" title="Copy heading and permalink for Figure 28" aria-label="Copy heading and permalink for Figure 28">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#subsubsec-Additionalsuggestions14-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsubsec-Additionalsuggestions14-2-2">
+<div class="para logical" id="subsubsec-Additionalsuggestions14-2-2-1">
+<ol class="lower-alpha lower-alpha-level-1" id="subsubsec-Additionalsuggestions14-2-2-1-1">
+<li id="subsubsec-Additionalsuggestions14-2-2-1-1-1">
+<div class="para" id="subsubsec-Additionalsuggestions14-2-2-1-1-1-1">
+<span class="process-math">\(g'(0) = 0\text{,}\)</span> <span class="process-math">\(g'(1) =-2\text{,}\)</span> <span class="process-math">\(g'(2)\)</span> does not exist (the two one-sided limits are different), <span class="process-math">\(g'(3)=6\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Additionalsuggestions14-2-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2.a"><a tabindex="-1" href="#subsubsec-Additionalsuggestions14-2-2-1-1-1" title="Copy heading and permalink for Item 2.a" aria-label="Copy heading and permalink for Item 2.a">🔗</a></div>
+</li>
+<li id="subsubsec-Additionalsuggestions14-2-2-1-1-2">
+<div class="para" id="subsubsec-Additionalsuggestions14-2-2-1-1-2-1">The graphs of <span class="process-math">\(g(x)\)</span> and <span class="process-math">\(g'(x)\)</span> are shown in blue and red in <a href="handouts-5.html#figurepiecewisefprime3" class="xref" data-knowl="./knowl/xref/figurepiecewisefprime3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 29">Figure 29</a> respectively.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Additionalsuggestions14-2-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="figurepiecewisefprime3"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/latex-image/piecewisefprime3Pic.svg" role="img" class="contained" alt='Graph showing a function f and its derivative f′ on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. The graph of f(x) is drawn with a thick blue curve. On the left and right, the graph rises steeply upward, with arrows indicating that the function continues to increase beyond the edges of the graph. Between x = −2 and x = 2, the graph forms a smooth, curved arch that reaches a local maximum near the point (0, 4). At x = −2 and x = 2, the graph has sharp corners at the points (−2, 1) and (2, 1), indicating that f is not differentiable at those x-values. The graph of f′(x) is shown in red. It consists of several line segments and rays with open circles indicating points where the derivative is not defined. One red segment with negative slope appears between x = −2 and x = 2, crossing the y-axis near y = −1 and ending with open circles near x = −2 and x = 2. Additional red rays appear to the left of x = −2 and to the right of x = 2 with positive slope, each starting at an open circle. The figure emphasizes the relationship between a function and its derivative, showing that f′(x) is undefined at the corner points of f and changes sign according to whether f is increasing or decreasing."'></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">29<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The graph of <span class="process-math">\(f'(x)=2x\)</span> given a graph of <span class="process-math">\(f(x)=|x^2-4|\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 29"><a tabindex="-1" href="#figurepiecewisefprime3" title="Copy heading and permalink for Figure 29" aria-label="Copy heading and permalink for Figure 29">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Item 2.b"><a tabindex="-1" href="#subsubsec-Additionalsuggestions14-2-2-1-1-2" title="Copy heading and permalink for Item 2.b" aria-label="Copy heading and permalink for Item 2.b">🔗</a></div>
+</li>
+<li id="subsubsec-Additionalsuggestions14-2-2-1-1-3">
+<div class="para" id="subsubsec-Additionalsuggestions14-2-2-1-1-3-1">
+<span class="process-math">\(g\)</span> is not differentiable at <span class="process-math">\(x=-2\text{.}\)</span> <span class="process-math">\(g\)</span> is continuous at <span class="process-math">\(x=-2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Additionalsuggestions14-2-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2.c"><a tabindex="-1" href="#subsubsec-Additionalsuggestions14-2-2-1-1-3" title="Copy heading and permalink for Item 2.c" aria-label="Copy heading and permalink for Item 2.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-Additionalsuggestions14-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#subsubsec-Additionalsuggestions14-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Subsubsection: Additional suggestions"><a tabindex="-1" href="#subsubsec-Additionalsuggestions14" title="Copy heading and permalink for Subsubsection: Additional suggestions" aria-label="Copy heading and permalink for Subsubsection: Additional suggestions">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section: Answers"><a tabindex="-1" href="#handouts-5-8" title="Copy heading and permalink for Section: Answers" aria-label="Copy heading and permalink for Section: Answers">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Handout: Daily Prep 1.4 - The Derivative Function"><a tabindex="-1" href="#handouts-5" title="Copy heading and permalink for Handout: Daily Prep 1.4 - The Derivative Function" aria-label="Copy heading and permalink for Handout: Daily Prep 1.4 - The Derivative Function">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="handouts-4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="handouts-6.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
