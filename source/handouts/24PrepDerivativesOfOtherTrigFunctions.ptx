@@ -50,7 +50,7 @@
     
 
     <p>
-      [Submit] <alert>Explore</alert> the applet <url href="https://www.geogebra.org/m/cNEtsbvC">Sine, Cosine, and Tangent animated from the unit circle</url>. Before starting this section, it is important to remember how the tangent function is related to the sine and cosine functions. Use this applet to answer the following questions. Submit screen captures and answers to the questions posed as needed.
+      📝 [Submit] <alert>Explore</alert> the applet <url href="https://www.geogebra.org/m/cNEtsbvC">Sine, Cosine, and Tangent animated from the unit circle</url>. Before starting this section, it is important to remember how the tangent function is related to the sine and cosine functions. Use this applet to answer the following questions. Submit screen captures and answers to the questions posed as needed.
     </p>
 
     <p>
@@ -105,7 +105,7 @@ https://activecalculus.org/single2e/sec-2-4-other-trig.html#sec-2-4-other-trig">
     
 
     <p>
-      [Submit] <alert>Do</alert> <url href="
+      📝 [Submit] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-2-4-other-trig.html#PA-2-4">Preview Activity 2.4.1</url>.
     </p>
   </li>
@@ -114,7 +114,7 @@ https://activecalculus.org/single2e/sec-2-4-other-trig.html#PA-2-4">Preview Acti
     
 
     <p>
-      [Submit] <alert>Do</alert> the following extension of <url href="
+      📝 [Submit] <alert>Do</alert> the following extension of <url href="
 https://activecalculus.org/single2e/sec-2-4-other-trig.html#PA-2-4">Preview Activity 2.4.1</url>. Submit a screen capture from <em>GeoGebra</em> and answer questions posed.
     </p>
 
@@ -183,6 +183,64 @@ https://activecalculus.org/single2e/sec-2-4-other-trig.html#Library__AlfredUniv_
     </p>
   </li>
   </ul>
+
+ <exercise label="cs-trig-derivative-detective">
+<title>Derivative Detective</title>
+
+<statement>
+<p>
+A student remembers only fragments of the derivative formulas. Sort each clue
+with the derivative rule it identifies.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    Its derivative is always greater than zero.
+  </premise>
+
+  <premise>
+    The derivative involves a secant.
+  </premise>
+
+  <response>
+    <p><m>\tan(x)</m></p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    Its derivative is always less than zero.
+  </premise>
+
+  <premise>
+    The derivative involves a cosecant.
+  </premise>
+
+  <response>
+    <p><m>\cot(x)</m></p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    Its derivative contains the function itself.
+  </premise>
+
+  <premise>
+    The derivative also contains tangent.
+  </premise>
+
+  <response>
+    <p><m>\sec(x)</m></p>
+  </response>
+</match>
+
+</cardsort>
+
+</exercise> 
 
 </section>
 

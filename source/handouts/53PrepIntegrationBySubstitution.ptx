@@ -57,7 +57,7 @@ https://activecalculus.org/single2e/sec-5-3-substitution.html#sec-5-3-substituti
 
   <li>
     <p>
-      [Submit] <alert>Do</alert> <url href="
+      📝 [Submit] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-5-3-substitution.html#PA-5-3">Preview Activity 5.3.1</url> parts (a) and (b) numbers (i) and (ii).
     </p>
 
@@ -131,7 +131,7 @@ https://activecalculus.org/single2e/sec-5-3-substitution.html#sec-5-3-substituti
       <ol>
       <li>
         <p>
-          [Submit] <alert>Explore</alert> the applet <url href="https://www.geogebra.org/m/YPSNUfpm">U-Substitition by Tim Brzezinski</url>. It illustrates the idea of <m>u</m>-substitition. No matter the value of <m>a</m>, <m>b</m>, of how you position the slider, how are the areas of the green and blue regions related?
+          📝 [Submit] <alert>Explore</alert> the applet <url href="https://www.geogebra.org/m/YPSNUfpm">U-Substitition by Tim Brzezinski</url>. It illustrates the idea of <m>u</m>-substitition. No matter the value of <m>a</m>, <m>b</m>, of how you position the slider, how are the areas of the green and blue regions related?
         </p>
       </li>
 
@@ -175,7 +175,7 @@ https://activecalculus.org/single2e/sec-5-3-substitution.html#Ex-5-3-usub">Examp
 
   <li>
     <p>
-      [Submit] <alert>Do</alert> write a paragraph or two with your reflections on the value of each of the following as they appeared in the Daily Prep assignments this semester. These comments will be used to improve the Daily Prep assignments for the next semester.
+      📝 [Submit] <alert>Do</alert> write a paragraph or two with your reflections on the value of each of the following as they appeared in the Daily Prep assignments this semester. These comments will be used to improve the Daily Prep assignments for the next semester.
     </p>
 
     <p>
@@ -213,6 +213,93 @@ https://activecalculus.org/single2e/sec-5-3-substitution.html#Ex-5-3-usub">Examp
     </p>
   </li>
   </ul>
+
+<exercise label="cs-substitution-antiderivatives">
+<title>Reverse the Chain Rule</title>
+
+<statement>
+<p>
+Match each indefinite integral with its antiderivative.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    <m>\displaystyle \int (2x+1)^5\,dx</m>
+  </premise>
+
+  <response>
+    <p>
+      <m>\displaystyle \frac{(2x+1)^6}{12}+C</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>\displaystyle \int e^{3x}\,dx</m>
+  </premise>
+
+  <response>
+    <p>
+      <m>\displaystyle \frac{1}{3}e^{3x}+C</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>\displaystyle \int \cos(5x)\,dx</m>
+  </premise>
+
+  <response>
+    <p>
+      <m>\displaystyle \frac{1}{5}\sin(5x)+C</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>\displaystyle \int \frac{1}{4x-3}\,dx</m>
+  </premise>
+
+  <response>
+    <p>
+      <m>\displaystyle \frac{1}{4}\ln|4x-3|+C</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>\displaystyle \int \sin(7x)\,dx</m>
+  </premise>
+
+  <response>
+    <p>
+      <m>\displaystyle -\frac{1}{7}\cos(7x)+C</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>\displaystyle \int \frac{6}{(6x+1)^2}\,dx</m>
+  </premise>
+
+  <response>
+    <p>
+      <m>\displaystyle -\frac{1}{6x+1}+C</m>
+    </p>
+  </response>
+</match>
+
+</cardsort>
+
+</exercise>
 
 </section>
 

@@ -302,7 +302,7 @@ https://activecalculus.org/single2e/sec-5-2-FTC2.html#PA-5-2">Preview Activity 5
 
         <li>
           <p>
-            [Submit] <alert>Read</alert> <url href="
+            📝 [Submit] <alert>Read</alert> <url href="
 https://activecalculus.org/single2e/sec-5-2-FTC2.html#sec-5-2-FTC2-4">section 5.2.2</url> up to Activity 5.2.2.
           </p>
 
@@ -311,9 +311,9 @@ https://activecalculus.org/single2e/sec-5-2-FTC2.html#sec-5-2-FTC2-4">section 5.
               <li>
                 <p>
                   In equation 5.2.1, it is claimed that
-                  <me>
+                  <md>
                     \lim_{h \rightarrow 0}\frac{\int_{c}^{x+h}f(t) \ dt - \int_{c}^{x} f(t) \ dt}{h}= \lim_{h \rightarrow 0}\frac{\int_{x}^{x+h}f(t) \ dt}{h}.
-                  </me>
+                  </md>
                   The author explains why this is true with an equation.
                   Draw a well-labeled figure using the graph of <m>f(t)</m> and areas under that curve that illustrates why the numerators are indeed equal for any function <m>f(t)</m>.
                   <em>Hint: A property from <url href="
@@ -324,9 +324,9 @@ https://activecalculus.org/single2e/sec-4-3-definite-integral.html#sec-4-3-defin
               <li>
                 <p>
                   The author goes on to say “Now, observe that for small values of <m>h</m>,
-                  <me>
+                  <md>
                     \int_{x}^{x+h}f(t) \ dt \approx f(x) \cdot h,
-                  </me>
+                  </md>
                   by a simple left-hand approximation of the integral.” Show this is also the case by drawing a well-labeled figure illustrating this one-rectangle Riemann sum.
                 </p>
               </li>
@@ -342,7 +342,7 @@ https://activecalculus.org/single2e/sec-4-3-definite-integral.html#sec-4-3-defin
 
         <li>
           <p>
-            [Submit] <alert>Do</alert> <url href="
+            📝 [Submit] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-5-2-FTC2.html#act-5-2-1">Activity 5.2.2</url>. If you get stuck, you may <alert>watch</alert> the video <url href="https://www.youtube.com/watch?v=-XXAwXS_DP0">solution to Activity 5.2.2 (8:09)</url>.
           </p>
         </li>
@@ -380,7 +380,7 @@ https://activecalculus.org/single2e/sec-5-2-FTC2.html#sec-5-2-FTC2-5">section 5.
 
         <li>
           <p>
-            [Submit] <alert>Explore</alert> applet <url href="https://www.geogebra.org/m/tFXTp3ar">Second Fundamental Theorem of Calculus</url>. Enter <m>f(x)=\cos(x^{2})</m> and <em>Starting <m>x</m>-value: 0</em> and then answer these questions:
+            📝 [Submit] <alert>Explore</alert> applet <url href="https://www.geogebra.org/m/tFXTp3ar">Second Fundamental Theorem of Calculus</url>. Enter <m>f(x)=\cos(x^{2})</m> and <em>Starting <m>x</m>-value: 0</em> and then answer these questions:
           </p>
 
           <p>
@@ -471,6 +471,92 @@ https://activecalculus.org/single2e/sec-5-2-FTC2.html#sec-5-2-FTC2-5">section 5.
 
         </li>
         </ul>
+
+<exercise label="cs-second-ftc-computation">
+<title>Differentiate the Integral Function</title>
+
+<statement>
+<p>
+Use the Second Fundamental Theorem of Calculus to match each function
+with its derivative.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    <m>
+    F(x)=\int_0^x (t^2+1)\,dt
+    </m>
+  </premise>
+
+  <response>
+    <p>
+      <m>F'(x)=x^2+1</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>
+    G(x)=\int_2^x \sin(t)\,dt
+    </m>
+  </premise>
+
+  <response>
+    <p>
+      <m>G'(x)=\sin(x)</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>
+    H(x)=\int_{-1}^x \frac{1}{1+t^2}\,dt
+    </m>
+  </premise>
+
+  <response>
+    <p>
+      <m>H'(x)=\frac{1}{1+x^2}</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>
+    P(x)=\int_5^x e^t\,dt
+    </m>
+  </premise>
+
+  <response>
+    <p>
+      <m>P'(x)=e^x</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>
+    Q(x)=\int_1^x \sqrt{1+t^4}\,dt
+    </m>
+  </premise>
+
+  <response>
+    <p>
+      <m>Q'(x)=\sqrt{1+x^4}</m>
+    </p>
+  </response>
+</match>
+
+</cardsort>
+
+</exercise>
 
 </section>
 

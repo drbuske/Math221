@@ -65,7 +65,7 @@ https://activecalculus.org/single2e/sec-4-1-velocity-distance.html#sec-4-1-veloc
 
     <li>
       <p>
-        [Submit] <alert>Do</alert> <url href="
+        📝 [Submit] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-4-1-velocity-distance.html#PA-4-1">Preview Activity 4.1.1</url>.
       </p>
 
@@ -107,7 +107,7 @@ https://activecalculus.org/single2e/sec-4-1-velocity-distance.html#sec-4-1-veloc
 
     <li>
       <p>
-        [Submit] <alert>Explore</alert> the applet <url href="https://www.geogebra.org/m/bgZzXvau">Displacement vs. Distance on a Velocity-Time Graph</url>. If <m>s(t)</m> represents the displacement of an object at time <m>t</m>, and <m>|s(t)|</m> represents the distance traveled at at time <m>t</m>, answer the following:
+        📝 [Submit] <alert>Explore</alert> the applet <url href="https://www.geogebra.org/m/bgZzXvau">Displacement vs. Distance on a Velocity-Time Graph</url>. If <m>s(t)</m> represents the displacement of an object at time <m>t</m>, and <m>|s(t)|</m> represents the distance traveled at at time <m>t</m>, answer the following:
       </p>
 
       <p>
@@ -178,6 +178,98 @@ https://activecalculus.org/single2e/sec-4-1-velocity-distance.html#Library__Mich
       </p>
     </li>
     </ul>
+
+<exercise label="cs-displacement-versus-distance">
+<title>📝 [Submit] Displacement or Distance?</title>
+
+<statement>
+<p>
+For each velocity scenario, determine the correct value. Recall that
+displacement is the <em>signed</em> area under the velocity graph, while
+distance traveled is the total area between the graph and the
+<m>t</m>-axis. Match each situation with the correct conclusion.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    Velocity is constantly
+    <m>4</m> ft/s for
+    <m>3</m> s.  
+  </premise>
+
+  <response>
+    <p>
+      Displacement = Distance = <m>12</m> ft.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    Velocity is constantly
+    <m>-5</m> ft/s for
+    <m>2</m> s.  
+  </premise>
+
+  <response>
+    <p>
+      Displacement = <m>-10</m> ft,
+      Distance = <m>10</m> ft.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    Velocity is
+    <m>3</m> ft/s for the first second and
+    <m>-3</m> ft/s for the second second.
+  </premise>
+
+  <response>
+    <p>
+      Displacement = <m>0</m> ft,
+      Distance = <m>6</m> ft.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    Velocity is
+    <m>4</m> ft/s for the first second and
+    <m>-2</m> ft/s for the next second.
+  </premise>
+
+  <response>
+    <p>
+      Displacement = <m>2</m> ft,
+      Distance = <m>6</m> ft.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    Velocity is
+    <m>-1</m> ft/s for the first second and
+    <m>5</m> ft/s for the next second.
+  </premise>
+
+  <response>
+    <p>
+      Displacement = <m>4</m> ft,
+      Distance = <m>6</m> ft.
+    </p>
+  </response>
+</match>
+
+</cardsort>
+
+</exercise>  
 
   </section>
 

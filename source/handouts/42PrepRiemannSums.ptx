@@ -101,7 +101,7 @@ https://activecalculus.org/single2e/sec-4-2-Riemann.html#sigma-notation">section
       <ol>
 
       <li>
-        <p> [Submit]
+        <p> 📝 [Submit]
           <ol>
             <li> 
               <p>
@@ -126,7 +126,7 @@ https://activecalculus.org/single2e/sec-4-2-Riemann.html#sigma-notation">section
 
       <li>
         <p>
-          [Submit] In this problem, we seek to estimate the area under the curve <m>y=1-x^{2}</m>, above the <m>x</m>-axis, and between <m>x=0</m> and <m>x=1</m>.
+          In this problem, we seek to estimate the area under the curve <m>y=1-x^{2}</m>, above the <m>x</m>-axis, and between <m>x=0</m> and <m>x=1</m>.
         </p>
 
         <p>
@@ -310,17 +310,17 @@ https://activecalculus.org/single2e/sec-4-2-Riemann.html#sec-4-2-Riemann-5">sect
       
 
       <p>
-        [Submit] <alert>Read</alert> section 4.2.3 again. In <url href="
+        📝 [Submit] <alert>Read</alert> section 4.2.3 again. In <url href="
 https://activecalculus.org/single2e/sec-4-2-Riemann.html#sec-4-2-Riemann-5-15">this paragraph regarding midpoint Riemann sums</url>, the authors define
-        <me>
+        <md>
           \overline{x}_{i+1}= \frac{x_{i} + x_{i+1}}{2}.
-        </me>
+        </md>
         A diagram illustrating the resulting Riemann sum is shown <url href="
 https://activecalculus.org/single2e/sec-4-2-Riemann.html#F-4-2-RightMidSum">on the right in this figure</url>.
         Draw a similar diagram for the Riemann sum resulting from
-        <me>
+        <md>
           \widehat{x}_{i+1}= \frac{x_{i}}{3}+ \frac{2x_{i+1}}{3}.
-        </me>
+        </md>
         <em>Hint: You may wish to try a simple example in which <m>x_{0}=0, x_{1}=3, x_{2}=6, x_{3}=9</m>, and <m>x_{4}=12</m>.</em>
       </p>
     </li>
@@ -343,6 +343,68 @@ https://activecalculus.org/single2e/sec-4-2-Riemann.html#F-4-2-RightMidSum">on t
       </p>
     </li>
     </ul>
+
+<exercise label="cs-riemann-sums-computation">
+<title>📝 [Submit] Compute the Riemann Sum</title>
+
+<statement>
+<p>
+Suppose that the values of <m>f</m> are given below.
+Match each Riemann sum description with its value.
+</p>
+
+<tabular>
+<row><cell><m>x</m></cell><cell>0</cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell></row>
+<row><cell><m>f(x)</m></cell><cell>2</cell><cell>5</cell><cell>3</cell><cell>4</cell><cell>6</cell></row>
+</tabular>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    Left Riemann sum on <m>[0,4]</m> with <m>n=4</m>
+  </premise>
+
+  <response>
+    <p><m>14</m></p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    Right Riemann sum on <m>[0,4]</m> with <m>n=4</m>
+  </premise>
+
+  <premise> 
+    Midpoint sum on <m>[0,4]</m>.  Use two rectangles of width <m>2</m>
+  </premise>
+
+  <response>
+    <p><m>18</m></p>
+  </response>
+</match>
+
+<match>
+
+  <response>
+    <p><m>16</m></p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    Left Riemann sum on <m>[0,2]</m> with <m>n=2</m>
+  </premise>
+
+  <response>
+    <p><m>7</m></p>
+  </response>
+</match>
+
+</cardsort>
+
+</exercise>
 
   </section>
 

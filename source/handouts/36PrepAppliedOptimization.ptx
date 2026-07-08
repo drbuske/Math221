@@ -95,7 +95,7 @@ https://activecalculus.org/single2e/sec-3-6-applied-opt.html#sec-3-6-applied-opt
     
 
     <p>
-      [Submit] <alert>Do</alert> <url href="
+      📝 [Submit] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-3-6-applied-opt.html#PA-3-6">Preview Activity 3.6.1</url>.
     </p>
 
@@ -146,7 +146,7 @@ https://activecalculus.org/single2e/sec-3-6-applied-opt.html#sec-3-6-applied-opt
       <li>
 
         <p>
-          [Submit] If you have 100 feet of fencing and want to enclose a rectangular area up against a long, straight wall, what is the largest area you can enclose?
+          📝 [Submit] If you have 100 feet of fencing and want to enclose a rectangular area up against a long, straight wall, what is the largest area you can enclose?
         </p>
 
         <p>
@@ -203,7 +203,7 @@ A coordinate diagram showing a triangular region in the x–y plane. The region 
 
   <li>
     <p>
-       [Submit] <alert>Do</alert> <url href="
+       📝 [Submit] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-3-6-applied-opt.html#csafranski__3.4HW_prob1.pg">exercise 1 in section 3.6.4</url>. Submit a screen capture of a “check of the answers” to your work. Also, answer these two questions:
     </p>
 
@@ -247,6 +247,78 @@ https://activecalculus.org/single2e/sec-3-6-applied-opt.html#csafranski__3.4HW_p
     </p>
   </li>
   </ul>
+
+<exercise label="cs-applied-optimization-objective-function">
+<title>Build the Objective Function</title>
+
+<statement>
+<p>
+In each optimization problem, one variable has already been eliminated using
+the given constraint. Match the situation with the correct one-variable
+objective function that should be optimized.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    A rectangle has perimeter <m>100</m>.  Let <m>x</m> be the width.
+  </premise>
+
+  <response>
+    <p>
+      Maximize
+      <m>A(x)=x(50-x)</m>.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    A rectangle has area <m>100</m>.  Let <m>x</m> be the width.
+  </premise>
+
+  <response>
+    <p>
+      Minimize
+      <m>P(x)=2x+\frac{200}{x}</m>.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    An open-top box is constructed from a
+    <m>20 \times 30</m> sheet by cutting squares
+    of side length <m>x</m> from each corner.  
+  </premise>
+
+  <response>
+    <p>
+      Maximize <m>V(x)=x(20-2x)(30-2x)</m>.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    A cylindrical can must hold
+    <m>100\pi</m> cubic units.      Eliminate <m>h</m> using
+    <m>\pi r^2h=100\pi</m>.
+  </premise>
+
+  <response>
+    <p>
+      Minimize
+      <m>S(r)=2\pi r^2+\frac{200\pi}{r}</m>.
+    </p>
+  </response>
+</match>
+
+</cardsort>
+
+</exercise>
 
 </section>
 
@@ -397,9 +469,9 @@ Three diagrams labeled (a), (b), and (c) show different walking routes in a park
             Our goal is to maximize <m>A(x,y) = xy</m> where <m>x</m> represents the length of two sides of fence and <m>y</m> is the length of the other (the length parallel to the wall being used).
             We maximize <m>A(x,y)</m> subject to the condition that <m>2x+y=100</m>.
             By solving for <m>y</m>, we aim to maximize
-            <me>
+            <md>
               A(x)=x(100-2x) = 100x-2x^{2}
-            </me>
+            </md>
             on the domain <m>0 \leq x \leq 50</m> (because <m>0 \leq y=100-2x \leq 100</m>).
             Since <m>A'(x) = 100-4x</m> we find a critical value at <m>x=25</m> that leads to a global maximum of <m>A</m> on its domain.
             <m>A(25) = 1250</m>.
@@ -419,9 +491,9 @@ Three diagrams labeled (a), (b), and (c) show different walking routes in a park
         <li>
           <p>
             We maximize
-            <me>
+            <md>
               A(x) = \frac{1}{2}x(2x) \cdot \left[ \frac{1}{2}(1)(2) - \frac{1}{2}x(2x)\right] = x^{2} [1-x^{2}]
-            </me>
+            </md>
             on the interval <m>0 \leq x \leq 1</m>.
             Note that
          <md><mrow> A'(x) = \mathstrut \amp 2x(1-x^2) + x^2(-2x)</mrow>
@@ -485,9 +557,9 @@ A number line labeled A′(x). Three marked x-values appear: 0, the square root 
               <li>
                 <p>
                   Using the fact that time is distance divided by rate, we have
-                  <me>
+                  <md>
                     T(x) = \frac{x \ {\textrm{ft}}}{6 \ {\textrm{ft/sec}}}+ \frac{ \sqrt{(2000-x)^{2} + 600^{2}} \ {\textrm{ft}} }{4 \ {\textrm{ft/sec}}}= \frac{1}{6}x + \frac{1}{4}\sqrt{4,360,000-4000x+x^{2}}\ {\textrm{seconds}}
-                  </me>
+                  </md>
                   for <m>0 \leq x \leq 2000</m>.
                 </p>
               </li>
@@ -495,9 +567,9 @@ A number line labeled A′(x). Three marked x-values appear: 0, the square root 
               <li>
                 <p>
                   The domain of <m>T</m> is <m>[0,2000]</m>.
-                  <me>
+                  <md>
                     \displaystyle T'(x) = \frac{1}{6}+ \frac{1}{4}\cdot \frac{1}{2}(4,360,000-4000x+x^{2})^{-1/2}(-4000+2x) = 0
-                  </me>
+                  </md>
                   exactly when <m>x=2000-240\sqrt{5}\approx 1463.34</m> feet.
                   <m>T(1463.34) \approx 445</m> seconds.
                   This is a minimum as shown in <xref ref="AlainaExampleAns"/>.

@@ -63,7 +63,7 @@ https://activecalculus.org/single2e/sec-2-5-chain.html#sec-2-5-chain">section 2.
 
   <li>
     <p>
-      [Submit] <alert>Do</alert> <url href="
+      📝 [Submit] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-2-5-chain.html#PA-2-5">Preview Activity 2.5.1</url>.
     </p>
   </li>
@@ -73,7 +73,7 @@ https://activecalculus.org/single2e/sec-2-5-chain.html#PA-2-5">Preview Activity 
 
     
     <p>
-      [Submit] Ask <alert>Copilot</alert> “Explain, in the simplest of terms, why the chain rule formula in calculus is the way it is.
+      Ask <alert>Copilot</alert> “Explain, in the simplest of terms, why the chain rule formula in calculus is the way it is.
       Be sure that I see the chain of variables that is involved.
       Maybe focus on a food chain for me.” Submit two sentences summarizing the idea returned by the AI.
     </p>
@@ -147,7 +147,7 @@ https://activecalculus.org/single2e/sec-2-5-chain.html#sec-2-5-chain-4">section 
 
   <li>
     <p>
-      [Submit] <alert>Do</alert> the following construction in <url href="https://www.geogebra.org/classic"> <em>GeoGebra</em> </url> that may help convince you of the accuracy of the chain rule. Submit screenshots and answers to the questions posed as needed.
+      📝 [Submit] <alert>Do</alert> the following construction in <url href="https://www.geogebra.org/classic"> <em>GeoGebra</em> </url> that may help convince you of the accuracy of the chain rule. Submit screenshots and answers to the questions posed as needed.
     </p>
 
     <p>
@@ -227,6 +227,87 @@ Each icon appears inside a square button.
       </p>
     </li>
     </ul>
+
+ <exercise label="cs-chain-rule-inner-outer">
+<title>📝 [Submit] Inside and Outside</title>
+
+<statement>
+<p>
+Each composite function can be viewed as an outside function acting on an
+inside function. Sort the cards so that each composite function is matched
+with a correct description of its inside and outside functions.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    The outside function is <m>u^5</m>.
+  </premise>
+
+  <premise>
+    The inside function is <m>x^2+1</m>.
+  </premise>
+
+  <response>
+    <p>
+      <m>(x^2+1)^5</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    The outside function is <m>\sin(u)</m>.
+  </premise>
+
+  <premise>
+    The inside function is <m>3x-2</m>.
+  </premise>
+
+  <response>
+    <p>
+      <m>\sin(3x-2)</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    The outside function is <m>e^u</m>.
+  </premise>
+
+  <premise>
+    The inside function is <m>x^3</m>.
+  </premise>
+
+  <response>
+    <p>
+      <m>e^{x^3}</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+   The outside function is <m>\sqrt{u}</m>. 
+  </premise>
+
+  <premise>
+    The inside function is <m>5x+4</m>.
+  </premise>
+
+  <response>
+    <p>
+      <m>\sqrt{5x+4}</m>
+    </p>
+  </response>
+</match>
+
+</cardsort>
+
+</exercise>
 
 </section>
 <section xml:id="sec-Afterclass25">

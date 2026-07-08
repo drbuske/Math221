@@ -98,7 +98,7 @@ https://activecalculus.org/single2e/sec-2-7-implicit.html#sec-2-7-implicit">sect
     
 
     <p>
-      [Submit] <alert>Do</alert> <url href="
+      📝 [Submit] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-2-7-implicit.html#PA-2-7">Preview Activity 2.7.1</url>.
     </p>
 
@@ -117,7 +117,7 @@ https://activecalculus.org/single2e/sec-2-7-implicit.html#PA-2-7">Preview Activi
     
 
     <p>
-      [Submit] <alert>Do</alert> the following computation in <url href="https://www.geogebra.org/classic">GeoGebra</url>. Submit screenshots as needed.
+      📝 [Submit] <alert>Do</alert> the following computation in <url href="https://www.geogebra.org/classic">GeoGebra</url>. Submit screenshots as needed.
     </p>
 
     <p>
@@ -171,7 +171,7 @@ https://activecalculus.org/single2e/sec-2-7-implicit.html#sec-2-7-implicit-4">se
     
 
     <p>
-      [Submit] <alert>Do</alert> write a short explanation of the difference between writing <m>\frac{d}{dx}[x^{2} + y^{2}]</m> and <m>\frac{dy}{dx}[x^{2} + y^{2}]</m>. That is, explain the big difference between the meanings of the symbols <m>\frac{d}{dx}</m> and <m>\frac{dy}{dx}</m>.
+      📝 [Submit] <alert>Do</alert> write a short explanation of the difference between writing <m>\frac{d}{dx}[x^{2} + y^{2}]</m> and <m>\frac{dy}{dx}[x^{2} + y^{2}]</m>. That is, explain the big difference between the meanings of the symbols <m>\frac{d}{dx}</m> and <m>\frac{dy}{dx}</m>.
     </p>
   </li>
 
@@ -199,6 +199,63 @@ https://activecalculus.org/single2e/sec-2-7-implicit.html#sec-2-7-implicit-4">se
     </p>
   </li>
   </ul>
+
+<exercise label="cs-implicit-differentiation-computation">
+<title>Compute the Derivative Step</title>
+
+<statement>
+<p>
+Many mistakes in implicit differentiation occur when differentiating expressions
+that contain <m>y</m>. For each expression, match it with its correct derivative
+with respect to <m>x</m>.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    <m>\dfrac{d}{dx}(y^3)</m>
+  </premise>
+
+  <response>
+    <p><m>3y^2y'</m></p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>\dfrac{d}{dx}(xy)</m>
+  </premise>
+
+  <response>
+    <p><m>xy'+y</m></p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>\dfrac{d}{dx}(\sin(y))</m>
+  </premise>
+
+  <response>
+    <p><m>\cos(y)\,y'</m></p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>\dfrac{d}{dx}(e^y)</m>
+  </premise>
+
+  <response>
+    <p><m>e^y y'</m></p>
+  </response>
+</match>
+
+</cardsort>
+
+</exercise>  
 
 </section>
 

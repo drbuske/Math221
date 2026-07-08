@@ -95,7 +95,7 @@ https://activecalculus.org/single2e/sec-3-3-tests.html#sec-3-3-tests">section 3.
 
   <li>
     <p>
-      [Submit] <alert>Do</alert> <url href="
+      📝 [Submit] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-3-3-tests.html#PA-3-3">Preview Activity 3.3.1</url>.
     </p>
   </li>
@@ -167,9 +167,9 @@ An empty Cartesian grid.
           <p>
             Even a closed, bounded interval does not guarantee the existence of global extrema.
             For example, on <m>[0,3]</m> plot the graph of
-            <me>
+            <md>
               f(x) = \left\{ \begin{array}{cc}x+1 &#x26; {\textrm{if  }} 0 \leq x &#x3C;1 \\ -x &#x26; {\textrm{if  }} 1 \leq x &#x3C;2 \\ 0 &#x26; {\textrm{if  }} 2 \leq x \leq 3\end{array} \right\}.
-            </me>
+            </md>
           </p>
           <figure xml:id="figureEmptyGridb33">
   <image xml:id="EmptyGridb33Pic" width="50%">
@@ -270,7 +270,7 @@ A graph of a smooth function y versus x on the interval from x = 0 to x = 10. Th
     
 
     <p>
-      [Submit] <alert>Explore</alert> applet <url href="https://www.geogebra.org/m/EPnuRjtr">Critical Values</url>. Then determine the critical values for the given function in the applet. What is the behavior of <m>f'(x)</m> on the left and the right of these critical values? Does that behavior tell you if the critical value is a local maximum or local minimum? Explain.
+      📝 [Submit] <alert>Explore</alert> applet <url href="https://www.geogebra.org/m/EPnuRjtr">Critical Values</url>. Then determine the critical values for the given function in the applet. What is the behavior of <m>f'(x)</m> on the left and the right of these critical values? Does that behavior tell you if the critical value is a local maximum or local minimum? Explain.
     </p>
   </li>
 
@@ -322,7 +322,7 @@ A graph of a function f with axes labeled x and y. The curve is increasing and S
     
 
     <p>
-      [Submit] <alert>Explore</alert>. Submit a screenshot with a reasonable score (like Professor Buske got on his first try...see <xref ref="ScoreGame"/>) to the Activity in the applet: <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_app_1_graph_AD.html">Reconstruct <m>f</m> from its First Derivative</url>.
+      📝 [Submit] <alert>Explore</alert>. Submit a screenshot with a reasonable score (like Professor Buske got on his first try...see <xref ref="ScoreGame"/>) to the Activity in the applet: <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_app_1_graph_AD.html">Reconstruct <m>f</m> from its First Derivative</url>.
     </p>
 <figure xml:id="ScoreGame">
     <image source="AppletReconstructf.jpg" width="90%">
@@ -333,6 +333,63 @@ An interactive graph titled “Reconstruct f from its First Derivative.” The c
   </figure>
     </li>
     </ul>
+
+<exercise label="cs-first-derivative-test">
+<title>What Happens at the Critical Number?</title>
+
+<statement>
+<p>
+Suppose that <m>c</m> is a critical number of a function <m>f</m>.
+Match each sign pattern for <m>f'(x)</m> with the correct conclusion
+about <m>f</m> at <m>x=c</m>.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    <m>f'(x) &gt; 0</m> for <m>x &lt; c</m> and <m>f'(x) &lt; 0</m> for <m>x &gt; c</m>
+  </premise>
+
+  <response>
+    <p>
+      Local maximum at <m>x=c</m>.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>f'(x) &lt; 0</m> for <m>x &lt; c</m> and <m>f'(x) &gt; 0</m> for <m>x &gt; c</m>
+  </premise>
+
+  <response>
+    <p>
+      Local minimum at <m>x=c</m>.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>f'(x) &gt; 0</m> for <m>x &lt; c</m> and <m>f'(x) &gt; 0</m> for <m>x &gt; c</m>
+  </premise>
+
+  <premise>
+    <m>f'(x) &lt; 0</m> for <m>x &lt; c</m> and <m>f'(x) &lt; 0</m> for <m>x &gt; c</m>
+  </premise>
+
+  <response>
+    <p>
+      Neither a local maximum nor a local minimum at <m>x=c</m>.
+    </p>
+  </response>
+</match>
+
+</cardsort>
+
+</exercise>
 
 </section>
 
@@ -393,9 +450,9 @@ https://activecalculus.org/single2e/sec-3-3-tests.html#Library__Michigan__Chap4S
           <li>
             <p>
               If <m>a</m> and <m>b</m> are positive constants, find all critical points of
-              <me>
+              <md>
                 g(t) = ae^{t} + be^{-t}.
-              </me>
+              </md>
               <em>Hint:</em> Try factoring <m>e^{-t}</m> out of the derivative.
             </p>
           </li>

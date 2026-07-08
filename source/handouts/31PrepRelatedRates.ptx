@@ -59,7 +59,7 @@ https://activecalculus.org/single2e/sec-3-1-rel-rates.html#sec-3-1-rel-rates">se
     
 
     <p>
-      [Submit] <alert>Explore</alert> the applet <url href="https://www.geogebra.org/m/TF6TSj5F">modeling two balloons being blown up</url>. Then, answer these questions:
+      📝 [Submit] <alert>Explore</alert> the applet <url href="https://www.geogebra.org/m/TF6TSj5F">modeling two balloons being blown up</url>. Then, answer these questions:
     </p>
 
     <p>
@@ -102,7 +102,7 @@ https://activecalculus.org/single2e/sec-3-1-rel-rates.html#sec-3-1-rel-rates">se
     
 
     <p>
-      [Submit] <alert>Do</alert> <url href="
+      📝 [Submit] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-3-1-rel-rates.html#PA-3-1">Preview Activity 3.1.1</url>.
     </p>
 
@@ -147,7 +147,7 @@ https://activecalculus.org/single2e/sec-3-1-rel-rates.html#sec-3-1-rel-rates-4">
         
 
         <p>
-         [Submit]
+         
           The radius of a circular oil slick expands at a rate of 2 m/min.
           <alert>Explore</alert> this applet to help you understand <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_app_rr_oil_slick.html">how the slick expands in time</url>.
         </p>
@@ -257,6 +257,71 @@ https://activecalculus.org/single2e/sec-3-1-rel-rates.html#csafranski__3.5HW_pro
     </p>
   </li>
   </ul>
+
+ <exercise label="cs-related-rates-differentiate">
+<title>📝 [Submit] Differentiate with Respect to Time</title>
+
+<statement>
+<p>
+In each related-rates problem, the first step is often to differentiate an
+equation relating two or more quantities. Match each equation with its
+derivative with respect to time.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    <m>A=\pi r(t)^2</m>
+  </premise>
+
+  <response>
+    <p>
+      <m>\dfrac{dA}{dt}=2\pi r\dfrac{dr}{dt}</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>V=\frac{4}{3}\pi r(t)^3</m>
+  </premise>
+
+  <response>
+    <p>
+      <m>\dfrac{dV}{dt}=4\pi r^2\dfrac{dr}{dt}</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>x(t)^2+y(t)^2=25</m>
+  </premise>
+
+  <response>
+    <p>
+      <m>2x\dfrac{dx}{dt}+2y\dfrac{dy}{dt}=0</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>x(t)y(t)=100</m>
+  </premise>
+
+  <response>
+    <p>
+      <m>x\dfrac{dy}{dt}+y\dfrac{dx}{dt}=0</m>
+    </p>
+  </response>
+</match>
+
+</cardsort>
+
+</exercise> 
 
   </section>
 
@@ -472,15 +537,15 @@ https://activecalculus.org/single2e/sec-3-1-rel-rates.html#csafranski__3.5HW_pro
         <p>
           We know that <m>dV/dt = 10</m> where <m>V</m> represents the volume of water in the tank at time <m>t</m>.
           Since <m>V = \frac{1}{3}\pi r(t)^{2} h(t)</m> where <m>\frac{r(t)}{h(t)}= \frac{4}{10}</m> we have that
-          <me>
+          <md>
             V(t) = \frac{1}{3}\pi \left( \frac{2}{5}h(t) \right)^{2} h(t) = \frac{4}{75}\pi h(t)^{3}.
-          </me>
+          </md>
           So, <m>\displaystyle \frac{dV}{dt}= \frac{4}{75}\pi \cdot 3 h(t)^{2} \frac{dh}{dt}</m>.
           We solve for <m>\frac{dh}{dt}</m> and evaluate for <m>h=5</m> feet.
           But
-          <me>
+          <md>
             \frac{dh}{dt}|_{h=5}= \frac{\frac{dV}{dt}}{\frac{12}{75}\pi (5^{2})}= \frac{10}{4\pi}= \frac{5}{2\pi}\ {\textrm{ft/min}}.
-          </me>
+          </md>
         </p>
       </li>
     </ol>
