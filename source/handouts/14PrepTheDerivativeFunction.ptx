@@ -70,7 +70,7 @@ https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#sec-1-4-derivati
     
 
     <p>
-      [Submit] <alert>Do</alert> <url href="
+      📝 [Submit] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#PA-1-4">Preview Activity 1.4.1</url>.
     </p>
 
@@ -95,7 +95,7 @@ https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#PA-1-4">Preview 
     
 
     <p>
-      [Submit] <alert>Explore</alert> the two applets mentioned in the text. The first applet, <url href="https://davidaustinm.github.io/calculus/fpgraph/index.html">Graphing the derivative function</url> is intended to experiment with moving the red point. For the second applet, <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_as_a_function.html">The Derivative as a Function</url>, answer the <em>Explore</em> questions found on the website. Submit a screen capture of the second applet, <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_as_a_function.html">The Derivative as a Function</url> as well as answers to the <em>Explore</em> questions found on the website.
+      📝 [Submit] <alert>Explore</alert> the two applets mentioned in the text. The first applet, <url href="https://davidaustinm.github.io/calculus/fpgraph/index.html">Graphing the derivative function</url> is intended to experiment with moving the red point. For the second applet, <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_as_a_function.html">The Derivative as a Function</url>, answer the <em>Explore</em> questions found on the website. Submit a screen capture of the second applet, <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_as_a_function.html">The Derivative as a Function</url> as well as answers to the <em>Explore</em> questions found on the website.
     </p>
   </li>
 
@@ -121,7 +121,7 @@ https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#PA-1-4">Preview 
 
   <li>
     <p>
-      [Submit] Ask <alert>Copilot</alert> for alternate versions of the limit definition of the derivative of a function <m>f(x)</m>.
+      📝 [Submit] Ask <alert>Copilot</alert> for alternate versions of the limit definition of the derivative of a function <m>f(x)</m>.
       Submit at least one alternate, but equivalent to <url href="
 https://activecalculus.org/single2e/sec-1-4-derivative-fxn.html#D-derivative-defn-x"> found in our textbook</url>, version of the definition of <m>f'(x)</m> that uses a limit.
     </p>
@@ -265,6 +265,85 @@ All endpoints appear solid, and there are no breaks or open circles, indicating 
         </li>
       
         </ul>
+
+<exercise label="dp-1-4-cardsort-derivative-function">
+<title>Connecting a Function to its Derivative</title>
+
+<statement>
+<p>
+Sort each statement to the appropriate conclusion about the derivative
+function <m>f'</m>.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    The graph of <m>f</m> has a horizontal tangent line at <m>x=a</m>.
+  </premise>
+
+  <premise>
+    The instantaneous rate of change of <m>f</m> at <m>x=a</m> is zero.
+  </premise>
+
+  <response>
+    <p>
+      <m>f'(a)=0</m>.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    The graph of <m>f</m> is increasing near <m>x=a</m>.
+  </premise>
+
+  <premise>
+    Tangent lines to <m>f</m> near <m>x=a</m> have positive slope.
+  </premise>
+
+  <response>
+    <p>
+      <m>f'(a) &gt; 0</m>.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    The graph of <m>f</m> is decreasing near <m>x=a</m>.
+  </premise>
+
+  <premise>
+    Tangent lines to <m>f</m> near <m>x=a</m> have negative slope.
+  </premise>
+
+  <response>
+    <p>
+      <m>f'(a) &lt; 0</m>.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    The graph of <m>f</m> has a sharp corner at <m>x=a</m>.
+  </premise>
+
+  <premise>
+    The left- and right-hand slopes at <m>x=a</m> are different.
+  </premise>
+
+  <response>
+    <p>
+      <m>f'(a)</m> does not exist.
+    </p>
+  </response>
+</match>
+
+</cardsort>
+</exercise>
 
 </section>
 <section xml:id="Afterclass13">

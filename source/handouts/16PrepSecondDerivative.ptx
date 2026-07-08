@@ -114,7 +114,7 @@ https://activecalculus.org/single2e/sec-1-6-second-d.html#PA-1-6">Preview Activi
 
   <li>
     <p>
-      [Submit] <alert>Read</alert> <url href="
+      <alert>Read</alert> <url href="
 https://activecalculus.org/single2e/sec-1-6-second-d.html#D-1-6-incr-decr">Definition 1.6.2</url>. Then, compare how the <em>GeoGebra</em> applet (<url href="https://www.geogebra.org/m/cf9hzft7">Increasing/Decreasing Function Visual</url>) attempts to illustrate this definition. <alert>Respond</alert> to these questions:
     </p>
 
@@ -137,13 +137,13 @@ https://activecalculus.org/single2e/sec-1-6-second-d.html#D-1-6-incr-decr">Defin
 
   <li>
     <p>
-      [Submit] <alert>Explore</alert> the relationship between <m>f'</m> and where a function is increasing and decreasing via this fun <em>GeoGebra</em> applet with a cute turtle: <url href="https://www.geogebra.org/m/mCTqH7u4">Increasing and Decreasing Functions</url>. <alert>Summarize</alert> the point of the applet by filling in the blanks in this sentence: A function <m>f</m> is increasing when <m>f'</m> is <m>\underline{\hspace{20mm}}</m> and is decreasing when <m>f'</m> is <m>\underline{\hspace{20mm}}</m>.
+      📝 [Submit] <alert>Explore</alert> the relationship between <m>f'</m> and where a function is increasing and decreasing via this fun <em>GeoGebra</em> applet with a cute turtle: <url href="https://www.geogebra.org/m/mCTqH7u4">Increasing and Decreasing Functions</url>. <alert>Summarize</alert> the point of the applet by filling in the blanks in this sentence: A function <m>f</m> is increasing when <m>f'</m> is <m>\underline{\hspace{20mm}}</m> and is decreasing when <m>f'</m> is <m>\underline{\hspace{20mm}}</m>.
     </p>
   </li>
 
   <li>
     <p>
-      [Submit] <alert>Explore</alert>, even more, the relationship between <m>f'</m> and where a function is increasing and decreasing via this (less fun) <em>GeoGebra</em> applet: <url href="https://www.geogebra.org/m/gpcn7ac3">Increasing/Decreasing Function</url>. Check that your responses to the blanks in the previous bullet are correct for this example.
+      📝 [Submit] <alert>Explore</alert>, even more, the relationship between <m>f'</m> and where a function is increasing and decreasing via this (less fun) <em>GeoGebra</em> applet: <url href="https://www.geogebra.org/m/gpcn7ac3">Increasing/Decreasing Function</url>. Check that your responses to the blanks in the previous bullet are correct for this example.
     </p>
 
     <p>
@@ -191,6 +191,62 @@ https://activecalculus.org/single2e/sec-1-6-second-d.html#sec-1-6-second-d-6">se
 
   </ul> 
 
+<exercise label="dp-1-6-cardsort-second-derivative">
+<title>📝 [Submit] Interpreting the Second Derivative</title>
+
+<statement>
+<p>
+Sort each statement to the appropriate value of <m>f''(x)</m>.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    The graph is concave up.
+  </premise>
+
+  <premise>
+    The slope of the graph is increasing.
+  </premise>
+
+  <response>
+    <p><m>f''(x) &gt; 0</m></p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    The graph is concave down.
+  </premise>
+
+  <premise>
+    The slope of the graph is decreasing.
+  </premise>
+
+  <response>
+    <p><m>f''(x) &lt; 0</m></p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    The graph is a line.
+  </premise>
+
+  <premise>
+    The slope of the graph is constant.
+  </premise>
+
+  <response>
+    <p><m>f''(x)=0</m></p>
+  </response>
+</match>
+
+</cardsort>
+</exercise>
+
 </section>
 
 <section>
@@ -229,9 +285,9 @@ https://activecalculus.org/single2e/sec-1-6-second-d.html#Library__Michigan__Cha
   <li>
     <p>
       <alert>Do</alert> a computation in which you find <m>f''(x)</m> for <m>f(x) = 5x^{2}</m> two ways. First, you already watched a video on algebraically computing a second derivative using a limit: <url href="https://www.youtube.com/watch?v=SIp6g-u-rkc&#x26;t=125s">Limit Definition of the Second Derivative (9:48)</url>. Similar to this video, compute <m>f''(x)</m>. There is, however, a single limit that can be computed to determine <m>f''</m>. For any point <m>a</m>, it turns out that
-      <me>
+      <md>
         f''(a) = \lim_{h \rightarrow 0}\frac{f(a+2h)-2f(a+h)+f(a)}{h^{2}}.
-      </me>
+      </md>
       Use this formula to compute <m>f''(x)</m> when <m>f(x) = 5x^{2}</m> and compare to the answer you found using the method from the video.
     </p>
   </li>

@@ -59,7 +59,7 @@ https://activecalculus.org/single2e/sec-1-8-tan-line-approx.html#sec-1-8-tan-lin
     
 
     <p>
-      [Submit] <alert>Do</alert> <url href="
+      📝 [Submit] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-1-8-tan-line-approx.html#PA-1-8">Preview Activity 1.8.1</url>.
     </p>
 
@@ -97,7 +97,7 @@ https://activecalculus.org/single2e/sec-1-8-tan-line-approx.html#sec-1-8-tan-lin
     
 
     <p>
-      [Submit] <alert>Watch</alert> this <url href="https://www.youtube.com/watch?v=BgPRV9Hxk1k&#x26;feature=emb_title">video on Calculating a Tangent Line</url>. Then, use the local linearization to estimate the value of <m>f(-2.1)</m> for the example presented.
+      📝 [Submit] <alert>Watch</alert> this <url href="https://www.youtube.com/watch?v=BgPRV9Hxk1k&#x26;feature=emb_title">video on Calculating a Tangent Line</url>. Then, use the local linearization to estimate the value of <m>f(-2.1)</m> for the example presented.
     </p>
   </li>
 
@@ -112,7 +112,7 @@ https://activecalculus.org/single2e/sec-1-8-tan-line-approx.html#sec-1-8-tan-lin
     
 
     <p>
-      [Submit] <alert>Re-read</alert> <url href="
+      📝 [Submit] <alert>Re-read</alert> <url href="
 https://activecalculus.org/single2e/sec-1-8-tan-line-approx.html#sec-1-8-tan-line-approx-5-4">Example 1.8.2</url>. Then, write two sentences about the use of the word <em>near</em> in this context. How near is near? How might <em>near</em> depend on the function?
     </p>
   </li>
@@ -221,6 +221,67 @@ The x-axis is labeled with tick marks at 3.9, 4, and 4.2.
       </p>
     </li>
     </ul>
+
+ 
+<exercise label="cs-tangent-line-approximation">
+<title>When Is a Tangent Line Approximation Useful?</title>
+
+
+<statement>
+<p>
+Sort each statement according to the idea it best illustrates.
+</p>
+</statement>
+   
+<cardsort>
+
+<match>
+  <premise>
+    Estimate <m>\sqrt{4.1}</m> using information about
+    <m>\sqrt{x}</m> at <m>x=4</m>.
+  </premise>
+
+  <premise>
+    Approximate a function value at an input close to a known point.
+  </premise>
+
+  <response>
+    <p>Tangent line approximation is likely to work well.</p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    Estimate <m>\sqrt{100}</m> using the tangent line to
+    <m>\sqrt{x}</m> at <m>x=4</m>.
+  </premise>
+
+  <premise>
+    Use local information many units away from the point of tangency.
+  </premise>
+
+  <response>
+    <p>Tangent line approximation is likely to work poorly.</p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    Zooming in near a differentiable point makes the graph look almost linear.
+  </premise>
+
+  <premise>
+    The tangent line closely resembles the function nearby.
+  </premise>
+
+  <response>
+    <p>Local linearity.</p>
+  </response>
+</match>
+
+</cardsort>
+</exercise>
+
 </section>
 
 <section>

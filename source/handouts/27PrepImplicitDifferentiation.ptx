@@ -34,9 +34,9 @@
             </p>
 
             <p>
-              <me>
+              <md>
                 \frac{d}{dx}[y^{n}] \cdot \frac{dy}{dx}\ \ \ {\textrm{or}}\ \ \ \frac{d}{dx}[y^{n}] = ny^{n-1}\cdot y'
-              </me>
+              </md>
             </p>
           </li>
 

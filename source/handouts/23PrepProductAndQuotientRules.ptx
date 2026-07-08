@@ -66,14 +66,14 @@ https://activecalculus.org/single2e/sec-2-3-prod-quot.html#sec-2-3-prod-quot">se
 
   <li>
     <p>
-      [Submit] <alert>Do</alert> <url href="
+      📝 [Submit] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-2-3-prod-quot.html#PA-2-3">Preview Activity 2.3.1</url> (via hand calculations).
     </p>
   </li>
 
   <li>
     <p>
-      [Submit] <alert>Check</alert> your answers to <url href="
+      📝 [Submit] <alert>Check</alert> your answers to <url href="
 https://activecalculus.org/single2e/sec-2-3-prod-quot.html#PA-2-3">Preview Activity 2.3.1</url> using <url href="https://www.geogebra.org/classic?lang=en">GeoGebra</url>. Submit a screen capture of your work along with responses to the questions posed.
     </p>
 
@@ -180,10 +180,8 @@ https://activecalculus.org/single2e/sec-2-3-prod-quot.html#sec-2-3-prod-quot-5">
   </li>
 
   <li>
-    
-
     <p>
-      [Submit] <alert>Do</alert> <url href="
+      <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-2-3-prod-quot.html#csafranski__2.3HW_prob1.pg">Exercise 1 in section 2.3.6</url>. Submit a screenshot to demonstrate completion.
     </p>
   </li>
@@ -195,6 +193,64 @@ https://activecalculus.org/single2e/sec-2-3-prod-quot.html#csafranski__2.3HW_pro
     </p>
   </li>
   </ul>
+
+<exercise label="cs-product-or-quotient-rule">
+<title>📝 [Submit] Which Rule Do You Need?</title>
+
+<statement>
+<p>
+Sort each function according to the primary differentiation rule that is required.
+Do not differentiate the function. Focus only on recognizing its structure.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    <m>x^2\sin(x)</m>
+  </premise>
+
+  <premise>
+    <m>(x^3+1)e^x</m>
+  </premise>
+
+  <response>
+    <p>Product Rule</p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>\dfrac{\sin(x)}{x}</m>
+  </premise>
+
+  <premise>
+    <m>\dfrac{x^2+1}{e^x}</m>
+  </premise>
+
+  <response>
+    <p>Quotient Rule</p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    <m>5x^4-2x+7</m>
+  </premise>
+
+  <premise>
+    <m>\cos(x)+x^3</m>
+  </premise>
+
+  <response>
+    <p>No Product or Quotient Rule Needed</p>
+  </response>
+</match>
+
+</cardsort>
+
+</exercise>  
 
 </section>
 

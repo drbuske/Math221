@@ -70,7 +70,7 @@ https://activecalculus.org/single2e/sec-2-1-elem-rules.html#sec-2-1-elem-rules">
 
   <li>
     <p>
-      [Submit] <alert>Do</alert> the following the activity that is <em>similar</em> to <url href="
+      📝 [Submit] <alert>Do</alert> the following the activity that is <em>similar</em> to <url href="
 https://activecalculus.org/single2e/sec-2-1-elem-rules.html#PA-2-1">Preview Activity 2.1.1</url>.
     </p>
 
@@ -116,7 +116,7 @@ https://activecalculus.org/single2e/sec-2-1-elem-rules.html#PA-2-1">Preview Acti
 
   <li>
     <p>
-      [Submit] <alert>Extend your conjecture</alert> in part (d) of New Activity 2.1.1 to negative powers <m>n</m>. That is, using <m>n = -1, -2, -3, \ldots</m>, do you spot a pattern for a formula representing <m>f'(x)</m> if <m>f(x) = x^{n}</m>?
+      📝 [Submit] <alert>Extend your conjecture</alert> in part (d) of New Activity 2.1.1 to negative powers <m>n</m>. That is, using <m>n = -1, -2, -3, \ldots</m>, do you spot a pattern for a formula representing <m>f'(x)</m> if <m>f(x) = x^{n}</m>?
     </p>
   </li>
 
@@ -235,11 +235,96 @@ https://activecalculus.org/single2e/sec-2-1-elem-rules.html#sec-2-1-elem-rules-4
 
     <li>
       <p>
-        [Submit] <alert>Complete</alert> <url href="
+        <alert>Complete</alert> <url href="
 https://activecalculus.org/single2e/sec-2-1-elem-rules.html#Library__Michigan__Chap3Sec1__Q15.pg">Exercises 1-4 in section 2.1.6</url>. Submit four screen captures to demonstrate your completion of these four exercises.
       </p>
     </li>
     </ul>
+
+<exercise label="cs-elementary-differentiation-rules">
+<title>📝 [Submit] Which Differentiation Rule Applies?</title>
+
+<statement>
+<p>
+Sort each derivative task according to the primary differentiation rule that should be used first.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    Differentiate <m>x^7</m>.
+  </premise>
+
+  <premise>
+    Differentiate <m>x^{-3}</m>.
+  </premise>
+
+  <response>
+    <p>Power Rule</p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    Differentiate <m>6x^4</m>.
+  </premise>
+
+  <premise>
+    Differentiate <m>-2x^{10}</m>.
+  </premise>
+
+  <response>
+    <p>Constant Multiple Rule</p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    Differentiate <m>x^5+3x^2</m>.
+  </premise>
+
+  <premise>
+    Differentiate <m>x^8-4x</m>.
+  </premise>
+
+  <response>
+    <p>Sum/Difference Rule</p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    Differentiate <m>5</m>.
+  </premise>
+
+  <premise>
+    Differentiate <m>-17</m>.
+  </premise>
+
+  <response>
+    <p>Constant Rule</p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    Differentiate <m>2^x</m>.
+  </premise>
+
+  <premise>
+    Differentiate <m>5^x</m>.
+  </premise>
+
+  <response>
+    <p>Exponential Function Rule</p>
+  </response>
+</match>
+
+</cardsort>
+
+</exercise>    
 
 </section>
 <section xml:id="sec-Afterclass21">

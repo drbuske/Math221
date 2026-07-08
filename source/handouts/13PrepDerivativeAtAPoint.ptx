@@ -94,7 +94,7 @@ https://activecalculus.org/single2e/sec-1-3-derivative-pt.html#sec-1-3-derivativ
 <li>
 
   <p>
-    [Submit] <alert>Do</alert> <url href="
+    📝 [Submit] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-1-3-derivative-pt.html#PA-1-3">Preview Activity 1.3.1</url>.
   </p>
 
@@ -119,7 +119,7 @@ https://activecalculus.org/single2e/sec-1-3-derivative-pt.html#PA-1-3">Preview A
   
 
   <p>
-    [Submit] <alert>Explore</alert> the applet: <url href="https://www.geogebra.org/m/tRHB4wNT">Investigating the Derivative of a Function at a Point</url>. Then, explain what the value of <m>m</m> in the applet represents. How can the applet be used to estimate the value of <m>f'(3)</m>? What is the approximate value of <m>f'(3)</m>?
+    📝 [Submit] <alert>Explore</alert> the applet: <url href="https://www.geogebra.org/m/tRHB4wNT">Investigating the Derivative of a Function at a Point</url>. Then, explain what the value of <m>m</m> in the applet represents. How can the applet be used to estimate the value of <m>f'(3)</m>? What is the approximate value of <m>f'(3)</m>?
   </p>
 </li>
 
@@ -267,7 +267,7 @@ https://activecalculus.org/single2e/sec-1-3-derivative-pt.html#sec-1-3-derivativ
 <li>
   
   <p>
-    [Submit] Ask <alert>Copilot</alert> “What is the definition of a derivative?” Does the limit definition it gives match that given in the textbook?
+    Ask <alert>Copilot</alert> “What is the definition of a derivative?” Does the limit definition it gives match that given in the textbook?
   </p>
 </li>
 
@@ -290,6 +290,63 @@ https://activecalculus.org/single2e/sec-1-3-derivative-pt.html#sec-1-3-derivativ
   </p>
 </li>
 </ul>
+
+<exercise label="dp-1-3-cardsort-derivative-meanings">
+<title>📝 [Submit] Equivalent Interpretations of the Derivative</title>
+
+<statement>
+<p>
+Sort each statement to the quantity that it describes.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    The slope of the tangent line to the graph of <m>f</m> at <m>x=a</m>.
+  </premise>
+
+  <premise>
+    The instantaneous rate of change of <m>f</m> at <m>x=a</m>.
+  </premise>
+
+  <response>
+    <p><m>f'(a)</m></p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    The slope of the secant line through
+    <m>(a,f(a))</m> and <m>(b,f(b))</m>.
+  </premise>
+
+  <premise>
+    The average rate of change of <m>f</m> on <m>[a,b]</m>.
+  </premise>
+
+  <response>
+    <p><m>\dfrac{f(b)-f(a)}{b-a}</m></p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    The output of the function when the input is <m>a</m>.
+  </premise>
+
+  <premise>
+    A y-coordinate on the graph of <m>f</m>.
+  </premise>
+
+  <response>
+    <p><m>f(a)</m></p>
+  </response>
+</match>
+
+</cardsort>
+</exercise>
 
 </section>
 

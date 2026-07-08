@@ -141,6 +141,8 @@
         exercise-readingquestion="no"
       />-->
 
+      <knowl exercise-inline="no"/>
+
     <!-- Specify the theme for the html by giving names to     -->
     <!-- override defaults.  Ex:<css theme="denver"/>          -->
     <!-- See also                                              -->

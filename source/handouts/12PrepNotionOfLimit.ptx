@@ -83,7 +83,7 @@ https://activecalculus.org/single2e/sec-1-2-lim.html#sec-1-2-lim">section 1.2</u
 
 <li>
     <p>
-        [Submit] <alert>Do</alert> <url href="
+        📝 [Submit] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-1-2-lim.html#PA-1-2">Preview Activity 1.2.1</url>.
     </p>
 </li>
@@ -105,7 +105,7 @@ https://activecalculus.org/single2e/sec-1-2-lim.html#sec-1-2-lim-4">section 1.2.
     
 
     <p>
-        [Submit] <alert>Do</alert> <url href="
+        📝 [Submit] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-1-2-lim.html#Ex-1-2-Limits">Example 1.2.4(a)</url> in the textbook (without reading the solution), using the graph of the function: Use <url href="https://www.desmos.com/"> <em>Desmos</em> </url> to graph <m>f</m> (you define <m>f</m> by typing <m>f(x) = (4-x^{2})/(x+2)</m>, and you can click and drag points on the graph to see the precise coordinates). Finally, read the solution. Is the graph that <em>Desmos</em> produces accurate? Explain. Produce a screen capture of your work in doing Example 1.2.4(a) using <em>Desmos</em>.
     </p>
 </li>
@@ -120,7 +120,7 @@ https://activecalculus.org/single2e/sec-1-2-lim.html#Ex-1-2-Limits">Example 1.2.
     
 
     <p>
-        [Submit] <alert>Redo</alert> <url href="
+        📝 [Submit] <alert>Redo</alert> <url href="
 https://activecalculus.org/single2e/sec-1-2-lim.html#Ex-1-2-Limits">Example 1.2.4(a)</url> from the textbook using <url href="https://www.geogebra.org/classic?lang=en"> <em>GeoGebra</em> </url> rather than <em>Desmos</em>. Produce a screen capture of your work in doing Example 1.2.4(a) using <em>GeoGebra</em>.
     </p>
 </li>
@@ -286,6 +286,85 @@ Graph of a function on a coordinate grid with the horizontal axis labeled x
     </p>
 </li>
 </ul>
+
+<exercise label="dp-1-2-cardsort-limits-vs-values">
+<title>Limits versus Function Values</title>
+
+<statement>
+<p>
+Sort each statement to the situation it describes.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    The left-hand and right-hand limits are equal.
+  </premise>
+
+  <premise>
+    The function value may be different from the limiting value.
+  </premise>
+
+  <response>
+    <p>
+      <m>\displaystyle\lim_{x\to a}f(x)</m> exists.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    There is a filled point on the graph at <m>x=a</m>.
+  </premise>
+
+  <premise>
+    The function is defined at <m>x=a</m>.
+  </premise>
+
+  <response>
+    <p>
+      <m>f(a)</m> exists.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    The left-hand and right-hand limits are different.
+  </premise>
+
+  <premise>
+    The graph has a jump at <m>x=a</m>.
+  </premise>
+
+  <response>
+    <p>
+      <m>\displaystyle\lim_{x\to a}f(x)</m> does not exist.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    The graph approaches the same y-value from both sides.
+  </premise>
+
+  <premise>
+    The point at <m>x=a</m> may be missing.
+  </premise>
+
+  <response>
+    <p>
+      The limit exists even though <m>f(a)</m> may not exist.
+    </p>
+  </response>
+</match>
+
+</cardsort>
+</exercise> 
+
 </section>
 
 <section>

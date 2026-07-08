@@ -68,7 +68,7 @@ https://activecalculus.org/single2e/sec-1-1-vel.html#sec-1-1-vel">Section 1.1</u
 
 <li>
     <p>
-        [SUBMIT] <alert>Do</alert> <url href="
+        📝 [SUBMIT] <alert>Do</alert> <url href="
 https://activecalculus.org/single2e/sec-1-1-vel.html#PA-1-1">Preview Activity 1.1.1</url>.
     </p>
 
@@ -99,7 +99,7 @@ https://activecalculus.org/single2e/sec-1-1-vel.html#sec-1-1-vel-4">Section 1.1.
 
 <li>
     <p>
-        [SUBMIT] <alert>Watch</alert> video <url href="https://www.youtube.com/watch?time_continue=6&#x26;v=O_Z9osv6VGk&#x26;feature=emb_title">Alternative Average Velocity Formula (11:05)</url>.
+        📝 [SUBMIT] <alert>Watch</alert> video <url href="https://www.youtube.com/watch?time_continue=6&#x26;v=O_Z9osv6VGk&#x26;feature=emb_title">Alternative Average Velocity Formula (11:05)</url>.
     </p>
 
     <p>
@@ -188,10 +188,86 @@ https://activecalculus.org/single2e/sec-1-1-vel.html#sec-1-1-vel-4">Section 1.1.
 
 <li>
     <p>
-        [SUBMIT] <alert>Explore</alert> the applet <url href="https://www.geogebra.org/m/PgzQcgRk">Average Velocity</url> which distinguishes velocity and speed. Answer all five questions posed to you.
+        📝 [SUBMIT] <alert>Explore</alert> the applet <url href="https://www.geogebra.org/m/PgzQcgRk">Average Velocity</url> which distinguishes velocity and speed. Answer all five questions posed to you.
     </p>
 </li>
 </ul>
+
+<exercise label="dp-1-1-cardsort-average-velocity">
+<title>Representations of Average Velocity</title>
+
+<statement>
+<p>
+Sort each statement to the equivalent formula.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    Change in position divided by change in time.
+  </premise>
+
+  <premise>
+    The slope of the secant line through
+    <m>(a,s(a))</m> and <m>(b,s(b))</m>.
+  </premise>
+
+  <response>
+    <p>
+      <m>\dfrac{s(b)-s(a)}{b-a}</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    Average velocity on the interval
+    <m>[a,a+h]</m>.
+  </premise>
+
+  <premise>
+    Uses a starting time <m>a</m> and a time change <m>h</m>.
+  </premise>
+
+  <response>
+    <p>
+      <m>\dfrac{s(a+h)-s(a)}{h}</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    Miles traveled divided by hours elapsed.
+  </premise>
+
+  <response>
+    <p>
+      <m>\text{miles per hour}</m>
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    The object's location at a specific time.
+  </premise>
+
+  <premise>
+    Measured in units of distance rather than velocity.
+  </premise>
+
+  <response>
+    <p>
+      <m>s(a)</m>
+    </p>
+  </response>
+</match>
+
+</cardsort>
+</exercise>
 
 
 <section>

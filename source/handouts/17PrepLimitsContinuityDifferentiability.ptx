@@ -137,7 +137,7 @@ https://activecalculus.org/single2e/sec-1-7-lim-cont-diff.html#sec-1-7-lim-cont-
     
 
     <p>
-      [Submit] <alert>Explore</alert> the graphical idea of a limit with this <url href="https://www.geogebra.org/m/Ktr9uqYu">applet</url>. Investigate the limit as <m>x</m> approach -4, as <m>x</m> approaches -1, and as <m>x</m> approaches 2.
+      📝 [Submit] <alert>Explore</alert> the graphical idea of a limit with this <url href="https://www.geogebra.org/m/Ktr9uqYu">applet</url>. Investigate the limit as <m>x</m> approach -4, as <m>x</m> approaches -1, and as <m>x</m> approaches 2.
     </p>
   </li>
 
@@ -163,7 +163,7 @@ https://activecalculus.org/single2e/sec-1-7-lim-cont-diff.html#sec-1-7-lim-cont-
   <li>
   
     <p>
-      [Submit] <alert>Re-read</alert> <url href="
+      📝 [Submit] <alert>Re-read</alert> <url href="
 https://activecalculus.org/single2e/sec-1-7-lim-cont-diff.html#sec-1-7-lim-cont-diff-5-7">Definition 1.7.4</url> in the text. Then, give an example of a function that
     </p>
 
@@ -367,7 +367,7 @@ https://activecalculus.org/single2e/sec-1-7-lim-cont-diff.html#sec-1-7-lim-cont-
           
 
           <p>
-            [Submit] Now answer these questions.
+            📝 [Submit] Now answer these questions.
           </p>
 
           <p>
@@ -513,9 +513,9 @@ The curves intersect and bound a small shaded region just to the left of x = 0. 
               <li>
                 <p>
                   Let
-                  <me>
-                    B(t) = \left\{ \begin{array}{cl}4-\frac{1}{2}t &#x26; {\textrm{if  }} t &#x3C; 2 \\ \sqrt{t+c} &#x26; {\textrm{if  }} t \geq 2\end{array} \right\}.
-                  </me>
+                  <md>
+                    <mrow> B(t) \mathstrut \amp = \left\{ \begin{array}{cl}4-\frac{1}{2}t &#x26; {\textrm{if  }} t &#x3C; 2 \\ \sqrt{t+c} &#x26; {\textrm{if  }} t \geq 2\end{array} \right\}. </mrow>
+                  </md>
                 </p>
 
                 <p>
@@ -553,6 +553,80 @@ The curves intersect and bound a small shaded region just to the left of x = 0. 
       </ol>
     </li>
       </ul>
+
+ <exercise label="dp-1-7-cardsort-continuity">
+<title>Limit, Continuity, and Differentiability</title>
+
+<statement>
+<p>
+Sort each statement to the property that it guarantees.
+</p>
+</statement>
+
+<cardsort>
+
+<match>
+  <premise>
+    The graph has no break, hole, or jump at <m>x=a</m>.
+  </premise>
+
+  <premise>
+    <m>\displaystyle\lim_{x\to a}f(x)=f(a)</m>.
+  </premise>
+
+  <response>
+    <p>
+      <m>f</m> is continuous at <m>x=a</m>.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    The graph is locally linear at <m>x=a</m>.
+  </premise>
+
+  <premise>
+    The graph has a well-defined tangent line at <m>x=a</m>.
+  </premise>
+
+  <response>
+    <p>
+      <m>f</m> is differentiable at <m>x=a</m>.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    The left-hand limit equals the right-hand limit.
+  </premise>
+
+  <premise>
+    The graph approaches the same y-value from both sides.
+  </premise>
+
+  <response>
+    <p>
+      <m>\displaystyle\lim_{x\to a}f(x)</m> exists.
+    </p>
+  </response>
+</match>
+
+<match>
+  <premise>
+    The graph has a sharp corner at <m>x=a</m>.
+  </premise>
+
+  <response>
+    <p>
+      <m>f</m> can be continuous but not differentiable at <m>x=a</m>.
+    </p>
+  </response>
+</match>
+
+</cardsort>
+</exercise>     
 
 </section>
 
@@ -914,13 +988,13 @@ The x- and y-axes are labeled, and the grid includes tick marks at integer value
           <p>
             Notice that <m>2-x^{2} \leq f(x) \leq 2+x^{2}</m> for all <m>x</m> shown.
             Since <m>-1 \leq \sin\left(\frac{1}{x}\right) \leq 1</m> for all <m>x</m>, we have
-            <me>
-              -x^{2} \leq x^{2}\sin\left( \frac{1}{x}\right) \leq x^{2}
-            </me>
+            <md>
+              <mrow> -x^{2} \leq x^{2}\sin\left( \frac{1}{x}\right) \leq x^{2} </mrow>
+            </md>
             so that
-            <me>
-              2-x^{2} \leq 2+x^{2}\sin\left( \frac{1}{x}\right) \leq 2+x^{2}
-            </me>
+            <md>
+              <mrow> 2-x^{2} \leq 2+x^{2}\sin\left( \frac{1}{x}\right) \leq 2+x^{2} </mrow>
+            </md>
             for all <m>x</m> as well.
             Since <m>\lim_{x \rightarrow 0}2-x^{2} = \lim_{x \rightarrow 0}2+x^{2} = 2</m>, we also then have <m>\lim_{x \rightarrow 0}f(x) = 2</m>.
           </p>

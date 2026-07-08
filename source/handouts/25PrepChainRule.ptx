@@ -855,9 +855,9 @@ The x- and y-axes are labeled, with a grid and integer tick marks.
             <li>
               <p>
                 Here <m>m(x) = v(x) \cdot l(x)</m> so that by the product rule <m>\displaystyle \frac{dm}{dx}= \frac{dv}{dx}l(x) + v(x) \frac{dl}{dx}</m> =
-                <me>
+                <md>
                   2 \left( \sin^{3} (3x) + 5x \right)(27 \sin^{8} (3x) \cos (3x) + 5 ) \sqrt{x + \frac{1}{x}}+ \left( \sin^{3} (3x) + 5x \right)^{2} \cdot \frac{1}{2\sqrt{x+\frac{1}{x}}}\left(1 - \frac{1}{x^{2}}\right).
-                </me>
+                </md>
               </p>
             </li>
           </ol>
