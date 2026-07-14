@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+  <title>Exam 1 - Spring 2026</title>
+
+<section>
+<title>Topics</title>
+
+    <p>1.1-1.7
+    </p>
+
+    <p>
+      Be sure to try each question before looking at the solutions.
+    </p>
+
+  <exercises xml:id="exercises-sp26exam1">
+    <title>Questions</title>
+
+ <exercise xml:id="exam1-s26-q4">
+  <statement>
+    <p>
+      The value <m>V</m> (in dollars) of a painting <m>t</m> years after it is purchased is modeled by
+      <me>V(t)=\frac{100t^2+50}{t}+400, \qquad 1\le t\le 5.</me>
+    </p>
+    <ol marker="a.">
+      <li>
+        <p>
+          Find the average rate of change in the value of the painting between the first
+          (<m>t=1</m>) and fifth (<m>t=5</m>) years. Give proper units.
+        </p>
+      </li>
+      <li>
+        <p>
+          In one sentence, explain the meaning of the value <m>V'(4)</m> in this context.
+          Be sure to include proper units in your response.
+        </p>
+      </li>
+    </ol>
+  </statement>
+  <answer>
+    <ol marker="a.">
+      <li>
+    <p>
+      <m>V(1)=550</m> and <m>V(5)=910</m>, so the average rate of change is
+      <me>AV_{[1,5]} = \frac{910-550}{5-1}=90</me>
+      dollars per year.
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>V'(4)</m> represents the instantaneous rate at which the value of the painting
+      is changing, measured in dollars per year, four years after purchase.
+    </p>
+  </li>
+</ol>
+  </answer>
+</exercise>
+
+<exercise xml:id="exam1-s26-q5">
+  <statement>
+    <p>
+      Calculate each one-sided limit below or state that it does not exist. Justify your answer.
+    </p>
+    <ol marker="a.">
+      <li>
+        <p>
+          <m>\displaystyle \lim_{x\to 0^-}\frac{-x^2+2x}{x(x-3)}</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\displaystyle \lim_{x\to 2^-}\frac{3x-6}{|4-x^2|}</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\displaystyle \lim_{x\to 2^+}\frac{3x-6}{|4-x^2|}</m>
+        </p>
+      </li>
+    </ol>
+  </statement>
+  <answer>
+    <ol marker="a.">
+        <li>
+          <p>
+       <m>
+          \displaystyle \lim_{x \rightarrow 0^-}\frac{x^{2}+2x}{x(x-3)}= \lim_{x \rightarrow 0^-}\frac{x(x+2)}{x(x-3)}= \lim_{x \rightarrow 0^-}\frac{x+2}{x-3}= -\frac{2}{3}
+      </m>
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>
+          \displaystyle \lim_{x \rightarrow 2^-}\frac{3x-6}{|4-x^{2}|}= \lim_{x \rightarrow 2^-}\frac{3(x-2)}{4-x^{2}}= \lim_{x \rightarrow 2^-}\frac{3(x-2)}{(2-x)(2+x)}= \lim_{x \rightarrow 2^-}\frac{-3}{2+x}= -\frac{3}{4}
+      </m>
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>
+          \displaystyle \lim_{x \rightarrow 2^+}\frac{3x-6}{|4-x^{2}|}= \lim_{x \rightarrow 2^+}\frac{3(x-2)}{-(4-x^{2})}= \lim_{x \rightarrow 2^+}\frac{3}{x+2}= \frac{3}{4}
+      </m>
+    </p>
+  </li>
+</ol>
+  </answer>
+</exercise>
+
+<exercise xml:id="exam1-s26-q6">
+  <statement>
+    <p>
+      During a chemical reaction, the temperature is modeled by <m>T(t)</m>,
+      measured in degrees Celsius, where time <m>t</m> is measured in minutes.
+      At <m>t=4</m> minutes, the derivative is <m>T'(4)=0.8</m>.
+      Which statement correctly interprets this?
+    </p>
+  </statement>
+
+  <choices randomize="yes">
+
+    <choice correct="yes">
+      <statement>
+        <p>At 4 minutes, the temperature is increasing at a rate of <m>0.8^\circ\text{C}</m> per minute.</p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>The temperature increases by <m>4^\circ</m> every 0.8 minutes.</p>
+      </statement>
+      <feedback>
+        <p>No. This is a rate, but not an instantaneous rate.</p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>The temperature is <m>0.8^\circ\text{C}</m> at 4 minutes.</p>
+      </statement>
+      <feedback>
+        <p>No. A derivative involves the rate of change.</p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+          <p>Between 3 and 4 minutes, the temperature increased by exactly <m>0.8^\circ\text{C}</m>.</p>
+      </statement>
+       <feedback>
+        <p>No. The rate of change should be instant and not over a time interval of 1 minute.</p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+          <p>The temperature has increased by a total of <m>0.8^\circ\text{C}</m> since the reaction began.</p>
+      </statement>
+       <feedback>
+        <p>No. This is not an instantaneous rate.</p>
+      </feedback>
+    </choice>
+
+  </choices>
+</exercise> 
+
+<exercise xml:id="exam1-s26-q7">
+  <statement>
+    <p>
+      The height of a rocket above the ground is <m>h(t)</m>, measured in meters,
+      at time <m>t</m> seconds after launch. It is observed that
+      <m>h''(t)=-4.2</m>. Which statement correctly interprets this?
+    </p>
+  </statement>
+
+    <choices randomize="yes">
+
+    <choice correct="yes">
+      <statement>
+        <p>At 12 seconds, the rocket's velocity is decreasing at a rate of 4.2 m/s per second.</p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>At 12 seconds, the rocket is falling back to the ground at a rate of 4.2 m/s.</p>
+      </statement>
+      <feedback>
+        <p>No. That is <m>h'(t)=-4.2</m>.</p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>The rocket's speed is constant.</p>
+      </statement>
+      <feedback>
+        <p>No. The second derivative is acceleration and not velocity or speed.</p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+          <p>The rocket falls 4.2 meters between 12 and 13 seconds.</p>
+      </statement>
+       <feedback>
+        <p>No. This is not an average velocity; it is an acceleration.</p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+          <p>At 12 seconds, the rocket's height is concave up.</p>
+      </statement>
+       <feedback>
+        <p>No. The graph of the rocket's height would be concave down at time <m>t</m>.</p>
+      </feedback>
+    </choice>
+
+  </choices>
+</exercise> 
+
+<exercise xml:id="exam1-s26-q8">
+<statement>
+  <p>
+    The graph of a function <m>f(x)</m> defined on domain <m>[-5,\infty)</m> is shown in <xref ref="Sp26Ex1q8pic"/>.  
+  </p>
+  <figure xml:id="Sp26Ex1q8pic" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>Graph of <m>f(x)</m>.</caption>
+      <image source="images/Exam1Sp2026Continuity.jpg" width="50%">
+        <description>A graph showing a function <m>f(x)</m> having domain of -5 to infinity.</description>
+      </image>
+</figure>
+<ol marker="a.">
+  <li> <p> List all values of <m>x</m> for which <m>f(x)</m> is not differentiable.</p> 
+  </li>
+  <li> <p> List all values of <m>x</m> for which <m>f(x)</m> is not continuous.</p> </li>
+  <li> <p> List all values of <m>x</m> for which <m>f'(x)=0</m> </p> </li>
+  <li> <p> Calculate <m>f'(0)</m>. </p> </li>
+  <li> <p> Compare and contrast <m>\displaystyle \lim_{h \rightarrow 0} f(-3+h)</m> and <m>\displaystyle \lim_{h \rightarrow 0} \frac{f(-3+h)-f(-3)}{h}</m>.  </p> </li>
+</ol>
+</statement>
+<answer>
+  <p>
+   <ol marker="a.">
+    <li><m>x=-1,1</m> </li>
+    <li><m>x=-1</m> </li>
+    <li><m>x=-3</m> </li>
+    <li><m>f'(0)=3</m> </li>
+    <li> <p> <m>
+        \displaystyle \lim_{h \rightarrow 0}f(-3+h) = f(-3) = 2
+    </m>
+    since
+    <m>
+        f
+    </m>
+    is continuous at
+    <m>
+        x=-3
+    </m>
+    . Meanwhile,
+    <m>
+        \displaystyle \lim_{h \rightarrow 0}\frac{f(-3+h)-f(-3)}{h}= 0
+    </m>
+    since that is the slope (or derivative) at
+    <m>
+        x=-3
+    </m>
+    .</p> </li>
+   </ol> 
+  </p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam1-s26-q9">
+ <statement>
+   <p>
+      The limit
+      <me>\lim_{h\to 0}\frac{\sqrt[3]{8+h}-2}{h}</me>
+      represents the derivative <m>f'(a)</m>, where:
+    </p>
+  </statement>
+
+    <choices randomize="yes">
+
+    <choice correct="yes">
+      <statement>
+        <p><m>f(x)=\sqrt[3]{x}</m>, <m>a=8</m></p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>f(x)=\sqrt[3]{x}</m>, <m>a=2</m></p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>f(x)=\sqrt[3]{8+x}</m>, <m>a=2</m></p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+          <p>None of these.</p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+          <p><m>f(x)=\sqrt[3]{8+x}</m>, <m>a=8</m></p>
+      </statement>
+    </choice>
+
+  </choices>
+</exercise> 
+
+<exercise xml:id="exam1-s26-q11">
+  <statement>
+    <p>
+      A meteorologist monitors the air pressure <m>P(t)</m> (in millibars) at a weather
+      station over a short period of time. Measurements are taken every 2 hours.
+    </p>
+
+    <table xml:id="PressureDataExam1Sp26q11" >
+        <title>Pressure data.</title>
+    <tabular halign="center">
+      <row>
+        <cell><p>Time <m>t</m> (hours)</p></cell>
+        <cell><p>0</p></cell>
+        <cell><p>2</p></cell>
+        <cell><p>4</p></cell>
+        <cell><p>6</p></cell>
+        <cell><p>8</p></cell>
+        <cell><p>10</p></cell>
+      </row>
+      <row>
+        <cell><p>Pressure <m>P(t)</m> (mb)</p></cell>
+        <cell><p>1018.2</p></cell>
+        <cell><p>1017.5</p></cell>
+        <cell><p>1015.9</p></cell>
+        <cell><p>1014.8</p></cell>
+        <cell><p>1014.6</p></cell>
+        <cell><p>1015.0</p></cell>
+      </row>
+    </tabular>
+  </table>
+
+    <ol marker="a.">
+      <li>
+        <p>
+          Use a central difference to estimate <m>P'(6)</m>.
+          Include units.
+        </p>
+      </li>
+      <li>
+        <p>
+          Estimate <m>P''(6)</m> using the <em>symmetric second-difference formula</em>
+          <me>
+            P''(t)\approx
+            \frac{P(t+h)-2P(t)+P(t-h)}{h^2} \qquad (\text{for }h \text{ small}).
+          </me>
+          Include units and interpret whether the pressure change is
+          accelerating or decelerating at <m>t=6</m> hours.
+        </p>
+      </li>
+    </ol>
+  </statement>
+  <answer>
+    <ol marker="a.">
+    <li>
+   <p> We compute:
+      <md>
+      <mrow> P'(6) \mathstrut \amp \approx
+      \frac{P(8)-P(4)}{8-4} </mrow>
+      <mrow> \mathstrut \amp =
+      \frac{1014.6-1015.9}{4} </mrow>
+      <mrow> \mathstrut \amp =
+      -0.325 \text{ mb/hour.}</mrow> 
+      </md>
+    </p>
+  </li>
+  <li>
+    <p> We compute:
+      <md>
+      <mrow> P''(6) \mathstrut \amp \approx
+        \frac{P(8)-2P(6)+P(4)}{2^2} </mrow>
+      <mrow> \amp = \frac{1014.6-2(1014.8)+1015.9}{2^2} </mrow>
+      <mrow> \amp =
+      0.225 \text{ mb}/\text{hour}^2.</mrow>
+      </md>
+    </p>
+
+    <p>
+      Since <m>P''(6)&gt;0</m>, the pressure is decreasing at a decreasing rate
+      (the pressure trend is decelerating).
+    </p>
+  </li>
+</ol>
+  </answer>
+</exercise>
+
+<exercise xml:id="exam1-s26-q12">
+  <statement>
+    <p>
+      Let the height of an object (in feet) above the ground at time <m>t</m>
+      (measured in seconds) be given by
+      <me>s(t)=-4t^2+5t+3.</me>
+    </p>
+
+    <ol marker="a.">
+      <li>
+        <p>
+          Expand and simplify
+          <m>\dfrac{s(1+h)-s(1)}{h}</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Using your response to part (a), evaluate
+          <m>\displaystyle \lim_{h\to 0}\frac{s(1+h)-s(1)}{h}</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Interpret the meaning of the value found in part (b)
+          in a physical context.
+        </p>
+      </li>
+      <li>
+        <p>
+          Geometrically interpret the meaning of the value found in part (b).
+        </p>
+      </li>
+    </ol>
+  </statement>
+
+  <answer>
+    <ol marker="a.">
+      <li>
+    <p> We compute: 
+      <md>
+         <mrow> \frac{s(1+h)-s(1)}{h} \mathstrut \amp = \frac{-4(1+h)^{2} + 5(1+h) + 3 - (-4(1)^{2} + 5(1)+3)}{h} </mrow>
+         <mrow> \amp = \frac{-8h -4h^{2} + 5h}{h} </mrow>
+         <mrow> \amp = -8-4h+5 </mrow> 
+         <mrow> \amp = -3-4h. </mrow>
+      </md>
+    </p>
+  </li>
+  <li>
+    <p>
+      <me>
+      \lim_{h\to 0}\frac{s(1+h)-s(1)}{h}
+      = \lim_{h\to 0} -3-4h = 
+      -3.
+      </me>
+    </p>
+  </li>
+  <li>
+    <p>
+      At time <m>t=1</m> second, the object's instantaneous velocity is
+      <m>-3</m> feet per second.  If up is the positive direction, then the object is moving downward at time <m>t=1</m>.
+    </p>
+  </li>
+  <li>
+    <p>
+      The value <m>-3</m> is the slope of the tangent line to the graph of
+      <m>s(t)</m> at <m>(1,s(1))</m>.
+    </p>
+  </li>
+</ol>
+  </answer>
+</exercise>
+
+</exercises>
+
+</section>
+</handout>
