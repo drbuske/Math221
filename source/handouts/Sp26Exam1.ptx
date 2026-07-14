@@ -16,11 +16,167 @@
   <exercises xml:id="exercises-sp26exam1">
     <title>Questions</title>
 
+<exercise xml:id="exam1-s26-q1">
+<statement>
+   The graph of a function
+    <m>
+        f
+    </m>
+    is shown in <xref ref="Exam1Sp26q1pic"/>. Carefully sketch the graph of
+    <m>
+        f'
+    </m>
+    . Be sure to clearly identify any locations at which
+    <m>
+        f'
+    </m>
+    does not exist.
+  <figure xml:id="Exam1Sp26q1pic">
+  <caption>The graph of <m>f(x)</m> is given.  Sketch the graph of <m>f'(x)</m>.</caption> 
+  <image xml:id="Exam1Sp26q1picA" width="50%" >
+<description>A graph of a function on a coordinate plane. The graph is constant at negative three for all x-values less than or equal to negative two. At x equals negative two, the graph changes to a straight line that rises to an open circle at the origin. To the right of the origin, the graph follows a smooth increasing curve that starts at the open circle, passes through approximately the point two comma one, and becomes steeper as x increases. The x-axis and y-axis are labeled, and gridlines mark integer values.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1] [domain=-3:3]
+\draw[step=1cm,color=gray!35] (-4,-4) grid (4,4);
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (0,-4);
+   \draw [linecolor, line width=1.5pt, -latex] (-2,-3)--(-4,-3); 
+   \draw [linecolor, line width=1.5pt] (-2,-3)--(0,0);
+   \draw [linecolor, line width=1.5pt, -latex, domain=0:4] plot(\x,0.25*\x*\x);
+\foreach \x/\xtext in { -3/-3, -1/-1, 1/1, 3/3}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in { -3/-3, -1/-1, 1/1, 3/3}
+   \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+</statement>
+<answer>
+  <p>
+<figure xml:id="Exam1Sp26q1Ans">
+  <caption>The graph of <m>f(x)</m> and its derivative <m>f'(x)</m>.</caption> 
+  <image xml:id="Exam1Sp26q1Anspic" width="50%" >
+<description>The blue graph is a piecewise function. For x less than or equal to negative two, the graph is a horizontal line at y equals negative three extending to the left. From x equals negative two to x equals zero, the graph is a straight line segment rising from the point negative two, negative three to an open circle at the origin. For x greater than zero, the graph follows an upward-opening parabola that begins at the open circle at the origin and rises increasingly steeply as x increases.  The red graph is a piecewise function shown with dashed lines. For x less than negative two, the graph is a horizontal line on the x-axis, ending with an open circle at the point negative two, zero. For x between negative two and zero, the graph is a horizontal line at y equals one and one-half, with open circles at both endpoints. For x greater than zero, the graph is a dashed line beginning at an open circle at the origin and rising with constant positive slope, passing through points such as two, one and four, two.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1] [domain=-3:3]
+\draw[step=1cm,color=gray!35] (-4,-4) grid (4,4);
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (0,-4);
+   \draw [linecolor, line width=1.5pt, -latex] (-2,-3)--(-4,-3); 
+   \draw [linecolor, line width=1.5pt] (-2,-3)--(0,0);
+   \draw [linecolor, line width=1.5pt, -latex, domain=0:4] plot(\x,0.25*\x*\x);
+   \draw [red, line width=2pt, -latex, dashed] (-2,0) -- (-4,0);
+    \draw [red, line width=2pt, dashed] (-2,1.5) -- (0,1.5);
+    \draw [red, line width=2pt, -latex, dashed, domain=0:4] plot(\x,{0.5*\x});
+    \fill [red] (-2,0) circle(3pt);
+    \fill [white] (-2,0) circle(2pt);
+        \fill [red] (-2,1.5) circle(3pt);
+    \fill [white] (-2,1.5) circle(2pt);
+        \fill [red] (0,1.5) circle(3pt);
+    \fill [white] (0,1.5) circle(2pt);
+        \fill [red] (0,0) circle(3pt);
+    \fill [white] (0,0) circle(2pt);
+\foreach \x/\xtext in { -3/-3, -1/-1, 1/1, 3/3}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in { -3/-3, -1/-1, 1/1, 3/3}
+   \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+  </p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam1-s26-q2">
+<statement>
+        On <xref ref="Exam1Sp26q2pic"/> draw the graph of a function <m>f(x)</m> for which
+        <ol marker="(i)">
+        <li> <m>f(-3)&gt;0</m>, </li>
+        <li> <m>f'(-3)=0</m>, </li> 
+        <li> <m>f''(-3)&lt;0</m>, and </li>
+        <li> the average rate of change of <m>f</m> on the interval <m>[-3,2]</m> is
+        negative. </li>
+        </ol>
+        Clearly label values of points on the graph at <m>x=-3</m> and <m>x=2</m>.
+    <figure xml:id="Exam1Sp26q2pic">
+  <caption>Graph a function <m>f(x)</m> meeting the required conditions.</caption> 
+  <image xml:id="Exam1Sp26q2picA" width="50%" >
+<description>An empty coordinate axes system.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1] [domain=-3:3]
+\draw[step=1cm,color=gray!35] (-4,-4) grid (4,4);
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (0,-4);      
+\foreach \x/\xtext in { -3/-3, -1/-1, 1/1, 3/3}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in { -3/-3, -1/-1, 1/1, 3/3}
+   \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+</statement>
+<answer>
+  <p>
+    <figure xml:id="Exam1Sp26q2pic2">
+  <caption>The graph of one function <m>f(x)</m> meeting the required conditions.</caption> 
+  <image xml:id="Exam1Sp26q2picB" width="50%" >
+<description>A dashed red curve on a coordinate plane passes through the labeled points negative three, three and two, zero. The curve decreases from left to right and is concave downward, flattening near the point negative three, three and becoming steeper as x increases. The graph continues beyond the visible window in both directions, indicated by arrowheads at the ends. The x-axis and y-axis are labeled, and gridlines with integer markings are shown.
+</description>
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=1] [domain=-3:3]
+\draw[step=1cm,color=gray!35] (-4,-4) grid (4,4);
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (0,-4);
+       \draw [red, line width=2pt, -latex, dashed, domain=-4:4] plot(\x,{-0.12*(\x+3)*(\x+3) + 3});
+       \fill (-3,3) [red] circle(3pt) node [above] at (-3,3) {$(-3,3)$};
+       \fill (2,0) [red] circle(3pt) node [below] at (1.75,-0.25) {$(2,0)$};
+\foreach \x/\xtext in { -3/-3, -1/-1, 1/1, 3/3}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in { -3/-3, -1/-1, 1/1, 3/3}
+   \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+  </p>
+</answer>
+ </exercise>
+
+ <exercise xml:id="exam1-s26-q3">
+<statement>
+  <p>
+    Show, by giving a specific example, that it is possible that <m>\displaystyle \lim_{x \rightarrow 0} f(x) = 1</m> even though <m>f(x) &gt;1</m> for all real numbers <m>x</m>.  Justify your answer.  
+  </p>
+</statement>
+<answer>
+  <p>
+    Answers vary. For example,
+    <m>
+        \displaystyle f(x) = \begin{cases}1+x^{2}&amp;{\textrm{if \ }}x&lt;0 \\ 3&amp;{\textrm{if \ }}x=0 \\ 1+x^{2}&amp;{\textrm{if \ }}x&gt;0\end{cases}
+    </m>
+  </p>
+</answer>
+ </exercise>
+
  <exercise xml:id="exam1-s26-q4">
   <statement>
     <p>
       The value <m>V</m> (in dollars) of a painting <m>t</m> years after it is purchased is modeled by
-      <me>V(t)=\frac{100t^2+50}{t}+400, \qquad 1\le t\le 5.</me>
+      <md>V(t)=\frac{100t^2+50}{t}+400, \qquad 1\le t\le 5.</md>
     </p>
     <ol marker="a.">
       <li>
@@ -42,7 +198,7 @@
       <li>
     <p>
       <m>V(1)=550</m> and <m>V(5)=910</m>, so the average rate of change is
-      <me>AV_{[1,5]} = \frac{910-550}{5-1}=90</me>
+      <md>AV_{[1,5]} = \frac{910-550}{5-1}=90</md>
       dollars per year.
     </p>
   </li>
@@ -285,7 +441,7 @@
  <statement>
    <p>
       The limit
-      <me>\lim_{h\to 0}\frac{\sqrt[3]{8+h}-2}{h}</me>
+      <md>\lim_{h\to 0}\frac{\sqrt[3]{8+h}-2}{h}</md>
       represents the derivative <m>f'(a)</m>, where:
     </p>
   </statement>
@@ -330,6 +486,96 @@
   </choices>
 </exercise> 
 
+<exercise xml:id="exam1-s26-q10">
+ <statement>
+      The graph of a function <m>f</m> is shown in <xref ref="Exam1Sp26q10"/>.  Is <m>f'(a)</m> positive, negative, or zero?
+      <figure xml:id="Exam1Sp26q10">
+  <caption>The graph of function <m>f</m>.</caption> 
+  <image xml:id="Exam1Sp26q10pic" width="50%" >
+<description>
+A graph of a smooth curve on a coordinate plane. The curve decreases to a local minimum at approximately the point zero, one, then rises to a local maximum near the point two, four, and then decreases steeply, crossing the x-axis near x equals three. A filled point labeled (a,f(a)) lies on the increasing part of the curve between the local minimum and local maximum, at approximately (1.5,3.6). The x-axis and y-axis are labeled, and gridlines with integer markings are shown.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1] [domain=-3:3]
+\draw[step=1cm,color=gray!35] (-2,-2) grid (4,4);
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (-2,0);
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=1pt,-latex] (0,0) -- (0,-2);
+   \draw [linecolor, line width=1.5pt, domain=-0.75:3.05] plot(\x,{-\x*\x*\x + 3*\x*\x - 0.5*\x+1});
+   \fill [black] (1.5, 3.63) circle(3pt) node [left] at (1.7,4.05) {$(a,f(a))$};
+\foreach \x/\xtext in { -1/-1, 1/1, 2/2, 3/3}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in { -1/-1, 1/1, 2/2, 3/3}
+   \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+   </statement>
+    <choices randomize="no">
+
+    <choice correct="yes">
+      <statement>
+        <p>Positive</p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>Negative</p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>Zero</p>
+      </statement>
+    </choice>
+
+  </choices>
+
+</exercise>
+
+<exercise xml:id="exam1-s26-q10b">
+ <statement>
+      <p> The graph of a function <m>f</m> is shown in <xref ref="Exam1Sp26q10"/>.  
+ Is <m>f''(a)</m> positive, negative, or zero? </p>
+ </statement>
+<choices randomize="no">
+
+    <choice>
+      <statement>
+        <p>Positive</p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  
+        </p>
+      </feedback>
+    </choice>
+
+    <choice correct="yes">
+      <statement>
+        <p>Negative</p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>Zero</p>
+      </statement>
+    </choice>
+
+  </choices>
+
+</exercise> 
+
 <exercise xml:id="exam1-s26-q11">
   <statement>
     <p>
@@ -371,10 +617,10 @@
       <li>
         <p>
           Estimate <m>P''(6)</m> using the <em>symmetric second-difference formula</em>
-          <me>
+          <md>
             P''(t)\approx
             \frac{P(t+h)-2P(t)+P(t-h)}{h^2} \qquad (\text{for }h \text{ small}).
-          </me>
+          </md>
           Include units and interpret whether the pressure change is
           accelerating or decelerating at <m>t=6</m> hours.
         </p>
@@ -420,7 +666,7 @@
     <p>
       Let the height of an object (in feet) above the ground at time <m>t</m>
       (measured in seconds) be given by
-      <me>s(t)=-4t^2+5t+3.</me>
+      <md>s(t)=-4t^2+5t+3.</md>
     </p>
 
     <ol marker="a.">
@@ -464,11 +710,11 @@
   </li>
   <li>
     <p>
-      <me>
+      <md>
       \lim_{h\to 0}\frac{s(1+h)-s(1)}{h}
       = \lim_{h\to 0} -3-4h = 
       -3.
-      </me>
+      </md>
     </p>
   </li>
   <li>

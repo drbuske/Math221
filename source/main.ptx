@@ -168,6 +168,8 @@
  <chapter xml:id="past_exams">
       <title>Past Exams</title>
     <xi:include href="./handouts/Sp26Exam1.ptx"/>
+    <xi:include href="./handouts/Sp26Exam2.ptx"/>
+    <xi:include href="./handouts/Sp26Exam3.ptx"/>
  </chapter>
 
     <!-- <chapter xml:id="homework">

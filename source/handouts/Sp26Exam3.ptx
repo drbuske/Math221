@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+  <title>Exam 3 - Spring 2026</title>
+
+<section>
+<title>Topics</title>
+
+    <p>3.1-4.2
+    </p>
+
+    <p>
+      Be sure to try each question before looking at the solutions.
+    </p>
+
+  <exercises xml:id="exercises-sp26exam3">
+    <title>Questions</title>
+
+<exercise xml:id="exam3-s26-q1">
+<statement>
+   Two differentiable functions
+   <m>
+       u
+   </m>
+   and
+   <m>
+       v
+   </m>
+   are graphed below near
+   <m>
+       x=1
+   </m>
+   .  Note: These graphs are symmetric about a horizontal line defined where they intersect.
+  <figure xml:id="Exam2Sp26q1">
+  <caption>The graphs of <m>u(x)</m> and <m>v(x)</m>.</caption> 
+  <image xml:id="Exam2Sp26q1pic" width="50%" >
+<description>
+</description>
+    <latex-image>
+\begin{tikzpicture}[scale=1.1]
+  % axes
+  \draw[->] (-0.2,0) -- (4.5,0) node[below right] {$x$};
+  \draw[->] (0,-1.2) -- (0,3.2) node[left] {$y$};
+  \node[below] at (1,0){$1$};
+  \draw[dashed] (1,-1.2)--(1,3.2);
+  % u : increasing, positive near 1
+  \draw[line width=2pt,linecolor,dashed,domain=0.2:3,samples=200] plot(\x,{0.5 + 0.8*(\x-1) + 0.2*(\x-1)^2});
+  \node[linecolor] at (3.5,2.1) {$y=u(x)$};
+  % v : positive but decreasing at x=1
+  \draw[line width=2pt,red,domain=0.2:3,samples=200] plot(\x,{1.6 - 0.9*(\x-1) - 0.15*(\x-1)^2});
+  \node[red] at (3.5,0.5) {$y=v(x)$};
+  % mark x=1 points
+  \fill[blue] (1,0.5) circle (3pt);
+  \fill[red]  (1,1.6) circle (3pt);
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+<ol marker="a.">
+  <li>
+    <p>
+      Without formulas, determine the
+      <em>
+          sign
+      </em>
+      (positive, negative, or zero) of
+      <m>
+          (uv)'(1)
+      </m>
+      . Explain using the product rule and the picture.
+    </p>
+  </li>
+  <li>
+    <p>
+      Determine the
+      <em>
+          sign
+      </em>
+      of
+      <m>
+          \left(\dfrac{u}{v}\right)'(1)
+      </m>
+      . Explain using the quotient rule and the picture.
+    </p>
+  </li>
+</ol>
+</statement>
+<answer>
+<ol marker="a.">
+  <li>
+    <p>
+      At
+      <m>
+          x=1
+      </m>
+      , the graph shows:
+      <m>
+          u(1) &gt; 0, u'(1) &gt; 0,
+      </m>
+      <m>
+          v(1) &gt; 0,{\text{ and }}v'(1) = - u'(1) &lt; 0.
+      </m>
+      Note that
+      <md>
+          (uv)'(1) = u'(1)v(1)+u(1)v'(1).
+      </md>
+      The first term is positive (positive slope times  positive value). The second term is negative (positive  times negative). Since,
+      <m>
+          v'(1)=-u'(1)
+      </m>
+      and
+      <m>
+          0 &lt; u(1) &lt; v(1)
+      </m>
+      , the first (positive) term dominates.
+    </p>
+  </li>
+  <li>
+    <p>
+      Note that
+      <md>
+          \displaystyle \left( \frac{u}{v}\right)'(1) = \frac{u'(1)v(1)-u(1)v'(1)}{v(1)^{2}}.
+      </md>
+      The denominator is positive. In the numerator,
+      <m>
+          u'(1)v(1) &gt; 0
+      </m>
+      and
+      <m>
+          -u(1)v'(1)
+      </m>
+      is also positive since
+      <m>
+          v'(1)&lt;0
+      </m>
+      . Adding these is positive. Hence the fraction is also positive.
+    </p>
+  </li>
+</ol>
+</answer>
+</exercise>
+
+<exercise xml:id="exam2-s26-q2">
+<statement>
+        The function
+        <m>
+            f
+        </m>
+        is strictly increasing and differentiable. Its graph and a tangent line at
+        <m>
+            x=b
+        </m>
+        are shown in <xref ref="Exam2Sp26q2"/>. The slope of the tangent line is
+        <m>
+            \displaystyle m=\frac{3}{2}
+        </m>
+        . Let
+        <m>
+            g=f^{-1}
+        </m>
+        . Compute
+        <m>
+            g'\big(f(b)\big)
+        </m>
+        .
+    <figure xml:id="Exam2Sp26q2">
+  <caption>Graph a function <m>f(x)</m> and its tangent line at <m>x=b</m>.</caption> 
+  <image xml:id="Exam2Sp26q2pic" width="50%" >
+<description>
+</description>
+    <latex-image>
+\begin{tikzpicture}[scale=1.05]
+  \draw[->] (-0.5,0)--(5.2,0) node[below right] {$x$};
+  \draw[->] (0,-0.5)--(0,3.8) node[left] {$y$};
+  \draw[line width=2pt,domain=0.3:4.1,samples=200] plot(\x,{0.4 + 0.6*(\x) + 0.2*(\x-2)^2});
+  \node at (2.5,3.2) {$y=f(x)$};
+  \draw[dashed] (2,0)--(2,3.8); \node[below] at (2,0){$b$};
+  \coordinate (B) at (2,1.6);
+  \fill (B) circle (3pt) node[below right] {$\,(b,f(b))$};
+  % tangent through B with slope approx 0.9
+  \draw[line width=1.5pt, dashed] ($(B)+(-2, -1.2)$) -- ($(B)+(2,1.2)$);
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+</statement>
+<answer>
+  <p>
+    Slope of tangent to
+    <m>
+        f
+    </m>
+    at
+    <m>
+        x=b
+    </m>
+    is
+    <m>
+        m = \frac{3}{2}.
+    </m>
+    Since
+    <m>
+        g=f^{-1}
+    </m>
+    ,
+    <md>
+        \displaystyle g'(f(b)) = \frac{1}{f'(b)}= \frac{1}{3/2}= \frac{2}{3}.
+    </md>
+  </p>
+</answer>
+ </exercise>
+
+ 
+<exercise xml:id="exam2-s26-q3">
+<statement>
+Let
+<m>
+    F(x)=\sqrt{4x^{2}+3}
+</m>
+. Compute
+<m>
+    F'(x)
+</m>
+and then evaluate
+<m>
+    F'(2)
+</m>
+(exact value only).
+</statement>
+
+<answer>
+    <p>
+        <md>
+            <mrow> F'(x) \mathstrut \amp =\frac{1}{2}(4x^{2}+3)^{-1/2}\cdot 8x </mrow>
+            <mrow> \amp = \frac{4x}{\sqrt{4x^{2}+3}}.</mrow>
+        </md>
+        so that
+        <md>
+            <mrow> F'(2)\mathstrut \amp =\frac{8}{\sqrt{16+3}} </mrow> 
+            <mrow> \amp = \frac{8}{\sqrt{19}}.</mrow>
+        </md>
+    </p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam2-s26-q4">
+<statement>
+A function
+<m>
+    f
+</m>
+is differentiable and satisfies
+<m>
+    f(3)=7
+</m>
+and
+<m>
+    f'(3)=-1.6
+</m>
+.
+<ol marker="a.">
+    <li> <p> Find the linearization
+    <m>
+        L(x)
+    </m>
+    at
+    <m>
+        x=3
+    </m>
+    . </p>
+    </li>
+    <li>
+        <p>
+            Use
+            <m>
+                L(x)
+            </m>
+            to estimate
+            <m>
+                f(3.3)
+            </m>
+            .
+        </p>
+    </li>
+    <li>
+        <p>
+            If you are told
+            <m>
+                f''(3)&gt;0
+            </m>
+            , explain in one sentence whether your estimate in (b) is likely an overestimate or underestimate of
+            <m>
+                f(3.3)
+            </m>
+            .
+        </p>
+    </li>
+</ol>
+ </statement>
+ <answer>
+    <p>
+        <ol marker="a.">
+            <li>
+                <p>
+                <m>
+                        L(x)=f(3)+f'(3)(x-3)=7-1.6(x-3).
+                    </m>
+                </p>
+            </li>
+            <li>
+                <p>
+               <m>
+                        f(3.3)\approx L(3.3)=7 -1.6(0.3)=7-0.48 = 6.52.
+                    </m>
+                </p>
+            </li>
+            <li>
+                <p>
+                    If
+                    <m>
+                        f''(3)&gt;0
+                    </m>
+                    ,
+                    <m>
+                        f
+                    </m>
+                    is likely concave up near
+                    <m>
+                        x=3
+                    </m>
+                    . The tangent line then lies
+                    <em>
+                        below
+                    </em>
+                    the curve, so the linear approximation is an underestimate. 
+                </p>
+            </li>
+        </ol>
+    </p>
+ </answer>
+ </exercise>
+
+<exercise xml:id="exam2-s26-q5">
+<statement>
+Compute each derivative.
+<ol marker="a.">
+    <li>
+        <p>
+           <m>
+               h(x)= 5x^{4} - 3x + \dfrac{2}{x}
+           </m>
+        </p>
+    </li>
+    <li>
+        <p>
+             <m>
+                 q(x)= (3x^{2}+1)\sin x
+             </m>
+        </p>
+    </li>
+    <li>
+        <p>
+            <m>
+                r(x)= \dfrac{x^3}{2x-5}
+            </m>
+        </p>
+    </li>
+</ol>
+</statement>
+
+<answer>
+    <p>
+        <ol marker="a.">
+            <li>
+                <p>
+                   <m>
+                       h'(x)=20x^{3} - 3 - \frac{2}{x^{2}}.
+                   </m>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>
+                         q'(x)=6x\sin x + (3x^{2}+1)\cos x.
+                     </m>
+                </p>
+            </li>
+            <li>
+                <p> Use the quotient rule:
+                    <md>
+                        <mrow> r'(x) \mathstrut \amp =\frac{3x^{2}(2x-5)-x^{3}(2)}{(2x-5)^{2}}</mrow> 
+                        <mrow> \amp =\frac{6x^{3}-15x^{2}-2x^{3}}{(2x-5)^{2}}</mrow>
+                        <mrow> \amp =\frac{4x^{3}-15x^{2}}{(2x-5)^{2}}.</mrow>
+                    </md>
+                </p>
+            </li>
+        </ol>
+    </p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam2-s26-q6">
+<statement>
+The height
+<m>
+    H(t)
+</m>
+(in meters) of water in a tank is decreasing at a rate of
+<m>
+    0.12
+</m>
+m/min. The water temperature
+<m>
+    T
+</m>
+(in
+<m>
+    ^{\circ}
+</m>
+C) changes with height according to
+<m>
+    T(H)=18 + 0.5H.
+</m>
+<ol marker="a.">
+    <li> <p>Compute
+    <m>
+        \dfrac{dT}{dt}
+    </m>
+    at the instant the water is 2 m deep. </p> </li>
+    <li>
+        <p>
+            Interpret your answer with units in one sentence. 
+        </p>
+    </li>
+</ol>
+</statement>
+
+<answer>
+    <p>
+        <ol marker="a.">
+            <li>
+                <p> From the chain rule, 
+                    <md>
+                        <mrow> \frac{dT}{dt}\mathstrut \amp =\frac{dT}{dH}\frac{dH}{dt}</mrow>
+                        <mrow> \amp =0.5(-0.12) </mrow>
+                        <mrow> \amp = -0.06\ \text{°C/min}.</mrow>
+                    </md>
+                </p>
+            </li>
+            <li>
+                <p>
+                    The water temperature is decreasing at a rate of
+                    <m>
+                        0.06^{\circ}\text{C per minute}.
+                    </m>
+                </p>
+            </li>
+        </ol>
+    </p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam2-s26-q7">
+<statement>
+Find the equation of the tangent line to the curve
+<m>
+    \displaystyle x^{2}+xy+4y^{2}=10
+</m>
+at the ordered pair
+<m>
+    (2,1)
+</m>
+.   
+  <figure xml:id="Sp26Ex2q7pic" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>A graph of <m>
+    \displaystyle x^{2}+xy+4y^{2}=10
+</m>.</caption>
+      <image source="images/ImplicitEquationASpring26.jpg" width="50%">
+        <description>The graph of a given ellipse and the ordered pair at (2,1).</description>
+      </image>
+</figure>
+</statement>
+<answer>
+    <p>
+        Differentiate:
+        <md>
+            2x + (x y' + y) + 8y y' = 0.
+        </md>
+        Group
+        <m>
+            y'
+        </m>
+        terms:
+        <md>
+            y'(x+8y)=-(2x+y),
+        </md>
+        <md>
+            y' = \frac{-(2x+y)}{x+8y}.
+        </md>
+        At
+        <m>
+            (2,1)
+        </m>
+        :
+        <md>
+            y'=\frac{-(4+1)}{2+8}=\frac{-5}{10}=-\frac{1}{2}.
+        </md>
+        Tangent line:
+        <md>
+            y-1 = -\frac{1}{2}(x-2).
+        </md>
+    </p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam2-s26-q8">
+<statement>
+<p>
+    You know that at <m>x=4</m>,
+    <md>
+        u(4)=3,\quad u'(4)=2.1,\quad v(4)=5,\quad v'(4)=-0.6.
+    </md>
+</p>
+
+<p>
+    Let <m>P(x)=u(x)v(x)</m> and <m>Q(x)=\dfrac{u(x)}{v(x)}</m>.
+</p>
+<ol marker="a.">
+<li>
+    <p>
+       Compute
+        <m>
+            P'(4)
+        </m>
+        .
+    </p>
+</li>
+<li>
+    <p>
+        Compute
+        <m>
+            Q'(4)
+        </m>
+        .
+    </p>
+</li>
+<li>
+    <p>
+        Explain in one sentence whether
+        <m>
+            P
+        </m>
+        is increasing or decreasing at
+        <m>
+            x=4
+        </m>
+        .
+    </p>
+</li>
+</ol>
+</statement>
+<answer>
+    <ol marker="a.">
+        <li>
+            <p> We have
+             <md>
+                   <mrow> P'(4)\mathstrut \amp =u'(4)v(4)+u(4)v'(4) </mrow>
+                   <mrow> \amp =2.1(5)+3(-0.6) </mrow> 
+                   <mrow> \amp =10.5 - 1.8 </mrow>
+                   <mrow> \amp = 8.7.</mrow>
+               </md>
+            </p>
+        </li>
+        <li>
+            <p> We have 
+                <md>
+                    <mrow> Q'(4) \mathstrut \amp =\frac{u'(4)v(4)-u(4)v'(4)}{v(4)^{2}}</mrow>
+                    <mrow> \amp =\frac{2.1(5)-3(-0.6)}{25} </mrow> 
+                    <mrow> \amp =\frac{10.5+1.8}{25} </mrow> 
+                    <mrow> \amp =\frac{12.3}{25} </mrow>
+                    <mrow> \amp = 0.492.</mrow>
+                </md>
+            </p>
+        </li>
+        <li>
+            <p>
+                Since
+                <m>
+                    P'(4)=8.7&gt;0
+                </m>
+                ,
+                <m>
+                    P \text{ is increasing at }x=4.
+                </m>
+            </p>
+        </li>
+    </ol>
+</answer>
+</exercise>
+
+<exercise xml:id="exam2-s26-q9">
+<statement>
+The graph of a periodic function
+<m>
+    p(x)
+</m>
+is shown. Which of the following is most likely to represent
+<m>
+    p'(x)
+</m>
+? [Check the appropriate box(es).]
+<figure xml:id="Sp26Ex2q9pic" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>A graph of <m>
+    p(x)
+</m> which is periodic.</caption>
+      <image source="images/GraphOfNegCos2xM2.jpg" width="50%">
+        <description>The graph of a periodic function.</description>
+      </image>
+</figure>
+ <dl>
+     <li>
+         <title> <m>\square</m> </title>
+
+         <p>
+             <m>\sin(2x)</m>
+         </p>
+     </li>
+
+     <li>
+         <title> <m>\square</m> </title>
+
+         <p>
+             <m>-\cos(2x)</m>
+         </p>
+     </li>
+
+     <li>
+         <title> <m>\square</m> </title>
+
+         <p>
+             <m>2\sin(x)</m>
+         </p>
+     </li>
+
+     <li>
+         <title> <m>\square</m> </title>
+
+         <p>
+             <m>-2\cos(x)</m>
+         </p>
+     </li>
+
+     <li>
+         <title> <m>\square</m> </title>
+
+         <p>
+             <m>2\sin(2x)</m>
+         </p>
+     </li>
+
+     <li>
+         <title> <m>\square</m> </title>
+
+         <p>
+             <m>-2\cos(2x)</m>
+         </p>
+     </li>
+
+     <li>
+         <title> <m>\square</m> </title>
+
+         <p>
+             <m>2\sin(x)-2</m>
+         </p>
+     </li>
+
+     <li>
+         <title> <m>\square</m> </title>
+
+         <p>
+             <m>-2\cos(x)-2</m>
+         </p>
+     </li>
+
+     <li>
+         <title> <m>\square</m> </title>
+
+         <p>
+             <m>-2\sin(x)</m>
+         </p>
+     </li>
+
+     <li>
+         <title> <m>\square</m> </title>
+
+         <p>
+             <m>2\cos(x)</m>
+         </p>
+     </li>
+
+     <li>
+         <title> <m>\square</m> </title>
+
+         <p>
+             <m>2\sin(\frac{1}{2}x)</m>
+         </p>
+     </li>
+
+     <li>
+         <title> <m>\square</m> </title>
+
+         <p>
+             <m>-2\cos(\frac{1}{2}x)</m>
+         </p>
+     </li>
+ </dl>
+</statement>
+<answer>
+    <p>
+        <m>2\sin(2x)</m>
+    </p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam2-s26-q10">
+<statement>
+<p>
+    A function <m>f</m> and its derivative <m>f'</m> take the values given in <xref ref="ffprimedataExam2Sp26q10"/>.
+    If <m>p(x)=f(2e^{x})</m>, compute <m>p'(0)</m>.
+</p>
+
+<table xml:id="ffprimedataExam2Sp26q10" >
+        <title>Values of <m>f</m> and <m>f'</m> at various values.</title>
+<tabular top="minor" left="minor">
+    <col halign="center" right="minor"/>
+    <col halign="center" right="minor"/>
+    <col halign="center" right="minor"/>
+    <col halign="center" right="minor"/>
+    <row top="minor" />
+    <row top="minor" bottom="minor">
+        <cell><m>x</m></cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>2</cell>
+    </row>
+
+    <row>
+        <cell/>
+    </row>
+
+    <row bottom="minor">
+        <cell><m>f(x)</m></cell>
+        <cell>2</cell>
+        <cell>1</cell>
+        <cell>0</cell>
+    </row>
+
+    <row>
+        <cell/>
+    </row>
+
+    <row bottom="minor">
+        <cell><m>f'(x)</m></cell>
+        <cell>1</cell>
+        <cell>0</cell>
+        <cell>2</cell>
+    </row>
+
+    <row>
+        <cell/>
+    </row>
+</tabular>
+</table>
+
+</statement>
+<answer>
+    <p> Note that
+        <md>
+            p'(x)=f'(2e^{x})\cdot 2e^{x}.
+        </md>
+        At
+        <m>
+            x=0
+        </m>
+        :
+        <md>
+            p'(0)=f'(2e^{0})\cdot 2e^{0} = f'(2)\cdot 2.
+        </md>
+        From the table:
+        <m>
+            f'(2)=2
+        </m>
+        . So
+        <m>
+            p'(0)=4.
+        </m>
+    </p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam2-s26-q11">
+<statement>
+A company sells a product at price
+<m>
+    p
+</m>
+dollars. The number of units sold
+<m>
+    q(p)
+</m>
+depends on the price. The
+<alert>
+    revenue
+</alert>
+is
+<m>
+    R(p) = p \cdot q(p)
+</m>
+. When the price is
+<m>
+    p = \$20
+</m>
+, the number of units sold is
+<m>
+    q(20)=600
+</m>
+. It is also known that
+<m>
+    q'(20)=-18
+</m>
+.
+<ol marker="a.">
+    <li>
+        <p>
+             In this context, what does
+             <m>
+                 q'(20)=-18
+             </m>
+             mean? Use units in giving your one-sentence explanation.  
+        </p>
+    </li>
+    <li>
+        <p>
+            Compute
+            <m>
+                R'(20)
+            </m>
+            .
+        </p>
+    </li>
+    <li>
+        <p>
+            Interpret the meaning of the sign of
+            <m>
+                R'(20)
+            </m>
+            .
+        </p>
+    </li>
+    <li>
+        <p>
+            Assuming that the company wishes to maximize revenue, should the company raise or lower the price at
+            <m>
+                p=\$20
+            </m>
+            ? Explain briefly. 
+        </p>
+    </li>
+</ol>
+</statement>
+<answer>
+<ol marker="a.">
+    <li>
+        <p>
+            <m>
+                q'(20)=-18
+            </m>
+            means that for each $1 increase in price at
+            <m>
+                p=\$20
+            </m>
+            , unit sales decrease by 18 units (units per dollar).
+        </p>
+    </li>
+    <li>
+        <p>
+           <m>
+                R'(p)=q(p)+p q'(p),
+            </m>
+            so that
+            <m>
+                R'(20)=600+20(-18)=600-360= 240.
+            </m>
+        </p>
+    </li>
+    <li>
+        <p>
+           Since
+            <m>
+                R'(20)&gt;0
+            </m>
+            , revenue is
+            <em>
+                increasing
+            </em>
+            at
+            <m>
+                p=20
+            </m>
+            . This means a small price increase will raise revenue.
+        </p>
+    </li>
+    <li>
+        <p>
+             To maximize revenue, since
+             <m>
+                 R'(20)&gt;0
+             </m>
+             , the company should raise the price (slightly). 
+        </p>
+    </li>
+</ol>
+</answer>
+</exercise>
+
+</exercises>
+
+</section>
+</handout>
