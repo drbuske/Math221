@@ -2674,13 +2674,355 @@ var ptx_lunr_docs = [
   "body": "  Evaluate each of the following definite integrals exactly through an appropriate -substitution.          Let .    .    Let , so and . Note that implies and implies . Thus, .           and form a function-derivative pair    .    First consider the corresponding indefinite integral, , and let so that . We see , and thus . Applying this antiderivative to the definite integral, we see that .                .    Using the substitution , it follows that . Hence, .    "
 },
 {
-  "id": "past_exams",
+  "id": "past_exams-2",
   "level": "1",
-  "url": "past_exams.html",
-  "type": "Chapter",
+  "url": "past_exams-2.html",
+  "type": "Handout",
   "number": "",
-  "title": "Past Exams",
-  "body": " Past Exams  "
+  "title": "Exam 1 - Spring 2026",
+  "body": " Exam 1 - Spring 2026   Topics  1.1-1.7  Be sure to try each question before looking at the solutions.   Questions   The graph of a function is shown in . Carefully sketch the graph of . Be sure to clearly identify any locations at which does not exist.  The graph of is given. Sketch the graph of .   A graph of a function on a coordinate plane. The graph is constant at negative three for all x-values less than or equal to negative two. At x equals negative two, the graph changes to a straight line that rises to an open circle at the origin. To the right of the origin, the graph follows a smooth increasing curve that starts at the open circle, passes through approximately the point two comma one, and becomes steeper as x increases. The x-axis and y-axis are labeled, and gridlines mark integer values.         The graph of and its derivative .   The blue graph is a piecewise function. For x less than or equal to negative two, the graph is a horizontal line at y equals negative three extending to the left. From x equals negative two to x equals zero, the graph is a straight line segment rising from the point negative two, negative three to an open circle at the origin. For x greater than zero, the graph follows an upward-opening parabola that begins at the open circle at the origin and rises increasingly steeply as x increases. The red graph is a piecewise function shown with dashed lines. For x less than negative two, the graph is a horizontal line on the x-axis, ending with an open circle at the point negative two, zero. For x between negative two and zero, the graph is a horizontal line at y equals one and one-half, with open circles at both endpoints. For x greater than zero, the graph is a dashed line beginning at an open circle at the origin and rising with constant positive slope, passing through points such as two, one and four, two.         On draw the graph of a function for which   ,   ,   , and  the average rate of change of on the interval is negative.  Clearly label values of points on the graph at and .  Graph a function meeting the required conditions.   An empty coordinate axes system.         The graph of one function meeting the required conditions.   A dashed red curve on a coordinate plane passes through the labeled points negative three, three and two, zero. The curve decreases from left to right and is concave downward, flattening near the point negative three, three and becoming steeper as x increases. The graph continues beyond the visible window in both directions, indicated by arrowheads at the ends. The x-axis and y-axis are labeled, and gridlines with integer markings are shown.          Show, by giving a specific example, that it is possible that even though for all real numbers . Justify your answer.    Answers vary. For example,       The value (in dollars) of a painting years after it is purchased is modeled by     Find the average rate of change in the value of the painting between the first ( ) and fifth ( ) years. Give proper units.    In one sentence, explain the meaning of the value in this context. Be sure to include proper units in your response.         and , so the average rate of change is dollars per year.     represents the instantaneous rate at which the value of the painting is changing, measured in dollars per year, four years after purchase.        Calculate each one-sided limit below or state that it does not exist. Justify your answer.                                          During a chemical reaction, the temperature is modeled by , measured in degrees Celsius, where time is measured in minutes. At minutes, the derivative is . Which statement correctly interprets this?      At 4 minutes, the temperature is increasing at a rate of per minute.    Correct.      The temperature increases by every 0.8 minutes.    No. This is a rate, but not an instantaneous rate.      The temperature is at 4 minutes.    No. A derivative involves the rate of change.      Between 3 and 4 minutes, the temperature increased by exactly .    No. The rate of change should be instant and not over a time interval of 1 minute.      The temperature has increased by a total of since the reaction began.    No. This is not an instantaneous rate.        The height of a rocket above the ground is , measured in meters, at time seconds after launch. It is observed that . Which statement correctly interprets this?      At 12 seconds, the rocket's velocity is decreasing at a rate of 4.2 m\/s per second.    Correct.      At 12 seconds, the rocket is falling back to the ground at a rate of 4.2 m\/s.    No. That is .      The rocket's speed is constant.    No. The second derivative is acceleration and not velocity or speed.      The rocket falls 4.2 meters between 12 and 13 seconds.    No. This is not an average velocity; it is an acceleration.      At 12 seconds, the rocket's height is concave up.    No. The graph of the rocket's height would be concave down at time .        The graph of a function defined on domain is shown in .   Graph of .   A graph showing a function having domain of -5 to infinity.      List all values of for which is not differentiable.    List all values of for which is not continuous.    List all values of for which     Calculate .    Compare and contrast and .                  since is continuous at . Meanwhile, since that is the slope (or derivative) at .         The limit represents the derivative , where:      ,    Correct.      ,      ,      None of these.      ,       The graph of a function is shown in . Is positive, negative, or zero?  The graph of function .   A graph of a smooth curve on a coordinate plane. The curve decreases to a local minimum at approximately the point zero, one, then rises to a local maximum near the point two, four, and then decreases steeply, crossing the x-axis near x equals three. A filled point labeled (a,f(a)) lies on the increasing part of the curve between the local minimum and local maximum, at approximately (1.5,3.6). The x-axis and y-axis are labeled, and gridlines with integer markings are shown.         Positive    Correct.      Negative      Zero        The graph of a function is shown in . Is positive, negative, or zero?      Positive    Correct.      Negative      Zero        A meteorologist monitors the air pressure (in millibars) at a weather station over a short period of time. Measurements are taken every 2 hours.   Pressure data.    Time (hours)  0  2  4  6  8  10    Pressure (mb)  1018.2  1017.5  1015.9  1014.8  1014.6  1015.0       Use a central difference to estimate . Include units.    Estimate using the symmetric second-difference formula  Include units and interpret whether the pressure change is accelerating or decelerating at hours.        We compute:     We compute:   Since , the pressure is decreasing at a decreasing rate (the pressure trend is decelerating).        Let the height of an object (in feet) above the ground at time (measured in seconds) be given by     Expand and simplify .    Using your response to part (a), evaluate .    Interpret the meaning of the value found in part (b) in a physical context.    Geometrically interpret the meaning of the value found in part (b).        We compute:          At time second, the object's instantaneous velocity is feet per second. If up is the positive direction, then the object is moving downward at time .    The value is the slope of the tangent line to the graph of at .        "
+},
+{
+  "id": "exam1-s26-q1",
+  "level": "2",
+  "url": "past_exams-2.html#exam1-s26-q1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": " The graph of a function is shown in . Carefully sketch the graph of . Be sure to clearly identify any locations at which does not exist.  The graph of is given. Sketch the graph of .   A graph of a function on a coordinate plane. The graph is constant at negative three for all x-values less than or equal to negative two. At x equals negative two, the graph changes to a straight line that rises to an open circle at the origin. To the right of the origin, the graph follows a smooth increasing curve that starts at the open circle, passes through approximately the point two comma one, and becomes steeper as x increases. The x-axis and y-axis are labeled, and gridlines mark integer values.         The graph of and its derivative .   The blue graph is a piecewise function. For x less than or equal to negative two, the graph is a horizontal line at y equals negative three extending to the left. From x equals negative two to x equals zero, the graph is a straight line segment rising from the point negative two, negative three to an open circle at the origin. For x greater than zero, the graph follows an upward-opening parabola that begins at the open circle at the origin and rises increasingly steeply as x increases. The red graph is a piecewise function shown with dashed lines. For x less than negative two, the graph is a horizontal line on the x-axis, ending with an open circle at the point negative two, zero. For x between negative two and zero, the graph is a horizontal line at y equals one and one-half, with open circles at both endpoints. For x greater than zero, the graph is a dashed line beginning at an open circle at the origin and rising with constant positive slope, passing through points such as two, one and four, two.       "
+},
+{
+  "id": "exam1-s26-q2",
+  "level": "2",
+  "url": "past_exams-2.html#exam1-s26-q2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": " On draw the graph of a function for which   ,   ,   , and  the average rate of change of on the interval is negative.  Clearly label values of points on the graph at and .  Graph a function meeting the required conditions.   An empty coordinate axes system.         The graph of one function meeting the required conditions.   A dashed red curve on a coordinate plane passes through the labeled points negative three, three and two, zero. The curve decreases from left to right and is concave downward, flattening near the point negative three, three and becoming steeper as x increases. The graph continues beyond the visible window in both directions, indicated by arrowheads at the ends. The x-axis and y-axis are labeled, and gridlines with integer markings are shown.       "
+},
+{
+  "id": "exam1-s26-q3",
+  "level": "2",
+  "url": "past_exams-2.html#exam1-s26-q3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Show, by giving a specific example, that it is possible that even though for all real numbers . Justify your answer.    Answers vary. For example,    "
+},
+{
+  "id": "exam1-s26-q4",
+  "level": "2",
+  "url": "past_exams-2.html#exam1-s26-q4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  The value (in dollars) of a painting years after it is purchased is modeled by     Find the average rate of change in the value of the painting between the first ( ) and fifth ( ) years. Give proper units.    In one sentence, explain the meaning of the value in this context. Be sure to include proper units in your response.         and , so the average rate of change is dollars per year.     represents the instantaneous rate at which the value of the painting is changing, measured in dollars per year, four years after purchase.     "
+},
+{
+  "id": "exam1-s26-q5",
+  "level": "2",
+  "url": "past_exams-2.html#exam1-s26-q5",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Calculate each one-sided limit below or state that it does not exist. Justify your answer.                                       "
+},
+{
+  "id": "exam1-s26-q6",
+  "level": "2",
+  "url": "past_exams-2.html#exam1-s26-q6",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  During a chemical reaction, the temperature is modeled by , measured in degrees Celsius, where time is measured in minutes. At minutes, the derivative is . Which statement correctly interprets this?      At 4 minutes, the temperature is increasing at a rate of per minute.    Correct.      The temperature increases by every 0.8 minutes.    No. This is a rate, but not an instantaneous rate.      The temperature is at 4 minutes.    No. A derivative involves the rate of change.      Between 3 and 4 minutes, the temperature increased by exactly .    No. The rate of change should be instant and not over a time interval of 1 minute.      The temperature has increased by a total of since the reaction began.    No. This is not an instantaneous rate.     "
+},
+{
+  "id": "exam1-s26-q7",
+  "level": "2",
+  "url": "past_exams-2.html#exam1-s26-q7",
+  "type": "Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  The height of a rocket above the ground is , measured in meters, at time seconds after launch. It is observed that . Which statement correctly interprets this?      At 12 seconds, the rocket's velocity is decreasing at a rate of 4.2 m\/s per second.    Correct.      At 12 seconds, the rocket is falling back to the ground at a rate of 4.2 m\/s.    No. That is .      The rocket's speed is constant.    No. The second derivative is acceleration and not velocity or speed.      The rocket falls 4.2 meters between 12 and 13 seconds.    No. This is not an average velocity; it is an acceleration.      At 12 seconds, the rocket's height is concave up.    No. The graph of the rocket's height would be concave down at time .     "
+},
+{
+  "id": "exam1-s26-q8",
+  "level": "2",
+  "url": "past_exams-2.html#exam1-s26-q8",
+  "type": "Exercise",
+  "number": "8",
+  "title": "",
+  "body": "  The graph of a function defined on domain is shown in .   Graph of .   A graph showing a function having domain of -5 to infinity.      List all values of for which is not differentiable.    List all values of for which is not continuous.    List all values of for which     Calculate .    Compare and contrast and .                  since is continuous at . Meanwhile, since that is the slope (or derivative) at .      "
+},
+{
+  "id": "exam1-s26-q9",
+  "level": "2",
+  "url": "past_exams-2.html#exam1-s26-q9",
+  "type": "Exercise",
+  "number": "9",
+  "title": "",
+  "body": "  The limit represents the derivative , where:      ,    Correct.      ,      ,      None of these.      ,     "
+},
+{
+  "id": "exam1-s26-q10",
+  "level": "2",
+  "url": "past_exams-2.html#exam1-s26-q10",
+  "type": "Exercise",
+  "number": "10",
+  "title": "",
+  "body": " The graph of a function is shown in . Is positive, negative, or zero?  The graph of function .   A graph of a smooth curve on a coordinate plane. The curve decreases to a local minimum at approximately the point zero, one, then rises to a local maximum near the point two, four, and then decreases steeply, crossing the x-axis near x equals three. A filled point labeled (a,f(a)) lies on the increasing part of the curve between the local minimum and local maximum, at approximately (1.5,3.6). The x-axis and y-axis are labeled, and gridlines with integer markings are shown.         Positive    Correct.      Negative      Zero     "
+},
+{
+  "id": "exam1-s26-q10b",
+  "level": "2",
+  "url": "past_exams-2.html#exam1-s26-q10b",
+  "type": "Exercise",
+  "number": "11",
+  "title": "",
+  "body": "  The graph of a function is shown in . Is positive, negative, or zero?      Positive    Correct.      Negative      Zero     "
+},
+{
+  "id": "exam1-s26-q11",
+  "level": "2",
+  "url": "past_exams-2.html#exam1-s26-q11",
+  "type": "Exercise",
+  "number": "12",
+  "title": "",
+  "body": "  A meteorologist monitors the air pressure (in millibars) at a weather station over a short period of time. Measurements are taken every 2 hours.   Pressure data.    Time (hours)  0  2  4  6  8  10    Pressure (mb)  1018.2  1017.5  1015.9  1014.8  1014.6  1015.0       Use a central difference to estimate . Include units.    Estimate using the symmetric second-difference formula  Include units and interpret whether the pressure change is accelerating or decelerating at hours.        We compute:     We compute:   Since , the pressure is decreasing at a decreasing rate (the pressure trend is decelerating).     "
+},
+{
+  "id": "exam1-s26-q12",
+  "level": "2",
+  "url": "past_exams-2.html#exam1-s26-q12",
+  "type": "Exercise",
+  "number": "13",
+  "title": "",
+  "body": "  Let the height of an object (in feet) above the ground at time (measured in seconds) be given by     Expand and simplify .    Using your response to part (a), evaluate .    Interpret the meaning of the value found in part (b) in a physical context.    Geometrically interpret the meaning of the value found in part (b).        We compute:          At time second, the object's instantaneous velocity is feet per second. If up is the positive direction, then the object is moving downward at time .    The value is the slope of the tangent line to the graph of at .     "
+},
+{
+  "id": "past_exams-3",
+  "level": "1",
+  "url": "past_exams-3.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Exam 2 - Spring 2026",
+  "body": " Exam 2 - Spring 2026   Topics  1.8-2.7  Be sure to try each question before looking at the solutions.   Questions   Two differentiable functions and are graphed below near . Note: These graphs are symmetric about a horizontal line defined where they intersect.  The graphs of and .          Without formulas, determine the sign (positive, negative, or zero) of . Explain using the product rule and the picture.    Determine the sign of . Explain using the quotient rule and the picture.        At , the graph shows:  Note that The first term is positive (positive slope times positive value). The second term is negative (positive times negative). Since, and , the first (positive) term dominates.    Note that The denominator is positive. In the numerator, and is also positive since . Adding these is positive. Hence the fraction is also positive.       The function is strictly increasing and differentiable. Its graph and a tangent line at are shown in . The slope of the tangent line is . Let . Compute .  Graph a function and its tangent line at .          Slope of tangent to at is Since ,      Let . Compute and then evaluate (exact value only).    so that      A function is differentiable and satisfies and .   Find the linearization at .    Use to estimate .    If you are told , explain in one sentence whether your estimate in (b) is likely an overestimate or underestimate of .                   If , is likely concave up near . The tangent line then lies below the curve, so the linear approximation is an underestimate.        Compute each derivative.                                 Use the quotient rule:         The height (in meters) of water in a tank is decreasing at a rate of m\/min. The water temperature (in C) changes with height according to    Compute at the instant the water is 2 m deep.    Interpret your answer with units in one sentence.         From the chain rule,     The water temperature is decreasing at a rate of         Find the equation of the tangent line to the curve at the ordered pair .  A graph of .   The graph of a given ellipse and the ordered pair at (2,1).      Differentiate: Group terms:  At : Tangent line:       You know that at ,   Let and .    Compute .    Compute .    Explain in one sentence whether is increasing or decreasing at .        We have     We have     Since ,        The graph of a periodic function is shown. Which of the following is most likely to represent ? [Check the appropriate box(es).]  A graph of which is periodic.   The graph of a periodic function.                                                                                                               A function and its derivative take the values given in . If , compute .   Values of and at various values.          0  1  2        2  1  0        1  0  2          Note that At : From the table: . So      A company sells a product at price dollars. The number of units sold depends on the price. The revenue is . When the price is , the number of units sold is . It is also known that .   In this context, what does mean? Use units in giving your one-sentence explanation.    Compute .    Interpret the meaning of the sign of .    Assuming that the company wishes to maximize revenue, should the company raise or lower the price at ? Explain briefly.         means that for each $1 increase in price at , unit sales decrease by 18 units (units per dollar).     so that     Since , revenue is increasing at . This means a small price increase will raise revenue.    To maximize revenue, since , the company should raise the price (slightly).        "
+},
+{
+  "id": "exam2-s26-q1",
+  "level": "2",
+  "url": "past_exams-3.html#exam2-s26-q1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": " Two differentiable functions and are graphed below near . Note: These graphs are symmetric about a horizontal line defined where they intersect.  The graphs of and .          Without formulas, determine the sign (positive, negative, or zero) of . Explain using the product rule and the picture.    Determine the sign of . Explain using the quotient rule and the picture.        At , the graph shows:  Note that The first term is positive (positive slope times positive value). The second term is negative (positive times negative). Since, and , the first (positive) term dominates.    Note that The denominator is positive. In the numerator, and is also positive since . Adding these is positive. Hence the fraction is also positive.     "
+},
+{
+  "id": "exam2-s26-q2",
+  "level": "2",
+  "url": "past_exams-3.html#exam2-s26-q2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": " The function is strictly increasing and differentiable. Its graph and a tangent line at are shown in . The slope of the tangent line is . Let . Compute .  Graph a function and its tangent line at .          Slope of tangent to at is Since ,    "
+},
+{
+  "id": "exam2-s26-q3",
+  "level": "2",
+  "url": "past_exams-3.html#exam2-s26-q3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": " Let . Compute and then evaluate (exact value only).    so that    "
+},
+{
+  "id": "exam2-s26-q4",
+  "level": "2",
+  "url": "past_exams-3.html#exam2-s26-q4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": " A function is differentiable and satisfies and .   Find the linearization at .    Use to estimate .    If you are told , explain in one sentence whether your estimate in (b) is likely an overestimate or underestimate of .                   If , is likely concave up near . The tangent line then lies below the curve, so the linear approximation is an underestimate.      "
+},
+{
+  "id": "exam2-s26-q5",
+  "level": "2",
+  "url": "past_exams-3.html#exam2-s26-q5",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": " Compute each derivative.                                 Use the quotient rule:       "
+},
+{
+  "id": "exam2-s26-q6",
+  "level": "2",
+  "url": "past_exams-3.html#exam2-s26-q6",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": " The height (in meters) of water in a tank is decreasing at a rate of m\/min. The water temperature (in C) changes with height according to    Compute at the instant the water is 2 m deep.    Interpret your answer with units in one sentence.         From the chain rule,     The water temperature is decreasing at a rate of       "
+},
+{
+  "id": "exam2-s26-q7",
+  "level": "2",
+  "url": "past_exams-3.html#exam2-s26-q7",
+  "type": "Exercise",
+  "number": "7",
+  "title": "",
+  "body": " Find the equation of the tangent line to the curve at the ordered pair .  A graph of .   The graph of a given ellipse and the ordered pair at (2,1).      Differentiate: Group terms:  At : Tangent line:    "
+},
+{
+  "id": "exam2-s26-q8",
+  "level": "2",
+  "url": "past_exams-3.html#exam2-s26-q8",
+  "type": "Exercise",
+  "number": "8",
+  "title": "",
+  "body": "  You know that at ,   Let and .    Compute .    Compute .    Explain in one sentence whether is increasing or decreasing at .        We have     We have     Since ,      "
+},
+{
+  "id": "exam2-s26-q9",
+  "level": "2",
+  "url": "past_exams-3.html#exam2-s26-q9",
+  "type": "Exercise",
+  "number": "9",
+  "title": "",
+  "body": " The graph of a periodic function is shown. Which of the following is most likely to represent ? [Check the appropriate box(es).]  A graph of which is periodic.   The graph of a periodic function.                                                                                                            "
+},
+{
+  "id": "exam2-s26-q10",
+  "level": "2",
+  "url": "past_exams-3.html#exam2-s26-q10",
+  "type": "Exercise",
+  "number": "10",
+  "title": "",
+  "body": "  A function and its derivative take the values given in . If , compute .   Values of and at various values.          0  1  2        2  1  0        1  0  2          Note that At : From the table: . So    "
+},
+{
+  "id": "exam2-s26-q11",
+  "level": "2",
+  "url": "past_exams-3.html#exam2-s26-q11",
+  "type": "Exercise",
+  "number": "11",
+  "title": "",
+  "body": " A company sells a product at price dollars. The number of units sold depends on the price. The revenue is . When the price is , the number of units sold is . It is also known that .   In this context, what does mean? Use units in giving your one-sentence explanation.    Compute .    Interpret the meaning of the sign of .    Assuming that the company wishes to maximize revenue, should the company raise or lower the price at ? Explain briefly.         means that for each $1 increase in price at , unit sales decrease by 18 units (units per dollar).     so that     Since , revenue is increasing at . This means a small price increase will raise revenue.    To maximize revenue, since , the company should raise the price (slightly).     "
+},
+{
+  "id": "past_exams-4",
+  "level": "1",
+  "url": "past_exams-4.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Exam 3 - Spring 2026",
+  "body": " Exam 3 - Spring 2026   Topics  3.1-4.2  Be sure to try each question before looking at the solutions.   Questions   A function satisfies and . What can be concluded?     Local maximum at    Correct.      Local minimum at      Inflection point at      Global maximum at      Global minimum at      No conclusion is possible       A cube has side length , which is increasing at a constant rate cm\/sec. What is the rate of change of the cube's volume when cm?     150 cm \/sec    Correct.      10 cm \/sec      25 cm \/sec      50 cm \/sec       From the graph of shown in , give all values of for which has a local minimum on .  Graph of .   Graph of g prime of x. The curve is below the x-axis for x less than 1, above the x-axis for 1 less than x less than 3, below the x-axis for 3 less than x less than 6, and above the x-axis for x greater than 6. It crosses the x-axis at x equal to 1, 3, and 6, with a local maximum near x equal to 2 and local minima near x = 0 and x = 5.       Since changes from negative to positive at and , there are local minimums at these values.      is graphed on in . Given that determine the exact value of which gives the global minimum of on . Decimal approximations will receive no credit.  The graph of on .   Smooth curve with x-intercepts at x = -3, 0, and 3; a local minimum near (-2.1, -4.5); and a local maximum near (2.2, 4.4). The graph is negative on (-3, 0) and positive on (0, 3).       exactly when which happens when . Solving this give . The global minimum occurs at .     A laser mounted on a wall 8 feet above ground tracks a robot moving horizontally along the floor. At time , the robot is feet away from the wall and moves so that feet per second. The laser always points directly at the robot. Let be the angle of the beam above horizontal.  A laser tracks the movement of a robot.   Diagram showing a laser mounted on a vertical wall and a robot moving along a horizontal floor. The wall and floor meet at a right angle at the lower-left corner. The laser is located on the wall 8 feet above the floor and is labeled “Laser.” The robot is located on the floor to the right of the wall and is labeled “Robot.” A dashed line segment connects the laser to the robot, representing the laser beam. The horizontal distance from the wall to the robot is labeled x(t). The angle between the laser beam and the floor at the robot is labeled θ(t). The height of the laser above the floor is labeled 8. The diagram forms a right triangle with vertical leg 8 feet, horizontal leg x(t), and hypotenuse given by the laser beam.       Write a relation between and .    Find when . Be sure to include units in your response.              means that So at we have radians per second.       The velocity of an object (in m\/s) on the interval is shown in . Compute the total distance traveled on . Include units.  The velocity of an object on the interval .   Velocity graph: starts at (0, 0), rises linearly to (2, 3), stays at 3 until t = 4, then decreases linearly to (6, 0).       Look at the area under the curve and above the -axis to find 6+6 = 12 meters.     Express the following quantity as sum using sigma notation:          Let Compute the left Riemann sum, , on .         Evaluate the limit:    Both numerator and denominator . Apply L'Hôpital: Thus first application: Still . Apply L'Hôpital again: Hence      The rectangles in the graph shown in illustrate a left-endpoint Riemann sum for the function on the interval .  A left Riemann sum for on .   Graph of y = square root of 2x + 1 with three left-endpoint rectangles on the interval [1, 8].      What is the value of in this Riemann sum?    What is the value of in this sum?    Calculate the  exact  value of .    Give an explicit formula for in terms of the index in the sum                    so that .            Two differentiable functions and are shown in near .  Graphs of and near .   Graph of two line segments: f rises from (1, 0) to (3, 4), and g decreases from (1, 2) to (3, 0). The graphs intersect at (2, 1).       Evaluate .    Evaluate .        2 (top tends to 2; bottom tends to 1)    Use L'Hopital's rule:        Determine the dimensions of the rectangle of largest area that can be inscribed in the 3-4-5 right triangle shown in .  A rectangle inscribed in a 3-4-5 triangle.   Graph of the line from (0, 4) to (3, 0), forming a triangle in the first quadrant. A shaded rectangle is inscribed under the line with width about 1.75 and height about 1.6       We maximize since the line is described by and the value of is positive in the diagram so that would give the width of the rectangle. To maximize we find which is 0 when . This is a local maximum so that the optimal dimensions are a base width of and a height of .      "
+},
+{
+  "id": "exam3-s26-q1",
+  "level": "2",
+  "url": "past_exams-4.html#exam3-s26-q1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": " A function satisfies and . What can be concluded?     Local maximum at    Correct.      Local minimum at      Inflection point at      Global maximum at      Global minimum at      No conclusion is possible     "
+},
+{
+  "id": "exam3-s26-q2",
+  "level": "2",
+  "url": "past_exams-4.html#exam3-s26-q2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": " A cube has side length , which is increasing at a constant rate cm\/sec. What is the rate of change of the cube's volume when cm?     150 cm \/sec    Correct.      10 cm \/sec      25 cm \/sec      50 cm \/sec     "
+},
+{
+  "id": "exam3-s26-q3",
+  "level": "2",
+  "url": "past_exams-4.html#exam3-s26-q3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": " From the graph of shown in , give all values of for which has a local minimum on .  Graph of .   Graph of g prime of x. The curve is below the x-axis for x less than 1, above the x-axis for 1 less than x less than 3, below the x-axis for 3 less than x less than 6, and above the x-axis for x greater than 6. It crosses the x-axis at x equal to 1, 3, and 6, with a local maximum near x equal to 2 and local minima near x = 0 and x = 5.       Since changes from negative to positive at and , there are local minimums at these values.   "
+},
+{
+  "id": "exam3-s26-q4",
+  "level": "2",
+  "url": "past_exams-4.html#exam3-s26-q4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  is graphed on in . Given that determine the exact value of which gives the global minimum of on . Decimal approximations will receive no credit.  The graph of on .   Smooth curve with x-intercepts at x = -3, 0, and 3; a local minimum near (-2.1, -4.5); and a local maximum near (2.2, 4.4). The graph is negative on (-3, 0) and positive on (0, 3).       exactly when which happens when . Solving this give . The global minimum occurs at .   "
+},
+{
+  "id": "exam3-s26-q5",
+  "level": "2",
+  "url": "past_exams-4.html#exam3-s26-q5",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": " A laser mounted on a wall 8 feet above ground tracks a robot moving horizontally along the floor. At time , the robot is feet away from the wall and moves so that feet per second. The laser always points directly at the robot. Let be the angle of the beam above horizontal.  A laser tracks the movement of a robot.   Diagram showing a laser mounted on a vertical wall and a robot moving along a horizontal floor. The wall and floor meet at a right angle at the lower-left corner. The laser is located on the wall 8 feet above the floor and is labeled “Laser.” The robot is located on the floor to the right of the wall and is labeled “Robot.” A dashed line segment connects the laser to the robot, representing the laser beam. The horizontal distance from the wall to the robot is labeled x(t). The angle between the laser beam and the floor at the robot is labeled θ(t). The height of the laser above the floor is labeled 8. The diagram forms a right triangle with vertical leg 8 feet, horizontal leg x(t), and hypotenuse given by the laser beam.       Write a relation between and .    Find when . Be sure to include units in your response.              means that So at we have radians per second.     "
+},
+{
+  "id": "exam3-s26-q6",
+  "level": "2",
+  "url": "past_exams-4.html#exam3-s26-q6",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": " The velocity of an object (in m\/s) on the interval is shown in . Compute the total distance traveled on . Include units.  The velocity of an object on the interval .   Velocity graph: starts at (0, 0), rises linearly to (2, 3), stays at 3 until t = 4, then decreases linearly to (6, 0).       Look at the area under the curve and above the -axis to find 6+6 = 12 meters.   "
+},
+{
+  "id": "exam3-s26-q7",
+  "level": "2",
+  "url": "past_exams-4.html#exam3-s26-q7",
+  "type": "Exercise",
+  "number": "7",
+  "title": "",
+  "body": " Express the following quantity as sum using sigma notation:        "
+},
+{
+  "id": "exam3-s26-q8",
+  "level": "2",
+  "url": "past_exams-4.html#exam3-s26-q8",
+  "type": "Exercise",
+  "number": "8",
+  "title": "",
+  "body": " Let Compute the left Riemann sum, , on .       "
+},
+{
+  "id": "exam3-s26-q9",
+  "level": "2",
+  "url": "past_exams-4.html#exam3-s26-q9",
+  "type": "Exercise",
+  "number": "9",
+  "title": "",
+  "body": " Evaluate the limit:    Both numerator and denominator . Apply L'Hôpital: Thus first application: Still . Apply L'Hôpital again: Hence    "
+},
+{
+  "id": "exam3-s26-q10",
+  "level": "2",
+  "url": "past_exams-4.html#exam3-s26-q10",
+  "type": "Exercise",
+  "number": "10",
+  "title": "",
+  "body": " The rectangles in the graph shown in illustrate a left-endpoint Riemann sum for the function on the interval .  A left Riemann sum for on .   Graph of y = square root of 2x + 1 with three left-endpoint rectangles on the interval [1, 8].      What is the value of in this Riemann sum?    What is the value of in this sum?    Calculate the  exact  value of .    Give an explicit formula for in terms of the index in the sum                    so that .          "
+},
+{
+  "id": "exam3-s26-q11",
+  "level": "2",
+  "url": "past_exams-4.html#exam3-s26-q11",
+  "type": "Exercise",
+  "number": "11",
+  "title": "",
+  "body": " Two differentiable functions and are shown in near .  Graphs of and near .   Graph of two line segments: f rises from (1, 0) to (3, 4), and g decreases from (1, 2) to (3, 0). The graphs intersect at (2, 1).       Evaluate .    Evaluate .        2 (top tends to 2; bottom tends to 1)    Use L'Hopital's rule:      "
+},
+{
+  "id": "exam3-s26-q12",
+  "level": "2",
+  "url": "past_exams-4.html#exam3-s26-q12",
+  "type": "Exercise",
+  "number": "12",
+  "title": "",
+  "body": " Determine the dimensions of the rectangle of largest area that can be inscribed in the 3-4-5 right triangle shown in .  A rectangle inscribed in a 3-4-5 triangle.   Graph of the line from (0, 4) to (3, 0), forming a triangle in the first quadrant. A shaded rectangle is inscribed under the line with width about 1.75 and height about 1.6       We maximize since the line is described by and the value of is positive in the diagram so that would give the width of the rectangle. To maximize we find which is 0 when . This is a local maximum so that the optimal dimensions are a base width of and a height of .   "
 }
 ]
 
