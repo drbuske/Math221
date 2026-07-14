@@ -18,908 +18,789 @@
 
 <exercise xml:id="exam3-s26-q1">
 <statement>
-   Two differentiable functions
-   <m>
-       u
-   </m>
-   and
-   <m>
-       v
-   </m>
-   are graphed below near
-   <m>
-       x=1
-   </m>
-   .  Note: These graphs are symmetric about a horizontal line defined where they intersect.
-  <figure xml:id="Exam2Sp26q1">
-  <caption>The graphs of <m>u(x)</m> and <m>v(x)</m>.</caption> 
-  <image xml:id="Exam2Sp26q1pic" width="50%" >
-<description>
-</description>
-    <latex-image>
-\begin{tikzpicture}[scale=1.1]
-  % axes
-  \draw[->] (-0.2,0) -- (4.5,0) node[below right] {$x$};
-  \draw[->] (0,-1.2) -- (0,3.2) node[left] {$y$};
-  \node[below] at (1,0){$1$};
-  \draw[dashed] (1,-1.2)--(1,3.2);
-  % u : increasing, positive near 1
-  \draw[line width=2pt,linecolor,dashed,domain=0.2:3,samples=200] plot(\x,{0.5 + 0.8*(\x-1) + 0.2*(\x-1)^2});
-  \node[linecolor] at (3.5,2.1) {$y=u(x)$};
-  % v : positive but decreasing at x=1
-  \draw[line width=2pt,red,domain=0.2:3,samples=200] plot(\x,{1.6 - 0.9*(\x-1) - 0.15*(\x-1)^2});
-  \node[red] at (3.5,0.5) {$y=v(x)$};
-  % mark x=1 points
-  \fill[blue] (1,0.5) circle (3pt);
-  \fill[red]  (1,1.6) circle (3pt);
-\end{tikzpicture}
-    </latex-image>
-  </image>
-</figure>
-<ol marker="a.">
-  <li>
-    <p>
-      Without formulas, determine the
-      <em>
-          sign
-      </em>
-      (positive, negative, or zero) of
-      <m>
-          (uv)'(1)
-      </m>
-      . Explain using the product rule and the picture.
-    </p>
-  </li>
-  <li>
-    <p>
-      Determine the
-      <em>
-          sign
-      </em>
-      of
-      <m>
-          \left(\dfrac{u}{v}\right)'(1)
-      </m>
-      . Explain using the quotient rule and the picture.
-    </p>
-  </li>
-</ol>
-</statement>
-<answer>
-<ol marker="a.">
-  <li>
-    <p>
-      At
-      <m>
-          x=1
-      </m>
-      , the graph shows:
-      <m>
-          u(1) &gt; 0, u'(1) &gt; 0,
-      </m>
-      <m>
-          v(1) &gt; 0,{\text{ and }}v'(1) = - u'(1) &lt; 0.
-      </m>
-      Note that
-      <md>
-          (uv)'(1) = u'(1)v(1)+u(1)v'(1).
-      </md>
-      The first term is positive (positive slope times  positive value). The second term is negative (positive  times negative). Since,
-      <m>
-          v'(1)=-u'(1)
-      </m>
-      and
-      <m>
-          0 &lt; u(1) &lt; v(1)
-      </m>
-      , the first (positive) term dominates.
-    </p>
-  </li>
-  <li>
-    <p>
-      Note that
-      <md>
-          \displaystyle \left( \frac{u}{v}\right)'(1) = \frac{u'(1)v(1)-u(1)v'(1)}{v(1)^{2}}.
-      </md>
-      The denominator is positive. In the numerator,
-      <m>
-          u'(1)v(1) &gt; 0
-      </m>
-      and
-      <m>
-          -u(1)v'(1)
-      </m>
-      is also positive since
-      <m>
-          v'(1)&lt;0
-      </m>
-      . Adding these is positive. Hence the fraction is also positive.
-    </p>
-  </li>
-</ol>
-</answer>
-</exercise>
-
-<exercise xml:id="exam2-s26-q2">
-<statement>
-        The function
-        <m>
-            f
-        </m>
-        is strictly increasing and differentiable. Its graph and a tangent line at
-        <m>
-            x=b
-        </m>
-        are shown in <xref ref="Exam2Sp26q2"/>. The slope of the tangent line is
-        <m>
-            \displaystyle m=\frac{3}{2}
-        </m>
-        . Let
-        <m>
-            g=f^{-1}
-        </m>
-        . Compute
-        <m>
-            g'\big(f(b)\big)
-        </m>
-        .
-    <figure xml:id="Exam2Sp26q2">
-  <caption>Graph a function <m>f(x)</m> and its tangent line at <m>x=b</m>.</caption> 
-  <image xml:id="Exam2Sp26q2pic" width="50%" >
-<description>
-</description>
-    <latex-image>
-\begin{tikzpicture}[scale=1.05]
-  \draw[->] (-0.5,0)--(5.2,0) node[below right] {$x$};
-  \draw[->] (0,-0.5)--(0,3.8) node[left] {$y$};
-  \draw[line width=2pt,domain=0.3:4.1,samples=200] plot(\x,{0.4 + 0.6*(\x) + 0.2*(\x-2)^2});
-  \node at (2.5,3.2) {$y=f(x)$};
-  \draw[dashed] (2,0)--(2,3.8); \node[below] at (2,0){$b$};
-  \coordinate (B) at (2,1.6);
-  \fill (B) circle (3pt) node[below right] {$\,(b,f(b))$};
-  % tangent through B with slope approx 0.9
-  \draw[line width=1.5pt, dashed] ($(B)+(-2, -1.2)$) -- ($(B)+(2,1.2)$);
-\end{tikzpicture}
-    </latex-image>
-  </image>
-</figure>
-</statement>
-<answer>
-  <p>
-    Slope of tangent to
+    A function
     <m>
         f
     </m>
-    at
+    satisfies
     <m>
-        x=b
+        f'(2)=0
     </m>
-    is
+    and
     <m>
-        m = \frac{3}{2}.
+        f''(2)=-2.1
     </m>
-    Since
-    <m>
-        g=f^{-1}
-    </m>
-    ,
-    <md>
-        \displaystyle g'(f(b)) = \frac{1}{f'(b)}= \frac{1}{3/2}= \frac{2}{3}.
-    </md>
-  </p>
-</answer>
+    . What can be concluded? 
+</statement>
+    <choices multiple-correct="yes" randomize="yes">
+
+    <choice correct="yes">
+      <statement>
+        <p>Local maximum at <m>x=2</m></p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>Local minimum at <m>x=2</m></p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>Inflection point at <m>x=2</m></p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>Global maximum at <m>x=2</m></p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>Global minimum at <m>x=2</m></p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>No conclusion is possible</p>
+      </statement>
+    </choice>
+
+  </choices>
+
+</exercise>
+
+<exercise xml:id="exam3-s26-q2">
+<statement>
+       A cube has side length
+        <m>
+            s(t)
+        </m>
+        , which is increasing at a constant rate
+        <m>
+            \displaystyle \frac{ds}{dt}=2
+        </m>
+        cm/sec. What is the rate of change of the cube's volume when
+        <m>
+            s=5
+        </m>
+        cm?
+</statement>
+<choices randomize="yes">
+
+    <choice correct="yes">
+      <statement>
+        <p>150 cm
+        <m>
+            ^{3}
+        </m>
+        /sec</p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>10 cm
+        <m>
+            ^{3}
+        </m>
+        /sec</p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>25 cm
+        <m>
+            ^{3}
+        </m>
+        /sec</p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>50 cm
+        <m>
+            ^{3}
+        </m>
+        /sec</p>
+      </statement>
+    </choice>
+
+  </choices>
  </exercise>
 
  
-<exercise xml:id="exam2-s26-q3">
+<exercise xml:id="exam3-s26-q3">
 <statement>
-Let
+From the graph of
 <m>
-    F(x)=\sqrt{4x^{2}+3}
+    g'(x)
 </m>
-. Compute
+shown in <xref ref="Sp26Ex3q3"/>, give all values of
 <m>
-    F'(x)
+    x
 </m>
-and then evaluate
+for which
 <m>
-    F'(2)
+    g
 </m>
-(exact value only).
+has a local minimum on
+<m>
+    [-1,7]
+</m>
+. 
+<figure xml:id="Sp26Ex3q3">
+  <caption>Graph of <m>g'(x)</m>.</caption> 
+  <image xml:id="Exam3Sp26q3pic" width="75%" >
+<description>Graph of g prime of x. The curve is below the x-axis for x less than 1, above the x-axis for 1 less than x less than 3, below the x-axis for 3 less than x less than 6, and above the x-axis for x greater than 6. It crosses the x-axis at x equal to 1, 3, and 6, with a local maximum near x equal to 2 and local minima near x = 0 and x = 5.
+</description>
+    <latex-image>
+\begin{tikzpicture}[scale=0.9]
+  \draw[->] (-1.5,0) -- (7.2,0) node[right]{$x$};
+  \draw[->] (0,-2.1) -- (0,2.1) node[right]{$y$};
+  \draw node [above] at (6.25,0.25) {$g'(x)$};
+  \draw[very thick,blue,smooth] plot coordinates {
+    (-1,-0.2) (0,-1) (1,0) (2,1.5) (3,0) (4,-1.2) (5,-1.6) (6,0) (7,0.3)
+  };
+  \foreach \x/\xtext in { -1/-1, 1/1, 2/2, 3/3, 4/4, 5/5, 6/6, 7/7}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
 </statement>
 
 <answer>
     <p>
-        <md>
-            <mrow> F'(x) \mathstrut \amp =\frac{1}{2}(4x^{2}+3)^{-1/2}\cdot 8x </mrow>
-            <mrow> \amp = \frac{4x}{\sqrt{4x^{2}+3}}.</mrow>
-        </md>
-        so that
-        <md>
-            <mrow> F'(2)\mathstrut \amp =\frac{8}{\sqrt{16+3}} </mrow> 
-            <mrow> \amp = \frac{8}{\sqrt{19}}.</mrow>
-        </md>
+        Since
+        <m>
+            g'(x)
+        </m>
+        changes from negative to positive at
+        <m>
+            x=1
+        </m>
+        and
+        <m>
+            x=6
+        </m>
+        , there are local minimums  at these values.
     </p>
 </answer>
 </exercise>
 
-<exercise xml:id="exam2-s26-q4">
+<exercise xml:id="exam3-s26-q4">
 <statement>
-A function
 <m>
-    f
+    f(x) = x\sqrt{9-x^{2}}
 </m>
-is differentiable and satisfies
+is graphed on
 <m>
-    f(3)=7
+    [-3,3]
 </m>
-and
+in <xref ref="Sp26Ex3q4"/>. Given that
+<md>
+    f'(x)=\frac{-x^{2}}{\sqrt{9-x^{2}}}+ \sqrt{9-x^{2}},
+</md>
+determine the
+<em>
+    exact
+</em>
+value of
 <m>
-    f'(3)=-1.6
+    x
 </m>
-.
-<ol marker="a.">
-    <li> <p> Find the linearization
-    <m>
-        L(x)
-    </m>
-    at
-    <m>
-        x=3
-    </m>
-    . </p>
-    </li>
-    <li>
-        <p>
-            Use
-            <m>
-                L(x)
-            </m>
-            to estimate
-            <m>
-                f(3.3)
-            </m>
-            .
-        </p>
-    </li>
-    <li>
-        <p>
-            If you are told
-            <m>
-                f''(3)&gt;0
-            </m>
-            , explain in one sentence whether your estimate in (b) is likely an overestimate or underestimate of
-            <m>
-                f(3.3)
-            </m>
-            .
-        </p>
-    </li>
-</ol>
- </statement>
- <answer>
-    <p>
-        <ol marker="a.">
-            <li>
-                <p>
-                <m>
-                        L(x)=f(3)+f'(3)(x-3)=7-1.6(x-3).
-                    </m>
-                </p>
-            </li>
-            <li>
-                <p>
-               <m>
-                        f(3.3)\approx L(3.3)=7 -1.6(0.3)=7-0.48 = 6.52.
-                    </m>
-                </p>
-            </li>
-            <li>
-                <p>
-                    If
-                    <m>
-                        f''(3)&gt;0
-                    </m>
-                    ,
-                    <m>
-                        f
-                    </m>
-                    is likely concave up near
-                    <m>
-                        x=3
-                    </m>
-                    . The tangent line then lies
-                    <em>
-                        below
-                    </em>
-                    the curve, so the linear approximation is an underestimate. 
-                </p>
-            </li>
-        </ol>
-    </p>
- </answer>
- </exercise>
-
-<exercise xml:id="exam2-s26-q5">
-<statement>
-Compute each derivative.
-<ol marker="a.">
-    <li>
-        <p>
-           <m>
-               h(x)= 5x^{4} - 3x + \dfrac{2}{x}
-           </m>
-        </p>
-    </li>
-    <li>
-        <p>
-             <m>
-                 q(x)= (3x^{2}+1)\sin x
-             </m>
-        </p>
-    </li>
-    <li>
-        <p>
-            <m>
-                r(x)= \dfrac{x^3}{2x-5}
-            </m>
-        </p>
-    </li>
-</ol>
-</statement>
-
-<answer>
-    <p>
-        <ol marker="a.">
-            <li>
-                <p>
-                   <m>
-                       h'(x)=20x^{3} - 3 - \frac{2}{x^{2}}.
-                   </m>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <m>
-                         q'(x)=6x\sin x + (3x^{2}+1)\cos x.
-                     </m>
-                </p>
-            </li>
-            <li>
-                <p> Use the quotient rule:
-                    <md>
-                        <mrow> r'(x) \mathstrut \amp =\frac{3x^{2}(2x-5)-x^{3}(2)}{(2x-5)^{2}}</mrow> 
-                        <mrow> \amp =\frac{6x^{3}-15x^{2}-2x^{3}}{(2x-5)^{2}}</mrow>
-                        <mrow> \amp =\frac{4x^{3}-15x^{2}}{(2x-5)^{2}}.</mrow>
-                    </md>
-                </p>
-            </li>
-        </ol>
-    </p>
-</answer>
-</exercise>
-
-<exercise xml:id="exam2-s26-q6">
-<statement>
-The height
+which gives the global minimum of
 <m>
-    H(t)
+    f(x)
 </m>
-(in meters) of water in a tank is decreasing at a rate of
+on
 <m>
-    0.12
+    [-3,3]
 </m>
-m/min. The water temperature
-<m>
-    T
-</m>
-(in
-<m>
-    ^{\circ}
-</m>
-C) changes with height according to
-<m>
-    T(H)=18 + 0.5H.
-</m>
-<ol marker="a.">
-    <li> <p>Compute
-    <m>
-        \dfrac{dT}{dt}
-    </m>
-    at the instant the water is 2 m deep. </p> </li>
-    <li>
-        <p>
-            Interpret your answer with units in one sentence. 
-        </p>
-    </li>
-</ol>
-</statement>
-
-<answer>
-    <p>
-        <ol marker="a.">
-            <li>
-                <p> From the chain rule, 
-                    <md>
-                        <mrow> \frac{dT}{dt}\mathstrut \amp =\frac{dT}{dH}\frac{dH}{dt}</mrow>
-                        <mrow> \amp =0.5(-0.12) </mrow>
-                        <mrow> \amp = -0.06\ \text{°C/min}.</mrow>
-                    </md>
-                </p>
-            </li>
-            <li>
-                <p>
-                    The water temperature is decreasing at a rate of
-                    <m>
-                        0.06^{\circ}\text{C per minute}.
-                    </m>
-                </p>
-            </li>
-        </ol>
-    </p>
-</answer>
-</exercise>
-
-<exercise xml:id="exam2-s26-q7">
-<statement>
-Find the equation of the tangent line to the curve
-<m>
-    \displaystyle x^{2}+xy+4y^{2}=10
-</m>
-at the ordered pair
-<m>
-    (2,1)
-</m>
-.   
-  <figure xml:id="Sp26Ex2q7pic" xmlns:xi="http://www.w3.org/2001/XInclude">
-      <caption>A graph of <m>
-    \displaystyle x^{2}+xy+4y^{2}=10
-</m>.</caption>
-      <image source="images/ImplicitEquationASpring26.jpg" width="50%">
-        <description>The graph of a given ellipse and the ordered pair at (2,1).</description>
+. Decimal approximations will receive no credit.
+<figure xml:id="Sp26Ex3q4" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>The graph of <m>
+    f(x)=x\sqrt{9-x^2}
+</m> on <m>[-3,3]</m>.</caption>
+      <image source="images/FindMaxMinSp2026.jpg" width="50%">
+        <description>Smooth curve with x-intercepts at x = -3, 0, and 3; a local minimum near (-2.1, -4.5); and a local maximum near (2.2, 4.4). The graph is negative on (-3, 0) and positive on (0, 3).</description>
       </image>
 </figure>
 </statement>
 <answer>
     <p>
-        Differentiate:
-        <md>
-            2x + (x y' + y) + 8y y' = 0.
-        </md>
-        Group
+       <m>
+           f'(x)=0
+       </m>
+       exactly when
+       <m>
+           \displaystyle \frac{-x^{2} + (9-x^{2})}{\sqrt{9-x^{2}}}= 0
+       </m>
+       which happens when
+       <m>
+           9-2x^{2}=0
+       </m>
+       . Solving this give
+       <m>
+           x=\pm \frac{3}{\sqrt{2}}
+       </m>
+       . The global minimum occurs  at
+       <m>
+           x=-\frac{3}{\sqrt{2}}
+       </m>
+       . 
+    </p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam3-s26-q5">
+<statement>
+A laser mounted on a wall 8 feet above ground tracks a robot moving horizontally along the floor. At time
+<m>
+    t
+</m>
+, the robot is
+<m>
+    x(t)
+</m>
+feet away from the wall and moves so that
+<m>
+    \displaystyle \frac{dx}{dt}=5
+</m>
+feet per second. The laser always points directly at the robot. Let
+<m>
+    \theta(t)
+</m>
+be the angle of the beam above horizontal.
+<figure xml:id="Sp26Ex3q5">
+  <caption>A laser tracks the movement of a robot.</caption> 
+  <image xml:id="Exam3Sp26q5pic" width="50%" >
+<description>Diagram showing a laser mounted on a vertical wall and a robot moving along a horizontal floor. The wall and floor meet at a right angle at the lower-left corner. The laser is located on the wall 8 feet above the floor and is labeled “Laser.” The robot is located on the floor to the right of the wall and is labeled “Robot.”
+A dashed line segment connects the laser to the robot, representing the laser beam. The horizontal distance from the wall to the robot is labeled x(t). The angle between the laser beam and the floor at the robot is labeled θ(t). The height of the laser above the floor is labeled 8.
+The diagram forms a right triangle with vertical leg 8 feet, horizontal leg x(t), and hypotenuse given by the laser beam.
+</description>
+    <latex-image>
+\begin{tikzpicture}[scale=0.9]
+
+  % Floor
+  \draw[thick] (-0.5,0) -- (8,0);
+
+  % Wall
+  \draw[thick] (0,-0.5) -- (0,5);
+
+  % Laser on wall at height 8 ft (scaled down to look nice)
+  \coordinate (Laser) at (0,4);
+  \filldraw[black] (Laser) circle (3pt);
+  \node[left] at (Laser) {Laser};
+
+  % Robot at some distance x
+  \coordinate (Robot) at (6,0);
+  \filldraw[black] (Robot) circle (3pt);
+  \node[below] at (Robot) {Robot};
+
+  % Line from laser to robot
+  \draw[very thick,blue, dashed] (Laser) -- (Robot);
+  \node[below] at (3,0) {$x(t)$};
+
+  \node[left] at (-0.0,2) {$8$};
+
+  % Angle theta arc
+  %%\draw[->, thick] (Laser) ++(0:0.8) arc[start angle=0, end angle=339, radius=0.8];
+  \node at (4.75,0.3) {$\theta(t)$};
+
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+<ol marker="a.">
+    <li>
+        <p>
+            Write a relation between
+            <m>
+                \theta(t)
+            </m>
+            and
+            <m>
+                x(t)
+            </m>
+            . 
+        </p>
+    </li>
+    <li>
+        <p>
+           Find
+           <m>
+               \dfrac{d\theta}{dt}
+           </m>
+           when
+           <m>
+               x=6
+           </m>
+           . Be sure to include units in your response.
+        </p>
+    </li>
+</ol>
+</statement>
+<answer>
+<ol marker="a.">
+    <li>
+        <p>
+           <m>
+               \displaystyle \tan \theta(t) = \frac{8}{x(t)}
+           </m> 
+        </p>
+    </li>
+    <li>
+        <p>
+           <m>
+               \displaystyle \sec^{2} \theta(t) \cdot \frac{d\theta}{dt}= \frac{x(t) \cdot 0 - 8 \frac{dx}{dt}}{x(t)^{2}}
+           </m>
+           means that
+           <md>
+               \displaystyle \frac{d\theta}{dt}= \frac{-8\frac{dx}{dt}}{x(t)^{2}}\cos^{2}\theta(t).
+           </md>
+           So at
+           <m>
+               x=6
+           </m>
+           we have
+           <m>
+               \frac{d\theta}{dt}= \frac{-8(5)}{6^{2}}\cdot \frac{36}{100}= -0.4
+           </m>
+           radians per second. 
+        </p>
+    </li>
+</ol>
+</answer>
+</exercise>
+
+<exercise xml:id="exam3-s26-q6">
+<statement>
+The velocity of an object (in m/s) on the interval
+<m>
+    0\le t\le 6
+</m>
+is shown in <xref ref="Sp26Ex3q6"/>. Compute the total distance traveled on
+<m>
+    [0,6]
+</m>
+. Include units.
+<figure xml:id="Sp26Ex3q6">
+  <caption>The velocity of an object on the interval <m>0 \le t \le 6</m>.</caption> 
+  <image xml:id="Exam3Sp26q6pic" width="50%" >
+<description>Velocity graph: starts at (0, 0), rises linearly to (2, 3), stays at 3 until t = 4, then decreases linearly to (6, 0).
+</description>
+    <latex-image>
+\begin{tikzpicture}[scale=0.9]
+  % axes
+  \draw[->] (-0.5,0) -- (6.5,0) node[right]{$t$};
+  \draw[->] (0,-0.5) -- (0,4) node[right]{$v(t)$};
+
+  % piecewise linear velocity: triangle then rectangle
+  \draw[very thick,blue]
+    (0,0) -- (2,3) -- (4,3) -- (6,0);
+
+  % ticks
+  \foreach \x in {1,2,3,4,5,6}
+    \draw (\x,0.1)--(\x,-0.1) node[below]{\x};
+  \foreach \y in {1,2,3}
+    \draw (0.1,\y)--(-0.1,\y) node[left]{\y};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+</statement>
+<answer>
+    <p>
+        Look at the area under the curve and above the <m>t</m>-axis to find 6+6 = 12 meters.
+    </p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam3-s26-q7">
+<statement>
+Express the following quantity as sum using sigma notation:
+<md>
+    (2\cdot 4) + (3\cdot 5) + (4\cdot 6) + \cdots + [n\cdot (n+2)].
+</md>
+</statement>
+<answer>
+    <p>
+      <m>
+          \displaystyle \sum_{k=2}^{n} k(k+2)
+      </m>
+    </p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam3-s26-q8">
+<statement>
+Let
+<md>
+    f(x)= \begin{cases}2x,&amp;0\le x\le 1,\\ 2,&amp;1&lt; x\le 3.\end{cases}
+</md>
+Compute the left Riemann sum,
+<m>
+    L_{4}
+</m>
+, on
+<m>
+    [0,3]
+</m>
+.
+</statement>
+<answer>
+    <p>
+      <md>
+          <mrow> L_{4} \mathstrut \amp = 0(3/4) + 2(3/4)(3/4) + 2(3/4) + 2(3/4) </mrow>
+          <mrow> \amp = \frac{9}{8}+ \frac{3}{2}+ \frac{3}{2} </mrow>
+          <mrow> \amp = \frac{33}{8} </mrow>
+          <mrow> \amp = 4.125 </mrow>
+      </md> 
+    </p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam3-s26-q9">
+<statement>
+Evaluate the limit:
+<m>
+    \displaystyle \lim_{x \to 0}\frac{e^{3x}-1-3x}{x^{2}}.
+</m>
+</statement>
+<answer>
+    <p>
+        Both numerator and denominator
         <m>
-            y'
+            \to 0
         </m>
-        terms:
+        . Apply L'Hôpital:
         <md>
-            y'(x+8y)=-(2x+y),
+            \frac{d}{dx}(e^{3x}-1-3x)=3e^{3x}-3.
         </md>
+        Thus first application:
         <md>
-            y' = \frac{-(2x+y)}{x+8y}.
+            \lim_{x\to 0}\frac{3e^{3x}-3}{2x}= \lim_{x\to 0}\frac{3(e^{3x}-1)}{2x}.
         </md>
-        At
+        Still
         <m>
-            (2,1)
+            0/0
         </m>
-        :
+        . Apply L'Hôpital again:
         <md>
-            y'=\frac{-(4+1)}{2+8}=\frac{-5}{10}=-\frac{1}{2}.
+            \frac{d}{dx}[3(e^{3x}-1)] = 9e^{3x}, \qquad \frac{d}{dx}[2x] = 2.
         </md>
-        Tangent line:
+        Hence
         <md>
-            y-1 = -\frac{1}{2}(x-2).
+            \lim_{x\to 0}\frac{9e^{3x}}{2}= \frac{9}{2}.
         </md>
     </p>
 </answer>
 </exercise>
 
-<exercise xml:id="exam2-s26-q8">
+<exercise xml:id="exam3-s26-q10">
 <statement>
-<p>
-    You know that at <m>x=4</m>,
-    <md>
-        u(4)=3,\quad u'(4)=2.1,\quad v(4)=5,\quad v'(4)=-0.6.
-    </md>
-</p>
-
-<p>
-    Let <m>P(x)=u(x)v(x)</m> and <m>Q(x)=\dfrac{u(x)}{v(x)}</m>.
-</p>
+The rectangles in the graph shown in <xref ref="Sp26Ex3q10"/> illustrate a left-endpoint Riemann sum
+<m>
+    \displaystyle \sum_{k=1}^{n} f(x_{k}^{*}) \ \Delta x
+</m>
+for the function
+<m>
+    \displaystyle f(x) = 2\sqrt{x}+1
+</m>
+on the interval
+<m>
+    [1,8]
+</m>
+. 
+<figure xml:id="Sp26Ex3q10">
+  <caption>A left Riemann sum for <m>f(x)=2\sqrt{x}+1</m> on <m>[1,8]</m>.</caption> 
+  <image source="images/LeftRiemannSumSqrt.jpg" width="50%">
+        <description>Graph of y = square root of 2x + 1 with three left-endpoint rectangles on the interval [1, 8].
+</description>
+      </image>
+</figure>
 <ol marker="a.">
-<li>
-    <p>
-       Compute
-        <m>
-            P'(4)
-        </m>
-        .
-    </p>
-</li>
-<li>
-    <p>
-        Compute
-        <m>
-            Q'(4)
-        </m>
-        .
-    </p>
-</li>
-<li>
-    <p>
-        Explain in one sentence whether
-        <m>
-            P
-        </m>
-        is increasing or decreasing at
-        <m>
-            x=4
-        </m>
-        .
-    </p>
-</li>
+    <li>
+        <p>
+            What is the value of
+            <m>
+                \Delta x
+            </m>
+            in this Riemann sum?
+        </p>
+    </li>
+    <li>
+        <p>
+           What is the value of
+           <m>
+               n
+           </m>
+           in this sum? 
+        </p>
+    </li>
+    <li>
+        <p>
+           Calculate the
+           <em>
+               <em>
+                   exact
+               </em>
+           </em>
+           value of
+           <m>
+               f(x_{2}^{*})
+           </m>
+           .    
+        </p>
+    </li>
+    <li>
+        <p>
+          Give an explicit formula for
+          <m>
+              x_{k}^{*}
+          </m>
+          in terms of the index
+          <m>
+              k
+          </m>
+          in the sum
+          <m>
+              \displaystyle \sum_{k=1}^{n} f(x_{k}^{*}) \ \Delta x.
+          </m>
+        </p>
+    </li>
 </ol>
 </statement>
 <answer>
     <ol marker="a.">
         <li>
-            <p> We have
-             <md>
-                   <mrow> P'(4)\mathstrut \amp =u'(4)v(4)+u(4)v'(4) </mrow>
-                   <mrow> \amp =2.1(5)+3(-0.6) </mrow> 
-                   <mrow> \amp =10.5 - 1.8 </mrow>
-                   <mrow> \amp = 8.7.</mrow>
-               </md>
-            </p>
-        </li>
-        <li>
-            <p> We have 
-                <md>
-                    <mrow> Q'(4) \mathstrut \amp =\frac{u'(4)v(4)-u(4)v'(4)}{v(4)^{2}}</mrow>
-                    <mrow> \amp =\frac{2.1(5)-3(-0.6)}{25} </mrow> 
-                    <mrow> \amp =\frac{10.5+1.8}{25} </mrow> 
-                    <mrow> \amp =\frac{12.3}{25} </mrow>
-                    <mrow> \amp = 0.492.</mrow>
-                </md>
+            <p>
+                <m>
+                    \Delta x = \frac{8-1}{3}= \frac{7}{3}
+                </m>
             </p>
         </li>
         <li>
             <p>
-                Since
-                <m>
-                    P'(4)=8.7&gt;0
+               <m>
+                    n=3
                 </m>
-                ,
-                <m>
-                    P \text{ is increasing at }x=4.
-                </m>
+            </p>
+        </li>
+        <li>
+            <p>
+              <m>
+                  x_{2}^{*} = 1+\frac{7}{3}= \frac{10}{3}
+              </m>
+              so that
+              <m>
+                  f(x_{2}^{*}) = 2\sqrt{\frac{10}{3}}+ 1
+              </m>
+              .
+            </p>
+        </li>
+        <li>
+            <p>
+              <m>
+                  x_{k}^{*} = 1+(k-1)\frac{7}{3}
+              </m>
             </p>
         </li>
     </ol>
 </answer>
 </exercise>
 
-<exercise xml:id="exam2-s26-q9">
+<exercise xml:id="exam3-s26-q11">
 <statement>
-The graph of a periodic function
+Two differentiable functions
 <m>
-    p(x)
+    f
 </m>
-is shown. Which of the following is most likely to represent
+and
 <m>
-    p'(x)
+    g
+</m> are shown in <xref ref="Sp26Ex3q11"/> near
+<m>
+    x=2
 </m>
-? [Check the appropriate box(es).]
-<figure xml:id="Sp26Ex2q9pic" xmlns:xi="http://www.w3.org/2001/XInclude">
-      <caption>A graph of <m>
-    p(x)
-</m> which is periodic.</caption>
-      <image source="images/GraphOfNegCos2xM2.jpg" width="50%">
-        <description>The graph of a periodic function.</description>
-      </image>
+.
+<figure xml:id="Sp26Ex3q11">
+  <caption>Graphs of <m>f</m> and <m>g</m> near <m>x=2</m>.</caption> 
+  <image xml:id="Exam3Sp26q11pic" width="50%" >
+<description>Graph of two line segments: f rises from (1, 0) to (3, 4), and g decreases from (1, 2) to (3, 0). The graphs intersect at (2, 1).
+</description>
+    <latex-image>
+\begin{tikzpicture}[scale=1.25]
+  % axes
+  \draw[step=1cm,color=black,dotted] (0,0) grid (4,4);
+     \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,4) node [right] at (0,3.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+  %%\draw[->] (-0.5,0) -- (4.5,0) node[right]{$x$};
+  %%\draw[->] (0,-1) -- (0,4) node[above]{$y$};
+
+  % f(x): red
+  \draw[very thick,blue, dashed]
+    (1,0) -- (2,2) -- (3,4);
+  \node[blue] at (3.2,4) {$f$};
+
+  % g(x): blue
+  \draw[very thick,blue]
+    (1,2) -- (2,1) -- (3,0);
+  \node[blue] at (3.2,0.33) {$g$};
+
+
+% vertical line x=2
+  %%\draw[dashed] (2,-1) -- (2,4);
+
+  % ticks
+  \foreach \x in {1,2,3}
+    \draw (\x,0.1)--(\x,-0.1) node[below]{\x};
+  \foreach \y in {1,2,3}
+    \draw (0.1,\y)--(-0.1,\y) node[left]{\y};
+\end{tikzpicture}
+    </latex-image>
+  </image>
 </figure>
- <dl>
-     <li>
-         <title> <m>\square</m> </title>
+<ol marker="a.">
+    <li>
+        <p>
+           Evaluate
+           <m>
+               \displaystyle \lim_{x\to 2}\frac{f(x)}{g(x)}
+           </m>
+           .
+        </p>
+    </li>
+    <li>
+        <p>
+           Evaluate
+           <m>
+               \displaystyle \lim_{x\to 2}\frac{f(x)-f(2)}{g(x)-g(2)}
+           </m>
+           .
+        </p>
+    </li>
+</ol>
+</statement>
+<answer>
+<ol marker="a.">
+    <li>
+        <p>
+            2 (top tends to 2; bottom tends to 1)
+        </p>
+    </li>
+    <li>
+        <p>
+          Use L'Hopital's rule:
+          <md>
+              \displaystyle \lim_{x \rightarrow 2}\frac{f'(x)}{g'(x)}= \frac{2}{-1}= -2
+          </md>
+        </p>
+    </li>
+</ol>
+</answer>
+</exercise>
 
-         <p>
-             <m>\sin(2x)</m>
-         </p>
-     </li>
 
-     <li>
-         <title> <m>\square</m> </title>
-
-         <p>
-             <m>-\cos(2x)</m>
-         </p>
-     </li>
-
-     <li>
-         <title> <m>\square</m> </title>
-
-         <p>
-             <m>2\sin(x)</m>
-         </p>
-     </li>
-
-     <li>
-         <title> <m>\square</m> </title>
-
-         <p>
-             <m>-2\cos(x)</m>
-         </p>
-     </li>
-
-     <li>
-         <title> <m>\square</m> </title>
-
-         <p>
-             <m>2\sin(2x)</m>
-         </p>
-     </li>
-
-     <li>
-         <title> <m>\square</m> </title>
-
-         <p>
-             <m>-2\cos(2x)</m>
-         </p>
-     </li>
-
-     <li>
-         <title> <m>\square</m> </title>
-
-         <p>
-             <m>2\sin(x)-2</m>
-         </p>
-     </li>
-
-     <li>
-         <title> <m>\square</m> </title>
-
-         <p>
-             <m>-2\cos(x)-2</m>
-         </p>
-     </li>
-
-     <li>
-         <title> <m>\square</m> </title>
-
-         <p>
-             <m>-2\sin(x)</m>
-         </p>
-     </li>
-
-     <li>
-         <title> <m>\square</m> </title>
-
-         <p>
-             <m>2\cos(x)</m>
-         </p>
-     </li>
-
-     <li>
-         <title> <m>\square</m> </title>
-
-         <p>
-             <m>2\sin(\frac{1}{2}x)</m>
-         </p>
-     </li>
-
-     <li>
-         <title> <m>\square</m> </title>
-
-         <p>
-             <m>-2\cos(\frac{1}{2}x)</m>
-         </p>
-     </li>
- </dl>
+<exercise xml:id="exam3-s26-q12">
+<statement>
+Determine the dimensions of the rectangle of largest area that can be inscribed in the 3-4-5 right triangle shown in <xref ref="Sp26Ex3q12"/>. 
+<figure xml:id="Sp26Ex3q12">
+  <caption>A rectangle inscribed in a 3-4-5 triangle.</caption> 
+  <image xml:id="Exam3Sp26q12pic" width="50%" >
+<description>Graph of the line from (0, 4) to (3, 0), forming a triangle in the first quadrant. A shaded rectangle is inscribed under the line with width about 1.75 and height about 1.6
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1]
+  \fill[color=linecolor!10] (0,0) -- (0,4) -- (3,0) -- (0,0);
+  \fill[color=red!30] (0,0) -- (1.75,0) -- (1.75,1.67) -- (0,1.67) -- (0,0);
+%%\draw[step=1cm,color=black,dotted] (-4,-1) grid (1,5);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (4,0) node [below] at (3.75,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-1,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,5) node [right] at (0,4.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-1);
+%%\draw[color=linecolor, line width=1pt,domain=0.5:4.25]   plot (\x,{4/(\x+1))}) node [above] at (1.65,2) {$\displaystyle f(x)$};
+\draw[color=linecolor, line width=2pt,smooth,domain=0:3]   plot (\x,{(-4/3)*\x+4}) node [above] at (1.5,2.25) {$\displaystyle 5$};
+\draw[color=linecolor] node [below] at (1.5,-0.1) {$3$};
+\draw[color=linecolor] node [left] at (-0.1,2) {$4$};
+\draw[line width=2pt, dashed]  (0,0) -- (1.75,0) -- (1.75,1.67) -- (0,1.67) -- (0,0);
+%%\fill [black] (1.5,0) circle(3pt) node [above] at (1.65,0.1) {$(1.5,0)$}; 
+%%\fill [black] (-1.16,4.750) circle(3pt) node [above] at (-1.16,4.8) {$\left(-\frac{7}{6}, 4.75\right)$}; 
+%%\fill [black] (-2.5,0) circle(3pt) node [above] at (-2.25,0.05) {$(-2.5,0)$}; 
+%%\fill [black] (0,2.8125) circle(3pt) node [right] at (0,2.8) {$(0,2.75)$}; 
+%%node [right] at (3,3) {$y=1-x^2$};
+\foreach \x/\xtext in {  1/, 2/, 3/}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+%%\foreach \x/\xtext in {0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 3.75, 4}
+    %%\draw[shift={(\x,0)}] (0pt,1.5pt) -- (0pt,-1.5pt);
+%% node[below] {$\xtext$};
+\foreach \y/\ytext in {1/, 2/, 3/, 4/}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure> 
 </statement>
 <answer>
     <p>
-        <m>2\sin(2x)</m>
+       We maximize
+       <m>
+           A(x) = x(-\frac{4}{3}x+4)
+       </m>
+       since the line is described by
+       <m>
+           y=-\frac{4}{3}x+4
+       </m>
+       and the value of
+       <m>
+           x
+       </m>
+       is positive in the diagram so that
+       <m>
+           x
+       </m>
+       would give the width of the rectangle. To maximize
+       <m>
+           A(x) = -\frac{4}{3}x^{2} + 4x
+       </m>
+       we find
+       <m>
+           A'(x) = -\frac{8}{3}x+4
+       </m>
+       which is 0 when
+       <m>
+           x=\frac{3}{2}
+       </m>
+       . This is a local maximum so that the optimal dimensions are a base width of
+       <m>
+           \frac{3}{2}
+       </m>
+       and a height of
+       <m>
+           -\frac{4}{3}(\frac{3}{2}) + 4 = -2+4 = 2
+       </m>
+       .
     </p>
-</answer>
-</exercise>
-
-<exercise xml:id="exam2-s26-q10">
-<statement>
-<p>
-    A function <m>f</m> and its derivative <m>f'</m> take the values given in <xref ref="ffprimedataExam2Sp26q10"/>.
-    If <m>p(x)=f(2e^{x})</m>, compute <m>p'(0)</m>.
-</p>
-
-<table xml:id="ffprimedataExam2Sp26q10" >
-        <title>Values of <m>f</m> and <m>f'</m> at various values.</title>
-<tabular top="minor" left="minor">
-    <col halign="center" right="minor"/>
-    <col halign="center" right="minor"/>
-    <col halign="center" right="minor"/>
-    <col halign="center" right="minor"/>
-    <row top="minor" />
-    <row top="minor" bottom="minor">
-        <cell><m>x</m></cell>
-        <cell>0</cell>
-        <cell>1</cell>
-        <cell>2</cell>
-    </row>
-
-    <row>
-        <cell/>
-    </row>
-
-    <row bottom="minor">
-        <cell><m>f(x)</m></cell>
-        <cell>2</cell>
-        <cell>1</cell>
-        <cell>0</cell>
-    </row>
-
-    <row>
-        <cell/>
-    </row>
-
-    <row bottom="minor">
-        <cell><m>f'(x)</m></cell>
-        <cell>1</cell>
-        <cell>0</cell>
-        <cell>2</cell>
-    </row>
-
-    <row>
-        <cell/>
-    </row>
-</tabular>
-</table>
-
-</statement>
-<answer>
-    <p> Note that
-        <md>
-            p'(x)=f'(2e^{x})\cdot 2e^{x}.
-        </md>
-        At
-        <m>
-            x=0
-        </m>
-        :
-        <md>
-            p'(0)=f'(2e^{0})\cdot 2e^{0} = f'(2)\cdot 2.
-        </md>
-        From the table:
-        <m>
-            f'(2)=2
-        </m>
-        . So
-        <m>
-            p'(0)=4.
-        </m>
-    </p>
-</answer>
-</exercise>
-
-<exercise xml:id="exam2-s26-q11">
-<statement>
-A company sells a product at price
-<m>
-    p
-</m>
-dollars. The number of units sold
-<m>
-    q(p)
-</m>
-depends on the price. The
-<alert>
-    revenue
-</alert>
-is
-<m>
-    R(p) = p \cdot q(p)
-</m>
-. When the price is
-<m>
-    p = \$20
-</m>
-, the number of units sold is
-<m>
-    q(20)=600
-</m>
-. It is also known that
-<m>
-    q'(20)=-18
-</m>
-.
-<ol marker="a.">
-    <li>
-        <p>
-             In this context, what does
-             <m>
-                 q'(20)=-18
-             </m>
-             mean? Use units in giving your one-sentence explanation.  
-        </p>
-    </li>
-    <li>
-        <p>
-            Compute
-            <m>
-                R'(20)
-            </m>
-            .
-        </p>
-    </li>
-    <li>
-        <p>
-            Interpret the meaning of the sign of
-            <m>
-                R'(20)
-            </m>
-            .
-        </p>
-    </li>
-    <li>
-        <p>
-            Assuming that the company wishes to maximize revenue, should the company raise or lower the price at
-            <m>
-                p=\$20
-            </m>
-            ? Explain briefly. 
-        </p>
-    </li>
-</ol>
-</statement>
-<answer>
-<ol marker="a.">
-    <li>
-        <p>
-            <m>
-                q'(20)=-18
-            </m>
-            means that for each $1 increase in price at
-            <m>
-                p=\$20
-            </m>
-            , unit sales decrease by 18 units (units per dollar).
-        </p>
-    </li>
-    <li>
-        <p>
-           <m>
-                R'(p)=q(p)+p q'(p),
-            </m>
-            so that
-            <m>
-                R'(20)=600+20(-18)=600-360= 240.
-            </m>
-        </p>
-    </li>
-    <li>
-        <p>
-           Since
-            <m>
-                R'(20)&gt;0
-            </m>
-            , revenue is
-            <em>
-                increasing
-            </em>
-            at
-            <m>
-                p=20
-            </m>
-            . This means a small price increase will raise revenue.
-        </p>
-    </li>
-    <li>
-        <p>
-             To maximize revenue, since
-             <m>
-                 R'(20)&gt;0
-             </m>
-             , the company should raise the price (slightly). 
-        </p>
-    </li>
-</ol>
 </answer>
 </exercise>
 
