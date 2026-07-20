@@ -1,6 +1,114 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
+  "id": "sec-course-info",
+  "level": "1",
+  "url": "sec-course-info.html",
+  "type": "Section",
+  "number": "",
+  "title": "Course Information",
+  "body": " Course Information  This is the syllabus for Calculus 1 (MATH 221) for Fall 2026. It is a 4-credit course offered through St. Cloud State University.    Instructor  Dr. Dale Buske, CH 367A, .    Student Hours  TBD; posted on my office door.    Accessibility Services  Please contact Student Accessibility Services (SAS), or 320-308-4080, Centennial Hall 202, to meet and discuss reasonable and appropriate accommodations.    Class Meetings  Attendance and active participation in class is strongly correlated to academic success. Roughly half of each class meeting will be spent in active learning activities that cannot be easily replaced by watching a video or reading a book. So you will find attending class to be quite important, useful, and (if all goes well) fun!     Course Description  Limits, continuity, differentiation, applications of derivatives, integration. 4 cr    Prerequisite  Math 113 (Trigonometry) or Math 115 (Precalculus)    Academic Integrity  There is nothing more important in this class than academic integrity . Sure, you want to master the topics in the course (and perhaps earn a good grade). Sure, you want to enjoy doing it. And, it is also important to know that your instructor intends to play his part in helping you be successful. Succeeding, as you know, will require hard work and significant effort. Cutting corners will not serve you well.  University policy is clear: Work submitted by an individual as her\/his\/their own course work in connection with an application for a position, promotion, tenure, salary increase, or other academic activity must be academically honest and a product of his or her own efforts. (A.II, 2.4, SUB.d.2, Professional and Ethical Standards for Employees and Students).    Cheating cannot be tolerated. All work must be your own. Suspected incidents of academic dishonesty will be aggressively managed via the procedure found in the SCSU student handbook .    In this course, students are likely to use AI tools to enhance their learning experience. However, it is essential to use these tools ethically and responsibly. AI can be a valuable resource for understanding complex concepts and solving problems, but it should not replace your own critical thinking and problem-solving efforts. All submitted work must be your own, and any assistance from AI tools must be properly acknowledged on written work. The use of AI is forbidden on assessments of your knowledge (e.g. exams, MyOpenMath). Using AI to complete work without acknowledgment will be considered a violation of academic integrity policies. In mathematics, AI often gives incorrect responses (i.e. hallucinations) and large language models such as ChatGPT are widely deemed “unreliable” in doing mathematics. Relaying AI responses that are incorrect will earn no credit. However, not acknowledging the use of AI in a response is far worse – it is academic misconduct.    Course Materials  The course textbook can be found at .   The textbook is interactive and accessible via a laptop, phone, or many other devices.    The textbook is built for active learning . The activities in the text are a primary focus of your learning. If you have trouble answering questions in a given activity, know that solutions to these are found on the . The reading in the textbook is brief - this is intentional. The primary focus will be working through the activities to explore the content.    You will need to purchase an inexpensive course packet at the Husky Bookstore with notes and daily activities and bring it to class each day. If you have an electronic tablet, you may not need to purchase a course packet. A .pdf copy of this packet will be posted on D2L Brightspace if you wish to print yourself rather than purchase. Obtaining this packet during the first week of class is expected.      Course materials beyond the textbook and course packet can be found at https:\/\/drbuske.github.io\/Math221\/course\/ . There you will find items that include the course syllabus, daily prep assignments, answers to activities from the textbook, and practice exams.   D2L Brightspace will be the learning management tool used to organize the course. Grades, a calendar, and assignments as well as announcements will be posted on D2L. Visit and login to your account using your Huskynet ID and password.  Electronic homework will be done via the platform located at . A free account can be attained by using any email address and choosing a password. Please use your real name as grades need to be manually transferred to D2L.  Course ID: 332792  Enrollment key: Buske221F26       Tips for Success  Engage your peers. Engage your instructor. Engage your Learning Assistant(s). Your success is in their best interest too! Mathematics is a discipline that benefits greatly from working together in gaining a deep understanding.  Practice. Do math. Watching others do math is a passive activity with far less value than attempting to solve problems. We learn from our mistakes and struggles. If it were easy, everyone would do it and it would have less value. Remember the rule of thumb – expect to study 2-3 hours outside of class for every hour in class. That means 8-12 hours per week of study out of class!  Daily Prep assignments have been structured to maximize your learning experience prior to (and after) our class meetings. This effort is as critical as any in your success. 95% of what you learn will be outside the classroom. Daily Prep is a significant piece of this learning.  As you have learned from previous mathematics courses, practice will make you more proficient and will help you better understand material you have read, that you have observed in videos, that you have experienced via interactive applets, and that has been discussed in class.   "
+},
+{
+  "id": "sec-course-info-2",
+  "level": "2",
+  "url": "sec-course-info.html#sec-course-info-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Calculus 1 (MATH 221) textbook active learning D2L Brightspace 332792 Buske221F26 "
+},
+{
+  "id": "syllabus-3",
+  "level": "1",
+  "url": "syllabus-3.html",
+  "type": "Section",
+  "number": "",
+  "title": "Topics and Learning Outcomes",
+  "body": " Topics and Learning Outcomes     Topics   Understanding the Derivative: How do we measure velocity?; The notion of a limit; The derivative of a function at a point; The derivative function; Interpreting, estimating, and using the derivative; The second derivative; Limits, Continuity, and Differentiability; The tangent line approximation.   Computing Derivatives: Elementary derivative rules; The sine and cosine functions; The product and quotient rules; Derivatives of other trigonometry functions; The chain rule; Derivatives of inverse functions; Derivatives of functions given implicitly   Using Derivatives: Related rates; Using derivatives to evaluate limits; Using derivatives to identify extreme values; Global optimization; Applied optimization;   The Definite Integral: Determining distance traveled from velocity; Riemann sums; The definite integral; The Fundamental Theorem of Calculus.   Evaluating Integrals: Constructing accurate graphs of antiderivatives; The Second Fundamental Theorem of Calculus; Integration by substitution.    Learning Outcomes    Calculate limits using graphical, algebraic and numerical methods and the Squeeze Theorem.  Determine continuity of a function at points, identify various types of discontinuities and identify intervals of continuity for functions.  Calculate derivatives from the definition and using differentiation rules and implicit differentiation.  Use differentiation to identify tangent lines, to solve geometric problems and to solve problems involving rates of change.  Solve optimization and related-rates problems by analytic methods.  Graph a function, showing all relevant information such as relative extrema, inflection points, and asymptotes, with analytic methods and without the aid of graphing technology.  Approximate roots of equations by using the bisection method and Newton’s method.  Calculate integrals by using the Fundamental Theorem of Calculus, u-substitution, and observations about symmetry of graphs.  Use integration to find the area under a curve, to solve problems involving net change, and to solve other geometric problems.  State and apply named theorems of calculus (the Intermediate Value Theorem, the Mean Value Theorem, and the Fundamental Theorem of Calculus).  Identify whether a derivative or an integral (or neither) is more appropriate for use in a given problem.  Communicate their knowledge of the basic principles of Calculus I, both orally (e.g. class discussions) and in writing (e.g. written assessments).       "
+},
+{
+  "id": "subsec-calendar",
+  "level": "1",
+  "url": "subsec-calendar.html",
+  "type": "Section",
+  "number": "",
+  "title": "Calendar",
+  "body": " Calendar  Below is an estimate for when we will discuss various topics in the text and when exams are scheduled.   Course Schedule    Week Starting  Monday  Tuesday   Thursday  Friday    8\/24  1.1  1.1   1.2  1.2    8\/31  1.3  1.3   1.4  1.4    9\/7  No Class  1.5   1.5  1.6    9\/14  1.6  1.7   1.7  1.8    9\/21  Exam 1  1.8   2.1  2.1    9\/28  2.2  2.3   2.3  2.4    10\/5  2.5  2.5   2.6  2.6    10\/12  No Class  2.7   2.7  3.1    10\/19  Exam 2  3.1   3.2  3.2    10\/26  3.3  3.3   3.5  3.5    11\/2  3.6  3.6   4.1  4.1    11\/9  4.2  4.2   Exam 3  4.3    11\/16  4.3  4.4   4.4  5.1    11\/23  5.1  5.2   No Class  No Class    11\/30  5.2  5.3   5.3  Review     Exams will cover the following material from the course.   Exam dates and topics     Exam    Date    Topics     Exam 1  September 21  Sections 1.1-1.7    Exam 2  October 19  Sections 1.8-2.7    Exam 3  November 12  Sections 3.1-3.3, 3.5-4.2    Final Exam  See SCSU final exam schedule   1.1-3.3, 3.5-5.3     To be successful, sufficient time will need to be dedicated to your studies. Studying on weekends to get ahead, especially if holding a job or other commitments during the work week, will be helpful. Below is a table with time you might expect to spend on each aspect of the course (for each section of the textbook).   Estimated Time on Various Aspects of the Course     Item    Estimated Time Per Section     Reading Textbook  30-60 minutes    Daily Prep (incl. homework)  60-120 minutes    Electronic Homework (MOMwork)  30 minutes    Reviewing in-class activities  15 minutes     "
+},
+{
+  "id": "schedule-table",
+  "level": "2",
+  "url": "subsec-calendar.html#schedule-table",
+  "type": "Table",
+  "number": "1",
+  "title": "Course Schedule",
+  "body": " Course Schedule    Week Starting  Monday  Tuesday   Thursday  Friday    8\/24  1.1  1.1   1.2  1.2    8\/31  1.3  1.3   1.4  1.4    9\/7  No Class  1.5   1.5  1.6    9\/14  1.6  1.7   1.7  1.8    9\/21  Exam 1  1.8   2.1  2.1    9\/28  2.2  2.3   2.3  2.4    10\/5  2.5  2.5   2.6  2.6    10\/12  No Class  2.7   2.7  3.1    10\/19  Exam 2  3.1   3.2  3.2    10\/26  3.3  3.3   3.5  3.5    11\/2  3.6  3.6   4.1  4.1    11\/9  4.2  4.2   Exam 3  4.3    11\/16  4.3  4.4   4.4  5.1    11\/23  5.1  5.2   No Class  No Class    11\/30  5.2  5.3   5.3  Review    "
+},
+{
+  "id": "ExamDates",
+  "level": "2",
+  "url": "subsec-calendar.html#ExamDates",
+  "type": "Table",
+  "number": "2",
+  "title": "Exam dates and topics",
+  "body": " Exam dates and topics     Exam    Date    Topics     Exam 1  September 21  Sections 1.1-1.7    Exam 2  October 19  Sections 1.8-2.7    Exam 3  November 12  Sections 3.1-3.3, 3.5-4.2    Final Exam  See SCSU final exam schedule   1.1-3.3, 3.5-5.3    "
+},
+{
+  "id": "StudyTime",
+  "level": "2",
+  "url": "subsec-calendar.html#StudyTime",
+  "type": "Table",
+  "number": "3",
+  "title": "Estimated Time on Various Aspects of the Course",
+  "body": " Estimated Time on Various Aspects of the Course     Item    Estimated Time Per Section     Reading Textbook  30-60 minutes    Daily Prep (incl. homework)  60-120 minutes    Electronic Homework (MOMwork)  30 minutes    Reviewing in-class activities  15 minutes    "
+},
+{
+  "id": "sec-assessments",
+  "level": "1",
+  "url": "sec-assessments.html",
+  "type": "Section",
+  "number": "",
+  "title": "Assessments and Grades",
+  "body": " Assessments and Grades     Daily Prep  Normally, prior to two of the four class meetings each week, you will have a short preparatory assignment to complete. These are graded based on effort and completion rather than on correctness. Find them at the course website: https:\/\/drbuske.github.io\/Math221\/course\/ .  Daily Prep submissions will be a single (scanned) PDF document uploaded via D2L Brightspace. It is almost certainly better that your valuable time be spent on understanding mathematical concepts than on typing solutions. Scanning your writing is likely faster, easier, and, frankly, preferred.    MOMwork  Associated with the course is an open source (FREE) electronic homework system (MyOpenMath). We will use this for MOMwork. To access this, use the link .  Course ID: 332792  Enrollment Key: Buske221F26    In-class Quizzes  Each Thursday for exactly the first 5 minutes of class, a group quiz will take place. It will consist of questions that follow up on daily class activities from the week prior. Each group will submit one quiz. Only members of each group that are present will be awarded credit.    Exams  There will be two (2) gateway exams, four (4) written exams and two (2) oral exams. The gateway exams appear in MyOpenMath and are aimed at mastery. You must earn 100% on these to earn any (and all) credit. You will have as many attempts as you need in order to pass by the stated deadline if you start the process early. You will need to upload your work in answering the final question on each gateway exam.  There will be a comprehensive final and three other written exams during the semester. All exams will be independent assessments of your knowledge.  The oral exams will be 15-20 minutes in length. The first will take place just prior to midterm and the second will take place during the last two weeks of the term. The concept may seem intimidating at first, but past student response suggest this to be a valuable means of assessment and academic growth.   Oral Exam Rubric     Points    Description     1  Unsatisfactory execution and\/or communication with fundamental errors.    2  Flawed execution with nontrivial errors and poor communication.    3  Adequately executed but with some nontrivial errors and inconsistent communication.    4  Generally well-executed but may have minor communication flaws and some math errors.    5  Well-executed, well-communicated, essentially correct.       Grading  I will use my best professional judgment in determining grades. While many courses utilize 90%, 80%, 70%, and 60% as cutoffs for A, B, C, and D grades, these will serve only as guidelines. Averages above these marks will guarantee these grades but lower marks may earn higher final grades.   Grade weighting     Item    Weighting     Daily Prep  15%    MOMwork (MyOpenMath)  25%    In-class Quizzes  5%    Gateway Exams  6%    Written Exams (3)  27%    Oral Exams (2)  10%    Final Exam  12%        "
+},
+{
+  "id": "OralExamRubric",
+  "level": "2",
+  "url": "sec-assessments.html#OralExamRubric",
+  "type": "Table",
+  "number": "4",
+  "title": "Oral Exam Rubric",
+  "body": " Oral Exam Rubric     Points    Description     1  Unsatisfactory execution and\/or communication with fundamental errors.    2  Flawed execution with nontrivial errors and poor communication.    3  Adequately executed but with some nontrivial errors and inconsistent communication.    4  Generally well-executed but may have minor communication flaws and some math errors.    5  Well-executed, well-communicated, essentially correct.    "
+},
+{
+  "id": "GradeWeights",
+  "level": "2",
+  "url": "sec-assessments.html#GradeWeights",
+  "type": "Table",
+  "number": "5",
+  "title": "Grade weighting",
+  "body": " Grade weighting     Item    Weighting     Daily Prep  15%    MOMwork (MyOpenMath)  25%    In-class Quizzes  5%    Gateway Exams  6%    Written Exams (3)  27%    Oral Exams (2)  10%    Final Exam  12%    "
+},
+{
+  "id": "sec-221FAQ",
+  "level": "1",
+  "url": "sec-221FAQ.html",
+  "type": "Section",
+  "number": "",
+  "title": "Frequently Asked Questions",
+  "body": " Frequently Asked Questions  Does this course meet Goal Area 4?  This course meets the Liberal Education Goal Area 4 requirement. Students may enroll in this class upon earning a satisfactory score on a mathematics placement test or a grade of C- or better in MATH 113 or MATH 115.    What about late work?  If you experience difficulties and cannot meet a given deadline for legitimate reasons (e.g. health, computer issues, other items beyond your control) please reach out and communicate as soon as possible. Every circumstance will be different, but reasonable accommodation will be made when necessary.    What is with the Learning Assistants  We are very fortunate to have a Learning Assistant supporting our class this semester. They will help facilitate many of our team activities during class and with oral exams. They are a key resource to which you can turn to for help in addition to your instructor. They are also available in the tutor lab (see D2L for schedule).    Is tutoring available?  Yes. FREE tutoring is available. See D2L announcements for details.    Is there a specific time each day when items are due?  Yes. Daily Prep assignments will due when class begins. Expect 11:59 p.m. (Minnesota time) to be the deadline for electronic MOMwork assignments.    What if I need to take this course again in the future? (Multiple Repeats)  Students with two previous unsuccessful attempts in this course (defined by grades of D, F, W, FW, or FN) will need special permission in order to register again. That is, students will only be allowed a maximum of one repeat attempt in this course before needing to obtain special permission to register.    If I am a mathematics major, how does this course meet program outcomes?  Math 221 supports the following student learning outcomes from the Mathematics BA and BS programs:  Outcome 1, demonstrate mastery of a body of mathematical knowledge  Outcome 2, reason mathematically  Outcome 3, apply mathematics to solve problems using analytic, graphing, and numerical methods  Outcome 4, communicate in the language of mathematics, both orally and in writing  Outcome 5, demonstrate an understanding of the breadth of mathematics and the connections between mathematics and other disciplines     Program Learning Outcomes     Program Learning Outcome    Elaboration\/Examples    Assessment     Students will demonstrate mastery of a body of mathematical knowledge    Students will demonstrate an understanding of the meaning of the derivative in terms of a rate of change and local linearization and they will be able to use derivatives to solve a variety of problems.  Students will demonstrate an understanding of the meaning of the definite integral both as a limit of Riemann sums and as the net accumulation of change and will use integrals to solve a variety of problems.  Students will demonstrate an understanding of the relationship between the derivative and the definite integral as expressed in both parts of the Fundamental Theorem of Calculus.   Quizzes, Oral and Written Examinations, MyOpenMath     Students will reason mathematically    Students will determine the reasonableness of solutions, including sign, size, relative accuracy, and units of measurement.   Daily Prep, Quizzes, Written Exams, MyOpenMath      Students will apply mathematics to solve problems using analytic, graphing and numerical methods    Students will identify functions represented in a variety of ways: graphical, numerical, analytical, or verbal. They will understand the connections among these representations. Students will use technology to help solve problems, experiment, interpret results, and verify conclusions.   Daily Prep, Quizzes, Oral and Written Exams, MyOpenMath      Students will communicate in the language of mathematics, both orally and in writing    Students will communicate calculus concepts both orally and in well-written sentences and should be able to explain solutions to problems.   Oral and Written Examinations      Students will demonstrate an understanding of the breadth of mathematics and the connections between mathematics and the other disciplines    Students will develop an appreciation of calculus as a coherent body of knowledge and as a human accomplishment.   Daily Prep, MOMwork      "
+},
+{
+  "id": "PLOs",
+  "level": "2",
+  "url": "sec-221FAQ.html#PLOs",
+  "type": "Table",
+  "number": "6",
+  "title": "Program Learning Outcomes",
+  "body": " Program Learning Outcomes     Program Learning Outcome    Elaboration\/Examples    Assessment     Students will demonstrate mastery of a body of mathematical knowledge    Students will demonstrate an understanding of the meaning of the derivative in terms of a rate of change and local linearization and they will be able to use derivatives to solve a variety of problems.  Students will demonstrate an understanding of the meaning of the definite integral both as a limit of Riemann sums and as the net accumulation of change and will use integrals to solve a variety of problems.  Students will demonstrate an understanding of the relationship between the derivative and the definite integral as expressed in both parts of the Fundamental Theorem of Calculus.   Quizzes, Oral and Written Examinations, MyOpenMath     Students will reason mathematically    Students will determine the reasonableness of solutions, including sign, size, relative accuracy, and units of measurement.   Daily Prep, Quizzes, Written Exams, MyOpenMath      Students will apply mathematics to solve problems using analytic, graphing and numerical methods    Students will identify functions represented in a variety of ways: graphical, numerical, analytical, or verbal. They will understand the connections among these representations. Students will use technology to help solve problems, experiment, interpret results, and verify conclusions.   Daily Prep, Quizzes, Oral and Written Exams, MyOpenMath      Students will communicate in the language of mathematics, both orally and in writing    Students will communicate calculus concepts both orally and in well-written sentences and should be able to explain solutions to problems.   Oral and Written Examinations      Students will demonstrate an understanding of the breadth of mathematics and the connections between mathematics and the other disciplines    Students will develop an appreciation of calculus as a coherent body of knowledge and as a human accomplishment.   Daily Prep, MOMwork     "
+},
+{
   "id": "handouts-2",
   "level": "1",
   "url": "handouts-2.html",
@@ -14,7 +122,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#dp-1-1-cardsort-average-velocity",
   "type": "Checkpoint",
-  "number": "1",
+  "number": "7",
   "title": "Representations of Average Velocity.",
   "body": " Representations of Average Velocity   Sort each statement to the equivalent formula.     Change in position divided by change in time.  The slope of the secant line through and .         Average velocity on the interval .  Uses a starting time and a time change .         Miles traveled divided by hours elapsed.         The object's location at a specific time.  Measured in units of distance rather than velocity.         "
 },
@@ -23,7 +131,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#GrapefruitPic",
   "type": "Figure",
-  "number": "2",
+  "number": "8",
   "title": "",
   "body": " Height of a grapefruit over time.   A curve showing the height of a grapefruit over time. The curve increases, reaches a peak, and then decreases.   "
 },
@@ -32,7 +140,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#GrapefruitTableData",
   "type": "Table",
-  "number": "3",
+  "number": "9",
   "title": "Height of the grapefruit above the ground.",
   "body": " Height of the grapefruit above the ground.     (sec)  0  1  2  3  4  5  6     (feet)  6  90  142  162  150  106  30    "
 },
@@ -41,7 +149,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#GrapefruitTableData2",
   "type": "Table",
-  "number": "4",
+  "number": "10",
   "title": "Average velocity of the grapefruit over various time intervals.",
   "body": " Average velocity of the grapefruit over various time intervals.    Time Interval  Average Velocity    [1,1.5]      [1,1.1]      [1,1.01]      [1,1.001]      [1,1.0001]      [0.999,1]      [0.9999,1]      "
 },
@@ -50,7 +158,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#figureKatherinesDistance",
   "type": "Figure",
-  "number": "5",
+  "number": "11",
   "title": "",
   "body": " Katherine's distance vs. time.  Graph of distance d, measured in miles, as a function of time t, measured in minutes. The horizontal axis is labeled t in minutes and runs from 0 to 120. The vertical axis is labeled d in miles and shows values from 0 to about 80. The graph is piecewise linear. From t equals 0 to t equals 30, the distance increases slowly from 0 to about 10 miles. From t equals 30 to t equals 60, the distance increases more rapidly, reaching 40 miles at t equals 60. From t equals 60 to t equals 75, the graph is horizontal at d equals 40, indicating that the distance does not change during this time interval. From t equals 75 to t equals 120, the distance increases again at a steady rate, ending near 80 miles at t equals 120. Changes in slope indicate changes in speed, and the horizontal segment indicates a period of no motion.    "
 },
@@ -59,7 +167,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#figureKatherinesVelocity",
   "type": "Figure",
-  "number": "6",
+  "number": "12",
   "title": "",
   "body": " Katherine's velocity vs. time.  Graph of velocity v, measured in miles per hour, as a function of time t, measured in minutes. The horizontal axis is labeled t in minutes and runs from 0 to 120. The vertical axis is labeled v in miles per hour and shows values from 0 to about 70. The graph is piecewise constant and consists of horizontal line segments. From t equals 0 to t equals 30, the velocity is constant at 20 miles per hour. From t equals 30 to t equals 60, the velocity jumps to 60 miles per hour and remains constant. At t equals 60, the velocity drops abruptly to zero for a short interval. From about t equals 70 to t equals 120, the velocity is constant again at 40 miles per hour. The vertical jumps between segments indicate instantaneous changes in velocity, and there are no sloped segments shown.    "
 },
@@ -68,7 +176,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-2.html#GrapefruitTableComputed",
   "type": "Table",
-  "number": "7",
+  "number": "13",
   "title": "Average velocities of the grapefruit on various intervals computed.",
   "body": " Average velocities of the grapefruit on various intervals computed.    Time Interval  Average Velocity    [1,1.5]  60 ft\/sec    [1,1.1]  66.4 ft\/sec    [1,1.01]  67.84 ft\/sec    [1,1.001]  67.984 ft\/sec    [1,1.0001]  67.9984 ft\/sec    [0.999,1]  68.016 ft\/sec    [0.9999,1]  68.0016 ft\/sec    "
 },
@@ -86,7 +194,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#figureTrans",
   "type": "Figure",
-  "number": "8",
+  "number": "14",
   "title": "",
   "body": "  Graph of a function on a coordinate grid. The x-axis is horizontal and the y-axis is vertical. On the left, a smooth curve increases to an open circle near x = −4, then decreases to a filled point at x = 0. From x = 0 to about x = 2, the graph rises from an open circle, then transitions into a rapidly oscillating curve between x ≈ 3 and x ≈ 5. To the right of this, the graph becomes smooth again, rising to a peak near x = 7 and then decreasing.   "
 },
@@ -95,7 +203,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#my0202",
   "type": "Figure",
-  "number": "9",
+  "number": "15",
   "title": "",
   "body": " Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks. On the far left, the graph begins below the x-axis and increases to an open circle near x equals minus four at a y-value slightly above two. From that open circle, the graph curves downward to a filled point at x equals zero with y equal to zero. Near x equals zero, a second branch begins at an open circle below the x-axis. From this point, the graph increases smoothly, passing through an open circle near x equals two at a y-value slightly above one. Just to the right of x equals two, the graph enters a region of rapid oscillation, with the y-values fluctuating repeatedly between positive and negative values over a short interval. For x greater than about four, the oscillations stop and the graph becomes smooth again, rising to a local maximum near x equals six and then decreasing slightly toward the right edge of the graph. The figure shows open circles indicating points where the function is not defined and illustrates smooth behavior, discontinuities, and oscillatory behavior on different intervals.   "
 },
@@ -104,7 +212,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#dp-1-2-cardsort-limits-vs-values",
   "type": "Checkpoint",
-  "number": "10",
+  "number": "16",
   "title": "Limits versus Function Values.",
   "body": " Limits versus Function Values   Sort each statement to the situation it describes.     The left-hand and right-hand limits are equal.  The function value may be different from the limiting value.    exists.     There is a filled point on the graph at .  The function is defined at .    exists.     The left-hand and right-hand limits are different.  The graph has a jump at .    does not exist.     The graph approaches the same y-value from both sides.  The point at may be missing.   The limit exists even though may not exist.     "
 },
@@ -113,7 +221,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#figureDPAns122",
   "type": "Figure",
-  "number": "11",
+  "number": "17",
   "title": "",
   "body": " One possible graph.  Detailed graph of a piecewise-defined function on a square coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. On the left side of the graph, for x less than 0, a smooth decreasing curve approaches the point (0, 1), ending at an open circle at (0, 1). At x = 0, the function instead has a filled point at (0, −1). From x = 0 to x = 3, the graph is a straight line with negative slope, starting at the open circle at (0, 1) and descending to an open circle at (3, −2). At x = 3, there is a filled point at (3, 1), distinct from the open points on the other pieces. For x greater than 3, the graph is a straight line with positive slope, beginning at an open circle at (3, 2) and increasing to the right. The graph emphasizes discontinuities at x = 0 and x = 3, shown by open circles and filled points at the same x-values but different y-values.    "
 },
@@ -131,7 +239,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphOf1OverX",
   "type": "Figure",
-  "number": "12",
+  "number": "18",
   "title": "",
   "body": " The graph of for .   Graph of a function on a coordinate grid with the x-axis horizontal and the y-axis vertical, both labeled and marked with integer tick marks from −4 to 4. The graph shows a single smooth curve entirely in the left half-plane. The curve begins near the point (−4, 0) and decreases as x increases. It passes near (−2, −1) and becomes steeper as it approaches the y-axis. As x approaches 0 from the left, the function decreases rapidly and approaches y = −4, appearing to have a vertical tangent or vertical asymptote at x = 0. No points of the graph are shown for x greater than or equal to 0.\"    "
 },
@@ -140,7 +248,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphOf2ToX",
   "type": "Figure",
-  "number": "13",
+  "number": "19",
   "title": "",
   "body": " The graph of .   Graph of a function on a coordinate grid with the x-axis horizontal and the y-axis vertical, both labeled. The x-axis shows values from −4 to 4, and the y-axis shows values from approximately −2 to 14. The graph is a single smooth curve that increases for all shown x-values. On the left, near x = −4, the curve lies just above the x-axis and increases slowly. As x increases, the curve rises gradually at first, passing near y = 2 when x is about 1. For x greater than about 1, the curve increases more rapidly, becoming steeper as x approaches 4, where the y-value is near 14. The graph shows no breaks, open circles, or endpoints, indicating a continuous function over the displayed interval.\"    "
 },
@@ -149,7 +257,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#dp-1-3-cardsort-derivative-meanings",
   "type": "Checkpoint",
-  "number": "14",
+  "number": "20",
   "title": "📝 [Submit] Equivalent Interpretations of the Derivative.",
   "body": " 📝 [Submit] Equivalent Interpretations of the Derivative   Sort each statement to the quantity that it describes.     The slope of the tangent line to the graph of at .  The instantaneous rate of change of at .       The slope of the secant line through and .  The average rate of change of on .       The output of the function when the input is .  A y-coordinate on the graph of .       "
 },
@@ -158,7 +266,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphOfx3",
   "type": "Figure",
-  "number": "15",
+  "number": "21",
   "title": "",
   "body": " The graph of .   Graph of a function on a coordinate grid with the x-axis horizontal and the y-axis vertical, both labeled and marked with integers. The x-axis ranges from approximately −4 to 4, and the y-axis ranges from approximately −40 to 40. The graph is a single smooth curve that increases for all shown x-values and has an S-shaped appearance. On the left, for x near −4, the curve is well below the x-axis with y-values near −35 and is increasing. As x increases toward −2, the graph rises steeply, then begins to level off near the x-axis around x = −1. Between x = −1 and x = 1, the curve is relatively flat and crosses the y-axis slightly above y = 0. For x greater than 1, the curve increases more rapidly, becoming steeper as x approaches 4, where the y-value is near 35. The graph shows no open circles, endpoints, or breaks, indicating the function is continuous over the displayed interval.\"    "
 },
@@ -167,7 +275,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureOrderDerivatives",
   "type": "Figure",
-  "number": "16",
+  "number": "22",
   "title": "",
   "body": " The graph of .   Graph of a function labeled y = g(x) on a coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. The graph is a single smooth curve. On the far left, for x less than about −2, the graph is below the x-axis and increasing steeply. The curve rises and reaches a local maximum slightly above the x-axis near x = −1. It then decreases, crossing near the x-axis close to x = 0, and continues downward to a local minimum below the x-axis near x = 1. After this minimum, the graph increases again, crossing the x-axis near x = 2. For x greater than 2, the curve continues to rise, becoming steeper and reaching positive y-values near the right end of the graph. The curve shows no breaks, open circles, or endpoints, indicating that g is continuous over the displayed interval.\"    "
 },
@@ -176,7 +284,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureDistanceHighway",
   "type": "Figure",
-  "number": "17",
+  "number": "23",
   "title": "",
   "body": " The graph of .   Graph of a function with the horizontal axis labeled t and the vertical axis labeled d, both with tick marks. The t-axis runs from 0 to about 3, and the d-axis runs from 0 to about 70. The graph is a single smooth increasing curve. Starting at t = 0, the graph begins near d = 0 and rises steeply for small values of t. As t increases toward 1, the curve continues to increase but with a decreasing slope. Between t = 1 and t = 2, the graph is nearly horizontal near d = 60, indicating very slow increase. After t = 2, the graph rises again and ends near d = 70 at t = 3. The curve has no breaks, endpoints, or open circles, indicating a continuous function over the displayed interval.\"    "
 },
@@ -185,7 +293,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphFull1OverX",
   "type": "Figure",
-  "number": "18",
+  "number": "24",
   "title": "",
   "body": " The graph of together with a secant line through and .   Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks. The graph consists of two separate smooth curves and a secant line. One curve appears in the lower-left portion of the graph, for x less than about −1. This curve decreases as x increases, crossing near y = 0 around x = −3 and then falling rapidly, becoming very steep as it approaches x = 0 from the left. A second curve appears in the upper right portion of the graph, for x greater than about 1. This curve begins at high positive y-values just to the right of x = 1 and decreases as x increases. It passes near the points (2, 1) and (3, 0.5), which are shown as filled points and labeled accordingly. A red line segment is drawn connecting the points (2, 1) and (3, 0.5). This secant line slopes downward from left to right and intersects the graph only at these two labeled points. There is a gap between the two curves near x = 0, indicating the function is not defined or not shown there. The figure emphasizes the use of two points on the graph to form a secant line.\"    "
 },
@@ -194,7 +302,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureGraphOf2ToXAns",
   "type": "Figure",
-  "number": "19",
+  "number": "25",
   "title": "",
   "body": " The graph of with secant and tangent lines.   Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks. The graph shows a smooth increasing curve that passes near the x-axis on the left and rises steeply for x greater than about 1, reaching large y-values by x = 4. Two points on the curve are highlighted and labeled. One point is labeled (−1, one-half), and another is labeled (1, 2). A straight line is drawn through each of these points, representing tangent or linear approximation lines. The line through the point (−1, one-half) has a shallow positive slope and extends across the graph. The line through the point (1, 2) has a steeper positive slope and intersects the curve near that point. At the point (0, 1), the curve passes through the y-axis and is shown to lie between the two straight lines. The figure illustrates how the slopes of the tangent lines differ at different points on the curve and how the function’s rate of change increases as x increases.\"    "
 },
@@ -203,7 +311,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#figureTangentX3Ans",
   "type": "Figure",
-  "number": "20",
+  "number": "26",
   "title": "",
   "body": " The graph of the tangent line to at is .   Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks from approximately −4 to 4 on the x-axis and −40 to 40 on the y-axis. The graph shows a single smooth increasing curve with an S-shaped appearance. On the left, for x near −4, the curve is well below the x-axis and increasing. As x increases toward −1, the graph flattens slightly near the x-axis, then continues upward. For x greater than about 1, the curve increases rapidly, becoming steep near the right edge of the graph. A straight line is drawn that intersects the curve at a marked point labeled (2, 8). This line has positive slope and passes through the point (2, 8), extending downward to the left and upward to the right. The line is steeper than the curve for x less than 2 and less steep than the curve for x greater than 2. The figure illustrates a tangent or linear approximation to the curve at the point (2, 8), highlighting the local behavior of the function near that point.\"    "
 },
@@ -221,7 +329,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#plotwithtangents",
   "type": "Figure",
-  "number": "21",
+  "number": "27",
   "title": "",
   "body": " A plot of the graph of a function with slopes at several locations illustrated.   Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks. The graph is a single smooth curve. On the left, near x = −2, the curve is above the x-axis and increasing. It reaches a local maximum near x = −1 at a y-value slightly above 4. The curve then decreases, crossing the x-axis near x = 2, and continues downward to a local minimum near x = 4 with a y-value near −3. After this minimum, the curve increases again as x approaches 5. The graph has no open circles, endpoints, or breaks, indicating the function is continuous over the displayed interval.\" "
 },
@@ -230,7 +338,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#PlotTheSlopes",
   "type": "Table",
-  "number": "22",
+  "number": "28",
   "title": "Plot the slopes of the graph of this function.",
   "body": " Plot the slopes of the graph of this function.       -2  -1  0  1  2  3  4  5                 "
 },
@@ -239,7 +347,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#figureplotfprime4",
   "type": "Figure",
-  "number": "23",
+  "number": "29",
   "title": "",
   "body": " The graph of is given. Sketch the graph of .   Graph of a piecewise linear function on a coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. The graph consists of three straight line segments that meet at sharp corners. On the left, the graph begins near x = −5 at a y-value around 5 and decreases linearly to the point (−1, 1), forming a downward-sloping segment. From the point (−1, 1), the graph increases linearly to a peak at the point (1, 5). From this peak, the graph decreases linearly again to the right, ending near the point (5, 3). All endpoints appear solid, and there are no breaks or open circles, indicating the function is defined and continuous over the displayed interval.\"    "
 },
@@ -248,7 +356,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#dp-1-4-cardsort-derivative-function",
   "type": "Checkpoint",
-  "number": "24",
+  "number": "30",
   "title": "Connecting a Function to its Derivative.",
   "body": " Connecting a Function to its Derivative   Sort each statement to the appropriate conclusion about the derivative function .     The graph of has a horizontal tangent line at .  The instantaneous rate of change of at is zero.    .     The graph of is increasing near .  Tangent lines to near have positive slope.    .     The graph of is decreasing near .  Tangent lines to near have negative slope.    .     The graph of has a sharp corner at .  The left- and right-hand slopes at are different.    does not exist.     "
 },
@@ -257,7 +365,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#PlotTheSlopesAns",
   "type": "Table",
-  "number": "25",
+  "number": "31",
   "title": "A table of the slopes of a given function.",
   "body": " A table of the slopes of a given function.       -2  -1  0  1  2  3  4  5       6  2  -1  -2  -2  -1  1  4    "
 },
@@ -266,7 +374,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#subsec-Toprepareforclass14-2-1-3",
   "type": "Figure",
-  "number": "26",
+  "number": "32",
   "title": "A function with its derivative.",
   "body": "A function with its derivative.   Graph showing two functions on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. One curve is labeled f(x) and the other is labeled f′(x). The curve labeled f(x) is a smooth blue curve. It increases from the left, reaching a local maximum near x = −1 at a y-value slightly above 4. It then decreases, crossing the x-axis near x = 2, and continues downward to a local minimum near x = 4 with a y-value below −2. After this minimum, the curve increases again toward the right end of the graph. The curve labeled f′(x) is a smooth black curve with a U-shaped appearance. It crosses the x-axis near x = −1 and x = 4 and has a local minimum below the x-axis near x = 2. The graph illustrates the relationship between f and its derivative: where f(x) has a local maximum or minimum, the derivative f′(x) is zero, and where f(x) is increasing or decreasing, f′(x) is positive or negative, respectively. There are no breaks or open circles shown on either curve, indicating both functions are continuous over the displayed interval.\"   "
 },
@@ -275,7 +383,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#figurepiecewisefprime",
   "type": "Figure",
-  "number": "27",
+  "number": "33",
   "title": "",
   "body": " The graph of given a graph of .   Graph showing a piecewise-defined function f and its derivative f′ on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. The graph of f(x) is drawn with solid line segments. On the left, f decreases linearly from the upper left and reaches a sharp corner at the point (−1, 1). From (−1, 1), the graph increases linearly to a peak near (1, 5). From that peak, f decreases linearly again to the right, ending near the point (5, 3). The corners at x = −1 and x = 1 indicate points where the slope changes abruptly. Several red open circles appear on the graph of f(x). One open circle is shown at the point (−1, 2), and another at (1, 2), indicating values that are not attained by the function at those x-values. Below the x-axis, the graph of f′(x) is shown using horizontal red line segments. For x less than −1, f′(x) is a constant negative value, shown by a horizontal segment ending with an open circle at x = −1. For x between 1 and 5, f′(x) is a constant positive value, shown by a horizontal segment starting with an open circle at x = 1. There is no value of f′ shown at the corner points x = −1 and x = 1, indicating the derivative does not exist at those points. The figure illustrates the relationship between a piecewise linear function and its derivative, emphasizing constant slopes on intervals and non-differentiability at corners.\"    "
 },
@@ -284,7 +392,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#figurepiecewisefprime2",
   "type": "Figure",
-  "number": "28",
+  "number": "34",
   "title": "",
   "body": " The graph of given a graph of .   Graph showing two functions on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. One graph is a smooth blue curve shaped like an upward-opening parabola. It has a minimum near the point (0, −4) and is symmetric about the y-axis. The parabola crosses the x-axis near x = −4 and x = 4 and increases on both sides of its minimum. The second graph is a straight line labeled f′(x). This line has positive slope and passes through the origin. It crosses the x-axis at x = 0 and increases steadily from left to right. The figure illustrates the relationship between a function and its derivative. Where the parabola is decreasing to the left of x = 0, the derivative is negative, and where the parabola is increasing to the right of x = 0, the derivative is positive. The minimum of the parabola occurs where f′(x) equals zero.\"    "
 },
@@ -293,7 +401,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#figurepiecewisefprime3",
   "type": "Figure",
-  "number": "29",
+  "number": "35",
   "title": "",
   "body": " The graph of given a graph of .   Graph showing a function f and its derivative f′ on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. The graph of f(x) is drawn with a thick blue curve. On the left and right, the graph rises steeply upward, with arrows indicating that the function continues to increase beyond the edges of the graph. Between x = −2 and x = 2, the graph forms a smooth, curved arch that reaches a local maximum near the point (0, 4). At x = −2 and x = 2, the graph has sharp corners at the points (−2, 1) and (2, 1), indicating that f is not differentiable at those x-values. The graph of f′(x) is shown in red. It consists of several line segments and rays with open circles indicating points where the derivative is not defined. One red segment with negative slope appears between x = −2 and x = 2, crossing the y-axis near y = −1 and ending with open circles near x = −2 and x = 2. Additional red rays appear to the left of x = −2 and to the right of x = 2 with positive slope, each starting at an open circle. The figure emphasizes the relationship between a function and its derivative, showing that f′(x) is undefined at the corner points of f and changes sign according to whether f is increasing or decreasing.\"    "
 },
@@ -311,7 +419,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#dp-1-5-cardsort-interpretation",
   "type": "Checkpoint",
-  "number": "30",
+  "number": "36",
   "title": "📝 [Submit] Interpreting Derivatives in Context.",
   "body": " 📝 [Submit] Interpreting Derivatives in Context   Sort each statement to the context that it describes.     The derivative has units of miles per hour.  It measures instantaneous velocity.    is the position of a car in miles at time hours.     The derivative has units of people per year.  It measures how quickly the population is changing.    is the population of a city at time years.     The derivative has units of dollars per day.  It measures the rate at which revenue is changing.    is the revenue generated by a company after days.     The derivative has units of gallons per mile.  It measures how fuel consumption changes as distance traveled changes.    is the total gallons of gasoline used after traveling miles.     "
 },
@@ -329,7 +437,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#dp-1-6-cardsort-second-derivative",
   "type": "Checkpoint",
-  "number": "31",
+  "number": "37",
   "title": "📝 [Submit] Interpreting the Second Derivative.",
   "body": " 📝 [Submit] Interpreting the Second Derivative   Sort each statement to the appropriate value of .     The graph is concave up.  The slope of the graph is increasing.       The graph is concave down.  The slope of the graph is decreasing.       The graph is a line.  The slope of the graph is constant.       "
 },
@@ -338,7 +446,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#figureWhichIsWhich",
   "type": "Figure",
-  "number": "32",
+  "number": "38",
   "title": "",
   "body": " Identify which graph is , which graph is , and which graph is .   Graph showing three functions plotted on the same coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y, with integer tick marks shown. One graph is a solid blue curve. It oscillates smoothly across the interval, reaching a high point above y = 6 near x = −4, then decreasing to cross the x-axis near x = −1. The curve continues downward to a deep minimum below y = −5 near x = 4, before increasing again toward the right. A second graph is a black dashed curve. It oscillates with smaller amplitude than the blue curve, crossing the x-axis several times. It has local maxima near x = −4 and x = 4 and a local minimum near x = 1. A third graph is a red dotted curve. This curve also oscillates and appears phase-shifted relative to the black dashed curve. It has a local minimum near x = −4, a local maximum near x = −2, another minimum near x = 1, and a local maximum near x = 3. All three functions are continuous over the displayed interval and intersect or approach one another at several x-values. The figure emphasizes comparison of amplitude, phase shift, and oscillatory behavior among the three functions.\"    "
 },
@@ -347,7 +455,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#figureEmptyGrid16",
   "type": "Figure",
-  "number": "33",
+  "number": "39",
   "title": "",
   "body": " An empty grid.  An empty Cartesian grid.    "
 },
@@ -356,7 +464,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#figureMeetConditions",
   "type": "Figure",
-  "number": "34",
+  "number": "40",
   "title": "",
   "body": " This graph of meets several conditions defined by the derivative of .   Graph of a function on a coordinate grid with the horizontal axis labeled x and the vertical axis labeled y, both marked with integer tick marks. The graph is a single smooth curve. On the left, near x = −5, the curve is below the x-axis and increasing. As x increases, the graph continues upward and reaches a local maximum slightly above y = 2 near x = 0. The curve then decreases to a local minimum just below the x-axis near x = 2. After this minimum, the curve increases again to a second local maximum near x = 4 at a y-value around 2, then decreases sharply toward the right edge of the graph, falling below the x-axis near x = 5. The graph has no open circles, corners, or breaks, indicating the function is continuous and smooth over the displayed interval.\"    "
 },
@@ -374,7 +482,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#TwoPiecewiseFunctions",
   "type": "Figure",
-  "number": "35",
+  "number": "41",
   "title": "",
   "body": " A limit question involving two piecewise-defined functions.   Three side-by-side coordinate graphs. Left: a piecewise linear graph labeled g(x). For x less than zero, a rising line approaches an open circle at (0, 1). For x greater than or equal to zero, a descending line begins at a filled point at (0, 0). Middle: a piecewise linear graph labeled f(x). For x less than or equal to zero, a rising line ends at a filled point at (0, 2). For x greater than zero, a descending line begins at an open circle at (0, 1). Right: a blank coordinate grid with labeled x- and y-axes.          "
 },
@@ -383,7 +491,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#SqueezeThmPic",
   "type": "Figure",
-  "number": "36",
+  "number": "42",
   "title": "",
   "body": " A function is sandwiched between and .   coordinate graph showing three smooth curves intersecting near the y-axis. A red curve opens upward and passes through the point (0, 2), decreasing slightly to the right before rising steeply. A blue curve increases from left to right, crossing y = 2 near x = 0 and continuing upward with moderate slope. A green curve opens downward, reaches a maximum at the point (0, 2), and decreases on both sides. The curves intersect and bound a small shaded region just to the left of x = 0. The x- and y-axes are shown, with the y-axis labeled and tick marks up to y = 3.   "
 },
@@ -392,7 +500,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#figureBempty",
   "type": "Figure",
-  "number": "37",
+  "number": "43",
   "title": "",
   "body": " An empty grid.  An empty Cartesian grid.    "
 },
@@ -401,7 +509,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#dp-1-7-cardsort-continuity",
   "type": "Checkpoint",
-  "number": "38",
+  "number": "44",
   "title": "Limit, Continuity, and Differentiability.",
   "body": " Limit, Continuity, and Differentiability   Sort each statement to the property that it guarantees.     The graph has no break, hole, or jump at .   .    is continuous at .     The graph is locally linear at .  The graph has a well-defined tangent line at .    is differentiable at .     The left-hand limit equals the right-hand limit.  The graph approaches the same y-value from both sides.    exists.     The graph has a sharp corner at .    can be continuous but not differentiable at .     "
 },
@@ -410,7 +518,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#figureGraphFminusG",
   "type": "Figure",
-  "number": "39",
+  "number": "45",
   "title": "",
   "body": " The graph of .   A coordinate graph showing the function labeled (f minus g)(x). The graph is a horizontal line at y equals 1 extending left and right with arrowheads. There is an open circle at the point (0, 1). Above it, a filled point is shown at (0, 2). The x- and y-axes are labeled, and the grid includes tick marks at integer values.    "
 },
@@ -419,7 +527,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#figureLimitsGiveC",
   "type": "Figure",
-  "number": "40",
+  "number": "46",
   "title": "",
   "body": " The graph of .   A coordinate graph showing a piecewise linear function. For x less than 2, a solid line with negative slope decreases toward the point (2, 3). At x equals 2, there is a filled point at (2, 3). For x greater than 2, a solid line with positive slope increases to the right from that point. A dotted line with smaller positive slope approaches the point (2, 3) from the left. The x- and y-axes are labeled, with a grid and integer tick marks.    "
 },
@@ -437,7 +545,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#figureGraphycubed",
   "type": "Figure",
-  "number": "41",
+  "number": "47",
   "title": "",
   "body": " The graph of .   A coordinate graph showing a single smooth curve. The curve increases from left to right, starting in the lower left and ending in the upper right. It passes near the origin and flattens slightly around x equals 0 before increasing more steeply for positive x. The x- and y-axes are labeled, with tick marks extending from approximately minus 40 to 40 on the y-axis and minus 4 to 4 on the x-axis.    "
 },
@@ -446,7 +554,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#fig_02_22_sec18",
   "type": "Figure",
-  "number": "42",
+  "number": "48",
   "title": "",
   "body": "  A coordinate graph showing a curve labeled f(x) and a tangent line. The curve increases and is concave upward. Three points on or near the curve are marked: point A at approximately x equals 4 on the curve, point C slightly to the left near x equals 3.9, and point B above the curve on the tangent line. A straight line labeled “Tangent line” touches the curve at point A and extends upward through point B. Vertical dashed lines drop from points A and B to the x-axis, marking x equals 4 and x equals 4.2. The x-axis is labeled with tick marks at 3.9, 4, and 4.2.   "
 },
@@ -455,7 +563,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#cs-tangent-line-approximation",
   "type": "Checkpoint",
-  "number": "43",
+  "number": "49",
   "title": "When Is a Tangent Line Approximation Useful?",
   "body": " When Is a Tangent Line Approximation Useful?   Sort each statement according to the idea it best illustrates.     Estimate using information about at .  Approximate a function value at an input close to a known point.   Tangent line approximation is likely to work well.     Estimate using the tangent line to at .  Use local information many units away from the point of tangency.   Tangent line approximation is likely to work poorly.     Zooming in near a differentiable point makes the graph look almost linear.  The tangent line closely resembles the function nearby.   Local linearity.     "
 },
@@ -464,7 +572,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#figureGraphycubedans",
   "type": "Figure",
-  "number": "44",
+  "number": "50",
   "title": "",
   "body": " The graph of and its tangent line at .   A coordinate graph showing a smooth blue curve and a straight red line. The blue curve increases from left to right, passing near the origin, flattening slightly around x equals 0, and then rising more steeply for positive x. The red line has constant positive slope, intersects the y-axis below zero, and crosses the blue curve near x equals 2. The x- and y-axes are labeled, with tick marks extending from approximately minus 4 to 4 on the x-axis and minus 40 to 40 on the y-axis.    "
 },
@@ -482,7 +590,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#TangentsGeoGebra",
   "type": "Figure",
-  "number": "45",
+  "number": "51",
   "title": "",
   "body": "  A horizontal toolbar showing several drawing and annotation icons. From left to right: a mouse pointer icon, a filled blue dot, a capital letter A, a line segment with two endpoints, a curved line drawn inside a rectangular selection, a triangle formed by three connected points, and a circle icon. Each icon is displayed inside a square button.   "
 },
@@ -491,7 +599,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#cs-elementary-differentiation-rules",
   "type": "Checkpoint",
-  "number": "46",
+  "number": "52",
   "title": "📝 [Submit] Which Differentiation Rule Applies?",
   "body": " 📝 [Submit] Which Differentiation Rule Applies?   Sort each derivative task according to the primary differentiation rule that should be used first.     Differentiate .  Differentiate .   Power Rule     Differentiate .  Differentiate .   Constant Multiple Rule     Differentiate .  Differentiate .   Sum\/Difference Rule     Differentiate .  Differentiate .   Constant Rule     Differentiate .  Differentiate .   Exponential Function Rule     "
 },
@@ -500,7 +608,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#figureGraphycubed2",
   "type": "Figure",
-  "number": "47",
+  "number": "53",
   "title": "",
   "body": " The graph of .   A coordinate graph showing a single smooth increasing curve. The curve starts in the lower left and rises to the upper right, flattening slightly near x equals 0 before increasing more steeply for positive x. It passes close to the origin. The x- and y-axes are labeled, with tick marks extending from approximately minus 4 to 4 on the x-axis and minus 40 to 40 on the y-axis.    "
 },
@@ -509,7 +617,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#figureGraphycubedans2",
   "type": "Figure",
-  "number": "48",
+  "number": "54",
   "title": "",
   "body": " The graph of and its tangent line at .   A coordinate graph showing a smooth blue curve and a straight red line. The blue curve increases from left to right, passing near the origin, flattening slightly around x equals 0, and then rising more steeply for positive x. The red line has constant positive slope, intersects the y-axis below zero, and crosses the blue curve at a point between x equals 1 and x equals 2. The x- and y-axes are labeled, with tick marks extending from approximately minus 4 to 4 on the x-axis and minus 40 to 40 on the y-axis.    "
 },
@@ -527,7 +635,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-11.html#cs-sine-cosine-derivatives",
   "type": "Checkpoint",
-  "number": "49",
+  "number": "55",
   "title": "📝 [Submit] Ideas Behind the Derivatives of Sine and Cosine.",
   "body": " 📝 [Submit] Ideas Behind the Derivatives of Sine and Cosine   Sort each statement according to the mathematical fact it supports or illustrates.     Near , the slope of is approximately .         Near , the slope of is approximately .         This limit is one of the key ingredients in proving the derivative formula for .  Its value is .         This limit is one of the key ingredients in proving the derivative formula for .  Its value is .         "
 },
@@ -545,7 +653,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-12.html#cs-product-or-quotient-rule",
   "type": "Checkpoint",
-  "number": "50",
+  "number": "56",
   "title": "📝 [Submit] Which Rule Do You Need?",
   "body": " 📝 [Submit] Which Rule Do You Need?   Sort each function according to the primary differentiation rule that is required. Do not differentiate the function. Focus only on recognizing its structure.            Product Rule            Quotient Rule            No Product or Quotient Rule Needed     "
 },
@@ -554,7 +662,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-12.html#figureproductquotient1",
   "type": "Figure",
-  "number": "51",
+  "number": "57",
   "title": "",
   "body": " The graph of and and two particular tangent lines.    Two separate coordinate graphs are shown. On the left, a smooth blue curve labeled f(x) increases from left to right. Two filled points on the curve are labeled with coordinates (2, 3) and (4, 4.8).     On the right, a smooth blue curve labeled g(x) decreases from left to right. A horizontal segment at y equals 5 includes two filled endpoints labeled (0, 5) and (2, 5). Farther to the right, a filled point on the curve is labeled (3.5, 3), with a straight black line tangent to the curve at that point.     "
 },
@@ -572,7 +680,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-13.html#cs-trig-derivative-detective",
   "type": "Checkpoint",
-  "number": "52",
+  "number": "58",
   "title": "Derivative Detective.",
   "body": " Derivative Detective   A student remembers only fragments of the derivative formulas. Sort each clue with the derivative rule it identifies.     Its derivative is always greater than zero.  The derivative involves a secant.       Its derivative is always less than zero.  The derivative involves a cosecant.       Its derivative contains the function itself.  The derivative also contains tangent.       "
 },
@@ -590,7 +698,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#TangentsGeo2",
   "type": "Figure",
-  "number": "53",
+  "number": "59",
   "title": "",
   "body": "  A horizontal toolbar containing drawing and annotation icons. From left to right: a mouse pointer icon, a filled blue point, a capital letter A, a line segment with two endpoints, a curved line drawn inside a rectangular selection outline, a triangle formed by three connected points, and a circle with a central point. Each icon appears inside a square button.   "
 },
@@ -599,7 +707,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#cs-chain-rule-inner-outer",
   "type": "Checkpoint",
-  "number": "54",
+  "number": "60",
   "title": "📝 [Submit] Inside and Outside.",
   "body": " 📝 [Submit] Inside and Outside   Each composite function can be viewed as an outside function acting on an inside function. Sort the cards so that each composite function is matched with a correct description of its inside and outside functions.     The outside function is .  The inside function is .         The outside function is .  The inside function is .         The outside function is .  The inside function is .         The outside function is .  The inside function is .         "
 },
@@ -608,7 +716,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#figurechain",
   "type": "Figure",
-  "number": "55",
+  "number": "61",
   "title": "",
   "body": " The graph of and .    A coordinate graph showing a smooth curve labeled f(x). The curve decreases from the upper left, reaches a local minimum just right of x equals 0, then increases to a local maximum near x equals 3, and finally decreases again toward the lower right. The graph crosses the x-axis near x equals 1 and again near x equals 4. The x- and y-axes are labeled, with a grid and integer tick marks.     A coordinate graph showing a smooth curve labeled h(x). The curve rises from the lower left to a local maximum left of x equals minus 2, then decreases to a local minimum near x equals minus 1. It rises slightly near x equals 0, dips again near x equals 1, and then rises to a higher local maximum near x equals 2. After that, the curve decreases steeply toward the lower right. The x- and y-axes are labeled, with a grid and integer tick marks.     "
 },
@@ -617,7 +725,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#figureChainGraphfg",
   "type": "Figure",
-  "number": "56",
+  "number": "62",
   "title": "",
   "body": " The graph of and .   A coordinate graph showing two functions, f and g. Function g is drawn as a solid blue piecewise linear graph: it rises steeply from the lower left to a peak near x equals 2, then decreases steadily to the right. Function f is drawn as a red dashed curve: it decreases to a minimum near x equals 1, then increases and continues upward to the right. The two graphs intersect at a point near x equals 4. The x- and y-axes are labeled, with a grid and integer tick marks.    "
 },
@@ -626,7 +734,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#figurechain2",
   "type": "Figure",
-  "number": "57",
+  "number": "63",
   "title": "",
   "body": " The graphs of and and some tangent lines.    A coordinate graph showing a smooth blue curve labeled f(x). A filled point on the curve is labeled with coordinates (2, 3). From that point, a straight black line extends upward to the right to a filled point labeled (4, 4.8). The straight segment lies above the curve between the two points. No axes or grid are shown.     A coordinate graph showing a smooth blue curve labeled g(x). A horizontal segment at y equals 5 has filled endpoints labeled (0, 5) and (2, 5). At x equals 2, the curve reaches a local maximum at the filled point (2, 5) and then decreases to the right. Two filled points on the decreasing part of the curve are labeled (3, 4) and (3.5, 3). A straight black line segment is tangent to the curve near the point (3.5, 3).     "
 },
@@ -635,7 +743,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#figureChainsqrt",
   "type": "Figure",
-  "number": "58",
+  "number": "64",
   "title": "",
   "body": " The graph of and a tangent line at .   A coordinate graph showing two functions. A solid blue straight line decreases from left to right, starting above y equals 4 on the left and ending below y equals 1 near x equals 6. A red dashed curve increases from the left to a peak near x equals 2, then decreases and approaches the blue line. The two graphs meet at a filled point near x equals 3. Past x equals 6, the red dashed curve turns upward slightly while the blue line continues downward. The x- and y-axes are labeled, with a grid and integer tick marks.    "
 },
@@ -653,7 +761,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-15.html#sec-Toprepareforclass26-3-4-2-1-2-2",
   "type": "Figure",
-  "number": "59",
+  "number": "65",
   "title": "",
   "body": "  A horizontal toolbar showing construction and annotation tools. From left to right: a mouse pointer icon, a filled point, a capital letter A, a line segment connecting two points, perpendicular axes with a point, a triangle formed by three connected points, a circle with a central point, a circle with two marked points, three connected points forming a polygonal shape, a slanted line with a point, a slider labeled a equals 2, and a four‑arrow move icon.   "
 },
@@ -662,7 +770,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-15.html#sec-Toprepareforclass26-3-4-2-1-3-2",
   "type": "Figure",
-  "number": "60",
+  "number": "66",
   "title": "",
   "body": "  A horizontal toolbar showing geometry and graphing tool icons. From left to right: a mouse pointer icon; a filled blue point; a capital letter A; a line segment connecting two points; perpendicular coordinate axes with a point; a triangle formed by three connected points; a circle with a central point; a circle with two marked points; three points connected by short line segments; a line with a marked point; a slider labeled a equals 2; and a four‑arrow move icon. Each icon appears inside a square button, with one of the point‑connection tools highlighted.   "
 },
@@ -671,7 +779,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-15.html#cs-derivative-of-inverse-function",
   "type": "Checkpoint",
-  "number": "61",
+  "number": "67",
   "title": "Derivatives of Inverse Functions.",
   "body": " Derivatives of Inverse Functions   Match each piece of information about with the corresponding value of the derivative of its inverse. Recall that if , then .      and .         and .         and .         and .        "
 },
@@ -680,7 +788,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-15.html#figureffprime26",
   "type": "Figure",
-  "number": "62",
+  "number": "68",
   "title": "",
   "body": " Graphs of and .   Two coordinate graphs are shown side by side. On the left, a graph labeled f(x) shows a smooth increasing curve. The curve rises steadily from low values near x equals 0 to near y equals 20 at x equals 40, with the slope increasing as x increases. On the right, a graph labeled f prime of x shows a smooth curve that increases from near y equals 0.1 at x equals 0 to a maximum around x equals 30, then decreases sharply toward y equals 0 near x equals 40. Both graphs have labeled x-axes, grids, and tick marks, with the left graph ranging up to y equals 20 and the right up to y equals 0.8.   "
 },
@@ -689,7 +797,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-15.html#FunctionAndInverseData",
   "type": "Table",
-  "number": "63",
+  "number": "69",
   "title": "Values of <span class=\"process-math\">\\(f(x)\\)<\/span> and <span class=\"process-math\">\\(f'(x)\\text{.}\\)<\/span>",
   "body": " Values of and .               0  1  0.7    1  2  1.4    2  4  2.8    3  8  5.5    "
 },
@@ -698,7 +806,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-15.html#figureffprimeTWO26",
   "type": "Figure",
-  "number": "64",
+  "number": "70",
   "title": "",
   "body": " Graphs of and .   A coordinate graph showing two curves labeled f(x) and f inverse of x. The curve f(x) increases steeply from left to right and has a filled point labeled P near y equals 8. The curve f inverse of x increases more gradually to the right and has a filled point labeled Q near x equals 7 and y equals 3. Both curves lie in the first quadrant. The x- and y-axes are labeled, with tick marks shown.   "
 },
@@ -716,7 +824,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-16.html#cs-implicit-differentiation-computation",
   "type": "Checkpoint",
-  "number": "65",
+  "number": "71",
   "title": "Compute the Derivative Step.",
   "body": " Compute the Derivative Step   Many mistakes in implicit differentiation occur when differentiating expressions that contain . For each expression, match it with its correct derivative with respect to .                                     "
 },
@@ -725,7 +833,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-16.html#figureImplicitGraph1",
   "type": "Figure",
-  "number": "66",
+  "number": "72",
   "title": "",
   "body": " Graph of the curve with a tangent line at .   A coordinate graph showing two curves. One curve is drawn in black and forms a closed, rounded shape extending approximately from y equals minus 1 to y equals 1, with its rightmost point near x equals 1.2. A straight blue line slopes downward from left to right, starting near y equals 1.5 at x equals 0 and crossing the black curve near x equals 1 and y equals 0.5. The x- and y-axes are shown with dotted grid lines and tick marks at regular intervals.   "
 },
@@ -743,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-17.html#cs-related-rates-differentiate",
   "type": "Checkpoint",
-  "number": "67",
+  "number": "73",
   "title": "📝 [Submit] Differentiate with Respect to Time.",
   "body": " 📝 [Submit] Differentiate with Respect to Time   In each related-rates problem, the first step is often to differentiate an equation relating two or more quantities. Match each equation with its derivative with respect to time.                                             "
 },
@@ -761,7 +869,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-18.html#GeoGebraConstructLhopital",
   "type": "Figure",
-  "number": "68",
+  "number": "74",
   "title": "",
   "body": " A GeoGebra construction used to investigate a limit that is indeterminant.   A Geogebra display showing three functions and an expressions panel. In the expressions list on the left, f(x) equals x to the fifth plus x minus 2, g(x) equals x squared minus 1, and h(x) equals f(x) divided by g(x). On the right, three curves are plotted on the same coordinate grid. A black upward‑opening parabola represents g(x). A blue curve with steep growth near x equals 1 represents f(x). A red curve labeled h is drawn above the others and has a minimum near x equals 0. The x- and y-axes are shown with grid lines and tick marks.   "
 },
@@ -770,7 +878,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-18.html#LHopitalExcel1Pic",
   "type": "Figure",
-  "number": "69",
+  "number": "75",
   "title": "",
   "body": " A spreadsheet can be used to form a hypothesis about the value of a limit.   A spreadsheet-style table showing numerical values for the expression (exp(2x) minus 1) divided by x. The table is split into two sections. On the left, x takes negative values from minus 0.1 to minus 0.00001, with corresponding values approaching 2 from below. On the right, x takes positive values from 0.01 to 0.00001, with corresponding values approaching 2 from above. The values are arranged to show the behavior of the expression as x approaches zero.   "
 },
@@ -779,7 +887,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-18.html#cs-lhopital-basic-limits",
   "type": "Checkpoint",
-  "number": "70",
+  "number": "76",
   "title": "Evaluate the Limit.",
   "body": " Evaluate the Limit   Match each limit with its value.                                "
 },
@@ -788,7 +896,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-18.html#figureSignLhopital",
   "type": "Figure",
-  "number": "71",
+  "number": "77",
   "title": "",
   "body": " The graph of and .   A coordinate graph showing two curves labeled f(x) and g(x). The blue curve f(x) lies above the x-axis near the middle and has a shallow minimum at a point above x equals a, then rises to the left and right. The red curve g(x) lies below the x-axis and has a maximum at the point directly below x equals a. Both curves touch the x-axis at the same point labeled a. The x- and y-axes are shown with arrows.    "
 },
@@ -797,7 +905,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-18.html#figureGraphicLhopital",
   "type": "Figure",
-  "number": "72",
+  "number": "78",
   "title": "",
   "body": " The graphs of and and their tangent lines at .   A coordinate graph showing a curve labeled f and a second curve labeled g, both passing through the point (2, 0). At that point, two dotted straight lines are shown. A blue dotted line labeled y equals 1.8 times (x minus 2) has a steeper positive slope. A red dotted line labeled y equals four‑fifths times (x minus 2) has a gentler positive slope. The curve g lies above the curve f to the right of x equals 2 and below it to the left. The x‑ and y‑axes are labeled, with a grid and the point (2, 0) marked.    "
 },
@@ -815,7 +923,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#figureEmptyGrid33",
   "type": "Figure",
-  "number": "73",
+  "number": "79",
   "title": "",
   "body": "  An empty Cartesian grid.    "
 },
@@ -824,7 +932,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#figureEmptyGridb33",
   "type": "Figure",
-  "number": "74",
+  "number": "80",
   "title": "",
   "body": "  An empty Cartesian grid.    "
 },
@@ -833,7 +941,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#ctsfcn33",
   "type": "Figure",
-  "number": "75",
+  "number": "81",
   "title": "",
   "body": "  A graph of a smooth function y versus x on the interval from x = 0 to x = 10. The curve starts near y = 6 at x close to 0, decreases steeply to a local minimum near y = 1.7 around x = 2, then rises gently to a local maximum near y = 2.3 around x = 4. The graph then decreases to a deeper minimum near y = 1 around x = 7, after which it rises sharply to about y = 4.5 at x = 9, and finally decreases to about y = 2 at x = 10.    "
 },
@@ -842,7 +950,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#x3fcn33",
   "type": "Figure",
-  "number": "76",
+  "number": "82",
   "title": "",
   "body": "  A graph of a function f with axes labeled x and y. The curve is increasing and S-shaped, passing through the origin. It is concave up for positive x and concave down for negative x, flattening slightly near x = 0 and rising more steeply as x approaches 1. The function continues smoothly for negative x, decreasing below the x-axis.    "
 },
@@ -851,7 +959,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#ScoreGame",
   "type": "Figure",
-  "number": "77",
+  "number": "83",
   "title": "",
   "body": "  An interactive graph titled “Reconstruct f from its First Derivative.” The coordinate plane shows scattered blue points representing values of f′ at various x-values. A smooth red curve is drawn through these points, representing a reconstruction of the original function f. The curve is slightly decreasing for negative x, reaches a minimum near x = 0, then increases for positive x with a local maximum near x = 5 before decreasing slightly. Interface elements such as checkboxes and buttons surround the graph.   "
 },
@@ -860,7 +968,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#cs-first-derivative-test",
   "type": "Checkpoint",
-  "number": "78",
+  "number": "84",
   "title": "What Happens at the Critical Number?",
   "body": " What Happens at the Critical Number?   Suppose that is a critical number of a function . Match each sign pattern for with the correct conclusion about at .      for and for    Local maximum at .      for and for    Local minimum at .      for and for    for and for    Neither a local maximum nor a local minimum at .     "
 },
@@ -869,7 +977,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#Graph1Overxxm1",
   "type": "Figure",
-  "number": "79",
+  "number": "85",
   "title": "",
   "body": " The graph of .   A graph of the function f(x) = 1 divided by x times (x minus 1). There are vertical asymptotes at x = 0 and x = 1. For x less than 0, the graph is above the x-axis and increases toward positive infinity as x approaches 0 from the left. Between x = 0 and x = 1, the graph is below the x-axis, with a labeled point at (1\/2, −4), and decreases toward negative infinity near both asymptotes. For x greater than 1, the graph is above the x-axis and decreases toward zero as x increases.   "
 },
@@ -878,7 +986,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#Graphsqrtabsx",
   "type": "Figure",
-  "number": "80",
+  "number": "86",
   "title": "",
   "body": "  A graph of a function y versus x that is symmetric about the y-axis. The curve has a sharp minimum cusp at the origin, where y equals zero. For x greater than zero, the function increases and is concave down, reaching about y = 2 near x = 3. For x less than zero, the graph is a mirror image, also increasing toward y = 2 as x approaches −3.    "
 },
@@ -887,7 +995,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-19.html#NoGlobalMaxMin",
   "type": "Figure",
-  "number": "81",
+  "number": "87",
   "title": "",
   "body": "  A graph of a piecewise-defined function in the x–y plane. In the first quadrant, a line segment rises from the point (0, 1) to an open circle at (1, 2). In the fourth quadrant, a line segment decreases from a filled point at (1, −1) to an open circle at (2, −2). On the x-axis, there is a horizontal segment from x = 2 to x = 3 at y = 0 with filled endpoints. Open and closed circles indicate excluded and included endpoints, respectively.    "
 },
@@ -905,7 +1013,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-20.html#EVTExample1",
   "type": "Figure",
-  "number": "82",
+  "number": "88",
   "title": "",
   "body": " The graph of .   A graph of y equals g of x on the x–y plane, with x-values labeled 0, a, c, and b. An open circle appears at x = a on a downward-curving arc. The curve dips to a minimum near x = c and then rises to a filled point at x = b. A separate filled point is shown above the curve between 0 and a, indicating a function value not on the main curve.   "
 },
@@ -914,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-20.html#cs-optimization-objective-functions",
   "type": "Checkpoint",
-  "number": "83",
+  "number": "89",
   "title": "What Quantity Should Be Optimized?",
   "body": " What Quantity Should Be Optimized?   In each optimization problem, one quantity is the objective: the quantity that must be made as large or as small as possible. Match each situation with its objective function.     A farmer has a fixed amount of fencing and wants to enclose the largest possible rectangular pasture.   Maximize the area: .     A soup company wants a cylindrical can that holds a fixed volume using the least material.   Minimize the surface area: .     A manufacturer wants to build an open-top box from a rectangular sheet of cardboard by cutting equal squares from the corners. The box should hold as much as possible.   Maximize the volume: .     "
 },
@@ -923,7 +1031,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-20.html#figureGraph35",
   "type": "Figure",
-  "number": "84",
+  "number": "90",
   "title": "",
   "body": "  A graph of a function y versus x showing a smooth curve. The graph starts at a filled point at the origin (0, 0), decreases to a minimum at the labeled point (1, −2), and then increases to a filled point at (2, 4 minus 3 times the square root of 2). The curve is U-shaped and lies below the x-axis between x = 0 and x = 2.    "
 },
@@ -941,7 +1049,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-21.html#figuretrianglecut36",
   "type": "Figure",
-  "number": "85",
+  "number": "91",
   "title": "",
   "body": "  A coordinate diagram showing a triangular region in the x–y plane. The region has vertices at (0, 0), (1, 0), and (1, 2), with solid line segments connecting these points. The horizontal axis is marked at x = 0 and x = 1, and the vertical axis is marked at y = 2. A dotted vertical line is drawn at an x-value between 0 and 1, intersecting the triangle and labeled x.    "
 },
@@ -950,7 +1058,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-21.html#cs-applied-optimization-objective-function",
   "type": "Checkpoint",
-  "number": "86",
+  "number": "92",
   "title": "Build the Objective Function.",
   "body": " Build the Objective Function   In each optimization problem, one variable has already been eliminated using the given constraint. Match the situation with the correct one-variable objective function that should be optimized.     A rectangle has perimeter . Let be the width.   Maximize .     A rectangle has area . Let be the width.   Minimize .     An open-top box is constructed from a sheet by cutting squares of side length from each corner.   Maximize .     A cylindrical can must hold cubic units. Eliminate using .   Minimize .     "
 },
@@ -959,7 +1067,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-21.html#AlainaBusStop",
   "type": "Figure",
-  "number": "87",
+  "number": "93",
   "title": "",
   "body": "  Three diagrams labeled (a), (b), and (c) show different walking routes in a park to reach a bus stop. In each diagram, the park is rectangular, with a vertical side labeled 600 feet and the distance to the bus stop along the top labeled 2000 feet. In (a) and (c), a diagonal path crosses the park from a corner toward the bus stop, while in (b) the path follows the edges of the park only. In (c), the bottom edge is marked as two segments of 1000 feet each. The diagrams compare possible paths and distances to the bus stop.   "
 },
@@ -968,7 +1076,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-21.html#figurefirstderivativesignchart36",
   "type": "Figure",
-  "number": "88",
+  "number": "94",
   "title": "",
   "body": "  A number line labeled A′(x). Three marked x-values appear: 0, the square root of 2 divided by 2, and 1. A plus sign above the left interval indicates A′(x) is positive there, a minus sign above the middle interval indicates A′(x) is negative, and a plus sign above the right interval indicates A′(x) is positive again.    "
 },
@@ -977,7 +1085,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-21.html#AlainaExampleAns",
   "type": "Figure",
-  "number": "89",
+  "number": "95",
   "title": "",
   "body": "  A graph of a smooth function over x-values from 0 to about 2000. The curve decreases gradually from left to right, then reaches a minimum near the labeled point (1463.34, 445.14). After this point, the graph turns upward slightly, indicating a minimum at that location.   "
 },
@@ -995,7 +1103,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#cs-displacement-versus-distance",
   "type": "Checkpoint",
-  "number": "90",
+  "number": "96",
   "title": "📝 [Submit] Displacement or Distance?",
   "body": " 📝 [Submit] Displacement or Distance?   For each velocity scenario, determine the correct value. Recall that displacement is the signed area under the velocity graph, while distance traveled is the total area between the graph and the -axis. Match each situation with the correct conclusion.     Velocity is constantly ft\/s for s.   Displacement = Distance = ft.     Velocity is constantly ft\/s for s.   Displacement = ft, Distance = ft.     Velocity is ft\/s for the first second and ft\/s for the second second.   Displacement = ft, Distance = ft.     Velocity is ft\/s for the first second and ft\/s for the next second.   Displacement = ft, Distance = ft.     Velocity is ft\/s for the first second and ft\/s for the next second.   Displacement = ft, Distance = ft.     "
 },
@@ -1004,7 +1112,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#PlaneData1",
   "type": "Table",
-  "number": "91",
+  "number": "97",
   "title": "A plane travels down a runway.",
   "body": " A plane travels down a runway.    time (sec)  0  2  4  6  8  10    velocity (ft\/sec)  0  99  140  171.5  198  221.4    "
 },
@@ -1013,7 +1121,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#figurePlane1LowEstimate",
   "type": "Figure",
-  "number": "92",
+  "number": "98",
   "title": "",
   "body": " A lower estimate for the distance a plane travels.   Scatter plot showing velocity versus time. The horizontal axis is labeled t (sec) and ranges from 0 to 10 seconds. The vertical axis is labeled v (ft\/sec) and ranges from 0 to 225 feet per second. There are seven plotted points: (0, 0), (2, 100), (4, 140), (6, 170), (8, 200), and (10, 225). The points show an increasing trend, indicating velocity rises as time increases.    "
 },
@@ -1022,7 +1130,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#figurePlane1HighEstimate",
   "type": "Figure",
-  "number": "93",
+  "number": "99",
   "title": "",
   "body": " An upper estimate for the distance a plane travels.   Scatter plot showing velocity versus time. The horizontal axis is labeled t and ranges from 0 to 10 seconds. The vertical axis is labeled v and ranges from 0 to 225. There are seven plotted points: (0, 0), (2, 100), (4, 140), (6, 170), (8, 190), and (10, 225). The points show an increasing trend, indicating velocity rises as time increases.    "
 },
@@ -1031,7 +1139,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#PlaneData2",
   "type": "Table",
-  "number": "94",
+  "number": "100",
   "title": "Additional detail regarding the plane traveling down a runway.",
   "body": " Additional detail regarding the plane traveling down a runway.    time (sec)  0  1  2  3  4  5  6  7  8  9  10    velocity (ft\/sec)  0  75  99  125  140  162  171.5  182  198  215  221.4    "
 },
@@ -1040,7 +1148,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#figurePlane2LowEstimate",
   "type": "Figure",
-  "number": "95",
+  "number": "101",
   "title": "",
   "body": " A better lower estimate for the distance a plane travels.   Scatter plot showing velocity versus time. The horizontal axis is labeled t and ranges from 0 to 10. The vertical axis is labeled v and ranges from 0 to 225. There are eleven plotted points: (0, 0), (1, 75), (2, 100), (3, 125), (4, 140), (5, 160), (6, 170), (7, 190), (8, 200), (9, 215), and (10, 225). The points form an upward trend, indicating velocity increases steadily as time increases.    "
 },
@@ -1049,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#figurePlane2HighEstimate",
   "type": "Figure",
-  "number": "96",
+  "number": "102",
   "title": "",
   "body": " A better upper estimate for the distance a plane travels.   Scatter plot showing velocity versus time. The horizontal axis is labeled t and ranges from 0 to 10. The vertical axis is labeled v and ranges from 0 to 225. There are eleven plotted points: (0, 0), (1, 75), (2, 100), (3, 125), (4, 140), (5, 160), (6, 170), (7, 190), (8, 200), (9, 215), and (10, 225). The points form an upward trend, indicating velocity increases steadily as time increases.    "
 },
@@ -1058,7 +1166,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#figurePlane1LowEstimateAns",
   "type": "Figure",
-  "number": "97",
+  "number": "103",
   "title": "",
   "body": " Computing a lower estimate for the distance a plane travels.   Step graph showing velocity versus time with shaded rectangles under the steps. The horizontal axis is labeled t (sec) and ranges from 0 to 10 seconds. The vertical axis is labeled v (ft\/sec) and ranges from 0 to 225 feet per second. Seven black points mark data values: (0, 0), (2, 100), (4, 140), (6, 170), (8, 200), and (10, 225). Light blue shaded rectangles represent intervals between these points, forming a step-like approximation of the increasing velocity trend.    "
 },
@@ -1067,7 +1175,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#figurePlane1HighEstimateAns",
   "type": "Figure",
-  "number": "98",
+  "number": "104",
   "title": "",
   "body": " Computing an upper estimate for the distance a plane travels.   Step graph showing velocity versus time with shaded rectangles under the steps. The horizontal axis is labeled t and ranges from 0 to 10. The vertical axis is labeled v and ranges from 0 to 225. Seven black points mark data values: (0, 0), (2, 100), (4, 140), (6, 170), (8, 200), and (10, 225). Light blue shaded rectangles represent intervals between these points, forming a step-like approximation of the increasing velocity trend.    "
 },
@@ -1076,7 +1184,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#figurePlane2LowEstimateAns",
   "type": "Figure",
-  "number": "99",
+  "number": "105",
   "title": "",
   "body": " Computing a better lower estimate for the distance a plane travels.   Step graph showing velocity versus time with shaded rectangles under the steps. The horizontal axis is labeled t and ranges from 0 to 10. The vertical axis is labeled v and ranges from 0 to 225. Eleven black points mark data values: (0, 0), (1, 75), (2, 100), (3, 125), (4, 140), (5, 160), (6, 170), (7, 190), (8, 200), (9, 215), and (10, 225). Light blue shaded rectangles represent intervals between these points, forming a step-like approximation of the increasing velocity trend.    "
 },
@@ -1085,7 +1193,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-22.html#figurePlane2HighEstimateAns",
   "type": "Figure",
-  "number": "100",
+  "number": "106",
   "title": "",
   "body": " Computing a better upper estimate for the distance a plane travels.   Step graph showing velocity versus time with shaded rectangles under the steps. The horizontal axis is labeled t and ranges from 0 to 10. The vertical axis is labeled v and ranges from 0 to 225. Eleven black points mark data values: (0, 0), (1, 75), (2, 100), (3, 125), (4, 140), (5, 160), (6, 170), (7, 190), (8, 200), (9, 215), and (10, 225). Light blue shaded rectangles represent intervals between these points, forming a step-like approximation of the increasing velocity trend.    "
 },
@@ -1103,7 +1211,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-23.html#figureLeftSum1MX2",
   "type": "Figure",
-  "number": "101",
+  "number": "107",
   "title": "",
   "body": " A left Riemann sum with rectangles.   Graph of the function y = 1 − x² on the interval from 0 to 1, shown as a downward‑curving blue parabola. Four left-endpoint rectangles with heights taken from the curve are drawn under the graph, forming a decreasing sequence of blue shaded rectangles that approximate the area under the curve.    "
 },
@@ -1112,7 +1220,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-23.html#figureRightSum1MX2",
   "type": "Figure",
-  "number": "102",
+  "number": "108",
   "title": "",
   "body": " A right Riemann sum with rectangles.   Graph of the function y = 1 − x² on the interval from 0 to 1, shown as a downward‑curving blue parabola. Four right‑endpoint rectangles are drawn under the curve, each shaded in light blue, with heights decreasing as x increases. The rectangles form an approximation of the area under the curve.    "
 },
@@ -1121,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-23.html#figure1MX2",
   "type": "Figure",
-  "number": "103",
+  "number": "109",
   "title": "",
   "body": " The graph of .   Graph of the function y = 1 − x² on the interval from 0 to 1. The curve begins at the point (0, 1) on the y‑axis and decreases smoothly in a downward‑opening arc, reaching the point (1, 0) on the x‑axis. Axes are labeled x and y.    "
 },
@@ -1130,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-23.html#RiemannSumAppletOutput1",
   "type": "Figure",
-  "number": "104",
+  "number": "110",
   "title": "",
   "body": " A middle sum used to compute the area under and above using rectangles.   Interactive diagram illustrating Riemann sum approximations for the function f(x) = 1 − x² on the interval from 0 to 1. The curve of the function is shown as a downward-opening parabola. Four subintervals are used, and shaded rectangular bars represent sample rectangles for the selected sample point method. Vertical dashed lines show subinterval boundaries. A sidebar on the left displays options for selecting sample point placement, including relative point, midpoint, random, upper sum, and lower sum. The sidebar also lists numerical approximation values: relative sample approximation 0.67188, random approximation 0.72847, upper sum 0.78125, lower sum 0.53125, and the exact integral value 0.66667. The diagram visually compares the rectangles to the parabola to demonstrate over- and underestimates in the Riemann sum.   "
 },
@@ -1139,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-23.html#cs-riemann-sums-computation",
   "type": "Checkpoint",
-  "number": "105",
+  "number": "111",
   "title": "📝 [Submit] Compute the Riemann Sum.",
   "body": " 📝 [Submit] Compute the Riemann Sum   Suppose that the values of are given below. Match each Riemann sum description with its value.   0 1 2 3 4  2 5 3 4 6      Left Riemann sum on with        Right Riemann sum on with   Midpoint sum on . Use two rectangles of width             Left Riemann sum on with        "
 },
@@ -1148,7 +1256,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-23.html#figureln4xOn13",
   "type": "Figure",
-  "number": "106",
+  "number": "112",
   "title": "",
   "body": " The graph of on .   Graph of the function y = ln(4x) on the interval from x = 1 to x = 3, shown as an increasing concave‑down curve. Five left‑endpoint rectangles are drawn under the curve, each shaded in light blue, with heights determined by the function value at the left end of each subinterval. The rectangles rise in height as x increases, forming a left‑endpoint Riemann sum approximation of the area under the curve.    "
 },
@@ -1157,7 +1265,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-23.html#figureRiemannSumf17",
   "type": "Figure",
-  "number": "107",
+  "number": "113",
   "title": "",
   "body": " A Riemann sum for on .   Graph of an increasing concave-down function f on the interval from x = 1 to x = 7. Three right-endpoint rectangles are drawn under the curve, each shaded in light blue. The first rectangle spans x = 1 to 3, the second from x = 3 to 5, and the third from x = 5 to 7. The heights of the rectangles correspond to the function values at x = 3, 5, and 7, creating a right-endpoint Riemann sum approximation of the area under the curve.    "
 },
@@ -1166,7 +1274,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-23.html#RiemannSumAppletOutput2",
   "type": "Figure",
-  "number": "108",
+  "number": "114",
   "title": "",
   "body": "  Interactive diagram illustrating Riemann sum approximations for the function f(x) = 1 − x². The curve is a downward‑opening parabola shown over the interval from x = 0 to approximately 1.2. Four midpoint rectangles are drawn under the curve, each shaded in light orange, with heights determined by the function value at each subinterval’s midpoint. Vertical dashed lines mark the subinterval boundaries. On the left side of the image, a control panel displays options for sample point placement, the number of subintervals (n = 4), and numerical approximation values: relative 0.67188, random 0.64026, upper 0.78125, lower 0.53125, and the exact integral 0.66667.   "
 },
@@ -1184,7 +1292,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-24.html#figureIntegralGeometryLine",
   "type": "Figure",
-  "number": "109",
+  "number": "115",
   "title": "",
   "body": " The graph of can be used to evaluate .   Graph of the line y = 1 − ½x. The line crosses the y-axis at 1 and slopes downward to the right. It passes near the points (0, 1), (2, 0), and (4, −1). The x‑ and y‑axes are shown with tick marks from about −1 to 4 on the x-axis and from −1 to 2 on the y-axis.    "
 },
@@ -1193,7 +1301,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-24.html#figureIntegralGeometryHalfCircle",
   "type": "Figure",
-  "number": "110",
+  "number": "116",
   "title": "",
   "body": "  Graph of a piecewise function. From x = 0 to x = 2, the graph is a semicircle above the x-axis, starting at the point (0, 0), rising to a peak near y = 1 around x = 1, and returning to (2, 0). From x = 2 to x = 3, the graph is a straight line segment beginning at (2, 0) and slanting upward to the right.    "
 },
@@ -1202,7 +1310,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-24.html#EstimateL4ViaTable",
   "type": "Table",
-  "number": "111",
+  "number": "117",
   "title": "Values of <span class=\"process-math\">\\(f\\)<\/span> on <span class=\"process-math\">\\([0,12]\\text{.}\\)<\/span>",
   "body": " Values of on .       0  3  6  9  12       20  10  5  2  1    "
 },
@@ -1211,7 +1319,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-24.html#figureTwoFindXstars",
   "type": "Figure",
-  "number": "112",
+  "number": "118",
   "title": "",
   "body": " Riemann sum approximations of .    Graph of a decreasing function f(x) on the interval from x = 1 to x = 4. A blue curve slopes downward as x increases. Three left-endpoint rectangles are drawn under the curve, each shaded in light blue, with widths spanning the intervals [1, 2], [2, 3], and [3, 4]. The heights of the rectangles are determined by the function values at x = 1, 2, and 3. Axes are labeled x and y.     Graph of a decreasing function f(x) on the interval from x = 1 to x = 4. The blue curve slopes downward as x increases. Five left‑endpoint rectangles are drawn under the curve, each shaded in light blue. The heights of the rectangles decrease across the intervals [1, 1.6], [1.6, 2.2], [2.2, 2.8], [2.8, 3.4], and [3.4, 4]. Axes are labeled x and y. The rectangles form a left‑endpoint Riemann sum approximation of the area under the curve.     "
 },
@@ -1220,7 +1328,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-24.html#cs-definite-integral-properties",
   "type": "Checkpoint",
-  "number": "113",
+  "number": "119",
   "title": "📝 [Submit] Evaluate Using Integral Properties.",
   "body": " 📝 [Submit] Evaluate Using Integral Properties   Suppose that and . Match each definite integral with its value. Do not use antiderivatives.                                                "
 },
@@ -1229,7 +1337,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-24.html#fig0537",
   "type": "Figure",
-  "number": "114",
+  "number": "120",
   "title": "",
   "body": "  Graph of a smooth curve f(x) that crosses the x-axis near x = −2, rises to a peak slightly above y = 2, then decreases and crosses the x-axis again near x = 0. The curve continues downward to a trough below y = −2 near x = 2, then rises steeply to the right. The region between the curve and the x-axis is shaded, with positive area above the axis on the left and negative area below the axis on the right.   "
 },
@@ -1238,7 +1346,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-24.html#figureIntegralRiemannSumApprox",
   "type": "Figure",
-  "number": "115",
+  "number": "121",
   "title": "",
   "body": "  Graph of a decreasing function f(x) for x between 0.5 and 5. The curve begins near y = 3 when x is about 0.5, then slopes downward smoothly, approaching y = 1 as x reaches 5. Axes are labeled x and y with tick marks along both axes.    "
 },
@@ -1247,7 +1355,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-24.html#figureIntegralMiddleSumApprox",
   "type": "Figure",
-  "number": "116",
+  "number": "122",
   "title": "",
   "body": " A middle sum approximation with .   Graph of a decreasing function f(x) on the interval from x = 1 to x = 5. The curve begins above y = 2 near x = 1 and slopes downward toward y = 1 by x = 5. Four left‑endpoint rectangles are drawn under the curve, each shaded in light blue, spanning the intervals [1, 2], [2, 3], [3, 4], and [4, 5]. The heights of the rectangles decrease from left to right, forming a left‑endpoint Riemann sum approximation of the area under the curve.    "
 },
@@ -1256,7 +1364,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-24.html#AverageValueApp1",
   "type": "Figure",
-  "number": "117",
+  "number": "123",
   "title": "",
   "body": " The average value of on .   Graph of an exponential function f(x) that increases very rapidly on the interval from about x = 20 to x = 40. The curve starts near the x‑axis on the left and rises steeply to a large value by x = 40. The region under the curve from x = 20 to x = 40 is shaded in blue to represent the integral, with the label “integral ≈ 129618.37.” A horizontal red line labeled “average value: y = 10740.46” crosses the graph. A text box near the curve displays the formula f(x) = 225·1.15^x. Grid lines and axes with tick marks are shown.   "
 },
@@ -1274,7 +1382,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-25.html#cs-ftc-evaluate-integrals",
   "type": "Checkpoint",
-  "number": "118",
+  "number": "124",
   "title": "Evaluate Using the Fundamental Theorem of Calculus.",
   "body": " Evaluate Using the Fundamental Theorem of Calculus   Match each definite integral with its exact value.                                         "
 },
@@ -1283,7 +1391,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-25.html#figureSpilledInk",
   "type": "Figure",
-  "number": "119",
+  "number": "125",
   "title": "",
   "body": " A printer has spilled ink on the graph of .   Graph of a highly oscillating function f(x) plotted on a grid. The curve rises and falls several times between x = −4 and x = 8, with peaks and valleys of varying heights. Several large solid black circles of different sizes are drawn on top of the graph at various x-values, obscuring portions of the curve. The axes are labeled x and y.    "
 },
@@ -1292,7 +1400,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-25.html#figurePreviewAct441Ans",
   "type": "Figure",
-  "number": "120",
+  "number": "126",
   "title": "",
   "body": " The net signed area under the graph of is 4-36=-32.   Graph of a linear velocity function v(t) decreasing from v = 20 at t = 0 to about v = −50 at t = 2. The line slopes downward as t increases. The region above the t-axis from t = 0 to t = 1 is shaded in light blue, and the region below the t-axis from t = 1 to t = 2 is shaded in light red. Axes are labeled t and v.    "
 },
@@ -1301,7 +1409,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-25.html#figureAreaUnder1MX2",
   "type": "Figure",
-  "number": "121",
+  "number": "127",
   "title": "",
   "body": " The area under between and is .   Graph of the function f(x) = 1 − x², a downward‑opening parabola. The curve reaches its maximum at (0, 1) and crosses the x‑axis at x = ±1. The region under the curve from x = 0 to x = 1 is shaded in light blue. Axes are labeled x and y.    "
 },
@@ -1310,7 +1418,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-25.html#figureAreaUnder1MhalfX",
   "type": "Figure",
-  "number": "122",
+  "number": "128",
   "title": "",
   "body": " The signed area under between and is .   Graph of the line y = 1 − ½x, which slopes downward from left to right. The region above the x‑axis and to the left of x = 1 is shaded in light blue, forming a triangular area. To the right, the region below the x‑axis and between x = 3 and x = 4 is shaded in light red, forming another triangular area. Axes are labeled x and y.    "
 },
@@ -1319,7 +1427,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-25.html#figureAreaUndercosX",
   "type": "Figure",
-  "number": "123",
+  "number": "129",
   "title": "",
   "body": " The signed area under between and is 1.   Graph of the function f(x) = cos x. The curve begins at its maximum value y = 1 when x = 0, then decreases smoothly as x increases, crossing the x-axis just after x = 1. The region under the curve from x = 0 to x = 1 is shaded in light blue. Axes are labeled x and y.    "
 },
@@ -1337,7 +1445,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-26.html#figureFindAntiderivative1",
   "type": "Figure",
-  "number": "124",
+  "number": "130",
   "title": "",
   "body": " The graph of .   Graph of a piecewise linear function f(x): constant at y = 1 from x = 0 to x = 2, then decreasing linearly to the point (4, 0), and continuing downward to about (5, –0.5).    "
 },
@@ -1346,7 +1454,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-26.html#figureFindAntiderivative2",
   "type": "Figure",
-  "number": "125",
+  "number": "131",
   "title": "",
   "body": " The graph of .   Graph of f(x) formed by two line segments meeting at (1, 0): one rising from (1, 0) to (2, 2) and one rising from (1, 0) to (0, 2).    "
 },
@@ -1355,7 +1463,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-26.html#figureFindAntiderivative3",
   "type": "Figure",
-  "number": "126",
+  "number": "132",
   "title": "",
   "body": " The graph of .   Graph of f(x) = 1 \/ (1 + x⁴), showing a smooth peak at x = 0 with value 1, decreasing symmetrically and approaching 0 as x moves toward −1 and 2.    "
 },
@@ -1364,7 +1472,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-26.html#cs-accumulation-function-values",
   "type": "Checkpoint",
-  "number": "127",
+  "number": "133",
   "title": "Evaluate an Accumulation Function.",
   "body": " Evaluate an Accumulation Function   Suppose that the graph of consists of the following regions:  is above the axis on , forming a triangle of area .  is below the axis on , forming a rectangle of area .  is above the axis on , forming a triangle of area .  Define Match each value of .                                             "
 },
@@ -1373,7 +1481,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-26.html#figureFindAntiderivative1Ans",
   "type": "Figure",
-  "number": "128",
+  "number": "134",
   "title": "",
   "body": " Graphs of . The graph for which is in solid blue. The graph for which is in dashed red.   Two curves are shown: a red curve and a blue curve, both increasing from the left and leveling off near x = 4. The red curve starts higher and stays above the blue curve for all x.    "
 },
@@ -1382,7 +1490,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-26.html#figureFindAntiderivative2Ans",
   "type": "Figure",
-  "number": "129",
+  "number": "135",
   "title": "",
   "body": " Graphs of . The graph for which is in solid blue. The graph for which is in dashed red.   Two increasing curves are shown. The blue curve starts at the point (0, 0) and rises smoothly to the right. The red curve starts at (0, 1) and rises above the blue curve for all x.    "
 },
@@ -1391,7 +1499,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-26.html#AntiOf1Over1PX4",
   "type": "Figure",
-  "number": "130",
+  "number": "136",
   "title": "",
   "body": " Two different views of , an antiderivative of .        "
 },
@@ -1409,7 +1517,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-27.html#figureAreaUnder4",
   "type": "Figure",
-  "number": "131",
+  "number": "137",
   "title": "",
   "body": " The area under on the interval .   A horizontal line at y = 4 represents f(t). A shaded rectangle extends from t = 1 to t = x, with height 4.    "
 },
@@ -1418,7 +1526,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-27.html#figureAreaUnder2tP2",
   "type": "Figure",
-  "number": "132",
+  "number": "138",
   "title": "",
   "body": " The area under on the interval .   A straight line labeled f(t) increases from left to right. The shaded region is the area under the line from t = 0 to t = x, forming a triangle.    "
 },
@@ -1427,7 +1535,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-27.html#figureAreaUnder2tP2third",
   "type": "Figure",
-  "number": "133",
+  "number": "139",
   "title": "",
   "body": " The area under on the interval .   A straight line labeled f(t) rises from left to right. The shaded region is the area under the line from t = 0 to t = x, with a vertical line at t = x forming the right boundary.    "
 },
@@ -1436,7 +1544,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-27.html#PatternFTCPart2",
   "type": "Table",
-  "number": "134",
+  "number": "140",
   "title": "For functions <span class=\"process-math\">\\(A(x), B(x)\\)<\/span> and <span class=\"process-math\">\\(C(x)\\)<\/span> from the previous two exercises, do you spot a pattern with their derivatives?",
   "body": " For functions and from the previous two exercises, do you spot a pattern with their derivatives?                            "
 },
@@ -1445,7 +1553,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-27.html#FTCDiscover1",
   "type": "Figure",
-  "number": "135",
+  "number": "141",
   "title": "",
   "body": " An illustration of .   Graph of f(t) with a shaded region under the curve from the left up to t = x, where a vertical line at t = x marks the right boundary of the shaded area.   "
 },
@@ -1454,7 +1562,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-27.html#cs-second-ftc-computation",
   "type": "Checkpoint",
-  "number": "136",
+  "number": "142",
   "title": "Differentiate the Integral Function.",
   "body": " Differentiate the Integral Function   Use the Second Fundamental Theorem of Calculus to match each function with its derivative.                                                       "
 },
@@ -1463,7 +1571,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-27.html#fundthm1",
   "type": "Figure",
-  "number": "137",
+  "number": "143",
   "title": "",
   "body": " The graph of .   A curve f rises from the origin to a peak and then decreases toward x = 1. The region under the curve from x = 0 to x = u is shaded, with u marked between 0 and 1.   "
 },
@@ -1472,7 +1580,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-27.html#figureIntegralCubic52",
   "type": "Figure",
-  "number": "138",
+  "number": "144",
   "title": "",
   "body": " The graph of defines a function via .   Graph of f(t), a smooth curve that rises to a peak near t = −1, dips below the axis near t = 1, and then increases steeply for t > 2.    "
 },
@@ -1481,7 +1589,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-27.html#PatternFTCPart2Ans",
   "type": "Table",
-  "number": "139",
+  "number": "145",
   "title": "Functions <span class=\"process-math\">\\(A(x), B(x)\\)<\/span> and <span class=\"process-math\">\\(C(x)\\)<\/span> and their derivatives.",
   "body": " Functions and and their derivatives.                            "
 },
@@ -1499,7 +1607,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-28.html#cs-substitution-antiderivatives",
   "type": "Checkpoint",
-  "number": "140",
+  "number": "146",
   "title": "Reverse the Chain Rule.",
   "body": " Reverse the Chain Rule   Match each indefinite integral with its antiderivative.                                                                 "
 },
