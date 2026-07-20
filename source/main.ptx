@@ -33,6 +33,11 @@
       <xi:include href="./notes/week02.ptx"/>
 
     </chapter> -->
+
+     <!-- <chapter xml:id="syllabuschapter">
+      <title>Syllabus</title> -->
+        <xi:include href="./syllabus/syllabus.ptx" />
+     <!-- </chapter> -->
     
     <chapter xml:id="handouts">
       <title>Daily Prep</title>

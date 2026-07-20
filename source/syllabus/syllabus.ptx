@@ -1,176 +1,729 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<section xml:id="syllabus" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xml:id="syllabus" xmlns:xi="http://www.w3.org/2001/XInclude"> -->
   <title>Syllabus</title>
 
-  <introduction>
-    <p>
-      Welcome to what promises to be an exciting and fun semester of ...
-    </p>
-  </introduction>
   <!-- Include chapters -->
-  <subsection xml:id="sec-course-info">
+  <section xml:id="sec-course-info">
     <title>Course Information</title>
 
     <p>
-      This is the syllabus for <term>course name (MATH xxx, section xxx)</term> for semester 20xx.
-      It is a x credit course.
+      This is the syllabus for <term>Calculus 1 (MATH 221)</term> for Fall 2026.
+      It is a 4-credit course offered through St. Cloud State University.
+      <!-- use a description list (dl) for short items -->
       <dl>
-      <li>
-        <title>Instructor</title>
+        <li>
+          <title>Instructor</title>
 
-        <p>
-          Prof.
-          Lastname, Office Location, <url href="mailto:prof.lastname@example.edu">prof.lastname@example.edu</url>.
-        </p>
-      </li>
+          <p>
+            Dr. Dale Buske, CH 367A, <url href="mailto:drbuske@stcloudstate.edu" visual="drbuske@stcloudstate.edu"/>.
+          </p>
+        </li>
 
-      <li>
-        <title>Student Hours</title>
+        <li>
+          <title>Student Hours</title>
 
-        <p>
-          TBD
-        </p>
+          <p>
+            TBD; posted on my office door.  
+          </p>
+        </li>
 
-        <p>
-          <alert>Important</alert>: I <em>want</em> to see you in student hours, and will happily make appointments with you outside of the regular hours.  I'm also available by email and will respond within 24 hours, usually much sooner.  There is little I enjoy more than discussing mathematics, so you are really doing me a favor by coming to see me.
-        </p>
-      </li>
+        <li>
+          <title>Accessibility Services</title>
+          <p>Please contact Student Accessibility Services (SAS), <url href="mailto:sas@stcloudstate.edu" visual="sas@stcloudstate.edu"/> or 320-308-4080, Centennial Hall 202, to meet and discuss reasonable and appropriate accommodations.
+          </p>
+        </li>
 
-      <li>
-        <title>Class meets</title>
+        <li>
+          <title>Class Meetings</title>
 
-        <p>
-          course times and location.
-        </p>
-      </li>
+          <p>
+            Attendance and active participation in class is strongly correlated to academic success.  Roughly half of each class meeting will be spent in active learning activities that cannot be easily replaced by watching a video or reading a book.  So you will find attending class to be quite important, useful, and (if all goes well) fun!     
+          </p>
 
-      <li>
-        <title>Course Description</title>
+          <!-- <table xml:id="MeetingDates" >
+<title>Exam Dates</title>
+<tabular halign="center" bottom="minor" top="minor">
+<row header="no" bottom="medium" top="medium">
+<cell> <alert>Date</alert> </cell>
+<cell> <alert>Time</alert> </cell>
+</row>
 
-        <p>
-          course description from catalog
-        </p>
-      </li>
+<row>
+<cell> June 2 </cell> 
+<cell> 9:00-10:30 AM </cell>   
+</row>
 
-      <li>
-        <title>Prerequisite</title>
+<row>
+<cell> June 16 </cell> 
+<cell> 9:00-10:30 AM </cell>   
+</row>
 
-        <p>
-          list of prerequisites
-        </p>
-      </li>
+<row>
+<cell> June 30 </cell> 
+<cell> 9:00-10:30 AM </cell>   
+</row>
 
-      <li>
-        <title>Textbook and course materials</title>
+<row>
+<cell> July 14 </cell> 
+<cell> 9:00-10:30 AM </cell>   
+</row>
 
-        <p>
-          <pubtitle>textbook name</pubtitle>
-          by textbook author.
-        </p>
-      </li>
+<row>
+<cell> July 23 </cell> 
+<cell> 9:00-11:15 AM </cell>  
+</row>
+
+</tabular>
+</table> -->
+
+        </li>
+
+        <li>
+          <title>Course Description</title>
+
+          <p>
+            Limits, continuity, differentiation, applications of derivatives, integration.  4 cr
+          </p>
+        </li>
+
+        <li>
+          <title>Prerequisite</title>
+
+          <p>
+            Math 113 (Trigonometry) or Math 115 (Precalculus)
+          </p>
+        </li>
+
+        <li>
+          <title>Academic Integrity</title>
+          <p>There is nothing more important in this class than <em>academic integrity</em>.  Sure, you want to master the topics in the course (and perhaps earn a good grade).  Sure, you want to enjoy doing it.  And, it is also important to know that your instructor intends to play his part in helping you be successful.  Succeeding, as you know, will require hard work and significant effort.  Cutting corners will not serve you well.  
+          </p>
+
+          <p>University policy is clear:  
+            <blockquote><p><em>Work submitted by an individual as her/his/their own course work in connection with an application for a position, promotion, tenure, salary increase, or other academic activity must be academically honest and a product of his or her own efforts. (A.II, 2.4, SUB.d.2, Professional and Ethical Standards for Employees and Students).</em></p>
+            </blockquote>
+          </p>
+
+          <p>Cheating cannot be tolerated. All work must be your own.  Suspected incidents of academic dishonesty will be aggressively managed via the <url href="https://policies.stcloudstate.edu/SCSU/Viewer.aspx?id=6" visual="policies.stcloudstate.ed/SCSU/"> procedure found in the SCSU student handbook</url>.  
+          </p>
+        </li>
+
+        <li>
+          <p>
+            In this course, students are likely to use AI tools to enhance their learning experience. However, it is essential to use these tools ethically and responsibly. AI can be a valuable resource for understanding complex concepts and solving problems, but it should not replace your own critical thinking and problem-solving efforts. All submitted work must be your own, and any assistance from AI tools must be properly acknowledged on written work.  The use of AI is forbidden on assessments of your knowledge (e.g. exams, MyOpenMath). Using AI to complete work without acknowledgment will be considered a violation of academic integrity policies.  In mathematics, AI often gives incorrect responses (i.e. hallucinations) and large language models such as ChatGPT are widely deemed “unreliable” in doing mathematics.  Relaying AI responses that are incorrect will earn no credit.  However, not acknowledging the use of AI in a response is far worse – it is academic misconduct.   
+          </p>
+        </li>
+
+        <li>
+          <title>Course Materials</title>
+
+          <p>
+            The course <term>textbook</term> can be found at <url href="https://activecalculus.org/single2e/" visual="https://activecalculus.org/single2e/"/>.  
+            <ul>
+              <li>
+                <p>
+                  The textbook is interactive and accessible via a laptop, phone, or many other devices.  
+                </p>
+              </li>
+              <li>
+                <p>
+                  The textbook is built for <term>active learning</term>.  The activities in the text are a primary focus of your learning.  If you have trouble answering questions in a given activity, know that solutions to these are found on the  <url href="https://drbuske.github.io/Math221/course/frontmatter.html" visual="course website"/>.  The reading in the textbook is brief - this is intentional.  The primary focus will be working through the activities to explore the content.  
+                </p>
+              </li>
+              <li>
+                <p>
+                 You will need to purchase an inexpensive course packet at the Husky Bookstore with notes and daily activities and bring it to class each day.  If you have an electronic tablet, you may not need to purchase a course packet.  A .pdf copy of this packet will be posted on D2L Brightspace if you wish to print yourself rather than purchase.  <em>Obtaining this packet during the first week of class is expected. </em>
+                </p>
+              </li>
+            </ul>   
+          </p>
+
+          <p>
+            Course materials beyond the textbook and course packet can be found at <url href="https://drbuske.github.io/Math221/course/frontmatter.html">https://drbuske.github.io/Math221/course/</url>.  There you will find items that include the course syllabus, daily prep assignments, answers to activities from the textbook, and practice exams.  
+          </p>
+            
+          <p>
+            <term>D2L Brightspace</term> will be the learning management tool used to organize the course.  Grades, a calendar, and assignments as well as announcements will be posted on D2L.  Visit <url href="http://myhuskynet.stcloudstate.edu" visual="http://myhuskynet.stcloudstate.edu"/> and login to your account using your Huskynet ID and password.  
+          </p>
+
+          <p>
+            Electronic homework will be done via the <url href="http://www.myopenmath.com" visual="MyOpenMath"/> platform located at <url href="http://www.myopenmath.com" visual="http://www.myopenmath.com"/>.  A free account can be attained by using any email address and choosing a password.  Please use your real name as grades need to be manually transferred to D2L.  
+          </p>
+
+          <p>Course ID: <term>332792</term></p>
+
+          <p>Enrollment key: <term>Buske221F26</term></p>
+        </li>
       </dl>
     </p>
 
-
+  <!-- Use paragraphs to break apart subsections -->
     <paragraphs>
-      <title>Course Overview</title>
+      <title>Tips for Success</title>
 
       <p>
+        Engage your peers.  Engage your instructor.  Engage your Learning Assistant(s).  Your success is in their best interest too!  Mathematics is a discipline that benefits greatly from working together in gaining a deep understanding.  
+      </p>
+      <p>
+      Practice.  <em>Do</em> math.  Watching others do math is a passive activity with far less value than attempting to solve problems. We learn from our mistakes and struggles.  If it were easy, everyone would do it and it would have less value. Remember the rule of thumb – expect to study 2-3 hours outside of class for every hour in class.  That means 8-12 hours per week of study out of class!   
+      </p>
+      <p>
+        Daily Prep assignments have been structured to maximize your learning experience prior to (and after) our class meetings.  This effort is as critical as any in your success.  95% of what you learn will be outside the classroom.  Daily Prep is a significant piece of this learning. 
+      </p>
+      <p>
+        As you have learned from previous mathematics courses, practice will make you more proficient and will help you better understand material you have read, that you have observed in videos, that you have experienced via interactive applets, and that has been discussed in class.  
       </p>
     </paragraphs>
-  </subsection>
+  </section>
 
 
-  <subsection xml:id="sec-assessments">
+
+  <section>
+    <title>Topics and Learning Outcomes</title>
+    <p>
+      <dl>
+        <li>
+          <title>Topics</title>
+          <p>
+            <em>Understanding the Derivative:</em> How do we measure velocity?; The notion of a limit; The derivative of a function at a point; The derivative function; Interpreting, estimating, and using the derivative; The second derivative; Limits, Continuity, and Differentiability; The tangent line approximation.  
+          </p>
+
+          <p>
+            <em>Computing Derivatives:</em> Elementary derivative rules; The sine and cosine functions; The product and quotient rules; Derivatives of other trigonometry functions; The chain rule; Derivatives of inverse functions; Derivatives of functions given implicitly
+          </p>
+
+          <p> <em>Using Derivatives:</em> Related rates; Using derivatives to evaluate limits; Using derivatives to identify extreme values; Global optimization; Applied optimization; 
+          </p>
+
+          <p> <em>The Definite Integral:</em> Determining distance traveled from velocity; Riemann sums; The definite integral; The Fundamental Theorem of Calculus.    
+          </p>
+
+          <p> <em>Evaluating Integrals:</em> Constructing accurate graphs of antiderivatives; The Second Fundamental Theorem of Calculus; Integration by substitution.  
+          </p>
+
+        </li>
+
+        <li>
+          <title>Learning Outcomes</title>
+          <p>
+            <ul>
+  <li>Calculate limits using graphical, algebraic and numerical methods and the Squeeze Theorem.</li>
+  <li>Determine continuity of a function at points, identify various types of discontinuities and identify intervals of continuity for functions.</li>
+  <li>Calculate derivatives from the definition and using differentiation rules and implicit differentiation.</li>
+  <li>Use differentiation to identify tangent lines, to solve geometric problems and to solve problems involving rates of change.</li>
+  <li>Solve optimization and related-rates problems by analytic methods.</li>
+  <li>Graph a function, showing all relevant information such as relative extrema, inflection points, and asymptotes, with analytic methods and without the aid of graphing technology.</li>
+  <li>Approximate roots of equations by using the bisection method and Newton’s method.</li>
+  <li>Calculate integrals by using the Fundamental Theorem of Calculus, u-substitution, and observations about symmetry of graphs.</li>
+  <li>Use integration to find the area under a curve, to solve problems involving net change, and to solve other geometric problems.</li>
+  <li>State and apply named theorems of calculus (the Intermediate Value Theorem, the Mean Value Theorem, and the Fundamental Theorem of Calculus).</li>
+  <li>Identify whether a derivative or an integral (or neither) is more appropriate for use in a given problem.</li>
+  <li>Communicate their knowledge of the basic principles of Calculus I, both orally (e.g. class discussions) and in writing (e.g. written assessments).</li>
+</ul>
+          </p>
+        </li>
+      </dl>
+    </p>
+  </section>
+  
+  <section xml:id="subsec-calendar">
+    <title>Calendar</title>
+    <p>
+      Below is an estimate for when we will discuss various topics in the text and when exams are scheduled.     
+    </p>
+
+<table xml:id="schedule-table">
+  <title>Course Schedule</title>
+<tabular halign="center" bottom="minor" top="minor">
+<row header="no" bottom="medium" top="medium">
+      <cell><alert>Week Starting</alert></cell>
+      <cell><alert>Monday</alert></cell>
+      <cell><alert>Tuesday</alert></cell>
+      <!-- <cell><alert>Wednesday</alert></cell> -->
+      <cell><alert>Thursday</alert></cell>
+      <cell><alert>Friday</alert></cell>
+    </row>
+
+    <row>
+      <cell><alert>8/24</alert></cell>
+      <cell>1.1 </cell>
+      <cell>1.1</cell>
+      <!-- <cell>1.3 Computation with Sage</cell> -->
+      <cell>1.2 </cell>
+      <cell>1.2</cell>
+    </row>
+
+    <row>
+      <cell><alert>8/31</alert></cell>
+      <cell>1.3</cell>
+      <cell>1.3</cell>
+      <!-- <cell>2.3 The span of a set of vectors</cell> -->
+      <cell>1.4</cell>
+      <cell>1.4</cell>
+    </row>
+
+    <row>
+      <cell><alert>9/7</alert></cell>
+      <cell><em>No Class</em></cell>
+      <cell>1.5</cell>
+      <!-- <cell>1.5</cell> -->
+      <cell>1.5</cell>
+      <cell>1.6</cell>
+    </row>
+
+    <row>
+      <cell><alert>9/14</alert></cell>
+      <cell>1.6</cell>
+      <cell>1.7</cell>
+      <!-- <cell><alert>Review &amp; Exam 3</alert></cell> -->
+      <cell>1.7</cell>
+      <cell>1.8</cell>
+    </row>
+
+    <row>
+      <cell><alert>9/21</alert></cell>
+      <cell>Exam 1</cell>
+      <cell>1.8</cell>
+      <!-- <cell>5.1 Definition of vector spaces</cell> -->
+      <cell>2.1</cell>
+      <cell>2.1</cell>
+    </row>
+
+    <row>
+      <cell><alert>9/28</alert></cell>
+      <cell>2.2</cell>
+      <cell>2.3</cell>
+      <!-- <cell>6.1 The dot product</cell> -->
+      <cell>2.3</cell>
+      <cell>2.4</cell>
+    </row>
+
+    <row>
+      <cell><alert>10/5</alert></cell>
+      <cell>2.5</cell>
+      <cell>2.5</cell>
+      <!-- <cell>6.5 Orthogonal least squares</cell> -->
+      <cell>2.6</cell>
+      <cell>2.6</cell>
+    </row>
+
+        <row>
+      <cell><alert>10/12</alert></cell>
+      <cell><em>No Class</em></cell>
+      <cell>2.7</cell>
+      <!-- <cell>6.5 Orthogonal least squares</cell> -->
+      <cell>2.7</cell>
+      <cell>3.1</cell>
+    </row>
+
+      <row>
+      <cell><alert>10/19</alert></cell>
+      <cell>Exam 2</cell>
+      <cell>3.1</cell>
+      <!-- <cell>6.5 Orthogonal least squares</cell> -->
+      <cell>3.2</cell>
+      <cell>3.2</cell>
+    </row>
+
+     <row>
+      <cell><alert>10/26</alert></cell>
+      <cell>3.3</cell>
+      <cell>3.3</cell>
+      <!-- <cell>6.5 Orthogonal least squares</cell> -->
+      <cell>3.5</cell>
+      <cell>3.5</cell>
+    </row>
+
+      <row>
+      <cell><alert>11/2</alert></cell>
+      <cell>3.6</cell>
+      <cell>3.6</cell>
+      <!-- <cell>6.5 Orthogonal least squares</cell> -->
+      <cell>4.1</cell>
+      <cell>4.1</cell>
+    </row>
+
+      <row>
+      <cell><alert>11/9</alert></cell>
+      <cell>4.2</cell>
+      <cell>4.2</cell>
+      <!-- <cell>6.5 Orthogonal least squares</cell> -->
+      <cell>Exam 3</cell>
+      <cell>4.3</cell>
+    </row>
+
+     <row>
+      <cell><alert>11/16</alert></cell>
+      <cell>4.3</cell>
+      <cell>4.4</cell>
+      <!-- <cell>6.5 Orthogonal least squares</cell> -->
+      <cell>4.4</cell>
+      <cell>5.1</cell>
+    </row>
+
+         <row>
+      <cell><alert>11/23</alert></cell>
+      <cell>5.1</cell>
+      <cell>5.2</cell>
+      <!-- <cell>6.5 Orthogonal least squares</cell> -->
+      <cell><em>No Class</em></cell>
+      <cell><em>No Class</em></cell>
+    </row>
+
+      <row>
+      <cell><alert>11/30</alert></cell>
+      <cell>5.2</cell>
+      <cell>5.3</cell>
+      <!-- <cell>6.5 Orthogonal least squares</cell> -->
+      <cell>5.3</cell>
+      <cell>Review</cell>
+    </row>
+
+  </tabular>
+</table>
+
+    <p>
+      Exams will cover the following material from the course.
+    </p>
+
+    <table xml:id="ExamDates" >
+<title>Exam dates and topics</title>
+<tabular halign="center" bottom="minor" top="minor">
+<row header="no" bottom="medium" top="medium">
+<cell> <alert>Exam</alert> </cell>
+<cell> <alert>Date</alert> </cell>
+<cell> <alert>Topics</alert> </cell>
+</row>
+
+<row>
+<cell> Exam 1 </cell> 
+<cell> September 21 </cell> 
+<cell> Sections 1.1-1.7 </cell>     
+</row>
+
+<row>
+<cell> Exam 2 </cell> 
+<cell> October 19 </cell>  
+<cell> Sections 1.8-2.7 </cell>  
+</row>
+
+<row>
+<cell> Exam 3 </cell> 
+<cell> November 12 </cell> 
+<cell> Sections 3.1-3.3, 3.5-4.2 </cell>  
+</row>
+
+<row>
+<cell> Final Exam </cell> 
+<cell> See <url href="https://www.stcloudstate.edu/registrar/registration/finals.aspx">SCSU final exam schedule</url> </cell> 
+<cell> 1.1-3.3, 3.5-5.3 </cell> 
+</row>
+
+</tabular>
+</table>
+
+<p>
+To be successful, sufficient time will need to be dedicated to your studies.  Studying on weekends to get ahead, especially if holding a job or other commitments during the work week, will be helpful.  Below is a table with time you might expect to spend on each aspect of the course (for each section of the textbook).  
+</p>
+
+<table xml:id="StudyTime" >
+<title>Estimated Time on Various Aspects of the Course</title>
+<tabular halign="center" bottom="minor" top="minor">
+<row header="no" bottom="medium" top="medium">
+<cell> <alert>Item</alert> </cell>
+<cell> <alert>Estimated Time Per Section</alert> </cell>
+</row>
+
+<row>
+<cell> Reading Textbook </cell> 
+<cell> 30-60 minutes </cell>     
+</row>
+
+<row>
+<cell> Daily Prep (incl. homework) </cell> 
+<cell> 60-120 minutes </cell>    
+</row>
+
+<row>
+<cell> Electronic Homework (MOMwork) </cell> 
+<cell> 30 minutes </cell>  
+</row>
+
+<row>
+<cell> Reviewing in-class activities </cell> 
+<cell> 15 minutes </cell>  
+</row>
+
+</tabular>
+</table>
+
+  </section> 
+
+  <!-- Other subsections for larger dividers -->
+  <section xml:id="sec-assessments">
     <title>Assessments and Grades</title>
+
+    <p>
+<dl>
+  
+
+      <li>
+        <title>Daily Prep</title>
+        <p>
+          Normally, prior to two of the four class meetings each week, you will have a short preparatory assignment to complete.  These are graded based on effort and completion rather than on correctness.  Find them at the course website: <url href="https://drbuske.github.io/Math221/course/">https://drbuske.github.io/Math221/course/</url>.  
+        </p>
+        <p>Daily Prep submissions will be a <em>single (scanned) PDF document</em> uploaded via D2L Brightspace.  It is almost certainly better that your valuable time be spent on understanding mathematical concepts than on typing solutions.   Scanning your writing is likely faster, easier, and, frankly, preferred.   
+        </p>
+      </li>
+
+      <li>
+    <title>
+      MOMwork
+    </title>
+  
+  <p> Associated with the course is an open source (FREE) electronic homework system (MyOpenMath).  We will use this for MOMwork.  To access this, use the link <url href="https://www.myopenmath.com/" visual="https://www.myopenmath.com/"/>.
+  </p> 
+
+      <p>Course ID: <alert>332792</alert></p>
+      <p>Enrollment Key: <alert>Buske221F26</alert></p>
+      </li>
+
+      <li>
+        <title>In-class Quizzes</title>
+        <p>
+          Each Thursday for exactly the first 5 minutes of class, a group quiz will take place.  It will consist of questions that follow up on daily class activities from the week prior.  Each group will submit one quiz.  Only members of each group that are present will be awarded credit.  
+        </p>
+      </li>
+
+      <li>
+        <title>Exams</title>
+        <p>
+          There will be two (2) gateway exams, four (4) written exams and two (2) oral exams.  The gateway exams appear in MyOpenMath and are aimed at mastery.  You must earn 100% on these to earn any (and all) credit.  You will have as many attempts as you need in order to pass by the stated deadline if you start the process early.  You will need to upload your work in answering the final question on each gateway exam.  
+        </p>
+        <p>
+        There will be a comprehensive final and three other written exams during the semester.  All exams will be independent assessments of your knowledge.  
+        </p>
+        <p>
+        The oral exams will be 15-20 minutes in length.  The first will take place just prior to midterm and the second will take place during the last two weeks of the term.   The concept may seem intimidating at first, but past student response suggest this to be a valuable means of assessment and academic growth.
+        </p>
+
+        <table xml:id="OralExamRubric" >
+<title>Oral Exam Rubric</title>
+<tabular halign="center" bottom="minor" top="minor">
+<row header="no" bottom="medium" top="medium">
+<cell> <alert>Points</alert> </cell>
+<cell> <alert>Description</alert> </cell>
+</row>
+
+<row>
+<cell> 1  </cell> 
+<cell> Unsatisfactory execution and/or communication with fundamental errors.   </cell>     
+</row>
+
+<row>
+<cell> 2 </cell> 
+<cell> Flawed execution with nontrivial errors and poor communication.  </cell>    
+</row>
+
+<row>
+<cell> 3 </cell> 
+<cell> Adequately executed but with some nontrivial errors and inconsistent communication.   </cell>  
+</row>
+
+<row>
+<cell> 4 </cell> 
+<cell> Generally well-executed but may have minor communication flaws and some math errors.  </cell>  
+</row>
+
+<row>
+  <cell>5</cell>
+  <cell>Well-executed, well-communicated, essentially correct.</cell>
+</row>
+
+</tabular>
+</table>
+
+      </li>
+
+      <li>
+        <title>Grading</title>
+        <p>
+          I will use my best professional judgment in determining grades. While many courses utilize 90%, 80%, 70%, and 60% as cutoffs for A, B, C, and D grades, these will serve only as guidelines.  Averages above these marks will guarantee these grades but lower marks may earn higher final grades.  
+        </p>
+
+        <table xml:id="GradeWeights" >
+<title>Grade weighting</title>
+<tabular halign="center" bottom="minor" top="minor">
+<row header="no" bottom="medium" top="medium">
+<cell> <alert>Item</alert> </cell>
+<cell> <alert>Weighting</alert> </cell>
+</row>
+
+<row>
+<cell> Daily Prep </cell> 
+<cell> 15% </cell>     
+</row>
+
+<row>
+<cell> MOMwork (MyOpenMath) </cell> 
+<cell> 25% </cell>     
+</row>
+
+<row>
+<cell> In-class Quizzes </cell> 
+<cell> 5% </cell>    
+</row>
+
+<row>
+<cell> Gateway Exams </cell> 
+<cell> 6% </cell>  
+</row>
+
+<row>
+<cell> Written Exams (3) </cell> 
+<cell> 27% </cell>  
+</row>
+
+<row>
+<cell> Oral Exams (2) </cell> 
+<cell> 10% </cell>  
+</row>
+
+<row>
+<cell> Final Exam </cell> 
+<cell> 12% </cell>  
+</row>
+
+</tabular>
+</table>
+      </li>
+</dl>
+    </p>
+
+  </section>
+
+  <section xml:id="sec-221FAQ">
+    <title>Frequently Asked Questions</title>
+    <alert>Does this course meet Goal Area 4?</alert> 
+    <p>This course meets the Liberal Education Goal Area 4 requirement. Students may enroll in this class upon earning a satisfactory score on a mathematics placement test or a grade of C- or better in MATH 113 or MATH 115.
+    </p>
+
+    <p>
+      
+    </p>
+
+    <alert>What about late work?</alert>
+    <p>
+      If you experience difficulties and cannot meet a given deadline for legitimate reasons (e.g. health, computer issues, other items beyond your control) please reach out and communicate as soon as possible.  Every circumstance will be different, but reasonable accommodation will be made when necessary.
+    </p>
+
+    <p>
+      
+    </p>
+
+    <alert>What is with the Learning Assistants</alert>
+    <p>
+      We are very fortunate to have a Learning Assistant supporting our class this semester.  They will help facilitate many of our team activities during class and with oral exams.  They are a key resource to which you can turn to for help in addition to your instructor.  They are also available in the tutor lab (see D2L for schedule).  
+    </p>
+
+    <p>
+      
+    </p>
+
+    <alert>Is tutoring available?</alert>
+    <p>
+      Yes.  FREE tutoring is available.  See D2L announcements for details. 
+    </p>
 
     <p>
     </p>
 
+    <alert>Is there a specific time each day when items are due?</alert>
+    <p>
+      Yes.  Daily Prep assignments will due when class begins.   Expect 11:59 p.m. (Minnesota time) to be the deadline for electronic MOMwork assignments.  
+    </p>
 
-    <paragraphs>
-      <title>Learning targets</title>
+    <p>
+    </p>
 
-      <p>
-        By the end of this course, you should be able to:
-        <ol>
-          <li>
-            <p>
-            </p>
-          </li>
+    <alert>What if I need to take this course again in the future?  (Multiple Repeats)</alert>
+    <p>
+      Students with two previous unsuccessful attempts in this course (defined by grades of D, F, W, FW, or FN) will need special permission in order to register again. That is, students will only be allowed a maximum of one repeat attempt in this course before needing to obtain special permission to register.  
+    </p>
 
-          <li>
-            <p>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </paragraphs>
+    <p>
+    </p>
 
+    <alert>If I am a mathematics major, how does this course meet program outcomes? </alert>
+    <p>
+      Math 221 supports the following student learning outcomes from the Mathematics BA and BS programs:
+<ul> 
+  <li> Outcome 1, demonstrate mastery of a body of mathematical knowledge</li>
+<li> Outcome 2, reason mathematically</li>
+<li> Outcome 3, apply mathematics to solve problems using analytic, graphing, and numerical methods</li>
+<li> Outcome 4, communicate in the language of mathematics, both orally and in writing </li>
+<li> Outcome 5, demonstrate an understanding of the breadth of mathematics and the connections between mathematics and other disciplines </li>
+</ul>
+    </p>
 
-    <paragraphs>
-      <title>Assessment of Learning Targets</title>
+     <table xml:id="PLOs" >
+<title>Program Learning Outcomes</title>
+<tabular halign="center" bottom="minor" top="minor">
+<row header="no" bottom="medium" top="medium">
+<cell> <alert>Program Learning Outcome</alert> </cell>
+<cell> <alert>Elaboration/Examples</alert> </cell>
+<cell> <alert>Assessment</alert> </cell>
+</row>
 
-      <p>
-      </p>
-    </paragraphs>
+<row>
+<cell><p>Students will demonstrate mastery of a body of mathematical knowledge</p> </cell>
+<cell> <p>Students will demonstrate an understanding of the meaning of the derivative in terms of a rate of change and local linearization and they will be able to use derivatives to solve a variety of problems.</p>
 
+<p>Students will demonstrate an understanding of the meaning of the definite integral both as a limit of Riemann sums and as the net accumulation of change and will use integrals to solve a variety of problems.</p>
 
-    <paragraphs>
-      <title>Final Exam</title>
+<p>Students will demonstrate an understanding of the relationship between the derivative and the definite integral as expressed in both parts of the Fundamental Theorem of Calculus.</p>
+ </cell>
+<cell> Quizzes, Oral and Written Examinations, 
+MyOpenMath
+ </cell>
+</row>
 
-      <p>
-      </p>
-    </paragraphs>
+<row>
+<cell> <p>Students will reason mathematically</p> </cell>
+<cell> <p>Students will determine the reasonableness of solutions, including sign, size, relative accuracy, and units of measurement. </p></cell>
+<cell> <p>Daily Prep, Quizzes, Written Exams, MyOpenMath</p> </cell>
+</row>
 
+<row>
+<cell> <p>Students will apply mathematics to solve problems using analytic, graphing and numerical methods</p> </cell>
+<cell> <p>Students will identify functions represented in a variety of ways: graphical, numerical, analytical, or verbal. They will understand the connections among these representations.
+</p><p>
+Students will use technology to help solve problems, experiment, interpret results, and verify conclusions.
+</p></cell>
+<cell> <p>Daily Prep, Quizzes, Oral and Written Exams, 
+MyOpenMath
+</p> </cell>
+</row>
 
-    <paragraphs>
-      <title>Assessment of Mathematical Engagement</title>
+<row>
+<cell> <p>Students will communicate in the language of mathematics, both orally and in writing</p> </cell>
+<cell> <p>Students will communicate calculus concepts both orally and in well-written sentences and should be able to explain solutions to problems.
+</p></cell>
+<cell> <p>Oral and Written Examinations
+</p> </cell>
+</row>
 
-      <p>
-        Your level of effort and engagement will be assessed through your participation in class and completion of a variety of homework assignments.
-        <dl>
-        <li>
-          <title>Participation</title>
+<row>
+<cell> <p>Students will demonstrate an understanding of the breadth of mathematics and the connections between mathematics and the other disciplines</p> </cell>
+<cell> <p>Students will develop an appreciation of calculus as a coherent body of knowledge and as a human accomplishment.
+</p></cell>
+<cell> <p>Daily Prep, MOMwork
+</p> </cell>
+</row>
 
-          <p>
-          </p>
-        </li>
+</tabular>
+</table>
+  </section>
 
-        <li>
-          <title>Daily Prep Assignments</title>
-
-          <p>
-          </p>
-        </li>
-
-        <li>
-          <title>Practice Problems</title>
-
-          <p>
-          </p>
-        </li>
-
-        <li>
-          <title>Written Homework</title>
-
-          <p>
-          </p>
-        </li>
-        </dl>
-      </p>
-    </paragraphs>
-
-
-    <paragraphs>
-      <title>Final Grades</title>
-
-      <p>
-      </p>
-    </paragraphs>
-  </subsection>
-  <!-- Since some parts of the syllabus are used in multiple courses, the following are included as separate files that can easily be copied elsehwere. -->
-  <xi:include href="./subsec-policies.ptx" />
-  <xi:include href="./subsec-dates.ptx" />
-</section>
+</chapter>
