@@ -2913,13 +2913,121 @@ var ptx_lunr_docs = [
   "url": "past_exams-3.html",
   "type": "Handout",
   "number": "",
+  "title": "Exam 1 - Fall 2025",
+  "body": " Exam 1 - Fall 2025   Topics  1.1-1.7  Be sure to try each question before looking at the solutions.   Questions   Scientists are monitoring ground elevation near a volcano to detect signs of potential eruption. The elevation , in meters, is measured at regular intervals of time , in days.  Ground elevation near a volcano.    (days)  (m)    0  1200.0    2  1200.8    4  1201.7    6  1202.5    8  1203.0       Estimate using a central difference. Be sure to include units on your response.    Does appear to be positive or negative? Explain.    What are the units on ? In words, interpret the meaning of the value of .         meters per day     appears to be negative since the rate of increase of seems to be decreasing at days.     ; this is the rate at which the rate of height increase each day, increases       On draw the graph of a function for which   ,   ,   , and  the average rate of change of on the interval is zero.  Clearly label values of points on the graph at and .  Graph a function meeting the required conditions.   An empty coordinate axes system.       Answers will vary. However, they all will have the same -coordinate at and . And, they will be below the -axis, decreasing, and likely changing concavity at .      The temperature (measured in ) of a cup of coffee at time minutes after it is poured into a coffee cup is given by where , , and are constants.    What are the units of and ?    What are the units of ?    What are the units of ? In words, what does the value represent?    Do you expect to be positive, negative, or zero? Why?              per minute     ; represents the rate at which the coffee increases in temperature 10 minutes after it is poured.     since the graph of is decreasing but concave up.         For which of the graphs shown in does exist?   Where does exist?   Three graphs labeled I, II, and III, each showing behavior near x = 3. I. An increasing curve with a hole at x = 3 and y about 1.5. The curve approaches the hole from both sides. II. Two separate curve pieces. As x approaches 3 from the left, the graph approaches y about 1; as x approaches 3 from the right, the graph approaches y about 2. III. A smooth curve with a hole at (3, 1) and a filled point at (3, 2). The curve approaches y = 1 from both sides, but the function value at x = 3 is 2.        I    Correct.      II      III       The derivative of some function at some location is given by the value of Identify and the value of .    and       A line through the point is tangent to function at the point . What is ?         Correct.                     Undefined       Shown in is a graph of function . At which value of is continuous but not differentiable?  Where is continuous but not differentiable?   Graph with labeled points a, b, c, d, and e. The curve has a smooth maximum at b, a hole and separate filled point at c, a sharp peak at d, and a hole with a different function value at e.        a      b      c      d    Correct.      e       [Yes, this involves the absolute value!] Suppose that Use the limit definition of derivative to find the value of the derivative . Be sure to use appropriate limit notation. Solutions using other methods will not receive credit.    where . So, we have since for small. So,      In is the graph of .  Which is a possible graph of ?   Graph of a curve that rises rapidly from below the x-axis, reaches a maximum near x = 1, then gradually decreases while remaining above the x-axis.   Which of the following is a possible graph of ?      Option A   Graph of a curve that decreases steeply, crosses the x-axis, reaches a shallow minimum, and then rises gradually toward zero.      Correct.       Option B   Graph of a curve that decreases rapidly, crosses the x-axis near x = 0, reaches a minimum, and then slowly rises toward zero.         Option C   Graph of a decreasing curve that remains above the x-axis and approaches zero as x increases.         Option D   Graph of a curve that rises to a maximum near x = 0, then decreases while remaining above the x-axis.        None of these. It looks like...       For the graph of given in , find all values of in the interval for which does not exist.  For which values does not exist?   Graph with several pieces, including a decreasing line, an upper arc, an increasing line segment, and a decreasing curve. Open and closed circles indicate holes and defined function values at several x-values.             A scientist measures the temperature (measured in kelvins) of a certain metal bar seconds after heat is removed. The equation models the data observed.  The scientist also observes that the length of the metal bar (measured in centimeters) depends on its temperature through the equation     Explain the meaning of in the context of this problem. Be sure to include units.    Describe as precisely and specifically as you can what the quantity represents in the context of this problem.    Do you expect to be positive or negative? Why? What are the units for this value and what does the value of physically represent?         gives the rate at which the temperature of the bar increases (in Kelvin per second) 300 seconds after the heat is removed.    This is the average rate of change of the temperature of the bar between times 152 and 273 seconds (measured in Kelvin per second).    I expect to be positive since the length of bar should increase as it gets warmer. Units are centimeters per Kelvin. represents the rate at which length of bar increases due to change in temperature at the instant the temperature of the bar is 400 Kelvin.        "
+},
+{
+  "id": "exam1-f25-q1",
+  "level": "2",
+  "url": "past_exams-3.html#exam1-f25-q1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": " Scientists are monitoring ground elevation near a volcano to detect signs of potential eruption. The elevation , in meters, is measured at regular intervals of time , in days.  Ground elevation near a volcano.    (days)  (m)    0  1200.0    2  1200.8    4  1201.7    6  1202.5    8  1203.0       Estimate using a central difference. Be sure to include units on your response.    Does appear to be positive or negative? Explain.    What are the units on ? In words, interpret the meaning of the value of .         meters per day     appears to be negative since the rate of increase of seems to be decreasing at days.     ; this is the rate at which the rate of height increase each day, increases     "
+},
+{
+  "id": "exam1-f25-q2",
+  "level": "2",
+  "url": "past_exams-3.html#exam1-f25-q2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": " On draw the graph of a function for which   ,   ,   , and  the average rate of change of on the interval is zero.  Clearly label values of points on the graph at and .  Graph a function meeting the required conditions.   An empty coordinate axes system.       Answers will vary. However, they all will have the same -coordinate at and . And, they will be below the -axis, decreasing, and likely changing concavity at .   "
+},
+{
+  "id": "exam1-f25-q3",
+  "level": "2",
+  "url": "past_exams-3.html#exam1-f25-q3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  The temperature (measured in ) of a cup of coffee at time minutes after it is poured into a coffee cup is given by where , , and are constants.    What are the units of and ?    What are the units of ?    What are the units of ? In words, what does the value represent?    Do you expect to be positive, negative, or zero? Why?              per minute     ; represents the rate at which the coffee increases in temperature 10 minutes after it is poured.     since the graph of is decreasing but concave up.      "
+},
+{
+  "id": "exam1-f25-q4",
+  "level": "2",
+  "url": "past_exams-3.html#exam1-f25-q4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  For which of the graphs shown in does exist?   Where does exist?   Three graphs labeled I, II, and III, each showing behavior near x = 3. I. An increasing curve with a hole at x = 3 and y about 1.5. The curve approaches the hole from both sides. II. Two separate curve pieces. As x approaches 3 from the left, the graph approaches y about 1; as x approaches 3 from the right, the graph approaches y about 2. III. A smooth curve with a hole at (3, 1) and a filled point at (3, 2). The curve approaches y = 1 from both sides, but the function value at x = 3 is 2.        I    Correct.      II      III     "
+},
+{
+  "id": "exam1-f25-q5",
+  "level": "2",
+  "url": "past_exams-3.html#exam1-f25-q5",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": " The derivative of some function at some location is given by the value of Identify and the value of .    and    "
+},
+{
+  "id": "exam1-f25-q6",
+  "level": "2",
+  "url": "past_exams-3.html#exam1-f25-q6",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  A line through the point is tangent to function at the point . What is ?         Correct.                     Undefined     "
+},
+{
+  "id": "exam1-f25-q7",
+  "level": "2",
+  "url": "past_exams-3.html#exam1-f25-q7",
+  "type": "Exercise",
+  "number": "7",
+  "title": "",
+  "body": " Shown in is a graph of function . At which value of is continuous but not differentiable?  Where is continuous but not differentiable?   Graph with labeled points a, b, c, d, and e. The curve has a smooth maximum at b, a hole and separate filled point at c, a sharp peak at d, and a hole with a different function value at e.        a      b      c      d    Correct.      e     "
+},
+{
+  "id": "exam1-f25-q8",
+  "level": "2",
+  "url": "past_exams-3.html#exam1-f25-q8",
+  "type": "Exercise",
+  "number": "8",
+  "title": "",
+  "body": " [Yes, this involves the absolute value!] Suppose that Use the limit definition of derivative to find the value of the derivative . Be sure to use appropriate limit notation. Solutions using other methods will not receive credit.    where . So, we have since for small. So,    "
+},
+{
+  "id": "exam1-f25-q9",
+  "level": "2",
+  "url": "past_exams-3.html#exam1-f25-q9",
+  "type": "Exercise",
+  "number": "9",
+  "title": "",
+  "body": " In is the graph of .  Which is a possible graph of ?   Graph of a curve that rises rapidly from below the x-axis, reaches a maximum near x = 1, then gradually decreases while remaining above the x-axis.   Which of the following is a possible graph of ?      Option A   Graph of a curve that decreases steeply, crosses the x-axis, reaches a shallow minimum, and then rises gradually toward zero.      Correct.       Option B   Graph of a curve that decreases rapidly, crosses the x-axis near x = 0, reaches a minimum, and then slowly rises toward zero.         Option C   Graph of a decreasing curve that remains above the x-axis and approaches zero as x increases.         Option D   Graph of a curve that rises to a maximum near x = 0, then decreases while remaining above the x-axis.        None of these. It looks like...     "
+},
+{
+  "id": "exam1-f25-q11",
+  "level": "2",
+  "url": "past_exams-3.html#exam1-f25-q11",
+  "type": "Exercise",
+  "number": "10",
+  "title": "",
+  "body": " For the graph of given in , find all values of in the interval for which does not exist.  For which values does not exist?   Graph with several pieces, including a decreasing line, an upper arc, an increasing line segment, and a decreasing curve. Open and closed circles indicate holes and defined function values at several x-values.          "
+},
+{
+  "id": "exam1-f25-q13",
+  "level": "2",
+  "url": "past_exams-3.html#exam1-f25-q13",
+  "type": "Exercise",
+  "number": "11",
+  "title": "",
+  "body": "  A scientist measures the temperature (measured in kelvins) of a certain metal bar seconds after heat is removed. The equation models the data observed.  The scientist also observes that the length of the metal bar (measured in centimeters) depends on its temperature through the equation     Explain the meaning of in the context of this problem. Be sure to include units.    Describe as precisely and specifically as you can what the quantity represents in the context of this problem.    Do you expect to be positive or negative? Why? What are the units for this value and what does the value of physically represent?         gives the rate at which the temperature of the bar increases (in Kelvin per second) 300 seconds after the heat is removed.    This is the average rate of change of the temperature of the bar between times 152 and 273 seconds (measured in Kelvin per second).    I expect to be positive since the length of bar should increase as it gets warmer. Units are centimeters per Kelvin. represents the rate at which length of bar increases due to change in temperature at the instant the temperature of the bar is 400 Kelvin.     "
+},
+{
+  "id": "past_exams-4",
+  "level": "1",
+  "url": "past_exams-4.html",
+  "type": "Handout",
+  "number": "",
   "title": "Exam 2 - Spring 2026",
   "body": " Exam 2 - Spring 2026   Topics  1.8-2.7  Be sure to try each question before looking at the solutions.   Questions   Two differentiable functions and are graphed below near . Note: These graphs are symmetric about a horizontal line defined where they intersect.  The graphs of and .          Without formulas, determine the sign (positive, negative, or zero) of . Explain using the product rule and the picture.    Determine the sign of . Explain using the quotient rule and the picture.        At , the graph shows:  Note that The first term is positive (positive slope times positive value). The second term is negative (positive times negative). Since, and , the first (positive) term dominates.    Note that The denominator is positive. In the numerator, and is also positive since . Adding these is positive. Hence the fraction is also positive.       The function is strictly increasing and differentiable. Its graph and a tangent line at are shown in . The slope of the tangent line is . Let . Compute .  Graph a function and its tangent line at .          Slope of tangent to at is Since ,      Let . Compute and then evaluate (exact value only).    so that      A function is differentiable and satisfies and .   Find the linearization at .    Use to estimate .    If you are told , explain in one sentence whether your estimate in (b) is likely an overestimate or underestimate of .                   If , is likely concave up near . The tangent line then lies below the curve, so the linear approximation is an underestimate.        Compute each derivative.                                 Use the quotient rule:         The height (in meters) of water in a tank is decreasing at a rate of m\/min. The water temperature (in C) changes with height according to    Compute at the instant the water is 2 m deep.    Interpret your answer with units in one sentence.         From the chain rule,     The water temperature is decreasing at a rate of         Find the equation of the tangent line to the curve at the ordered pair .  A graph of .   The graph of a given ellipse and the ordered pair at (2,1).      Differentiate: Group terms:  At : Tangent line:       You know that at ,   Let and .    Compute .    Compute .    Explain in one sentence whether is increasing or decreasing at .        We have     We have     Since ,        The graph of a periodic function is shown. Which of the following is most likely to represent ? [Check the appropriate box(es).]  A graph of which is periodic.   The graph of a periodic function.                                                                                                               A function and its derivative take the values given in . If , compute .   Values of and at various values.          0  1  2        2  1  0        1  0  2          Note that At : From the table: . So      A company sells a product at price dollars. The number of units sold depends on the price. The revenue is . When the price is , the number of units sold is . It is also known that .   In this context, what does mean? Use units in giving your one-sentence explanation.    Compute .    Interpret the meaning of the sign of .    Assuming that the company wishes to maximize revenue, should the company raise or lower the price at ? Explain briefly.         means that for each $1 increase in price at , unit sales decrease by 18 units (units per dollar).     so that     Since , revenue is increasing at . This means a small price increase will raise revenue.    To maximize revenue, since , the company should raise the price (slightly).        "
 },
 {
   "id": "exam2-s26-q1",
   "level": "2",
-  "url": "past_exams-3.html#exam2-s26-q1",
+  "url": "past_exams-4.html#exam2-s26-q1",
   "type": "Exercise",
   "number": "1",
   "title": "",
@@ -2928,7 +3036,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam2-s26-q2",
   "level": "2",
-  "url": "past_exams-3.html#exam2-s26-q2",
+  "url": "past_exams-4.html#exam2-s26-q2",
   "type": "Exercise",
   "number": "2",
   "title": "",
@@ -2937,7 +3045,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam2-s26-q3",
   "level": "2",
-  "url": "past_exams-3.html#exam2-s26-q3",
+  "url": "past_exams-4.html#exam2-s26-q3",
   "type": "Exercise",
   "number": "3",
   "title": "",
@@ -2946,7 +3054,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam2-s26-q4",
   "level": "2",
-  "url": "past_exams-3.html#exam2-s26-q4",
+  "url": "past_exams-4.html#exam2-s26-q4",
   "type": "Exercise",
   "number": "4",
   "title": "",
@@ -2955,7 +3063,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam2-s26-q5",
   "level": "2",
-  "url": "past_exams-3.html#exam2-s26-q5",
+  "url": "past_exams-4.html#exam2-s26-q5",
   "type": "Exercise",
   "number": "5",
   "title": "",
@@ -2964,7 +3072,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam2-s26-q6",
   "level": "2",
-  "url": "past_exams-3.html#exam2-s26-q6",
+  "url": "past_exams-4.html#exam2-s26-q6",
   "type": "Exercise",
   "number": "6",
   "title": "",
@@ -2973,7 +3081,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam2-s26-q7",
   "level": "2",
-  "url": "past_exams-3.html#exam2-s26-q7",
+  "url": "past_exams-4.html#exam2-s26-q7",
   "type": "Exercise",
   "number": "7",
   "title": "",
@@ -2982,7 +3090,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam2-s26-q8",
   "level": "2",
-  "url": "past_exams-3.html#exam2-s26-q8",
+  "url": "past_exams-4.html#exam2-s26-q8",
   "type": "Exercise",
   "number": "8",
   "title": "",
@@ -2991,7 +3099,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam2-s26-q9",
   "level": "2",
-  "url": "past_exams-3.html#exam2-s26-q9",
+  "url": "past_exams-4.html#exam2-s26-q9",
   "type": "Exercise",
   "number": "9",
   "title": "",
@@ -3000,7 +3108,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam2-s26-q10",
   "level": "2",
-  "url": "past_exams-3.html#exam2-s26-q10",
+  "url": "past_exams-4.html#exam2-s26-q10",
   "type": "Exercise",
   "number": "10",
   "title": "",
@@ -3009,16 +3117,16 @@ var ptx_lunr_docs = [
 {
   "id": "exam2-s26-q11",
   "level": "2",
-  "url": "past_exams-3.html#exam2-s26-q11",
+  "url": "past_exams-4.html#exam2-s26-q11",
   "type": "Exercise",
   "number": "11",
   "title": "",
   "body": " A company sells a product at price dollars. The number of units sold depends on the price. The revenue is . When the price is , the number of units sold is . It is also known that .   In this context, what does mean? Use units in giving your one-sentence explanation.    Compute .    Interpret the meaning of the sign of .    Assuming that the company wishes to maximize revenue, should the company raise or lower the price at ? Explain briefly.         means that for each $1 increase in price at , unit sales decrease by 18 units (units per dollar).     so that     Since , revenue is increasing at . This means a small price increase will raise revenue.    To maximize revenue, since , the company should raise the price (slightly).     "
 },
 {
-  "id": "past_exams-4",
+  "id": "past_exams-5",
   "level": "1",
-  "url": "past_exams-4.html",
+  "url": "past_exams-5.html",
   "type": "Handout",
   "number": "",
   "title": "Exam 3 - Spring 2026",
@@ -3027,7 +3135,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q1",
   "level": "2",
-  "url": "past_exams-4.html#exam3-s26-q1",
+  "url": "past_exams-5.html#exam3-s26-q1",
   "type": "Exercise",
   "number": "1",
   "title": "",
@@ -3036,7 +3144,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q2",
   "level": "2",
-  "url": "past_exams-4.html#exam3-s26-q2",
+  "url": "past_exams-5.html#exam3-s26-q2",
   "type": "Exercise",
   "number": "2",
   "title": "",
@@ -3045,7 +3153,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q3",
   "level": "2",
-  "url": "past_exams-4.html#exam3-s26-q3",
+  "url": "past_exams-5.html#exam3-s26-q3",
   "type": "Exercise",
   "number": "3",
   "title": "",
@@ -3054,7 +3162,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q4",
   "level": "2",
-  "url": "past_exams-4.html#exam3-s26-q4",
+  "url": "past_exams-5.html#exam3-s26-q4",
   "type": "Exercise",
   "number": "4",
   "title": "",
@@ -3063,7 +3171,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q5",
   "level": "2",
-  "url": "past_exams-4.html#exam3-s26-q5",
+  "url": "past_exams-5.html#exam3-s26-q5",
   "type": "Exercise",
   "number": "5",
   "title": "",
@@ -3072,7 +3180,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q6",
   "level": "2",
-  "url": "past_exams-4.html#exam3-s26-q6",
+  "url": "past_exams-5.html#exam3-s26-q6",
   "type": "Exercise",
   "number": "6",
   "title": "",
@@ -3081,7 +3189,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q7",
   "level": "2",
-  "url": "past_exams-4.html#exam3-s26-q7",
+  "url": "past_exams-5.html#exam3-s26-q7",
   "type": "Exercise",
   "number": "7",
   "title": "",
@@ -3090,7 +3198,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q8",
   "level": "2",
-  "url": "past_exams-4.html#exam3-s26-q8",
+  "url": "past_exams-5.html#exam3-s26-q8",
   "type": "Exercise",
   "number": "8",
   "title": "",
@@ -3099,7 +3207,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q9",
   "level": "2",
-  "url": "past_exams-4.html#exam3-s26-q9",
+  "url": "past_exams-5.html#exam3-s26-q9",
   "type": "Exercise",
   "number": "9",
   "title": "",
@@ -3108,7 +3216,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q10",
   "level": "2",
-  "url": "past_exams-4.html#exam3-s26-q10",
+  "url": "past_exams-5.html#exam3-s26-q10",
   "type": "Exercise",
   "number": "10",
   "title": "",
@@ -3117,7 +3225,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q11",
   "level": "2",
-  "url": "past_exams-4.html#exam3-s26-q11",
+  "url": "past_exams-5.html#exam3-s26-q11",
   "type": "Exercise",
   "number": "11",
   "title": "",
@@ -3126,7 +3234,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q12",
   "level": "2",
-  "url": "past_exams-4.html#exam3-s26-q12",
+  "url": "past_exams-5.html#exam3-s26-q12",
   "type": "Exercise",
   "number": "12",
   "title": "",
