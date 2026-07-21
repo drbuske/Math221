@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+  <title>Exam 1 - Fall 2025</title>
+
+<section>
+<title>Topics</title>
+
+    <p>1.1-1.7
+    </p>
+
+    <p>
+      Be sure to try each question before looking at the solutions.
+    </p>
+
+  <exercises xml:id="exercises-f25exam1">
+    <title>Questions</title>
+
+<exercise xml:id="exam1-f25-q1">
+<statement>
+   Scientists are monitoring ground elevation near a volcano to detect signs of potential eruption. The elevation
+   <m>
+       h(t)
+   </m>
+   , in meters, is measured at regular intervals of time
+   <m>
+       t
+   </m>
+   , in days.
+
+  <table xml:id="VolcanoExam1F25q1" >
+        <title>Ground elevation near a volcano.</title>
+    <tabular halign="center">
+      <row>
+        <cell><p><m>t</m> (days)</p></cell>
+        <cell><p><m>h</m> (m)</p></cell>
+      </row>
+      <row>
+        <cell><p>0</p></cell>
+        <cell><p>1200.0</p></cell>
+      </row>
+            <row>
+        <cell><p>2</p></cell>
+        <cell><p>1200.8</p></cell>
+      </row>
+            <row>
+        <cell><p>4</p></cell>
+        <cell><p>1201.7</p></cell>
+      </row>
+            <row>
+        <cell><p>6</p></cell>
+        <cell><p>1202.5</p></cell>
+      </row>
+            <row>
+        <cell><p>8</p></cell>
+        <cell><p>1203.0</p></cell>
+      </row>
+    </tabular>
+  </table>
+<ol marker="(a)">
+  <li>
+    <p>
+      Estimate
+      <m>
+          h'(6)
+      </m>
+      using a central difference. Be sure to include units on your response.
+    </p>
+  </li>
+  <li>
+    <p>
+      Does
+      <m>
+          h''(6)
+      </m>
+      appear to be positive or negative? Explain.
+    </p>
+  </li>
+  <li>
+    <p>
+      What are the units on
+      <m>
+          h''(6)
+      </m>
+      ? In words, interpret the meaning of the value of
+      <m>
+          h''(6)
+      </m>
+      .
+    </p>
+  </li>
+</ol>
+</statement>
+<answer>
+<ol marker="(a)">
+  <li>
+    <p>
+      <m>h'(6) \approx \frac{1203.0-1201.7}{8-4} = 0.325</m> meters per day
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>h''(6)</m> appears to be negative since the rate of increase of <m>h</m> seems to be decreasing at <m>t=6</m> days.
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>\frac{\frac{meters}{day}}{day}</m>; this is the rate at which the rate of height increase each day, increases
+    </p>
+  </li>
+</ol>
+</answer>
+</exercise>
+
+<exercise xml:id="exam1-f25-q2">
+<statement>
+        On <xref ref="Exam1F25q2pic"/> draw the graph of a function <m>f(x)</m> for which
+        <ol marker="(i)">
+        <li> <m>f(-2)&lt;0</m>, </li>
+        <li> <m>f'(-2)&lt;0</m>, </li> 
+        <li> <m>f''(-2)=0</m>, and </li>
+        <li> the average rate of change of <m>f</m> on the interval <m>[-2,1]</m> is
+        zero. </li>
+        </ol>
+        Clearly label values of points on the graph at <m>x=-2</m> and <m>x=1</m>.
+    <figure xml:id="Exam1F25q2pic">
+  <caption>Graph a function <m>f(x)</m> meeting the required conditions.</caption> 
+  <image xml:id="Exam1F25q2picA" width="50%" >
+<description>An empty coordinate axes system.
+</description>
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=1] [domain=-3:3]
+\draw[step=1cm,color=gray!25] (-4,-4) grid (4,4);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$x$};
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (-4,0);
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,4) node [right] at (0,3.5) {$y$};
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,-4);
+%%  node[above] at (2,1) {$f(3,y)$};
+\foreach \x/\xtext in { -3/-3, -1/-1, 1/1, 3/3}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in { -3/-3, -1/-1, 1/1, 3/3}
+   \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+</statement>
+<answer>
+  <p>
+    Answers will vary.  However, they all will have the same <m>y</m>-coordinate at <m>x=2</m> and <m>x=1</m>.  And, they will be below the <m>x</m>-axis, decreasing, and likely changing concavity at <m>x=2</m>.   
+  </p>
+</answer>
+ </exercise>
+
+ <exercise xml:id="exam1-f25-q3">
+<statement>
+  <p>
+    The temperature
+    <m>
+        T
+    </m>
+    (measured in
+    <m>
+        ^{\circ}F
+    </m>
+    ) of a cup of coffee at time
+    <m>
+        t
+    </m>
+    minutes after it is poured into a coffee cup is given by
+    <md>
+        T(t) = A + Be^{-ct}
+    </md>
+    where
+    <m>
+        A&gt;0
+    </m>
+    ,
+    <m>
+        B&gt;0
+    </m>
+    , and
+    <m>
+        c&gt;0
+    </m>
+    are constants. 
+  </p>
+  <ol marker="(a)">
+    <li>
+      <p>
+        What are the units of
+        <m>
+            A
+        </m>
+        and
+        <m>
+            B
+        </m>
+        ?
+      </p>
+    </li>
+    <li>
+      <p>
+        What are the units of
+        <m>
+            c
+        </m>
+        ?
+      </p>
+    </li>
+    <li>
+      <p>
+        What are the units of
+        <m>
+            T'(t)
+        </m>
+        ? In words, what does the value
+        <m>
+            T'(10)
+        </m>
+        represent?
+      </p>
+    </li>
+    <li>
+      <p>
+        Do you expect
+        <m>
+            T''(10)
+        </m>
+        to be positive, negative, or zero? Why?
+      </p>
+    </li>
+  </ol>
+</statement>
+<answer>
+  <p>
+    <ol marker="(a)">
+      <li>
+        <p>
+          <m>^{\circ}F</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          per minute
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\frac{^{\circ}F}{minute}</m>; <m>T'(10)</m> represents the rate at which the coffee increases in temperature 10 minutes after it is poured.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>T''(10)&gt;0</m> since the graph of <m>T(t)</m> is decreasing but concave up.
+        </p>
+      </li>
+    </ol>
+  </p>
+</answer>
+ </exercise>
+
+  <exercise xml:id="exam1-f25-q4">
+<statement>
+  <p>
+    For which of the graphs shown in <xref ref="F26Ex1q4"/> does
+    <m>
+        \displaystyle \lim_{x \rightarrow 3}f(x)
+    </m>
+    exist?
+  </p>
+  <figure xml:id="F26Ex1q4">
+  <caption> Where does
+    <m>
+        \displaystyle \lim_{x \rightarrow 3}f(x)
+    </m>
+    exist?</caption> 
+  <image source="images/Limitx3.jpg" width="90%">
+        <description>
+Three graphs labeled I, II, and III, each showing behavior near x = 3.
+
+I. An increasing curve with a hole at x = 3 and y about 1.5. The curve approaches the hole from both sides.
+
+II. Two separate curve pieces. As x approaches 3 from the left, the graph approaches y about 1; as x approaches 3 from the right, the graph approaches y about 2.
+
+III. A smooth curve with a hole at (3, 1) and a filled point at (3, 2). The curve approaches y = 1 from both sides, but the function value at x = 3 is 2.
+
+</description>
+      </image>
+</figure>
+</statement>
+<choices multiple-correct="yes" randomize="no">
+
+    <choice correct="yes">
+      <statement>
+        <p>I</p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>II</p>
+      </statement>
+    </choice>
+
+    <choice correct="yes">
+      <statement>
+        <p>III</p>
+      </statement>
+    </choice>
+
+  </choices>
+  </exercise>
+
+<exercise xml:id="exam1-f25-q5">
+<statement>
+The derivative of some function
+<m>
+  f
+</m>
+at some location
+<m>
+  x=a
+</m>
+is given by the value of
+<md>
+  \lim_{h \rightarrow 0}\frac{e^{-1-h}-e^{-1}}{h}.
+</md>
+Identify
+<m>
+  f(x)
+</m>
+and the value of
+<m>
+  a
+</m>
+.
+</statement>
+  <answer>
+    <p>
+      <m>f(x)=e^{-x}</m> and <m>a=1</m>
+    </p>
+  </answer>
+  </exercise>
+
+<exercise xml:id="exam1-f25-q6">
+<statement>
+  <p>
+    A line through the point
+    <m>
+      (2,-2)
+    </m>
+    is tangent to function
+    <m>
+      f
+    </m>
+    at the point
+    <m>
+      (-2,6)
+    </m>
+    . What is
+    <m>
+      f'(-2)
+    </m>
+    ?
+  </p>
+  </statement>
+  <choices randomize="yes">
+
+    <choice correct="yes">
+      <statement>
+        <p><m>-2</m></p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>-8</m></p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>-\frac{1}{2}</m></p>
+      </statement>
+    </choice>
+
+     <choice>
+      <statement>
+        <p><m>6</m></p>
+      </statement>
+    </choice>
+
+     <choice>
+      <statement>
+        <p>Undefined</p>
+      </statement>
+    </choice>
+
+  </choices>
+</exercise>
+
+<exercise xml:id="exam1-f25-q7">
+<statement>
+Shown in <xref ref="F25Ex1q7"/> is a graph of function
+<m>
+    f
+</m>
+. At which value of
+<m>
+    x
+</m>
+is
+<m>
+    f
+</m>
+continuous but not differentiable?
+<figure xml:id="F25Ex1q7">
+  <caption> Where is <m>f</m> continuous but not differentiable?</caption> 
+  <image source="images/ContinuousNotDifferentiable.jpg" width="90%">
+        <description>Graph with labeled points a, b, c, d, and e. The curve has a smooth maximum at b, a hole and separate filled point at c, a sharp peak at d, and a hole with a different function value at e.
+</description>
+      </image>
+</figure>
+</statement>
+<choices randomize="no">
+
+    <choice>
+      <statement>
+        <p>a</p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>b</p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>c</p>
+      </statement>
+    </choice>
+
+     <choice correct="yes">
+      <statement>
+        <p>d</p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.
+        </p>
+      </feedback>
+    </choice>
+
+     <choice>
+      <statement>
+        <p>e</p>
+      </statement>
+    </choice>
+
+  </choices>
+</exercise>
+
+<exercise xml:id="exam1-f25-q8">
+<statement>
+[Yes, this involves the absolute value!] Suppose that
+<md>
+    f(x) = \left| -x^{2}+2x+3\right|.
+</md>
+Use the
+<em>
+    limit definition of derivative
+</em>
+to find the value of the derivative
+<m>
+    f'(2)
+</m>
+. Be sure to use appropriate limit notation. Solutions using other methods will not receive credit.
+</statement>
+<answer>
+  <p>
+    <m>\displaystyle f'(2) = \lim_{h \rightarrow 0} \frac{f(2+h)-f(2)}{h}</m> where <m>f(2)=|(-2)^2 + 2(2)+3| = 3</m>.  So, we have <md>
+      <mrow> f'(2) \mathstrut \amp = \lim_{h \rightarrow 0} \frac{ |-(2+h)^2 + 2(2+h)+3| - 3}{h} </mrow>
+      <mrow> \amp = \lim_{h \rightarrow 0} \frac{ -(2+h)^2 + 2(2+h)+3 - 3}{h} </mrow> 
+    </md>
+    since <m>-(2+h)^2 + 2(2+h)+3 \approx 3 &gt; 0</m> for <m>h</m> small.  So, <md> 
+      <mrow> f'(2) \mathstrut \amp = \lim_{h \rightarrow 0} \frac{-4 - 4h - h^2 + 4 + 2h + 3 -3}{h} </mrow>
+      <mrow> \amp = \lim_{h \rightarrow 0} \frac{h(-2-h)}{h} </mrow>
+      <mrow> \amp = -2 - h </mrow>
+      <mrow> \amp = -2 </mrow>
+    </md>
+  </p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam1-f25-q9">
+<statement>
+In <xref ref="F25Ex1q9"/> is the graph of <m>
+    f(x)
+</m>
+.
+<figure xml:id="F25Ex1q9">
+  <caption> Which is a possible graph of <m>f'(x)</m>?</caption> 
+  <image source="images/OriginalFunctionEx1F25.jpg" width="50%">
+        <description>Graph of a curve that rises rapidly from below the x-axis, reaches a maximum near x = 1, then gradually decreases while remaining above the x-axis.
+</description>
+      </image>
+</figure>
+Which of the following is a possible graph of
+<m>
+    f'(x)
+</m>
+?
+</statement>
+<choices randomize="no">
+
+    <choice correct="yes">
+      <statement>
+        <figure xml:id="F25Ex1q9OptA">
+  <caption> Option A</caption> 
+  <image source="images/OriginalFunctionEx1F25A.jpg" width="50%">
+        <description>Graph of a curve that decreases steeply, crosses the x-axis, reaches a shallow minimum, and then rises gradually toward zero.
+</description>
+      </image>
+</figure>
+      </statement>
+            <feedback>
+        <p>
+          Correct.
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <figure xml:id="F25Ex1q9OptB">
+  <caption> Option B</caption> 
+  <image source="images/OriginalFunctionEx1F25B.jpg" width="50%">
+        <description>Graph of a curve that decreases rapidly, crosses the x-axis near x = 0, reaches a minimum, and then slowly rises toward zero.
+</description>
+      </image>
+</figure>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <figure xml:id="F25Ex1q9OptC">
+  <caption> Option C</caption> 
+  <image source="images/OriginalFunctionEx1F25C.jpg" width="50%">
+        <description>Graph of a decreasing curve that remains above the x-axis and approaches zero as x increases.
+</description>
+      </image>
+</figure>
+      </statement>
+    </choice>
+
+     <choice>
+      <statement>
+        <figure xml:id="F25Ex1q9OptD">
+  <caption> Option D</caption> 
+  <image source="images/OriginalFunctionEx1F25D.jpg" width="50%">
+        <description>Graph of a curve that rises to a maximum near x = 0, then decreases while remaining above the x-axis.
+</description>
+      </image>
+</figure>
+      </statement>
+
+    </choice>
+
+     <choice>
+      <statement>
+        <p>None of these. It looks like...</p>
+      </statement>
+    </choice>
+
+  </choices>
+</exercise>
+
+<exercise xml:id="exam1-f25-q11">
+<statement>
+For the graph of
+<m>
+    y=f(x)
+</m>
+given in <xref ref="F25Ex1q11"/>, find all  values of
+<m>
+    a
+</m>
+in the interval
+<m>
+    (-4,4)
+</m>
+for which
+<m>
+    \displaystyle \lim_{x \rightarrow a}f(x)
+</m>
+does not exist.
+<figure xml:id="F25Ex1q11">
+  <caption>For which <m>a</m> values does <m>
+    \displaystyle \lim_{x \rightarrow a}f(x)
+</m>
+not exist? </caption> 
+  <image source="images/LimitNotExistEx1F25.jpg" width="50%">
+        <description>Graph with several pieces, including a decreasing line, an upper arc, an increasing line segment, and a decreasing curve. Open and closed circles indicate holes and defined function values at several x-values.
+</description>
+      </image>
+</figure>
+</statement>
+<answer>
+  <p>
+    <m>a=-1,1</m>
+  </p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam1-f25-q13">
+<statement>
+<p>
+    A scientist measures the temperature <m>T</m> (measured in kelvins) of a
+    certain metal bar <m>t</m> seconds after heat is removed.
+    The equation <md>\displaystyle T(t)=\frac{30}{e^{t}}+ 10e^{t}</md> models the
+    data observed.
+</p>
+
+<p>
+    The scientist also observes that the length <m>L</m> of the metal bar
+    (measured in centimeters) depends on its temperature through the equation
+    <md>\displaystyle L(T) = 0.01T^{3} + \frac{64000}{T}.</md>
+</p>
+<ol marker="(a)">
+<li>
+  <p>
+    Explain the meaning of
+    <m>
+        T'(300)
+    </m>
+    in the context of this problem. Be sure to include units.
+  </p>
+</li>
+<li>
+  <p>
+    Describe as precisely and specifically as you can what the quantity
+    <m>
+        \displaystyle Q=\frac{T(273)-T(152)}{121}
+    </m>
+    represents in the context of this problem.
+  </p>
+</li>
+<li>
+  <p>
+    Do you expect
+    <m>
+        L'(400)
+    </m>
+    to be positive or negative? Why? What are the units for this value and what does the value of
+    <m>
+        L'(400)
+    </m>
+    physically represent?
+  </p>
+</li>
+</ol>
+</statement>
+<answer>
+<ol marker="(a)">
+  <li>
+    <p>
+      <m>T'(300)</m> gives the rate at which the temperature of the bar increases (in Kelvin per second) 300 seconds after the heat is removed. 
+    </p>
+  </li>
+  <li>
+    <p>
+      This is the average rate of change of the temperature of the bar between times 152 and 273 seconds (measured in Kelvin per second).  
+    </p>
+  </li>
+  <li>
+    <p>
+      I expect <m>L'(400)</m> to be positive since the length of bar should increase as it gets warmer.  Units are centimeters per Kelvin.  <m>L'(400)</m> represents the rate at which length of bar increases due to change in temperature at the instant the temperature of the bar is 400 Kelvin.  
+    </p>
+  </li>
+</ol>
+</answer>
+</exercise>
+
+</exercises>
+
+</section>
+</handout>
