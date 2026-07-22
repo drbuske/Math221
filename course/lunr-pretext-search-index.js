@@ -3129,13 +3129,94 @@ var ptx_lunr_docs = [
   "url": "past_exams-5.html",
   "type": "Handout",
   "number": "",
+  "title": "Exam 2 - Fall 2025",
+  "body": " Exam 2 - Fall 2025   Topics  1.8-2.7  Be sure to try each question before looking at the solutions.   Questions   Let be a differentiable and strictly increasing function such that Let be the inverse of .  A graph of .   Graph of an increasing S-shaped curve labeled f, passing through the point (2,5) dashed guide lines connect the point to the axes, showing x=2 and y=5.      Compute .    Find the equation of the tangent line to the graph of at the point .                      A computer system processes data at a rate that depends on the number of users and the average data processed per user , both changing over time (measured in minutes). The total data processed at time is   At time minutes, the number of users is 200 and is increasing at a rate of 12 users per minute. At the same time ( minutes), the average data processed per users is 3.5 MB\/min and is increasing at a rate of 0.2 MB\/min .  Compute the rate of change of total data processed at minutes. Be sure to include appropriate units in your response.    We have where , , , and . So,      Suppose and are differentiable functions with the values shown in .  Values of , , , and at various values of .           -2  3  1  -5  8    -1  -9  7  4  1    0  5  2  9  -3    1  2  -3  -2  6    2  -5  3  8  1       Find if .    Find the exact value of if .    Find the exact value of if .        Use the product rule: It follows that     By the quotient rule, So,     By the constant multiple and chain rules, we have So,        The function is decreasing on and increasing on . What is the exact value of . Explain how you determined this value.    if and only if if and only if if and only if So, . The derivative changes from negative to positive here.     Find the equation of the tangent line to the curve at the ordered pair .  A graph of and the ordered pair .   Graph with two branches and a vertical asymptote; the lower branch passes through the labeled point (1, 0), while the upper branch approaches the asymptote from the left.       So, and evaluating this at and gives 1 (the slope of the tangent line at ). So the tangent line is       A metal object is cooling in a 20 room. The temperature (in ) of the object at time (in minutes) is and its volume (in cm ) depends on temperature (in ) according to The temperature of the object follows Newton's Law of Cooling:   If the temperature of the object at time is , use the chain rule to compute the rate of change in the object's volume at .    We find       The graph of a function is shown in . Which of the following do you expect to be true regarding and ?   The graph of function .   Periodic graph with repeating downward arches, vertical dashed asymptotes at x = −4, 0, 4, and 8, and local maxima at y = −2 midway between the asymptotes.        will be periodic.    Correct.      will be continuous.      The graph of will lie entirely above the -axis.      will be increasing on its domain.      for all integers .         Correct.      has no -intercepts.      has no vertical asymptotes.      The graph of will lie entirely below the -axis.    Correct.       will be periodic.    Correct.       Evaluate the derivatives of the following functions:                                This is the definition of for a function . That is, . So, .        "
+},
+{
+  "id": "exam2-f25-q1",
+  "level": "2",
+  "url": "past_exams-5.html#exam2-f25-q1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": " Let be a differentiable and strictly increasing function such that Let be the inverse of .  A graph of .   Graph of an increasing S-shaped curve labeled f, passing through the point (2,5) dashed guide lines connect the point to the axes, showing x=2 and y=5.      Compute .    Find the equation of the tangent line to the graph of at the point .                   "
+},
+{
+  "id": "exam2-f25-q2",
+  "level": "2",
+  "url": "past_exams-5.html#exam2-f25-q2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  A computer system processes data at a rate that depends on the number of users and the average data processed per user , both changing over time (measured in minutes). The total data processed at time is   At time minutes, the number of users is 200 and is increasing at a rate of 12 users per minute. At the same time ( minutes), the average data processed per users is 3.5 MB\/min and is increasing at a rate of 0.2 MB\/min .  Compute the rate of change of total data processed at minutes. Be sure to include appropriate units in your response.    We have where , , , and . So,    "
+},
+{
+  "id": "exam2-f25-q3",
+  "level": "2",
+  "url": "past_exams-5.html#exam2-f25-q3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": " Suppose and are differentiable functions with the values shown in .  Values of , , , and at various values of .           -2  3  1  -5  8    -1  -9  7  4  1    0  5  2  9  -3    1  2  -3  -2  6    2  -5  3  8  1       Find if .    Find the exact value of if .    Find the exact value of if .        Use the product rule: It follows that     By the quotient rule, So,     By the constant multiple and chain rules, we have So,      "
+},
+{
+  "id": "exam2-f25-q4",
+  "level": "2",
+  "url": "past_exams-5.html#exam2-f25-q4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": " The function is decreasing on and increasing on . What is the exact value of . Explain how you determined this value.    if and only if if and only if if and only if So, . The derivative changes from negative to positive here.   "
+},
+{
+  "id": "exam2-f25-q5",
+  "level": "2",
+  "url": "past_exams-5.html#exam2-f25-q5",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": " Find the equation of the tangent line to the curve at the ordered pair .  A graph of and the ordered pair .   Graph with two branches and a vertical asymptote; the lower branch passes through the labeled point (1, 0), while the upper branch approaches the asymptote from the left.       So, and evaluating this at and gives 1 (the slope of the tangent line at ). So the tangent line is    "
+},
+{
+  "id": "exam2-f25-q6",
+  "level": "2",
+  "url": "past_exams-5.html#exam2-f25-q6",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  A metal object is cooling in a 20 room. The temperature (in ) of the object at time (in minutes) is and its volume (in cm ) depends on temperature (in ) according to The temperature of the object follows Newton's Law of Cooling:   If the temperature of the object at time is , use the chain rule to compute the rate of change in the object's volume at .    We find    "
+},
+{
+  "id": "exam2-f25-q7",
+  "level": "2",
+  "url": "past_exams-5.html#exam2-f25-q7",
+  "type": "Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  The graph of a function is shown in . Which of the following do you expect to be true regarding and ?   The graph of function .   Periodic graph with repeating downward arches, vertical dashed asymptotes at x = −4, 0, 4, and 8, and local maxima at y = −2 midway between the asymptotes.        will be periodic.    Correct.      will be continuous.      The graph of will lie entirely above the -axis.      will be increasing on its domain.      for all integers .         Correct.      has no -intercepts.      has no vertical asymptotes.      The graph of will lie entirely below the -axis.    Correct.       will be periodic.    Correct.     "
+},
+{
+  "id": "exam2-f25-q8",
+  "level": "2",
+  "url": "past_exams-5.html#exam2-f25-q8",
+  "type": "Exercise",
+  "number": "8",
+  "title": "",
+  "body": " Evaluate the derivatives of the following functions:                                This is the definition of for a function . That is, . So, .     "
+},
+{
+  "id": "past_exams-6",
+  "level": "1",
+  "url": "past_exams-6.html",
+  "type": "Handout",
+  "number": "",
   "title": "Exam 3 - Spring 2026",
   "body": " Exam 3 - Spring 2026   Topics  3.1-4.2  Be sure to try each question before looking at the solutions.   Questions   A function satisfies and . What can be concluded?     Local maximum at    Correct.      Local minimum at      Inflection point at      Global maximum at      Global minimum at      No conclusion is possible       A cube has side length , which is increasing at a constant rate cm\/sec. What is the rate of change of the cube's volume when cm?     150 cm \/sec    Correct.      10 cm \/sec      25 cm \/sec      50 cm \/sec       From the graph of shown in , give all values of for which has a local minimum on .  Graph of .   Graph of g prime of x. The curve is below the x-axis for x less than 1, above the x-axis for 1 less than x less than 3, below the x-axis for 3 less than x less than 6, and above the x-axis for x greater than 6. It crosses the x-axis at x equal to 1, 3, and 6, with a local maximum near x equal to 2 and local minima near x = 0 and x = 5.       Since changes from negative to positive at and , there are local minimums at these values.      is graphed on in . Given that determine the exact value of which gives the global minimum of on . Decimal approximations will receive no credit.  The graph of on .   Smooth curve with x-intercepts at x = -3, 0, and 3; a local minimum near (-2.1, -4.5); and a local maximum near (2.2, 4.4). The graph is negative on (-3, 0) and positive on (0, 3).       exactly when which happens when . Solving this give . The global minimum occurs at .     A laser mounted on a wall 8 feet above ground tracks a robot moving horizontally along the floor. At time , the robot is feet away from the wall and moves so that feet per second. The laser always points directly at the robot. Let be the angle of the beam above horizontal.  A laser tracks the movement of a robot.   Diagram showing a laser mounted on a vertical wall and a robot moving along a horizontal floor. The wall and floor meet at a right angle at the lower-left corner. The laser is located on the wall 8 feet above the floor and is labeled “Laser.” The robot is located on the floor to the right of the wall and is labeled “Robot.” A dashed line segment connects the laser to the robot, representing the laser beam. The horizontal distance from the wall to the robot is labeled x(t). The angle between the laser beam and the floor at the robot is labeled θ(t). The height of the laser above the floor is labeled 8. The diagram forms a right triangle with vertical leg 8 feet, horizontal leg x(t), and hypotenuse given by the laser beam.       Write a relation between and .    Find when . Be sure to include units in your response.              means that So at we have radians per second.       The velocity of an object (in m\/s) on the interval is shown in . Compute the total distance traveled on . Include units.  The velocity of an object on the interval .   Velocity graph: starts at (0, 0), rises linearly to (2, 3), stays at 3 until t = 4, then decreases linearly to (6, 0).       Look at the area under the curve and above the -axis to find 6+6 = 12 meters.     Express the following quantity as sum using sigma notation:          Let Compute the left Riemann sum, , on .         Evaluate the limit:    Both numerator and denominator . Apply L'Hôpital: Thus first application: Still . Apply L'Hôpital again: Hence      The rectangles in the graph shown in illustrate a left-endpoint Riemann sum for the function on the interval .  A left Riemann sum for on .   Graph of y = square root of 2x + 1 with three left-endpoint rectangles on the interval [1, 8].      What is the value of in this Riemann sum?    What is the value of in this sum?    Calculate the  exact  value of .    Give an explicit formula for in terms of the index in the sum                    so that .            Two differentiable functions and are shown in near .  Graphs of and near .   Graph of two line segments: f rises from (1, 0) to (3, 4), and g decreases from (1, 2) to (3, 0). The graphs intersect at (2, 1).       Evaluate .    Evaluate .        2 (top tends to 2; bottom tends to 1)    Use L'Hopital's rule:        Determine the dimensions of the rectangle of largest area that can be inscribed in the 3-4-5 right triangle shown in .  A rectangle inscribed in a 3-4-5 triangle.   Graph of the line from (0, 4) to (3, 0), forming a triangle in the first quadrant. A shaded rectangle is inscribed under the line with width about 1.75 and height about 1.6       We maximize since the line is described by and the value of is positive in the diagram so that would give the width of the rectangle. To maximize we find which is 0 when . This is a local maximum so that the optimal dimensions are a base width of and a height of .      "
 },
 {
   "id": "exam3-s26-q1",
   "level": "2",
-  "url": "past_exams-5.html#exam3-s26-q1",
+  "url": "past_exams-6.html#exam3-s26-q1",
   "type": "Exercise",
   "number": "1",
   "title": "",
@@ -3144,7 +3225,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q2",
   "level": "2",
-  "url": "past_exams-5.html#exam3-s26-q2",
+  "url": "past_exams-6.html#exam3-s26-q2",
   "type": "Exercise",
   "number": "2",
   "title": "",
@@ -3153,7 +3234,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q3",
   "level": "2",
-  "url": "past_exams-5.html#exam3-s26-q3",
+  "url": "past_exams-6.html#exam3-s26-q3",
   "type": "Exercise",
   "number": "3",
   "title": "",
@@ -3162,7 +3243,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q4",
   "level": "2",
-  "url": "past_exams-5.html#exam3-s26-q4",
+  "url": "past_exams-6.html#exam3-s26-q4",
   "type": "Exercise",
   "number": "4",
   "title": "",
@@ -3171,7 +3252,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q5",
   "level": "2",
-  "url": "past_exams-5.html#exam3-s26-q5",
+  "url": "past_exams-6.html#exam3-s26-q5",
   "type": "Exercise",
   "number": "5",
   "title": "",
@@ -3180,7 +3261,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q6",
   "level": "2",
-  "url": "past_exams-5.html#exam3-s26-q6",
+  "url": "past_exams-6.html#exam3-s26-q6",
   "type": "Exercise",
   "number": "6",
   "title": "",
@@ -3189,7 +3270,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q7",
   "level": "2",
-  "url": "past_exams-5.html#exam3-s26-q7",
+  "url": "past_exams-6.html#exam3-s26-q7",
   "type": "Exercise",
   "number": "7",
   "title": "",
@@ -3198,7 +3279,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q8",
   "level": "2",
-  "url": "past_exams-5.html#exam3-s26-q8",
+  "url": "past_exams-6.html#exam3-s26-q8",
   "type": "Exercise",
   "number": "8",
   "title": "",
@@ -3207,7 +3288,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q9",
   "level": "2",
-  "url": "past_exams-5.html#exam3-s26-q9",
+  "url": "past_exams-6.html#exam3-s26-q9",
   "type": "Exercise",
   "number": "9",
   "title": "",
@@ -3216,7 +3297,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q10",
   "level": "2",
-  "url": "past_exams-5.html#exam3-s26-q10",
+  "url": "past_exams-6.html#exam3-s26-q10",
   "type": "Exercise",
   "number": "10",
   "title": "",
@@ -3225,7 +3306,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q11",
   "level": "2",
-  "url": "past_exams-5.html#exam3-s26-q11",
+  "url": "past_exams-6.html#exam3-s26-q11",
   "type": "Exercise",
   "number": "11",
   "title": "",
@@ -3234,7 +3315,7 @@ var ptx_lunr_docs = [
 {
   "id": "exam3-s26-q12",
   "level": "2",
-  "url": "past_exams-5.html#exam3-s26-q12",
+  "url": "past_exams-6.html#exam3-s26-q12",
   "type": "Exercise",
   "number": "12",
   "title": "",
