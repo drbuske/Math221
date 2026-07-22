@@ -3320,6 +3320,42 @@ var ptx_lunr_docs = [
   "number": "12",
   "title": "",
   "body": " Determine the dimensions of the rectangle of largest area that can be inscribed in the 3-4-5 right triangle shown in .  A rectangle inscribed in a 3-4-5 triangle.   Graph of the line from (0, 4) to (3, 0), forming a triangle in the first quadrant. A shaded rectangle is inscribed under the line with width about 1.75 and height about 1.6       We maximize since the line is described by and the value of is positive in the diagram so that would give the width of the rectangle. To maximize we find which is 0 when . This is a local maximum so that the optimal dimensions are a base width of and a height of .   "
+},
+{
+  "id": "past_exams-7",
+  "level": "1",
+  "url": "past_exams-7.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Exam 3 - Fall 2025",
+  "body": " Exam 3 - Fall 2025   Topics  3.1-4.2  Be sure to try each question before looking at the solutions.   Questions   A rescue drone is hovering 15 meters above the ground and is lowering a supply box to a hiker using a rope. The rope is released (vertically) at a constant rate of 3 meters per second. At the moment the box is released, the hiker is walking away from the point directly beneath the drone at a speed of 1 meter per second. When the box is 3 meters above the ground, how fast is the distance between the supply box and the hiker changing?  A rescue drone lowers a supply box to a hiker.          Let denote the distance of the hiker from a point directly below the drone at time . Let denote the height of the box at time .  Known:   We find: when meters ( seconds)  But so that and thus      In , is the dashed curve and is the solid curve (the line). Is positive, negative, zero, or undefined?  is the dashed curve and is the solid curve.            Positive      Negative      Zero    Correct.      Undefined       The function has two horizontal asymptotes. Use limits to carefully determine the equations of each asymptote. Unsupported work will not receive credit.    is a horizontal asymptote since    is another horizontal asymptote since, using L'Hopital's rule, we have       "
+},
+{
+  "id": "exam3-f25-q1",
+  "level": "2",
+  "url": "past_exams-7.html#exam3-f25-q1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": " A rescue drone is hovering 15 meters above the ground and is lowering a supply box to a hiker using a rope. The rope is released (vertically) at a constant rate of 3 meters per second. At the moment the box is released, the hiker is walking away from the point directly beneath the drone at a speed of 1 meter per second. When the box is 3 meters above the ground, how fast is the distance between the supply box and the hiker changing?  A rescue drone lowers a supply box to a hiker.          Let denote the distance of the hiker from a point directly below the drone at time . Let denote the height of the box at time .  Known:   We find: when meters ( seconds)  But so that and thus    "
+},
+{
+  "id": "exam3-f25-q2",
+  "level": "2",
+  "url": "past_exams-7.html#exam3-f25-q2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": " In , is the dashed curve and is the solid curve (the line). Is positive, negative, zero, or undefined?  is the dashed curve and is the solid curve.            Positive      Negative      Zero    Correct.      Undefined     "
+},
+{
+  "id": "exam3-f25-q3",
+  "level": "2",
+  "url": "past_exams-7.html#exam3-f25-q3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": " The function has two horizontal asymptotes. Use limits to carefully determine the equations of each asymptote. Unsupported work will not receive credit.    is a horizontal asymptote since    is another horizontal asymptote since, using L'Hopital's rule, we have    "
 }
 ]
 
