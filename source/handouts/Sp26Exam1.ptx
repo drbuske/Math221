@@ -178,7 +178,7 @@
       The value <m>V</m> (in dollars) of a painting <m>t</m> years after it is purchased is modeled by
       <md>V(t)=\frac{100t^2+50}{t}+400, \qquad 1\le t\le 5.</md>
     </p>
-    <ol marker="a.">
+    <ol marker="(a)">
       <li>
         <p>
           Find the average rate of change in the value of the painting between the first
@@ -194,7 +194,7 @@
     </ol>
   </statement>
   <answer>
-    <ol marker="a.">
+    <ol marker="(a)">
       <li>
     <p>
       <m>V(1)=550</m> and <m>V(5)=910</m>, so the average rate of change is
@@ -217,7 +217,7 @@
     <p>
       Calculate each one-sided limit below or state that it does not exist. Justify your answer.
     </p>
-    <ol marker="a.">
+    <ol marker="(a)">
       <li>
         <p>
           <m>\displaystyle \lim_{x\to 0^-}\frac{-x^2+2x}{x(x-3)}</m>
@@ -236,7 +236,7 @@
     </ol>
   </statement>
   <answer>
-    <ol marker="a.">
+    <ol marker="(a)">
         <li>
           <p>
        <m>
@@ -396,7 +396,7 @@
         <description>A graph showing a function <m>f(x)</m> having domain of -5 to infinity.</description>
       </image>
 </figure>
-<ol marker="a.">
+<ol marker="(a)">
   <li> <p> List all values of <m>x</m> for which <m>f(x)</m> is not differentiable.</p> 
   </li>
   <li> <p> List all values of <m>x</m> for which <m>f(x)</m> is not continuous.</p> </li>
@@ -407,7 +407,7 @@
 </statement>
 <answer>
   <p>
-   <ol marker="a.">
+   <ol marker="(a)">
     <li><m>x=-1,1</m> </li>
     <li><m>x=-1</m> </li>
     <li><m>x=-3</m> </li>
@@ -607,7 +607,7 @@ A graph of a smooth curve on a coordinate plane. The curve decreases to a local 
     </tabular>
   </table>
 
-    <ol marker="a.">
+    <ol marker="(a)">
       <li>
         <p>
           Use a central difference to estimate <m>P'(6)</m>.
@@ -628,7 +628,7 @@ A graph of a smooth curve on a coordinate plane. The curve decreases to a local 
     </ol>
   </statement>
   <answer>
-    <ol marker="a.">
+    <ol marker="(a)">
     <li>
    <p> We compute:
       <md>
@@ -669,7 +669,7 @@ A graph of a smooth curve on a coordinate plane. The curve decreases to a local 
       <md>s(t)=-4t^2+5t+3.</md>
     </p>
 
-    <ol marker="a.">
+    <ol marker="(a)">
       <li>
         <p>
           Expand and simplify
@@ -697,7 +697,7 @@ A graph of a smooth curve on a coordinate plane. The curve decreases to a local 
   </statement>
 
   <answer>
-    <ol marker="a.">
+    <ol marker="(a)">
       <li>
     <p> We compute: 
       <md>

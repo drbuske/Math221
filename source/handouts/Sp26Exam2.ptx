@@ -56,7 +56,7 @@
     </latex-image>
   </image>
 </figure>
-<ol marker="a.">
+<ol marker="(a)">
   <li>
     <p>
       Without formulas, determine the
@@ -86,7 +86,7 @@
 </ol>
 </statement>
 <answer>
-<ol marker="a.">
+<ol marker="(a)">
   <li>
     <p>
       At
@@ -258,7 +258,7 @@ and
     f'(3)=-1.6
 </m>
 .
-<ol marker="a.">
+<ol marker="(a)">
     <li> <p> Find the linearization
     <m>
         L(x)
@@ -299,7 +299,7 @@ and
  </statement>
  <answer>
     <p>
-        <ol marker="a.">
+        <ol marker="(a)">
             <li>
                 <p>
                 <m>
@@ -343,7 +343,7 @@ and
 <exercise xml:id="exam2-s26-q5">
 <statement>
 Compute each derivative.
-<ol marker="a.">
+<ol marker="(a)">
     <li>
         <p>
            <m>
@@ -370,7 +370,7 @@ Compute each derivative.
 
 <answer>
     <p>
-        <ol marker="a.">
+        <ol marker="(a)">
             <li>
                 <p>
                    <m>
@@ -421,7 +421,7 @@ C) changes with height according to
 <m>
     T(H)=18 + 0.5H.
 </m>
-<ol marker="a.">
+<ol marker="(a)">
     <li> <p>Compute
     <m>
         \dfrac{dT}{dt}
@@ -437,7 +437,7 @@ C) changes with height according to
 
 <answer>
     <p>
-        <ol marker="a.">
+        <ol marker="(a)">
             <li>
                 <p> From the chain rule, 
                     <md>
@@ -525,7 +525,7 @@ at the ordered pair
 <p>
     Let <m>P(x)=u(x)v(x)</m> and <m>Q(x)=\dfrac{u(x)}{v(x)}</m>.
 </p>
-<ol marker="a.">
+<ol marker="(a)">
 <li>
     <p>
        Compute
@@ -560,7 +560,7 @@ at the ordered pair
 </ol>
 </statement>
 <answer>
-    <ol marker="a.">
+    <ol marker="(a)">
         <li>
             <p> We have
              <md>
@@ -829,7 +829,7 @@ is
     q'(20)=-18
 </m>
 .
-<ol marker="a.">
+<ol marker="(a)">
     <li>
         <p>
              In this context, what does
@@ -869,7 +869,7 @@ is
 </ol>
 </statement>
 <answer>
-<ol marker="a.">
+<ol marker="(a)">
     <li>
         <p>
             <m>

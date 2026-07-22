@@ -329,7 +329,7 @@ The diagram forms a right triangle with vertical leg 8 feet, horizontal leg x(t)
     </latex-image>
   </image>
 </figure>
-<ol marker="a.">
+<ol marker="(a)">
     <li>
         <p>
             Write a relation between
@@ -359,7 +359,7 @@ The diagram forms a right triangle with vertical leg 8 feet, horizontal leg x(t)
 </ol>
 </statement>
 <answer>
-<ol marker="a.">
+<ol marker="(a)">
     <li>
         <p>
            <m>
@@ -537,7 +537,7 @@ on the interval
 </description>
       </image>
 </figure>
-<ol marker="a.">
+<ol marker="(a)">
     <li>
         <p>
             What is the value of
@@ -590,7 +590,7 @@ on the interval
 </ol>
 </statement>
 <answer>
-    <ol marker="a.">
+    <ol marker="(a)">
         <li>
             <p>
                 <m>
@@ -681,7 +681,7 @@ and
     </latex-image>
   </image>
 </figure>
-<ol marker="a.">
+<ol marker="(a)">
     <li>
         <p>
            Evaluate
@@ -703,7 +703,7 @@ and
 </ol>
 </statement>
 <answer>
-<ol marker="a.">
+<ol marker="(a)">
     <li>
         <p>
             2 (top tends to 2; bottom tends to 1)

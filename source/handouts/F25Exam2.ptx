@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+  <title>Exam 2 - Fall 2025</title>
+
+<section>
+<title>Topics</title>
+
+    <p>1.8-2.7
+    </p>
+
+    <p>
+      Be sure to try each question before looking at the solutions.
+    </p>
+
+  <exercises xml:id="exercises-f25exam2">
+    <title>Questions</title>
+
+<exercise xml:id="exam2-f25-q1">
+<statement>
+   Let
+   <m>
+       f
+   </m>
+   be a differentiable and strictly increasing function such that
+   <md>
+       f(2)=5 \ \ \ \ {\text{and}}\ \ \ \ f'(2)=4.
+   </md>
+   Let
+   <m>
+       g=f^{-1}
+   </m>
+   be the inverse of
+   <m>
+       f
+   </m>
+   .
+  <figure xml:id="F25Ex2q1pic" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>A graph of <m>
+    f(x)</m>.</caption>
+      <image source="images/InverseTangentLine.jpg" width="50%">
+        <description>Graph of an increasing S-shaped curve labeled f, passing through the point (2,5) dashed guide lines connect the point to the axes, showing x=2 and y=5.</description>
+      </image>
+</figure>
+<ol marker="(a)">
+  <li>
+    <p>
+       Compute
+       <m>
+           g'(5)
+       </m>
+       . 
+    </p>
+  </li>
+  <li>
+    <p>
+       Find the equation of the tangent line to the graph of
+       <m>
+           g(x)
+       </m>
+       at the point
+       <m>
+           (5,2)
+       </m>
+       .  
+    </p>
+  </li>
+</ol>
+</statement>
+<answer>
+<ol marker="(a)">
+  <li>
+    <p>
+      <m>\displaystyle g'(5)= \frac{1}{f'(2)} = \frac{1}{4}</m>
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>\displaystyle y-2=\frac{1}{4}(x-5)</m>
+    </p>
+  </li>
+</ol>
+</answer>
+</exercise>
+
+<exercise xml:id="exam2-f25-q2">
+<statement>
+        <p>A computer system processes data at a rate that depends on the number of users <m>u(t)</m> and the average data processed per user <m>p(t)</m>, both changing over time <m>t</m> (measured in minutes). The total data processed at time <m>t</m> is <md>T(t) = u(t) \cdot p(t).</md> </p>
+        
+        <p>At time <m>t=5</m> minutes, the number of users is 200 and is increasing at a rate of 12 users per minute. At the same time (<m>t=5</m> minutes), the average data processed per users is 3.5 MB/min and is increasing at a rate of 0.2 MB/min<m>^{2}</m>.</p> 
+        
+        <p>Compute the rate of change of total data processed <m>T</m> at <m>t=5</m> minutes. Be sure to include appropriate units in your response.</p>
+</statement>
+<answer>
+  <p>
+    We have <md>T'(t) = u'(t)\cdot p(t) + u(t) \cdot p'(t)</md> where <m>u(5)=200</m>, <m>u'(5)=12</m>, <m>p(5)=3.5</m>, and <m>p'(5)=0.2</m>.  So, <md>
+        <mrow> T'(5) \mathstrut \amp = u'(5)p(5) + u(5)p'(5) </mrow>
+        <mrow> \amp \left( 12 \ \frac{users}{min}\right) \left( 3.5 \ \frac{MB}{min}\right) + \left( 200 \ users \right)\left( 0.2 \ \frac{MB}{min^2}\right) </mrow>
+        <mrow> \amp 82 \ \frac{MB}{min^2} </mrow>
+    </md>
+  </p>
+</answer>
+ </exercise>
+
+ <exercise xml:id="exam2-f25-q3">
+<statement>
+Suppose
+<m>
+    f
+</m>
+and
+<m>
+    g
+</m>
+are differentiable functions with the values shown in <xref ref="DifflFuncsExam25q3"/>.
+<table xml:id="DifflFuncsExam25q3" >
+        <title>Values of <m>f(x)</m>, <m>g(x)</m>, <m>f'(x)</m>, and <m>g'(x)</m> at various values of <m>x</m>.</title>
+    <tabular halign="center" bottom="minor" top="minor">
+      <row header="yes">
+        <cell><p><m>x</m></p></cell>
+        <cell><p><m>f(x)</m></p></cell>
+        <cell><p><m>g(x)</m></p></cell>
+        <cell><p><m>f'(x)</m></p></cell>
+        <cell><p><m>g'(x)</m></p></cell>
+      </row>
+      <row>
+        <cell><p>-2</p></cell>
+        <cell><p>3</p></cell>
+        <cell><p>1</p></cell>
+        <cell><p>-5</p></cell>
+        <cell><p>8</p></cell>
+      </row>
+            <row>
+        <cell><p>-1</p></cell>
+        <cell><p>-9</p></cell>
+        <cell><p>7</p></cell>
+        <cell><p>4</p></cell>
+        <cell><p>1</p></cell>
+      </row>
+            <row>
+        <cell><p>0</p></cell>
+        <cell><p>5</p></cell>
+        <cell><p>2</p></cell>
+        <cell><p>9</p></cell>
+        <cell><p>-3</p></cell>
+      </row>
+            <row>
+        <cell><p>1</p></cell>
+        <cell><p>2</p></cell>
+        <cell><p>-3</p></cell>
+        <cell><p>-2</p></cell>
+        <cell><p>6</p></cell>
+      </row>
+            <row>
+        <cell><p>2</p></cell>
+        <cell><p>-5</p></cell>
+        <cell><p>3</p></cell>
+        <cell><p>8</p></cell>
+        <cell><p>1</p></cell>
+      </row>
+    </tabular>
+  </table>
+<ol marker="(a)">
+    <li>
+        <p>
+           Find
+           <m>
+               h'(1)
+           </m>
+           if
+           <m>
+               \displaystyle h(x)=x^{3}g(x)
+           </m>
+           .
+        </p>
+    </li>
+    <li>
+        <p>
+           Find the exact value of
+           <m>
+               m'(0)
+           </m>
+           if
+           <m>
+               \displaystyle m(x)=\frac{e^{f(x)}}{g(x)}
+           </m>
+           . 
+        </p>
+    </li>
+    <li>
+        <p>
+            Find the exact value of
+            <m>
+                p'(2)
+            </m>
+            if
+            <m>
+                \displaystyle p(x) = 4\ln(x) - \cos(g(x))
+            </m>
+            .
+        </p>
+    </li>
+</ol>
+  </statement>
+  <answer>
+<ol marker="(a)">
+    <li>
+        <p>
+            Use the product rule: <md>
+                h'(x) = 3x^2 g(x) + x^3 g'(x). </md>  It follows that <md>
+                <mrow> h'(1) \amp = 3(1)^2g(1) + (1)^3g'(1) </mrow>
+                <mrow> \amp = 3(-3)+6 </mrow>
+                <mrow> \amp = -3 </mrow>
+            </md>
+        </p>
+    </li>
+    <li>
+        <p>
+            By the quotient rule, <md> m'(x) = \frac{g(x) \frac{d}{dx}\left( e^{f(x)} \right) - e^{f(x)}\frac{d}{dx}\left( g(x) \right)}{g(x)^2} </md>
+            So, <md> 
+                <mrow> m'(0) \mathstrut \amp = \frac{g(0)f'(0)e^{f(0)} - e^{f(0)}g'(0)}{g(0)^2} </mrow>
+                <mrow> \amp = \frac{(2)(9)(e^5) - e^5(-3)}{2^2} </mrow>
+                <mrow> \amp = \frac{21e^5}{4} </mrow>
+            </md>
+        </p>
+    </li>
+    <li>
+        <p>
+            By the constant multiple and chain rules, we have <md> p'(x) = 4 \cdot \frac{1}{x} + g'(x) \sin(g(x)). </md>  So, <md>
+                <mrow> p'(2) \mathstrut \amp = \frac{4}{2} + g'(2)\sin(g(2)) </mrow>
+                <mrow> \amp = 2+ 1\sin(3) </mrow>
+                <mrow> \amp = 2 + \sin(3) </mrow>
+            </md>
+        </p>
+    </li>
+</ol>
+  </answer>
+</exercise>
+
+ <exercise xml:id="exam2-f25-q4">
+<statement>
+The function
+<m>
+    f(x)=x2^{x}
+</m>
+is decreasing on
+<m>
+    (-\infty,c)
+</m>
+and increasing on
+<m>
+    (c,\infty)
+</m>
+. What is the
+<alert>
+    exact
+</alert>
+value of
+<m>
+    c
+</m>
+. Explain how you determined this value.
+</statement>
+<answer>
+    <p>
+        <md> f'(x) = 1 \cdot 2^x + x(\ln 2)(2^x) = 0 </md>
+        if and only if <md> 2^x (1+(\ln 2)x) = 0 </md> 
+        if and only if <md> 1 + (\ln 2)x=0 </md> 
+        if and only if <md> x = -\frac{1}{\ln 2} </md>
+        So, <m> \displaystyle c = -\frac{1}{\ln 2}</m>.  The derivative <m>f'</m> changes from negative to positive here.  
+    </p>
+</answer>
+</exercise>
+
+ <exercise xml:id="exam2-f25-q5">
+<statement>
+    Find the equation of the tangent line to the curve
+    <m>
+        \displaystyle \ln(x+y^{2}) = xy
+    </m>
+    at the ordered pair
+    <m>
+        (1,0)
+    </m>
+    .
+    <figure xml:id="F25Ex2q5pic" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>A graph of <m>
+    \ln(x+y^2) = xy</m> and the ordered pair <m>(1,0)</m>.</caption>
+      <image source="images/ImplicitEquationFall25.jpg" width="50%">
+        <description>Graph with two branches and a vertical asymptote; the lower branch passes through the labeled point (1, 0), while the upper branch approaches the asymptote from the left.</description>
+      </image>
+</figure>
+</statement>
+<answer>
+    <p>
+      <md> <mrow> \frac{d}{dx} \ln(x+y^2) \mathstrut \amp = \frac{d}{dx}(xy) </mrow>
+        <mrow> \implies \frac{1}{x+y^2} [1+2y\frac{dy}{dx}] \amp = 1\cdot y + x\frac{dy}{dx} </mrow>
+        <mrow> \implies \frac{1}{x+y^2} + \frac{2y}{x+y^2} \frac{dy}{dx} \amp = y + x\frac{dy}{dx} </mrow>
+        <mrow> \implies \left( \frac{2y}{x+y^2}-x\right) \frac{dy}{dx} \amp = y- \frac{1}{x+y^2} </mrow>
+      </md>
+      So, <md> \frac{dy}{dx} = \frac{y-\frac{1}{x+y^2}}{\frac{2y}{x+y^2}-x} </md> and evaluating this at <m>x=1</m> and <m>y=0</m> gives 1 (the slope of the tangent line at <m>(1,0)</m>).  So the tangent line is <md> y-0 = 1(x-1).</md>  
+    </p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam2-f25-q6">
+<statement>
+ <p>
+   A metal object is cooling in a 20 <m>^{\circ}C</m> room.
+   The temperature (in <m>^{\circ}C</m> ) of the object at time <m>t</m> (in
+   minutes) is <m>T(t)</m> and its volume <m>V</m> (in cm <m>^{3}</m> ) depends
+   on temperature <m>T</m> (in <m>^{\circ}C</m> ) according to
+   <md>
+     V(T)=1000+0.2T.
+   </md>
+   The temperature of the object follows Newton's Law of Cooling:
+   <md>
+     \frac{dT}{dt}= -0.1(T-20).
+   </md>
+ </p>
+
+ <p>
+   If the temperature of the object at time <m>t=0</m> is
+   <m>T(0)=80^{\circ}C</m>, use the chain rule to compute the rate of change in
+   the object's volume at <m>t=0</m>.
+ </p> 
+</statement>
+<answer>
+        <p>
+            We find <md> <mrow> \frac{d}{dt} V(T(t))\vert_{t=0} \mathstrut \amp = V'(T(t))T'(t)\vert_{t=0} </mrow>
+            <mrow> \amp = V'(T(0))T'(0) </mrow>
+            <mrow> \amp = 0.2 [ -0.1(80-20)] </mrow>
+            <mrow> \amp -1.2 \ \frac{cm^3}{min} </mrow>
+            </md>
+        </p>
+</answer>
+</exercise>
+
+ <exercise xml:id="exam2-f25-q7">
+<statement>
+  <p>
+    The graph of a function <m>f</m> is shown in <xref ref="F25Ex2q7"/>.  Which of the following do you expect to be true regarding
+    <m>
+        f'
+    </m>
+    and
+    <m>
+        f''
+    </m>
+    ?
+  </p>
+  <figure xml:id="F25Ex2q7">
+  <caption> The graph of function <m>f</m>.</caption> 
+  <image source="images/PeriodicFunctionCsc.jpg" width="60%">
+  <description>
+Periodic graph with repeating downward arches, vertical dashed asymptotes at x = −4, 0, 4, and 8, and local maxima at y = −2 midway between the asymptotes.
+</description>
+      </image>
+</figure>
+</statement>
+<choices multiple-correct="yes" randomize="no">
+
+    <choice correct="yes">
+      <statement>
+        <p><m>
+            f'(x)
+        </m>
+        will be periodic.</p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>
+            f'(x)
+        </m>
+        will be continuous.</p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>The graph of
+        <m>
+            f'(x)
+        </m>
+        will lie entirely  above the
+        <m>
+            x
+        </m>
+        -axis.</p>
+      </statement>
+    </choice>
+
+     <choice>
+      <statement>
+        <p><m>
+            f'(x)
+        </m>
+        will be increasing on its domain. </p>
+      </statement>
+    </choice>
+
+      <choice>
+      <statement>
+        <p><m>
+            f'(2k)=0
+        </m>
+        for all integers
+        <m>
+            k
+        </m>
+        . </p>
+      </statement>
+    </choice>
+
+    <choice correct="yes">
+      <statement>
+        <p><m>
+            f'(-\pi) = -f'(\pi)
+        </m></p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>
+            f'
+        </m>
+        has no
+        <m>
+            x
+        </m>
+        -intercepts. </p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>
+            f'
+        </m>
+        has no vertical asymptotes.</p>
+      </statement>
+    </choice>
+
+    <choice correct="yes">
+      <statement>
+        <p> The graph of
+        <m>
+            f''(x)
+        </m>
+        will lie entirely below the
+        <m>
+            x
+        </m>
+        -axis.</p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  
+        </p>
+      </feedback>
+    </choice>
+
+    <choice correct="yes">
+      <statement>
+        <p> <m>
+            f''(x)
+        </m>
+        will be periodic.</p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  
+        </p>
+      </feedback>
+    </choice>
+
+  </choices>
+  </exercise>
+
+   <exercise xml:id="exam2-f25-q8">
+<statement>
+Evaluate the derivatives of the following functions:
+<ol marker="(a)">
+    <li>
+        <p>
+             <m>
+                 f(x) = 6\sqrt{x}+ 4\csc(x)
+             </m>
+        </p>
+    </li>
+    <li>
+        <p>
+            <m>
+                g(x) = e^{2} + 2^{4x^2-x}
+            </m>
+        </p>
+    </li>
+    <li>
+        <p>
+            <m>
+                \displaystyle p(x) = \lim_{h \rightarrow 0}\frac{(x+h)^{7} - x^{7}}{h}
+            </m>
+        </p>
+    </li>
+</ol>
+</statement>
+<answer>
+    <ol marker="(a)">
+        <li>
+            <p>
+                <m>\displaystyle f'(x) = 3x^{-1/2} - 4\csc(x)\cot(x)</m>
+            </p>
+        </li>
+        <li>
+            <p>
+                <m> g'(x) = 0 + (8x-1)2^{4x^2-x}\ln(2)</m>
+            </p>
+        </li>
+        <li>
+            <p>
+                This is the definition of <m>p'(x)</m> for a function <m>x^7</m>.  That is, <m>p(x)=7x^6</m>.  So, <m>p'(x) = 42x^5</m>.  
+            </p>
+        </li>
+     </ol>
+</answer>
+</exercise>
+
+</exercises>
+
+</section>
+</handout>
