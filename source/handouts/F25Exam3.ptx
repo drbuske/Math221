@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+  <title>Exam 3 - Fall 2025</title>
+
+<section>
+<title>Topics</title>
+
+    <p>3.1-4.2
+    </p>
+
+    <p>
+      Be sure to try each question before looking at the solutions.
+    </p>
+
+  <exercises xml:id="exercises-f25exam3">
+    <title>Questions</title>
+
+<exercise xml:id="exam3-f25-q1">
+<statement>
+     A rescue drone is hovering 15 meters above the ground and is lowering a supply box to a hiker using a rope.  The rope is  released (vertically) at a constant rate of 3 meters per second.  At the moment the box is released, the hiker is walking away from the point directly beneath the drone at a speed of 1 meter per second.  When the box is 3 meters above the ground, how fast is the distance between the supply box and the hiker changing? 
+     <figure xml:id="F25Ex3q1">
+  <caption>A rescue drone lowers a supply box to a hiker.</caption> 
+  <image xml:id="Exam3F25q1pic" width="50%" >
+<description>
+</description>
+    <latex-image>
+ \begin{tikzpicture}[scale=0.7]
+
+% Ground line
+\draw[thick] (-1,0) -- (5.5,0);
+
+% Drone
+\draw[fill=gray!30] (0,8) circle (0.5);
+\node at (1.5,8) {\small Drone};
+
+% Box
+\draw[fill=brown!40] (-0.5,3) rectangle (0.5,4);
+\node at (1,3.5) {\small Box};
+
+% Rope
+\draw[dashed] (0,8) -- (0,4);
+\draw[dashed] (0,3) -- (0,0);
+
+% Hiker
+\draw[fill=orange!50] (4,0) rectangle (4.5,1.5);
+\node at (4.25,1.8) {\small Hiker};
+
+% Dimensions
+\draw[&lt;-&gt;, thick] (-0.8,0) -- (-0.8,8);
+\node[left] at (-0.8,5) {15 m};
+
+\draw[-&gt;, thick] (-1.3,4) -- (-1.3,3);
+\node[left] at (-1.3,3.5) {3 m/s};
+
+\draw[-&gt;, thick] (2,-0.8) -- (4,-0.8);
+\node[below] at (3,-0.1) {1 m/s};
+
+% Speeds
+%%\node[right] at (5.5,1) {Hiker speed: 1 m/s};
+%%\node[right] at (5.5,0.3) {Box descent: 3 m/s};
+
+% Optional diagonal distance
+\draw[dotted, thick] (0,3) -- (4,0);
+%%\node at (2.2,1.8) {$z \approx 12.65$ m};
+
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure> 
+</statement>
+<answer>
+    <p>
+        Let <m>x(t)</m> denote the distance of the hiker from a point directly below the drone at time <m>t</m>.  Let <m>y(t)</m> denote the height of the box at time <m>t</m>.  
+    </p>
+
+    <p> Known: <m>\displaystyle \frac{dy}{dt} = -3 \ \frac{m}{sec}, \frac{dx}{dt} = 1 \ \frac{m}{sec}</m> 
+    </p>
+
+    <p>We find: <m>\displaystyle \frac{dz}{dt}</m> when <m>y(t)=3</m> meters (<m>t=4</m> seconds)
+    </p>
+
+    <p> But <md>x(t)^2 + y(t)^2 = z(t)^2</md> so that <md>2x(t)\frac{dx}{dt} + 2y(t)\frac{dy}{dt} = 2z(t)\frac{dz}{dt}</md> and thus <md> 
+        <mrow> \frac{dz}{dt}\vert_{y=3} \mathstrut \amp = \frac{x(t) \frac{dx}{dt} + y(t) \frac{dy}{dt}}{z(t)}\vert_{y=3} </mrow>
+        <mrow> \amp = \frac{ (4 \ m)(1 \ \frac{m}{sec}) + (3 \ m)(-3 \ \frac{m}{sec})}{5 \ m} </mrow> 
+        <mrow> \amp = -1 \ \frac{m}{sec} </mrow>
+    </md>
+</p>
+</answer>  
+</exercise> 
+
+<exercise xml:id="exam3-f25-q2">
+<statement>
+In <xref ref="F25Ex3q2"/>, <m>
+    f(x)
+</m>
+is the dashed curve and
+<m>
+    g(x)
+</m>
+is the solid curve (the line).  Is <md>
+    \displaystyle \lim_{x \rightarrow a}\frac{f(x)}{g(x)}
+</md>
+positive, negative, zero, or undefined?  
+<figure xml:id="F25Ex3q2">
+  <caption><m>f(x)</m> is the dashed curve and <m>g(x)</m> is the solid curve.</caption> 
+  <image xml:id="Exam3F25q2pic" width="50%" >
+<description>
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1]
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (3,0) node [below] at (2.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,2) node [right] at (0,1.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+%%\draw[color=linecolor, line width=1pt,domain=0.5:4.25]   plot (\x,{4/(\x+1))}) node [above] at (1.65,2) {$\displaystyle f(x)$};
+\draw[color=linecolor, line width=2pt,domain=-0.5:2.5,dashed]   plot (\x,{0.5*(\x-1)*(\x-1)}) node [above] at (-0.5,0) {$\displaystyle f(x)$};
+\draw[color=red, line width=2pt,domain=-0.25:1.75]   plot (\x,{-1.5*(\x-1)}) node [left] at (-0.25,1.75) {$\displaystyle g(x)$};
+\foreach \x/\xtext in { 1/a}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure> 
+</statement>
+<choices randomize="no">
+
+    <choice>
+      <statement>
+        <p>Positive</p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>Negative</p>
+      </statement>
+    </choice>
+
+    <choice correct="yes">
+      <statement>
+        <p>Zero</p>
+      </statement>
+            <feedback>
+        <p>
+          Correct.  
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>Undefined</p>
+      </statement>
+    </choice>
+
+  </choices>
+</exercise>
+
+<exercise xml:id="exam3-f25-q3">
+<statement>
+The function
+<m>
+    \displaystyle f(x) = \frac{3-4e^{-x}}{2+2e^{-x}}
+</m>
+has two horizontal asymptotes. Use limits to carefully determine the equations of each asymptote. Unsupported work will not receive credit.
+</statement>
+<answer>
+    <p>
+        <m>y=\frac{3}{2}</m> is a horizontal asymptote since <md> \lim_{x \rightarrow \infty} f(x) = \lim_{x \rightarrow \infty} \frac{3-4e^{-x}}{2+2e^{-x}} = \frac{3}{2}. </md>
+    </p>
+    <p>
+        <m>y=-2</m> is another horizontal asymptote since, using L'Hopital's rule, we have <md> <mrow> \lim_{x \rightarrow -\infty} f(x) \mathstrut \amp = \lim_{x \rightarrow -\infty} \frac{3-4e^{-x}}{2+2e^{-x}} </mrow>
+            <mrow> \amp = \lim_{x \rightarrow -\infty} \frac{4e^{-x}}{-2e^{-x}} </mrow>
+            <mrow> \amp = -2. </mrow>
+        </md>
+    </p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam3-f25-q4">
+<statement>
+A function satisfying
+<m>
+  f(0)=-1
+</m>
+that is differentiable everywhere has the graph of
+<m>
+  f'(x)
+</m>
+as shown in <xref ref="F25Ex3q4"/>. 
+<figure xml:id="F25Ex3q4">
+  <caption><m>f(x)</m> is differentiable everywhere.</caption> 
+  <image xml:id="Exam3F25q4pic" width="50%" >
+<description>
+</description>
+    <latex-image>
+ \begin{tikzpicture}[thick,scale=0.8]
+\draw[step=1cm,color=black,dotted] (-3,-5) grid (3,3);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (3,0) node [below] at (2.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-3,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3) node [right] at (0,2.5) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-5);
+%%\draw[color=linecolor, line width=1pt,domain=0.5:4.25]   plot (\x,{4/(\x+1))}) node [above] at (1.65,2) {$\displaystyle f(x)$};
+\draw[color=linecolor, line width=2pt,smooth,domain=-2.75:2.75]   plot (\x,{-0.5*(\x-1.5)*(\x-1.5)*(\x+2.5)}) node [above] at (-2,1) {$\displaystyle f'(x)$};
+\fill [black] (1.5,0) circle(3pt) node [above] at (1.5,0.05) {$(1.5,0)$}; 
+\fill [black] (-1.16,-4.750) circle(3pt) node [below] at (-1.16,-4.8) {$\left(-\frac{7}{6}, -4.75\right)$}; 
+\fill [black] (-2.5,0) circle(3pt) node [above] at (-2.25,0.05) {$(-2.5,0)$}; 
+\fill [black] (0,-2.8125) circle(3pt) node [right] at (0,-2.8) {$(0,-2.75)$}; 
+\foreach \x/\xtext in {  -2/-2, -1/-1, 1/1, 2/2}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-4/-4, -3/-3, -2/-2, -1/-1, 1/1, 2/2}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+<ol marker="(a)">
+  <li>
+    <p>
+      Construct a first-derivative sign chart to determine interval(s) of the domain where
+      <m>
+        f
+      </m>
+      is increasing and where
+      <m>
+        f
+      </m>
+      is decreasing.
+    </p>
+  </li>
+  <li>
+    <p>
+      Construct a second-derivative sign chart to determine interval(s) of the domain where
+      <m>
+        f
+      </m>
+      is concave up and where
+      <m>
+        f
+      </m>
+      is concave down. Identify all inflection points as well.  
+    </p>
+  </li>
+  <li>
+    <p>
+      Assume that all of the interesting information about
+      <m>
+        f'(x)
+      </m>
+      is shown in <xref ref="F25Ex3q4"/>. Does
+      <m>
+        f(x)
+      </m>
+      have any local minima? If so, where? If not, why not? Does it have any local maxima?
+    </p>
+  </li>
+  </ol>
+  </statement>
+  <answer>
+<ol marker="(a)">
+  <li>
+    <p>
+      <m>f(x)</m> is increasing on <m>(-\infty, -2.5)</m> and decreasing on <m>(-2.5,-1.5) \cup (-1.5,\infty)</m>.  
+    </p>
+    <figure xml:id="F25Ex3q4A">
+  <caption>A first derivative sign chart.</caption> 
+  <image xml:id="Exam3F25q4Apic" width="90%" >
+<description>A firat derivative sign chart.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1] [domain=-3:3]
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$f'(x)$};
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (-6,0);
+   \draw [red] node [above] at (-4,0.25) {$+$};
+   \draw [red] node [above] at (-1.5,0.25) {$-$};
+   \draw [red] node [above] at (2,0.25) {$-$};
+   \draw [black!80,line width=0.5pt] (-3,0.25) -- (-3,-0.25) node [below] at (-3,-0.25) {$-2.5$};
+   \draw [black!80,line width=0.5pt] (0,0.25) -- (0,-0.25) node [below] at (0,-0.25) {$1.5$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+  </li>
+  <li>
+    <p>
+      <m>f(x)</m> is concave down on <m>(-\infty, -\frac{7}{6}) \cup (1.5,\infty)</m> and concave up on <m>(-\frac{7}{6},1.5)</m>.  There are inflection points at <m>x=-\frac{7}{6}</m> and <m>x=1.5</m>.
+    </p>
+    <figure xml:id="F25Ex3q4B">
+  <caption>A second derivative sign chart.</caption> 
+  <image xml:id="Exam3F25q4Bpic" width="90%" >
+<description>A second derivative sign chart.
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1] [domain=-3:3]
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (4,0) node [below] at (3.5,0) {$f''(x)$};
+   \draw [black!80,line width=0.5pt,-latex] (0,0) -- (-6,0);
+   \draw [red] node [above] at (-4,0.25) {$-$};
+   \draw [red] node [above] at (-1.5,0.25) {$+$};
+   \draw [red] node [above] at (2,0.25) {$-$};
+   \draw [black!80,line width=0.5pt] (-3,0.25) -- (-3,-0.25) node [below] at (-3,-0.25) {$-\frac{7}{6}$};
+   \draw [black!80,line width=0.5pt] (0,0.25) -- (0,-0.25) node [below] at (0,-0.25) {$1.5$};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+  </li>
+  <li>
+    <p>
+      <m>f(x)</m> has a local maximum at <m>x=-2.5</m> via the second derivative test.  <m>f(x)</m> has no local minimum since <m>f(x)</m> does not change from decreasing to increasing anywhere.
+    </p>
+  </li>
+</ol>
+  </answer>
+  </exercise>
+
+<exercise xml:id="exam3-f25-q5">
+<statement>
+ The velocity of a falling object at time
+ <m>
+     t
+ </m>
+ seconds is given by
+ <m>
+     v(t) = 9-3t
+ </m>
+ feet per second. Determine the
+ <alert>
+     distance
+ </alert>
+ the object has traveled during the time interval of
+ <m>
+     t=0
+ </m>
+ to
+ <m>
+     t=2
+ </m>
+ seconds. Illustrate this value with a well-labeled diagram.
+  </statement>
+  <answer>
+    <p>
+      The distance traveled is <m>6+\frac{1}{2}(2)(6) = 12</m> feet.  
+    </p>
+    <figure xml:id="F25Ex3q5ans">
+  <caption>The velocity of a falling object gives the distance it has traveled via area under the curve.</caption> 
+  <image xml:id="Exam3F25q5anspic" width="50%" >
+<description>
+</description>
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1] [domain=-3:3]
+  \fill [red!50] (0,0) -- (2,0) -- (2,1) -- (0,3) -- (0,0);
+   \draw [black!80,line width=0.5pt,-latex] (-1,0) -- (4,0) node [below] at (3.5,0) {$t$};
+   \draw [black!80,line width=0.5pt,-latex] (0,-1) -- (0,4) node [right] at (0,3.5) {$v(t)$};
+   \draw [linecolor] node [below] at (2,0) {$2$};
+   \draw [linecolor] node [below] at (3,0) {$3$};
+   \draw [linecolor] node [left] at (0,3) {$9$};
+   \draw [linecolor] node [left] at (0,1) {$3$};
+   \draw [linecolor,line width=0.5pt] (-1,4) -- (4,-1);
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+  </answer>
+  </exercise>
+
+<exercise xml:id="exam3-f25-q6">
+<statement>
+<ol marker="(a)">
+  <li>
+    <p>
+       Compute the value of <m>
+           \displaystyle \sum_{k=1}^{5}2k+3.
+       </m>
+    </p>
+  </li>
+  <li>
+    <p>
+      Express the sum
+      <m>
+          \displaystyle 3+7+11+\cdots+39
+      </m>
+      using sigma notation.
+    </p>
+  </li>
+</ol>
+</statement>
+  <answer>
+<ol marker="(a)">
+  <li>
+    <p>
+      <m>5+7+9+11+13=45</m>
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>\displaystyle \sum_{k=0}^9 (3+4k) </m>
+    </p>
+  </li>
+  </ol>
+  </answer>
+</exercise>
+
+<exercise xml:id="exam3-f25-q7">
+<statement>
+A rancher wants to create a rectangular plot of 20,000 square feet bounded on one long east-west side by a river. Due to strong southern winds, fencing costs 4 times as much per foot for the east-west side as for the north-south sides. What dimensions minimize the fencing cost?
+  </statement>
+  <answer>
+
+  <p>
+    Let <m>x</m> denote the width of the rectangular plot perpendicular to the river,
+    and let <m>y</m> denote the length parallel to the river. Since fencing is
+    required on only three sides, the total cost is
+  </p>
+
+  <md>
+    C = 4y + 2x.
+  </md>
+
+  <p>
+    The area constraint is
+  </p>
+
+  <md>
+    xy = 20,000.
+  </md>
+
+<figure xml:id="F25Ex3q7ans"> 
+<caption>A rectangular plot bordering a river.</caption>
+  <image xml:id="Exam3F25q7anspic" width="50%" >
+<description>A plot near a river.
+</description>
+    <latex-image>
+\begin{tikzpicture}[scale=0.02]
+\draw (0,0) rectangle (200,100);
+\node at (100,50) {$20,\!000$};
+
+\node[above] at (100,100) {$x$};
+\node[below] at (100,0) {$x$};
+\node[left] at (0,50) {$y$};
+
+\draw[decorate,decoration={brace,amplitude=6pt}]
+  (220,0) -- (220,100);
+\node[right] at (220,50) {River};
+\end{tikzpicture}
+    </latex-image>
+  </image>
+  </figure>
+
+  <p>
+    Solving the area constraint for <m>y</m> gives
+  </p>
+
+  <md>
+    y = \frac{20,000}{x}.
+  </md>
+
+  <p>
+    Substitute this expression into the cost function:
+  </p>
+
+  <md>
+    C(x)
+      = 4\left(\frac{20,000}{x}\right)+2x
+      = \frac{80,000}{x}+2x,
+  </md>
+
+  <p>
+    where <m>x&gt;0</m>.
+  </p>
+
+  <p>
+    Differentiate:
+  </p>
+
+  <md>
+    C'(x)
+      = -80,000x^{-2}+2.
+  </md>
+
+  <p>
+    Set the derivative equal to zero and solve:
+  </p>
+
+  <md>
+    -80,000x^{-2}+2=0,
+  </md>
+
+  <md>
+    x^2=40,000,
+  </md>
+
+  <md>
+    x=\pm 200.
+  </md>
+
+  <p>
+    Since <m>x</m> represents a length, <m>x&gt;0</m>, so the only relevant
+    critical value is
+  </p>
+
+  <md>
+    x=200.
+  </md>
+
+  <p>
+    A sign analysis shows that <m>C'(x)&lt;0</m> for <m>0&lt;x&lt;200</m>
+    and <m>C'(x)&gt;0</m> for <m>x&gt;200</m>. Therefore,
+    <m>C(x)</m> is minimized when <m>x=200</m>.
+  </p>
+
+  <p>
+    Using the area constraint,
+  </p>
+
+  <md>
+    y=\frac{20,000}{200}=100.
+  </md>
+
+  <p>
+    Therefore, the dimensions that minimize the fencing cost are
+  </p>
+
+  <md>
+    x=200\text{ feet},
+    \qquad
+    y=100\text{ feet}.
+  </md>
+
+  <p>
+    The optimal plot is <m>200</m> feet by <m>100</m> feet.
+  </p>
+  </answer>
+</exercise>
+
+<exercise xml:id="exam3-f25-q8">
+<statement>
+The rectangles in <xref ref="F25Ex3q8"/> illustrate a left-endpoint Riemann sum
+<m>
+    \displaystyle \sum_{k=1}^{n} f(x_{k}^{*}) \ \Delta x
+</m>
+for the function
+<m>
+    \displaystyle f(x) = -\frac{x^{2}}{3}+ 3x
+</m>
+on the interval
+<m>
+    [4,8]
+</m>
+. 
+<figure xml:id="F25Ex3q8" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>A Riemann sum.</caption>
+      <image source="images/LeftRiemannSumQuadratic.jpg" width="50%">
+        <description></description>
+      </image>
+</figure>
+<ol marker="(a)">
+  <li>
+    <p>
+      What is the value of
+      <m>
+          \Delta x
+      </m>
+      in this Riemann sum? 
+    </p>
+  </li>
+  <li>
+    <p>
+      Give an explicit formula for
+      <m>
+          x_{k}^{*}
+      </m>
+      in terms of the index
+      <m>
+          k
+      </m>
+      in the Riemann sum.  
+    </p>
+  </li>
+  <li>
+    <p>
+      Illustrate a right-endpoint Riemann sum
+      <m>
+          R_{2}
+      </m>
+      using
+      <m>
+          n=2
+      </m>
+      rectangles for
+      <m>
+          f(x)
+      </m>
+      on the interval
+      <m>
+          [0,3]
+      </m>
+      on the graph. Then, calculate the value of
+      <m>
+          R_{2}
+      </m>
+      .
+    </p>
+  </li>
+</ol>
+  </statement>
+  <answer>
+<ol marker="(a)">
+  <li>
+    <p>
+      <m>\Delta x = 0.5</m>
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>x_k^* = 4+(k-1)(0.5)</m> or <m>x_k^* = 3.5 + 0.5k</m>
+    </p>
+  </li>
+  <li>
+    <p>
+      <md> <mrow> R_2 \mathstrut \amp = f(1.5)(1.5) + f(3)(1.5) </mrow>
+        <mrow> \amp = \left[ -\frac{1.5^2}{3}+3(1.5) \right](1.5) + \left[ -\frac{3^2}{3} + 3(3)\right](1.5) </mrow>
+        <mrow> \amp 14.625 </mrow>
+      </md>
+    </p>
+  </li>
+</ol>
+  </answer>
+  </exercise>
+
+  <exercise xml:id="exam3-f25-q9">
+<statement>
+The graph of <m>f''(x)</m> is given in <xref ref="F25Ex3q9"/>.  
+<figure xml:id="F25Ex3q9" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <caption>A graph of <m>f''(x)</m>.</caption>
+      <image source="images/SecondDerTestFall2025.jpg" width="50%">
+        <description>Graph of a smooth curve with a local minimum near x = -2, a local maximum near x = 1, and another local minimum near x = 2 where the curve touches the x-axis before rising sharply.</description>
+      </image>
+</figure>
+<ol marker="(a)">
+  <li>
+    <p>
+      If
+      <m>
+          x=-2
+      </m>
+      and
+      <m>
+          x=1
+      </m>
+      are critical numbers of
+      <m>
+          f(x)
+      </m>
+      , determine if each is a local minimum, local  maximum, neither, or if more information is needed.
+    </p>
+  </li>
+  <li>
+    <p>
+      Identify the
+      <m>
+          x
+      </m>
+      -value(s) for which
+      <m>
+          f(x)
+      </m>
+      has an inflection point.
+    </p>
+  </li>
+</ol>
+</statement>
+<answer>
+<ol marker="(a)">
+  <li>
+    <p>
+      <m>x=-2</m> gives a local maximum since <m>f''(-2) &lt; 0</m>.  <m>x=1</m> gives a local minimum since <m>f''(1) &gt; 0</m>.
+    </p>
+  </li>
+  <li>
+    <p>
+      There are inflection points at <m>x=-3</m> and <m>x=0</m> since <m>f''(x)</m> changes sign.
+    </p>
+  </li>
+</ol>
+</answer>
+</exercise>
+
+</exercises>
+
+</section>
+</handout>
