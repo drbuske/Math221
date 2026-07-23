@@ -3328,7 +3328,7 @@ var ptx_lunr_docs = [
   "type": "Handout",
   "number": "",
   "title": "Exam 3 - Fall 2025",
-  "body": " Exam 3 - Fall 2025   Topics  3.1-4.2  Be sure to try each question before looking at the solutions.   Questions   A rescue drone is hovering 15 meters above the ground and is lowering a supply box to a hiker using a rope. The rope is released (vertically) at a constant rate of 3 meters per second. At the moment the box is released, the hiker is walking away from the point directly beneath the drone at a speed of 1 meter per second. When the box is 3 meters above the ground, how fast is the distance between the supply box and the hiker changing?  A rescue drone lowers a supply box to a hiker.          Let denote the distance of the hiker from a point directly below the drone at time . Let denote the height of the box at time .  Known:   We find: when meters ( seconds)  But so that and thus      In , is the dashed curve and is the solid curve (the line). Is positive, negative, zero, or undefined?  is the dashed curve and is the solid curve.            Positive      Negative      Zero    Correct.      Undefined       The function has two horizontal asymptotes. Use limits to carefully determine the equations of each asymptote. Unsupported work will not receive credit.    is a horizontal asymptote since    is another horizontal asymptote since, using L'Hopital's rule, we have       "
+  "body": " Exam 3 - Fall 2025   Topics  3.1-4.2  Be sure to try each question before looking at the solutions.   Questions   A rescue drone is hovering 15 meters above the ground and is lowering a supply box to a hiker using a rope. The rope is released (vertically) at a constant rate of 3 meters per second. At the moment the box is released, the hiker is walking away from the point directly beneath the drone at a speed of 1 meter per second. When the box is 3 meters above the ground, how fast is the distance between the supply box and the hiker changing?  A rescue drone lowers a supply box to a hiker.          Let denote the distance of the hiker from a point directly below the drone at time . Let denote the height of the box at time .  Known:   We find: when meters ( seconds)  But so that and thus      In , is the dashed curve and is the solid curve (the line). Is positive, negative, zero, or undefined?  is the dashed curve and is the solid curve.            Positive      Negative      Zero    Correct.      Undefined       The function has two horizontal asymptotes. Use limits to carefully determine the equations of each asymptote. Unsupported work will not receive credit.    is a horizontal asymptote since    is another horizontal asymptote since, using L'Hopital's rule, we have      A function satisfying that is differentiable everywhere has the graph of as shown in .  is differentiable everywhere.          Construct a first-derivative sign chart to determine interval(s) of the domain where is increasing and where is decreasing.    Construct a second-derivative sign chart to determine interval(s) of the domain where is concave up and where is concave down. Identify all inflection points as well.    Assume that all of the interesting information about is shown in . Does have any local minima? If so, where? If not, why not? Does it have any local maxima?         is increasing on and decreasing on .   A first derivative sign chart.   A firat derivative sign chart.        is concave down on and concave up on . There are inflection points at and .   A second derivative sign chart.   A second derivative sign chart.        has a local maximum at via the second derivative test. has no local minimum since does not change from decreasing to increasing anywhere.       The velocity of a falling object at time seconds is given by feet per second. Determine the distance the object has traveled during the time interval of to seconds. Illustrate this value with a well-labeled diagram.   The distance traveled is feet.   The velocity of a falling object gives the distance it has traveled via area under the curve.              Compute the value of     Express the sum using sigma notation.                     A rancher wants to create a rectangular plot of 20,000 square feet bounded on one long east-west side by a river. Due to strong southern winds, fencing costs 4 times as much per foot for the east-west side as for the north-south sides. What dimensions minimize the fencing cost?   Let denote the width of the rectangular plot perpendicular to the river, and let denote the length parallel to the river. Since fencing is required on only three sides, the total cost is   The area constraint is    A rectangular plot bordering a river.   A plot near a river.     Solving the area constraint for gives   Substitute this expression into the cost function:   where .  Differentiate:   Set the derivative equal to zero and solve:     Since represents a length, , so the only relevant critical value is   A sign analysis shows that for and for . Therefore, is minimized when .  Using the area constraint,   Therefore, the dimensions that minimize the fencing cost are   The optimal plot is feet by feet.     The rectangles in illustrate a left-endpoint Riemann sum for the function on the interval .  A Riemann sum.        What is the value of in this Riemann sum?    Give an explicit formula for in terms of the index in the Riemann sum.    Illustrate a right-endpoint Riemann sum using rectangles for on the interval on the graph. Then, calculate the value of .              or             The graph of is given in .  A graph of .   Graph of a smooth curve with a local minimum near x = -2, a local maximum near x = 1, and another local minimum near x = 2 where the curve touches the x-axis before rising sharply.      If and are critical numbers of , determine if each is a local minimum, local maximum, neither, or if more information is needed.    Identify the -value(s) for which has an inflection point.         gives a local maximum since . gives a local minimum since .    There are inflection points at and since changes sign.        "
 },
 {
   "id": "exam3-f25-q1",
@@ -3356,6 +3356,60 @@ var ptx_lunr_docs = [
   "number": "3",
   "title": "",
   "body": " The function has two horizontal asymptotes. Use limits to carefully determine the equations of each asymptote. Unsupported work will not receive credit.    is a horizontal asymptote since    is another horizontal asymptote since, using L'Hopital's rule, we have    "
+},
+{
+  "id": "exam3-f25-q4",
+  "level": "2",
+  "url": "past_exams-7.html#exam3-f25-q4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": " A function satisfying that is differentiable everywhere has the graph of as shown in .  is differentiable everywhere.          Construct a first-derivative sign chart to determine interval(s) of the domain where is increasing and where is decreasing.    Construct a second-derivative sign chart to determine interval(s) of the domain where is concave up and where is concave down. Identify all inflection points as well.    Assume that all of the interesting information about is shown in . Does have any local minima? If so, where? If not, why not? Does it have any local maxima?         is increasing on and decreasing on .   A first derivative sign chart.   A firat derivative sign chart.        is concave down on and concave up on . There are inflection points at and .   A second derivative sign chart.   A second derivative sign chart.        has a local maximum at via the second derivative test. has no local minimum since does not change from decreasing to increasing anywhere.     "
+},
+{
+  "id": "exam3-f25-q5",
+  "level": "2",
+  "url": "past_exams-7.html#exam3-f25-q5",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": " The velocity of a falling object at time seconds is given by feet per second. Determine the distance the object has traveled during the time interval of to seconds. Illustrate this value with a well-labeled diagram.   The distance traveled is feet.   The velocity of a falling object gives the distance it has traveled via area under the curve.         "
+},
+{
+  "id": "exam3-f25-q6",
+  "level": "2",
+  "url": "past_exams-7.html#exam3-f25-q6",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": "    Compute the value of     Express the sum using sigma notation.                   "
+},
+{
+  "id": "exam3-f25-q7",
+  "level": "2",
+  "url": "past_exams-7.html#exam3-f25-q7",
+  "type": "Exercise",
+  "number": "7",
+  "title": "",
+  "body": " A rancher wants to create a rectangular plot of 20,000 square feet bounded on one long east-west side by a river. Due to strong southern winds, fencing costs 4 times as much per foot for the east-west side as for the north-south sides. What dimensions minimize the fencing cost?   Let denote the width of the rectangular plot perpendicular to the river, and let denote the length parallel to the river. Since fencing is required on only three sides, the total cost is   The area constraint is    A rectangular plot bordering a river.   A plot near a river.     Solving the area constraint for gives   Substitute this expression into the cost function:   where .  Differentiate:   Set the derivative equal to zero and solve:     Since represents a length, , so the only relevant critical value is   A sign analysis shows that for and for . Therefore, is minimized when .  Using the area constraint,   Therefore, the dimensions that minimize the fencing cost are   The optimal plot is feet by feet.   "
+},
+{
+  "id": "exam3-f25-q8",
+  "level": "2",
+  "url": "past_exams-7.html#exam3-f25-q8",
+  "type": "Exercise",
+  "number": "8",
+  "title": "",
+  "body": " The rectangles in illustrate a left-endpoint Riemann sum for the function on the interval .  A Riemann sum.        What is the value of in this Riemann sum?    Give an explicit formula for in terms of the index in the Riemann sum.    Illustrate a right-endpoint Riemann sum using rectangles for on the interval on the graph. Then, calculate the value of .              or           "
+},
+{
+  "id": "exam3-f25-q9",
+  "level": "2",
+  "url": "past_exams-7.html#exam3-f25-q9",
+  "type": "Exercise",
+  "number": "9",
+  "title": "",
+  "body": " The graph of is given in .  A graph of .   Graph of a smooth curve with a local minimum near x = -2, a local maximum near x = 1, and another local minimum near x = 2 where the curve touches the x-axis before rising sharply.      If and are critical numbers of , determine if each is a local minimum, local maximum, neither, or if more information is needed.    Identify the -value(s) for which has an inflection point.         gives a local maximum since . gives a local minimum since .    There are inflection points at and since changes sign.     "
 }
 ]
 
