@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+  <title>Exam 1 - Fall 2024</title>
+
+<section>
+<title>Topics</title>
+
+    <p>1.1-1.7
+    </p>
+
+    <p>
+      Be sure to try each question before looking at the solutions.
+    </p>
+
+  <exercises xml:id="exercises-f24exam1">
+    <title>Questions</title>
+
+<exercise xml:id="exam1-f24-q1">
+<statement>
+   An object's height above the ground is recorded at various times. <xref ref="ObjectHeightExam1F24q1"/> gives the object's height
+   <m>
+     s(t)
+   </m>
+   (measured in meters) at time
+   <m>
+     t
+   </m>
+   (measured in seconds). 
+
+  <table xml:id="ObjectHeightExam1F24q1" >
+        <title>An object's height <m>s(t)</m> measured at various times <m>t</m>.</title>
+    <tabular halign="center" bottom="minor" top="minor">
+      <row header="yes">
+        <cell><p><m>t</m> (meters)</p></cell>
+        <cell><p><m>s(t)</m> (seconds)</p></cell>
+      </row>
+      <row>
+        <cell><p>0</p></cell>
+        <cell><p>35</p></cell>
+      </row>
+            <row>
+        <cell><p>1</p></cell>
+        <cell><p>24</p></cell>
+      </row>
+            <row>
+        <cell><p>2</p></cell>
+        <cell><p>15</p></cell>
+      </row>
+            <row>
+        <cell><p>3</p></cell>
+        <cell><p>8</p></cell>
+      </row>
+      <row>
+        <cell><p>4</p></cell>
+        <cell><p>3</p></cell>
+      </row>
+      <row>
+        <cell><p>5</p></cell>
+        <cell><p>0</p></cell>
+      </row>
+    </tabular>
+  </table>
+<ol marker="(a)">
+  <li>
+    <p>
+      Calculate the average velocity
+      <m>
+        AV_{[1,3]}
+      </m>
+      of the object between times
+      <m>
+        t=1
+      </m>
+      and
+      <m>
+        t=3
+      </m>
+      seconds.
+    </p>
+  </li>
+  <li>
+    <p>
+      Calculate the average velocity
+      <m>
+        AV_{[3,5]}
+      </m>
+      of the object between times
+      <m>
+        t=3
+      </m>
+      and
+      <m>
+        t=5
+      </m>
+      seconds.
+    </p>
+  </li>
+  <li>
+    <p>
+      Using a central difference, estimate the value of
+      <m>
+        s'(3)
+      </m>
+      . Be sure to include units. Then, use a sentence to explain the meaning of this value in this context.
+    </p>
+  </li>
+  <li>
+    <p>
+      Do you think
+      <m>
+        s''(t)
+      </m>
+      is positive, negative, or zero on
+      <m>
+        (0,5)
+      </m>
+      ? Why?
+    </p>
+  </li>
+</ol>
+</statement>
+<answer>
+<ol marker="(a)">
+  <li>
+    <p>
+      <m>AV_{[1,3]} = \frac{8-24}{3-1} = -8</m> meters per second
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>AV_{[3,5]} = \frac{0-8}{5-3} = -4</m> meters per second
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>s'(3) \approx \frac{s(4)-s(2)}{4-2} = \frac{3-15}{2} = -6</m> meters per second.  This estimates the instantaneous velocity of the object at time <m>t=3</m> seconds.
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>s'(t)</m> is increasing (becoming less negative) so <m>s''(t)</m> is positive.
+    </p>
+  </li>
+</ol>
+</answer>
+</exercise>
+
+<exercise xml:id="exam1-f24-q2">
+<statement>
+        The height
+        <m>
+          h(V)
+        </m>
+        (measured in meters) of a given volume
+        <m>
+          V
+        </m>
+        of water in a tank (measured in liters) is measured as the tank is filled.
+        <ol marker="(a)">
+          <li>
+            <p>
+             What are the units of the derivative
+              <m>
+                h'(V)
+              </m>
+              ?   
+            </p>
+          </li>
+          <li>
+            <p>
+              The value
+              <m>
+                h'(V)
+              </m>
+              is always positive. Why? 
+            </p>
+          </li>
+          <li>
+            <p>
+              Carefully sketch a diagram illustrating the shape of a tank for which
+              <m>
+                h''(V) =0
+              </m>
+              .
+            </p>
+          </li>
+        </ol>
+</statement>
+<answer>
+  <ol marker="(a)">
+    <li>
+      <p>
+        meters per liter
+      </p>
+    </li>
+    <li>
+      <p>
+        As the volume <m>V</m> increases, so does the height <m>h(V)</m> of water in the tank.  So <m>h(V)</m> is increasing.
+      </p>
+    </li>
+    <li>
+      <p>
+        The sides of the tank should be vertical so that the rate at which the height increases with respect to volume remains constant.  A cylinder works for this.  
+      </p>
+      <figure xml:id="basic-cylinder">
+  <caption>
+    A cylinder with circular top and bottom faces and vertical sides.
+  </caption>
+  <image xml:id="FigCylinder" width="50%">
+    <latex-image>
+\begin{tikzpicture}[scale=1]
+  % top ellipse
+  \draw (0,2) ellipse (1.5 and 0.4);
+  % sides
+  \draw (-1.5,2) -- (-1.5,0);
+  \draw ( 1.5,2) -- ( 1.5,0);
+  % bottom ellipse
+  \draw[dashed] (-1.5,0) arc (180:360:1.5 and 0.4);
+  \draw (1.5,0) arc (0:180:1.5 and 0.4);
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+    </li>
+  </ol>
+</answer>
+ </exercise>
+
+<exercise xml:id="exam1-f24-q3">
+<statement>
+ The graph of the piecewise-defined function
+ <m>
+     f
+ </m>
+ is shown in <xref ref="F24Ex1q3"/>. The graph has a vertical tangent line at
+ <m>
+     x=-2
+ </m>
+ and horizontal tangent lines at
+ <m>
+     x=-3
+ </m>
+ and
+ <m>
+     x=-1
+ </m>
+ . What are all values of
+ <m>
+     x
+ </m>
+ ,
+ <m>
+     -4 &lt; x &lt; 3
+ </m>
+ at  which
+ <m>
+     f
+ </m>
+ is continuous but not differentiable?
+ <figure xml:id="F24Ex1q3">
+  <caption> Where is <m>f</m> continuous but not differentiable?</caption> 
+  <image source="images/DifferentiabilityFall2024Exam1.jpg" width="50%">
+        <description>Graph of a piecewise function with a curved segment from x approximately equal to -4 to x = 0 ending at an open circle near (0, 1), a filled point at (0, 2), a line segment descending to (1, 0), and a line segment rising from (1, 0) to the right.
+</description>
+      </image>
+</figure>
+</statement>
+<choices  randomize="yes">
+
+    <choice correct="yes">
+      <statement>
+        <p><m>x=-2</m> and <m>x=1</m></p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  Note the vertical tangent at <m>x=-2</m> and the cusp at <m>x=1</m>.  
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>x=1</m></p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>x=-2</m> and <m>x=0</m></p>
+      </statement>
+    </choice>
+
+     <choice>
+      <statement>
+        <p><m>x=0</m> and <m>x=1</m></p>
+      </statement>
+    </choice>
+
+  </choices>
+</exercise>
+
+<exercise xml:id="exam1-f24-q4">
+<statement>
+ Consider the function
+ <md>
+     f(x) = \begin{cases}2x-2\amp \text{if }x &lt; 3\\ 2x-4 \amp \text{if }x \geq 3.\end{cases}
+ </md>
+ Let
+ <m>
+     f
+ </m>
+ be the piecewise-linear function defined above. Which of the following statements are true?
+ <blockquote>
+     <p>
+         <ol marker="I.">
+             <li>
+
+
+                     <m>\displaystyle \lim_{h \rightarrow 0^-}\frac{f(3+h)-f(3)}{h}=2</m>
+
+             </li>
+
+             <li>
+
+                     <m>\displaystyle \lim_{h \rightarrow 0^+}\frac{f(3+h)-f(3)}{h}=2</m>
+             </li>
+
+             <li>
+
+                     <m>\displaystyle f'(3)=2</m>
+             </li>
+         </ol>
+     </p>
+ </blockquote>
+</statement>
+<choices  randomize="yes">
+
+    <choice correct="yes">
+      <statement>
+        <p>II only</p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  Note that <md> <mrow> \frac{f(3+h)-f(3)}{h} \mathstrut \amp = \frac{2(3+h)-2-[2(3)-4]}{h} </mrow> <mrow> \amp = \frac{2h+2}{h} \text{ for } h &lt; 0 </mrow> </md>
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>None of these statements are true.</p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>I and II only</p>
+      </statement>
+    </choice>
+
+     <choice>
+      <statement>
+        <p>I, II, and III</p>
+      </statement>
+    </choice>
+
+  </choices>
+</exercise>
+
+<exercise xml:id="exam1-f24-q5">
+<statement>
+ On which interval(s) is
+ <m>
+     f(x)
+ </m>
+ increasing based on the graph of
+ <m>
+     f'(x)
+ </m>shown in <xref ref="F24Ex1q5"/>?     
+ <figure xml:id="F24Ex1q5">
+  <caption> Where is <m>f</m> increasing?  This is the graph of <m>f'</m>.</caption> 
+  <image source="images/GraphOffprimeBFall2024Exam1.jpg" width="50%">
+        <description>Graph of a smooth wave-like curve crossing the x-axis at x = 0, 2, 4, and 6, with a local minimum near x = 1, a local maximum near x = 3, and another local minimum near x = 5.
+</description>
+      </image>
+</figure>
+</statement>
+<choices  randomize="yes">
+
+    <choice correct="yes">
+      <statement>
+        <p><m>
+            (2,4)
+        </m> </p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  This is where <m>f'</m> is above the horizontal axis.
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>
+            (1,3) \cup (5,6)
+        </m></p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>
+            (0,3)
+        </m></p>
+      </statement>
+    </choice>
+
+     <choice>
+      <statement>
+        <p><m>
+            (0,2) \cup (4,6)
+        </m></p>
+      </statement>
+    </choice>
+
+  </choices>
+</exercise>
+
+<exercise xml:id="exam1-f24-q6">
+<statement>
+Evaluate the following limit:
+<md>
+    \lim_{x \rightarrow 4}\frac{x^{2}-8x+16}{x-4}
+</md>
+</statement>
+<choices  randomize="yes">
+
+    <choice correct="yes">
+      <statement>
+        <p><m>
+           0
+        </m> </p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  <m> \displaystyle \lim_{x \rightarrow 4} \frac{(x-4)(x-4)}{x-4} = \lim_{x \rightarrow 4} x-4 = 0</m>
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>
+           8
+        </m></p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>
+            -8
+        </m></p>
+      </statement>
+    </choice>
+
+     <choice>
+      <statement>
+        <p><m>
+            \infty
+        </m></p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>Does not exist</p>
+      </statement>
+    </choice>
+
+  </choices>
+</exercise>
+
+<exercise xml:id="exam1-f24-q7">
+<statement>
+If
+<m>
+    f(x) = 2+|x-3|
+</m>
+for all
+<m>
+    x
+</m>
+, then the value of
+<m>
+    f'(2)
+</m>
+is
+</statement>
+<choices  randomize="yes">
+
+    <choice correct="yes">
+      <statement>
+        <p><m>
+           -1
+        </m> </p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  Graph this function and look at the slope at <m>x=2</m>.
+          </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>
+           0
+        </m></p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>
+            1
+        </m></p>
+      </statement>
+    </choice>
+
+     <choice>
+      <statement>
+        <p><m>
+            2
+        </m></p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>nonexistent</p>
+      </statement>
+    </choice>
+
+  </choices>
+</exercise>
+
+<exercise xml:id="exam1-f24-q8">
+<statement>
+ The graph of
+ <m>
+     f
+ </m>
+ is shown in <xref ref="F24Ex1q8"/>. Which of the following could be the graph of
+ <m>
+     f'
+ </m>
+ ?     
+ <figure xml:id="F24Ex1q8">
+  <caption> The graph of <m>f</m>.</caption> 
+  <image source="images/GraphOffFall2024Exam1.jpg" width="50%">
+        <description>Graph of a smooth curve rising from below the x-axis, crossing the x-axis left of the y-axis, reaching a maximum above the axis near the y-axis, then crossing the x-axis again before descending below the axis toward b.
+</description>
+      </image>
+</figure>
+</statement>
+<choices  randomize="yes">
+
+    <choice correct="yes">
+      <statement>
+<!-- <figure xml:id="F24Ex1q8A">
+  <caption> </caption> -->
+  <image source="images/GraphOffAFall2024Exam1.jpg" width="50%" margins="0% 50%">
+        <description>Graph of a smooth curve starting at the x-axis at a, rising to a hump above the axis, crossing the x-axis just to the right of the y-axis, dipping to a valley below the axis, and returning to the x-axis at b.
+</description>
+      </image>
+<!-- </figure> -->
+      </statement>
+      <feedback>
+        <p>
+          Correct.  
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <image source="images/GraphOffBFall2024Exam1.jpg" width="50%" margins="0% 50%">
+        <description>Graph of three connected arch-shaped curves above the x-axis, touching the x-axis at two sharp points and remaining nonnegative between a and b.
+</description>
+      </image>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <image source="images/GraphOffCFall2024Exam1.jpg" width="50%" margins="0% 50%">
+        <description>Graph crossing the x-axis at aaa, dipping below the axis to a minimum left of the y-axis, crossing upward through the origin region, rising to a hump above the axis, and returning to the x-axis at b.
+</description>
+      </image>
+      </statement>
+    </choice>
+
+     <choice>
+      <statement>
+        <image source="images/GraphOffDFall2024Exam1.jpg" width="50%" margins="0% 50%">
+        <description>Graph of a smooth curve crossing the x-axis twice, dipping to a minimum below the axis near the y-axis, and rising above the axis toward both endpoints a and b.
+</description>
+      </image>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <image source="images/GraphOffEFall2024Exam1.jpg" width="50%" margins="0% 50%">
+        <description>Graph of a decreasing straight line crossing the x-axis near the y-axis, with positive values on the left and negative values on the right between a and b.
+</description>
+      </image>
+      </statement>
+    </choice>
+
+  </choices>
+</exercise>
+
+<exercise xml:id="exam1-f24-q9">
+<statement>
+The graph of a function
+<m>
+    f
+</m>
+is shown in <xref ref="F24Ex1q9"/>. Which of the following statements about
+<m>
+    f
+</m>
+is false? [More than one statement might be false.]
+<figure xml:id="F24Ex1q9">
+  <caption> The graph of <m>f</m>.</caption> 
+  <image source="images/NotContinuousFall2024Exam1.jpg" width="50%">
+        <description>Graph of an increasing curve with a hole at x=a on the curve and a filled point directly above it.
+</description>
+      </image>
+</figure>
+</statement>
+<choices multiple-correct="yes" randomize="yes">
+
+    <choice correct="yes">
+      <statement>
+        <p><m>
+            f
+        </m>
+        is continuous at
+        <m>
+            x=a
+        </m>   </p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  The limit at one point is not the same as the functional value.
+          </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>
+            x=a
+        </m>
+        is in the domain of
+        <m>
+            f
+        </m>   </p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>
+            \displaystyle \lim_{x \rightarrow a^+}f(x) = \lim_{x \rightarrow a^-}f(x)
+        </m> </p>
+      </statement>
+    </choice>
+
+     <choice>
+      <statement>
+        <p><m>
+            \displaystyle \lim_{x \rightarrow a}f(x)
+        </m>
+        exists  </p>
+      </statement>
+    </choice>
+
+  </choices>
+</exercise>
+
+<exercise xml:id="exam1-f24-q10">
+<statement>
+ The graph of
+ <m>
+     f'
+ </m>, the derivative of the function <m>f</m>,
+ is shown in <xref ref="F24Ex1q10"/>. Which of the following could be the graph of
+ <m>
+     f
+ </m>
+ ?     
+ <figure xml:id="F24Ex1q10">
+  <caption> The graph of <m>f'</m>.</caption> 
+  <image source="images/GraphOffprimeFall2024Exam1.jpg" width="50%">
+        <description>Graph of f' consisting of two line segments and two curved arches above the x-axis, crossing the x-axis at x=1 and x=5, touching the x-axis at x=3, with peaks near x=2 and x=4.
+</description>
+      </image>
+</figure>
+</statement>
+<choices  randomize="yes">
+
+    <choice correct="yes">
+      <statement>
+  <image source="images/GraphOffprimeAFall2024Exam1.jpg" width="50%" margins="0% 50%">
+        <description>Graph of a smooth curve that decreases to a local minimum near x=1, then rises with a brief flat region near x=3, reaches a local maximum near x=5, and decreases afterward.
+</description>
+      </image>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  
+        </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <image source="images/GraphOffprimeBFall2024Exam1.jpg" width="50%" margins="0% 50%">
+        <description>Graph of a smooth wave-like curve crossing the x-axis at x=0, x=2, x=4, and x=6, with minima near x=1 and x=5 and a maximum near x=3.
+</description>
+      </image>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <image source="images/GraphOffprimeCFall2024Exam1.jpg" width="50%" margins="0% 50%">
+        <description>Graph with three separate curve segments: an upward-opening curve tangent to the x-axis at x=1, a second upward-opening curve tangent to the x-axis at x=3, and a downward-opening curve tangent to the x-axis at x=5.
+</description>
+      </image>
+      </statement>
+    </choice>
+
+     <choice>
+      <statement>
+        <image source="images/GraphOffprimeDFall2024Exam1.jpg" width="50%" margins="0% 50%">
+        <description>Graph with three disconnected pieces: a horizontal segment above the x-axis from x=0 to x=2, an increasing line segment crossing the x-axis at x=3, and a horizontal segment below the x-axis from x=4 to x=6.
+</description>
+      </image>
+      </statement>
+    </choice>
+
+  </choices>
+</exercise>
+
+<exercise xml:id="exam1-f24-q11">
+<statement>
+The graph of a twice-differentiable function
+<m>
+    f
+</m>
+is shown in <xref ref="F24Ex1q11"/>.  Which of the following is true?
+<figure xml:id="F24Ex1q11">
+  <caption> The graph of twice-differentiable <m>f</m>.</caption> 
+  <image source="images/GraphOffdoubleprimeFall2024Exam1.jpg" width="50%">
+        <description>Graph of a curve increasing from below the x-axis, crossing the x-axis at the filled point (1, 0), then continuing upward and leveling off as x increases.
+</description>
+      </image>
+</figure>
+</statement>
+<choices randomize="yes">
+
+    <choice correct="yes">
+      <statement>
+        <p><m>
+            f''(1)&lt;f(1)&lt;f'(1)
+        </m></p>
+      </statement>
+      <feedback>
+        <p>
+          Correct.  The concavity is negative; the value is zero, and the slope is positive.  
+          </p>
+      </feedback>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>
+            f(1)&lt;f'(1)&lt;f''(1)
+        </m> </p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>
+            f'(1)&lt;f(1)&lt;f''(1)
+        </m></p>
+      </statement>
+    </choice>
+
+     <choice>
+      <statement>
+        <p><m>
+            f(1)&lt;f''(1)&lt;f'(1)
+        </m> </p>
+      </statement>
+    </choice>
+
+    <choice>
+      <statement>
+        <p><m>
+            f''(1)&lt;f'(1)&lt;f(1)
+        </m></p>
+      </statement>
+    </choice>
+
+  </choices>
+</exercise>
+
+</exercises>
+
+</section>
+</handout>

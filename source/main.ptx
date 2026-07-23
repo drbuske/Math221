@@ -44,7 +44,7 @@
       <!-- Include handouts -->
       <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
       <xi:include href="./handouts/11PrepAverageVelocity.ptx"/>
-      <xi:include href="./handouts/12PrepNotionOfLimit.ptx"/> 
+      <!-- <xi:include href="./handouts/12PrepNotionOfLimit.ptx"/> 
       <xi:include href="./handouts/13PrepDerivativeAtAPoint.ptx"/> 
       <xi:include href="./handouts/14PrepTheDerivativeFunction.ptx"/>
       <xi:include href="./handouts/15PrepInterpretEstimateDerivative.ptx"/>
@@ -69,7 +69,7 @@
       <xi:include href="./handouts/44PrepFundamentalTheoremCalculus.ptx"/>
       <xi:include href="./handouts/51PrepConstructingAntiderivatives.ptx"/>
       <xi:include href="./handouts/52PrepSecondFundamentalThmOfCalculus.ptx"/>
-      <xi:include href="./handouts/53PrepIntegrationBySubstitution.ptx"/> 
+      <xi:include href="./handouts/53PrepIntegrationBySubstitution.ptx"/> -->
     </chapter>
 
     <chapter xml:id="activities">
@@ -89,7 +89,7 @@
     <paragraphs>Chapter 1 Activities</paragraphs> -->
 
       <xi:include href="./class-activities/act-1-1-1.xml"/>
-      <xi:include href="./class-activities/act-1-1-2.xml"/>
+      <!-- <xi:include href="./class-activities/act-1-1-2.xml"/>
       <xi:include href="./class-activities/act-1-1-3.xml"/>
       <xi:include href="./class-activities/act-1-2-1.xml"/>
       <xi:include href="./class-activities/act-1-2-2.xml"/>
@@ -108,12 +108,12 @@
       <xi:include href="./class-activities/act-1-7-2.xml"/>
       <xi:include href="./class-activities/act-1-7-3.xml"/>
       <xi:include href="./class-activities/act-1-8-1.xml"/>
-      <xi:include href="./class-activities/act-1-8-2.xml"/> 
+      <xi:include href="./class-activities/act-1-8-2.xml"/> -->
 
   <!-- </section>
   <section xml:id="ACchapter2activities"> 
     <paragraphs>Chapter 2 Activities</paragraphs> -->
-      <xi:include href="./class-activities/act-2-1-1.xml"/>
+      <!-- <xi:include href="./class-activities/act-2-1-1.xml"/>
       <xi:include href="./class-activities/act-2-1-2.xml"/>
       <xi:include href="./class-activities/act-2-1-3.xml"/>
       <xi:include href="./class-activities/act-2-2-3.xml"/>
@@ -126,12 +126,12 @@
       <xi:include href="./class-activities/act-2-6-1.xml"/>
       <xi:include href="./class-activities/act-2-6-4.xml"/>
       <xi:include href="./class-activities/act-2-7-1.xml"/>
-      <xi:include href="./class-activities/act-2-7-3.xml"/> 
+      <xi:include href="./class-activities/act-2-7-3.xml"/> -->
   <!-- </section>
 
     <section xml:id="ACchapter3activities"> 
     <p>Chapter 3 Activities</p> -->
-      <xi:include href="./class-activities/act-3-1-0.xml"/>
+      <!-- <xi:include href="./class-activities/act-3-1-0.xml"/>
       <xi:include href="./class-activities/act-3-1-1.xml"/>
       <xi:include href="./class-activities/act-3-1-3.xml"/>
       <xi:include href="./class-activities/act-3-1-4.xml"/>
@@ -143,12 +143,12 @@
       <xi:include href="./class-activities/act-3-5-3.xml"/>
       <xi:include href="./class-activities/act-3-6-0.xml"/>
       <xi:include href="./class-activities/act-3-6-1.xml"/>
-      <xi:include href="./class-activities/act-3-6-2.xml"/> 
+      <xi:include href="./class-activities/act-3-6-2.xml"/> -->
   <!-- </section> 
 
     <section xml:id="ACchapter3activities"> 
     <p>Chapter 4 Activities</p> -->
-      <xi:include href="./class-activities/act-4-1-1.xml"/>
+      <!-- <xi:include href="./class-activities/act-4-1-1.xml"/>
       <xi:include href="./class-activities/act-4-1-2.xml"/>
       <xi:include href="./class-activities/act-4-1-3.xml"/>
       <xi:include href="./class-activities/act-4-2-1.xml"/>
@@ -164,7 +164,7 @@
       <xi:include href="./class-activities/act-5-2-3.xml"/>
       <xi:include href="./class-activities/act-5-3-1.xml"/>
       <xi:include href="./class-activities/act-5-3-2.xml"/>
-      <xi:include href="./class-activities/act-5-3-3.xml"/> 
+      <xi:include href="./class-activities/act-5-3-3.xml"/> -->
       <!-- </section> -->
 
       <!-- Add more xi:include files here to include them in the main course -->
@@ -174,6 +174,7 @@
       <title>Past Exams</title>
     <xi:include href="./handouts/Sp26Exam1.ptx"/>
     <xi:include href="./handouts/F25Exam1.ptx"/>
+    <xi:include href="./handouts/F24Exam1.ptx"/>
     <xi:include href="./handouts/Sp26Exam2.ptx"/>
     <xi:include href="./handouts/F25Exam2.ptx"/>
     <xi:include href="./handouts/Sp26Exam3.ptx"/>
