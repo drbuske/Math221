@@ -824,6 +824,373 @@ is shown in <xref ref="F24Ex1q11"/>.  Which of the following is true?
   </choices>
 </exercise>
 
+<exercise xml:id="exam1-f24-q12">
+<statement>
+<p>
+
+Let <m>f</m> be a function that is <em>even</em> and continuous on the closed interval <m>[-3,3]</m>. The function <m>f</m> and its derivatives
+have the properties indicated in the table.
+</p>
+
+<tabular halign="center" bottom="minor" top="minor">
+<row header="yes">
+<cell><m>x</m></cell>
+<cell><m>0</m></cell>
+<cell><m>0&lt;x&lt;1</m></cell>
+<cell><m>1</m></cell>
+<cell><m>1&lt;x&lt;2</m></cell>
+<cell><m>2</m></cell>
+<cell><m>2&lt;x&lt;3</m></cell>
+</row>
+
+<row>
+<cell><m>f(x)</m></cell>
+<cell><m>1</m></cell>
+<cell>Positive</cell>
+<cell><m>0</m></cell>
+<cell>Negative</cell>
+<cell><m>-1</m></cell>
+<cell>Negative</cell>
+</row>
+
+<row>
+<cell><m>f'(x)</m></cell>
+<cell>Undefined</cell>
+<cell>Negative</cell>
+<cell><m>0</m></cell>
+<cell>Negative</cell>
+<cell>Undefined</cell>
+<cell>Positive</cell>
+</row>
+
+<row>
+<cell><m>f''(x)</m></cell>
+<cell>Undefined</cell>
+<cell>Positive</cell>
+<cell><m>0</m></cell>
+<cell>Negative</cell>
+<cell>Undefined</cell>
+<cell>Negative</cell>
+</row>
+</tabular>
+
+<p>
+In the <m>xy</m>-plane provided below, sketch the graph of a function with all the given characteristics of <m>f</m>.
+</p>
+
+<figure xml:id="empty_axis_fall2025_ex1">
+  <caption>
+Graph the function with given characteristics here.  
+  </caption>
+  <image xml:id="emptyaxisfall2026ex1" width="50%">
+<latex-image>
+\begin{tikzpicture}[thick]
+\draw [black!80,line width=0.5pt,-latex] (0,0) -- (4,0) node [below] at (3.75,0) {$x$};
+\draw [black!80,line width=0.5pt,-latex] (0,0) -- (-4,0);
+\draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,3.5) node [right] at (0,3.25) {$y$};
+\draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,-3.5);
+\foreach \x/\xtext in {-3/-3,-2/-2,-1/-1,1/1,2/2,3/3}
+\draw[shift={(\x,0)}] (0pt,5pt)--(0pt,-5pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-3/-3,-2/-2,-1/-1,1/1,2/2,3/3}
+\draw[shift={(0,\y)}] (4pt,0pt)--(-4pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+</latex-image>
+</image>
+</figure>
+
+
+</statement>
+
+<answer>
+  <p>
+    Since <m>f</m> is even, the graph is symmetric about the
+    <m>y</m>-axis. Therefore, the information given for
+    <m>x&gt;0</m> determines the behavior of the graph for
+    <m>x&lt;0</m>.
+  </p>
+
+  <p>
+    Since <m>f(0)=1</m>, the graph passes through the point
+    <m>(0,1)</m>. Since <m>f(1)=0</m> and <m>f(2)=-1</m>,
+    the graph also passes through the points
+    <m>(1,0)</m>, <m>(2,-1)</m>, <m>(-1,0)</m>, and
+    <m>(-2,-1)</m>.
+  </p>
+
+  <p>
+    On the interval <m>(0,1)</m>, we have
+    <m>f'(x)&lt;0</m> and <m>f''(x)&gt;0</m>. Therefore,
+    the function is decreasing and concave up.
+  </p>
+
+  <p>
+    At <m>x=1</m>, we have <m>f'(1)=0</m> and
+    <m>f''(1)=0</m>. Hence the graph has a horizontal tangent
+    line at the point <m>(1,0)</m>.
+  </p>
+
+  <p>
+    On the interval <m>(1,2)</m>, we have
+    <m>f'(x)&lt;0</m> and <m>f''(x)&lt;0</m>. Therefore,
+    the function is decreasing and concave down.
+  </p>
+
+  <p>
+    At <m>x=2</m>, the derivatives are undefined, so the graph
+    may have a corner, cusp, or other point where differentiability
+    fails. The graph passes through <m>(2,-1)</m>.
+  </p>
+
+  <p>
+    On the interval <m>(2,3)</m>, we have
+    <m>f'(x)&gt;0</m> and <m>f''(x)&lt;0</m>. Therefore,
+    the function is increasing and concave down.
+  </p>
+
+  <p>
+    Using symmetry, the graph on <m>[-3,0]</m> is the reflection of
+    the graph on <m>[0,3]</m> across the <m>y</m>-axis.
+  </p>
+
+  <p>
+    A correct sketch must satisfy all of the following:
+  </p>
+
+  <ul>
+    <li><p>The graph is symmetric about the <m>y</m>-axis.</p></li>
+    <li><p>The graph passes through <m>(0,1)</m>, <m>(\pm1,0)</m>, and <m>(\pm2,-1)</m>.</p></li>
+    <li><p>The graph is decreasing and concave up on <m>(0,1)</m>.</p></li>
+    <li><p>The graph has a horizontal tangent at <m>x=\pm1</m>.</p></li>
+    <li><p>The graph is decreasing and concave down on <m>(1,2)</m>.</p></li>
+    <li><p>The graph is increasing and concave down on <m>(2,3)</m>.</p></li>
+    <li><p>The graph is not differentiable at <m>x=0</m> and <m>x=\pm2</m>.</p></li>
+</ul>
+
+</answer>
+
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Let <m>R(t)</m> represent the rate at which a volume of water
+      (in liters) is leaking out of a tank, where <m>t</m> is measured
+      in hours after midnight.
+    </p>
+
+    <ol marker="(a)">
+      <li>
+        <p>
+          Interpret the meaning of <m>R'(2)=0.25</m>. Be sure to include
+          units in your response.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          If the hole in this tank is slowly being closed between time
+          <m>t=0</m> and <m>t=5</m> hours, would you say that
+          <m>R''(2)</m> is positive, negative, or zero? Explain.
+        </p>
+      </li>
+    </ol>
+  </statement>
+
+  <answer>
+    <ol marker="(a)">
+      <li>
+        <p>
+          The statement <m>R'(2)=0.25</m> means that 2 hours after
+          midnight, the leakage rate is 
+          <m>0.25</m> liters per hour. 
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Since the hole is being closed, the leakage rate should be
+          decreasing over time. Therefore <m>R'(t)</m> is decreasing, which means the graph of <m>R</m> is concave down.  Thus,
+        </p>
+
+        <md>
+          R''(2) &lt; 0.
+        </md>
+
+      </li>
+    </ol>
+  </answer>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      If it exists, determine the value of
+    </p>
+
+    <md>
+      \lim_{x \to 1}
+      \left(
+      \frac{1-x}{1-\sqrt{x}}
+      \right)^2.
+    </md>
+
+    <p>
+      If the limit does not exist, explain why it does not.
+    </p>
+  </statement>
+
+  <answer>
+    <p>
+      Observe that
+    </p>
+
+    <md>
+      1-x
+      =
+      (1-\sqrt{x})(1+\sqrt{x}).
+    </md>
+
+    <p>
+      So for <m>x \ne 1</m>,
+    </p>
+
+    <md>
+      \left(
+      \frac{1-x}{1-\sqrt{x}}
+      \right)^2
+      =
+      \left(
+      \frac{(1-\sqrt{x})(1+\sqrt{x})}
+           {1-\sqrt{x}}
+      \right)^2
+      =
+      (1+\sqrt{x})^2.
+    </md>
+
+    <p>
+      Hence
+    </p>
+
+    <md>
+      \lim_{x\to 1}
+      \left(
+      \frac{1-x}{1-\sqrt{x}}
+      \right)^2
+      =
+      \lim_{x\to 1}
+      (1+\sqrt{x})^2
+      =
+      (1+1)^2
+      =
+      4.
+    </md>
+
+    <p>
+      A table of values would also provide some reasonable justification for this conclusion.  
+    </p>
+
+  </answer>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      <em>Copilot</em> was given the following prompt.
+    </p>
+
+<figure xml:id="F24Ex1q15">
+  <caption> A graph produced by <em>Copilot</em>.</caption> 
+  <image source="images/CopilotPromptContinuousNotDifferentiable12.jpg" width="50%">
+        <description>Screenshot of a chat message containing the prompt: “Produce a graph of a function that is continuous at x = 1 and x = 3 but not differentiable at those values.”
+</description>
+      </image>
+</figure>
+
+    <p>
+      <em>Copilot</em> returned the graph in <xref ref="F24Ex1q15"/> and gave the
+      piecewise-defined function
+    </p>
+
+    <md>
+f(x)=
+\begin{cases}
+x^2 &amp; \text{for } x&lt;1,\\
+2x-1 &amp; \text{for } 1\le x&lt;3,\\
+(x-3)^2+5 &amp; \text{for } x\ge 3.
+\end{cases}
+    </md>
+
+    <ol marker="(a)">
+      <li>
+        <p>
+          Using a limit, explain how you can be certain that
+          <m>f(x)</m> is indeed continuous at <m>x=1</m>.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          We now wish to decide if <em>Copilot</em> is correct about
+          <m>f(x)</m> not being differentiable at <m>x=1</m>. To
+          investigate, compute the value of
+        </p>
+
+        <me>
+\lim_{h\to 0^-}
+\frac{f(1+h)-f(1)}{h}.
+        </me>
+
+        <p>
+          Show all steps in your calculation.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          It can be shown that
+        </p>
+
+        <me>
+\lim_{h\to 0^+}
+\frac{f(1+h)-f(1)}{h}=2.
+        </me>
+
+        <p>
+          Using your answer to part (b), determine if <m>f(x)</m> is
+          differentiable at <m>x=1</m>.
+        </p>
+      </li>
+    </ol>
+  </statement>
+
+</exercise>
+
+<answer>
+  <p>
+    <ol marker="(a)">
+<li>
+  <p>
+    <md> \lim_{x \rightarrow 1^-} f(x) = \lim_{x \rightarrow 1^-} x^2 = 1</md> and <md> \lim_{x \rightarrow 1+} f(x) = \lim_{x \rightarrow 1^+} 2x-1 = 1 </md> so that <md> \lim_{x \rightarrow 1} f(x) = 1 = f(1).</md>
+  </p>
+</li>
+<li>
+  <p>
+    <md> <mrow> \lim_{h \rightarrow 0^-} \frac{f(1+h)-f(1)}{h} \mathstrut \amp = \lim_{h \rightarrow 0^-} \frac{(1+h)^2-(2(1)-1)}{h} </mrow>
+      <mrow> \amp = \lim_{h \rightarrow 0^-} \frac{1+2h+h^2-1}{h} </mrow>
+      <mrow> \amp = \lim_{h \rightarrow 0^-} \frac{h(2+h)}{h} </mrow> 
+      <mrow> \amp = \lim_{h \rightarrow 0^-} 2+h </mrow> 
+      <mrow> \amp = 2</mrow></md>
+  </p>
+</li>
+<li>
+  <p>
+    Yes.  <m> f(x) </m> is differentiable at <m> x=1</m> since <m>\lim_{h \rightarrow 0} \frac{f(1+h)-f(1)}{h} = 2</m> implies <m>f'(1)=2</m>.
+  </p>
+</li>
+    </ol>
+  </p>
+</answer>
+
 </exercises>
 
 </section>
