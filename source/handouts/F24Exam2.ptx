@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+  <title>Exam 2 - Fall 2024</title>
+
+<section>
+<title>Topics</title>
+
+    <p>1.8-2.7
+    </p>
+
+    <p>
+      Be sure to try each question before looking at the solutions.
+    </p>
+
+  <exercises xml:id="exercises-f24exam2">
+    <title>Questions</title>
+
+<exercise xml:id="exam2-f24-q1">
+<statement>
+<p>
+The temperature <m>T</m> at a certain altitude <m>h</m> above sea level
+is given by the function
+</p>
+<md>T(h) = 20 - 0.006h</md>
+<p>
+where <m>T</m> is measured in degrees Celsius and <m>h</m> is measured
+in meters.
+</p>
+<p>
+Suppose the altitude <m>h</m> above sea level of a water droplet changes
+with time <m>t</m> according to the function
+</p>
+<md>h(t) = 1000(1-e^{-0.1t})</md>
+<p>
+where <m>t</m> is measured in hours after midnight.
+</p>
+<ol marker="(a)">
+<li>
+<p>Calculate <m>\dfrac{dT}{dh}</m> at a height of 500 meters above sea level.</p>
+</li>
+<li>
+<p>
+Calculate
+<m>\left.\dfrac{dh}{dt}\right|_{t=2}</m>.
+Round your answer to the nearest tenth.
+</p>
+</li>
+<li>
+<p>
+Calculate the instantaneous rate of change of the temperature of
+this water droplet with respect to time at 2:00 AM. Be sure to
+give units.
+</p>
+</li>
+</ol>
+</statement>
+<answer>
+<ol marker="(a)">
+  <li>
+    <p>
+      <m>\displaystyle \frac{dT}{dh} = -0.0006 \frac{^{\circ}C}{\text{meter}}</m> 
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>\displaystyle \frac{dh}{dt} = -1000(-0.1)e^{-0.1t}\Big|_{t=2} = 100e^{-0.1(2)} \frac{\text{meters}}{\text{hr}}</m>
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>\displaystyle \frac{dT}{dt}=\frac{dT}{dh} \cdot \frac{dh}{dt}\Big|_{t=2} = (-0.006 \frac{^{\circ}C}{\text{meter}})(100e^{-0.2} \frac{\text{meters}}{\text{hr}}) \approx -0.49 \frac{^{\circ}}{\text{hr}}</m>
+    </p>
+  </li>
+</ol>
+</answer>
+</exercise>
+
+<exercise xml:id="exam2-f24-q2">
+<statement>
+<p>
+A function <m>f</m> and its derivative take on the values shown in the
+table.
+</p>
+<tabular top="major" bottom="major">
+<row>
+<cell><m>x</m></cell>
+<cell><m>f(x)</m></cell>
+<cell><m>f'(x)</m></cell>
+</row>
+<row>
+<cell>2</cell>
+<cell>6</cell>
+<cell><m>\frac13</m></cell>
+</row>
+<row>
+<cell>6</cell>
+<cell>8</cell>
+<cell><m>\frac32</m></cell>
+</row>
+</tabular>
+<p>
+If <m>g</m> is the inverse of <m>f</m>, find the value of
+<m>g'(6)</m>.
+</p>
+</statement>
+
+<answer>
+  <p>
+    <md>g'(6) = (f^{-1})'(6) = \frac{1}{f'(f^{-1}(6))} = \frac{1}{f'(2)} = \frac{1}{\frac{1}{3}} = 3
+    </md>
+  </p>
+</answer>
+ </exercise>
+
+ <exercise xml:id="exam2-f24-q3">
+<statement>
+<p>
+The velocity <m>v</m> of a fluid flowing through a pipe can be modeled
+as a function of the pipe's radius <m>r</m> and the pressure difference
+<m>\Delta P</m> across the pipe. Suppose the velocity <m>v</m> is given
+by
+</p>
+<md>v(r,\Delta P)=k \Delta P r^2</md>
+<p>
+where <m>k</m> is a constant that depends on the fluid's properties and
+the pipe's characteristics.
+</p>
+<ol marker="(a)">
+<li>
+<p>
+Find the instantaneous rate of change of the velocity <m>v</m> with
+respect to the radius <m>r</m>.
+</p>
+</li>
+<li>
+<p>
+Assuming <m>k</m>, <m>\Delta P</m>, and <m>r</m> are all always
+positive values, what does the sign of the answer found in part (a)
+tell you about what happens to the velocity <m>v</m> as the radius
+<m>r</m> of the pipe increases?
+</p>
+</li>
+</ol>
+</statement>
+<answer>
+  <p>
+    <ol marker="(a)">
+      <li>
+        <p>
+          First, note that <m>v(r, \Delta P) = k \Delta P r^{-2}</m>.  So, <m>\frac{dv}{dr} = k \Delta P (-2)r^{-3} = -\frac{2 k \Delta P}{r^3}</m> by the power rule.
+        </p>
+      </li>
+      <li>
+        <p>
+          Since <m>\frac{dv}{dr} &lt; 0</m>, this says that velocity <em>decreases</em> as the radius <m>r</m> increases.
+        </p>
+      </li>
+    </ol>
+  </p>
+</answer>
+ </exercise>
+
+ <exercise xml:id="exam2-f24-q4">
+<statement>
+<p>
+For constant <m>a&gt;1</m>, the functions
+</p>
+<md>f(x)=a^x</md>
+<p>and</p>
+<md>g(x)=x^a</md>
+<p>
+are both increasing on the interval <m>(0.8,1.2)</m>.
+</p>
+<ol marker="(a)">
+<li>
+<p>
+For <m>2.1&lt;a&lt;2.3</m>, is <m>f</m> or <m>g</m> increasing at a
+faster rate at <m>x=1</m>? Defend your response.
+</p>
+</li>
+<li>
+<p>
+For <m>4.1&lt;a&lt;4.3</m>, is <m>f</m> or <m>g</m> increasing at a
+faster rate at <m>x=1</m>? Again, defend your response.
+</p>
+</li>
+</ol>
+</statement>
+<answer>
+  <p>
+    <ol marker="(a)">
+      <li>
+        <p>
+          <m>f'(x)=(\ln a)a^x</m> and <m>g'(x)=a x^{a-1}</m>.  When <m>a=2.2</m>, say, <m>f'(1) = \ln(2.2) \cdot 2.2^1 \approx 1.73</m> and <m>g'(1) = 2.2 \cdot 1^{1.2} = 2.2</m>.  So <m>g</m> is increasing at a faster rate.  
+        </p>
+      </li>
+      <li>
+        <p>
+          When <m>a=4.2</m>, say, <m>f'(1) = \ln(4.2)\cdot 4.2^1 \approx 6.03</m> and <m>g'(1) = 4.2\cdot 1^{3.2} = 4.2</m>.  So <m>f</m> is increasing at a faster rate. 
+        </p>
+      </li>
+    </ol>
+  </p>
+</answer>
+ </exercise>
+
+  <exercise xml:id="exam2-f24-q5">
+<statement>
+<p>
+Find the equation of the tangent line to the curve
+</p>
+<md>xy^2+y^3=2</md>
+<p>
+through the point <m>(3,-1)</m>.
+</p>
+<figure xml:id="F24Ex2q5">
+  <caption> The graph of <m>xy^2+y^3=2</m>.</caption> 
+  <image source="images/ImplicitGraphFall2024.jpg" width="50%">
+        <description>Graph of an implicit curve with two disconnected red branches. The upper branch decreases from left to right, passing near (1, 1) and approaching a horizontal level above the x-axis. The lower branch curves upward and to the right. A blue point on the lower branch is highlighted and labeled (3, -1). Coordinate axes with grid lines are shown.
+</description>
+</image>
+</figure>
+</statement>
+<answer>
+  <p>
+    <md>\frac{d}{dx}(x \cdot y^2 + y^3) = \frac{d}{dx}(2) </md>
+    <md> x\cdot(2y)\cdot \frac{dy}{dx} + 1 \cdot y^2 + 3y^2 \frac{dy}{dx} = 0</md>
+    <md> \frac{dy}{dx} \left( 2xy + 3y^2 \right) = -y^2 </md>
+    <md> \frac{dy}{dx} = \frac{-y^2}{2xy+3y^2} </md>
+    So, <md> \frac{dy}{dx}\Big|_{x=3, y=-1} = \frac{-(-1)^2}{2(3)(-1)+3(-1)^2} = \frac{1}{3}. </md>
+    Using the point-slope form of a line, we find <m>y-(-1)=\frac{1}{3}(x-3)</m> or <md> y = \frac{1}{3}x-2.</md>
+  </p>
+</answer>
+  </exercise>
+
+ <exercise xml:id="exam2-f24-q6">
+<statement>
+<p>
+You are an electrical engineer analyzing an AC circuit. The voltage
+<m>V</m> across a component in the circuit is given by
+</p>
+<md>
+V(t)=120\sin\left(60t+\frac{\pi}{4}\right)
+</md>
+<p>
+where <m>V</m> is measured in volts and <m>t</m> is measured in
+seconds.
+</p>
+<p>
+The graph of <m>V(t)</m> is shown in <xref ref="F24Ex2q6"/>.
+</p>
+<figure xml:id="F24Ex2q6">
+  <caption> The graph of <m>V(t)=120\sin\left( 60t + \frac{\pi}{4} \right)</m>.</caption> 
+  <image source="images/PeriodicVoltage.jpg" width="50%">
+        <description>Graph of a dashed blue sinusoidal voltage waveform on coordinate axes. The voltage oscillates periodically between approximately +120 and −120. Two visible peaks occur near x = 0.01 and x = 0.12, with a trough near x = 0.07. The curve crosses the horizontal axis several times, including near x = 0.04, 0.09, and 0.14. The vertical axis is labeled V for voltage, and grid lines are shown.
+</description>
+</image>
+</figure>
+<p>
+Use <m>V'(t)</m> to determine an expression representing the exact
+time <m>t^*</m> at which the minimum voltage first occurs after
+<m>t=0</m>. Then estimate the value of <m>t^*</m> to the nearest
+<m>0.001</m> second.
+</p>
+</statement>
+<answer>
+  <p>
+    <m>V'(t) = 120 \cdot 60 \cdot \cos \left( 60t + \frac{\pi}{4} \right) = 7200 \cos \left( 60t + \frac{\pi}{4} \right) = 0</m> if and only if <m>60t + \frac{\pi}{4} = \frac{n\pi}{2}</m> for <m>n</m> odd.  This happens if and only if <md>t = \frac{n\pi}{120} - \frac{\pi}{240}</md> for <m>n</m> odd.  If <m>n=1</m>, then <m>t=\frac{\pi}{120}-\frac{\pi}{240} = \frac{\pi}{240}</m> but <m>V(\frac{\pi}{240}) = 120\sin \left( 60\frac{\pi}{240} + \frac{\pi}{4}\right) = 120</m> which is a maximum.  If <m>n=3</m>, then <m>t=\frac{3\pi}{120}-\frac{\pi}{240} = \frac{5\pi}{240}</m> gives a minimum.  So <md>t^* = \frac{5\pi}{240} \approx 0.0654 {\text{ rad}}.</md>
+  </p>
+</answer>
+ </exercise>
+
+  <exercise xml:id="exam2-f24-q7">
+<statement>
+<p>
+Suppose it is known that for a given differentiable function
+<m>g(x)</m>, its local linearization at the point where
+<m>a=2</m> is given by
+</p>
+<md>L(x)=1-\frac12(x-2).</md>
+<ol marker="(a)">
+<li>
+<p>
+What must be the value of <m>g'(2)</m>? Why?
+</p>
+</li>
+<li>
+<p>
+Do you expect the value of <m>g(1.96)</m> to be greater than or
+less than the value of <m>g(2)</m>? Why?
+</p>
+</li>
+<li>
+<p>
+Suppose that you also know that
+<m>g''(2)=-1</m>. For <m>x</m> near 2, sketch the graph of the
+local linearization <m>y=L(x)</m> as well as a possible graph of
+<m>g(x)</m> on the axes provided.
+</p>
+</li>
+</ol>
+</statement>
+<answer>
+  <p>
+    <ol marker="(a)">
+      <li>
+        <p>
+          <m>g'(2)=L'(2)=-\frac{1}{2}</m> since the slope of <m>g</m> and its linearization must be equal at <m>a=2</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          We expect <m>g(1.96)</m> to be greater than the value of <m>g(2)</m>.  Since <m>g'(2) &lt; 0</m>, we know that <m>g</m> is decreasing so that <m>g(1.96) &gt; g(2)</m> as expected.  Note: <m>g(2)=L(2)=1</m>.  
+        </p>
+      </li>
+      <li>
+        <p>
+          Since <m>g''(2) &lt; 0</m>, the graph of <m>g</m> is concave down near <m>a=2</m>.  This means the graph of <m>L(x)</m> is a line that lies above the graph of <m>g</m> near <m>a=2</m>.  
+        </p>
+        <figure xml:id="concavedowntangentfall2024_ex2">
+  <caption>
+A graph is concave down but with a tangent line above it.  
+  </caption>
+  <image xml:id="concavedowntangentfall2024ex2" width="50%">
+<latex-image>
+\begin{tikzpicture}[thick]
+\draw [black!80,line width=0.5pt,-latex] (0,0) -- (4,0) node [below] at (3.75,0) {$x$};
+\draw [black!80,line width=0.5pt,-latex] (0,0) -- (-4,0);
+\draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,3.5) node [right] at (0,3.25) {$y$};
+\draw [black!80,line width=0.5pt,-latex] (0,0) -- (0,-3.5);
+\draw[dashed,blue!60,thick] (-2,3.05) -- (4.6,-0.25);
+\node[blue!70] at (-2.4,3.45) {$L(x)$};
+\draw[blue!70,thick,smooth] plot coordinates { (-0.1,1.42) (0.5,1.39) (1.0,1.30) (1.5,1.16) (2.0,1.00) (2.5,0.72) (3.0,0.38) (3.4,0.02) (3.7,-0.35) (3.9,-1.05) };
+\filldraw[blue!70] (2,1) circle (2.2pt);
+\node[blue!70] at (4.15,-1.25) {$g(x)$};
+\foreach \x/\xtext in {-3/-3,-2/-2,-1/-1,1/1,2/2,3/3}
+\draw[shift={(\x,0)}] (0pt,5pt)--(0pt,-5pt) node[below] {$\xtext$};
+\foreach \y/\ytext in {-3/-3,-2/-2,-1/-1,1/1,2/2,3/3}
+\draw[shift={(0,\y)}] (4pt,0pt)--(-4pt,0pt) node[left] {$\ytext$};
+\end{tikzpicture}
+</latex-image>
+</image>
+</figure>
+      </li>
+    </ol>
+  </p>
+</answer>
+  </exercise>
+
+
+</exercises>
+
+</section>
+</handout>
