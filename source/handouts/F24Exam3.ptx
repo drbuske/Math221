@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+  <title>Exam 3 - Fall 2024</title>
+
+<section>
+<title>Topics</title>
+
+    <p>3.1-4.2
+    </p>
+
+    <p>
+      Be sure to try each question before looking at the solutions.
+    </p>
+
+  <exercises xml:id="exercises-f24exam3">
+    <title>Questions</title>
+
+<exercise xml:id="exam3-f24-q1">
+<statement>
+<p>
+The length of a rectangle is increasing at a rate of 8 cm/sec and its width
+is increasing at a rate of 3 cm/sec. When the length is 20 cm and the width
+is 10 cm, how fast is the area of the rectangle increasing?
+</p>
+<figure xml:id="myrectanglefall2024_ex3">
+  <caption>
+A rectangle of width W and length L.  
+  </caption>
+  <image xml:id="myrectanglefall2024ex3pic" width="50%">
+<latex-image>
+\begin{tikzpicture}[thick]
+\draw[color=linecolor, line width=1.5pt] (0,0) -- (6,0) -- (6,3) -- (0,3) -- (0,0) node [above] at (3,3) {$L$};
+\draw[color=linecolor] node [left] at (0,1.5) {$W$};
+\end{tikzpicture}
+</latex-image>
+</image>
+</figure>
+</statement>
+<answer>
+<p>Let <m>A(t)=L(t)W(t)</m>.  Then
+<md>
+\frac{dA}{dt}
+=
+L\frac{dW}{dt}
++
+W\frac{dL}{dt}.
+</md>
+Substituting the given values,
+<md>
+\frac{dA}{dt}
+=
+20(3)+10(8)
+=
+140.
+</md>
+The area is increasing at
+<m>140~\text{cm}^2/\text{sec}</m>.
+</p>
+</answer>
+</exercise> 
+
+<exercise xml:id="exam3-f24-q2">
+<statement>
+<p>
+Suppose the derivative of a function <m>f</m> is given by
+</p>
+<md>
+f'(x)=(x-2)^2(x+4).
+</md>
+<ol marker="(a)">
+<li>
+<p>
+Use a first-derivative sign chart to determine the intervals on which
+<m>f</m> is increasing.
+</p>
+</li>
+<li>
+<p>
+Does <m>f</m> have any local maxima? If so, where?
+</p>
+</li>
+<li>
+<p>
+Does <m>f</m> have any local minima? If so, where?
+</p>
+</li>
+</ol>
+</statement>
+<answer>
+<p>
+The critical numbers are
+<m>x=-4</m> and <m>x=2</m>.
+</p>
+<p>
+Since <m>(x-2)^2 \ge 0</m>, the sign of <m>f'(x)</m> is determined by
+<m>x+4</m>.
+</p>
+<p>
+Therefore:
+</p>
+<ul>
+<li><m>f'(x) &lt; 0</m> on <m>(-\infty,-4)</m>.</li>
+<li><m>f'(x) &gt; 0</m> on <m>(-4,2)</m>.</li>
+<li><m>f'(x) &gt; 0</m> on <m>(2,\infty)</m>.</li>
+</ul>
+<p>
+Hence <m>f</m> is increasing on <m>
+(-4,2)\cup(2,\infty).
+</m>
+</p>
+<p>
+There is no local maximum because the derivative never changes from
+positive to negative.
+</p>
+<p>
+There is a local minimum at
+<m>x=-4</m>.
+</p>
+</answer>
+</exercise>
+
+<exercise xml:id="exam3-f24-q3">
+<statement>
+<p>
+Consider the function
+<m>
+f(x)=\frac{\ln x}{x}.
+</m>
+</p>
+<ol marker="(a)">
+<li>
+<p>State the domain of <m>f</m>.</p>
+</li>
+<li>
+<p>
+Evaluate
+<m>\displaystyle\lim_{x\to0^+}\frac{\ln x}{x}</m>.  Defend your response.
+</p>
+</li>
+<li>
+<p>
+Determine the maximum value attained by <m>f</m> and where it occurs.  Again, defend your response.
+</p>
+</li>
+<li>
+<p>
+<m>f</m> has a point of inflection at <m>x=e^p</m> where <m>p=\underline{\hspace{10mm}}</m>.  
+</p>
+</li>
+</ol>
+</statement>
+<answer>
+<ol marker="(a)">
+<li>
+<p>
+Domain:
+<m>(0,\infty).</m></p>
+</li>
+<li>
+<md>
+\lim_{x\to0^+}\frac{\ln x}{x}
+=
+-\infty.
+</md>
+</li>
+<li>
+  <p>
+Differentiate:
+</p>
+<md>
+f'(x)
+=
+\frac{1-\ln x}{x^2}.
+</md>
+<p>
+Critical number:
+</p>
+<md>
+1-\ln x=0
+\implies
+x=e.
+</md>
+<p>
+Since <m>f'</m> changes from positive to negative at
+<m>x=e</m>,
+<m>f</m> attains an absolute maximum there.
+</p>
+<md>
+f(e)
+=
+\frac{1}{e}.
+</md>
+</li>
+<li>
+<p>
+Differentiate again:
+</p>
+<md>
+f''(x)
+=
+\frac{-3+2\ln x}{x^3}.
+</md>
+<p>
+Setting the numerator equal to zero gives
+</p>
+<md>
+-3+2\ln x=0.
+</md>
+<md>
+\ln x=\frac32.
+</md>
+<md>
+x=e^{3/2}.
+</md>
+</li>
+</ol>
+</answer>
+</exercise>
+
+<exercise xml:id="exam3-f24-q4">
+<statement>
+<p>
+A car traveling along a straight road is braking and its velocity is
+measured at several different points in time, as recorded in the table.
+</p>
+<tabular top="major" bottom="major">
+<row>
+<cell><m>t</m></cell>
+<cell>0</cell>
+<cell>0.4</cell>
+<cell>0.8</cell>
+<cell>1.5</cell>
+<cell>2.0</cell>
+</row>
+<row>
+<cell><m>v(t)</m></cell>
+<cell>100</cell>
+<cell>88</cell>
+<cell>72</cell>
+<cell>54</cell>
+<cell>0</cell>
+</row>
+</tabular>
+
+<ol marker="(a)">
+<li>
+<p>
+Estimate the total distance traveled during the time the car brakes using a right Riemann sum
+<m>R_4</m> with 4 subintervals.
+</p>
+</li>
+
+<li>
+<p>
+Assuming that <m>v(t)</m> is always decreasing on
+<m>[0,2]</m>, what is the maximum possible distance the car traveled before it stopped?  Why?
+</p>
+</li>
+</ol>
+</statement>
+
+<answer>
+<ol marker="(a)">
+<li>
+<m>
+R_4
+=
+(0.4)(88)+(0.4)(72)+(0.7)(54)+(0.5)(0)
+=
+101.8.
+</m>
+
+<p>
+Approximate distance:
+<m>101.8</m> feet.
+</p>
+</li>
+<li> We use a left sum to find an upper bound:
+<m>
+L_4
+=
+(0.4)(100)
++(0.4)(88)
++(0.7)(72)
++(0.5)(54)
+=
+152.6.
+</m>
+<p>
+Maximum possible distance:
+<m>152.6</m> feet.
+</p>
+</li>
+</ol>
+</answer>
+</exercise>
+
+<exercise xml:id="exam3-f24-q5">
+<statement>
+<p>
+Calculate the value of each limit below or state that it does not exist.  Be sure to defend your answers.  
+</p>
+<ol marker="(a)">
+<li>
+<m>\displaystyle 
+\lim_{t\to1}
+\frac{nt^n-(n+1)t^{n-1}+1}{2(t-1)}.
+</m>
+</li>
+
+<li>
+<m>\displaystyle
+\lim_{x\to{-\frac{\pi}{2}^+}}
+\frac{x+\frac{\pi}{2}}{\tan(x)}.
+</m>
+</li>
+</ol>
+</statement>
+
+<answer>
+<ol marker="(a)">
+<li>
+<p>
+Since both the numerator and denominator approach 0, we apply L'Hôpital's Rule:
+<md><mrow>
+\lim_{t\to1}
+\frac{nt^n-(n+1)t^{n-1}+1}{2(t-1)} \mathstrut \amp = \lim_{t\to1} \frac{n^2t^{n-1} - (n-1)(n+1)t^{n-2}}{2} </mrow>
+<mrow> \amp = \frac{n^2 - (n^2-1)}{2} </mrow>
+<mrow> \amp =\frac{1}{2}.</mrow>
+</md>
+</p>
+</li>
+
+<li>
+<p>
+L'Hôpital's Rule is not applicable since the numerator gets close to 0 while the denominator gets close to <m>-\infty</m>.  The limit is simply approaching 0.  
+</p>
+</li>
+</ol>
+</answer>
+</exercise>
+
+<exercise xml:id="exam3-f24-q6">
+<statement>
+<p>
+Calculate the left Riemann sum <m>\displaystyle \sum_{k=1}^{3} f(x_k)\Delta x</m>
+on the interval <m>[1,7]</m> where <m>\Delta x=2</m>.  The graph of <m>f</m> passes through
+<m>(1,2)</m>,
+<m>(3,5)</m>,
+<m>(5,7)</m>,
+and
+<m>(7,8)</m>.
+</p>
+
+<figure xml:id="Riemannsumfall2024_ex3">
+  <caption>
+The graph of a function passing through <m>(1,2), (3,5), (5,7)</m> and <m>(7,8)</m>. 
+  </caption>
+  <image xml:id="Riemannsumfall2024ex3pic" width="50%">
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1]
+\draw[step=1cm,color=black,dotted] (0,-1) grid (5,3);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5,0) node [below] at (4.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3) node [right] at (0,2.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+\draw[color=linecolor, line width=1pt,domain=0.5:3.5]   plot (\x,{-1/32*(4*\x*\x)+1/2*(2*\x)+1/32}) node [above] at (1.65,2) {$\displaystyle f(x)$};
+\fill [black] (0.5,2/4) circle(2pt);
+\fill [black] (1.5,5/4) circle(2pt);
+\fill [black] (2.5,7/4) circle(2pt);
+\fill [black] (3.5,8/4) circle(2pt);
+\foreach \x/\xtext in { 1/2, 2/4, 3/6, 4/8}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \x/\xtext in {0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 3.75, 4}
+    \draw[shift={(\x,0)}] (0pt,1.5pt) -- (0pt,-1.5pt);
+\foreach \y/\ytext in {1/4, 2/8}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+    \end{tikzpicture}
+</latex-image>
+</image>
+</figure>
+
+</statement>
+<answer>
+<m>
+L_3
+=
+2(2)+2(5)+2(7)
+=
+28.
+</m>
+<figure xml:id="RiemannsumAnsfall2024_ex3">
+  <caption>
+The left Riemann sum for <m>f</m>. 
+  </caption>
+  <image xml:id="RiemannsumAnsfall2024ex3pic" width="50%">
+    <latex-image>
+\begin{tikzpicture}[thick,scale=1]
+\fill [linecolor!20] (1/2,0)--(1/2,2/4)--(3/2,2/4)--(3/2,0)--(1/2,0);
+\fill [linecolor!20] (3/2,0)--(3/2,5/4)--(5/2,5/4)--(5/2,0)--(3/2,0);
+\fill [linecolor!20] (5/2,0)--(5/2,7/4)--(7/2,7/4)--(7/2,0)--(5/2,0);
+\draw [linecolor] (1/2,0)--(1/2,2/4)--(3/2,2/4)--(3/2,0)--(1/2,0);
+\draw [linecolor] (3/2,0)--(3/2,5/4)--(5/2,5/4)--(5/2,0)--(3/2,0);
+\draw [linecolor] (5/2,0)--(5/2,7/4)--(7/2,7/4)--(7/2,0)--(5/2,0);
+\draw[step=1cm,color=black,dotted] (0,-1) grid (5,3);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (5,0) node [below] at (4.5,0) {$x$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (-0.5,0);
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,3) node [right] at (0,2.75) {$y$};
+   \draw [black!80,line width=0.3pt,-latex] (0,0) -- (0,-0.5);
+\draw[color=linecolor, line width=1pt,domain=0.5:3.5]   plot (\x,{-1/32*(4*\x*\x)+1/2*(2*\x)+1/32}) node [above] at (1.65,2) {$\displaystyle f(x)$};
+\fill [black] (0.5,2/4) circle(2pt);
+\fill [black] (1.5,5/4) circle(2pt);
+\fill [black] (2.5,7/4) circle(2pt);
+\fill [black] (3.5,8/4) circle(2pt);
+\foreach \x/\xtext in { 1/2, 2/4, 3/6, 4/8}
+    \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt) node[below] {$\xtext$};
+\foreach \x/\xtext in {0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 3.75, 4}
+    \draw[shift={(\x,0)}] (0pt,1.5pt) -- (0pt,-1.5pt);
+\foreach \y/\ytext in {1/4, 2/8}
+    \draw[shift={(0,\y)}] (-2pt,0pt) -- (2pt,0pt) node[left] {$\ytext$};
+    \end{tikzpicture}
+</latex-image>
+</image>
+</figure>
+</answer>
+</exercise>
+
+<exercise xml:id="exam3-f24-q7">
+<statement>
+<p>Evaluate each expression.</p>
+<ol marker="(a)">
+<li><m>\displaystyle \sum_{k=3}^{10}4</m></li>
+<li>
+<m>\displaystyle \sum_{m=1}^{200}m^3 - \sum_{m=1}^{199}m^3
+</m>
+</li>
+<li>
+<m>
+\displaystyle \sum_{k=1}^{4}(-1)^k k^k
+</m>
+</li>
+</ol>
+</statement>
+
+<answer>
+<ol marker="(a)">
+<li>
+<md>(4+4+4+\ldots+4)_{\underbrace{\text{8 times}}}=8(4)=32.</md>
+</li>
+<li>
+<md>
+\sum_{m=1}^{200}5m^3
+=
+200^3 = 8,000,000.
+</md>
+</li>
+<li>
+<md>
+(-1)^1\cdot 1^1 + (-1)^2\cdot 2^2 + (-1)^3\cdot 3^3 + (-1)^4\cdot 4^4 = -1 + 4 -27+256 = 232
+</md>
+</li>
+</ol>
+</answer>
+</exercise>
+
+<exercise xml:id="exam3-f24-q8">
+<statement>
+<p>
+    Consider all rectangles (two examples appear here) which have two sides on
+    the positive coordinate axes and which lie under the curve
+    <m>y=2\cos(x)</m>.
+    The one with the largest <em>perimeter</em> has width <m>\underline{\hspace{10mm}}</m> and height
+    <m>\underline{\hspace{10mm}}</m>.
+</p>
+
+  <sidebyside widths="40% 40%">
+    <figure xml:id="F24Ex2q8a">
+  <caption>One example of a rectangle having sides defined by the positive coordinate axes and the curve <m>y=\cos(x)</m>.</caption> 
+  <image source="images/MaximumSizeRectangleA.jpg" width="100%">
+    </image>
+</figure>
+    <figure xml:id="F24Ex2q8b">
+  <caption>A second example of a rectangle having sides defined by the positive coordinate axes and the curve <m>y=\cos(x)</m>.</caption> 
+  <image source="images/MaximumSizeRectangleB.jpg" width="100%">
+   </image>
+</figure>
+  </sidebyside>
+      
+</statement>
+<answer>
+  <p>
+    Define the perimeter in terms of <m>x</m> which is the length of the base of the rectangle by <md>P(x)=2x+4\cos(x).</md>  Then, <md>P'(x)=2-4\sin(x) = 0</md> exactly when <m>\sin(x) = \frac{1}{2}</m>.  This first happens for positive <m>x</m>-values when <m>x=\frac{\pi}{6}</m> radians.  A first-derivative sign chart shows that <md>P'(x) &gt; 0 \text{ for } 0 &lt; x &lt; \frac{\pi}{6}</md>  and <md>P'(x) &lt; 0 \text{ for } \frac{\pi}{6} &lt; x &lt; \frac{\pi}{2}.</md>  The following table shows that the maximum perimeter occurs when <m>x=\frac{\pi}{6}</m> which occurs when the height is <m>2\cos(\frac{\pi}{6}) = 2\cdot \frac{\sqrt{3}}{2} = \sqrt{3}.</m> 
+  </p>
+  <tabular>
+  <col halign = "center" right="minor"/>
+  <col halign = "center" />
+  <row top="major" bottom="major">
+<cell><m>x</m></cell>
+<cell><m>P(x)</m></cell>
+</row>
+<row>
+<cell><m>0</m></cell>
+<cell><m>4</m></cell>
+</row>
+<row>
+<cell><m>\frac{\pi}{6}</m></cell>
+<cell><m>2\frac{\pi}{6} + 4\frac{\sqrt{3}}{2} \approx 4.51</m></cell>
+</row>
+<row>
+<cell><m>\frac{\pi}{2}</m></cell>
+<cell><m>2\frac{\pi}{2} + 4\cos(\frac{\pi}{2}) = \pi</m></cell>
+</row>
+</tabular>
+</answer>
+</exercise>
+
+<exercise xml:id="exam3-f24-q9">
+<statement>
+The <em>maximum</em> value of <m>f(x)=\sqrt{x} + \frac{4}{x}</m> on <m>\left[ \frac{1}{4}, 100 \right]</m> occurs at <m>x= \underline{\hspace{10mm}}.</m>  The maximum value of <m>f</m> attained on this interval is <m>\underline{\hspace{10mm}}</m>.  
+</statement>
+<answer>
+  <p>
+    <md>f'(x)= \frac{1}{2}x^{-\frac{1}{2}} - 4x^{-2} = 0 </md>
+    <md> \iff \frac{1}{2}x^{\frac{3}{2}} - 4 = 0 </md>
+    <md> \iff x^{\frac{3}{2}} = 8 </md>
+    <md> \iff x^{\frac{1}{2}} = 2 </md>
+    <md> \iff x = 4. </md>
+    Setting up a table and checking endpoints and critical numbers tells us that the maximum value occurs at <m>x=\frac{1}{4}</m> and the maximum value of <m>f</m> attained on the interval is 16.5.  
+  </p>
+  <tabular>
+  <col halign = "center" right="minor"/>
+  <col halign = "center" />
+  <row top="major" bottom="major">
+<cell><m>x</m></cell>
+<cell><m>f(x)</m></cell>
+</row>
+<row>
+<cell><m>\frac{1}{4}</m></cell>
+<cell><m>\frac{1}{2} + 16 = 16.5</m></cell>
+</row>
+<row>
+<cell><m>4</m></cell>
+<cell><m>2+1=3</m></cell>
+</row>
+<row>
+<cell><m>100</m></cell>
+<cell><m>10+0.04 = 10.04</m></cell>
+</row>
+</tabular>
+</answer>
+</exercise>
+
+
+</exercises>
+
+</section>
+</handout>
