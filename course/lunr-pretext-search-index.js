@@ -3626,6 +3626,96 @@ var ptx_lunr_docs = [
   "number": "9",
   "title": "",
   "body": " The graph of is given in .  A graph of .   Graph of a smooth curve with a local minimum near x = -2, a local maximum near x = 1, and another local minimum near x = 2 where the curve touches the x-axis before rising sharply.      If and are critical numbers of , determine if each is a local minimum, local maximum, neither, or if more information is needed.    Identify the -value(s) for which has an inflection point.         gives a local maximum since . gives a local minimum since .    There are inflection points at and since changes sign.     "
+},
+{
+  "id": "past_exams-10",
+  "level": "1",
+  "url": "past_exams-10.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Exam 3 - Fall 2024",
+  "body": " Exam 3 - Fall 2024   Topics  3.1-4.2  Be sure to try each question before looking at the solutions.   Questions    The length of a rectangle is increasing at a rate of 8 cm\/sec and its width is increasing at a rate of 3 cm\/sec. When the length is 20 cm and the width is 10 cm, how fast is the area of the rectangle increasing?   A rectangle of width W and length L.        Let . Then Substituting the given values, The area is increasing at .      Suppose the derivative of a function is given by     Use a first-derivative sign chart to determine the intervals on which is increasing.    Does have any local maxima? If so, where?    Does have any local minima? If so, where?      The critical numbers are and .  Since , the sign of is determined by .  Therefore:   on .  on .  on .   Hence is increasing on   There is no local maximum because the derivative never changes from positive to negative.  There is a local minimum at .      Consider the function     State the domain of .    Evaluate . Defend your response.    Determine the maximum value attained by and where it occurs. Again, defend your response.     has a point of inflection at where .        Domain:       Differentiate:   Critical number:   Since changes from positive to negative at , attains an absolute maximum there.     Differentiate again:   Setting the numerator equal to zero gives           A car traveling along a straight road is braking and its velocity is measured at several different points in time, as recorded in the table.     0  0.4  0.8  1.5  2.0     100  88  72  54  0      Estimate the total distance traveled during the time the car brakes using a right Riemann sum with 4 subintervals.    Assuming that is always decreasing on , what is the maximum possible distance the car traveled before it stopped? Why?         Approximate distance: feet.   We use a left sum to find an upper bound:  Maximum possible distance: feet.        Calculate the value of each limit below or state that it does not exist. Be sure to defend your answers.              Since both the numerator and denominator approach 0, we apply L'Hôpital's Rule:     L'Hôpital's Rule is not applicable since the numerator gets close to 0 while the denominator gets close to . The limit is simply approaching 0.        Calculate the left Riemann sum on the interval where . The graph of passes through , , , and .   The graph of a function passing through and .          The left Riemann sum for .          Evaluate each expression.                            Consider all rectangles (two examples appear here) which have two sides on the positive coordinate axes and which lie under the curve . The one with the largest perimeter has width and height .    One example of a rectangle having sides defined by the positive coordinate axes and the curve .      A second example of a rectangle having sides defined by the positive coordinate axes and the curve .        Define the perimeter in terms of which is the length of the base of the rectangle by Then, exactly when . This first happens for positive -values when radians. A first-derivative sign chart shows that and The following table shows that the maximum perimeter occurs when which occurs when the height is                          The maximum value of on occurs at The maximum value of attained on this interval is .        Setting up a table and checking endpoints and critical numbers tells us that the maximum value occurs at and the maximum value of attained on the interval is 16.5.                          "
+},
+{
+  "id": "exam3-f24-q1",
+  "level": "2",
+  "url": "past_exams-10.html#exam3-f24-q1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  The length of a rectangle is increasing at a rate of 8 cm\/sec and its width is increasing at a rate of 3 cm\/sec. When the length is 20 cm and the width is 10 cm, how fast is the area of the rectangle increasing?   A rectangle of width W and length L.        Let . Then Substituting the given values, The area is increasing at .   "
+},
+{
+  "id": "exam3-f24-q2",
+  "level": "2",
+  "url": "past_exams-10.html#exam3-f24-q2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Suppose the derivative of a function is given by     Use a first-derivative sign chart to determine the intervals on which is increasing.    Does have any local maxima? If so, where?    Does have any local minima? If so, where?      The critical numbers are and .  Since , the sign of is determined by .  Therefore:   on .  on .  on .   Hence is increasing on   There is no local maximum because the derivative never changes from positive to negative.  There is a local minimum at .   "
+},
+{
+  "id": "exam3-f24-q3",
+  "level": "2",
+  "url": "past_exams-10.html#exam3-f24-q3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Consider the function     State the domain of .    Evaluate . Defend your response.    Determine the maximum value attained by and where it occurs. Again, defend your response.     has a point of inflection at where .        Domain:       Differentiate:   Critical number:   Since changes from positive to negative at , attains an absolute maximum there.     Differentiate again:   Setting the numerator equal to zero gives        "
+},
+{
+  "id": "exam3-f24-q4",
+  "level": "2",
+  "url": "past_exams-10.html#exam3-f24-q4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  A car traveling along a straight road is braking and its velocity is measured at several different points in time, as recorded in the table.     0  0.4  0.8  1.5  2.0     100  88  72  54  0      Estimate the total distance traveled during the time the car brakes using a right Riemann sum with 4 subintervals.    Assuming that is always decreasing on , what is the maximum possible distance the car traveled before it stopped? Why?         Approximate distance: feet.   We use a left sum to find an upper bound:  Maximum possible distance: feet.     "
+},
+{
+  "id": "exam3-f24-q5",
+  "level": "2",
+  "url": "past_exams-10.html#exam3-f24-q5",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Calculate the value of each limit below or state that it does not exist. Be sure to defend your answers.              Since both the numerator and denominator approach 0, we apply L'Hôpital's Rule:     L'Hôpital's Rule is not applicable since the numerator gets close to 0 while the denominator gets close to . The limit is simply approaching 0.     "
+},
+{
+  "id": "exam3-f24-q6",
+  "level": "2",
+  "url": "past_exams-10.html#exam3-f24-q6",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  Calculate the left Riemann sum on the interval where . The graph of passes through , , , and .   The graph of a function passing through and .          The left Riemann sum for .       "
+},
+{
+  "id": "exam3-f24-q7",
+  "level": "2",
+  "url": "past_exams-10.html#exam3-f24-q7",
+  "type": "Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  Evaluate each expression.                         "
+},
+{
+  "id": "exam3-f24-q8",
+  "level": "2",
+  "url": "past_exams-10.html#exam3-f24-q8",
+  "type": "Exercise",
+  "number": "8",
+  "title": "",
+  "body": "  Consider all rectangles (two examples appear here) which have two sides on the positive coordinate axes and which lie under the curve . The one with the largest perimeter has width and height .    One example of a rectangle having sides defined by the positive coordinate axes and the curve .      A second example of a rectangle having sides defined by the positive coordinate axes and the curve .        Define the perimeter in terms of which is the length of the base of the rectangle by Then, exactly when . This first happens for positive -values when radians. A first-derivative sign chart shows that and The following table shows that the maximum perimeter occurs when which occurs when the height is                        "
+},
+{
+  "id": "exam3-f24-q9",
+  "level": "2",
+  "url": "past_exams-10.html#exam3-f24-q9",
+  "type": "Exercise",
+  "number": "9",
+  "title": "",
+  "body": " The maximum value of on occurs at The maximum value of attained on this interval is .        Setting up a table and checking endpoints and critical numbers tells us that the maximum value occurs at and the maximum value of attained on the interval is 16.5.                       "
 }
 ]
 
